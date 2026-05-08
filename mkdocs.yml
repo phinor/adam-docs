@@ -27,9 +27,6 @@ nav:
   - Aggregate Calculations: aggregate-calculations.md
   - Aggregated Results: aggregated-results.md
   - Annual Survey: annual-survey.md
-  - API Access to ADAM: api-access-to-adam.md
-  - "Appendix A: Import and Export Codes": appendix-a-import-and-export-codes.md
-  - "Appendix B: Common Errors and their Meanings": appendix-b-common-errors-and-their-meanings.md
   - Assessment Management: assessment-management.md
   - Attendance Registers: attendance-registers.md
   - Backups: backups.md
@@ -113,3 +110,6 @@ nav:
   - Two-Factor Authentication: two-factor-authentication.md
   - Updating ADAM: updating-adam.md
   - Year-end Functions: year-end-functions.md
+  - API Access to ADAM: api-access-to-adam.md
+  - "Appendix A: Import and Export Codes": appendix-a-import-and-export-codes.md
+  - "Appendix B: Common Errors and their Meanings": appendix-b-common-errors-and-their-meanings.md
