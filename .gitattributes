@@ -1,0 +1,13 @@
+# Force LF line endings for all text files. The site is deployed from this
+# repo and contributors mix Linux/WSL/macOS/Windows; without this, every
+# `git add` from a CRLF working tree emits a noisy warning per file.
+* text=auto eol=lf
+
+# Mark binary assets so git never tries to munge them.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.ico binary

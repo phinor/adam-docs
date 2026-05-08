@@ -1,0 +1,382 @@
+[
+  {
+    "title": "Welcome to ADAM!",
+    "file": "welcome-to-adam.md"
+  },
+  {
+    "title": "Quick Start Guide",
+    "file": "quick-start-guide.md"
+  },
+  {
+    "title": "Absentee Administration",
+    "file": "absentee-administration.md"
+  },
+  {
+    "title": "Academic Points",
+    "file": "academic-points.md"
+  },
+  {
+    "title": "Academic Qualifications",
+    "file": "academic-qualifications.md"
+  },
+  {
+    "title": "Admissions Points",
+    "file": "admissions-points.md"
+  },
+  {
+    "title": "Admissions Procedure",
+    "file": "admissions-procedure.md"
+  },
+  {
+    "title": "Aggregate Calculations",
+    "file": "aggregate-calculations.md"
+  },
+  {
+    "title": "Aggregated Results",
+    "file": "aggregated-results.md"
+  },
+  {
+    "title": "Annual Survey",
+    "file": "annual-survey.md"
+  },
+  {
+    "title": "API Access to ADAM",
+    "file": "api-access-to-adam.md"
+  },
+  {
+    "title": "Attendance Registers",
+    "file": "attendance-registers.md"
+  },
+  {
+    "title": "Assessment Management",
+    "file": "assessment-management.md"
+  },
+  {
+    "title": "Backups",
+    "file": "backups.md"
+  },
+  {
+    "title": "Changing Site Settings",
+    "file": "changing-site-settings.md"
+  },
+  {
+    "title": "Change Log Notifications",
+    "file": "change-log-notifications.md"
+  },
+  {
+    "title": "Class Management",
+    "file": "class-management.md"
+  },
+  {
+    "title": "Class Registration",
+    "file": "class-registration.md"
+  },
+  {
+    "title": "Communication Policies",
+    "file": "communication-policies.md"
+  },
+  {
+    "title": "Communication Settings in ADAM",
+    "file": "communication-settings-in-adam.md"
+  },
+  {
+    "title": "Configuring Logins",
+    "file": "configuring-logins.md"
+  },
+  {
+    "title": "Cron Service",
+    "file": "cron-service.md"
+  },
+  {
+    "title": "Cross-Site Logins and Trusted Servers",
+    "file": "cross-site-logins-and-trusted-servers.md"
+  },
+  {
+    "title": "Database Field Management",
+    "file": "database-field-management.md"
+  },
+  {
+    "title": "Debugging and Error Logging",
+    "file": "debugging-and-error-logging.md"
+  },
+  {
+    "title": "Deleting Information",
+    "file": "deleting-information.md"
+  },
+  {
+    "title": "Document Repository",
+    "file": "document-repository.md"
+  },
+  {
+    "title": "Email Message Templates",
+    "file": "email-message-templates.md"
+  },
+  {
+    "title": "Enrolment Process",
+    "file": "enrolment-process.md"
+  },
+  {
+    "title": "Family Alerts",
+    "file": "family-alerts.md"
+  },
+  {
+    "title": "Family Detail Updates",
+    "file": "family-detail-updates.md"
+  },
+  {
+    "title": "Family Management",
+    "file": "family-management.md"
+  },
+  {
+    "title": "Goal Setting",
+    "file": "goal-setting.md"
+  },
+  {
+    "title": "Grade Settings",
+    "file": "grade-settings.md"
+  },
+  {
+    "title": "Health Monitoring",
+    "file": "health-monitoring.md"
+  },
+  {
+    "title": "Importing and Exporting Data",
+    "file": "importing-and-exporting-data.md"
+  },
+  {
+    "title": "Labels",
+    "file": "labels.md"
+  },
+  {
+    "title": "Learning Outcomes and Assessment Standards",
+    "file": "learning-outcomes-and-assessment-standards.md"
+  },
+  {
+    "title": "Learning Support and Accommodations Module",
+    "file": "learning-support-and-accommodations-module.md"
+  },
+  {
+    "title": "Leave Module",
+    "file": "leave-module.md"
+  },
+  {
+    "title": "Level Descriptors",
+    "file": "level-descriptors.md"
+  },
+  {
+    "title": "Logging on to ADAM",
+    "file": "logging-on-to-adam.md"
+  },
+  {
+    "title": "Logging on to ADAM: A Guide for Parents",
+    "file": "logging-on-to-adam-a-guide-for-parents.md"
+  },
+  {
+    "title": "Login Messages",
+    "file": "login-messages.md"
+  },
+  {
+    "title": "LURITS",
+    "file": "lurits.md"
+  },
+  {
+    "title": "Mail Logging",
+    "file": "mail-logging.md"
+  },
+  {
+    "title": "Mark Book Administration",
+    "file": "mark-book-administration.md"
+  },
+  {
+    "title": "Medical Module",
+    "file": "medical-module.md"
+  },
+  {
+    "title": "Messaging Centre",
+    "file": "messaging-centre.md"
+  },
+  {
+    "title": "Moodle Integration",
+    "file": "moodle-integration.md"
+  },
+  {
+    "title": "Onboarding Process",
+    "file": "onboarding-process.md"
+  },
+  {
+    "title": "Online Agreements",
+    "file": "online-agreements.md"
+  },
+  {
+    "title": "Online Applications",
+    "file": "online-applications.md"
+  },
+  {
+    "title": "Parent and Pupil Portal",
+    "file": "parent-and-pupil-portal.md"
+  },
+  {
+    "title": "Passkey Authentication",
+    "file": "passkey-authentication.md"
+  },
+  {
+    "title": "Passwords and Security Information",
+    "file": "passwords-and-security-information.md"
+  },
+  {
+    "title": "Profile Overview Customisation",
+    "file": "profile-overview-customisation.md"
+  },
+  {
+    "title": "Promotion Requirements",
+    "file": "promotion-requirements.md"
+  },
+  {
+    "title": "Psychometric Testing",
+    "file": "psychometric-testing.md"
+  },
+  {
+    "title": "Publishing Reports",
+    "file": "publishing-reports.md"
+  },
+  {
+    "title": "Pupil Comments",
+    "file": "pupil-comments.md"
+  },
+  {
+    "title": "Pupil Information",
+    "file": "pupil-information.md"
+  },
+  {
+    "title": "Pupil Photographs",
+    "file": "pupil-photographs.md"
+  },
+  {
+    "title": "Questionnaire Module",
+    "file": "questionnaire-module.md"
+  },
+  {
+    "title": "Records and Points Administration",
+    "file": "records-and-points-administration.md"
+  },
+  {
+    "title": "Report Comments",
+    "file": "report-comments.md"
+  },
+  {
+    "title": "Report Publishing",
+    "file": "report-publishing.md"
+  },
+  {
+    "title": "Reporting Checklist",
+    "file": "reporting-checklist.md"
+  },
+  {
+    "title": "Reporting Period Administration",
+    "file": "reporting-period-administration.md"
+  },
+  {
+    "title": "Roll Calls",
+    "file": "roll-calls.md"
+  },
+  {
+    "title": "SA-SAMS Export",
+    "file": "sa-sams-export.md"
+  },
+  {
+    "title": "School Information",
+    "file": "school-information.md"
+  },
+  {
+    "title": "School Logos",
+    "file": "school-logos.md"
+  },
+  {
+    "title": "Scratch Lists",
+    "file": "scratch-lists.md"
+  },
+  {
+    "title": "Security Administration for Families and Pupils",
+    "file": "security-administration-for-families-and-pupils.md"
+  },
+  {
+    "title": "Security Administration for Staff",
+    "file": "security-administration-for-staff.md"
+  },
+  {
+    "title": "Server Setup and Configuration",
+    "file": "server-setup-and-configuration.md"
+  },
+  {
+    "title": "Sign-up Module",
+    "file": "sign-up-module.md"
+  },
+  {
+    "title": "SMS Services",
+    "file": "sms-services.md"
+  },
+  {
+    "title": "Staff Absentees",
+    "file": "staff-absentees.md"
+  },
+  {
+    "title": "Staff Information",
+    "file": "staff-information.md"
+  },
+  {
+    "title": "Staff Passwords",
+    "file": "staff-passwords.md"
+  },
+  {
+    "title": "Staff Photographs",
+    "file": "staff-photographs.md"
+  },
+  {
+    "title": "Student Cards",
+    "file": "student-cards.md"
+  },
+  {
+    "title": "Subjects",
+    "file": "subjects.md"
+  },
+  {
+    "title": "Tags for Pupils, Families and Staff",
+    "file": "tags-for-pupils-families-and-staff.md"
+  },
+  {
+    "title": "Timetable Module",
+    "file": "timetable-module.md"
+  },
+  {
+    "title": "Third Party Integration",
+    "file": "third-party-integration.md"
+  },
+  {
+    "title": "Transferring Pupil Information Between Schools",
+    "file": "transferring-pupil-information-between-schools.md"
+  },
+  {
+    "title": "Troubleshooting Email Delivery",
+    "file": "troubleshooting-email-delivery.md"
+  },
+  {
+    "title": "Two-Factor Authentication",
+    "file": "two-factor-authentication.md"
+  },
+  {
+    "title": "Updating ADAM",
+    "file": "updating-adam.md"
+  },
+  {
+    "title": "Year-end Functions",
+    "file": "year-end-functions.md"
+  },
+  {
+    "title": "Appendix A: Import and Export Codes",
+    "file": "appendix-a-import-and-export-codes.md"
+  },
+  {
+    "title": "Appendix B: Common Errors and their Meanings",
+    "file": "appendix-b-common-errors-and-their-meanings.md"
+  }
+]

@@ -1,0 +1,19 @@
+# MkDocs build output
+site/
+
+# Python virtualenv (if used for local builds)
+.venv/
+venv/
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Conversion scratch
+.conversion-cache/
+
+# Node deps for scripts/
+scripts/node_modules/
+scripts/package-lock.json

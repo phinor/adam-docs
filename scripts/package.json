@@ -1,0 +1,14 @@
+{
+  "name": "adam-docs-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "One-off scripts for ADAM documentation maintenance (HTML→Markdown conversion, etc.)",
+  "scripts": {
+    "convert": "node convert.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "turndown": "^7.2.0"
+  }
+}
