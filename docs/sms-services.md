@@ -1,6 +1,6 @@
 # SMS Services {#h-1pgrrkc}
 
-ADAM uses three third party service providers to send SMS messages from the Messaging Centre. These are:
+ADAM uses three third party service providers to send SMS messages from the [Messaging Centre](messaging-centre.md). These are:
 
 -   SMSWeb: [http://www.smsweb.co.za](https://www.google.com/url?q=http://www.smsweb.co.za&sa=D&source=editors&ust=1778246676736054&usg=AOvVaw1iUgcGfxkM-YH6iZc63kyS)
 -   ZoomConnect: [http://www.zoomconnect.com](https://www.google.com/url?q=http://www.zoomconnect.com&sa=D&source=editors&ust=1778246676736304&usg=AOvVaw0V3gqpXxOfwuum7JkBPeNu) 
@@ -18,7 +18,7 @@ Please let us know if you are setting up an SMSweb account and we will gladly as
 
 On signing up with SMSweb, they will provide you with a username and password. These details should be entered into the site settings (see [Changing Site Settings](changing-site-settings.md#h-3j2qqm3)).
 
-![](assets/screenshots/sms-services/sms-services-01.png)*Check to see which teachers have the* *privileges to send SMS messages* *and that they are aware of the school’s policy for communicating with parents.*
+![](assets/screenshots/sms-services/sms-services-01.png)*Check to see which teachers have the* *[privileges to send SMS messages](security-administration-for-staff.md)* *and that they are aware of the school’s policy for communicating with parents.*
 
 ## ZoomConnect Setup {#h-184mhaj}
 
@@ -90,7 +90,7 @@ And then:
 
 ## SMS Statistics Report {#h-2olpkfy}
 
-A statistics report is available to see how many cell numbers on your system are enabled to receive SMS messages from the messaging centre. To see the report, navigate to “Administration” and under the “Database administration” heading, click on “View SMS statistics”.
+A statistics report is available to see how many cell numbers on your system are enabled to receive SMS messages from the [messaging centre](messaging-centre.md). To see the report, navigate to “Administration” and under the “Database administration” heading, click on “View SMS statistics”.
 
 ![](assets/screenshots/sms-services/sms-services-11.png)
 
@@ -98,4 +98,4 @@ The report lists the total number of *unique* parent numbers and pupil numbers.
 
 ## Sending SMS Messages {#h-13qzunr}
 
-Sending SMS messages is done through the messaging centre. Please see more information about Messaging Centre.
+Sending SMS messages is done through the messaging centre. Please see more information about [Messaging Centre](messaging-centre.md).

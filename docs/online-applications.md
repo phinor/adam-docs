@@ -4,7 +4,7 @@
 
 ADAM has an online application facility which allows parents to complete their enrolment information forms online and have those directly included in the ADAM database without any manual data capture.
 
-ADAM provides a similar data capture form that staff would normally use to add a new pupil. However, this can be customised to have custom fields included if necessary. Applicants can submit their and their children’s details onto ADAM.
+ADAM provides a similar data capture form that staff would normally use to add a new pupil. However, this [can be customised](database-field-management.md) to have custom fields included if necessary. Applicants can submit their and their children’s details onto ADAM.
 
 All online applicants are manually screened first to ensure data quality and eligibility (e.g. girls into a boys school) and to fix minor errors.
 
@@ -436,7 +436,7 @@ When parents click on the link provided, ADAM will provide an application form f
 
 ![](assets/screenshots/online-applications/online-applications-08.png)
 
-The contents of this application form can be customised by controlling which fields appear in the application form within the core database field management screen.
+The contents of this application form can be customised by controlling which fields appear in the application form within the [core database field management screen](database-field-management.md).
 
 There is a button at the bottom of the form to save it.
 
