@@ -23,17 +23,7 @@
     <nav>
         <ul class="menu1">
             {% for nav_item in nav %}
-                {% if nav_item.children %}
-                    <li class="section"><span class="section-label">{{ nav_item.title }}</span>
-                        <ul class="menu2">
-                            {% for child in nav_item.children %}
-                                <li><a href="{{ child.url|url }}">{{ child.title }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-                {% else %}
-                    <li><a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a></li>
-                {% endif %}
+                <li><a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a></li>
             {% endfor %}
         </ul>
     </nav>
@@ -43,6 +33,25 @@
             {{ page.content }}
         </div>
     </article>
+
+    {% macro render_toc(items) %}
+        {% set list_items = items | list %}
+        {% if list_items %}
+        <ul>
+            {% for item in list_items %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a>{{ render_toc(item.children) }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    {% endmacro %}
+
+    {% set toc_list = page.toc | list %}
+    {% if toc_list %}
+    <aside class="toc-sidebar" aria-label="On this page">
+        <div class="toc-heading">On this page</div>
+        {{ render_toc(page.toc) }}
+    </aside>
+    {% endif %}
 
     <script src="{{ 'js/script.js'|url }}"></script>
     {% for path in config.extra_javascript %}

@@ -14,129 +14,102 @@ markdown_extensions:
   - tables
   - toc:
       permalink: false
+      toc_depth: 2-3
   - smarty
 
 nav:
   - Home: index.md
-
-  - Getting Started:
-      - Quick Start Guide: quick-start-guide.md
-      - Logging on to ADAM: logging-on-to-adam.md
-      - "Logging on to ADAM: A Guide for Parents": logging-on-to-adam-a-guide-for-parents.md
-
-  - Pupils:
-      - Pupil Information: pupil-information.md
-      - Pupil Comments: pupil-comments.md
-      - Pupil Photographs: pupil-photographs.md
-      - Profile Overview Customisation: profile-overview-customisation.md
-      - Tags for Pupils, Families and Staff: tags-for-pupils-families-and-staff.md
-      - Student Cards: student-cards.md
-      - Transferring Pupil Information Between Schools: transferring-pupil-information-between-schools.md
-
-  - Families:
-      - Family Management: family-management.md
-      - Family Alerts: family-alerts.md
-      - Family Detail Updates: family-detail-updates.md
-      - Parent and Pupil Portal: parent-and-pupil-portal.md
-      - Online Agreements: online-agreements.md
-
-  - Staff:
-      - Staff Information: staff-information.md
-      - Staff Photographs: staff-photographs.md
-      - Staff Passwords: staff-passwords.md
-      - Staff Absentees: staff-absentees.md
-
-  - Admissions & Enrolment:
-      - Admissions Procedure: admissions-procedure.md
-      - Admissions Points: admissions-points.md
-      - Online Applications: online-applications.md
-      - Onboarding Process: onboarding-process.md
-      - Enrolment Process: enrolment-process.md
-      - Annual Survey: annual-survey.md
-
-  - Classes & Curriculum:
-      - Class Management: class-management.md
-      - Class Registration: class-registration.md
-      - Subjects: subjects.md
-      - Grade Settings: grade-settings.md
-      - Level Descriptors: level-descriptors.md
-      - Promotion Requirements: promotion-requirements.md
-      - Learning Outcomes and Assessment Standards: learning-outcomes-and-assessment-standards.md
-
-  - Attendance:
-      - Absentee Administration: absentee-administration.md
-      - Attendance Registers: attendance-registers.md
-      - Roll Calls: roll-calls.md
-
-  - Assessment & Reporting:
-      - Assessment Management: assessment-management.md
-      - Mark Book Administration: mark-book-administration.md
-      - Aggregate Calculations: aggregate-calculations.md
-      - Aggregated Results: aggregated-results.md
-      - Goal Setting: goal-setting.md
-      - Academic Points: academic-points.md
-      - Academic Qualifications: academic-qualifications.md
-      - Records and Points Administration: records-and-points-administration.md
-      - Report Comments: report-comments.md
-      - Report Publishing: report-publishing.md
-      - Publishing Reports: publishing-reports.md
-      - Reporting Checklist: reporting-checklist.md
-      - Reporting Period Administration: reporting-period-administration.md
-      - Year-end Functions: year-end-functions.md
-
-  - Communications:
-      - Communication Policies: communication-policies.md
-      - Communication Settings in ADAM: communication-settings-in-adam.md
-      - Messaging Centre: messaging-centre.md
-      - Email Message Templates: email-message-templates.md
-      - SMS Services: sms-services.md
-      - Mail Logging: mail-logging.md
-      - Troubleshooting Email Delivery: troubleshooting-email-delivery.md
-      - Login Messages: login-messages.md
-      - Change Log Notifications: change-log-notifications.md
-
-  - Logins & Security:
-      - Configuring Logins: configuring-logins.md
-      - Passwords and Security Information: passwords-and-security-information.md
-      - Passkey Authentication: passkey-authentication.md
-      - Two-Factor Authentication: two-factor-authentication.md
-      - Security Administration for Families and Pupils: security-administration-for-families-and-pupils.md
-      - Security Administration for Staff: security-administration-for-staff.md
-      - Cross-Site Logins and Trusted Servers: cross-site-logins-and-trusted-servers.md
-
-  - Modules:
-      - Leave Module: leave-module.md
-      - Medical Module: medical-module.md
-      - Psychometric Testing: psychometric-testing.md
-      - Questionnaire Module: questionnaire-module.md
-      - Sign-up Module: sign-up-module.md
-      - Timetable Module: timetable-module.md
-      - Learning Support and Accommodations Module: learning-support-and-accommodations-module.md
-      - Document Repository: document-repository.md
-
-  - Integrations & Data Exchange:
-      - API Access to ADAM: api-access-to-adam.md
-      - LURITS: lurits.md
-      - Moodle Integration: moodle-integration.md
-      - SA-SAMS Export: sa-sams-export.md
-      - Third Party Integration: third-party-integration.md
-      - Importing and Exporting Data: importing-and-exporting-data.md
-
-  - System Administration:
-      - School Information: school-information.md
-      - School Logos: school-logos.md
-      - Server Setup and Configuration: server-setup-and-configuration.md
-      - Updating ADAM: updating-adam.md
-      - Backups: backups.md
-      - Cron Service: cron-service.md
-      - Health Monitoring: health-monitoring.md
-      - Debugging and Error Logging: debugging-and-error-logging.md
-      - Database Field Management: database-field-management.md
-      - Changing Site Settings: changing-site-settings.md
-      - Deleting Information: deleting-information.md
-      - Labels: labels.md
-      - Scratch Lists: scratch-lists.md
-
-  - Reference:
-      - "Appendix A: Import and Export Codes": appendix-a-import-and-export-codes.md
-      - "Appendix B: Common Errors and their Meanings": appendix-b-common-errors-and-their-meanings.md
+  - Absentee Administration: absentee-administration.md
+  - Academic Points: academic-points.md
+  - Academic Qualifications: academic-qualifications.md
+  - Admissions Points: admissions-points.md
+  - Admissions Procedure: admissions-procedure.md
+  - Aggregate Calculations: aggregate-calculations.md
+  - Aggregated Results: aggregated-results.md
+  - Annual Survey: annual-survey.md
+  - API Access to ADAM: api-access-to-adam.md
+  - "Appendix A: Import and Export Codes": appendix-a-import-and-export-codes.md
+  - "Appendix B: Common Errors and their Meanings": appendix-b-common-errors-and-their-meanings.md
+  - Assessment Management: assessment-management.md
+  - Attendance Registers: attendance-registers.md
+  - Backups: backups.md
+  - Change Log Notifications: change-log-notifications.md
+  - Changing Site Settings: changing-site-settings.md
+  - Class Management: class-management.md
+  - Class Registration: class-registration.md
+  - Communication Policies: communication-policies.md
+  - Communication Settings in ADAM: communication-settings-in-adam.md
+  - Configuring Logins: configuring-logins.md
+  - Cron Service: cron-service.md
+  - Cross-Site Logins and Trusted Servers: cross-site-logins-and-trusted-servers.md
+  - Database Field Management: database-field-management.md
+  - Debugging and Error Logging: debugging-and-error-logging.md
+  - Deleting Information: deleting-information.md
+  - Document Repository: document-repository.md
+  - Email Message Templates: email-message-templates.md
+  - Enrolment Process: enrolment-process.md
+  - Family Alerts: family-alerts.md
+  - Family Detail Updates: family-detail-updates.md
+  - Family Management: family-management.md
+  - Goal Setting: goal-setting.md
+  - Grade Settings: grade-settings.md
+  - Health Monitoring: health-monitoring.md
+  - Importing and Exporting Data: importing-and-exporting-data.md
+  - Labels: labels.md
+  - Learning Outcomes and Assessment Standards: learning-outcomes-and-assessment-standards.md
+  - Learning Support and Accommodations Module: learning-support-and-accommodations-module.md
+  - Leave Module: leave-module.md
+  - Level Descriptors: level-descriptors.md
+  - Logging on to ADAM: logging-on-to-adam.md
+  - "Logging on to ADAM: A Guide for Parents": logging-on-to-adam-a-guide-for-parents.md
+  - Login Messages: login-messages.md
+  - LURITS: lurits.md
+  - Mail Logging: mail-logging.md
+  - Mark Book Administration: mark-book-administration.md
+  - Medical Module: medical-module.md
+  - Messaging Centre: messaging-centre.md
+  - Moodle Integration: moodle-integration.md
+  - Onboarding Process: onboarding-process.md
+  - Online Agreements: online-agreements.md
+  - Online Applications: online-applications.md
+  - Parent and Pupil Portal: parent-and-pupil-portal.md
+  - Passkey Authentication: passkey-authentication.md
+  - Passwords and Security Information: passwords-and-security-information.md
+  - Profile Overview Customisation: profile-overview-customisation.md
+  - Promotion Requirements: promotion-requirements.md
+  - Psychometric Testing: psychometric-testing.md
+  - Publishing Reports: publishing-reports.md
+  - Pupil Comments: pupil-comments.md
+  - Pupil Information: pupil-information.md
+  - Pupil Photographs: pupil-photographs.md
+  - Questionnaire Module: questionnaire-module.md
+  - Quick Start Guide: quick-start-guide.md
+  - Records and Points Administration: records-and-points-administration.md
+  - Report Comments: report-comments.md
+  - Report Publishing: report-publishing.md
+  - Reporting Checklist: reporting-checklist.md
+  - Reporting Period Administration: reporting-period-administration.md
+  - Roll Calls: roll-calls.md
+  - SA-SAMS Export: sa-sams-export.md
+  - School Information: school-information.md
+  - School Logos: school-logos.md
+  - Scratch Lists: scratch-lists.md
+  - Security Administration for Families and Pupils: security-administration-for-families-and-pupils.md
+  - Security Administration for Staff: security-administration-for-staff.md
+  - Server Setup and Configuration: server-setup-and-configuration.md
+  - Sign-up Module: sign-up-module.md
+  - SMS Services: sms-services.md
+  - Staff Absentees: staff-absentees.md
+  - Staff Information: staff-information.md
+  - Staff Passwords: staff-passwords.md
+  - Staff Photographs: staff-photographs.md
+  - Student Cards: student-cards.md
+  - Subjects: subjects.md
+  - Tags for Pupils, Families and Staff: tags-for-pupils-families-and-staff.md
+  - Third Party Integration: third-party-integration.md
+  - Timetable Module: timetable-module.md
+  - Transferring Pupil Information Between Schools: transferring-pupil-information-between-schools.md
+  - Troubleshooting Email Delivery: troubleshooting-email-delivery.md
+  - Two-Factor Authentication: two-factor-authentication.md
+  - Updating ADAM: updating-adam.md
+  - Year-end Functions: year-end-functions.md

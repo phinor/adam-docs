@@ -1,12 +1,19 @@
 /*
  * ADAM Help styles — ported from the legacy adam-documentation template.
- * Keeps the fixed blue header, fixed left nav, and Open Sans body font.
- * Adapted for the MkDocs hierarchical nav: top-level "section" labels
- * group chapters; menu2 (chapter list within a section) is hidden until
- * the section is selected via JavaScript.
+ * Fixed blue header at top, flat alphabetical nav on the left,
+ * per-page TOC on the right (desktop only). Open Sans body font.
  */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+    --header-height: 150px;
+    --nav-width: 290px;
+    --toc-width: 240px;
+    --header-bg: rgb(86, 163, 217);
+    --selected-bg: #aad6f2;
+    --link-color: #0d5fa6;
+}
 
 * { box-sizing: border-box; }
 
@@ -17,7 +24,7 @@ body {
     color: #1a1a1a;
 }
 
-a { color: #0d5fa6; }
+a { color: var(--link-color); }
 
 article h1 {
     margin-top: 0 !important;
@@ -56,12 +63,12 @@ article img {
 #bodycontainer blockquote {
     margin: 1em 0;
     padding: 0.5em 1em;
-    border-left: 4px solid #aad6f2;
+    border-left: 4px solid var(--selected-bg);
     background: #f5fafd;
     color: #333;
 }
 
-/* Navigation ------------------------------------------------------------ */
+/* Left nav -------------------------------------------------------------- */
 
 nav a {
     color: inherit;
@@ -80,59 +87,73 @@ nav ul {
 }
 
 nav ul.menu1 > li {
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-nav ul.menu1 > li.section > .section-label {
-    display: block;
-    padding-left: 20px;
-    padding-right: 20px;
-    cursor: pointer;
-}
-
-nav ul.menu1 > li.section > .section-label::after {
-    content: " \25B8"; /* right-pointing triangle */
-    font-size: 0.8em;
-    color: #888;
-}
-
-nav ul.menu1 > li.section.expanded > .section-label::after {
-    content: " \25BE"; /* down-pointing triangle */
-}
-
-nav ul.menu2 > li {
+    padding-top: 8px;
+    padding-bottom: 8px;
     font-size: 0.95em;
-    font-weight: normal;
-    padding-left: 20px;
-    width: 230px;
+}
+
+nav ul.menu1 > li.selected {
+    background: var(--selected-bg);
+    font-weight: bold;
+}
+
+/* Right TOC ------------------------------------------------------------- */
+
+.toc-sidebar {
+    /* Hidden by default; revealed by the wide-desktop media query. */
+    display: none;
+}
+
+.toc-sidebar .toc-heading {
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #555;
+    margin-bottom: 8px;
     padding-bottom: 6px;
+    border-bottom: 1px solid #ddd;
 }
 
-nav .selected {
-    background: #aad6f2;
+.toc-sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul.menu1 > li.notselected {
-    color: #606060;
+.toc-sidebar > ul > li > ul {
+    padding-left: 14px;
 }
 
-/* Mobile --------------------------------------------------------------- */
+.toc-sidebar a {
+    display: block;
+    color: #444;
+    text-decoration: none;
+    font-size: 0.85em;
+    padding: 3px 0;
+    line-height: 1.3;
+}
+
+.toc-sidebar a:hover {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+/* Mobile ---------------------------------------------------------------- */
 
 @media screen and (max-width: 639px) {
     header {
         display: block;
-        background-color: rgb(86, 163, 217);
+        background-color: var(--header-bg);
         width: 100%;
-        max-height: 150px;
+        max-height: var(--header-height);
         margin: 0;
         box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.25);
     }
 
     header img {
         max-width: 100%;
-        max-height: 150px;
+        max-height: var(--header-height);
     }
 
     article {
@@ -173,7 +194,7 @@ nav ul.menu1 > li.notselected {
     nav ul.menu1 > li { width: 100%; }
 }
 
-/* Desktop -------------------------------------------------------------- */
+/* Desktop --------------------------------------------------------------- */
 
 @media screen and (min-width: 640px) {
     #navtoggle { display: none; }
@@ -182,8 +203,8 @@ nav ul.menu1 > li.notselected {
         position: fixed;
         top: 0;
         left: 0;
-        height: 150px;
-        background-color: rgb(86, 163, 217);
+        height: var(--header-height);
+        background-color: var(--header-bg);
         width: 100%;
         box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.25);
         z-index: 10;
@@ -194,30 +215,24 @@ nav ul.menu1 > li.notselected {
     nav {
         position: fixed;
         overflow-y: auto;
-        height: calc(100vh - 150px);
-        top: 150px;
+        height: calc(100vh - var(--header-height));
+        top: var(--header-height);
         left: 0;
-        width: 290px;
+        width: var(--nav-width);
         padding-bottom: 30px;
     }
 
-    /* Hide menu2 (chapter list) by default; show only for the expanded
-       section. The display.js script flips the .expanded class when the
-       page is loaded inside a section, or when a section label is clicked. */
-    nav ul.menu2 { display: none; }
-    nav ul.menu1 > li.section.expanded > ul.menu2 { display: block; }
-
     nav ul.menu1 > li {
-        width: 270px;
+        width: var(--nav-width);
     }
 
     article {
         position: fixed;
         overflow-y: auto;
-        top: 150px;
-        left: 290px;
-        height: calc(100vh - 150px);
-        width: calc(100% - 290px);
+        top: var(--header-height);
+        left: var(--nav-width);
+        height: calc(100vh - var(--header-height));
+        width: calc(100% - var(--nav-width));
     }
 
     #bodycontainer {
@@ -226,9 +241,31 @@ nav ul.menu1 > li.notselected {
     }
 }
 
+/* Wide desktop: also show right-side TOC -------------------------------- */
+
+@media screen and (min-width: 1100px) {
+    article {
+        width: calc(100% - var(--nav-width) - var(--toc-width));
+    }
+
+    .toc-sidebar {
+        display: block;
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+        width: var(--toc-width);
+        height: calc(100vh - var(--header-height));
+        overflow-y: auto;
+        padding: 20px 18px 30px;
+    }
+}
+
+/* Print ----------------------------------------------------------------- */
+
 @media print {
     header,
     nav,
+    .toc-sidebar,
     #navtoggle {
         display: none;
     }
