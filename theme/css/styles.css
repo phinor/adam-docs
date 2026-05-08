@@ -1,0 +1,242 @@
+/*
+ * ADAM Help styles — ported from the legacy adam-documentation template.
+ * Keeps the fixed blue header, fixed left nav, and Open Sans body font.
+ * Adapted for the MkDocs hierarchical nav: top-level "section" labels
+ * group chapters; menu2 (chapter list within a section) is hidden until
+ * the section is selected via JavaScript.
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12pt;
+    color: #1a1a1a;
+}
+
+a { color: #0d5fa6; }
+
+article h1 {
+    margin-top: 0 !important;
+    padding-top: 12pt !important;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+#bodycontainer pre,
+#bodycontainer code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9em;
+}
+
+#bodycontainer pre {
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+#bodycontainer table {
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+#bodycontainer table th,
+#bodycontainer table td {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+}
+
+#bodycontainer blockquote {
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    border-left: 4px solid #aad6f2;
+    background: #f5fafd;
+    color: #333;
+}
+
+/* Navigation ------------------------------------------------------------ */
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav a:hover { text-decoration: underline; }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.menu1 > li {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav ul.menu1 > li.section > .section-label {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+nav ul.menu1 > li.section > .section-label::after {
+    content: " \25B8"; /* right-pointing triangle */
+    font-size: 0.8em;
+    color: #888;
+}
+
+nav ul.menu1 > li.section.expanded > .section-label::after {
+    content: " \25BE"; /* down-pointing triangle */
+}
+
+nav ul.menu2 > li {
+    font-size: 0.95em;
+    font-weight: normal;
+    padding-left: 20px;
+    width: 230px;
+    padding-bottom: 6px;
+}
+
+nav .selected {
+    background: #aad6f2;
+}
+
+nav ul.menu1 > li.notselected {
+    color: #606060;
+}
+
+/* Mobile --------------------------------------------------------------- */
+
+@media screen and (max-width: 639px) {
+    header {
+        display: block;
+        background-color: rgb(86, 163, 217);
+        width: 100%;
+        max-height: 150px;
+        margin: 0;
+        box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    header img {
+        max-width: 100%;
+        max-height: 150px;
+    }
+
+    article {
+        padding: 8px;
+        max-width: 750px;
+    }
+
+    #navtoggle {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 20;
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 24px;
+        line-height: 1;
+        padding: 6px 12px;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: white;
+        z-index: 15;
+        overflow-y: auto;
+        padding-top: 60px;
+        box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    nav.open { display: block; }
+
+    nav ul.menu1 > li { width: 100%; }
+}
+
+/* Desktop -------------------------------------------------------------- */
+
+@media screen and (min-width: 640px) {
+    #navtoggle { display: none; }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 150px;
+        background-color: rgb(86, 163, 217);
+        width: 100%;
+        box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+    }
+
+    header img { height: 100%; }
+
+    nav {
+        position: fixed;
+        overflow-y: auto;
+        height: calc(100vh - 150px);
+        top: 150px;
+        left: 0;
+        width: 290px;
+        padding-bottom: 30px;
+    }
+
+    /* Hide menu2 (chapter list) by default; show only for the expanded
+       section. The display.js script flips the .expanded class when the
+       page is loaded inside a section, or when a section label is clicked. */
+    nav ul.menu2 { display: none; }
+    nav ul.menu1 > li.section.expanded > ul.menu2 { display: block; }
+
+    nav ul.menu1 > li {
+        width: 270px;
+    }
+
+    article {
+        position: fixed;
+        overflow-y: auto;
+        top: 150px;
+        left: 290px;
+        height: calc(100vh - 150px);
+        width: calc(100% - 290px);
+    }
+
+    #bodycontainer {
+        max-width: 800px;
+        padding: 20px 30px;
+    }
+}
+
+@media print {
+    header,
+    nav,
+    #navtoggle {
+        display: none;
+    }
+
+    article {
+        position: static;
+        height: auto;
+        overflow: visible;
+        width: 100%;
+    }
+}

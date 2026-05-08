@@ -1,0 +1,11 @@
+# Theme metadata required by MkDocs for any custom theme.
+# Lists static asset files that MkDocs should copy to the site output.
+
+static_templates:
+    - 404.html
+
+extra_css:
+    - css/styles.css
+
+extra_javascript:
+    - js/script.js

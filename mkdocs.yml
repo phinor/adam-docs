@@ -2,47 +2,19 @@ site_name: ADAM Instruction Manual
 site_description: End-user documentation for ADAM (Academic Data Manager)
 site_author: ADAM EduTech
 
+use_directory_urls: false
+
 theme:
-  name: material
-  features:
-    - navigation.instant
-    - navigation.tracking
-    - navigation.top
-    - navigation.indexes
-    - search.suggest
-    - search.highlight
-    - content.code.copy
-    - toc.follow
-  palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
-  icon:
-    repo: fontawesome/brands/git-alt
+  name: null
+  custom_dir: theme
 
 markdown_extensions:
-  - admonition
   - attr_list
   - md_in_html
   - tables
   - toc:
-      permalink: true
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.smartsymbols
+      permalink: false
   - smarty
-
-plugins:
-  - search
 
 nav:
   - Home: index.md

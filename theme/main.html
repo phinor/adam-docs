@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-za">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ADAM Help{% if page and page.title and not page.is_homepage %} - {{ page.title|striptags }}{% endif %}</title>
+    {% if page and page.meta and page.meta.description %}
+    <meta name="description" content="{{ page.meta.description }}">
+    {% else %}
+    <meta name="description" content="{{ config.site_description|default('') }}">
+    {% endif %}
+    <link rel="icon" type="image/x-icon" href="{{ 'img/favicon.ico'|url }}">
+    <link rel="stylesheet" href="{{ 'css/styles.css'|url }}">
+    {% for path in config.extra_css %}
+    <link rel="stylesheet" href="{{ path|url }}">
+    {% endfor %}
+</head>
+<body>
+    <header><img src="{{ 'img/logo.png'|url }}" alt="ADAM"></header>
+
+    <button id="navtoggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+
+    <nav>
+        <ul class="menu1">
+            {% for nav_item in nav %}
+                {% if nav_item.children %}
+                    <li class="section"><span class="section-label">{{ nav_item.title }}</span>
+                        <ul class="menu2">
+                            {% for child in nav_item.children %}
+                                <li><a href="{{ child.url|url }}">{{ child.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% else %}
+                    <li><a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+
+    <article>
+        <div id="bodycontainer">
+            {{ page.content }}
+        </div>
+    </article>
+
+    <script src="{{ 'js/script.js'|url }}"></script>
+    {% for path in config.extra_javascript %}
+    <script src="{{ path|url }}"></script>
+    {% endfor %}
+</body>
+</html>
