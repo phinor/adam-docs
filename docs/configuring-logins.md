@@ -32,7 +32,8 @@ The authentication method for each staff member is set in his or her staff infor
 
 Each staff member can use one of the three authentication methods. They are set individually.
 
-![](assets/screenshots/configuring-logins/configuring-logins-02.png)*To change a staff member’s authentication method, you will need to edit the staff member’s information (Staff > Staff Administration > Edit a teacher’s personal information). At the bottom of the page is an option to choose the authentication method:*
+!!! warning
+    To change a staff member’s authentication method, you will need to edit the staff member’s information (Staff > Staff Administration > Edit a teacher’s personal information). At the bottom of the page is an option to choose the authentication method:
 
 ![](assets/screenshots/configuring-logins/configuring-logins-03.png)
 
@@ -44,7 +45,8 @@ In order for ADAM to process Active Directory LDAP authentication, it must be po
 -   ad basedn: This is the base domain name. It consists of the same information as above, but given in the following format: DC=myschool,DC=local
 -   ad domcon: This is an array of IP addresses of domain servers which should be consulted.
 
-![](assets/screenshots/configuring-logins/configuring-logins-04.png)*In all cases, the files must obey strict PHP syntax and thus should be edited with care.*
+!!! warning
+    In all cases, the files must obey strict PHP syntax and thus should be edited with care.
 
 In order to associate an account on ADAM with a user account in Active Directory, the user must have the same username set in ADAM as they would use in Active Directory. The following procedure is followed on login:
 
@@ -82,7 +84,8 @@ Sometimes, especially for temporary staff members, it is easier to create an int
 
 An internal password can be set when the staff member is created. Alternatively, a password can be set and changed using the “**Change a teacher’s password**” option on the “**Staff**” tab, under the “**Security Administration**” heading.
 
-![](assets/screenshots/configuring-logins/configuring-logins-06.png)*Note that ADAM irreversibly encrypts the passwords that it stores according to currently recommended guidelines. To this end, we encrypt the passwords and store them as “salted hashes”. This dramatically increases the difficulty of brute-force cracking the passwords. This does mean that it is essentially impossible to tell what the password is. More information here:* *[Security Administration](security-administration-for-staff.md#h-3ls5o66)* *and here* *[https://en.wikipedia.org/wiki/Salt\_(cryptography)](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Salt_\(cryptography\)&sa=D&source=editors&ust=1778246675899540&usg=AOvVaw3yLRyS_pHN0MhaTkZPV-OD)*
+!!! warning
+    *Note that ADAM irreversibly encrypts the passwords that it stores according to currently recommended guidelines. To this end, we encrypt the passwords and store them as “salted hashes”. This dramatically increases the difficulty of brute-force cracking the passwords. This does mean that it is essentially impossible to tell what the password is. More information here:* *[Security Administration](security-administration-for-staff.md#h-3ls5o66)* *and here* *[https://en.wikipedia.org/wiki/Salt\_(cryptography)](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Salt_\(cryptography\)&sa=D&source=editors&ust=1778246675899540&usg=AOvVaw3yLRyS_pHN0MhaTkZPV-OD)*
 
 ### Allowing staff to change their own passwords {#h-23ckvvd}
 
@@ -156,7 +159,8 @@ The first time that a parent logs into ADAM, they will be required to enter the 
 
 Subsequent logins will require their ID number and their recently set password.
 
-![](assets/screenshots/configuring-logins/configuring-logins-12.png)*We have compiled a separate document with* *[instructions for parents](https://www.google.com/url?q=https://docs.google.com/document/d/1vHiaDoheupdosNEEv32az8MjiVfSFUNmRiAk3TBZuuo/edit&sa=D&source=editors&ust=1778246675906859&usg=AOvVaw0qlTp4GtFz-H6EtTbxOtpn)* *that you can modify for your needs.*
+!!! warning
+    *We have compiled a separate document with* *[instructions for parents](https://www.google.com/url?q=https://docs.google.com/document/d/1vHiaDoheupdosNEEv32az8MjiVfSFUNmRiAk3TBZuuo/edit&sa=D&source=editors&ust=1778246675906859&usg=AOvVaw0qlTp4GtFz-H6EtTbxOtpn)* *that you can modify for your needs.*
 
 Privileges for parents are determined by [pupil login groups](security-administration-for-families-and-pupils.md#h-mg1sc7iv8w2n).
 
@@ -172,7 +176,8 @@ Note that simply allowing the menu option to appear will not automatically allow
 
 Pupil logins can be enabled and their authentication method set on the “Site Settings” page (Administration / Site Administration / Edit Site Settings) and clicking on the “Pupil & Family Login” section. Once there, the “Allow pupil logins?” option should be set to “Yes”.
 
-![](assets/screenshots/configuring-logins/configuring-logins-13.png)*The authentication method used for pupils is a global setting and cannot be controlled individually. They can either make use of the Active Directory LDAP Authentication or the POP3 Authentication as used and described in the Staff Logins section.*
+!!! warning
+    The authentication method used for pupils is a global setting and cannot be controlled individually. They can either make use of the Active Directory LDAP Authentication or the POP3 Authentication as used and described in the Staff Logins section.
 
 Privileges for pupils are determined by [pupil login groups](security-administration-for-families-and-pupils.md#h-mg1sc7iv8w2n).
 
@@ -191,7 +196,8 @@ ADAM sends a notification under the following circumstances:
 1.  The user logs onto a computer that they have not logged into before; or
 2.  It has been a set number of days (configured in **Site Settings**) since the user first logged into that computer.
 
-![](assets/screenshots/configuring-logins/configuring-logins-14.png)*Note that if a user clears all their browser cookies, ADAM will interpret this as the user logging on to a new computer. The only affect that this will have is that a notification will be sent warning them.*
+!!! warning
+    Note that if a user clears all their browser cookies, ADAM will interpret this as the user logging on to a new computer. The only affect that this will have is that a notification will be sent warning them.
 
 ### Changing Login Notification Settings {#h-vx8odxd96hcj}
 
@@ -205,4 +211,6 @@ The login notification email appears as follows:
 
 In the email, a link is presented that will allow the user to block their ADAM user. This will have the effect of logging out all currently logged in instances of their user account (throwing a possible intruder out of the system) as well as preventing any future logins.
 
-![](assets/screenshots/configuring-logins/configuring-logins-16.png)*An ADAM Administrator will be required to allow access for the user again. When a user account is blocked in this fashion, their* ***Authentication Method*** *in their profile is set to* ***Disabled****. It would thus need to be changed to reflect their actual authentication method (normally either Internal Password or Active Directory).*
+!!! warning
+    *An ADAM Administrator will be required to allow access for the user again. When a user account is blocked in this fashion, their* ***Authentication Method*** *in their profile is set to* ***Disabled****. It would thus need to be changed to reflect their actual authentication method (normally either Internal Password or Active Directory).*
+

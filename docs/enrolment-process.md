@@ -46,7 +46,8 @@ Notice, that on re-registration, all pupils become applicants once again.
 
 It is possible, in the case of Applicants and Alumni to move between active and inactive statuses using feature provided on the “**Admissions**” tab under the “**Enrolment Administration**” heading: “**Manage admissions**”. On this page are two options: one is to manage the registration statuses of admissions pupils and the other is to manage the registration statuses of alumni. It is possible, here, to simply change the statuses as one chooses.
 
-![](assets/screenshots/enrolment-process/enrolment-process-02.png)*Current pupils cannot simply change from an inactive to an active status and must be re-registered and enrolled as normal. Please see “Re-registering a Pupil” on page .*
+!!! warning
+    Current pupils cannot simply change from an inactive to an active status and must be re-registered and enrolled as normal. Please see “Re-registering a Pupil” on page .
 
 ## A Simple Example Workflow {#h-3ygebqi}
 
@@ -130,7 +131,8 @@ When you first add a pupil to the ADAM database, they are assigned to the defaul
 
 3.  Choose the new status from the list and provide a note on why the status change has happened.
 
-![](assets/screenshots/enrolment-process/enrolment-process-10.png) *You will only be able to choose the same type of registration status. For example, if the pupil is currently an active admission, you will only be able to choose other “active admission” statuses. To change the pupil to an inactive status, you must “Deregister” the pupil. See later in this section for deregistering pupils.*
+!!! warning
+    You will only be able to choose the same type of registration status. For example, if the pupil is currently an active admission, you will only be able to choose other “active admission” statuses. To change the pupil to an inactive status, you must “Deregister” the pupil. See later in this section for deregistering pupils.
 
 *Once a pupil has been deregistered they can only choose from other inactive statuses using this method. To change this to an active status, the pupil must be “Re-registered”. See later in this section for re-registering pupils.*
 
@@ -138,7 +140,8 @@ When you first add a pupil to the ADAM database, they are assigned to the defaul
 
 There is a short-cut to managing the registration statuses of many pupils at once. This includes simplifying the transition between active and inactive statuses – specifically when dealing with admissions and alumni statuses.
 
-![](assets/screenshots/enrolment-process/enrolment-process-11.png) *Because of the significantly more complex operations required when an active enrolment is deregistered, these options are not available for any “Current” statuses.*
+!!! warning
+    Because of the significantly more complex operations required when an active enrolment is deregistered, these options are not available for any “Current” statuses.
 
 1.  On the “Admissions” tab, under the “Enrolment Administration” heading, click on the “Manage Admissions” option.
 2.  Click on “Edit the registration records of admissions pupils”
@@ -156,7 +159,8 @@ Occasionally it is necessary to change a pupil’s date of entry. This can be do
 2.  Choose a new date of entry and provide a note for the change of date.
 3.  Click on the “Next” button.
 
-![](assets/screenshots/enrolment-process/enrolment-process-12.png) *When pupils enter a school at the start of the year, their entry date should be captured as 1 January of the year of entry. This is because when the year end procedure happens, ADAM will automatically advance the date to 1 January of the following year. This allows administrators to work on ADAM as if it is the New Year. However, if pupils have an entry date for later on in January, they will not show up as current pupils at that point.*
+!!! warning
+    When pupils enter a school at the start of the year, their entry date should be captured as 1 January of the year of entry. This is because when the year end procedure happens, ADAM will automatically advance the date to 1 January of the following year. This allows administrators to work on ADAM as if it is the New Year. However, if pupils have an entry date for later on in January, they will not show up as current pupils at that point.
 
 ## Rolling-over Waitlisted Pupils {#h-52179ay4tuir}
 
@@ -186,7 +190,8 @@ ADAM will then show a list of pupils who will be affected by this change and ask
 
 At the end of the admission process, it is necessary to register those pupils as current pupils. This is normally done prior to the start of the academic year in order to assign those pupil to new classes. This procedure moves pupils from the “Admissions” stage to the “Current Pupils” stage and automatically assigns them to the default Current Pupil registration status.
 
-![](assets/screenshots/enrolment-process/enrolment-process-14.png) *When processing enrolments for new pupils entering the school in the lowest grade, this should be done AFTER the year end procedure.*
+!!! warning
+    When processing enrolments for new pupils entering the school in the lowest grade, this should be done AFTER the year end procedure.
 
 1.  On the “**Admissions**” tab, under the “**Pupil Administration**” heading, click on the “**Process admissions and enrolments**” option.
 2.  If there is more than one active admissions registration status, you will be asked to choose which one you wish to process enrolments from. If there is only one, you will automatically advance to the next step.
@@ -195,7 +200,8 @@ At the end of the admission process, it is necessary to register those pupils as
 
 Those pupils are now enrolled.
 
-![](assets/screenshots/enrolment-process/enrolment-process-15.png) *If any pupil had a future date and was selected to enrol, their enrolment date will automatically be changed to the current date.*
+!!! warning
+    If any pupil had a future date and was selected to enrol, their enrolment date will automatically be changed to the current date.
 
 ## Deregistering a Pupil {#h-25b2l0r}
 
@@ -258,7 +264,8 @@ These pupils will now appear in the **admissions lists as new applicants** and 
 
 ## Editing the Registration Log {#h-626bkbi9babv}
 
-![](assets/screenshots/enrolment-process/enrolment-process-21.png) *In the normal running of ADAM, it should not be necessary to edit the registration log. Please be aware that registering or deregistering pupils solely by editing their registration log will bypass a number of operations and may result in unpredictable behaviour!*
+!!! warning
+    In the normal running of ADAM, it should not be necessary to edit the registration log. Please be aware that registering or deregistering pupils solely by editing their registration log will bypass a number of operations and may result in unpredictable behaviour!
 
 At the bottom of the Admissions Records within the Pupil Information is a registration log. This can be edited by users with the necessary permissions. This is allowed to correct comments or statuses.
 

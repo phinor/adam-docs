@@ -8,7 +8,8 @@ Family Alerts can be sent to parents and or pupils at regular intervals to send 
 
 To configure the Family Alerts, one must first choose which [pupil login privilege groups](security-administration-for-families-and-pupils.md#h-ag51jwa9tmdj) will get what information. In so doing, it is possible for parents to to receive differentiated information based on the privilege group that their child belongs to.
 
-![](assets/screenshots/family-alerts/family-alerts-01.png) *If no alerts are generated for a child in a particular time frame, no email is sent.*
+!!! warning
+    If no alerts are generated for a child in a particular time frame, no email is sent.
 
 ## Enabling Family Alerts for Privilege Groups {#h-oosetdrl3h8}
 
@@ -34,7 +35,8 @@ One can choose **which days to send** the alerts, as well as the **time of the 
 
 If alerts have not been sent before, or have been turned off for a long time, ADAM will only look back a **maximum number of days** as defined here. This prevents the first Family Alert from containing information from years back.
 
-![](assets/screenshots/family-alerts/family-alerts-04.png) *Note that if the “maximum number of days” is less that the interval between alerts (e.g. you set a maximum number of days to 1, but alerts are sent out on Fridays - every 7 days), then there is an excellent chance that information will be missing from your alerts.*
+!!! warning
+    Note that if the “maximum number of days” is less that the interval between alerts (e.g. you set a maximum number of days to 1, but alerts are sent out on Fridays - every 7 days), then there is an excellent chance that information will be missing from your alerts.
 
 If a **reply address is provided**, then any parent replies to their alert will be directed to that person. If left blank, the default “from” address will be used. For a number of schools, this is a generic “noreply” address which may be problematic.
 

@@ -42,7 +42,8 @@ Medical Examinations can be optionally **completed on the parents’ and pupils�
 
 Additionally, **medical examination summaries** can be shown on the Pupil and Parent portal by selecting “Yes” to this question.
 
-![](assets/screenshots/medical-module/medical-module-04.png)*The* *privilege group for the pupils must also be assigned the privileges to view medical examination summaries.*
+!!! warning
+    *The* *privilege group for the pupils must also be assigned the privileges to view medical examination summaries.*
 
 The indicated **Instructions** are shown to the staff who are completing the medical examination or to the parents/pupils in the portal. Thus differentiated instructions can be shown if required.
 

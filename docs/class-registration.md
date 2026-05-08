@@ -6,13 +6,15 @@ ADAM allows you to approach the registration process from one of two ways. The f
 
 The second is used more commonly when a pupil arrives at the school late and needs to be added to already existing classes.
 
-![](assets/screenshots/class-registration/class-registration-01.png)*The most common support issue that we find revolves around the fact that a pupil can only be enrolled in a single class per subject. Thus a pupil cannot be in two “English” classes at the same time. The pupil must first be removed from the first class and then added to the second class.*
+!!! warning
+    The most common support issue that we find revolves around the fact that a pupil can only be enrolled in a single class per subject. Thus a pupil cannot be in two “English” classes at the same time. The pupil must first be removed from the first class and then added to the second class.
 
 ## Registering Pupils into a Class {#h-3whwml4}
 
 On the **Classes** tab, under the **Registration Administration** heading, click on **Subject registrations for a class**.
 
-![](assets/screenshots/class-registration/class-registration-02.png)*If the class does not exist, you will need to create the class first (see “**[Creating a new class](class-management.md#h-4i7ojhp)**”).*
+!!! warning
+    *If the class does not exist, you will need to create the class first (see “**[Creating a new class](class-management.md#h-4i7ojhp)**”).*
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/CN8B3F93-_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -32,7 +34,8 @@ By default, ADAM will show one grade at a time – typically the grade that is a
 
 Many schools will use the concept of a “form class” – that is, a group of pupils which attend many classes together as a single cohort. To mimic this in ADAM, one can enrol pupils into the first subject, for example English, and then for subsequent subjects, one can use the dropdown list at the bottom of the page to copy the registrations from English into the new subject. This is a single click operation that will move all pupils across into the new class.
 
-![](assets/screenshots/class-registration/class-registration-05.png)*Note again, that if a pupil is registered for the same subject in another class, they will not be enrolled when one chooses a form class to copy its registrations.*
+!!! warning
+    Note again, that if a pupil is registered for the same subject in another class, they will not be enrolled when one chooses a form class to copy its registrations.
 
 ### Registering a Pupil into a class for past reporting periods {#h-mfedu9mxio08}
 
@@ -78,7 +81,8 @@ If you wish to specify a **Registration End Date**, ensure that the **Current Re
 
 Once done, click on **Save dates**.
 
-![](assets/screenshots/class-registration/class-registration-12.png)*Please note that this method is only intended to be used within a single academic year and that changing a pupil’s registration from one year to another may have deleterious effects! This is particularly true when the classes are associated with a specific grade.*
+!!! warning
+    Please note that this method is only intended to be used within a single academic year and that changing a pupil’s registration from one year to another may have deleterious effects! This is particularly true when the classes are associated with a specific grade.
 
 ## Registering Classes for a Pupil {#h-2bn6wsx}
 

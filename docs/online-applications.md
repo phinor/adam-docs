@@ -482,7 +482,8 @@ At the bottom of this form are three options:
 -   **Approving the Application** will add the pupil and family (if it is new) to the database. The pupil is added as an applicant in the [default admissions status](enrolment-process.md#h-2dlolyb). This does *not* guarantee them a place or add them as a current pupil. *Remember that no communication is sent by ADAM.*
 -   **Reject Application** will remove the application from the pile. Typically, applicants are rejected here for stechnical reasons (incomplete form, incorrect grades, incorrect gender for monastic schooling, and so on). Rejection here essentially means tossing the application form into the bin. The pupil and the family will *not* be added to the database.
 
-![](assets/screenshots/online-applications/online-applications-16.png)***Please note well: “Accepting” and “Rejecting” applications refers specifically to the*** ***application form******. This will add these details into your database as an Applicant profile.*** ***No decisions about enrolment into the school have been made*** ***at this point. Enrolment (or not!) will only happen at the very end of the application process.***
+!!! warning
+    ***Please note well: “Accepting” and “Rejecting” applications refers specifically to the*** ***application form******. This will add these details into your database as an Applicant profile.*** ***No decisions about enrolment into the school have been made*** ***at this point. Enrolment (or not!) will only happen at the very end of the application process.***
 
 ## Uploading of Supporting Documents {#h-191sp14o2w5f}
 

@@ -22,7 +22,8 @@ When Maintenance Mode is enabled, a banner will appear across the top of the scr
 
 ![](assets/screenshots/server-setup-and-configuration/server-setup-and-configuration-02.png)
 
-![](assets/screenshots/server-setup-and-configuration/server-setup-and-configuration-03.png)*Note that Maintenance Mode will only prevent new users logging in, but will not automatically log out old users.*
+!!! warning
+    Note that Maintenance Mode will only prevent new users logging in, but will not automatically log out old users.
 
 Before any significant work is undertaken, you are advised to consult the list of logged in users to determine whether any specific users may be busy with critical work.
 

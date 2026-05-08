@@ -119,7 +119,8 @@ To change a pupil’s grade, all one needs to do is edit the pupil’s informati
 
 Note that this will not change any classes and so you may find, after editing a pupil in this manner, that they still belong to the classes in the wrong grades. You will need to manually remove and assign the pupil to appropriate classes according to their new grade.
 
-![](assets/screenshots/pupil-information/pupil-information-05.png)***Note well for changes made mid-year****: this is exceptionally uncommon and ADAM does not have specific programming to deal with this eventuality. All existing reports issued will have copies stored in the archive. These should remain fixed with the original grade captured. However, should the reports be refreshed or regenerated, it is quite possible that ADAM will pick up the pupil’s new grade and display it on these old reports, giving the impression that the pupil was in the new grade for the whole year.*
+!!! warning
+    ***Note well for changes made mid-year****: this is exceptionally uncommon and ADAM does not have specific programming to deal with this eventuality. All existing reports issued will have copies stored in the archive. These should remain fixed with the original grade captured. However, should the reports be refreshed or regenerated, it is quite possible that ADAM will pick up the pupil’s new grade and display it on these old reports, giving the impression that the pupil was in the new grade for the whole year.*
 
 ## Pupil Name Pronunciation {#h-dtyuf78hrfpy}
 

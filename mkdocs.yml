@@ -9,6 +9,7 @@ theme:
   custom_dir: theme
 
 markdown_extensions:
+  - admonition
   - attr_list
   - md_in_html
   - tables

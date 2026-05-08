@@ -47,7 +47,8 @@ From the list of Leave Types, click on the **edit** option next to the leave ty
 
 Some leaves can be configured to be taken only a limited number of times. These limits must be set per leave type, per pupil.
 
-![](assets/screenshots/leave-module/leave-module-02.png)*Note that if leave limits are not set for each pupil and for each leave type this will result in parents, staff and pupils being unable to apply for leaves of types where no limit has been set. In the same way pupils who have a balance of zero leaves for a particular type will not be allowed to request leaves of that type.*
+!!! warning
+    Note that if leave limits are not set for each pupil and for each leave type this will result in parents, staff and pupils being unable to apply for leaves of types where no limit has been set. In the same way pupils who have a balance of zero leaves for a particular type will not be allowed to request leaves of that type.
 
 Leave limits can be changed in one of two ways:
 

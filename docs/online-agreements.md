@@ -29,9 +29,11 @@ However, should the second option be set to “No”, ADAM will also consider th
 
 We can now set whether we would like the text of the agreement and the response chosen by the parent to be **emailed** to them.
 
-![](assets/screenshots/online-agreements/online-agreements-02.png)*Note that changing this setting on old agreements will cause users to be emailed a copy, even if they responded a long time ago.*
+!!! warning
+    Note that changing this setting on old agreements will cause users to be emailed a copy, even if they responded a long time ago.
 
-![](assets/screenshots/online-agreements/online-agreements-03.png)*If one parent agrees to the conditions, both parents will be emailed a copy of the agreement and the response. This does not hold for divorced or otherwise split families where each family member must agree separately.*
+!!! warning
+    If one parent agrees to the conditions, both parents will be emailed a copy of the agreement and the response. This does not hold for divorced or otherwise split families where each family member must agree separately.
 
 Next, we have the **text of the agreement**. This can be formatted using some basic formatting options as shown in the toolbar above the text entry area.
 
@@ -53,13 +55,15 @@ If you edit the text of an agreement in any way, ADAM will automatically archive
 
 **Users who agreed to the old version will be required to agree to the new version.** For this reason, cosmetic changes to the agreement should be kept to a minimum because any changes to the agreement, even cosmetic, will be interpreted by ADAM as a new agreement.
 
-![](assets/screenshots/online-agreements/online-agreements-05.png)*Above, we mentioned that changing the email setting on old agreements would cause the agreements to be emailed out. This only holds if the text of the agreement is not changed when the setting is turned on. If the text is changed, then the instruction to email the agreements is saved with the* ***new*** *agreement and not the old one.*
+!!! warning
+    *Above, we mentioned that changing the email setting on old agreements would cause the agreements to be emailed out. This only holds if the text of the agreement is not changed when the setting is turned on. If the text is changed, then the instruction to email the agreements is saved with the* ***new*** *agreement and not the old one.*
 
 ### Disabling and Enabling Agreements {#h-nkgrawskmapb}
 
 It is possible to disable an agreement. Disabling an agreement means that users will not be asked to agree.
 
-![](assets/screenshots/online-agreements/online-agreements-06.png)*Please be careful when enabling agreements, particularly ones that are not the latest version. Editing these older agreements will cause confusion in the numbering.*
+!!! warning
+    Please be careful when enabling agreements, particularly ones that are not the latest version. Editing these older agreements will cause confusion in the numbering.
 
 ### Viewing Agreement Responses {#h-4l1kzrc43cua}
 

@@ -2,7 +2,8 @@
 
 ADAM allows for roll calls to be taken at school events. Roll calls can be scheduled either from the timetable, from a scheduler (for other non-academic purposes), or on an ad-hoc basis (e.g. sports practices).
 
-![](assets/screenshots/roll-calls/roll-calls-01.png)*Please note that the Roll Call module is intended to replace the* *[Attendance Registers](attendance-registers.md#h-ypqmq1nus3d4)* *feature in ADAM. The Attendance Registers functionality will be removed during the course of 2026.*
+!!! warning
+    *Please note that the Roll Call module is intended to replace the* *[Attendance Registers](attendance-registers.md#h-ypqmq1nus3d4)* *feature in ADAM. The Attendance Registers functionality will be removed during the course of 2026.*
 
 ## Choosing A Roll Call {#h-ng4rxdj7pnao}
 
@@ -61,7 +62,8 @@ Unlike other roll calls, pupils added to a free-attendance roll call are automat
 
 It is possible to mark a pupil as absent for a free-attendance roll call. This might be used to indicate a pupil who was expected to attend, but didn’t.
 
-![](assets/screenshots/roll-calls/roll-calls-08.png)*While ADAM will add pupils to the roll call, if you wish to change any reasons or add any notes, you must click on the* ***Save*** *button that appears at the bottom. If you make changes to this list, and then add another pupil before you save the changes, those changes will be lost.*
+!!! warning
+    *While ADAM will add pupils to the roll call, if you wish to change any reasons or add any notes, you must click on the* ***Save*** *button that appears at the bottom. If you make changes to this list, and then add another pupil before you save the changes, those changes will be lost.*
 
 ## Taking a Roll Call {#h-3q3hfdg9y53v}
 
@@ -85,7 +87,8 @@ Where you are aware that a pupil is leaving the school for a period of time, a *
 
 To add a planned absence, navigate to **Pupils → Roll Call → Record planned absences**. ADAM will show you a list of current planned absences. This list includes and absences that will end at some point today, any current and ongoing absences, and any future dated absences.
 
-![](assets/screenshots/roll-calls/roll-calls-10.png)*Functionality to view a complete list of absences will be added in a future iteration.*
+!!! warning
+    Functionality to view a complete list of absences will be added in a future iteration.
 
 Click on **Add new planned absence** at the top of the screen to add a new planned absence, and search for the pupil’s name in order to continue.
 
@@ -151,7 +154,8 @@ When set to **Yes**, lessons are added. If set to **No** ADAM does not use the 
 
 Each morning at 5am, ADAM will look to see what roll calls need to be taken for the day and schedule them. Ideally, any changes that need to be made (such as schedules or special arrangements) will be done the day prior so that roll calls are created accurately.
 
-![](assets/screenshots/roll-calls/roll-calls-14.png)*Note that because this scheduling is done at 5am each day, if you make any changes to ADAM, the first time you’ll see those changes is tomorrow, after the scheduler has run!*
+!!! warning
+    Note that because this scheduling is done at 5am each day, if you make any changes to ADAM, the first time you’ll see those changes is tomorrow, after the scheduler has run!
 
 Roll Calls can be created from three sources:
 

@@ -30,7 +30,8 @@ ADAM will now upload the photographs and match them to pupils in your database.
 
 Note that one pupil above, Brandon Clark was not matched. In this case, his name has been spelled incorrectly in the photograph. Correct any errors and try again.
 
-![](assets/screenshots/pupil-photographs/pupil-photographs-04.png)*You do not have to upload all the files again, just the ones that needed corrections.*
+!!! warning
+    You do not have to upload all the files again, just the ones that needed corrections.
 
 Now, when searching for a pupil or viewing their profile, their picture will be displayed:
 
@@ -51,11 +52,13 @@ Some examples include:
 
 Visit the pupil’s information page (**Pupils → Pupil Administration → Pupil Info**) and click on the **Document Repository** heading.
 
-![](assets/screenshots/pupil-photographs/pupil-photographs-07.png)*You will need specific privileges to be able to access the Document Repository.*
+!!! warning
+    You will need specific privileges to be able to access the Document Repository.
 
 Expand the **Photographs** section and use the **Choose Files** button to select a new photograph. Click on **Upload File…** to upload the file into the Document Repository.
 
-![](assets/screenshots/pupil-photographs/pupil-photographs-08.png)*One might also take this opportunity of removing any incorrect photographs.*
+!!! warning
+    One might also take this opportunity of removing any incorrect photographs.
 
 Simply uploading a photograph to the document repository will *not* automatically change the photograph that ADAM displays. This must be done in a second step.
 

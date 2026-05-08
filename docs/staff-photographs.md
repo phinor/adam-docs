@@ -49,11 +49,13 @@ Some examples include:
 
 Visit the pupil’s information page (**Staff → Staff Administration → Staff Info**) and click on the **Document Repository** heading.
 
-![](assets/screenshots/staff-photographs/staff-photographs-07.png)*You will need specific privileges to be able to access the Document Repository.*
+!!! warning
+    You will need specific privileges to be able to access the Document Repository.
 
 Expand the **Photographs** section and use the **Choose Files** button to select a new photograph. Click on **Upload File…** to upload the file into the Document Repository.
 
-![](assets/screenshots/staff-photographs/staff-photographs-08.png)*One might also take this opportunity of removing any incorrect photographs.*
+!!! warning
+    One might also take this opportunity of removing any incorrect photographs.
 
 Simply uploading a photograph to the document repository will *not* automatically change the photograph that ADAM displays. This must be done in a second step.
 

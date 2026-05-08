@@ -27,11 +27,13 @@ Whether you’ve just added a new reporting period or are editing an existing re
 
 ![](assets/screenshots/reporting-period-administration/reporting-period-administration-02.png)
 
-![](assets/screenshots/reporting-period-administration/reporting-period-administration-03.png)*If the correct grades are not shown, you can change the starting and ending grades in the* *[Site Settings](changing-site-settings.md#h-3j2qqm3)**.*
+!!! warning
+    *If the correct grades are not shown, you can change the starting and ending grades in the* *[Site Settings](changing-site-settings.md#h-3j2qqm3)**.*
 
 At the top of the screen are the same settings for the reporting period which were set when the [period was added](#h-3u2rp3q). These can be changed here if required.
 
-![](assets/screenshots/reporting-period-administration/reporting-period-administration-04.png)*Please be circumspect about changing the period’s end date. It can have unintended consequences. ADAM uses this date to see who should be in each class. If you change this date after the fact, you may find pupils “disappear” from their classes because they were not enrolled in those classes on that date.*
+!!! warning
+    Please be circumspect about changing the period’s end date. It can have unintended consequences. ADAM uses this date to see who should be in each class. If you change this date after the fact, you may find pupils “disappear” from their classes because they were not enrolled in those classes on that date.
 
 Additional settings control whether this reporting period is considered a **formal report** (in other words, whether it will collect marks for the pupil, as opposed to, say, comments or other behavioural indicators), and whether the reporting period should be shown at all to parents and pupils on their respective **portals**.
 
@@ -113,7 +115,8 @@ Each time, after you add or edit a reporting period’s information, or click on
 
 ![](assets/screenshots/reporting-period-administration/reporting-period-administration-09.png)
 
-![](assets/screenshots/reporting-period-administration/reporting-period-administration-10.png)*The deadlines that require “editing” require privileges to be assigned to staff. See “**[Security Administration](security-administration-for-staff.md#h-3ls5o66)**”.*
+!!! warning
+    *The deadlines that require “editing” require privileges to be assigned to staff. See “**[Security Administration](security-administration-for-staff.md#h-3ls5o66)**”.*
 
 Each line represents a reporting action, which are discussed below, and on each line can be multiple windows, each with a start and end time. The start times are listed in green below the dates on which they take effect, and the end times are shown in red.
 
@@ -165,7 +168,8 @@ This determines when teachers have access to add marks to the mark book. This is
 
 This deadline is a feature that allows the administrator to block access to any marks that are entered while the embargo was enforced. Typically this is used in examination periods in order to prevent pupil stress.
 
-![](assets/screenshots/reporting-period-administration/reporting-period-administration-17.png)*Note that the embargo only affects assessments that are dated between the start and end of the embargo. Setting an embargo from “today” will not hide the results from an assessment dated “yesterday”. Either the embargo’s window must be widened, or the assessment edited to move into the embargo window.*
+!!! warning
+    Note that the embargo only affects assessments that are dated between the start and end of the embargo. Setting an embargo from “today” will not hide the results from an assessment dated “yesterday”. Either the embargo’s window must be widened, or the assessment edited to move into the embargo window.
 
 If a new assessment is added while an embargo is in force, ADAM will automatically set the results release time of the assessment to match that of the embargo. While this can be changed, the effect of the embargo cannot be overridden.
 

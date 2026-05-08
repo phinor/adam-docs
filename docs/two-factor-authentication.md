@@ -114,7 +114,8 @@ See above for how to have Two Factor Authentication removed from your account to
 
 Please be aware that the only time that ADAM and your Authenticator App will communicate is when the QR code is first scanned. After that, there is no synchronisation or communication of any kind between ADAM and the Two-Factor Authentication app that is installed on your phone.
 
-![](assets/screenshots/two-factor-authentication/two-factor-authentication-10.png)*If you remove the app from your phone, or remove the ADAM OTP from within the app, it does not remove Two-Factor Authentication protection from your account. If you remove the code from your app before you remove two-factor authentication from your account, you will no longer be able to log in.*
+!!! warning
+    If you remove the app from your phone, or remove the ADAM OTP from within the app, it does not remove Two-Factor Authentication protection from your account. If you remove the code from your app before you remove two-factor authentication from your account, you will no longer be able to log in.
 
 Similarly, if you remove the protection from your account, it does not automatically remove the code from your app.
 
@@ -200,7 +201,8 @@ ADAM uses a cookie stored on the devices to remember its identity. If the cookie
 
 If a user is enrolled for Two Factor Authentication, they can remove 2FA authentication by navigating to **Administration → Security Administration → Manage Two Factor Authentication** and then clicking on the **Remove 2FA** option next to their name in the list.
 
-![](assets/screenshots/two-factor-authentication/two-factor-authentication-12.png)*Note that if 2FA is reinstated by a user after being removed, their app will have to be updated with a new QR Code. ADAM does not allow a previous code to be used. The code should be removed from the 2FA app when 2FA is disabled from the account.*
+!!! warning
+    Note that if 2FA is reinstated by a user after being removed, their app will have to be updated with a new QR Code. ADAM does not allow a previous code to be used. The code should be removed from the 2FA app when 2FA is disabled from the account.
 
 ## Troubleshooting 2FA and OTPs {#h-np58fehb888b}
 

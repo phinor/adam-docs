@@ -125,7 +125,8 @@ There are **three** components to the installation and you must run the setup i
 2.  Install the “EdusolSAMS Spread” package
 3.  Install the latest “SA-SAMS version”
 
-![](assets/screenshots/sa-sams-export/sa-sams-export-06.png)*Note that, when you open SA-SAMS, you should see a version number in the title bar. Below, it shows “17.0.0.The first two digits correlate to the current calendar year: 17 corresponds with 2017.* ***If you do not see a version number in the title bar****, it indicates that the installation of the three components, discussed above, is not complete.*
+!!! warning
+    *Note that, when you open SA-SAMS, you should see a version number in the title bar. Below, it shows “17.0.0.The first two digits correlate to the current calendar year: 17 corresponds with 2017.* ***If you do not see a version number in the title bar****, it indicates that the installation of the three components, discussed above, is not complete.*
 
 Once installed, look for the “**EdusolSAMS**” icon in your Start menu. When opening the database, choose the “**On the Network**” option and then click on the  “**Browse…**” button to find the database you saved:
 

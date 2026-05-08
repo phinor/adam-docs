@@ -2,7 +2,8 @@
 
 ADAM comes complete with a powerful mark book that allows for complete control over the marks in a teacher’s mark book. The mark book is controlled nearly entirely by each teacher and so they are able to manipulate it to suit their classes’ assessment needs.
 
-![](assets/screenshots/mark-book-administration/mark-book-administration-01.png)*Administrators will need to ensure that there is a reporting period configured to accept marks. See Editing Reporting Period Time Frames on page.*
+!!! warning
+    Administrators will need to ensure that there is a reporting period configured to accept marks. See Editing Reporting Period Time Frames on page.
 
 ## Managing Assessments {#h-nemgm7e6zt9e}
 
@@ -37,7 +38,8 @@ On this screen, the **New Assessment** tab should already be selected, as shown 
 -   Number of Questions: While the word “questions” is used here, this is actually asking for the number of subtotals that you wish to enter. This allows you to record marks against different learning outcomes, sections or topics for either reporting or later analysis.
 -   Copy This Assessment To Other Classes: You also have the option of copying this assessment to any other classes in the same subject and same grade. Only users who have permission to create assessments in other teachers’ markbooks will see this option.
 
-![](assets/screenshots/mark-book-administration/mark-book-administration-04.png)*Note that these assessments will be linked and if a teacher in another class changes the settings of this assessment, it will affect all the classes that use it.*
+!!! warning
+    Note that these assessments will be linked and if a teacher in another class changes the settings of this assessment, it will affect all the classes that use it.
 
 Once you are satisfied with the settings, click on the “Next” button.
 
@@ -189,7 +191,8 @@ Note that this option is not normally enabled by default and so privileges to us
 
 Assessment groups should ideally be created before any other assessments are created.
 
-![](assets/screenshots/mark-book-administration/mark-book-administration-21.png)*If you already have assessments, please note that each assessment will be added to the first assessment group. You are, of course, welcome to edit the assessments and move them to the appropriate group later.*
+!!! warning
+    If you already have assessments, please note that each assessment will be added to the first assessment group. You are, of course, welcome to edit the assessments and move them to the appropriate group later.
 
 On the “Manage assessments and weightings” page for a class, the option for managing assessment groups appears at the top:
 

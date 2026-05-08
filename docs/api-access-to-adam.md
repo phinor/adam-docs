@@ -31,7 +31,8 @@ A list of existing API tokens will be shown. Click on **Add new API Token** to 
 3.  Add **notes** if required. It is a good idea to make note of what service is making use of the API token.
 4.  Click on **Save Token**.
 
-![](assets/screenshots/api-access-to-adam/api-access-to-adam-02.png)*The random 30 character token must be kept secret since will will allow anyone who knows it access to the data stored in the ADAM database. It will need to be shared with the integration provider and great care should be taken with how they are provided the API key. We strongly recommend against sending this information via email or other unsecured means.*
+!!! warning
+    The random 30 character token must be kept secret since will will allow anyone who knows it access to the data stored in the ADAM database. It will need to be shared with the integration provider and great care should be taken with how they are provided the API key. We strongly recommend against sending this information via email or other unsecured means.
 
 ### Managing Existing Tokens {#h-6m7cajpelkf2}
 

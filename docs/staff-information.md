@@ -97,7 +97,8 @@ In order to keep staff information up to date, many schools resort to giving sta
 
 ADAM offers an online update form for staff, very similar in function to the parent detail update forms.
 
-![](assets/screenshots/staff-information/staff-information-07.png)*Staff must have the necessary privilege to update their information. In the staff privileges, the privilege can be found in the “Staff Admin” section, called “Edit personal information (staff\_edit\_own)”.*
+!!! warning
+    Staff must have the necessary privilege to update their information. In the staff privileges, the privilege can be found in the “Staff Admin” section, called “Edit personal information (staff\_edit\_own)”.
 
 There are three steps in the process:
 

@@ -128,7 +128,8 @@ Once you have made a decision, you can then click on the **reject** or **accept
 
 If you choose to reject the upload, be aware that it will be deleted with no way of recovering it.
 
-![](assets/screenshots/document-repository/document-repository-14.png)*Note that ADAM makes no attempt to scan any uploaded files for viruses and provides no warranty that the uploaded files will be safe to open. Please ensure that staff who are responsible for approving document uploads are well-versed in the appropriate computer security protocols to follow, and that their computers are equipped with up-to-date antivirus scanners.*
+!!! warning
+    Note that ADAM makes no attempt to scan any uploaded files for viruses and provides no warranty that the uploaded files will be safe to open. Please ensure that staff who are responsible for approving document uploads are well-versed in the appropriate computer security protocols to follow, and that their computers are equipped with up-to-date antivirus scanners.
 
 ## Staff Permissions {#h-a6043un8am4k}
 
@@ -213,11 +214,13 @@ Click on the **Next** button to continue.
 
 ADAM will now create a ZIP backup of these files which you can download for backup purposes.
 
-![](assets/screenshots/document-repository/document-repository-19.png)*Note that if you do not download this ZIP file and continue with the deletion, you will not be able to access these files since ADAM will delete them permanently from its storage.*
+!!! warning
+    Note that if you do not download this ZIP file and continue with the deletion, you will not be able to access these files since ADAM will delete them permanently from its storage.
 
 ADAM will also show a list of the files that will be deleted. Scroll to the bottom of the page and click on **Delete these files permanently…**
 
-![](assets/screenshots/document-repository/document-repository-20.png)*If ADAM is unable to generate the ZIP backup - perhaps because there are too many files or the files are too big - then you will need to select a smaller date range to delete.*
+!!! warning
+    If ADAM is unable to generate the ZIP backup - perhaps because there are too many files or the files are too big - then you will need to select a smaller date range to delete.
 
 Once the files are deleted, ADAM will confirm the number of files that were removed.
 

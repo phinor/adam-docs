@@ -29,6 +29,7 @@ The application form will also only allow parents to make applications for speci
 
 Finally, if your school is structured in such a way that there is more than one point of graduation, you can select which grades are **graduating grades**.
 
-![](assets/screenshots/grade-settings/grade-settings-02.png)*Note that when the* *[year-end roll-over](year-end-functions.md#h-2gb3jie)* *is done,* ***all people in this grade*** *will be graduated to become alumni. Thus this should only be set if the majority of students leave the school at that point. Mostly, this is for use in situations such as schools who offer a post matric that most of their matric students do not progress to, for example*.
+!!! warning
+    *Note that when the* *[year-end roll-over](year-end-functions.md#h-2gb3jie)* *is done,* ***all people in this grade*** *will be graduated to become alumni. Thus this should only be set if the majority of students leave the school at that point. Mostly, this is for use in situations such as schools who offer a post matric that most of their matric students do not progress to, for example*.
 
 Once you have entered the grade names, click on the **Save changes** button.

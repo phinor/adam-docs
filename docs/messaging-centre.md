@@ -14,7 +14,8 @@ All of the following menu options can be used: they are all the same.
 
 The first step in any of these will be to select the module that you wish to use to send the message with. The “Email” module is available on most servers, and many schools have also enabled SMS sending. If SMS sending is available, you will see one of the SMS modules also available for you to use.
 
-![](assets/screenshots/messaging-centre/messaging-centre-01.png)*Note that sending SMSs does incur costs!*
+!!! warning
+    Note that sending SMSs does incur costs!
 
 ![](assets/screenshots/messaging-centre/messaging-centre-02.png)
 
@@ -32,11 +33,13 @@ ADAM will now show you a list of pupils in the classes you selected and any staf
 
 ![](assets/screenshots/messaging-centre/messaging-centre-05.png)
 
-![](assets/screenshots/messaging-centre/messaging-centre-06.png)*Note that the list of staff might also include other senior teachers and management staff members who have a specific privilege to receive all copies of mail sent via the messaging centre.*
+!!! warning
+    Note that the list of staff might also include other senior teachers and management staff members who have a specific privilege to receive all copies of mail sent via the messaging centre.
 
 There are three tick-boxes in the table header. You can click on these to send to ALL pupils, ALL parents or ALL staff. You’ll see that as you click on these, all the ticks in the column are selected.
 
-![](assets/screenshots/messaging-centre/messaging-centre-07.png)*While sometimes necessary, if you plan on extensive personalisation of the emails with mail merge fields, you are strongly encouraged to limit your email to either only parents or only pupils. Mixing the audience types will be confusing for mail-merge scenarios.*
+!!! warning
+    While sometimes necessary, if you plan on extensive personalisation of the emails with mail merge fields, you are strongly encouraged to limit your email to either only parents or only pupils. Mixing the audience types will be confusing for mail-merge scenarios.
 
 Individual pupils, parents or staff members can either be added or removed from the recipient list by ticking or unticking the boxes next to their names.
 
@@ -58,7 +61,8 @@ The image below shows all options that are available on the Messaging Centre and
 
 Once you have composed your message, click on the **Send** button to have ADAM queue the message for you.
 
-![](assets/screenshots/messaging-centre/messaging-centre-09.png)*Note that regardless of your selected delivery time, all messages are queued with a minimum of 5 minutes lead time before they are processed.*
+!!! warning
+    Note that regardless of your selected delivery time, all messages are queued with a minimum of 5 minutes lead time before they are processed.
 
 ## Composing Your Message {#h-sn7696umzdje}
 

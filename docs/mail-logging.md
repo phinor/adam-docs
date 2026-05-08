@@ -1,6 +1,7 @@
 # Mail Logging {#h-8m8tndmj8fs7}
 
-![](assets/screenshots/mail-logging/mail-logging-01.png)*This feature is no longer actively supported and no further development is being done in this regard. It negatively impacts the ADAM database’s performance considerably and has significant concerns in terms of privacy.*
+!!! warning
+    This feature is no longer actively supported and no further development is being done in this regard. It negatively impacts the ADAM database’s performance considerably and has significant concerns in terms of privacy.
 
 The mail logging feature allows ADAM to monitor a “catch-all” mailbox on your Exchange server and, if it matches any of the addresses to families in ADAM, it will record those emails on their profile.
 

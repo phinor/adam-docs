@@ -28,7 +28,8 @@ To be clear, when you type in your password, your computer encrypts the login re
 
 If you are technically minded, you can read the [technical details](https://www.google.com/url?q=https://haveibeenpwned.com/API/v2%23PwnedPasswords&sa=D&source=editors&ust=1778246676393831&usg=AOvVaw072VEy9cJvWjaVPB7lx50F) of how we manage this [without compromising your password security](https://www.google.com/url?q=https://blog.cloudflare.com/validating-leaked-passwords-with-k-anonymity/&sa=D&source=editors&ust=1778246676394039&usg=AOvVaw3qvsORu21vpdIIWNloDqy6).
 
-![](assets/screenshots/passwords-and-security-information/passwords-and-security-information-01.png)*In the process of checking your password, ADAM stores a SHA-1 hash of your password in the database until such time as the password is checked. SHA-1 hashing is a common, secure, but unsalted mechanism of one-way hashing a password. This hash is required by the haveibeenpwned.com service and is used solely for that reason. The checks happen every 5 minutes. The storage space is located entirely in temporary memory and is not written to disk. The data for password checks is not backed up.*
+!!! warning
+    In the process of checking your password, ADAM stores a SHA-1 hash of your password in the database until such time as the password is checked. SHA-1 hashing is a common, secure, but unsalted mechanism of one-way hashing a password. This hash is required by the haveibeenpwned.com service and is used solely for that reason. The checks happen every 5 minutes. The storage space is located entirely in temporary memory and is not written to disk. The data for password checks is not backed up.
 
 ## ADAM tells me there is a problem with my password. Why? {#h-ew9mw0a78pk2}
 

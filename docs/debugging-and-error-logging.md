@@ -8,4 +8,6 @@ SQL errors occur infrequently. When they happen, a user might notice a red “E1
 
 This screen also contains a link to see the contents of the PHP error log file.
 
-![](assets/screenshots/debugging-and-error-logging/debugging-and-error-logging-01.png)*The error log will only keep entries from the last 90 days. Thus system administrators do not have to worry about this data taking up too much space.*
+!!! warning
+    The error log will only keep entries from the last 90 days. Thus system administrators do not have to worry about this data taking up too much space.
+

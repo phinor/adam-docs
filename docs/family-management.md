@@ -56,11 +56,13 @@ Type in the name of the family that needs to be split.
 
 To confirm the operation, click on the **Split** button at the bottom of the screen.
 
-![](assets/screenshots/family-management/family-management-04.png)*Note that when first split, each family will have a copy of the same household information. It will be necessary to update this manually.*
+!!! warning
+    Note that when first split, each family will have a copy of the same household information. It will be necessary to update this manually.
 
 The children that were linked to the family will automatically be linked to both families.
 
-![](assets/screenshots/family-management/family-management-05.png)*Note that the secondary parent’s family will contain no history - no record of communication, logins, etc. This is because in this process, ADAM has created a brand new family.*
+!!! warning
+    Note that the secondary parent’s family will contain no history - no record of communication, logins, etc. This is because in this process, ADAM has created a brand new family.
 
 ## Swapping Parents in a Family {#h-700ujut50jnw}
 

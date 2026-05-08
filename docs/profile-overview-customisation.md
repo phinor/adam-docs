@@ -13,11 +13,13 @@ There are six privileges in total to allow for the customisation of the screens,
 1.  The ability to personalise one’s *own profile page* for each of “staff”, “pupils”, and “families”.
 2.  Then there is also the option to edit the *default profile page* for each of “staff”, “pupils” and “families”.
 
-![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-02.png)*The default page is the view that all staff members will see unless they’ve customised their own overview page.*
+!!! warning
+    The default page is the view that all staff members will see unless they’ve customised their own overview page.
 
 It would be feasible to allow most teachers the privileges to customise their own overview screens if they want to.
 
-![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-03.png)*Note that they can only ever get access to the information that has been allowed for them to view via the* *[scratch list privileges](scratch-lists.md#h-lwhyrvik02r7)**.*
+!!! warning
+    *Note that they can only ever get access to the information that has been allowed for them to view via the* *[scratch list privileges](scratch-lists.md#h-lwhyrvik02r7)**.*
 
 To [assign the privileges](security-administration-for-staff.md#h-3ls5o66), open the **privileges** view of the appropriate staff group and under “Pupil Admin”, “Staff Admin” or “Family Admin”, look for the **Overview** heading. Then assign the appropriate privileges:
 
@@ -51,7 +53,8 @@ Then, within each block, are several options.
 -   The second option is the **colour** of the block. Some simple options are provided (red, green, yellow and blue). The default is white.
 -   The **width** of the block determines how wide the block will be when displayed. ADAM should adjust the width of the block as you change it to give you an idea of what your final page will look like.
 
-![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-08.png)*The appearance and arrangement of these blocks on the actual page will, of course, depend on the contents of those blocks. ADAM will attempt to arrange them as best as it can. Thus, be aware that this screen may not be a perfect representation! But you are welcome to come back and change the order of the blocks if you need to.*
+!!! warning
+    The appearance and arrangement of these blocks on the actual page will, of course, depend on the contents of those blocks. ADAM will attempt to arrange them as best as it can. Thus, be aware that this screen may not be a perfect representation! But you are welcome to come back and change the order of the blocks if you need to.
 
 -   Finally, one can choose whether to display a list of fields or to display one of the available widgets that are available.
 

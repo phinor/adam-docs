@@ -16,17 +16,20 @@ In the page that follows, choose from the tables that are available to you:
 
 You can also tick the box which includes old (deleted) records for editing. In the case of pupils or staff, for example, ticking this box would include alumni or past staff members in the export. Otherwise, ADAM exports only current pupils and staff members.
 
-![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-02.png)*It is important to realise that using the export and import features has the potential to corrupt your data very easily. Please ensure that you have a backup first to restore your data if something goes wrong.*
+!!! warning
+    It is important to realise that using the export and import features has the potential to corrupt your data very easily. Please ensure that you have a backup first to restore your data if something goes wrong.
 
 ## CSV Import {#h-4h042r0}
 
 Importing data from CSV can be a great time saver is there is lots of information that needs to be changed. ADAM can import into any of the tables that are mentioned above. To import data, navigate to **Administration → Database Administration → Import Data from CSV**.
 
-![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-03.png)*Please pay careful attention to the formatting of numbers and dates in Excel before saving and importing the CSV file. Excel will do things such as reformat ID numbers, drop the leading 0s from phone numbers and so on.* ***It is strongly suggested that, once you have downloaded your export, that you make a copy of this file before starting to edit the contents.*** *In this way, you can always revert changes by importing the file you exported.*
+!!! warning
+    *Please pay careful attention to the formatting of numbers and dates in Excel before saving and importing the CSV file. Excel will do things such as reformat ID numbers, drop the leading 0s from phone numbers and so on.* ***It is strongly suggested that, once you have downloaded your export, that you make a copy of this file before starting to edit the contents.*** *In this way, you can always revert changes by importing the file you exported.*
 
 ### Performing the Import {#h-xjof3vm82ou6}
 
-![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-04.png)*Please take special note of the sections below with regards to* *[structing your import file](#h-dnacho65etbk)* *and ensuring that your file* *[contains only the information that is strictly needed](#h-gzgfmt46lz8a)**.*
+!!! warning
+    *Please take special note of the sections below with regards to* *[structing your import file](#h-dnacho65etbk)* *and ensuring that your file* *[contains only the information that is strictly needed](#h-gzgfmt46lz8a)**.*
 
 Navigage to **Administration → Database Administration → Import Data from CSV**.
 
@@ -118,7 +121,8 @@ These identifiers **must not** be changed. Changing a value inthe first column 
 
 If the identifier column is left blank, ADAM will assume that the record is a new on and will add the new record to the database. For this reason, import files that contain new information should only ever be imported **once**. To make further changes to the data after an import, you will need to do an export first which will contain the new identifiers for the records you’ve just added.
 
-![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-11.png)*Do not attempt an import of the same file more than once if it contains new records – you will end up with duplicated data!*
+!!! danger
+    Do not attempt an import of the same file more than once if it contains new records – you will end up with duplicated data!
 
 With the exception of the first field which must always be included in every import, all columns can be safely deleted from the import file. If you do not plan on making changes to the data in a specific column, it is advisable to delete it before you import the data. If you are updating email addresses, for example, you should remove all columns except for the first column and the appropriate email column.
 

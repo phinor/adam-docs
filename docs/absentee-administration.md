@@ -31,7 +31,8 @@ To add a new absentee reason, click on the link at the top of the page **Add new
 
 In this screen you can give a name for the absentee reason (or change it, if you are editing an existing reason). The second option will tell ADAM whether this reason should count as absent.
 
-![](assets/screenshots/absentee-administration/absentee-administration-03.png)*Be aware that changing the name of the absentee reason - specifically where such a change has a difference in meaning - that past records that have been recorded with this reason will still be shown against this reason, even with its new meaning.*
+!!! warning
+    Be aware that changing the name of the absentee reason - specifically where such a change has a difference in meaning - that past records that have been recorded with this reason will still be shown against this reason, even with its new meaning.
 
 ### Disabling an absentee reason {#h-nxacksw2zjom}
 

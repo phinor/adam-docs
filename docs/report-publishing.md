@@ -106,7 +106,8 @@ If you still cannot get the signature to display, please contact the ADAM Helpde
 
 ADAM can print reports by any class or grade group in the school.
 
-![](assets/screenshots/report-publishing/report-publishing-06.png)*Note that if you choose a class, you* ***must*** *choose a* ***single grade*** *class. This is especially important if the different grades use different templates. ADAM will use the template that for the first pupil on* ***all*** *the other pupils.*
+!!! warning
+    *Note that if you choose a class, you* ***must*** *choose a* ***single grade*** *class. This is especially important if the different grades use different templates. ADAM will use the template that for the first pupil on* ***all*** *the other pupils.*
 
 On the **Reporting** tab, under the **Report Publishing** heading, please have a look for the option **Print a class’s reports** or **Print a grade’s reports**.
 
@@ -135,7 +136,8 @@ Click on the **View Reports** button when you are done. ADAM will now compile a 
 
 ADAM can send emailed reports to each parent of a pupil where the family is set to receive reports and the individual email address of that parent is set to receive reports.  
 
-![](assets/screenshots/report-publishing/report-publishing-08.png)*Thus there are two settings to check if the emailing process indicates that the parents were not sent reports, or if the parents didn’t receive a report.*
+!!! warning
+    Thus there are two settings to check if the emailing process indicates that the parents were not sent reports, or if the parents didn’t receive a report.
 
 To begin, visit the **Reporting** tab and under the **Report Publishing** heading click on **Email a class’s reports**. (There is no option to email a grade’s reports, so you may want to create some grade-wide classes if you don’t have any).
 
