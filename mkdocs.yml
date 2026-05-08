@@ -14,7 +14,7 @@ markdown_extensions:
   - tables
   - toc:
       permalink: false
-      toc_depth: 2-3
+      toc_depth: 2-4
   - smarty
 
 nav:
