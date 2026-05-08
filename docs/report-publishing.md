@@ -12,7 +12,7 @@ To do this:
 
 The page will reload and the template should now appear in the top part of the page.
 
-![](assets/screenshots/report-publishing/report-publishing-01.png)*This video also shows the process:* *[https://youtu.be/XJvKcyLhq9U](https://www.google.com/url?q=https://youtu.be/XJvKcyLhq9U&sa=D&source=editors&ust=1778246676528646&usg=AOvVaw09D730PE59Jc-fe5OxXmuq)* 
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/XJvKcyLhq9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 Once you have enabled the new templates, please don’t forget to select them as the templates to use in the Reporting Period Settings for the appropriate grades.
 

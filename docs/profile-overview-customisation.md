@@ -27,7 +27,7 @@ Note that, as normal, a site administrator will automatically get access to the 
 
 ## Changing the Overview Page {#h-nhpcezw4tuzv}
 
-![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-05.png)*This video also shows the process:* [https://youtu.be/fOtliGrFp0M](https://www.google.com/url?q=https://youtu.be/fOtliGrFp0M&sa=D&source=editors&ust=1778246676398758&usg=AOvVaw3n2Y4s6ED0e34Cesv1rpM6) 
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/fOtliGrFp0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 If you click on the **edit this page** link, ADAM will take you to the overview editing page. Note that if you have privileges to edit both the default page and your own page, ADAM will stop to ask you which page you wish to edit:
 

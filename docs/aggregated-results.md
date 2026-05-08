@@ -49,7 +49,7 @@ For example:
 
 ## Creating Aggregated Result Calculations {#h-mk1c22te1pt8}
 
-![](assets/screenshots/aggregated-results/aggregated-results-02.png)A video explaining how to create Aggregated Results can be found on YouTube at this link: [http://youtu.be/F1z8DAcEVbo](https://www.google.com/url?q=http://youtu.be/F1z8DAcEVbo&sa=D&source=editors&ust=1778246675572221&usg=AOvVaw27MKJKkMpCm4zfnvsBrzya) 
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/F1z8DAcEVbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 To create a new Aggregated Result Calculation, navigate to **Reporting → Aggregated Result Calculations → Manage aggregated result calculations**. A list of already created calculations will be shown to you, if any exist.
 
@@ -126,7 +126,7 @@ You can add as many lines as you like. Each line will appear as a separate colum
 
 ## Using an Aggregated Result Calculation as a Year-To-Date Result {#h-40bijf1pspnp}
 
-![](assets/screenshots/aggregated-results/aggregated-results-11.png)A video on how to assign Aggregated Results to become year-to-date marks is available here: [http://youtu.be/hZjMpQKarA4](https://www.google.com/url?q=http://youtu.be/hZjMpQKarA4&sa=D&source=editors&ust=1778246675580438&usg=AOvVaw122uIPrCAla8zRIpbTIgF0) 
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/hZjMpQKarA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 You must have [created your aggregated result calculation](#h-mk1c22te1pt8) first.
 

@@ -156,7 +156,7 @@ It’s the same information, but just arranged slightly differently. See now tha
 
 The Scratch List fields are used widley across ADAM to show information about pupils, staff and families. However, it may be desirable to limit the information that specific teachers can see, specifically in light of the POPI Act. ADAM Allows you to restrict the fields that the groups of teachers can see. These changes will impact both the scratch lists that are generated and other areas in ADAM where the values are shown.
 
-![](assets/screenshots/scratch-lists/scratch-lists-10.png)*This video shows the process:* [https://youtu.be/Aup59n6XZhM](https://www.google.com/url?q=https://youtu.be/Aup59n6XZhM&sa=D&source=editors&ust=1778246676673829&usg=AOvVaw0ofRPFp7sd88b4H0hmwm5t) 
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/Aup59n6XZhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 *Note carefully that people who have the privileges to add and edit pupils, families or staff will always be able to see all the information on the respective editing screens. However, they may still be restricted from creating scratch lists with that information.*
 

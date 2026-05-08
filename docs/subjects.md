@@ -43,7 +43,7 @@ Each of these functions is discussed in more detail below.
 
 A new subject can be added by clicking on the **Subjects** tab, under the **Subject Administration** section, click on the **Edit the Subjects** option. Clicking on the link near the top **“Add a new subject”** will show the screen depicted alongside.
 
-![](assets/screenshots/subjects/subjects-03.png) *Here is a video walk-through:* [https://youtu.be/Wc0\_U8x9F-I](https://www.google.com/url?q=https://youtu.be/Wc0_U8x9F-I&sa=D&source=editors&ust=1778246676784119&usg=AOvVaw1GNC485bZjISCL4T0NUqls) 
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/Wc0_U8x9F-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ![](assets/screenshots/subjects/subjects-04.png)
 

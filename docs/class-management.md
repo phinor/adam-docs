@@ -8,7 +8,7 @@ A class can be considered a container. Its primary purpose is to link a teacher 
 
 To create a new class, click on the “**Add a new class**” option on the “**Classes**” tab, found under the “**Class Administration**” heading.
 
-![](assets/screenshots/class-management/class-management-01.png)*A video of this process can be found here:* *[https://youtu.be/pfIaJu2TFzA](https://www.google.com/url?q=https://youtu.be/pfIaJu2TFzA&sa=D&source=editors&ust=1778246675855338&usg=AOvVaw2b8hgRJnkuxJmEsVTEx2Jj)* 
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/pfIaJu2TFzA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 The following screen is shown:
 

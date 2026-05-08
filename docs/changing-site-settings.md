@@ -1,6 +1,6 @@
 # Changing Site Settings {#h-3j2qqm3}
 
-![](assets/screenshots/changing-site-settings/changing-site-settings-01.png)*[http://www.youtube.com/watch?v=lnAzBE0iblg](https://www.google.com/url?q=http://www.youtube.com/watch?v%3DlnAzBE0iblg&sa=D&source=editors&ust=1778246675850820&usg=AOvVaw1EeFKrsAQiCPoDifH_QwY6)* *This video is quite old! Only the first minute or so is relevant since there are a lot more settings now and the screen is displayed slightly differently.*
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/lnAzBE0iblg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 One of the most important aspects of managing the site initially is ensuring that the site settings are correctly configured.
 

@@ -2,7 +2,7 @@
 
 ## Creating a Custom Size Label {#h-sr4w83twoy83}
 
-![](assets/screenshots/labels/labels-01.png)*[https://www.youtube.com/watch?v=dHhNC3wXCNI](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DdHhNC3wXCNI&sa=D&source=editors&ust=1778246676111785&usg=AOvVaw3oEVmyCWL_fDPWl7517rk4)* *(1 minute)*
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/dHhNC3wXCNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 On the “Administration” tab, click on the “Manage Label Sizes” option which appears under the “Site Administration” heading.
 
@@ -22,7 +22,7 @@ When you are done, click on the “Save…” button at the bottom. The new labe
 
 ## Managing Label Templates {#h-lojhvdhppyf}
 
-![](assets/screenshots/labels/labels-04.png)*[https://www.youtube.com/watch?v=8qWuXgfWTFA](https://www.google.com/url?q=https://www.youtube.com/watch?v%3D8qWuXgfWTFA&sa=D&source=editors&ust=1778246676113537&usg=AOvVaw3zyNZJxFi69k8vY-DD49se)* *(3 minutes)*
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/8qWuXgfWTFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 We create label templates that ADAM will use to fill in the appropriate data when we want to create labels. To create a new label template, look at the “Administration” tab and, under the “Site Settings” heading, click on the “Edit Labels” option.
 

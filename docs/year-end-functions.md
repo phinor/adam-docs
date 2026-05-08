@@ -2,7 +2,7 @@
 
 The following video provides a walk through of the process. Each step is also described below.
 
-![](assets/screenshots/year-end-functions/year-end-functions-01.png)*A YouTube video that runs through these instructions can be found here:* *[https://youtu.be/E0Ek21XQAqM](https://www.google.com/url?q=https://youtu.be/E0Ek21XQAqM&sa=D&source=editors&ust=1778246676880919&usg=AOvVaw20JB2SFUB-eRYiaLNGLp4M)* 
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/E0Ek21XQAqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ## Before You Begin {#h-so7smz9ci41l}
 

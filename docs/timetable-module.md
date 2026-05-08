@@ -4,7 +4,7 @@ The timetable module displays current timetables in ADAM for staff and pupils, a
 
 ## Creating a Timetable {#h-klnf623z9grp}
 
-![](assets/screenshots/timetable-module/timetable-module-01.png)**VIDEO:** [https://youtu.be/cYVtdd6xuyk](https://www.google.com/url?q=https://youtu.be/cYVtdd6xuyk&sa=D&source=editors&ust=1778246676804323&usg=AOvVaw0eK7znftNPHunYjSHZ3JGo)
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/cYVtdd6xuyk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 The process of creating a timetable is a reasonably simple one. Usefully, one school can have multiple timetables so it is possible for schools with combined prep and high schools to enter and manage their timetables separately or with different numbers of schedules etc.
 
@@ -38,7 +38,7 @@ Once you are satisfied with your days, you can click on the **Save this Schedule
 
 ## Creating Daily Schedules {#h-5gedwwc8rueo}
 
-![](assets/screenshots/timetable-module/timetable-module-06.png)***VIDEO:*** *[https://youtu.be/VI3cl1n0mBA](https://www.google.com/url?q=https://youtu.be/VI3cl1n0mBA&sa=D&source=editors&ust=1778246676807565&usg=AOvVaw3KKeaILOYV6w6VNHW3JwKg)*
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/VI3cl1n0mBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 A daily schedule refers to the times for the lessons on a particular day. Many schools have a “week day” schedule and a slightly different “Friday” schedule (perhaps because of an assembly). Some schools also have different schedules for different grades - this often happens when boarders eat lunch in two sessions in the dining hall.
 
@@ -70,7 +70,7 @@ Firstly, note that lesson 1 has no times associated with it. In this schedule, t
 
 ## Adding Lessons to the Timetable {#h-p9iuvz2tl7vr}
 
-![](assets/screenshots/timetable-module/timetable-module-11.png)***VIDEO:*** *[https://youtu.be/wkhb8lUUIfc](https://www.google.com/url?q=https://youtu.be/wkhb8lUUIfc&sa=D&source=editors&ust=1778246676810320&usg=AOvVaw2TdLGFkDSAI3Low1_PL-E2)*
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/wkhb8lUUIfc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 The steps above setup the framework for the timetable. It is now time to capture the actual lessons.
 
@@ -110,7 +110,7 @@ One can click on the check-boxes individually, but by clicking on the yellow num
 
 ## Adding Days to a Calendar {#h-4dyracbn67lz}
 
-![](assets/screenshots/timetable-module/timetable-module-18.png)***VIDEO:*** *[http://youtu.be/A79nSgj-gEA](https://www.google.com/url?q=http://youtu.be/A79nSgj-gEA&sa=D&source=editors&ust=1778246676813941&usg=AOvVaw0JcV40U6V4I2slJmScyFX9)*
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/A79nSgj-gEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 Once you have set up each grade with their timetable it is important to tell ADAM which dates correspond with which days in the timetable and, of course, with which schedule.
 
@@ -162,7 +162,7 @@ On public holidays, you may wish to remove the lessons from the timetable. From 
 
 ## Subscribing to a Timetable {#h-8xmm4hc11xwi}
 
-![](assets/screenshots/timetable-module/timetable-module-21.png)***VIDEO:*** *[https://youtu.be/\_Uy2YPnefjs](https://www.google.com/url?q=https://youtu.be/_Uy2YPnefjs&sa=D&source=editors&ust=1778246676820994&usg=AOvVaw1LNyqDEksIrUSGhZoX4-wr)* 
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/_Uy2YPnefjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 When looking at a staff or student timetable, also in the pupil portal, a link is provided to an iCAL file which is a standard method of importing calendar entries. This is supported by all major calendaring software, including Outlook, Google Calendar and the iOS Calendar apps.
 

@@ -8,7 +8,7 @@ Foundation Phase grades (Grades R - 3) make use of ASs to report on the pupilsâ€
 
 One final point is that LOs and ASs should be considered as objective measures of academic performance. Recording of behavioural and attitudinal measures, the subjective measures, should rather be done by means of Behavioural Indicators.
 
-![](assets/screenshots/learning-outcomes-and-assessment-standards/learning-outcomes-and-assessment-standards-01.png)*A video on managing Learning Outcomes and Assessment standards can be found here:* *[https://youtu.be/sqvVM-0Fa04](https://www.google.com/url?q=https://youtu.be/sqvVM-0Fa04&sa=D&source=editors&ust=1778246676119641&usg=AOvVaw2sWxnAyBp6EsofN5fSCFI9)*Â 
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/sqvVM-0Fa04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ## Managing Learning Outcomes {#h-deo5jvne1x4g}
 
