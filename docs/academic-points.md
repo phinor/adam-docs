@@ -121,7 +121,7 @@ The next common use-case is that these points should lead to consequences. In th
 
 The most important aspects with this second category are that there is an **Attendance Register** set - this is so that ADAM can help you determine which awards are new and which are old, and the **Points Type** here can be set to “count individual entries” because this category will store only the awards that result from the points and not the points themselves. The expiry settings should be customised to your needs.
 
-Finally, in the setup, we will deal with the [consequences](#h-2lwamvv) of the “Academic Points”.
+Finally, in the setup, we will deal with the consequences of the “Academic Points”.
 
 ![](assets/screenshots/academic-points/academic-points-10.png)
 

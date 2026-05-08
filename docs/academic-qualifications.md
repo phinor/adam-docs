@@ -1,6 +1,6 @@
 # Academic Qualifications {#h-lnxbz9}
 
-ADAM uses the idea of an Academic Qualification to determine the [levels and symbol set](level-descriptors.md#h-pkwqa1) that should be used and how the [promotion results](#h-3ks3rjh683tz) are calculated.
+ADAM uses the idea of an Academic Qualification to determine the [levels and symbol set](level-descriptors.md#h-pkwqa1) that should be used and how the promotion results are calculated.
 
 Schools typically assign qualifications to different grade years. For example, Grade 8 and 9 would belong to the GETC qualification whereas Grades 10 through 12 would belong to the National Senior Certificate qualification. The symbol sets for these two qualifications are the same, but their promotion criteria are different.
 

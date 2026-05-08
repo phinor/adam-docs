@@ -6,7 +6,7 @@ There are two main mechanisms to update family information. The first involves s
 
 Very often schools will have confidential information or, at the very least, information that is not within a parent’s purview to change. This might be the pupil’s sport house, or grade, for example. An example is often the “General Notes” field in a pupil’s profile which schools use to record confidential information. Such information should not be presented to parents for them to view and update.
 
-ADAM can allow certain fields to be shown and/or hidden on detail update forms. More information can be found in the sections discussing the management of [core database fields](#h-3wu8o96d2b56) and [custom database fields](database-field-management.md#h-1hmsyys).
+ADAM can allow certain fields to be shown and/or hidden on detail update forms. More information can be found in the sections discussing the management of core database fields and [custom database fields](database-field-management.md#h-1hmsyys).
 
 Only the fields that are allowed to show on an update form will show. This affects both the [hardcopy](#h-dw2rkqlntt5d) and [online](#h-kcsulkk6x2rk) detail update forms. Field restrictions configured here apply to every flow described on this page, including the forced-update interrupt — there is no need to re-audit your update profiles when adopting forced updates.
 
@@ -18,7 +18,7 @@ The form is produced showing all existing information regarding the family on th
 
 ![](assets/screenshots/family-detail-updates/family-detail-updates-01.png)
 
-Note that the [schools can choose which fields appear on the form](#h-3wu8o96d2b56), and that such customisations will carry to both this printed form and the online detail update form discussed below.
+Note that the schools can choose which fields appear on the form, and that such customisations will carry to both this printed form and the online detail update form discussed below.
 
 ### Producing a Detail Form for a Single Family {#h-4msqnwjw8hm1}
 

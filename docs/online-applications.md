@@ -90,7 +90,7 @@ ADAM has four different data capture screens for each of families and pupils. Th
 -   Applying: this is done *externally* by a parent applying for a position at your school.
 -   Updating: this is done *externally* by a parent updating their contact details.
 
-Each of these screens [can be customised](#h-3wu8o96d2b56), within reason, to show only the fields that are required.
+Each of these screens can be customised, within reason, to show only the fields that are required.
 
 Spend a moment deciding which fields are necessary for an application form. Our advice is to be conservative in what you ask for. Remember that with the introduction of the Protection of Personal Information Act, it will be an offence to store information unnecessarily.
 
@@ -436,7 +436,7 @@ When parents click on the link provided, ADAM will provide an application form f
 
 ![](assets/screenshots/online-applications/online-applications-08.png)
 
-The contents of this application form can be customised by controlling which fields appear in the application form within the [core database field management screen](#h-3wu8o96d2b56).
+The contents of this application form can be customised by controlling which fields appear in the application form within the core database field management screen.
 
 There is a button at the bottom of the form to save it.
 
