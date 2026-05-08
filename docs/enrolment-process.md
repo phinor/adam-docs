@@ -11,26 +11,23 @@ Broadly speaking there are three stages to which a pupil can be assigned at any 
 Any amount of customisable Registration Statuses can be created within each of these. By default, the following stages exist:
 
 1.  Admissions
-
-1.  Applicant
-2.  Withdrawn Applicant
+    1.  Applicant
+    2.  Withdrawn Applicant
 
 2.  Current
-
-1.  Current Enrolment
-2.  Withdrawal Notice Received
-3.  Transferred
-4.  Excluded
-5.  Deceased
-6.  Dropped Out
+    1.  Current Enrolment
+    2.  Withdrawal Notice Received
+    3.  Transferred
+    4.  Excluded
+    5.  Deceased
+    6.  Dropped Out
 
 3.  Alumnus
+    1.  Active Alumnus
+    2.  Inactive Alumnus
+    3.  Deceased
 
-1.  Active Alumnus
-2.  Inactive Alumnus
-3.  Deceased
-
-Each of these stages can either be classified as “active” or “inactive”. For example, “current enrolment” and “withdrawal notice received” are *active* statuses, whereas “transferred”, “excluded”, “deceased” and “dropped out” are all *inactive* statuses.
+Each of these stages can either be classified as “active” or “inactive”. For example, “current enrolment” and “withdrawal notice received” are *active* statuses, whereas “transferred”, “excluded”, “deceased” and “dropped out” are all *inactive* statuses.
 
 Each of the three main categories has a default stage. When a pupil is first assigned to one of the main categories, they are automatically assigned to the default registration stage within that category. The default options are:
 
@@ -92,12 +89,12 @@ At the top of the “Manage Registration Statuses” screen (see the previous se
 ![](assets/screenshots/enrolment-process/enrolment-process-05.png)
 
 -   Enter the name of the **registration status**. This name should be unique since you don’t want to confuse yourself with other statuses.
--   Indicate whether pupils that are assigned to this status are **active** on your system (e.g. waiting for admissions, are currently enrolled, etc.).
+-   Indicate whether pupils that are assigned to this status are **active** on your system (e.g. waiting for admissions, are currently enrolled, etc.).
 -   Indicate which **registration stage** this status applies to.
--   It is possible to **hide pupils** who belong to this registration status from families on the family portal. This is particularly useful for statuses which might indicate a deceased pupil, for example
--   If the status is a “CURRENT” or  “INACTIVE” status, you must specify a corresponding **LURITS reason** for the status. Failing to do so will result in future LURITS submissions being potentially rejected.
+-   It is possible to **hide pupils** who belong to this registration status from families on the family portal. This is particularly useful for statuses which might indicate a deceased pupil, for example
+-   If the status is a “CURRENT” or  “INACTIVE” status, you must specify a corresponding **LURITS reason** for the status. Failing to do so will result in future LURITS submissions being potentially rejected.
 -   The “**Formal Enrolment**” setting should only be set to “No” for current enrolments such as exchange students who are not officially a part of the school’s enrolment and should not be submitted to LURITS or SA-SAMS.
--   The **list order** allows you to specify where in the list you’d like the new status to appear.
+-   The **list order** allows you to specify where in the list you’d like the new status to appear.
 
 ### Disabling a Registration Status {#h-3cqmetx}
 
@@ -105,13 +102,13 @@ Next to each option in the “[Manage Registration Statuses](#h-2dlolyb)” page
 
 ### Managing Registration Status Alerts {#h-ir2py95xyuyp}
 
-Next to each registration status in the list provided on the “[Manage Registration Statuses](#h-2dlolyb)” page, there is an **alerts** option.
+Next to each registration status in the list provided on the “[Manage Registration Statuses](#h-2dlolyb)” page, there is an **alerts** option.
 
 Clicking on this option allows you to select specific staff members who will be notified by ADAM whenever a pupil is added to this registration status.
 
 ![](assets/screenshots/enrolment-process/enrolment-process-06.png)
 
-The registration status alerts are sent daily at set times. These can be configured in the [Site Settings](changing-site-settings.md#h-3j2qqm3) on the **cron** tab, under the heading **Registration Status Alerts**.
+The registration status alerts are sent daily at set times. These can be configured in the [Site Settings](changing-site-settings.md#h-3j2qqm3) on the **cron** tab, under the heading **Registration Status Alerts**.
 
 ![](assets/screenshots/enrolment-process/enrolment-process-07.png)
 
@@ -172,13 +169,13 @@ Navigate to **Admissions → Enrolment Administration → Manage admissions**. O
 
 Select the admissions statuses that need to be rolled over.
 
-*Note carefully that one should specifically avoid chosing a status which has pupils waiting to enter the school in the current year. In the example above, the* ***Confirmed Admissions*** *has been excluded. This is particularly relevant when the selected current year of entry is the same as the current calendar year.*
+*Note carefully that one should specifically avoid chosing a status which has pupils waiting to enter the school in the current year. In the example above, the* ***Confirmed Admissions*** *has been excluded. This is particularly relevant when the selected current year of entry is the same as the current calendar year.*
 
-The **Current year of entry** is the year that the pupils currently have set as their entry year.
+The **Current year of entry** is the year that the pupils currently have set as their entry year.
 
-The **Roll-over to year** is the year that they should be changed to. Note that their dates of entry will be changed to January 1st of that year. This is typically set as the current year or next calendar year.
+The **Roll-over to year** is the year that they should be changed to. Note that their dates of entry will be changed to January 1st of that year. This is typically set as the current year or next calendar year.
 
-**Old pupils to register as** indicates how ADAM should treat pupils who are too old to be registered in your school. For example, if a pupil is waitlisted and in Grade 12, they would be finished school in the following calendar year and thus it makes no sense to keep them on the waitlist. Such pupils are moved into the selected status - in this case, a **Withdrawn applicant**.
+**Old pupils to register as** indicates how ADAM should treat pupils who are too old to be registered in your school. For example, if a pupil is waitlisted and in Grade 12, they would be finished school in the following calendar year and thus it makes no sense to keep them on the waitlist. Such pupils are moved into the selected status - in this case, a **Withdrawn applicant**.
 
 When you’re ready to proceed, click on the button.
 
@@ -209,7 +206,7 @@ Deregistering a pupil moves them from an active to an inactive state on the syst
 
 ### Deregistering an individual pupil {#h-6y0fcwkei0c7}
 
-Pupils can be deregistered either from their information page, on the **admissions record** tab.
+Pupils can be deregistered either from their information page, on the **admissions record** tab.
 
 ![](assets/screenshots/enrolment-process/enrolment-process-16.png)
 
@@ -247,7 +244,7 @@ All pupils can be re-registered individually. To do this:
 
 ![](assets/screenshots/enrolment-process/enrolment-process-20.png)
 
-The pupil will now appear in the **admissions lists as a new applicant** to the school and should be enrolled the same as any other new applicant.
+The pupil will now appear in the **admissions lists as a new applicant** to the school and should be enrolled the same as any other new applicant.
 
 ### Re-registering pupils in bulk (Admissions and Alumni only) {#h-1jlao46}
 
@@ -260,7 +257,7 @@ This method does not work for current pupils who must follow a more rigorous pro
 5.  Adjust the pupils to reflect a new status (even an active one). Enter a note to explain the change.
 6.  Click on the “**Save**” button at the bottom.
 
-These pupils will now appear in the **admissions lists as new applicants** and should be enrolled the same and any other new pupils.
+These pupils will now appear in the **admissions lists as new applicants** and should be enrolled the same and any other new pupils.
 
 ## Editing the Registration Log {#h-626bkbi9babv}
 
@@ -279,7 +276,7 @@ If a pupil is deregistered while any reporting is open, ADAM will behave slightl
 
 Normally, when a pupil is deregistered after a reporting period has closed, their membership of any classes is no longer important or relevant since there are no further reports for them to receive. ADAM will change their registration status to indicate that they have been deregistered, and additionally remove them from all their classes. This can be seen in the class registration log which will show the date of deregistration as the date that their membership of the classes was terminated.
 
-However, when a pupil is deregistered when a reporting period is still open, ADAM must keep in mind the possibility that the pupil will still require a report at the end of the Reporting Period. ADAM cannot remove them from their classes in case there are academic results from those classes that need to be carried over onto the reports. As such, ADAM will set the date of termination to the *day after* the reporting period closes. This future dated deregistration can cause some anomalies which it is useful to be aware of.
+However, when a pupil is deregistered when a reporting period is still open, ADAM must keep in mind the possibility that the pupil will still require a report at the end of the Reporting Period. ADAM cannot remove them from their classes in case there are academic results from those classes that need to be carried over onto the reports. As such, ADAM will set the date of termination to the *day after* the reporting period closes. This future dated deregistration can cause some anomalies which it is useful to be aware of.
 
 ### “Deregistered pupils still show up on my class list!” {#h-woh5umlg3euy}
 
@@ -291,6 +288,6 @@ All of these issues should resolve once the reporting period’s date passes.
 
 Occasionally, it can happen that a pupil is deregistered during the course of a reporting period. From above, remember that this will future-date their removal from their classes. However, it can happen that the decision to deregister the pupil is changed and the pupil re-joins the school.
 
-Initially, there doesn’t appear to be any problems and things carry on as normal. Then, suddenly, one day, the pupil disappears from all their classes! This is because the future-date deregistration takes effect. It is important to take into account that a re-registration does *not* adjust any class registrations and so the future-dated deregistrations are not undone simply because the pupil is re-registered into the school.
+Initially, there doesn’t appear to be any problems and things carry on as normal. Then, suddenly, one day, the pupil disappears from all their classes! This is because the future-date deregistration takes effect. It is important to take into account that a re-registration does *not* adjust any class registrations and so the future-dated deregistrations are not undone simply because the pupil is re-registered into the school.
 
-In this instance, manual intervention is required. The pupil will need to be [added back to his or her classes](class-registration.md#h-2bn6wsx). Advanced users may decide to [edit the class registration records](class-registration.md#h-3mdtgu7s6ipl) to adjust the records to reflect that the registration records are still current.
+In this instance, manual intervention is required. The pupil will need to be [added back to his or her classes](class-registration.md#h-2bn6wsx). Advanced users may decide to [edit the class registration records](class-registration.md#h-3mdtgu7s6ipl) to adjust the records to reflect that the registration records are still current.

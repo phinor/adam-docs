@@ -6,7 +6,7 @@ Aggregates are the overall average across subjects for either a single reporting
 
 ADAM uses the year-to-date results for each subject and then uses your chosen aggregate calculation to calculate a year-to-date aggregate.
 
-This means that ADAM does *not* calculate the year-to-date aggregate in the same way that ADAM calculates the year-to-date results for each subject. The year-to-date calculation looks “across” the year, whereas an aggregate calculation looks “down” the subjects. The promotion aggregate makes use of an aggregate calculation that looks “down” the subjects’ year-to-date results.
+This means that ADAM does *not* calculate the year-to-date aggregate in the same way that ADAM calculates the year-to-date results for each subject. The year-to-date calculation looks “across” the year, whereas an aggregate calculation looks “down” the subjects. The promotion aggregate makes use of an aggregate calculation that looks “down” the subjects’ year-to-date results.
 
 ### Example Calculation {#h-hcd5epe4fge6}
 
@@ -14,13 +14,13 @@ This means that ADAM does *not* calculate the year-to-date aggregate in the sam
 
 In the example above, the pupil takes 8 subjects, and only the top 3 electives are considered. In each column, you can see that the lowest result in each term is omitted - these omitted results have not been shaded.
 
-In Term 1 and Term 2, Physical Science is omitted. In Term 3 Life Sciences is omitted and in Term 4, Geography is omitted from the aggregate results.
+In Term 1 and Term 2, Physical Science is omitted. In Term 3 Life Sciences is omitted and in Term 4, Geography is omitted from the aggregate results.
 
-The final year aggregate is based on the year marks of each subject. Thus, the result of **76.23** is calculated by **omitting Physical Sciences** which is the lowest year mark.
+The final year aggregate is based on the year marks of each subject. Thus, the result of **76.23** is calculated by **omitting Physical Sciences** which is the lowest year mark.
 
 ### Possible discrepancies in calculation methods {#h-wzz26vinlzy4}
 
-Normally, the final year aggregate will match the result if you were to weight the aggregates for each term (in the example above 72.29, 76.14, 76.57 and 78.00). However, because the final year aggregate does not include Phsyical Science when Term 3 and Term 4 results do, and the final year aggregate includes Life Sciences when Term 3’s aggregate does not, and the final year aggregate includes Geography when Term 4’s aggregate does not, the weighted averages are not equivalent.
+Normally, the final year aggregate will match the result if you were to weight the aggregates for each term (in the example above 72.29, 76.14, 76.57 and 78.00). However, because the final year aggregate does not include Phsyical Science when Term 3 and Term 4 results do, and the final year aggregate includes Life Sciences when Term 3’s aggregate does not, and the final year aggregate includes Geography when Term 4’s aggregate does not, the weighted averages are not equivalent.
 
 The weighted average of the Terms in the above example (10% of 72.29 + 30% of 76.14 + 10% of 76.57 + 50% of 78.00) yield a result of 76.73, which is different to the calculated final year aggregate.
 
@@ -62,52 +62,53 @@ Custom calculations are entered using a text box which requires knowledge of the
 
 There are five elements that you can use in the formulae:
 
--   **M**(<subject>, <weighting>): A Mark. fetch the mark from a single subject, provided it with a weighting
--   **W**(<weighting>, <Mark>, <Mark>, …): calculate a weighted average of many <Mark>s, provide it with a weighting.
--   **T**(<number>, <weighting>, <Mark>, <Mark>, …): find the top <number> of  <Mark>s from the list provided and give it a weighting. Note that if fewer marks are available, the weighting is reduced by the same ratio. For example, if “top 3 marks with a weighting of 3” is selected, but only 2 marks are available, the weighting will be adjusted to two thirds of the original weighting: 2.
--   **F**(<number>, <weighting>, <Mark>, <Mark>, …): find the first <number> of <Mark>s from the list provided and weight them. Note that if fewer marks are available, the weighting is reduced by the same ratio. For example, if “first 3 marks with a weighting of 3” is selected, but only 2 marks are available, the weighting will be adjusted to two thirds of the original weighting: 2.
--   **P**(<subject>, <minimum>, <alternative subject>, <weighting>): This fetches a subject’s mark provided it meets the <minimum> mark provided, otherwise it will fetch the mark from the given alternative, if it exists. The alternative could be higher or lower than the preferred mark. If the alternative is not present but the preferred subject is (and is below the minimum result) the preferred subject result is used.
+-   `M(<subject>, <weighting>)`: A Mark. fetch the mark from a single subject, provided it with a weighting
+-   `W(<weighting>, <Mark>, <Mark>, …)`: calculate a weighted average of many `<Mark>`s, provide it with a weighting.
+-   `T(<number>, <weighting>, <Mark>, <Mark>, …)`: find the top `<number>` of  `<Mark>`s from the list provided and give it a weighting. Note that if fewer marks are available, the weighting is reduced by the same ratio. For example, if “top 3 marks with a weighting of 3” is selected, but only 2 marks are available, the weighting will be adjusted to two thirds of the original weighting: 2.
+-   `F(<number>, <weighting>, <Mark>, <Mark>, …)`: find the first `<number>` of `<Mark>`s from the list provided and weight them. Note that if fewer marks are available, the weighting is reduced by the same ratio. For example, if “first 3 marks with a weighting of 3” is selected, but only 2 marks are available, the weighting will be adjusted to two thirds of the original weighting: 2.
+- `P(<subject>, <minimum>, <alternative subject>, <weighting>)`: This fetches a subject’s mark provided it meets the `<minimum>` mark provided, otherwise it will fetch the mark from the given alternative, if it exists. The alternative could be higher or lower than the preferred mark. If the alternative is not present but the preferred subject is (and is below the minimum result) the preferred subject result is used.
 
+!!! tip
     This is used specifically in the scenario where schools offer the Mathematics/Mathematical Literacy combination and want to count Mathematics in the aggregate if it is over 50%, otherwise count Mathematical Literacy. Note also, that the subject results and the minimum requirement are both rounded to their nearest percentages before the comparison is done.
 
-Each of the “<parts>” indicated above is now explained:
+Each of the “`<parts>`” indicated above is now explained:
 
--   <subject> refers to the subject code. This is a whole number such as 15 or 44.
--   <weighting> refers to the relative weighting of this result to other results in the calculation.
--   <number> refers to the number of marks that should be selected from the list of marks provided.
--   <Mark> can be replaced by any one or more of the five elements above.
+-   `<subject>` refers to the subject code. This is a whole number such as 15 or 44.
+-   `<weighting>` refers to the relative weighting of this result to other results in the calculation.
+-   `<number>` refers to the number of marks that should be selected from the list of marks provided.
+-   `<Mark>` can be replaced by any one or more of the five elements above.
 
 An example of an aggregate calculation might look like this:
 
+```
 W(1,
-        M(1, 1),
-        M(2, 1),
-        P(3, 50, 4, 1),
-        W(0.5,
-                M(5, 0.25),
-                M(6, 0.75)
-        )
-        T(3, 3,
-                M(7, 1),
-                M(8, 1),
-                M(9, 1),
-                M(10, 1)
-        )
+        M(1, 1),
+        M(2, 1),
+        P(3, 50, 4, 1),
+        W(0.5,
+                M(5, 0.25),
+                M(6, 0.75)
+        )
+        T(3, 3,
+                M(7, 1),
+                M(8, 1),
+                M(9, 1),
+                M(10, 1)
+        )
 )
+```
 
 This can be interpreted as follows:
 
-“Calculate the weighted average of the following marks (note that this has a weighting of 1, but that is ultimately irrelevant because this result of this bracket is not weighted against anything else):
-
--   Subject 1, adjusted to a mark out of 1
--   Subject 2, adjusted to a mark out of 1
--   Subject 3 (e.g. “Mathematics”), if it is over 50%, otherwise subject 4 (e.g. “Mathematical Literacy”), adjusted to a mark out of 1
--   A result to count as half a subject (e.g. “Life Orientation”), consisting of a weighted average of:
-
--   Subject 5, adjusted to a mark out of 0.25 (e.g. “Physical Education”)
--   Subject 6, adjusted to a mark out of 0.75 (e.g. “LO Theory”)
-
--   The best three results from the list of subject results, weighted to count as three subjects
+> Calculate the weighted average of the following marks (note that this has a weighting of 1, but that is ultimately irrelevant because this result of this bracket is not weighted against anything else):
+> 
+> - Subject 1, adjusted to a mark out of 1
+> - Subject 2, adjusted to a mark out of 1
+> - Subject 3 (e.g. “Mathematics”), if it is over 50%, otherwise subject 4 (e.g. “Mathematical Literacy”), adjusted to a mark out of 1
+> - A result to count as half a subject (e.g. “Life Orientation”), consisting of a weighted average of:
+> - Subject 5, adjusted to a mark out of 0.25 (e.g. “Physical Education”)
+> - Subject 6, adjusted to a mark out of 0.75 (e.g. “LO Theory”)
+> - The best three results from the list of subject results, weighted to count as three subjects
 
 Note that the use of “Life Orientation” and “Physical Education” above are just to provide a context where such a calculation might be used and does not imply a recommended approach!
 
@@ -115,4 +116,6 @@ All spacing and commas in the calculation are entirely optional. New lines are n
 
 The expression below is identical in function to the one above, but, I think you’ll agree, a bit more difficult to understand!
 
-W(1 M(1 1) M(2 1) P(3 50 4 1) W(0.5 M(5 0.25) M(6 0.75)) T(3 3 M(7 1) M(8 1) M(9 1) M(10 1)))
+```
+W(1 M(1 1) M(2 1) P(3 50 4 1) W(0.5 M(5 0.25) M(6 0.75)) T(3 3 M(7 1) M(8 1) M(9 1) M(10 1)))
+```

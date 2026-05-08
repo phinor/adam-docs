@@ -18,7 +18,7 @@ On the ADAM login page you will see a **Log in with a passkey** option. Clickin
 To use a passkey, you need one of the following:
 
 -   A **modern phone or tablet** with fingerprint or face unlock (for example, an iPhone with Face ID or Touch ID, or an Android phone with a fingerprint sensor).
--   A **modern laptop or desktop** with a fingerprint reader, Windows Hello, or Mac Touch ID.
+-   A **modern laptop or desktop** with a fingerprint reader, Windows Hello, or Mac Touch ID.
 -   A **hardware security key** (such as a YubiKey).
 
 Any reasonably up-to-date device will work. You do not need to install any extra app. Passkeys are a standard feature built into iOS, Android, Windows, macOS, and all modern web browsers.

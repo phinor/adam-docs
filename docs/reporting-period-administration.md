@@ -86,7 +86,7 @@ The next set of options is titled **Calculation Information** and allows you to
 -   The **Qualification** sets a default qualification that should be used for this reporting period. This impacts the levels that are awarded for the differing symbols. For more information, please see the section on [academic qualifications](academic-qualifications.md#h-lnxbz9).
 -   The **Aggregate Calculation** field indicates how ADAM calculates the aggregate marks. There are four options that can be chosen:
 
--   Weighted Average calculates an average influenced by the weighting associated with each subject (see [Editing a subject](subjects.md#h-nqu9bv1rb1n)). *This is the normal setting for IP and GET phase pu**pils.*
+-   Weighted Average calculates an average influenced by the weighting associated with each subject (see [Editing a subject](subjects.md#h-nqu9bv1rb1n)). *This is the normal setting for IP and GET phase pu** pils.*
 -   Top 7 Subjects calculates a weighted average using only the top seven subjects.
 -   Top 7 Subjects (with compulsory) calculates a weighted average using any subjects that are marked as compulsory for aggregate calculation with the highest from the remaining subjects until 7 subjects have been included. *This is the option typically chosen for* *NSC* *grades.*
 -   Top 7 Subjects (with compulsory, Maths/Lit combo) calculates the average using the above calculation with the added step of checking whether a candidate offers both Mathematics and Mathematical Literacy. Using the Umalusi guidelines, if the result for Mathematics is 50% or higher, the Mathematical Literacy result is discarded. If it is not, the Mathematics mark is discarded.

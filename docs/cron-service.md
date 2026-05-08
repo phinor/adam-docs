@@ -16,15 +16,13 @@ It is important that the cron service runs regularly. ADAM will notify system ad
 
 The following commands should be run to set up the crontab server by an authorised sudo user:
 
+```bash
 sudo crontab -l -u www-data > ~/tempcron
-
 sudo sed -i "/adam\\/cron\\.php/d" ~/tempcron
-
 echo "\* \* \* \* \* php /var/www/adam/cron.php > /dev/null" >> ~/tempcron
-
 sudo crontab -u www-data ~/tempcron
-
 rm ~/tempcron
+```
 
 In order, these commands will:
 
@@ -36,32 +34,8 @@ In order, these commands will:
 
 ### Windows Servers {#h-dp7kpjtybajb}
 
-You will need to set up a Scheduled Task to run every 5 minutes. This can be done as follows:
-
-1.  Click on “Start” and type “Task Scheduler” to search for the Windows Task Scheduler.
-2.  Create a new task by clicking on “Action” and then “Create Task…”.
-3.  Name the task “ADAM Cron”
-4.  Click on the “Change User or Group” button. In the bottom text box, type in “SYSTEM” and click on “OK”.
-5.  Move to the “Triggers” tag and click on the “New...” button to add a new trigger.
-6.  Change the “Settings” option to “Daily”.
-7.  Change the start time to midnight (“00:00:00”).
-8.  Click on the checkbox “Repeat task every” and in the dropdown list, type “1 minute”.
-
-![](assets/screenshots/cron-service/cron-service-02.png)
-
-9.  Leave all other settings as default and click on the “OK” button.
-10.  Click on the “Actions” tag and click on the “New…” button to add a new action.
-11.  The program/script should point to the “php.exe” executable on your computer. Search for it in Windows Explorer if required.
-12.  In the “Add arguments” box, enter the path to the “cron.php” file within the ADAM source code.
-
-![](assets/screenshots/cron-service/cron-service-03.png)
-
-13.  Click on the “OK” button. NOTE THAT YOUR VALUES WILL ALMOST CERTAINLY DIFFER FROM THE IMAGE ABOVE!
-14.  Click on the “Settings” tab. Change the setting to “Stop the task if it runs longer than” to 1 hour.
-
-![](assets/screenshots/cron-service/cron-service-04.png)
-
-15.  Click on “OK”.
+!!! warning
+    ADAM is not supported on a Windows server.
 
 ## Ping Process {#h-n2rwjer6d4gf}
 
