@@ -48,6 +48,7 @@ article {
     h2, h3 {
         margin-bottom: 1em;
     }
+
     h4 {
         margin-bottom: 0.5em;
     }
@@ -92,17 +93,6 @@ article {
     overflow-x: auto;
 }
 
-#bodycontainer table {
-    border-collapse: collapse;
-    margin: 1em 0;
-}
-
-#bodycontainer table th,
-#bodycontainer table td {
-    border: 1px solid #ccc;
-    padding: 6px 10px;
-}
-
 #bodycontainer blockquote {
     margin: 1em 0;
     padding: 0.5em 1em;
@@ -129,18 +119,23 @@ article {
 }
 
 /* Tables ------------------------------------ */
-table {
-    width: 100%;
+#bodycontainer {
+    & table:not(.gsc-*) {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1em 0;
 
-    th {
-        text-align: left;
-    }
+        & th {
+            text-align: left;
+        }
 
-    td, th {
-        vertical-align: top;
+        & td, & th {
+            border: 1px solid #ccc;
+            padding: 6px 10px;
+            vertical-align: top;
+        }
     }
 }
-
 
 /* Admonitions (warning / note / info / tip / danger) ------------------ */
 
@@ -294,6 +289,7 @@ nav ul.menu1 > li.selected {
         text-decoration: underline;
     }
 }
+
 /* Mobile ---------------------------------------------------------------- */
 
 @media screen and (max-width: 639px) {
