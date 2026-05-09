@@ -61,5 +61,53 @@ class TestStripInlineMarkdown(unittest.TestCase):
         )
 
 
+class TestParseHeading(unittest.TestCase):
+    def test_h1_with_anchor(self):
+        h = ra.parse_heading("# Staff Photographs {#h-evbfhabz0cr1}", line_index=0)
+        self.assertIsNotNone(h)
+        self.assertEqual(h.level, 1)
+        self.assertEqual(h.text, "Staff Photographs")
+        self.assertEqual(h.old_id, "h-evbfhabz0cr1")
+
+    def test_h2_no_anchor(self):
+        h = ra.parse_heading("## Some Section", line_index=5)
+        self.assertIsNotNone(h)
+        self.assertEqual(h.level, 2)
+        self.assertEqual(h.text, "Some Section")
+        self.assertIsNone(h.old_id)
+
+    def test_h4_with_formatting(self):
+        h = ra.parse_heading("#### **Bold** Heading {#h-abc}", line_index=2)
+        self.assertEqual(h.level, 4)
+        self.assertEqual(h.text, "**Bold** Heading")
+        self.assertEqual(h.old_id, "h-abc")
+
+    def test_not_a_heading(self):
+        self.assertIsNone(ra.parse_heading("Just text", line_index=0))
+        self.assertIsNone(ra.parse_heading("    # Indented", line_index=0))
+        self.assertIsNone(ra.parse_heading("#NoSpace", line_index=0))
+
+    def test_strips_trailing_anchor_only_when_id_starts_with_h_dash(self):
+        h = ra.parse_heading("# Foo {#custom}", line_index=0)
+        self.assertIsNotNone(h)
+        self.assertEqual(h.text, "Foo {#custom}")
+        self.assertIsNone(h.old_id)
+
+
+class TestIterHeadings(unittest.TestCase):
+    def test_skips_code_fences(self):
+        text = "\n".join([
+            "# Real Heading {#h-1}",
+            "",
+            "```",
+            "# Not a heading {#h-2}",
+            "```",
+            "",
+            "## Another {#h-3}",
+        ])
+        headings = list(ra.iter_headings(text))
+        self.assertEqual([h.old_id for h in headings], ["h-1", "h-3"])
+
+
 if __name__ == "__main__":
     unittest.main()

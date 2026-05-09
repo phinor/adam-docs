@@ -66,6 +66,39 @@ def slugify(text: str, separator: str = "-") -> str:
     return re.sub(r"[-\s]+", separator, text)
 
 
+_HEADING_RE = re.compile(r"^(#{1,6}) +(.+?)\s*$")
+_TRAILING_HID_RE = re.compile(r"\s*\{#(h-[a-z0-9]+)\}\s*$")
+
+
+def parse_heading(line: str, line_index: int) -> Optional[Heading]:
+    m = _HEADING_RE.match(line)
+    if not m:
+        return None
+    level = len(m.group(1))
+    rest = m.group(2)
+    old_id = None
+    hid_match = _TRAILING_HID_RE.search(rest)
+    if hid_match:
+        old_id = hid_match.group(1)
+        rest = rest[: hid_match.start()].rstrip()
+    return Heading(level=level, text=rest, old_id=old_id, line_index=line_index)
+
+
+def iter_headings(text: str):
+    """Yield Heading objects, skipping content inside ``` fenced blocks."""
+    in_fence = False
+    for i, line in enumerate(text.splitlines()):
+        stripped = line.lstrip()
+        if stripped.startswith("```") or stripped.startswith("~~~"):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        h = parse_heading(line, line_index=i)
+        if h is not None:
+            yield h
+
+
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="phase", required=True)
