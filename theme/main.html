@@ -30,13 +30,12 @@
 
     <article>
         <div id="bodycontainer">
-            <div class="gcse-search site-search site-search-top" data-gname="search-top"></div>
+            <script async src="https://cse.google.com/cse.js?cx=017047591166674552263:0idgv_vajd0">
+            </script>
+            <div class="gcse-search" data-linkTarget="_self"></div>
             {{ page.content }}
-            <div class="gcse-search site-search site-search-bottom" data-gname="search-bottom"></div>
         </div>
     </article>
-
-    <script async src="https://cse.google.com/cse.js?cx=017047591166674552263:0idgv_vajd0"></script>
 
     {% macro render_toc(items) %}
         {% set list_items = items | list %}
