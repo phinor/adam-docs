@@ -41,6 +41,31 @@ class MappingEntry:
     line_index: int
 
 
+_LINK_RE = re.compile(r"\[([^\]]+)\]\([^)]+\)")
+_CODE_RE = re.compile(r"`([^`]+)`")
+_EMPH_RE = re.compile(r"(\*{1,3}|_{1,3})(.+?)\1")
+
+
+def strip_inline_markdown(text: str) -> str:
+    """Remove markdown formatting that shouldn't appear in an anchor slug."""
+    text = _LINK_RE.sub(r"\1", text)
+    text = _CODE_RE.sub(r"\1", text)
+    prev = None
+    while prev != text:
+        prev = text
+        text = _EMPH_RE.sub(r"\2", text)
+    return text
+
+
+def slugify(text: str, separator: str = "-") -> str:
+    """Match markdown.extensions.toc.slugify (default Python-Markdown slugifier)."""
+    text = strip_inline_markdown(text)
+    text = unicodedata.normalize("NFKD", text)
+    text = text.encode("ascii", "ignore").decode("ascii")
+    text = re.sub(r"[^\w\s-]", "", text).strip().lower()
+    return re.sub(r"[-\s]+", separator, text)
+
+
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="phase", required=True)
