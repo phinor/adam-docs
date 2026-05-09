@@ -423,13 +423,24 @@ nav ul.menu1 > li.selected {
     }
 }
 
+/* Search widget --------------------------------------------------------- */
+
+.site-search-top {
+    margin-bottom: 24px;
+}
+
+.site-search-bottom {
+    margin-top: 32px;
+}
+
 /* Print ----------------------------------------------------------------- */
 
 @media print {
     header,
     nav,
     .toc-sidebar,
-    #navtoggle {
+    #navtoggle,
+    .site-search {
         display: none;
     }
 

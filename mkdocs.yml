@@ -4,6 +4,8 @@ site_author: ADAM EduTech
 
 use_directory_urls: false
 
+plugins: []
+
 theme:
   name: null
   custom_dir: theme
