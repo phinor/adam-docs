@@ -109,5 +109,58 @@ class TestIterHeadings(unittest.TestCase):
         self.assertEqual([h.old_id for h in headings], ["h-1", "h-3"])
 
 
+class TestBuildFileMapping(unittest.TestCase):
+    def _h(self, level, text, old_id="h-x"):
+        return ra.Heading(level=level, text=text, old_id=old_id, line_index=0)
+
+    def test_no_collisions(self):
+        headings = [
+            self._h(1, "Staff Photographs", "h-1"),
+            self._h(2, "Naming of Photographs", "h-2"),
+            self._h(2, "Uploading Staff Photographs", "h-3"),
+        ]
+        entries = ra.build_file_mapping(headings)
+        self.assertEqual([(e.old_id, e.new_slug, e.explicit) for e in entries], [
+            ("h-1", "staff-photographs", False),
+            ("h-2", "naming-of-photographs", False),
+            ("h-3", "uploading-staff-photographs", False),
+        ])
+
+    def test_collision_disambiguated_by_parent(self):
+        headings = [
+            self._h(1, "Assessment Management", "h-1"),
+            self._h(2, "Overview", "h-2"),
+            self._h(1, "Mark Book Administration", "h-3"),
+            self._h(2, "Overview", "h-4"),
+        ]
+        entries = ra.build_file_mapping(headings)
+        bare = [e for e in entries if e.old_id == "h-2"][0]
+        dup = [e for e in entries if e.old_id == "h-4"][0]
+        self.assertEqual(bare.new_slug, "overview")
+        self.assertFalse(bare.explicit)
+        self.assertEqual(dup.new_slug, "mark-book-administration-overview")
+        self.assertTrue(dup.explicit)
+
+    def test_empty_slug_falls_back_to_section_n(self):
+        headings = [
+            self._h(1, "!!!", "h-1"),
+            self._h(2, "Real", "h-2"),
+        ]
+        entries = ra.build_file_mapping(headings)
+        self.assertEqual(entries[0].new_slug, "section-1")
+        self.assertTrue(entries[0].explicit)
+
+    def test_three_way_collision(self):
+        headings = [
+            self._h(1, "Foo", "h-1"),
+            self._h(2, "Bar", "h-2"),
+            self._h(2, "Bar", "h-3"),
+            self._h(2, "Bar", "h-4"),
+        ]
+        entries = ra.build_file_mapping(headings)
+        slugs = [e.new_slug for e in entries]
+        self.assertEqual(len(set(slugs)), len(slugs))
+
+
 if __name__ == "__main__":
     unittest.main()

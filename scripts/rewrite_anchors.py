@@ -99,6 +99,57 @@ def iter_headings(text: str):
             yield h
 
 
+def build_file_mapping(headings: list[Heading]) -> list[MappingEntry]:
+    """
+    Compute new slugs for a single file's headings, disambiguating collisions
+    by prepending the slug of the nearest higher-level ancestor heading until
+    the result is unique. As a last resort, append a numeric suffix.
+    """
+    natural_slugs: list[str] = [slugify(h.text) for h in headings]
+
+    ancestors: list[list[int]] = []
+    stack: list[int] = []
+    for i, h in enumerate(headings):
+        while stack and headings[stack[-1]].level >= h.level:
+            stack.pop()
+        ancestors.append(list(reversed(stack)))
+        stack.append(i)
+
+    used: set[str] = set()
+    entries: list[MappingEntry] = []
+    for i, h in enumerate(headings):
+        natural = natural_slugs[i]
+        if not natural:
+            slug = f"section-{i + 1}"
+            explicit = True
+        elif natural not in used:
+            slug = natural
+            explicit = False
+        else:
+            slug = natural
+            for j in ancestors[i]:
+                anc_slug = natural_slugs[j] or f"section-{j + 1}"
+                slug = f"{anc_slug}-{natural}"
+                if slug not in used:
+                    break
+            if slug in used:
+                n = 2
+                while f"{slug}-{n}" in used:
+                    n += 1
+                slug = f"{slug}-{n}"
+            explicit = True
+
+        used.add(slug)
+        entries.append(MappingEntry(
+            old_id=h.old_id,
+            new_slug=slug,
+            explicit=explicit,
+            heading=strip_inline_markdown(h.text),
+            line_index=h.line_index,
+        ))
+    return entries
+
+
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="phase", required=True)
