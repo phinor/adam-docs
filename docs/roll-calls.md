@@ -132,10 +132,10 @@ name in order to continue.
   automatically select 23:59 on the same day to mean “*the rest of the day*”.
 - **Certainty**: allows you to define whether teachers can override this particular absence in their roll calls or not.
   If you choose **Definite**, then ADAM will not allow the teacher to change this record when capturing their roll call.
-- **Notes**allows you to put additional comments to explain this absence. Please be aware that these notes will be seen
+- **Notes** allows you to put additional comments to explain this absence. Please be aware that these notes will be seen
   by the teacher taking the roll call and so should not contain overly sensitive information.
 
-Click on **Save**to add this planned absence. The planned absence should now appear in the list of absences:
+Click on **Save** to add this planned absence. The planned absence should now appear in the list of absences:
 
 ![](assets/screenshots/roll-calls/roll-calls-12.png)
 
@@ -249,8 +249,8 @@ should also be adjusted in the timetable.
 ADAM has a basic Roll Call scheduler that allows you to schedule roll calls for specific days in the week for either a
 single class (e.g. “Marimba Band”), or all classes within a subject (e.g. “Registration Class”).
 
-To add a Scheduled Roll Call, navigate to **Administration → Roll Call → Manage scheduled roll calls**. Click on the *
-*New roll call schedule**to add a new roll-call.
+To add a Scheduled Roll Call, navigate to **Administration → Roll Call → Manage scheduled roll calls**. Click on the 
+**New roll call schedule** to add a new roll-call.
 
 ![](assets/screenshots/roll-calls/roll-calls-17.png)
 
