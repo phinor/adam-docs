@@ -217,11 +217,83 @@ def main(argv: list[str]) -> int:
 
 
 def run_plan() -> int:
-    raise NotImplementedError
+    md_files = sorted(p for p in DOCS_DIR.glob("*.md"))
+    by_file: dict[str, list[dict]] = {}
+    lookup: dict[str, str] = {}
+
+    total_entries = 0
+    total_collisions = 0
+
+    for path in md_files:
+        rel = path.relative_to(DOCS_DIR).as_posix()
+        text = path.read_text(encoding="utf-8")
+        headings = list(iter_headings(text))
+        entries = build_file_mapping(headings)
+        by_file[rel] = [asdict(e) for e in entries]
+        for e in entries:
+            if e.old_id is not None:
+                lookup[f"{rel}#{e.old_id}"] = e.new_slug
+        total_entries += len(entries)
+        total_collisions += sum(1 for e in entries if e.explicit)
+
+    MAPPING_PATH.write_text(
+        json.dumps({"by_file": by_file, "lookup": lookup}, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    try:
+        display_path = MAPPING_PATH.relative_to(REPO_ROOT)
+    except ValueError:
+        display_path = MAPPING_PATH
+    print(f"Wrote {display_path}")
+    print(f"  files: {len(md_files)}")
+    print(f"  headings: {total_entries}")
+    print(f"  explicit (collision/empty): {total_collisions}")
+    if total_collisions:
+        print("  explicit slugs (review these):")
+        for rel, items in by_file.items():
+            for item in items:
+                if item["explicit"]:
+                    print(f"    {rel}: {item['new_slug']}  <- {item['heading']!r}")
+    return 0
 
 
 def run_apply() -> int:
-    raise NotImplementedError
+    if not MAPPING_PATH.exists():
+        print(f"ERROR: {MAPPING_PATH} not found. Run --plan first.", file=sys.stderr)
+        return 2
+    data = json.loads(MAPPING_PATH.read_text(encoding="utf-8"))
+    by_file: dict[str, list[dict]] = data["by_file"]
+
+    ref_lookup: dict[tuple[str, str], str] = {}
+    for rel, items in by_file.items():
+        for item in items:
+            if item["old_id"] is not None:
+                ref_lookup[(rel, item["old_id"])] = item["new_slug"]
+
+    files_modified = 0
+    refs_rewritten = 0
+    all_orphans: list[tuple[str, str, str]] = []
+
+    for rel, items in by_file.items():
+        path = DOCS_DIR / rel
+        original = path.read_text(encoding="utf-8")
+        entries = [MappingEntry(**item) for item in items]
+        new_text = rewrite_headings(original, entries)
+        new_text, orphans = rewrite_references(new_text, rel, ref_lookup)
+        all_orphans.extend(orphans)
+        before_refs = len(re.findall(r"\]\([a-z0-9_.-]*#h-[a-z0-9]+\)", original))
+        after_refs = len(re.findall(r"\]\([a-z0-9_.-]*#h-[a-z0-9]+\)", new_text))
+        refs_rewritten += before_refs - after_refs
+        if new_text != original:
+            path.write_text(new_text, encoding="utf-8")
+            files_modified += 1
+
+    print(f"Files modified: {files_modified}")
+    print(f"References rewritten: {refs_rewritten}")
+    print(f"Orphan references (left as-is): {len(all_orphans)}")
+    for src, tgt, old_id in all_orphans:
+        print(f"  ORPHAN: {src} -> {tgt}#{old_id}")
+    return 0
 
 
 if __name__ == "__main__":
