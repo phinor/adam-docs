@@ -1,12 +1,12 @@
-# Report Comments {#h-lwz3zyi4n8aa}
+# Report Comments
 
 Core to ADAM’s functionality is publishing academic reports.
 
-## Before You Begin, Administrators {#h-5ot2ox1rd4l7}
+## Before You Begin, Administrators
 
-Administrators should be careful to follow the [Quick Start Guide](quick-start-guide.md#h-sfh7zceeg5gq) before attempting to have staff members capture report comments. If the necessary classes have not been set up, nor the reporting period configured, it will not be possible for teachers to capture their report comments.
+Administrators should be careful to follow the [Quick Start Guide](quick-start-guide.md#quick-start-guide) before attempting to have staff members capture report comments. If the necessary classes have not been set up, nor the reporting period configured, it will not be possible for teachers to capture their report comments.
 
-## Reporting from Different Perspectives {#h-kyu5rqkocdrf}
+## Reporting from Different Perspectives
 
 Depending on the phase you teach and the reporting comments you are writing, it might be useful to write your report comments in different views. For example:
 
@@ -24,9 +24,9 @@ Look at the diagram below. Here we are looking at Mr Dicey’s English class. No
 
 Importantly, how the information is captured here does not impact how it will be used later when applied to the reporting template. If you enter some of your comments in the “(by pupils)” view, that same information will be visible later if you choose to go and enter other comments “(by class)”.
 
-## Basic Principles of the Reporting Screen {#h-q17z4hg4235u}
+## Basic Principles of the Reporting Screen
 
-Regardless of the view you use to enter your comments, the same things will be visible and will operate in the same way. Depending on the reporting period settings that have been configured, you may or may not see the same things as illustrated below. These settings are controlled and configured by your ADAM Administrator to meet the needs of your reporting template. See the [Troubleshooting section](#h-fwy0wsnc9ls7) later on for some helpful hints when things don’t go as expected.
+Regardless of the view you use to enter your comments, the same things will be visible and will operate in the same way. Depending on the reporting period settings that have been configured, you may or may not see the same things as illustrated below. These settings are controlled and configured by your ADAM Administrator to meet the needs of your reporting template. See the [Troubleshooting section](#troubleshooting-report-comments) later on for some helpful hints when things don’t go as expected.
 
 ![](assets/screenshots/report-comments/report-comments-03.png)
 
@@ -56,7 +56,7 @@ Finally, the “page” icon will show you the marks that this pupil has achieve
 
 Click on any of the icons again to hide their information.
 
-## Saving Report Comments {#h-yfqxs9bqkvtt}
+## Saving Report Comments
 
 You will almost never need to click on the “Save” button at the bottom of the report comment! ADAM will save automatically as soon as you “move off” the level, mark or comment. This is indicated in two ways:
 
@@ -72,15 +72,15 @@ If you do not see these visual clues happening, then your marks are not being sa
 
 If you click on the **Save** button, ADAM will attempt to save all aspects of the report for that pupil. If you received an error message when the automatic save happened earlier, clicking on the **Save** button will force ADAM to resubmit the request to save the information. This can be a life-saver! Note that ADAM will NOT attempt to save “green” blocks, even if you click on the button.
 
-### JavaScript Issues {#h-n6im9kx4tz9s}
+### JavaScript Issues
 
 All this “magic” requires that your web browser be a current version of one of the “ever-green” browsers. These browsers automatically update themselves and apply the latest security patches and features without you having to do anything. These browsers include Google Chrome, Mozilla’s Firefox and Microsoft’s Edge browser. Notably, it does not include Microsoft’s range of Internet Explorer browsers.
 
 Unfortunately, if the JavaScript does not load properly on the page, the magic saving and the error messages alike are all affected. Please watch out for the visual clues. **If it looks like nothing is happening, it might be beause nothing is happening**.
 
-See “[My comments won’t save](#h-ptqlz4itpmd)” in the [Troubleshooting](#h-fwy0wsnc9ls7) section below.
+See “[My comments won’t save](#my-comments-wont-save)” in the [Troubleshooting](#troubleshooting-report-comments) section below.
 
-## Autocorrection in Report Comments {#h-ro0undu23j2d}
+## Autocorrection in Report Comments
 
 ADAM understands some magic commands when editing report comments. For example, if you were to write: “^n has produced work of an excellent standard this term”, then ADAM would know to substitute the ^n characters with the pupil’s name:
 
@@ -90,13 +90,13 @@ Will save and show:
 
 ![](assets/screenshots/report-comments/report-comments-10.png)
 
-In addition to this name swapping, ADAM also supports gender specific autocorrections. The following list is supported by default, but ADAM Administrators can [customise this list](#h-spixugieq9g5).
+In addition to this name swapping, ADAM also supports gender specific autocorrections. The following list is supported by default, but ADAM Administrators can [customise this list](#customising-the-autocorrection-list).
 
 ![](assets/screenshots/report-comments/report-comments-11.png)
 
 Note that these corrections are case-sensitive, so writing “^heshe” would produce “he” or “she”, but writing “^Heshe” would produce “He” or “She” when replaced.
 
-### Customising the Autocorrection List {#h-spixugieq9g5}
+### Customising the Autocorrection List
 
 ADAM Administrators can navigate to **Reporting → Report Comments → Manage autocorrection list**.
 
@@ -104,7 +104,7 @@ Two lists are shown - one with enabled and another with disabled autocorrections
 
 Either click on “edit” next to an existing autocorrection to change it, or click on the “**Add new autocorrection**” link at the top of the screen.
 
-#### The Autocorrection Settings {#h-qrlej3591mm5}
+#### The Autocorrection Settings
 
 ![](assets/screenshots/report-comments/report-comments-12.png)
 
@@ -116,7 +116,7 @@ Some schools like to have a bank of comments so that their teachers can enter a 
 
 While the “^n” code can appear in these autocorrected comments, one cannot use other autocorrection codes within these. For the technically minded, ADAM will not recurse through the comments.
 
-## Modifying Multiple Report Comments {#h-3spbk7ktd8aa}
+## Modifying Multiple Report Comments
 
 ADAM allows you to append, prepend or replace the comments for pupils across multiple selected classes. This is useful for adding in generic-type comments. Appropriate uses are adding a promotion result to the end of the principal’s comment, for example, or helping to prepopulate the Life Orientation comments with some generic - although personalised - comment.
 
@@ -138,9 +138,9 @@ There are three operations that ADAM can perform with your comment:
 
 ***Please be careful with this feature***, especially when choosing classes that belong to other teachers. This operation will modify the comments and there is no way to undo these changes without going through each comment and looking at its change history to copy the old comment back.
 
-## Troubleshooting Report Comments {#h-fwy0wsnc9ls7}
+## Troubleshooting Report Comments
 
-### My comments won’t save {#h-ptqlz4itpmd}
+### My comments won’t save
 
 When entering comments, be observant a and look for the visual clues ADAM provides that your comments are being saved. If you don’t see the visual clues (green blocks, saving messages), then please stop entering your report comments before you enter a whole class which ADAM isn’t saving.
 
@@ -158,7 +158,7 @@ It is important to realise that you must reload the page for the clearing to hav
 
 With any luck, you will only have one or two comments affected before you notice that they aren’t saving.
 
-### My marks on the reporting screen are wrong and won’t update {#h-d8yv9caez322}
+### My marks on the reporting screen are wrong and won’t update
 
 If you change the mark on the reporting screen, ADAM will take special note that you do not want to use the marks generated by the mark book for that particular pupil. Any future requests to update the mark are ignored by ADAM because of the overridden result. When a mark is manually overridden, the following tick box appears on the reporting screen:
 

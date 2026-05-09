@@ -1,16 +1,16 @@
-# Questionnaire Module {#h-b6ux3wguq1hp}
+# Questionnaire Module
 
 ADAM includes the ability to poll teachers about pupils using standardised questionnaires. This can be used to get quick feedback on a pupil’s behaviour in class, comments about their academic performance and more.
 
-## Overview {#h-1x72mssgpryq}
+## Overview
 
 In order to use the Questionnaire module, we need to create a questionnaire, add questions to the questionnaire, distributing them to pupils and then respond to the questionnaire.
 
-## System Administrator’s Note: Privileges {#h-346xv2x83mc1}
+## System Administrator’s Note: Privileges
 
 If you have never used the Questionnaire module before, you will need to set up privileges for the people responsible for creating questionnaires, distributing them to pupils and for responding to the questionnaires.
 
-### Privilege Overview {#h-fdsr4zr3y601}
+### Privilege Overview
 
 The Questionnaire module adds the following privileges to ADAM:
 
@@ -23,7 +23,7 @@ The Questionnaire module adds the following privileges to ADAM:
 
 Example: We recommend assigning the first three privileges to a teacher in charge of pupil affairs. The fourth privilege to the grade controllers, the fifth to all teachers and the last to grade controllers.
 
-### Assigning Privileges {#h-a6s4fyhllod5}
+### Assigning Privileges
 
 Individual privileges are assigned to security groups. Staff may belong to one or more security groups. The privileges are additive and cannot be taken away. Thus if a staff member is given the privilege in one security group, they cannot have it removed by another group that they belong to.
 
@@ -31,7 +31,7 @@ Individual privileges are assigned to security groups. Staff may belong to one o
 2.  The Questionnaire privileges are in the “**Pupil Administration**” section.
 3.  Once the necessary privileges have been assigned to the group, click on the “**Save Privilege Group**” button.
 
-## Creating a Questionnaire {#h-k8pup0s4k72v}
+## Creating a Questionnaire
 
 In the “Pupils” tab, under the “Questionnaires” heading, click on the “Manage Questionnaires” link. A screen will be shown giving you options to manage the questionnaires. If you have no questionnaires, click on the “Add new questionnaire” link to get started.
 
@@ -39,7 +39,7 @@ You will be required to enter a **name** for the questionnaire, an optional des
 
 Click on “Save this questionnaire” when done.
 
-## Managing Questions {#h-zgq55q2aexpj}
+## Managing Questions
 
 Once you have added a new questionnaire, you will immediately be taken to the “Questionnaire questions” screen. You can also get to this screen by following the menu item on the “Pupils” tab and then clicking on “Manage Questionnaire” under the “Questionnaires” heading. In the table of questionnaires that is shown, click on “questions” in the “Actions” column.
 
@@ -55,7 +55,7 @@ ADAM allows five types of questions in the questionnaire:
 
 In the list of questions, you can click on “edit” to change the questions, “delete” to remove the question from the database, or “up” and “down” to change the order of the questions in the questionnaire.
 
-## Assigning the Questionnaire to Pupils {#h-ek48kjz3200r}
+## Assigning the Questionnaire to Pupils
 
 ADAM allows you to assign the questionnaire to an entire class at a time, or to individual pupils. If you have all your pupils in grade groups, then you can assign the entire grade to have questionnaires filled in. All teachers who teach those pupils in subjects which were selected for the questionnaire will receive notifications to complete the questionnaires for those pupils.
 
@@ -63,7 +63,7 @@ The two options can be found on the “Pupils” tab under the “Questionnaires
 
 ADAM will prompt for a deadline date. ADAM will remind teachers about any outstanding questionnaires that they might have until the deadline is past. A daily email is sent as well as notice that is displayed on the welcoming screen.
 
-## Completing the Questionnaires {#h-wvdj8zhx6fzj}
+## Completing the Questionnaires
 
 Completing the questionnaires is straightforward for teachers. Care should be taken to set up the questions carefully so that they are not ambiguous!
 
@@ -75,6 +75,6 @@ Alternatively, there is a link at the top of the table which allows teachers to 
 
 They do not have to fill them all in. ADAM will resume from where they left off when they next login.
 
-## Viewing the Results {#h-7jfihmiqgbpc}
+## Viewing the Results
 
 If teachers have the necessary privileges (see the privileges section above), they will be able to see the results of the questionnaires. To see the results of the questionnaires for a particular pupil, teachers can go to the “Pupil Info” page for a pupil and click on the “Questionnaires” header to get to that section. A list of the completed questionnaires will be shown. If a teacher did not complete a questionnaire for a pupil, their subject will not be listed.

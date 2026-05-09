@@ -1,4 +1,4 @@
-# Enrolment Process {#h-1egqt2p}
+# Enrolment Process
 
 ADAM has a customisable admissions feature which allows schools to create an admissions process that maps to their current workflow.
 
@@ -46,7 +46,7 @@ It is possible, in the case of Applicants and Alumni to move between active and 
 !!! warning
     Current pupils cannot simply change from an inactive to an active status and must be re-registered and enrolled as normal. Please see “Re-registering a Pupil” on page .
 
-## A Simple Example Workflow {#h-3ygebqi}
+## A Simple Example Workflow
 
 This process is followed by a number of schools which allows a simple enough flow of pupils through their system.
 
@@ -72,7 +72,7 @@ When the new term starts, all pupils who are in the “confirmed admissions” c
 
 All pupils who were waitlisted and to whom places were not offered can then either be deferred or deregistered, depending on the admissions policy of the school.
 
-## Managing the Registration Statuses {#h-2dlolyb}
+## Managing the Registration Statuses
 
 To manage the Registration Statuses, click on the “**Admissions**” tab, then under the “**Enrolment Administration**” click on “**Edit the registration statuses**”.
 
@@ -82,7 +82,7 @@ The following screen shows the default registration statuses:
 
 Next to each option you will see listed whether that stage is active or inactive and whether it is the default option or not. Notice that it is not possible to edit the default actions.
 
-### Adding a new Registration Status {#h-sqyw64}
+### Adding a new Registration Status
 
 At the top of the “Manage Registration Statuses” screen (see the previous section on how to find this screen), click on the option for “**Add new Registration Status**”:
 
@@ -96,27 +96,27 @@ At the top of the “Manage Registration Statuses” screen (see the previous se
 -   The “**Formal Enrolment**” setting should only be set to “No” for current enrolments such as exchange students who are not officially a part of the school’s enrolment and should not be submitted to LURITS or SA-SAMS.
 -   The **list order** allows you to specify where in the list you’d like the new status to appear.
 
-### Disabling a Registration Status {#h-3cqmetx}
+### Disabling a Registration Status
 
-Next to each option in the “[Manage Registration Statuses](#h-2dlolyb)” page (except for the default statuses), it is possible to disable the registration statuses. This will not delete them or have any effect on people who are currently assigned to that status, but no further pupils will be able to be assigned to that status.
+Next to each option in the “[Manage Registration Statuses](#managing-the-registration-statuses)” page (except for the default statuses), it is possible to disable the registration statuses. This will not delete them or have any effect on people who are currently assigned to that status, but no further pupils will be able to be assigned to that status.
 
-### Managing Registration Status Alerts {#h-ir2py95xyuyp}
+### Managing Registration Status Alerts
 
-Next to each registration status in the list provided on the “[Manage Registration Statuses](#h-2dlolyb)” page, there is an **alerts** option.
+Next to each registration status in the list provided on the “[Manage Registration Statuses](#managing-the-registration-statuses)” page, there is an **alerts** option.
 
 Clicking on this option allows you to select specific staff members who will be notified by ADAM whenever a pupil is added to this registration status.
 
 ![](assets/screenshots/enrolment-process/enrolment-process-06.png)
 
-The registration status alerts are sent daily at set times. These can be configured in the [Site Settings](changing-site-settings.md#h-3j2qqm3) on the **cron** tab, under the heading **Registration Status Alerts**.
+The registration status alerts are sent daily at set times. These can be configured in the [Site Settings](changing-site-settings.md#changing-site-settings) on the **cron** tab, under the heading **Registration Status Alerts**.
 
 ![](assets/screenshots/enrolment-process/enrolment-process-07.png)
 
-## Moving Pupils from one Admissions Status to Another {#h-1rvwp1q}
+## Moving Pupils from one Admissions Status to Another
 
 When you first add a pupil to the ADAM database, they are assigned to the default admissions status (Admissions: Applicant). It is possible to move them to different statuses as the need arises. For example, after a first round of notifying parents, some may respond and wish to progress to the next round of admissions at which point you will need to change their admissions status.
 
-### Changing pupils’ admissions statuses – a single pupil at a time {#h-4bvk7pj}
+### Changing pupils’ admissions statuses – a single pupil at a time
 
 1.  It is possible to change just a single pupil’s admissions status by finding that pupil’s information profile (Pupils >> Pupil Administration >> Pupil Info) and clicking on the “Admissions Records” section of the profile:
 
@@ -133,7 +133,7 @@ When you first add a pupil to the ADAM database, they are assigned to the defaul
 
 *Once a pupil has been deregistered they can only choose from other inactive statuses using this method. To change this to an active status, the pupil must be “Re-registered”. See later in this section for re-registering pupils.*
 
-### Changing pupils’ admissions statuses – many pupils at a time {#h-2r0uhxc}
+### Changing pupils’ admissions statuses – many pupils at a time
 
 There is a short-cut to managing the registration statuses of many pupils at once. This includes simplifying the transition between active and inactive statuses – specifically when dealing with admissions and alumni statuses.
 
@@ -148,7 +148,7 @@ There is a short-cut to managing the registration statuses of many pupils at onc
 6.  If pupils’ statuses remain the same and no note is entered, no adjustments are made on their admissions record.
 7.  Once the changes are made, click on the “Save Statuses” button at the bottom of the page.
 
-## Changing an Admissions Date {#h-1664s55}
+## Changing an Admissions Date
 
 Occasionally it is necessary to change a pupil’s date of entry. This can be done using the option on the “**Admissions**” tab under the “**Enrolment Administration**” heading: “**Change a pupil’s entry date**”.
 
@@ -159,7 +159,7 @@ Occasionally it is necessary to change a pupil’s date of entry. This can be do
 !!! warning
     When pupils enter a school at the start of the year, their entry date should be captured as 1 January of the year of entry. This is because when the year end procedure happens, ADAM will automatically advance the date to 1 January of the following year. This allows administrators to work on ADAM as if it is the New Year. However, if pupils have an entry date for later on in January, they will not show up as current pupils at that point.
 
-## Rolling-over Waitlisted Pupils {#h-52179ay4tuir}
+## Rolling-over Waitlisted Pupils
 
 It is possible to change the proposed date of entry for any pupils who are not offered places at your school and so keep them on the waitlist for the following year.
 
@@ -183,7 +183,7 @@ ADAM will then show a list of pupils who will be affected by this change and ask
 
 *Please check this list carefully before proceeding. It is not possible to undo this change automatically.*
 
-## Processing Enrolments of Pupils {#h-3q5sasy}
+## Processing Enrolments of Pupils
 
 At the end of the admission process, it is necessary to register those pupils as current pupils. This is normally done prior to the start of the academic year in order to assign those pupil to new classes. This procedure moves pupils from the “Admissions” stage to the “Current Pupils” stage and automatically assigns them to the default Current Pupil registration status.
 
@@ -200,11 +200,11 @@ Those pupils are now enrolled.
 !!! warning
     If any pupil had a future date and was selected to enrol, their enrolment date will automatically be changed to the current date.
 
-## Deregistering a Pupil {#h-25b2l0r}
+## Deregistering a Pupil
 
 Deregistering a pupil moves them from an active to an inactive state on the system. While they will still appear in searches for them, they are not available for selection anywhere else on the system. The deregistration process does a number of other behind-the-scenes operations, including the removal of a pupil from all their classes and a number of other tidying operations.
 
-### Deregistering an individual pupil {#h-6y0fcwkei0c7}
+### Deregistering an individual pupil
 
 Pupils can be deregistered either from their information page, on the **admissions record** tab.
 
@@ -216,7 +216,7 @@ The same effect can be achieved by navigating to **Admissions → Enrolment Admi
 
 ![](assets/screenshots/enrolment-process/enrolment-process-17.png)
 
-### Deregistering pupils in bulk {#h-b8rj3jsv46ba}
+### Deregistering pupils in bulk
 
 Navigate to **Admissions → Enrolment Administration → Deregister pupils in bulk**.
 
@@ -228,11 +228,11 @@ At the top of the screen you can set a deregistration date and add a note. These
 
 Next to the pupils you’d like to deregister, change their status to an appropriate one. Those that are not to be deregistered should be set to “(no change)”. At the bottom of the page, click on the button to **Deregister Selected Pupils**.
 
-## Re-registering a Pupil {#h-kgcv8k}
+## Re-registering a Pupil
 
 If a pupil has been deregistered, there are a few options to re-register them.
 
-### Re-registering pupils individually (Admissions, Current and Alumni) {#h-34g0dwd}
+### Re-registering pupils individually (Admissions, Current and Alumni)
 
 All pupils can be re-registered individually. To do this:
 
@@ -246,7 +246,7 @@ All pupils can be re-registered individually. To do this:
 
 The pupil will now appear in the **admissions lists as a new applicant** to the school and should be enrolled the same as any other new applicant.
 
-### Re-registering pupils in bulk (Admissions and Alumni only) {#h-1jlao46}
+### Re-registering pupils in bulk (Admissions and Alumni only)
 
 This method does not work for current pupils who must follow a more rigorous process.
 
@@ -259,7 +259,7 @@ This method does not work for current pupils who must follow a more rigorous pro
 
 These pupils will now appear in the **admissions lists as new applicants** and should be enrolled the same and any other new pupils.
 
-## Editing the Registration Log {#h-626bkbi9babv}
+## Editing the Registration Log
 
 !!! warning
     In the normal running of ADAM, it should not be necessary to edit the registration log. Please be aware that registering or deregistering pupils solely by editing their registration log will bypass a number of operations and may result in unpredictable behaviour!
@@ -270,7 +270,7 @@ At the bottom of the Admissions Records within the Pupil Information is a regist
 
 The privilege to edit the admissions log should not be given out lightly and can have unintended consequences.
 
-## Deregistration During A Reporting Period {#h-jz51f2khzxix}
+## Deregistration During A Reporting Period
 
 If a pupil is deregistered while any reporting is open, ADAM will behave slightly differently.
 
@@ -278,16 +278,16 @@ Normally, when a pupil is deregistered after a reporting period has closed, thei
 
 However, when a pupil is deregistered when a reporting period is still open, ADAM must keep in mind the possibility that the pupil will still require a report at the end of the Reporting Period. ADAM cannot remove them from their classes in case there are academic results from those classes that need to be carried over onto the reports. As such, ADAM will set the date of termination to the *day after* the reporting period closes. This future dated deregistration can cause some anomalies which it is useful to be aware of.
 
-### “Deregistered pupils still show up on my class list!” {#h-woh5umlg3euy}
+### “Deregistered pupils still show up on my class list!”
 
 Because ADAM has future-dated the deregistration, whenever teachers produce lists to do with the academics, these pupils will still appear on those lists. They will still be in the markbook and will still appear on the reporting screen.
 
 All of these issues should resolve once the reporting period’s date passes.
 
-### “A reregistered pupil no longer shows up on my class list!” {#h-s4uk2xndoncd}
+### “A reregistered pupil no longer shows up on my class list!”
 
 Occasionally, it can happen that a pupil is deregistered during the course of a reporting period. From above, remember that this will future-date their removal from their classes. However, it can happen that the decision to deregister the pupil is changed and the pupil re-joins the school.
 
 Initially, there doesn’t appear to be any problems and things carry on as normal. Then, suddenly, one day, the pupil disappears from all their classes! This is because the future-date deregistration takes effect. It is important to take into account that a re-registration does *not* adjust any class registrations and so the future-dated deregistrations are not undone simply because the pupil is re-registered into the school.
 
-In this instance, manual intervention is required. The pupil will need to be [added back to his or her classes](class-registration.md#h-2bn6wsx). Advanced users may decide to [edit the class registration records](class-registration.md#h-3mdtgu7s6ipl) to adjust the records to reflect that the registration records are still current.
+In this instance, manual intervention is required. The pupil will need to be [added back to his or her classes](class-registration.md#registering-classes-for-a-pupil). Advanced users may decide to [edit the class registration records](class-registration.md#changing-the-registration-dates-for-a-pupil) to adjust the records to reflect that the registration records are still current.

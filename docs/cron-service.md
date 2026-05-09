@@ -1,4 +1,4 @@
-# Cron Service {#h-ti26q7thzwr1}
+# Cron Service
 
 The Cron service runs every 5 minutes to ensure that background process happen in ADAM. Such processes include:
 
@@ -10,9 +10,9 @@ It is important that the cron service runs regularly. ADAM will notify system ad
 
 ![](assets/screenshots/cron-service/cron-service-01.png)
 
-## Setting up the Cron Service {#h-gx2zbn5fx8ep}
+## Setting up the Cron Service
 
-### Linux Servers {#h-ngc17gq8hxj0}
+### Linux Servers
 
 The following commands should be run to set up the crontab server by an authorised sudo user:
 
@@ -32,12 +32,12 @@ In order, these commands will:
 4.  Load the modified cron services.
 5.  Remove the temporary file.
 
-### Windows Servers {#h-dp7kpjtybajb}
+### Windows Servers
 
 !!! warning
     ADAM is not supported on a Windows server.
 
-## Ping Process {#h-n2rwjer6d4gf}
+## Ping Process
 
 One of the background tasks that cron keeps running is the Ping process. Every so often, ADAM contacts our Ping server to report certain statistics, to check for updates and to validate the current server’s licence to operate.
 
@@ -49,24 +49,24 @@ However, if you see any errors on the login landing page relating to the ping se
 
 This error will show if ADAM is not able to contact the Ping server for at least 4 hours.
 
-### Things that can go wrong with the ping process {#h-on5qxnh4bhnr}
+### Things that can go wrong with the ping process
 
-#### The ADAM server has no internet access {#h-odl0h67b99d5}
+#### The ADAM server has no internet access
 
 If the ADAM server is not able to connect to the internet, it cannot contact the Ping server and thus cannot validate the operating licence.
 
 ADAM cannot validate the licence at least once in the preceding 7 day window, ADAM will assume that the licence has expired and block access to the server.
 
-#### The Cron Process is not running {#h-5llknvuuwoxh}
+#### The Cron Process is not running
 
 If the cron process is not running, then the Ping process cannot run. Check for any “cron status” errors on the login landing page.
 
 ![](assets/screenshots/cron-service/cron-service-06.png)
 
-#### The ADAM Server is not able to query DNS {#h-rmklh0px1ak9}
+#### The ADAM Server is not able to query DNS
 
 If the ADAM server cannot lookup the IP address of the Ping server, it won’t be able to contact the server. If this is the case, ADAM will often be unable to send email. Check that mail can be sent from the ADAM Messaging Centre.
 
-#### The Ping Server may be down {#h-bu1udfhlgv3e}
+#### The Ping Server may be down
 
 You can check on the status of the Ping server here: [https://status.adam.co.za/780189792](https://www.google.com/url?q=https://status.adam.co.za/780189792&sa=D&source=editors&ust=1778246675918851&usg=AOvVaw05K7eTGIkb5HfDDmdkQlWr)

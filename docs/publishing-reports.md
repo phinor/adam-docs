@@ -1,3 +1,3 @@
-# Publishing Reports {#h-hi361nwkjaqi}
+# Publishing Reports
 
-Please see the section titled [Report Publishing](report-publishing.md#h-fi2p6xd0k2wk).
+Please see the section titled [Report Publishing](report-publishing.md#report-publishing).

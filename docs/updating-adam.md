@@ -1,14 +1,14 @@
-# Updating ADAM {#h-1h65qms}
+# Updating ADAM
 
 Updates for ADAM are released regularly - at least twice per month and even up to once per day, depending on the reason for the update. Most updates are applied automatically overnight and do not require any user intervention. The process below is only for updates that are not applied automatically and, if there is such an update, you will receive an email warning you of such in advance of the update being made available.
 
 Notifications of large updates with significant changes in functionality are communicated via our mailing list. If you would like to be added to the mailing list, please ask us! Send an email to [help@adam.co.za](mailto:help@adam.co.za).
 
-## Applying Updates Manually {#h-a70b1ukm7y5v}
+## Applying Updates Manually
 
 From 2018, most updates will be applied automatically without any intervention required from you. However, it is useful to know how one can apply an update if it is required for an urgent change.
 
-### To apply an automatically downloaded update {#h-4arjxzkugsl4}
+### To apply an automatically downloaded update
 
 1.  Log into ADAM using an administrator account with the necessary privileges from any computer with Internet access.
 2.  Once logged in, on the the login messages screen, ADAM will tell you that there is an update available.
@@ -17,7 +17,7 @@ From 2018, most updates will be applied automatically without any intervention r
 5.  Please wait for the summary report to be shown. ADAM will show you any inconsistencies that might exist between your server and the manifest that was included in the update.
 6.  Click on the link back to the home page to ensure that there are no other updates available for ADAM.
 
-### To apply an update file sent by email {#h-c1swrph62yb8}
+### To apply an update file sent by email
 
 1.  Save the attachment from the email to your computer.
 2.  Log into ADAM using an administrator account with the necessary privileges from any computer with Internet access.

@@ -1,10 +1,10 @@
-# Subjects {#h-3nqndbk}
+# Subjects
 
 A subject can be thought of as any activity or pursuit that a student is associated with. The most common form that subjects take on is that of an academic subject such as English, History or Physical Science. However sports can also be thought of as subjects as well as other extra-curricular or cultural activities. In addition a reporting item like “Principal’s Comment” can also be thought of as a subject. Subjects can (but don't have to be) reported on also. Thus it is possible for comments to be captured for sports teams and other activities.
 
 Classes, within this paradigm, then form the groups of pupils within that activity. Thus we might have "Red House" and "Blue House" as two groups (or classes) within the subject 'Sports House'."
 
-## Subject Categories {#h-22vxnjd}
+## Subject Categories
 
 Each subject is associated with a subject category. These categories exist for purposes of logical organisation and reporting. The default subject categories in ADAM are as follows:
 
@@ -21,7 +21,7 @@ These categories can be managed by clicking on the **Subjects** tab, under the 
 
 From this screen subject categories can be added, edited, re-ordered and disabled. The order of these categories is largely redundant and for display purposes only. These categories are fully customisable and can be changed to suit your school’s needs.
 
-## Managing the Subjects {#h-hae4nvy648ck}
+## Managing the Subjects
 
 To manage the subjects, click on the **Edit the subjects** menu option, found on the **Subjects** tab under the **Subject Administration** heading. You should see a screen that looks similar to this:
 
@@ -39,7 +39,7 @@ If you have a parallel medium school, the option to enter **translations** will
 
 Each of these functions is discussed in more detail below.
 
-### Adding a new subject {#h-i17xr6}
+### Adding a new subject
 
 A new subject can be added by clicking on the **Subjects** tab, under the **Subject Administration** section, click on the **Edit the Subjects** option. Clicking on the link near the top **“Add a new subject”** will show the screen depicted alongside.
 
@@ -51,7 +51,7 @@ A new subject can be added by clicking on the **Subjects** tab, under the **Sub
 
 For more information about this screen, please see the “**Editing a subject**” section below.
 
-### Editing a Subject {#h-nqu9bv1rb1n}
+### Editing a Subject
 
 The following information is asked for when adding or editing a subject. A description of what is required is given next to each subject below:
 
@@ -124,19 +124,19 @@ The following information is asked for when adding or editing a subject. A descr
 
 Once you are happy with the information, you can now click on the **Save this Subject** button to save the details you’ve captured.
 
-Once you have created your subjects, you are now ready to [create classes](class-management.md#h-mvzndakmkiiy).
+Once you have created your subjects, you are now ready to [create classes](class-management.md#class-management).
 
-### Changing the Order of Subjects {#h-dapvuqadw8la}
+### Changing the Order of Subjects
 
 The order that the subjects are listed in here is used throughout ADAM and on the reports themselves.
 
-When looking at the list of subjects, as [described above](#h-hae4nvy648ck), subjects can be moved using the **up** and **down** options next to each subject. This is only useful for moving a subject a small number of places. If you need to move the subject more than a few positions, click on the **edit** option next to the subject and change its sortorder to reflect its desired position in the list:
+When looking at the list of subjects, as [described above](#managing-the-subjects), subjects can be moved using the **up** and **down** options next to each subject. This is only useful for moving a subject a small number of places. If you need to move the subject more than a few positions, click on the **edit** option next to the subject and change its sortorder to reflect its desired position in the list:
 
 ![](assets/screenshots/subjects/subjects-06.png)
 
 When complete, click on **Save this Subject**.
 
-### Translating Subject Names {#h-ecvd10cxvq8z}
+### Translating Subject Names
 
 If your school is parallel medium and you wish to have the names on subjects appear on the report in the language of teaching and learning, then you can click on the **translations** option next to the subject and enter in the translated names for the subject in each of the eleven official languages:
 
@@ -144,4 +144,4 @@ If your school is parallel medium and you wish to have the names on subjects app
 
 Click on **Save translations** when done.
 
-Importantly, the language of teaching and learning must be set correctly for the class concerned. The restriction here is that each class can only be taught in a single language and if a dual language exists, it would have to be captured as two individual classes on ADAM, one for each language. Have a look at [editing classes](class-management.md#h-2xcytpi) for more information.
+Importantly, the language of teaching and learning must be set correctly for the class concerned. The restriction here is that each class can only be taught in a single language and if a dual language exists, it would have to be captured as two individual classes on ADAM, one for each language. Have a look at [editing classes](class-management.md#editing-an-existing-class) for more information.

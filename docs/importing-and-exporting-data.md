@@ -1,8 +1,8 @@
-# Importing and Exporting Data {#h-3hv69ve}
+# Importing and Exporting Data
 
 ADAM can import and export data directly from a number of tables in the database using CSV (Comma Separated Variable) files. These files are easily edited and manipulated in Excel which can then be imported into ADAM.
 
-## CSV Export {#h-1x0gk37}
+## CSV Export
 
 The CSV Export is a straightforward process to empty the contents of the table into a file that can be edited locally. To export the contents, find the export feature under **Administration → Database Administration → Export Data to CSV**.
 
@@ -19,17 +19,17 @@ You can also tick the box which includes old (deleted) records for editing. In t
 !!! warning
     It is important to realise that using the export and import features has the potential to corrupt your data very easily. Please ensure that you have a backup first to restore your data if something goes wrong.
 
-## CSV Import {#h-4h042r0}
+## CSV Import
 
 Importing data from CSV can be a great time saver is there is lots of information that needs to be changed. ADAM can import into any of the tables that are mentioned above. To import data, navigate to **Administration → Database Administration → Import Data from CSV**.
 
 !!! warning
     *Please pay careful attention to the formatting of numbers and dates in Excel before saving and importing the CSV file. Excel will do things such as reformat ID numbers, drop the leading 0s from phone numbers and so on.* ***It is strongly suggested that, once you have downloaded your export, that you make a copy of this file before starting to edit the contents.*** *In this way, you can always revert changes by importing the file you exported.*
 
-### Performing the Import {#h-xjof3vm82ou6}
+### Performing the Import
 
 !!! warning
-    *Please take special note of the sections below with regards to* *[structing your import file](#h-dnacho65etbk)* *and ensuring that your file* *[contains only the information that is strictly needed](#h-gzgfmt46lz8a)**.*
+    *Please take special note of the sections below with regards to* *[structing your import file](#structuring-your-import-file)* *and ensuring that your file* *[contains only the information that is strictly needed](#import-only-what-you-need)**.*
 
 Navigage to **Administration → Database Administration → Import Data from CSV**.
 
@@ -47,7 +47,7 @@ ADAM can perform **Date-based updates**. Here, ADAM looks at the records “modi
 
 When you are ready,  click on the **Next** button for ADAM to perform the import. ADAM will confirm the number of records that have been updated and/or imported into the database.
 
-### Structuring your import file {#h-dnacho65etbk}
+### Structuring your import file
 
 A CSV import file is very quite easy to structure. There two features that every import file must have.
 
@@ -55,11 +55,11 @@ The first row of the import file must contain field names so that ADAM knows whi
 
 The first column of the import file must contain an “id” field so that ADAM knows which record you are updating. For example, if you are updating a pupil record, the first column will be pupil\_id.
 
-More information [about the fields can be found below](#h-3vac5uf). It is often a good idea to start with an [export of the records](#h-1x0gk37) that you want to update. The export will allow you to start with the correct structure and the correct field names.
+More information [about the fields can be found below](#field-information). It is often a good idea to start with an [export of the records](#csv-export) that you want to update. The export will allow you to start with the correct structure and the correct field names.
 
-### Import only what you need {#h-gzgfmt46lz8a}
+### Import only what you need
 
-One important consideration is that you only need to import the information that you wish to change. This is a good practice to avoid possible corruption of other columns that might have been changed without you knowing. Further information of what might change is [discussed in the section below](#h-mqkb5v1rvdx5).
+One important consideration is that you only need to import the information that you wish to change. This is a good practice to avoid possible corruption of other columns that might have been changed without you knowing. Further information of what might change is [discussed in the section below](#an-important-note-about-working-with-csv-files-in-microsoft-excel-and-other-spreadsheets).
 
 The golden rule is: The less information you import, the less can go wrong!
 
@@ -69,11 +69,11 @@ If you filter your rows in order to only update certain of them (for example, ad
 
 You can sort your file and move columns around - ADAM will use the column headers and ID numbers to work out what has moved where.
 
-### An Important Note About Working With CSV Files in Microsoft Excel and other Spreadsheets {#h-mqkb5v1rvdx5}
+### An Important Note About Working With CSV Files in Microsoft Excel and other Spreadsheets
 
 “CSV” means “Comma Separated Variable”. These files are structured as very simple files that have each value separated by a comma (sometimes a semi-colon). In fact, a CSV file can be opened and edited in a simple text editor, such as Notepad. These files are purposefully simple to allow for maximum compatibility between different editors.
 
-#### The problem: {#h-2jgsxs8jugwl}
+#### The problem:
 
 If you open a CSV file, your computer will probably use Microsoft Excel to open it. Because of the simple nature of the file, Excel will make several assumptions about your data. Because Excel operates mostly on numbers, where it sees things that look like numbers, it will interpret them as such. This includes ID numbers and phone numbers.
 
@@ -81,7 +81,7 @@ This becomes a problem because we expect a phone number to begin with a “0”.
 
 When Excel goes on to save the CSV file, you run the very real possibility that you will corrupt some of the data.
 
-#### The solution: {#h-srgjrljh8dlr}
+#### The solution:
 
 Thankfully, you do not need to import a full set of fields. ADAM uses the field names at the top to determine which information is present in the file and will only update those fields. If any fields are missing, then ADAM won’t change the information in those columns.
 
@@ -113,7 +113,7 @@ When you save the file, use the “Save As” option and change the type to “C
 
 ![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-10.png)
 
-### Updating vs Adding vs Deleting: Learning about the identifier column {#h-2w5ecyt}
+### Updating vs Adding vs Deleting: Learning about the identifier column
 
 ADAM uses this first column to determine whether it should update an existing record (with the matching internal identifier) or create a new one.
 
@@ -130,9 +130,9 @@ Omitting a column will not remove any data. By omitting the column from your imp
 
 You can also savely leave out any rows that you don’t want to change. If you only need to update information about the Grade 8s, for example, you can filter and delete all other pupils from the CSV import file.
 
-It is advisable to remove any columns (except the first “id” column) that you are not making changes to in order to minimise the amount of damage that can be caused by an import. For more information on this, see [Excel and CSV Imports](#h-8413um3c24p8) to learn how Excel can “damage” your data in its quest to be “clever”.
+It is advisable to remove any columns (except the first “id” column) that you are not making changes to in order to minimise the amount of damage that can be caused by an import. For more information on this, see [Excel and CSV Imports](#excel-and-csv-imports) to learn how Excel can “damage” your data in its quest to be “clever”.
 
-## Excel and CSV Imports {#h-8413um3c24p8}
+## Excel and CSV Imports
 
 Please be aware that Excel attempts to automatically assign appropriate data formatting to the CSV file if you open it normally. This is problematic!
 
@@ -183,7 +183,7 @@ Finally, click on “OK”. The dates should now show the new formatting:
 
 ![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-19.png)
 
-## Notes on Pupil Dates ← VERY IMPORTANT! {#h-fdv7yxivobdj}
+## Notes on Pupil Dates ← VERY IMPORTANT!
 
 One of the most confusing thing when importing data into the database, particularly when adding new pupils, are three very important dates:
 
@@ -200,13 +200,13 @@ If any of these fields are omitted or pose problems to the enrolment procedure, 
 
 Without fully understanding these implications, ADAM’s import procedure may seem unpredictable and erratic!
 
-## Field Information {#h-3vac5uf}
+## Field Information
 
 Covered here are the three most important tables that require imported data, and an explanation of each of their fields. Some of these fields require “codes” to be entered in instead of actual values. Where appropriate, these codes are provided later in this document in The Appendices.
 
 In each case, we indicate which fields are required and which are optional. These are for NEW entries and to ensure data consistency in the database.
 
-### Pupil Information {#h-2afmg28}
+### Pupil Information
 
 -   pupil\_id: This is the internal identifier. This column must be present in any pupil-related import, but you must not change any existing number and any new pupils that are to be added must have blank numbers. A sheet filled with only new pupils must still have this column.
 -   pupil\_admin: This is the school’s administration number that is assigned to the pupil and can be filled in here. The same rules apply for numbers if this is a numeric code that requires leading 0s. This field is optional.
@@ -220,10 +220,10 @@ In each case, we indicate which fields are required and which are optional. Thes
 -   pupil\_exit: This field is only completed once the pupil has left the school. **In general updates, this field should be removed from the import**. Even if values are entered here for current students, they will be ignored until such time as the pupil moves through a process to deregister them from the school.
 -   pupil\_registration\_status\_id: This field is an internal field which is used to keep track of the pupil’s most recent – and hence current – registration status. This field should also NOT form part of the update, and if it is present, its values should not be changed. This field is NOT required for new pupils who will have this assigned automatically after the import. Delete the field from the import!
 -   pupil\_idnumber: This is the pupil’s South African ID number. If the pupil is foreign, it is acceptable to put the pupil’s passport number here. This field is optional.
--   pupil\_population\_id: This field stores the pupil’s racial classification. This field is required only for submission and completion of DBE-related surveys. Each group is assigned a specific code which can be found [in the appendix](appendix-a-import-and-export-codes.md#h-n5rssn).
--   pupil\_language\_id: This field stores the pupil’s home language. Note that there is a related field later on if the home language is not an official South African Language. The codes for this field are provided [in the appendix](appendix-a-import-and-export-codes.md#h-375fbgg).
+-   pupil\_population\_id: This field stores the pupil’s racial classification. This field is required only for submission and completion of DBE-related surveys. Each group is assigned a specific code which can be found [in the appendix](appendix-a-import-and-export-codes.md#population-group-codes).
+-   pupil\_language\_id: This field stores the pupil’s home language. Note that there is a related field later on if the home language is not an official South African Language. The codes for this field are provided [in the appendix](appendix-a-import-and-export-codes.md#language-codes).
 -   pupil\_language\_other: This field may not appear in this order and might be found much later on in the import. Still, it is relevant to be spoken about here. If the code for “pupil\_language\_id” was for “Other”, then please fill in the language spoken by the child here. This field is not required.
--   pupil\_disability\_id, pupil\_disability2\_id, pupil\_disability3\_id, pupil\_disability4\_id, pupil\_disability5\_id: These fields store any disabilities that the pupil might have. In most cases, only the first field is consulted, but it is possible to store multiple disabilities if necessary. The codes for this field are provided [in the appendix](appendix-a-import-and-export-codes.md#h-1maplo9).
+-   pupil\_disability\_id, pupil\_disability2\_id, pupil\_disability3\_id, pupil\_disability4\_id, pupil\_disability5\_id: These fields store any disabilities that the pupil might have. In most cases, only the first field is consulted, but it is possible to store multiple disabilities if necessary. The codes for this field are provided [in the appendix](appendix-a-import-and-export-codes.md#disability-codes-pupils).
 -   pupil\_medical\_notes: This is a text field and can contain any relevant medical notes for the pupil. Note that there is a second field further on specifically for allergies, and so this can contain specific information about how to deal with emergencies or situations that might arise with a pupil, for example. This field is optional.
 -   pupil\_family\_notes: This field is used to note any particular arrangements with the family set up. Importantly, any custody information should be captured here. This will be displayed prominently on the family information section of the pupil’s profile. This field is optional.
 -   pupil\_fees\_family\_id, pupil\_residence\_family\_id: These two fields contain the unique identifiers of the families that pay their school fees and which they live with. These fields are difficult to populate without those identifiers and are often best left out. This field is required, but is better set within the ADAM interface.
@@ -236,7 +236,7 @@ In each case, we indicate which fields are required and which are optional. Thes
 -   pupil\_studypermit\_issue: This field contains the date when the study permit was issued. This field is optional.
 -   pupil\_studypermit\_expire: This field contains the date when the current study permit is set to expire. This field is optional.
 -   pupil\_prepschool: This field contains either the prep school or, in some cases, the pupil’s previous school. It is a free text field and is optional.
--   pupil\_nationality: This field contains the country in which their nationality is held, as opposed to the actual nationality (i.e. “South Africa” as opposed to “South African”). A list of countries can be found [in the appendix](appendix-a-import-and-export-codes.md#h-46ad4c2). Note that country names must be copied exactly, including any punctuation, for ADAM to recognise them later. This field is optional.
+-   pupil\_nationality: This field contains the country in which their nationality is held, as opposed to the actual nationality (i.e. “South Africa” as opposed to “South African”). A list of countries can be found [in the appendix](appendix-a-import-and-export-codes.md#countries-recognised-by-adam). Note that country names must be copied exactly, including any punctuation, for ADAM to recognise them later. This field is optional.
 -   pupil\_allergies: This field contains any allergies that the pupil has. This field is optional. This should be taken into account with the medical notes field that appeared earlier.
 -   pupil\_religion: This field contains the religion of the pupils. This field uses a “dynamic lookup” within ADAM and so using standard conventions will help keep data consistent. This field is optional.
 -   pupil\_medaid\_name: This field contains the name of the medical aid that the pupil falls under. This field is optional.
@@ -245,22 +245,22 @@ In each case, we indicate which fields are required and which are optional. Thes
 -   pupil\_medaid\_principal\_id: This field lists the ID number of the principal member. This field is optional.
 -   pupil\_doctor: This field lists the name of the doctor that should be contacted in case of an emergency. This field is optional.
 -   pupil\_doctor\_phone: This field lists the telephone number of the doctor that should be contacted in an emergency. This field is optional.
--   pupil\_orphan\_status: This field lists contains a code relating to which biological parents are living. This field is completely separated in function from existing families and the value here has no bearing on the linking of families to pupils. The codes for this field can be found [in the appendix](appendix-a-import-and-export-codes.md#h-2lfnejv).
+-   pupil\_orphan\_status: This field lists contains a code relating to which biological parents are living. This field is completely separated in function from existing families and the value here has no bearing on the linking of families to pupils. The codes for this field can be found [in the appendix](appendix-a-import-and-export-codes.md#orphan-status-codes).
 -   pupil\_atschool: This “Yes” or “No” field indicates whether the pupil was enrolled in formal schooling prior to enrolment at this school. This field is optional and defaults to “Yes” for new pupils if omitted.
--   pupil\_prevschool\_province: This field requires a province code for the province of the previous school. The province codes can be found [in the appendix](appendix-a-import-and-export-codes.md#h-10kxoro). This field is optional.
--   pupil\_prevschool\_country: If the province code chosen above is “Other Country”, then the country should be completed here. The list of countries can be found [in the appendix](appendix-a-import-and-export-codes.md#h-46ad4c2). This field is optional.
+-   pupil\_prevschool\_province: This field requires a province code for the province of the previous school. The province codes can be found [in the appendix](appendix-a-import-and-export-codes.md#province-codes). This field is optional.
+-   pupil\_prevschool\_country: If the province code chosen above is “Other Country”, then the country should be completed here. The list of countries can be found [in the appendix](appendix-a-import-and-export-codes.md#countries-recognised-by-adam). This field is optional.
 -   pupil\_prevschool\_firstprovince: This “Yes” or “No” field indicates whether this is the first time that a pupil has been registered for formal education in this province. This field is optional.
 -   pupil\_prevschool\_formalgrr: This “Yes” or “No” field indicates whether the pupil was enrolled in a formal Grade R year. The field is optional and defaults to “Yes” if omitted.
 -   pupil\_boarder: This field requires a code indicating the boarding status of the pupil. The list of codes can be found on page . This field is optional and defaults to “No” if omitted.
 -   pupil\_socialgrant\_register: This “Yes” or “No” field indicates whether the pupil is currently registered to receive a social grant. This field is optional and defaults to “No” if omitted.
 -   pupil\_socialgrant\_receive: This “Yes” or “No” field indicates whether the pupil currently receives a social grant – in spite of their registration status. This field is optional and defaults to “No” if omitted.
 -   pupil\_nutrition: This “Yes” or “No” field indicates whether the pupil was part of a state funded nutrition scheme in Grade R. This field is optional and defaults to “No” if omitted.
--   pupil\_teaching\_language\_id: This field indicates the language of teaching and learning. In most schools this will normally be consistent across the school, except, of course, in parallel medium schools. The language codes to be used can be found [in the appendix](appendix-a-import-and-export-codes.md#h-375fbgg). This field is optional.
--   pupil\_preferred\_language\_id: This field indicates the preferred language of the pupil. Normally this is the same as the home language, but could differ for whatever reason. This is used for statistical purposes only. The language codes to be used can be found [in the appendix](appendix-a-import-and-export-codes.md#h-375fbgg). This field is optional.
+-   pupil\_teaching\_language\_id: This field indicates the language of teaching and learning. In most schools this will normally be consistent across the school, except, of course, in parallel medium schools. The language codes to be used can be found [in the appendix](appendix-a-import-and-export-codes.md#language-codes). This field is optional.
+-   pupil\_preferred\_language\_id: This field indicates the preferred language of the pupil. Normally this is the same as the home language, but could differ for whatever reason. This is used for statistical purposes only. The language codes to be used can be found [in the appendix](appendix-a-import-and-export-codes.md#language-codes). This field is optional.
 -   pupil\_preferred\_language\_other: If the language code used in the field above was used to represent “other”, then this field should contain the language. This field is optional.
 -   pupil\_sne: This field is present in the export and import files, but is ignored by ADAM.
 
-## Absentees {#h-9rvvu4lc3h2x}
+## Absentees
 
 Absentee data can be imported via CSV. The following fields must be provided in the import file:
 
@@ -273,7 +273,7 @@ The following is an example of a file used for import:
 
 ![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-20.png)
 
-### Finding the reason\_id values {#h-l87m0ufgf5vj}
+### Finding the reason\_id values
 
 Navigate to **Administration → Absentee Administration → Edit the absentee reasons**. Click on the **edit** option next to each and notice the address bar end with the text &id=.... The digits that are shown there represent the id number of the reason. This is illustrated below, where the reason\_id value is set to 1.
 

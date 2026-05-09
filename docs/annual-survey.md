@@ -1,16 +1,16 @@
-# Annual Survey {#h-1ksv4uv}
+# Annual Survey
 
 ADAM provides access to the information, but because of changing needs of the report, and the introduction of LURITS, this process will not be further developed. It is hoped that LURITS will replace the need for this survey.
 
 Essentially, we will exploit the “pivot table” functionality in Excel to calculate the totals we need:
 
-## Exporting Data {#h-44sinio}
+## Exporting Data
 
 In ADAM, under the “**Administration**” tab, find the “**Import & Export**” heading and click on the option to “**Export pupil data to Excel**”. You should be prompted to save an Excel spreadsheet.
 
 Once saved, open the spreadsheet.
 
-## Setting up the Pivot Table {#h-2jxsxqh}
+## Setting up the Pivot Table
 
 Once opened in Excel, you will be faced with “Worksheet 1” which contains the information that is requested in the survey. Select all the information in the first sheet. Because there are many columns, the following key presses will achieve this:
 
@@ -44,7 +44,7 @@ In the “Table/Range” field, type in the named range “pivot”. Leaving all
 
 ![](assets/screenshots/annual-survey/annual-survey-05.png)
 
-## Using the Pivot Table {#h-z337ya}
+## Using the Pivot Table
 
 Pivot tables seem daunting to those that haven’t used them, but they are remarkably simple to use. Essentially, we will use the “COLUMNS” and “ROWS” boxes to recreate the tables that need to be filled out on the survey form. For example, one table might be:
 

@@ -1,8 +1,8 @@
-# Academic Points {#h-obyqd4fmhbu}
+# Academic Points
 
-Academic Points are an extension of the [Record and Points](records-and-points-administration.md#h-1mrcu09) Module which inspects results from a reporting period in order to add records to a pupil’s Records and Points records.
+Academic Points are an extension of the [Record and Points](records-and-points-administration.md#records-and-points-administration) Module which inspects results from a reporting period in order to add records to a pupil’s Records and Points records.
 
-## An Overview of Academic Points {#h-4bzmg15qefk9}
+## An Overview of Academic Points
 
 Academic Points are awarded for one of three things:
 
@@ -17,13 +17,13 @@ ADAM will use rule sets to determine how many points should be awarded to a pupi
 
 Academic Points can be displayed on a report, or they can be saved to the Records and Points module where they might be part of a larger system involving consequences that lead to other Academic Awards, for example.
 
-## Maintaining the Rule Sets {#h-nudpa95pvqmj}
+## Maintaining the Rule Sets
 
 Navigate to **Reporting → Academic Points → Maintain rule sets**.
 
 Here you will be shown a list of existing rule sets, if there are any.
 
-### Adding a New Rule Set {#h-dhn6binwxlrc}
+### Adding a New Rule Set
 
 Click on the button at the top to **Add a new rule set**.
 
@@ -43,7 +43,7 @@ The **Type** of rule is next and depends on how your points are calculated.
 
 The **Calculation** setting tells ADAM whether it should consult their Term Mark or their Year-to-Date Mark. If you’ve chosen “Symbol” options above, ADAM will look at the symbols in the Term or YTD results accordingly.
 
-You will need to choose a **[Records and Points category](records-and-points-administration.md#h-3lnsfyslep9m)** where these points will be saved if you choose to save these points to the Records and Points module. If you haven’t yet set up a Records and Points category, now might be a good time to do so.
+You will need to choose a **[Records and Points category](records-and-points-administration.md#adding-a-new-records-and-points-category)** where these points will be saved if you choose to save these points to the Records and Points module. If you haven’t yet set up a Records and Points category, now might be a good time to do so.
 
 If you have chosen one of the **Subject** types above, then you must specify which subjects ADAM must look at in order to determine the final results. If you have chosen an “Aggregate” type, then this setting is ignored.
 
@@ -55,7 +55,7 @@ Here is an example of a completed rule set:
 
 ![](assets/screenshots/academic-points/academic-points-02.png)
 
-### Maintaining Rules {#h-5w1k3qr4l0rj}
+### Maintaining Rules
 
 Navigate to **Reporting → Academic Points → Maintain rule sets**.
 
@@ -87,9 +87,9 @@ With multiple criteria in the list, note that ADAM will always sort it by the nu
 
 You can **edit** and **delete** criteria using the appropriate buttons next to each option.
 
-## Academic Points Report {#h-6kvjs7mr2al0}
+## Academic Points Report
 
-Once you have at least one [rule set](#h-nudpa95pvqmj) in place, you can produce a report of the Academic Points. Note that ADAM displays these points only and does not record them in the Records and Points module. It is always advisable to ensure that your points generate correctly before committing them to the Records and Points module. More information on the problems that it can cause if you need to submit corrections are [discussed later on](#h-2pfircvtt3ce).
+Once you have at least one [rule set](#maintaining-the-rule-sets) in place, you can produce a report of the Academic Points. Note that ADAM displays these points only and does not record them in the Records and Points module. It is always advisable to ensure that your points generate correctly before committing them to the Records and Points module. More information on the problems that it can cause if you need to submit corrections are [discussed later on](#saving-academic-points-to-records-and-points).
 
 To generate an Academic Points Report, navigate to **Reporting → Academic Points → Academic Points report**.
 
@@ -101,13 +101,13 @@ Choose the **reporting period** that you wish to see points from and choose one
 
 The report will then be displayed, indicating the number of points per subject.
 
-## Saving Academic Points to Records and Points {#h-2pfircvtt3ce}
+## Saving Academic Points to Records and Points
 
 Once you are happy that your marks are finalised and that your Academic Points are accurate, you can have them recorded in the Records and Points modules for each pupil.
 
-### Setting up Records and Points {#h-ehlbuzydglrx}
+### Setting up Records and Points
 
-It is useful to consider a common use-case with the Records and Points when setting up your categories. Specific instructions for [setting up Records and Points](records-and-points-administration.md#h-3lnsfyslep9m) are discussed elsewhere in this documentation.
+It is useful to consider a common use-case with the Records and Points when setting up your categories. Specific instructions for [setting up Records and Points](records-and-points-administration.md#adding-a-new-records-and-points-category) are discussed elsewhere in this documentation.
 
 ![](assets/screenshots/academic-points/academic-points-08.png)
 
@@ -127,7 +127,7 @@ Finally, in the setup, we will deal with the consequences of the “Academic Po
 
 In this example, there are six levels of academic award - each received after a certain point threshold is reached (this example does not consider whether these levels are realistic or not!). Note how each level creates an “Academic Award” and that each award contains a note explaining the award that has been given.
 
-### Saving the Academic Points into Records and Points {#h-1lehlh7agsvt}
+### Saving the Academic Points into Records and Points
 
 Navigate to **Reporting → Academic Points → Save Academic Points to Records and Points**.
 
@@ -135,7 +135,7 @@ Navigate to **Reporting → Academic Points → Save Academic Points to Records 
 
 ADAM now asks you which reporting period you’d like to consider and which rule-sets you’d like ADAM to check.
 
-*Note that, unlike the* *[Academic Points Report](#h-6kvjs7mr2al0)**, you can mix-and-match Grades here - ADAM will work through each rule-set and apply those points to the applicable grade.*
+*Note that, unlike the* *[Academic Points Report](#academic-points-report)**, you can mix-and-match Grades here - ADAM will work through each rule-set and apply those points to the applicable grade.*
 
 ![](assets/screenshots/academic-points/academic-points-12.png)
 
@@ -152,7 +152,7 @@ If you proceed past this warning, two things will happen:
 
 Please ensure that you are aware of the consequences of continuing before doing so.
 
-## Next Steps {#h-lwwhwestjhl1}
+## Next Steps
 
 Now that you’ve added your records and points to the academic consequences, you can use the normal Records and Points module features for your next step.
 
@@ -164,7 +164,7 @@ With this list, you can tick them off to mark them as having received their awar
 
 You can the prepare your awards ceremony.
 
-### Pupil Records {#h-8hawes7y2rjt}
+### Pupil Records
 
 These now behave in exactly the same way as other Records and Points that a pupil might accumulate. If, for example, you need to correct an error in a pupil’s records, it is as simple as visiting their records and points page and making the change:
 

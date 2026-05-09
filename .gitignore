@@ -17,3 +17,6 @@ Thumbs.db
 # Node deps for scripts/
 scripts/node_modules/
 scripts/package-lock.json
+
+# Python bytecode
+__pycache__/

@@ -1,15 +1,15 @@
-# Aggregated Results {#h-pczqwhx0flp6}
+# Aggregated Results
 
 ADAM has a feature called “Aggregated Results” which are used to create aggregated results reports for pupils. This feature has two purposes:
 
 -   **Year-to-date and year-end marks:** Most commonly, ADAM will use Aggregated Results to calculate a “Year-To-Date” mark for a class or grade. You will choose an aggregated result to use as the default result. Classes, however, have the opportunity of overriding that default aggregated result by choosing one of their own. This provides the opportunity for some subjects to have their year marks calculated differently to other subjects.
 -   **Analysis and statistical tools:** We might use this to calculate an aggregated examination result or to perhaps use a “best of” scenario to include and exclude some assessments. In some subjects, it might be useful to create a “practical” and a “theory” result, and the Aggregated Results now allows for this.
 
-## Types of Aggregated Result Calculations {#h-vlgi83viv9xu}
+## Types of Aggregated Result Calculations
 
 ADAM has three categories of Aggregated Result Calculations. You can choose whichever is best suited for your needs.
 
-### Reporting Periods {#h-yw6olea9p746}
+### Reporting Periods
 
 ADAM will take the final term results from each reporting period and weight them to reach a final aggregated result for a pupil in that subject.
 
@@ -20,7 +20,7 @@ For example:
 -   Term 3: 10%
 -   Term 4: 50%
 
-### Assessment Categories {#h-3a9nqa94b1my}
+### Assessment Categories
 
 ADAM will take results from each assessment category and allow you to specify an individual weighting for each to reach a final result.
 
@@ -33,7 +33,7 @@ For example:
 -   Term 2 Examination: 25%
 -   Term 4 Examination: 40%
 
-### Individual Assessments {#h-etxm8obydvrr}
+### Individual Assessments
 
 !!! warning
     This option is only available if you wish to create an Aggregated Result Calculation for a specific grade and subject.
@@ -48,7 +48,7 @@ For example:
 -   Investigation: 30%
 -   Trial Examinations: 40%
 
-## Creating Aggregated Result Calculations {#h-mk1c22te1pt8}
+## Creating Aggregated Result Calculations
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/F1z8DAcEVbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -78,7 +78,7 @@ Click on **Next** when you want to proceed.
 
 Depending on the type of calculation, you will see one of the following screens. Jump to the appropriate section below!
 
-### Reporting Periods {#h-84h1tip0xjok}
+### Reporting Periods {#creating-aggregated-result-calculations-reporting-periods}
 
 A list of reporting periods from the chosen academic year is displayed. The initial weightings are calculated automatically and are equally divided. You are welcome to change them to suit your needs.
 
@@ -91,7 +91,7 @@ A list of reporting periods from the chosen academic year is displayed. The init
 
 Once happy with the weightings you’ve captured, click on **Save changes**.
 
-### Assessment Categories {#h-gbli5ep2t9bq}
+### Assessment Categories {#creating-aggregated-result-calculations-assessment-categories}
 
 ADAM will show a list of assessment categories for the chosen academic year. The initial weightings are calculated automatically and are divided equally. You are then welcome to change them to suit your needs.
 
@@ -104,7 +104,7 @@ In the diagram above, one might set the “Examinations” section of “Term 1�
 
 Click on the **Save changes** button when you’re happy with your weightings.
 
-### Individual Assessments {#h-10sgl4v3x121}
+### Individual Assessments {#creating-aggregated-result-calculations-individual-assessments}
 
 If you choose to create a calculation based on the results of individual assessments, ADAM shows a very different screen to the ones in the diagrams above:
 
@@ -127,23 +127,23 @@ Note well that the assessments selected can be from multiple classes. This is us
 
 You can add as many lines as you like. Each line will appear as a separate column in the report view for this calculation.
 
-## Using an Aggregated Result Calculation as a Year-To-Date Result {#h-40bijf1pspnp}
+## Using an Aggregated Result Calculation as a Year-To-Date Result
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/hZjMpQKarA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-You must have [created your aggregated result calculation](#h-mk1c22te1pt8) first.
+You must have [created your aggregated result calculation](#creating-aggregated-result-calculations) first.
 
 There are two ways to set an aggregated result calculation as a Year-to-date result.
 
-### Method 1: Reporting Period Settings {#h-t96420tiiqlj}
+### Method 1: Reporting Period Settings
 
-The first - and most commonly used - is to set it as a grade-wide calculation in the [Reporting Period Settings](reporting-period-administration.md#h-u5xim02o9rs5). This is used when every class and subject in the grade will make use of the same set of weightings across the year to calculate their year-to-date result.
+The first - and most commonly used - is to set it as a grade-wide calculation in the [Reporting Period Settings](reporting-period-administration.md#editing-a-reporting-period). This is used when every class and subject in the grade will make use of the same set of weightings across the year to calculate their year-to-date result.
 
 Note that only “whole grade” calculations can be selected to apply to a whole grade.
 
-### Method 2: Markbook Calculation {#h-r9auam476yp4}
+### Method 2: Markbook Calculation
 
-The second is to set the calculation in the [mark book](mark-book-administration.md#h-haapch). This is done either when each class requires an individual calculation, or the calculation for a specific class must differ, for some reason, from the rest of the grade.
+The second is to set the calculation in the [mark book](mark-book-administration.md#mark-book-administration). This is done either when each class requires an individual calculation, or the calculation for a specific class must differ, for some reason, from the rest of the grade.
 
 !!! warning
     *Setting a calculation in the mark book will* ***override*** *any calculation that might be set for the grade in the reporting period settings.*
@@ -158,7 +158,7 @@ Click on the button to **Change YTD mark calculation**. A list of available calc
 
 ![](assets/screenshots/aggregated-results/aggregated-results-14.png)
 
-## Using an Aggregated Result Calculation to calculate Term Results {#h-9mnlbpvdoc6s}
+## Using an Aggregated Result Calculation to calculate Term Results
 
 While an aggregated result can be used to calculate a Year-to-Date result, as shown above, it is also useful to use such calculations to calculate a term mark. This is particularly the case when a mark is to be calculated using a “best-of” functionality for the assessments.
 
@@ -173,9 +173,9 @@ In the assessment summary and weighting page, one would set the Year-to-Date cal
 
 Click on the button **Change term mark calculation** and then choose the Aggregate Result Calculation that you created above.
 
-## Semesterised Subjects on Reports {#h-q7eid662h8m0}
+## Semesterised Subjects on Reports
 
-### What are semesterised subjects? {#h-m9ml5h2b3pxx}
+### What are semesterised subjects?
 
 Many schools, due to timetable constraints or teaching load considerations, will elect to semesterise certain subjects, specifically at the Grade 8 and 9 GET levels. Specific subjects which are normally taught as Learning Area Modules are separated into individual subjects, each taught in one semester to allow those teachers more contact time and more continuity between lessons. This often happens with Learning Areas such as “Natural Sciences” and “Social Sciences”. In these examples, a school might elect to have half the grade do the Physical Sciences component in the first semester and the other half do the Life Sciences component. Then, in the second semester, the classes will swap modules.
 
@@ -187,7 +187,7 @@ The Year-to-date results are normally set in the Reporting Period Settings for a
 
 The problem is that these first semester subjects never get their results updated in the second semester and thus no YTD result is ever calculated for them. It therefore requires specific action for that result to be calculated.
 
-### Calculate Year-to-Date results for Semesterised Subjects {#h-rg60asoo29f6}
+### Calculate Year-to-Date results for Semesterised Subjects
 
 To force ADAM to calculate a YTD result, you can visit **Reporting → Promotion Results → Recalculate Marks and Symbols**.
 
@@ -199,9 +199,9 @@ Choose the appropriate reporting period and click on the **Next** button.
 
 Then choose the appropriate grade. ADAM will now recalculate all the marks for the classes in that grade. This will include those with no marks, but who may get a YTD result.
 
-### Using a different calculation for Semesterised Subjects {#h-pwkdt4akxw4u}
+### Using a different calculation for Semesterised Subjects
 
-It is possible that your semesterised subjects will require a different aggregated calculation to provide different weightings when compared to subjects that are taught across the whole year. For example, some subjects may not have a mid-year exam, but the semesterised subjects require a midyear exam. [Setting a different YTD calculation for a specific class](#h-r9auam476yp4) is dealt with above.
+It is possible that your semesterised subjects will require a different aggregated calculation to provide different weightings when compared to subjects that are taught across the whole year. For example, some subjects may not have a mid-year exam, but the semesterised subjects require a midyear exam. [Setting a different YTD calculation for a specific class](#method-2-markbook-calculation) is dealt with above.
 
 This is an example of how a Year-to-date result might be calculated for a subject taught over a whole year, emphasising Terms 2 and 4 because they contain exam results.
 
@@ -228,4 +228,4 @@ Therefore, many schools will set up separate calculations for the semesterised s
 -   40% Term 3
 -   60% Term 4
 
-These calculations can now be assigned to the different terms, [as described above](#h-r9auam476yp4).
+These calculations can now be assigned to the different terms, [as described above](#method-2-markbook-calculation).

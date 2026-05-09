@@ -1,4 +1,4 @@
-# Email Message Templates {#h-5rkfadj40kta}
+# Email Message Templates
 
 Many of the automated emails sent to parents and staff can be customised to meet your language requirements. To find the templates, navigate to **Administration → Site Administration → Manage Email Messages**.
 
@@ -15,7 +15,7 @@ Depending on the template you are editing, you may see one or more of the follow
 
 Click on **Save Message** when done.
 
-## Editing the Default Template {#h-3cjgimmjf9kk}
+## Editing the Default Template
 
 Where schools have demanding CI requirements, ADAM allows for the customisation and modification of the default email template.
 
@@ -37,19 +37,19 @@ Alternatively, there are a number of HTML template generators available who will
 
 Finally, if your school employs a graphic designer, they might be able to assist you with the creation of an HTML template.
 
-### Using banner images {#h-5v54fdy805rz}
+### Using banner images
 
-There are two merge codes for banner images: {bannertop} and {bannerbottom}. These banners should be uploaded in the same place as the [school logos](school-logos.md#h-2mn7vak).
+There are two merge codes for banner images: {bannertop} and {bannerbottom}. These banners should be uploaded in the same place as the [school logos](school-logos.md#school-logos).
 
 *Be aware that these banners are not automatically resized by ADAM. While the banner images can be resized in the CSS of the email (perhaps with a surrounding div tag with fixed dimensions), again be aware that no all email clients will support such modifications and you are advised to upload appropriately sized images that will display correctly for a large number of users without and styling intervention.* ***Again, we emphasise the need to test your emails on a wide variety of email clients and platforms!***
 
-### Staff Email Signatures {#h-qf37whzb6n3w}
+### Staff Email Signatures
 
 A number of merge codes are provided to allow ADAM to customise the email signature depending on which staff member is sending the email. It is also possible, using the {staffsignature} directive, to have ADAM use the most recently uploaded image file from the staff member’s document repository as an email signature.
 
 Because ADAM pulls the most recent one, to update it, all you need to do is upload a new one.
 
-To upload signatures in bulk, please look at the [Document Repository documentation for instructions](document-repository.md#h-9vy1c3hcdfza).
+To upload signatures in bulk, please look at the [Document Repository documentation for instructions](document-repository.md#uploading-documents-in-bulk).
 
 You will need to ensure that your images are a suitable width, or that your template contains the necessary HTML to ensure that any over-sized images render correctly on narrower screens.
 

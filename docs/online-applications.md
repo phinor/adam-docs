@@ -1,6 +1,6 @@
-# Online Applications {#h-ukga4uow4b68}
+# Online Applications
 
-## How Does It Work? {#h-lgzwj9ilmt37}
+## How Does It Work?
 
 ADAM has an online application facility which allows parents to complete their enrolment information forms online and have those directly included in the ADAM database without any manual data capture.
 
@@ -10,24 +10,24 @@ All online applicants are manually screened first to ensure data quality and eli
 
 Once the application is approved, parents can then also upload supporting documentation directly into the document repository.
 
-### High-level Overview {#h-b72fnbcmkoeb}
+### High-level Overview
 
 The following steps provide an overview of the process for both parents and staff. Included below are links to more specific information that might be required to set up or manage the step or process described.
 
-#### Step 0: {#h-67sn0c84mya8}
+#### Step 0:
 
 The school sets up the online application process. This includes:
 
-1.  Customising the [application form](#h-3thgd1vt1gdm)
-2.  Customising the [application notification emails](#h-4mhrvuqt8qbh)
-3.  Customising [document upload requirements](document-repository.md#h-erpi5roz7byn)
-4.  Enabling the [application form and notifications](#h-6if3z3k5vedw) in site settings
+1.  Customising the [application form](#customising-the-application-form)
+2.  Customising the [application notification emails](#communication-from-the-online-application-module)
+3.  Customising [document upload requirements](document-repository.md#parent-uploads-into-the-document-repository)
+4.  Enabling the [application form and notifications](#setting-up-online-applications) in site settings
 
-#### Step 1: {#h-wizh0aqwdszq}
+#### Step 1:
 
 Parents visit the online application form and submit their ID number, cell number and email address to begin the process. ADAM checks to see whether the ID number entered belongs to an existing parent. If it does, ADAM requires a login for the parents to ensure that a genuine application is being made and to ensure that no data is leaked about that family to unknown third parties.
 
-#### Step 2: {#h-iet5h13xbx1o}
+#### Step 2:
 
 After submitting their details, ADAM sends an email to confirm the parents email address. The email will contain a link to the application form which they will need to click on to proceed. The parent will be asked to complete the application form with both their and the applicant child’s information.
 
@@ -35,13 +35,13 @@ If ADAM determines that the family already exists in its database, they will be 
 
 The parents can save the contents of the form and revisit it as necessary to complete it.
 
-#### Step 3: {#h-msocy8sq049r}
+#### Step 3:
 
 Once completed, parents finalise and submit their application. No further changes are possible to that application form from this point.
 
 Internally, the school’s designated contacts are notified that a new application has been received.
 
-#### Step 4: {#h-l8zd59z2ulxp}
+#### Step 4:
 
 The application form is reviewed. The school has the option to “Accept” or “Reject” the application form. This does not *enrol* the pupil to the school. If accepted, the pupil and the family - if they don’t already exist - are added to the database as *applicants* and ADAM can then manage them further.
 
@@ -51,23 +51,23 @@ Any applicant is only searchable from the “Pupil Info” page and will only ap
 
 A real world analogy to this process is having a parent fill out a paper form. The form is handed to you. If the form is filled in correctly, you add the form to your list of applicants (i.e. you “accept” the application). If the form is filled out incorrectly, or perhaps they’ve applied for a boy to attend a girls-only school, then you throw the application form in the bin (i.e. you “reject” the application form). Nothing about accepting or rejecting the application form implies anything about whether a future place will be offered to the applicant or not.
 
-#### Step 5: {#h-m4bwh65pryua}
+#### Step 5:
 
 At the point that the application is accepted or rejected, ADAM can send out an optional email to notify parents thereof. This email would include further information such as the need to pay a deposit, submit forms and so on.
 
 We strongly recommend enabling and customising the acceptance email, but we strongly recommend not using the rejection email at all. An application can be rejected for hundreds of reasons and it seems improper to send a generic rejection mail out when there are either material or minor issues with the application. In these cases, we strongly suggest that schools respond directly to the applying parents directly to address any issues that might have arisen.
 
-#### Step 6: {#h-icfykky5vqt8}
+#### Step 6:
 
 Once the application is accepted, the pupil is added to the database in the default application status of “Applicant”. This is a generic status that every new pupil added to the database is added to. Based on the progress of the application, the pupil can be moved to different statuses to indicate this progress.
 
 The pupils would typically end up in one of two broad categories of applicant: “confirmed enrolment” or “not to be enrolled”. The latter is general and schools might prefer different subcategorisations such as “application withdrawn,” “position not offered,” or even “application deferred” (i.e. a waitlist).
 
-## Setting up Online Applications {#h-6if3z3k5vedw}
+## Setting up Online Applications
 
-### Checking your site settings {#h-21ga2a7m7g8l}
+### Checking your site settings
 
-There are a few things that need to be checked first. In the [Site Settings](changing-site-settings.md#h-3j2qqm3), check the following settings:
+There are a few things that need to be checked first. In the [Site Settings](changing-site-settings.md#changing-site-settings), check the following settings:
 
 -   **General / Online Applications:**
 
@@ -81,7 +81,7 @@ There are a few things that need to be checked first. In the [Site Settings](cha
 
 Don’t forget to save the settings when you’ve updated them!
 
-### Customising the Application Form {#h-3thgd1vt1gdm}
+### Customising the Application Form
 
 ADAM has four different data capture screens for each of families and pupils. These are:
 
@@ -111,23 +111,23 @@ The most important fields are, from ADAM’s point of view:
 
 Anything more than this is, strictly speaking, not required for ADAM’s functionality. Other information is certainly required, as mentioned, later in the process once the child has been admitted to the school.
 
-If you would like to add in fields which are not part of ADAM’s default setup, then please read up about adding [custom fields](database-field-management.md#h-1hmsyys).
+If you would like to add in fields which are not part of ADAM’s default setup, then please read up about adding [custom fields](database-field-management.md#managing-custom-database-fields).
 
-### Finding the address of your Application Form {#h-mzh3j9q7d87i}
+### Finding the address of your Application Form
 
 There are a number of steps that need to be considered before opening up your online application portal. The application portal is easy to find. You can link to it either from your website or by sending parents and email link. The application form can be found by simply adding “apply” to the end of your ADAM address. For example:
 
 https://demo.adam.co.za**/apply**
 
-### Communication from the Online Application Module {#h-4mhrvuqt8qbh}
+### Communication from the Online Application Module
 
 During the applicaiton process, ADAM sends an email to applicants in order for them to confirm their email addresses. There are three other emails that can be sent out, but each of these must be enabled before they will be sent:
 
 1.  **Confirmation of receipt of application form:** This email is sent at the end of the application process once they have clicked on the “Submit Application” button at the end of their application procedure.
-2.  **Application approval:** When the school accepts the application by “approving” it, an email can be sent to parents with further steps. This may include instructions for paying a deposit and for [uploading documents into ADAM](document-repository.md#h-erpi5roz7byn).
+2.  **Application approval:** When the school accepts the application by “approving” it, an email can be sent to parents with further steps. This may include instructions for paying a deposit and for [uploading documents into ADAM](document-repository.md#parent-uploads-into-the-document-repository).
 3.  **Application rejection:** When the school rejects an application, an email can be sent to parents with further information. Note that we do not recommend that this feature be used since the email, apart from general customisation below, cannot be tailored to provide reasons why the application was rejected. Given that there are so many reasons that one might decide to reject an application, we strongly recommend personalised communication to parents in this regard.
 
-The contents of the emails that ADAM sends [can be customised](email-message-templates.md#h-5rkfadj40kta).
+The contents of the emails that ADAM sends [can be customised](email-message-templates.md#email-message-templates).
 
 ![](assets/screenshots/online-applications/online-applications-01.png)
 
@@ -148,15 +148,15 @@ Change the relevant settings to “Yes” where you’d like ADAM to send the em
 
 Note, again, that we **do not recommend that the Rejection email is sent automatically** and rather suggest that schools engage directly with the applicants in this regard.
 
-### Testing the Application Form {#h-mrr9dian5u6x}
+### Testing the Application Form
 
-Once you have completed the steps outlined above, you are encouraged to complete the application form to ensure that you are happy with its content. To do this, follow the [instructions for parents](#h-g6bjptapubx3) below.
+Once you have completed the steps outlined above, you are encouraged to complete the application form to ensure that you are happy with its content. To do this, follow the [instructions for parents](#the-application-process-procedure-for-parents) below.
 
-Once the application process has been completed, you will need to put on your “staff member” hat in order to finalise the admission. More of this is provided in the [instructions for staff](#h-g93if5i1qg45) below.
+Once the application process has been completed, you will need to put on your “staff member” hat in order to finalise the admission. More of this is provided in the [instructions for staff](#application-process-procedure-for-staff) below.
 
-## Online Application Reminder Emails {#h-2028syiy36nw}
+## Online Application Reminder Emails
 
-### Overview {#h-jqx3xxn0yn6j}
+### Overview
 
 The Online Application Reminder Emails feature automatically sends reminder emails to parents who have incomplete online applications. This helps improve application completion rates by gently prompting parents to finish the admissions process.
 
@@ -167,7 +167,7 @@ The system sends reminders for two types of incomplete applications:
 
 Reminders are sent on a configurable schedule and stop automatically when the maximum number of reminders has been reached or when the application link is about to expire.
 
-### Enabling the Feature {#h-qq5clzsg1yap}
+### Enabling the Feature
 
 To enable automatic reminder emails:
 
@@ -179,11 +179,11 @@ When disabled, no reminder emails will be sent regardless of other settings.
 
 ![](assets/screenshots/online-applications/online-applications-03.png)
 
-### Configuration Settings {#h-af7ahaoyaqtv}
+### Configuration Settings
 
 There are four settings that control how reminders work:
 
-#### Enable Reminder Emails {#h-d1h00726nt4b}
+#### Enable Reminder Emails
 
 -   Setting name: Enable Reminder Emails
 -   Options: Yes / No
@@ -191,7 +191,7 @@ There are four settings that control how reminders work:
 
 This is the master switch for the feature. Set to "Yes" to enable automatic reminders.
 
-#### Days for Not Started Reminders {#h-497gakywcwob}
+#### Days for Not Started Reminders
 
 -   Setting name: Days for Not Started Reminders
 -   Default: 3,7,14
@@ -204,7 +204,7 @@ Example: With the default setting of 3,7,14, a parent will receive reminders:
 -   7 days after requesting the application
 -   14 days after requesting the application
 
-#### Days for Incomplete Reminders {#h-1xvt38r4rul5}
+#### Days for Incomplete Reminders
 
 -   Setting name: Days for Incomplete Reminders
 -   Default: 5,10,15
@@ -217,7 +217,7 @@ Example: With the default setting of 5,10,15, a parent will receive a reminder:
 -   10 days after they last saved the application
 -   15 days after they last saved the application
 
-#### Maximum Reminders per Application {#h-11gsyukpk3pk}
+#### Maximum Reminders per Application
 
 -   Setting name: Maximum Reminders per Application
 -   Default: 3
@@ -226,18 +226,18 @@ This limits the total number of reminder emails sent for a single application. O
 
 Example: If set to 3, each application will receive at most 3 reminder emails total, regardless of whether they are "not started" or "incomplete" reminders.
 
-### Understanding the Day Sequence {#h-eix29qui957w}
+### Understanding the Day Sequence
 
 The day settings accept a comma-separated list of numbers. Each number represents how many days after the relevant date a reminder should be sent.
 
-#### Format {#h-kpmpf9dc3wcf}
+#### Format
 
 -   Use whole numbers only (e.g., 3, 7, 14)
 -   Separate multiple days with commas (e.g., 3,7,14)
 -   Spaces around commas are optional (e.g., 3, 7, 14 works the same as 3,7,14)
 -   Days do not need to be in order, but listing them in ascending order is recommended for clarity
 
-#### Examples {#h-idfguu3ntz41}
+#### Examples
 
 **Setting**
 
@@ -259,18 +259,18 @@ Send reminders on days 3, 7, 14, and 21
 
 Send reminders on days 1, 2, 3, 5, and 7 (more frequent early reminders)
 
-#### How the Base Date Works {#h-oxoke8ab3pcf}
+#### How the Base Date Works
 
 -   Not Started reminders: Days are counted from the date the application was first requested
 -   Incomplete reminders: Days are counted from the date the application was last saved
 
 If a parent saves their application, the incomplete reminder countdown resets. For example, if reminders are set for days 5, 10, and 15, and a parent saves on day 4, the next reminder would be 5 days from that save date.
 
-### Email Templates {#h-cgpnxf9ypj7i}
+### Email Templates
 
 Two email templates are used for reminder messages. These can be customised in **Administration → Site Admnistration → Edit email templates**, under the **Applications** section.
 
-#### Reminder: Application Not Started {#h-oa86oj2ryigk}
+#### Reminder: Application Not Started
 
 This template is used for parents who haven't begun their application form.
 
@@ -304,7 +304,7 @@ The URL to the application form
 
 A clickable button linking to the application (e.g., {button:Start Application})
 
-#### Reminder: Application Incomplete {#h-n1am1fm92kim}
+#### Reminder: Application Incomplete
 
 This template is used for parents who started but haven't submitted their application.
 
@@ -342,17 +342,17 @@ The school's phone number
 
 A clickable button linking to the application (e.g., {button:Complete Application})
 
-### Expiry Protection {#h-um3329bj134r}
+### Expiry Protection
 
 The system automatically protects against sending reminders for applications that are about to expire or have already expired.
 
-#### How It Works {#h-cvb314nwmngv}
+#### How It Works
 
 -   Reminders are only sent for applications where the link has not yet expired
 -   The {daysremaining} merge code shows parents how many days they have left
 -   Once an application expires, no further reminders are sent
 
-#### Application Expiry Setting {#h-t6h6anmgixsj}
+#### Application Expiry Setting
 
 The application expiry period is controlled by a separate setting:
 
@@ -361,9 +361,9 @@ The application expiry period is controlled by a separate setting:
 
 When planning your reminder schedule, ensure your last reminder day is well before the expiry period. For example, if applications expire after 30 days, setting reminders for days 3, 7, and 14 gives parents at least 16 days to complete their application after the final reminder.
 
-### Best Practices {#h-b90dlp77w951}
+### Best Practices
 
-#### Recommended Settings {#h-qxfgacszq6l5}
+#### Recommended Settings
 
 For most schools, the default settings work well:
 
@@ -371,7 +371,7 @@ For most schools, the default settings work well:
 -   Incomplete reminders: 5, 10, 15 days
 -   Maximum reminders: 3
 
-#### Tips for Effective Reminders {#h-j6m60gzbahca}
+#### Tips for Effective Reminders
 
 1.  Don't send too many reminders - Excessive emails may annoy parents. Three reminders is usually sufficient.
 2.  Space reminders appropriately - Allow enough time between reminders for parents to respond. Sending reminders on consecutive days may seem pushy.
@@ -380,33 +380,33 @@ For most schools, the default settings work well:
 5.  Customise your templates - Personalise the email templates to match your school's tone and include any specific instructions parents might need.
 6.  Include clear calls to action - Use the {button:Text} merge code to create prominent, clickable buttons that make it easy for parents to access their application.
 
-### Frequently Asked Questions {#h-f842r9kzjmzi}
+### Frequently Asked Questions
 
-#### When are reminders sent? {#h-stml6fepm1jd}
+#### When are reminders sent?
 
 The reminder system runs automatically every 6 hours. When a reminder is due (based on the configured days), it will be sent during the next run.
 
-#### Will parents receive reminders after they submit their application? {#h-sajbm9go9hgk}
+#### Will parents receive reminders after they submit their application?
 
 No. Once an application is submitted, it is no longer considered "incomplete" and no further reminders are sent.
 
-#### Can I see which applications have received reminders? {#h-9la6dxf39hw}
+#### Can I see which applications have received reminders?
 
 Yes. In the online applications list, you can see the reminder count for each application. The database tracks both the number of reminders sent and the date of the last reminder.
 
-#### What if a parent saves their application - does that reset the reminders? {#h-uylr5egkyyq4}
+#### What if a parent saves their application - does that reset the reminders?
 
 Yes. For "incomplete" applications, the reminder countdown is based on the last save date. If a parent saves their application, the days are counted from that new date.
 
-#### Can I manually send a reminder to a specific applicant? {#h-1gtkipjagwy8}
+#### Can I manually send a reminder to a specific applicant?
 
 The automatic system does not support manual triggering. However, you can contact individual applicants directly through the online applications interface.
 
-#### Will reminders be sent during school holidays? {#h-z083ddqzvpn9}
+#### Will reminders be sent during school holidays?
 
 Yes, the automatic reminder system runs continuously regardless of term dates or holidays. If you wish to pause reminders during certain periods, you can temporarily set Enable Reminder Emails to "No".
 
-## The Application Process: Procedure for Parents {#h-g6bjptapubx3}
+## The Application Process: Procedure for Parents
 
 Generally, schools will link through to the application form in ADAM from their website, or perhaps and email. Simply add on “apply” to the end of your ADAM URL for the correct address to visit:
 
@@ -430,7 +430,7 @@ ADAM follows this with an email to confirm the email address. A link should be c
 
 ![](assets/screenshots/online-applications/online-applications-07.png)
 
-The contents of this email [are customisable](email-message-templates.md#h-5rkfadj40kta).
+The contents of this email [are customisable](email-message-templates.md#email-message-templates).
 
 When parents click on the link provided, ADAM will provide an application form for them to complete. The parent information is completed first with the pupil (or pupils, if more than one was chosen) appearing below.
 
@@ -454,13 +454,13 @@ Finally, they click on the **Confirm and Submit Application** button.
 
 ![](assets/screenshots/online-applications/online-applications-11.png)
 
-## Application Process: Procedure for Staff {#h-g93if5i1qg45}
+## Application Process: Procedure for Staff
 
 At this point a notification is sent to the system administrator, or the configured contact in site settings if one has been set.
 
 ![](assets/screenshots/online-applications/online-applications-12.png)
 
-The content of this email can be [changed in the email templates](email-message-templates.md#h-5rkfadj40kta). This template is called “Notify School of Completed Application”.
+The content of this email can be [changed in the email templates](email-message-templates.md#email-message-templates). This template is called “Notify School of Completed Application”.
 
 The staff member can now visit **Admissions → Online Applications → Manage Online Applications** within ADAM. Here they will see a list of all the applications and their statuses. This list will include any applications that might be incomplete, might have expired (not completed within the 7 days) or which were rejected.
 
@@ -479,16 +479,16 @@ At the bottom of this form are three options:
 ![](assets/screenshots/online-applications/online-applications-15.png)
 
 -   **Saving the information** will update the information in the application form, but will not process it. The applicant will remain on the list of submitted application forms. The pupil will not be added to the database.
--   **Approving the Application** will add the pupil and family (if it is new) to the database. The pupil is added as an applicant in the [default admissions status](enrolment-process.md#h-2dlolyb). This does *not* guarantee them a place or add them as a current pupil. *Remember that no communication is sent by ADAM.*
+-   **Approving the Application** will add the pupil and family (if it is new) to the database. The pupil is added as an applicant in the [default admissions status](enrolment-process.md#managing-the-registration-statuses). This does *not* guarantee them a place or add them as a current pupil. *Remember that no communication is sent by ADAM.*
 -   **Reject Application** will remove the application from the pile. Typically, applicants are rejected here for stechnical reasons (incomplete form, incorrect grades, incorrect gender for monastic schooling, and so on). Rejection here essentially means tossing the application form into the bin. The pupil and the family will *not* be added to the database.
 
 !!! warning
     ***Please note well: “Accepting” and “Rejecting” applications refers specifically to the*** ***application form******. This will add these details into your database as an Applicant profile.*** ***No decisions about enrolment into the school have been made*** ***at this point. Enrolment (or not!) will only happen at the very end of the application process.***
 
-## Uploading of Supporting Documents {#h-191sp14o2w5f}
+## Uploading of Supporting Documents
 
 Part of the admissions process is normally to collect documentation for your applicants, including past school reports and a copy of a birth certificate, for example.
 
 ADAM can process uploads from parents, but it does require that their application has been approved first. The reason for this is that ADAM needs to be able to link these to a profile and, before they’ve been accepted, they don’t technically have a profile in the database.
 
-Read more about [setting up the document repository](document-repository.md#h-3l18frh) and [allowing parents to upload documents](document-repository.md#h-erpi5roz7byn).
+Read more about [setting up the document repository](document-repository.md#document-repository) and [allowing parents to upload documents](document-repository.md#parent-uploads-into-the-document-repository).

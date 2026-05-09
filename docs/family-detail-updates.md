@@ -1,16 +1,16 @@
-# Family Detail Updates {#h-mohd29it4udo}
+# Family Detail Updates
 
 There are two main mechanisms to update family information. The first involves sending a hardcopy of a detail update form to the family. This form is then returned to the school and will be captured manually into ADAM. The second is an online form that parents complete and the information is captured in the database, ready for approval.
 
-## Customising the Online Detail Update Forms {#h-lik3d25jsz3j}
+## Customising the Online Detail Update Forms
 
 Very often schools will have confidential information or, at the very least, information that is not within a parent’s purview to change. This might be the pupil’s sport house, or grade, for example. An example is often the “General Notes” field in a pupil’s profile which schools use to record confidential information. Such information should not be presented to parents for them to view and update.
 
-ADAM can allow certain fields to be shown and/or hidden on detail update forms. More information can be found in the sections discussing the management of [core database fields](database-field-management.md) and [custom database fields](database-field-management.md#h-1hmsyys).
+ADAM can allow certain fields to be shown and/or hidden on detail update forms. More information can be found in the sections discussing the management of [core database fields](database-field-management.md) and [custom database fields](database-field-management.md#managing-custom-database-fields).
 
-Only the fields that are allowed to show on an update form will show. This affects both the [hardcopy](#h-dw2rkqlntt5d) and [online](#h-kcsulkk6x2rk) detail update forms. Field restrictions configured here apply to every flow described on this page, including the forced-update interrupt — there is no need to re-audit your update profiles when adopting forced updates.
+Only the fields that are allowed to show on an update form will show. This affects both the [hardcopy](#hardcopy-detail-update-forms) and [online](#online-detail-update-forms) detail update forms. Field restrictions configured here apply to every flow described on this page, including the forced-update interrupt — there is no need to re-audit your update profiles when adopting forced updates.
 
-## Hardcopy Detail Update Forms {#h-dw2rkqlntt5d}
+## Hardcopy Detail Update Forms
 
 These forms can be printed out and distributed to parents.
 
@@ -20,7 +20,7 @@ The form is produced showing all existing information regarding the family on th
 
 Note that the [schools can choose which fields appear on the form](database-field-management.md), and that such customisations will carry to both this printed form and the online detail update form discussed below.
 
-### Producing a Detail Form for a Single Family {#h-4msqnwjw8hm1}
+### Producing a Detail Form for a Single Family
 
 Navigate to **Families → Family Administration → Family Info**, then select **Print detail update form** for the printed version, or **Email detail update form link** to flag the family for an online update (and optionally send them a magic-link email at the same time).
 
@@ -32,21 +32,21 @@ Alternatively, use **Families → Detail Update Forms → Detail update forms**�
 
 When forms are returned, the changes on them must be manually captured by the school. This has obvious implications for already busy staff.
 
-### Producing Detail Update Forms for a Class of Pupils {#h-9jighsh5g0rz}
+### Producing Detail Update Forms for a Class of Pupils
 
 Instead of printing forms one-by-one, they can be produced for a class of pupils. Navigate to **Families → Detail Update Forms → Details update forms by class**.
 
 Here you will choose a class of pupils to produce the forms for. It often makes sense to use a grade-wide class to save repeating the steps too many times.
 
-Note that ADAM will only produce an update form for the youngest/eldest children in a family (this can be customised in the [Site Settings](changing-site-settings.md#h-3j2qqm3)). This means that when printing detail forms for a class, not every child in the class will receive a form.
+Note that ADAM will only produce an update form for the youngest/eldest children in a family (this can be customised in the [Site Settings](changing-site-settings.md#changing-site-settings)). This means that when printing detail forms for a class, not every child in the class will receive a form.
 
-## Online Detail Update Forms {#h-kcsulkk6x2rk}
+## Online Detail Update Forms
 
-Online detail update forms are presented to parents inside the family portal. When a family is flagged for an update, the portal blocks access to all other features at the parent's next login until the requested forms have been completed. See the [Forced detail updates](#h-yxpb85w43z44) section below for a full description of the new flow.
+Online detail update forms are presented to parents inside the family portal. When a family is flagged for an update, the portal blocks access to all other features at the parent's next login until the requested forms have been completed. See the [Forced detail updates](#forced-detail-updates) section below for a full description of the new flow.
 
-For families who do not use the portal, ADAM can additionally send a "courtesy" email containing a magic link valid for 7 days (configurable in [Site Settings](changing-site-settings.md#h-3j2qqm3)). The courtesy email is opt-in per distribution and is most useful for families who have never logged in. Parents who follow the link are taken straight into the same form sequence without needing to sign in.
+For families who do not use the portal, ADAM can additionally send a "courtesy" email containing a magic link valid for 7 days (configurable in [Site Settings](changing-site-settings.md#changing-site-settings)). The courtesy email is opt-in per distribution and is most useful for families who have never logged in. Parents who follow the link are taken straight into the same form sequence without needing to sign in.
 
-### Distribution {#h-6643pjcf4z7t}
+### Distribution
 
 Navigate to **Families → Detail Update Forms → Distribute online detail update forms**.
 
@@ -56,7 +56,7 @@ Once you have chosen the class, click on **Send e-mails with links**:
 
 ![](assets/screenshots/family-detail-updates/family-detail-updates-04.png)
 
-You will note that ADAM lists an email address that will be notified of the submitted information. This address can be customised in the [Site Settings](changing-site-settings.md#h-3j2qqm3). More than 1 address can be chosen.
+You will note that ADAM lists an email address that will be notified of the submitted information. This address can be customised in the [Site Settings](changing-site-settings.md#changing-site-settings). More than 1 address can be chosen.
 
 Parents will then receive an email similar to this:
 
@@ -72,7 +72,7 @@ Once they have done this, a notification is automatically sent to the email addr
 
 The information is *not* stored directly in the database. Instead, it is saved temporarily, waiting manual approval. Only once it has been approved by the school will the updated records show.
 
-### Reviewing Detail Update Forms {#h-7xe69ksoii7f}
+### Reviewing Detail Update Forms
 
 Navigate to **Families → Detail Update Forms → Review Submitted Changes**. Any changes that require approval will be listed here:
 
@@ -88,17 +88,17 @@ At the bottom of the screen, click on the **“Save Changes”** button.
 
 A banner in the family portal automatically lets the parent know when their submission is awaiting review and again when it has been reviewed.
 
-### Reviewing the Detail Update Report {#h-33iy6q879jan}
+### Reviewing the Detail Update Report
 
 Use **Families → Detail Update Forms → View online detail update report** to track the status of update requests across three categories: *pending updates* (families that have been flagged but have not yet submitted), *expired links* (families whose courtesy email link has lapsed without being used), and *submissions awaiting approval*. The expire, renew and resend actions on each row continue to apply to the courtesy-email link.
 
-## Forced detail updates {#h-yxpb85w43z44}
+## Forced detail updates
 
 The school can now require parents to review and update their family details the next time they log in to the family portal. When a family is flagged, the portal blocks access to all other features until each requested update form has been completed. This replaces the older "email a magic link and hope they click it" approach and supersedes most of the workflow on this page.
 
 A request to update is called a trigger. Each trigger points at one update profile. A family can have several open triggers at once (for example one each for contact details and medical information); the parent works through them one form at a time, and the portal is unlocked once the queue is empty.
 
-### Configuring an update profile {#h-w6l7g3vky0yl}
+### Configuring an update profile
 
 Three settings on each update profile control the new behaviour. Manage them from **Families → Detail Update Forms → Manage Detail Update profiles** (also available from **Administration → Database Administration → Manage Detail Update profiles**).
 
@@ -106,7 +106,7 @@ Three settings on each update profile control the new behaviour. Manage them fro
 -   Default profile. Exactly one profile per audience can be marked as the default. The default is what self-service updates and unattended cron runs use when no specific profile is named.
 -   Cadence (months). Set a number of months to have ADAM re-flag every family on this profile automatically once the cadence elapses since the last completed submission. Leave blank to disable automatic re-flagging.
 
-### Manually flagging families {#h-d7oqpz1zywou}
+### Manually flagging families
 
 The page that used to email magic links to parents now writes a flag on each selected family instead. Open **Families → Detail Update Forms → Distribute online detail update forms** and pick a class as before. The submit button is now labelled Flag families for update. On submission, ADAM:
 
@@ -123,15 +123,15 @@ A new **Courtesy email** drop-down chooses whether ADAM should also send an old
 
 The single-family equivalents on a parent's profile page (Email detail update form link) and on a pupil's profile page work the same way: they flag the family and optionally issue a magic-link backstop in one step.
 
-### Scheduled updates {#h-h7zq87fdk8a0}
+### Scheduled updates
 
 If an update profile has a cadence set, ADAM's overnight cron flags every currently-registered family whose last completed submission for that profile is older than the cadence. Families that already have an open trigger, or that have unreviewed staged changes, are skipped on that pass and reconsidered the next night. No staff action is required.
 
-### Self-service from the portal {#h-vdwe7xw1puwa}
+### Self-service from the portal
 
 When a default External — Update profile is configured, a new menu entry appears in the family portal at Family → Update personal details and family information. Selecting it raises a trigger against the family using the default profile and takes the parent straight into the update flow — no email round-trip required. If no default profile is configured for the school the menu entry is hidden.
 
-### The parent experience {#h-vk219gpezhq4}
+### The parent experience
 
 The first time a flagged family logs in, the dashboard intercepts the session and redirects to the update form. The flow is:
 
@@ -143,11 +143,11 @@ The first time a flagged family logs in, the dashboard intercepts the session an
 
 Submitted changes still land in the staging area and still require staff approval before they reach live records — the existing review process at **Families → Detail Update Forms → Review submitted changes** is unchanged.
 
-### Re-authentication gate {#h-lc8ixvr2x8mx}
+### Re-authentication gate
 
 Because the update form discloses the family's existing personal information before they edit it, ADAM requires that the session is "fresh" — less than ten minutes since the last password or passkey challenge. A parent who has just signed in passes this automatically. A parent who left a tab open for several hours is shown a short page asking them to re-enter their password (or use a registered passkey) before the form appears. This gate sits in front of the update form only; the rest of the portal is unaffected.
 
-### Banners {#h-hwkmhbeods3q}
+### Banners
 
 The family portal now shows a dismissable banner above every page when:
 
@@ -156,10 +156,10 @@ The family portal now shows a dismissable banner above every page when:
 
 Each banner is tied to the specific submission, so dismissing one will not suppress a later one.
 
-### The magic-link backstop {#h-otk5a7ep0uh}
+### The magic-link backstop
 
 Email magic links continue to work for families who do not log in to the portal. The link is now tied to the trigger row rather than to the family record, but the parent's experience is the same: clicking the link takes them to the update form sequence without requiring a login. If the link has expired the parent is sent to the family login page; once they sign in, the forced-update interrupt picks up the same outstanding triggers and walks them through the forms.
 
-### Reporting {#h-lbomqkace0pl}
+### Reporting
 
 The status overview at **Families → Detail Update Forms → View online detail update report** now reports on triggers rather than on pending magic links. It shows pending updates (open triggers), expired backstop links, and submissions awaiting approval, with the same expire/renew/resend actions per family.

@@ -1,18 +1,18 @@
-# Medical Module {#h-85qhwd3jzklo}
+# Medical Module
 
 Further documentation coming soon! If you have any questions, please ask us!
 
-## Medical Examinations {#h-ubj8044sigk4}
+## Medical Examinations
 
 A Medical Examination is conducted by a medical professional and several values are recorded. This may be data such as height and weight. ADAM allows for custom medical examinations to be created, each with their own set of measurements (metrics). ADAM records these metrics for historical reference.
 
-### Viewing a Pupil’s Medical Examinations {#h-czu9zwr7xhf8}
+### Viewing a Pupil’s Medical Examinations
 
 To view a history of a pupil’s medical examinations, visit the pupil’s profile, click on **medical records** and in the list of tabs below, choose **Medical Exams**.
 
 ![](assets/screenshots/medical-module/medical-module-01.png)
 
-### Managing the Medical Examinations {#h-7wx59x2m6lk0}
+### Managing the Medical Examinations
 
 To add, or remove Medical Examinations, navigate to **Administration → Medical Administration → Manage Medical Examination Types**.
 
@@ -26,7 +26,7 @@ Examinations can also be disabled (and re-enabled) using the “**disable**” o
 
 Click on the “**metrics**” option to adjust the measurements that are requested in the examination.
 
-#### Adding and Editing Medical Examination Types {#h-96sh7gr3oegx}
+#### Adding and Editing Medical Examination Types
 
 When adding a new Medical Examination Type or editing an existing one, ADAM will show the following screen:
 
@@ -34,7 +34,7 @@ When adding a new Medical Examination Type or editing an existing one, ADAM will
 
 The **Exam Type Description** will be used as a heading to describe the reason for the Medical Examination.
 
-Medical Examinations can be optionally **completed on the parents’ and pupils’ portal**. Parents and pupils have the option, [based on their privileges](security-administration-for-families-and-pupils.md#h-mg1sc7iv8w2n), to complete medical examinations. These can be used to record the results screening examinations that are required to be completed by schools during the Covid-19 pandemic. Note that these instructions appear exactly as you capture them [on the portal screen](#h-uo0o80hah4wj).
+Medical Examinations can be optionally **completed on the parents’ and pupils’ portal**. Parents and pupils have the option, [based on their privileges](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils), to complete medical examinations. These can be used to record the results screening examinations that are required to be completed by schools during the Covid-19 pandemic. Note that these instructions appear exactly as you capture them [on the portal screen](#parents-and-pupils-completing-medical-examinations).
 
 *Note that the medical examinations are completed from a pupil’s perspective and are recorded against the pupil’s profile. It is not possible to record a medical examination for a parent.*
 
@@ -47,7 +47,7 @@ Additionally, **medical examination summaries** can be shown on the Pupil and P
 
 The indicated **Instructions** are shown to the staff who are completing the medical examination or to the parents/pupils in the portal. Thus differentiated instructions can be shown if required.
 
-#### Adding and removing metrics from a test {#h-nr95c0fyp2ov}
+#### Adding and removing metrics from a test
 
 A list of metrics in the test, and those available for use, are shown in two tables:
 
@@ -57,9 +57,9 @@ One can **add** or **remove** metrics. The order can be changed using the **up*
 
 The changes are saved as you make them. Changing the fields available in a test does not change previously conducted tests and no data will be lost by removing a metric from a test. This might happen if you decide not to record this any more. All data that was previously recorded will remain on the system.
 
-To add or remove metrics, please see the [section below](#h-7gw0j37tdc77).
+To add or remove metrics, please see the [section below](#managing-the-metrics).
 
-### Managing the Metrics {#h-7gw0j37tdc77}
+### Managing the Metrics
 
 Navigate to **Administration → Medical Administration → Manage Medical Examination Measurements**.
 
@@ -69,7 +69,7 @@ Here you can add (using the button at the top) new matrics and edit existing one
 
 *Note that editing a metric will have an impact on information already recorded. For example, if you change the height to rather be measured in metres instead of centimetres, then all previously taken measurements will appear to be in metres: 162cm will then show as 162m.*
 
-### Adding a new Metric {#h-dwyi58sax5ru}
+### Adding a new Metric
 
 To add a new metric, click on the **Add a new Medical Examination Metric** button  that appears at the top of the table.
 
@@ -101,11 +101,11 @@ Finally, the **Options for Choices** text box allows the different options to b
 
 When you’re done, you can click on **Save this Medical Examination Metric**.
 
-Once you’ve added a new metric, you may wish to have it [included in a specific medical examination](#h-7wx59x2m6lk0).
+Once you’ve added a new metric, you may wish to have it [included in a specific medical examination](#managing-the-medical-examinations).
 
-### Parents and Pupils Completing Medical Examinations {#h-uo0o80hah4wj}
+### Parents and Pupils Completing Medical Examinations
 
-For the purposes of health screening, it may be desirable to have parents or pupils complete medical examinations in ADAM. For them to be able to do so, they will need to be [assigned the correct privileges](security-administration-for-families-and-pupils.md#h-mg1sc7iv8w2n).
+For the purposes of health screening, it may be desirable to have parents or pupils complete medical examinations in ADAM. For them to be able to do so, they will need to be [assigned the correct privileges](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
 *Where schools would like to provide instructions for parents to complete the medical examination, the instructions below should serve as a starting point and not be relied on to provide the specific information required for the medical exam as set up by the school.*
 
@@ -115,7 +115,7 @@ Parents and pupils with the privilege to complete medical examinations will see 
 
 Once they select this option, one of three possible screens will appear.
 
-If there are **no medical examinations** that have been [set to display on the portal](#h-7wx59x2m6lk0), then they will see an error message to this effect: “There are no medical examinations available for completion.”
+If there are **no medical examinations** that have been [set to display on the portal](#managing-the-medical-examinations), then they will see an error message to this effect: “There are no medical examinations available for completion.”
 
 ![](assets/screenshots/medical-module/medical-module-10.png)
 
@@ -139,8 +139,8 @@ Once submitted, ADAM will display a message confirming that the results have bee
 
 ![](assets/screenshots/medical-module/medical-module-13.png)
 
-## Off Sports Alerts {#h-4gqnczo2ckk1}
+## Off Sports Alerts
 
-@todo - the off sports alerts were built around similar code to the [absentee alerts](absentee-administration.md#h-e1rizcwckki9). Please look there for inspiration in the meantime. To add an offsports alert, head to **Administration → Medical Module → Edit Off Sports Alerts**.
+@todo - the off sports alerts were built around similar code to the [absentee alerts](absentee-administration.md#absentee-alerts). Please look there for inspiration in the meantime. To add an offsports alert, head to **Administration → Medical Module → Edit Off Sports Alerts**.
 
 The timing for the Off Sports Alerts can be set in the **Site Settings** under the **Cron** tab.

@@ -1,8 +1,8 @@
-# Change Log Notifications {#h-km6evgdm0sgm}
+# Change Log Notifications
 
 Change log notifications allow a staff member to be notified when specific fields in a parent, pupil or staff profile changes.
 
-## Creating a Change Log Notification {#h-xwjbnp6d1gml}
+## Creating a Change Log Notification
 
 Navigate to **Administration → Change Log → Manage Change Log notifications**. At first, your notification list might be empty.
 

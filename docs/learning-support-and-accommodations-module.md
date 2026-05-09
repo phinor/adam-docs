@@ -1,6 +1,6 @@
-# Learning Support and Accommodations Module {#h-bedstcn0n0om}
+# Learning Support and Accommodations Module
 
-## Overview {#h-isjfxmx5rtto}
+## Overview
 
 The Learning Support and Accommodations module helps schools track and manage three key areas of student support:
 
@@ -10,9 +10,9 @@ The Learning Support and Accommodations module helps schools track and manage th
 
 This module provides tools for adding and editing pupil records, generating reports for teachers and administrators, and integrating support information into pupil profiles.
 
-## Getting Started {#h-vzkaxolqx0zp}
+## Getting Started
 
-### Accessing the Module {#h-lqhduzqs1srq}
+### Accessing the Module
 
 The Learning Support features appear in several locations depending on your permissions:
 
@@ -21,11 +21,11 @@ The Learning Support features appear in several locations depending on your perm
 -   Grades tab → "Lists and Labels" section
 -   Subjects tab → "Lists and Reports" section
 
-## Managing Learning Support Records {#h-dwhsgca8hrjb}
+## Managing Learning Support Records
 
 Learning Support records track a pupil's support category and related notes. Only one record can be active at a time - adding a new record automatically deactivates the previous one, preserving a full history.
 
-### Default Support Categories {#h-sfyltt12qoq9}
+### Default Support Categories
 
 The system comes pre-configured with these categories (in order of intensity):
 
@@ -36,7 +36,7 @@ The system comes pre-configured with these categories (in order of intensity):
 5.  Moderate to Severe BTL
 6.  Significant BTL
 
-### Adding a Learning Support Record to a Pupil’s Profile {#h-i99n13rwaj87}
+### Adding a Learning Support Record to a Pupil’s Profile
 
 1.  Navigate to **Pupils → Learner Support and Acommodations → Add or edit a pupil's learning support records**
 2.  Search for and select the **pupil**
@@ -48,7 +48,7 @@ The system comes pre-configured with these categories (in order of intensity):
 
 The previous active record (if any) will be automatically marked as historical but remains visible for audit purposes.
 
-### Viewing Support History {#h-vn1aiuqya5vv}
+### Viewing Support History
 
 All past learning support records are displayed below the current record, showing:
 
@@ -57,11 +57,11 @@ All past learning support records are displayed below the current record, showin
 -   Date of the record
 -   Staff member who made the entry
 
-## Managing Pupil Accommodations {#h-42hb8456wn74}
+## Managing Pupil Accommodations
 
 Accommodations are access arrangements that allow learners to demonstrate their abilities fairly in assessments. They are organised into categories (typically "Internal Examinations" and "External Examinations").
 
-### Adding Accommodations to a Pupil {#h-qaexg837eplk}
+### Adding Accommodations to a Pupil
 
 1.  Navigate to **Pupils → Learning Support and Accommodations → Add or edit a pupil's accommodations**
 2.  Search for and select the **pupil**.
@@ -72,20 +72,20 @@ Accommodations are access arrangements that allow learners to demonstrate their 
 ![](assets/screenshots/learning-support-and-accommodations-module/learning-support-and-accommodations-module-01.png)
 
 6.  Select the accommodation type from the dropdown (e.g., "Extra time - 10 min per hour")
-7.  Optionally upload supporting documents (medical reports, psychometric assessments). *Note that you will need a Document Repository category configured to receive these documents. See* *[instructions below for setting this up](#h-ubs65nv003y3)**.*
+7.  Optionally upload supporting documents (medical reports, psychometric assessments). *Note that you will need a Document Repository category configured to receive these documents. See* *[instructions below for setting this up](#managing-document-repository-categories)**.*
 8.  Click **Add Accommodation** to save
 
-### Removing Accommodations {#h-uoxcym1bkbt7}
+### Removing Accommodations
 
-1.  Navigate to the pupil's accommodation page for the relevant category (see navigation process for [adding, above](#h-qaexg837eplk))
+1.  Navigate to the pupil's accommodation page for the relevant category (see navigation process for [adding, above](#adding-accommodations-to-a-pupil))
 2.  Click the **Remove** button next to the accommodation you wish to delete
 3.  Confirm the deletion
 
-## Managing Interventions {#h-df6k9cglkyd2}
+## Managing Interventions
 
 Interventions keep a record of the interventions that have been put into place to help and support a pupil.
 
-### Managing Intervention Types {#h-6r6bw4r6by9w}
+### Managing Intervention Types
 
 Navigate to **Administration → Academic Administration → Manage intervention types**. From here, click on **Add new Intervention Type**  to add a new Intervention Type:
 
@@ -97,7 +97,7 @@ Once added, the Intervention Types will appear in a list. Interventions can be d
 
 ![](assets/screenshots/learning-support-and-accommodations-module/learning-support-and-accommodations-module-03.png)
 
-### Assigning Interventions to Pupils {#h-q8f4wgxfvkv7}
+### Assigning Interventions to Pupils
 
 In the **Pupil Profile**, under **Learning Support**, navigate to the **Interventions** section and choose an intervention type from the list and click on **Add Intervention**.
 
@@ -115,11 +115,11 @@ If today’s date is chosen as the end date, the record will still appear in the
 
 **Deleting** an intervention will remove all trace of it and so this option should NOT be used if you want to maintain a history that includes this intervention.
 
-## Generating Reports {#h-54fpynl0d2gd}
+## Generating Reports
 
 Reports help teachers and administrators view accommodation and learning support information across classes, grades, or subjects.
 
-### Accommodations Reports {#h-4buikry6to57}
+### Accommodations Reports
 
 Available report types:
 
@@ -141,7 +141,7 @@ To generate a report:
 
 6.  Click **Generate Report**
 
-### Learning Support Reports {#h-s9oi3fx8b7k2}
+### Learning Support Reports
 
 Available report types:
 
@@ -158,29 +158,29 @@ To generate a report:
 5.  Choose output format (View/CSV/Excel)
 6.  Click Generate Report
 
-### Teachers with Limited Access {#h-6luyuq2wzalc}
+### Teachers with Limited Access
 
 If you only have the "view own" privilege, you will only see classes you teach. The system automatically filters the available options based on your teaching assignments.
 
-## Pupil Profile Integration {#h-cv2chu8ckzn2}
+## Pupil Profile Integration
 
 Learning Support information is integrated into the pupil profile system.
 
-### Pupil Overview Widget {#h-rgwk7cx2n1aa}
+### Pupil Overview Widget
 
 The pupil overview displays a summary card showing:
 
 -   Current learning support category and notes (truncated, hover for full text)
 -   Active accommodations grouped by category (Internal/External)
 
-### Pupil Profile Sections {#h-dyv00drrllt1}
+### Pupil Profile Sections
 
 Dedicated sections in the pupil profile show:
 
 -   Learning Support: Current status, historical records, and linked documents
 -   Accommodations: Organised in tabs by category (Internal/External)
 
-### Pupil Info Page {#h-di4wiape4jxb}
+### Pupil Info Page
 
 A comprehensive learning support page is accessible from the pupil profile showing all information in one place:
 
@@ -189,7 +189,7 @@ A comprehensive learning support page is accessible from the pupil profile showi
 -   All active accommodations by category
 -   All linked documents with download links
 
-## Scratch List Fields {#h-rk34k54kev7w}
+## Scratch List Fields
 
 Four learning support fields are available for inclusion in pupil scratch lists:
 
@@ -215,15 +215,15 @@ List of external exam accommodations
 
 To add these to a scratch list, select them from the available fields when configuring your scratch list.
 
-## Administration {#h-3e6zx3p54u6z}
+## Administration
 
-### Managing Learning Support Categories {#h-vz9chctdxe7q}
+### Managing Learning Support Categories
 
 1.  Navigate to **Administration → Academic Administration → Manage learning support categories**
 2.  Add, edit, or disable categories
 3.  Set the sort order to control how categories appear in dropdowns
 
-### Managing Accommodation Categories {#h-sfkntev337da}
+### Managing Accommodation Categories
 
 Custom accommodations categories can be added.
 
@@ -231,7 +231,7 @@ Custom accommodations categories can be added.
 2.  Add, edit, or disable categories
 3.  Each category has a type: "Internal" or "External"
 
-### Managing Accommodation Types {#h-9473c4z2cgp9}
+### Managing Accommodation Types
 
 1.  Navigate to **Administration → Academic Administration → Manage accommodation types**
 2.  Add, edit, or disable accommodation types
@@ -250,11 +250,11 @@ Pre-configured accommodation types include:
 -   Practical assistant
 -   Spelling/Handwriting assistance
 
-### Managing Document Repository Categories {#h-ubs65nv003y3}
+### Managing Document Repository Categories
 
 Before you can upload documents with Learning Support or Accommodations records, specific categories need to be created and specific privileges assigned to those groups. It is necessary that ensure that the groups who are allowed to add accommodations and learner support information have the ability to add documents to the category or categories that you create for this.
 
-More information on creating [Document Repository Categories](document-repository.md#h-4k668n3) and setting [Document Repository Staff Permissions](document-repository.md#h-a6043un8am4k) can be found elsewhere in this documentation (follow those links!).
+More information on creating [Document Repository Categories](document-repository.md#categories) and setting [Document Repository Staff Permissions](document-repository.md#staff-permissions) can be found elsewhere in this documentation (follow those links!).
 
 An example of a Learning Support category created in the Pupils section is shown below:
 
@@ -270,13 +270,13 @@ Once saved, this should appear as follows:
 
 *Note the “t--” is the code that represents “read if teacher”, and “RAD” represents “Read, Add and Delete”.*
 
-*It is often useful to give General Teachers (or your equivalent group) permission to read these documents “Only if they teach the pupil”. Again, see the section on* *[Staff Permissions](document-repository.md#h-a6043un8am4k)* *for more.*
+*It is often useful to give General Teachers (or your equivalent group) permission to read these documents “Only if they teach the pupil”. Again, see the section on* *[Staff Permissions](document-repository.md#staff-permissions)* *for more.*
 
-Finally, you will need to tell ADAM which categories may be chosen to upload these support documents to. The settings are found in the [Site Settings](changing-site-settings.md#h-3j2qqm3) in the **Document Repository** section.
+Finally, you will need to tell ADAM which categories may be chosen to upload these support documents to. The settings are found in the [Site Settings](changing-site-settings.md#changing-site-settings) in the **Document Repository** section.
 
 ![](assets/screenshots/learning-support-and-accommodations-module/learning-support-and-accommodations-module-09.png)
 
-## Frequently Asked Questions {#h-vivkt0t1ybuc}
+## Frequently Asked Questions
 
 -   **Can a pupil have multiple accommodations?**
 

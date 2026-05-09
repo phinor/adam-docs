@@ -1,8 +1,8 @@
-# SA-SAMS Export {#h-4s6gw0gycdsi}
+# SA-SAMS Export
 
 ADAM allows for school data to be exported to an SA-SAMS compatible database. This database can be used for submission to district offices of the provincial departments of education for their reporting purposes.
 
-## Submitting Information to District Offices {#h-bhckmqie9wa7}
+## Submitting Information to District Offices
 
 District offices will require print-outs and signatures from schools staff in order to accept the submitted databases and thus *ADAM EduTech is not able to assist with getting your schools SA-SAMS database to your local district office*.
 
@@ -10,7 +10,7 @@ Some schools have sent notifications that their district offices require them to
 
 **We are unable to provide you with any support for using SA-SAMS.** You are encouraged, as far as possible, to make use of the support channels provided by your district office in order to best comply with their requirements. Each district office has the prerogative to request different information and ask you to follow different procedures. Unfortunately, we are simply unable to keep track of what each district office requires.
 
-## General Principles Regarding Privacy of Information {#h-i93oh9s8fcm0}
+## General Principles Regarding Privacy of Information
 
 ADAM exports a set of data that is required to have it pass the internal checks that are done by SA-SAMS. The district offices are mostly interested in learner and staff information. Therefore, we purposefully submit as little information as we can regarding parents. In fact, only the name of the first parent is submitted, with no contact information or ID numbers.
 
@@ -18,13 +18,13 @@ ADAM makes no attempt at exporting any assessment results to SA-SAMS. This is be
 
 ADAM does export absentee information for Staff and Pupils, although if you do not use ADAM for your staff absentees - which seems to be a common pattern - then ADAM will simply submit your staff as being present on all teaching days.
 
-## Getting Started {#h-ckicscln5tzq}
+## Getting Started
 
-In order to get started, you will need to [verify your School Information](school-information.md#h-47hxl2r) stored in ADAM. There are some significant changes to what is required for LURITS reporting and so your are encouraged to go through this information carefully if this is your first SA-SAMS submission. Once entered, it is not likely that you will need to revisit this information on a regular basis.
+In order to get started, you will need to [verify your School Information](school-information.md#school-information) stored in ADAM. There are some significant changes to what is required for LURITS reporting and so your are encouraged to go through this information carefully if this is your first SA-SAMS submission. Once entered, it is not likely that you will need to revisit this information on a regular basis.
 
 Check the school’s information by visiting **Administration → Site Administration → Edit School Information**. Pay special attention to the fact that there are three tabs of information and there is information on all of those tabs that needs to be completed.
 
-## Subject Configuration {#h-h1x4zh6d2sq0}
+## Subject Configuration
 
 An important step before you do your export is to ensure that all subjects in ADAM are linked to their corresponding Department of Basic Education subjects. This allows ADAM to ensure that the correct codes are used when submitting information, even though you might prefer to name them slightly differently.
 
@@ -40,9 +40,9 @@ To fix this, please click on the **edit** button next to any subject, and then 
 
 ![](assets/screenshots/sa-sams-export/sa-sams-export-02.png)
 
-More details on how to edit subjects can be found [elsewhere in this documentation](subjects.md#h-nqu9bv1rb1n).
+More details on how to edit subjects can be found [elsewhere in this documentation](subjects.md#editing-a-subject).
 
-### A note to schools who offer non-CAPS aligned curriculums {#h-cmjvr4ecdhdf}
+### A note to schools who offer non-CAPS aligned curriculums
 
 Some district offices will complain that the pupils from schools who offer Cambridge International Curriculum (CIE) or International Baccalaureate (IB) are not registered for any subjects because the subjects that are offered by the school simply have no DBE equivalents. Some district offices will be understanding of this fact, and others will insist, against all understanding, that pupils must be registered for some subjects.
 
@@ -50,7 +50,7 @@ Without advocating for or against any particular “solution”, some schools ha
 
 Note that in spite of doing this, it is often impossible for these schools to ensure that all pupils offer a full, or valid, CAPS curriculum offering. This does not seem to be a primary concern at the District Office level.
 
-## Verifying Information in ADAM {#h-xz16wxi7jt9o}
+## Verifying Information in ADAM
 
 ADAM performs some fairly basic checks on the information that is passed over to SA-SAMS. The warning messages are currently mainly limited to ID number validation checks, although there are a few others that are run.
 
@@ -66,7 +66,7 @@ The first note is that if a pupil or teacher is marked as a South African citize
 
 Pupils also need unique administration numbers. ADAM will identify and alert you to any that do not.
 
-## Performing the Export {#h-2gasnswxtzt3}
+## Performing the Export
 
 Choose an effective date for the Export.
 
@@ -84,7 +84,7 @@ Once you have corrected as much information as you can, click on the button at t
 
 Please be patient while the database is compiled.
 
-### Some notes about the performance of the database export {#h-h0np5fggo9gt}
+### Some notes about the performance of the database export
 
 The database is not compiled on your server. This is because the variation of servers that ADAM is installed on, and that most of them are not Microsoft servers, makes it too difficult to maintain the necessary procedures on every server to export to a very specifically formatted Microsoft Access Database. Thus, to simplify our task, we have centralised the creation of these databases to happen on one centralised, properly configured server.
 
@@ -105,7 +105,7 @@ In summary, the process works as follows:
 7.  You download the database.
 8.  Our server deletes its copy of the database.
 
-## When Things Go Wrong {#h-j49ogrjnwxa9}
+## When Things Go Wrong
 
 If the database is removed by one of the mechanisms described above, you will know because your browser won’t start downloading a file, and instead you will be directed back to the verification screen with the button to begin the export again.
 
@@ -113,7 +113,7 @@ If your export results in an error, you will be frustrated by the lack of insigh
 
 While we wish everyone an error free experience, this is the first iteration of this feature and we kindly ask your patience as we iron out any unexpected bugs and issues that may arise!
 
-## What To Do Next... {#h-v0v861gsuk0j}
+## What To Do Next...
 
 Now that you have downloaded the database, you will need to open it with the SA-SAMS software to verify that the information has been imported correctly and that your database is valid and meets the SA-SAMS requirements. Sadly, this is beyond the scope of this help document and you are requested to pass queries about the operations and functions of SA-SAMS to your district office for resolution.
 

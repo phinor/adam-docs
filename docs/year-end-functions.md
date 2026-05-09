@@ -1,19 +1,19 @@
-# Year-end Functions {#h-2gb3jie}
+# Year-end Functions
 
 The following video provides a walk through of the process. Each step is also described below.
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/E0Ek21XQAqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-## Before You Begin {#h-so7smz9ci41l}
+## Before You Begin
 
 Please ensure that your ADAM installation meets the following requirements:
 
--   **Ensure that there are no open** **[reporting periods](reporting-period-administration.md#h-1a346fx)****.** ADAM will warn you during the upgrade if there are any open. In particular, check that the reporting **period end-date** has passed and that the reporting period is **published**.
--   **Download a copy of your** **[SA-SAMS database](roll-calls.md#h-74ctdmgnp3ca)** before you proceed with the roll-over. Getting this database after the roll-over requires restoring a backup copy. Most provinces require a submission of the SA-SAMS database at year-end.
--   **The roll-over process will affect your class lists.** Until you have an opportunity to add in your classes for the following year, we suggest that you temporarily [remove the privilege which allows pupils and families to see a list of teachers](security-administration-for-families-and-pupils.md#h-mg1sc7iv8w2n) in the pupil and parent portal. This will, of course, depend on how you perform the roll-over and which options you choose when processing your classes below.
--   **Check your graduating grades.** ADAM allows for a school to have multiple exit points. These are defined by the [graduating grades](grade-settings.md#h-2iq8gzs). During the roll-over, any pupil in a graduating grade is moved to the alumni status.
+-   **Ensure that there are no open** **[reporting periods](reporting-period-administration.md#reporting-period-administration)****.** ADAM will warn you during the upgrade if there are any open. In particular, check that the reporting **period end-date** has passed and that the reporting period is **published**.
+-   **Download a copy of your** **[SA-SAMS database](roll-calls.md#roll-calls)** before you proceed with the roll-over. Getting this database after the roll-over requires restoring a backup copy. Most provinces require a submission of the SA-SAMS database at year-end.
+-   **The roll-over process will affect your class lists.** Until you have an opportunity to add in your classes for the following year, we suggest that you temporarily [remove the privilege which allows pupils and families to see a list of teachers](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils) in the pupil and parent portal. This will, of course, depend on how you perform the roll-over and which options you choose when processing your classes below.
+-   **Check your graduating grades.** ADAM allows for a school to have multiple exit points. These are defined by the [graduating grades](grade-settings.md#grade-settings). During the roll-over, any pupil in a graduating grade is moved to the alumni status.
 
-## Step 1: Process any Transferring Students {#h-f4y7iemabqkr}
+## Step 1: Process any Transferring Students
 
 Once your academic year is over, it is time to process the pupils who are leaving the school for any reason *other than graduation* from last year offered by your school. If you are a primary school, for example, then this would exclude your Grade 7 learners and, if you are a high school, this would exclude your Grade 12 learners. ADAM takes care of graduating pupils separately and automatically.
 
@@ -32,13 +32,13 @@ If you **don’t know** which pupils might be transferring, don’t worry: dere
 
 Repeat these steps for each transferring pupil.
 
-## Step 2: Finalising Promotion Decisions {#h-7rslyudg2la5}
+## Step 2: Finalising Promotion Decisions
 
 This step tells ADAM which pupils should be moved up into the next grade and which pupils should not be. Although ADAM can calculate promotion decisions based on results, these calculated decisions may not always reflect accurate promotions and transfers to subsequent grades. For this reason, ADAM asks you to check which pupils must be moved to the next grade, and which should be kept in the same grade.
 
 ADAM will assume that any pupil with a promotion result of “Fail” will not be promoted. This assumption can easily be changed by following the instructions below. A pupil who reflects “Fail” in their promotion decision can most certainly be promoted! As it happens, the promotion decision calculated by ADAM’s promotion results is only a guide and ADAM does not enforce this decision, letting you override it easily.
 
-Additionally, if a decision regarding a pupil’s promotion is made only after the roll-over is complete, don’t worry: it is possible to change the promotions later. Changing it after the roll-over requires a [slightly more manual approach](pupil-information.md#h-w9dei5qt9594) which is otherwise automated in the roll-over process.
+Additionally, if a decision regarding a pupil’s promotion is made only after the roll-over is complete, don’t worry: it is possible to change the promotions later. Changing it after the roll-over requires a [slightly more manual approach](pupil-information.md#how-adam-works-out-a-pupils-grade) which is otherwise automated in the roll-over process.
 
 -   On the **Administration** tab, click on **Finalise Promotion Results** under the **Year-End Functions** heading.
 -   Select the **current academic year** to process promotions. ADAM allows you to choose a previous year, but this *should only be used in special circumstances and under guidance from support staff!* For a standard end-of-year procedure, you will always choose the year of the academic cycle just past.
@@ -54,11 +54,11 @@ Additionally, if a decision regarding a pupil’s promotion is made only after t
 
 ![](assets/screenshots/year-end-functions/year-end-functions-06.png)
 
-## Step 3: The Roll-Over {#h-2tmajck1x4hi}
+## Step 3: The Roll-Over
 
 The largest and most important aspect of the roll-over is telling ADAM how to help you simplify the process of creating new classes for the following academic year.
 
-### Background Information {#h-6a02slgja8sf}
+### Background Information
 
 ADAM will ask you what it should do with all the classes that you have created on your system for the current academic year. There are four possible options:
 
@@ -106,14 +106,14 @@ The following examples might provide some context for when to use the different 
 
 -   If the grade of the class is already at the highest grade that the school allows, then the class will also be deleted if options 1 or 2 are chosen. This is because there is no valid higher grade for those classes to move to.
 
-### Performing the Roll-over {#h-bpc4c6x9umkt}
+### Performing the Roll-over
 
 -   On the **Administration** tab under the **Year-End Functions** heading, click on the **Perform year-end functions** option.
 -   If ADAM detects any problems at this point, you will be notified. Common problems include:
 
 1.  Having a reporting period still open. All reporting periods must be closed and finalised. Ideally, the publishing date should also have passed.
 
-2.  Not having processed the promotions yet (see [Step 2](#h-7rslyudg2la5)).
+2.  Not having processed the promotions yet (see [Step 2](#step-2-finalising-promotion-decisions)).
 
 If, however, ADAM gives you the option of entering in a random string of letters and numbers to proceed with the roll-over, then your system has met all the requirements.
 
@@ -141,7 +141,7 @@ Once ADAM has completed the roll-over, you will notice that as you work your way
 
 In roll-over mode, ADAM will assume that the date for a number of operations is 1 January of the following year. This allows you to start working on your classes.
 
-## Step 4: Processing New Admissions {#h-osvutrvhdj7e}
+## Step 4: Processing New Admissions
 
 New admissions to the school need to be registered as current pupils in order that they can be registered into classes.
 
@@ -156,7 +156,7 @@ New admissions to the school need to be registered as current pupils in order th
 
 -   ADAM will show a list of pupils that have been enrolled.
 
-## Step 5: Create a Term 1 Reporting Period {#h-z4k6ga60xp0w}
+## Step 5: Create a Term 1 Reporting Period
 
 **Please do this step as part of your roll-over! Don’t leave it until later!**
 
@@ -170,7 +170,7 @@ As soon as a reporting period is created, ADAM will be able to accurately determ
 
 -   Enter the name, short name and the start and end dates of the reporting period. If you know the rest of the information, then you can add that in also, but it can always be updated later.
 
-## Step 6: Update Class Registrations and Class Details {#h-plc92d9mndcx}
+## Step 6: Update Class Registrations and Class Details
 
 This final step is to ensure that the class registrations are accurate for the following year.
 

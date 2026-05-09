@@ -1,12 +1,12 @@
-# Moodle Integration {#h-36ei31r}
+# Moodle Integration
 
 ADAM stores information that is highly relevant to the management and structure of Moodle, particularly as most Moodle installations will follow the same structures of courses and class registrations that ADAM records.
 
 ADAM supports integration with Moodle 3 servers and can make use of the “External Database” plugin in order to synchronise classes (Moodle’s “courses”) and enrolments, and “External Authentication” which allows Moodle to use ADAM as an authentication source. This can allow staff, pupils and parents to get access to Moodle.
 
-## Preparing ADAM {#h-1ljsd9k}
+## Preparing ADAM
 
-In ADAM, log on with an Administrator account and, on the **Administration** tab, click on **Edit site settings**. For more details information about changing the site settings, please see the section [Changing Site Settings](changing-site-settings.md#h-3j2qqm3) elsewhere in this documentation.
+In ADAM, log on with an Administrator account and, on the **Administration** tab, click on **Edit site settings**. For more details information about changing the site settings, please see the section [Changing Site Settings](changing-site-settings.md#changing-site-settings) elsewhere in this documentation.
 
 Within the site settings, click on the **Third Party Integration** section, then scrolling down to find the **Moodle** section.
 
@@ -14,11 +14,11 @@ Within the site settings, click on the **Third Party Integration** section, the
 
 ![](assets/screenshots/moodle-integration/moodle-integration-02.png)
 
-### Parent, Staff and Pupil access to ADAM {#h-8u9di4yhlcoa}
+### Parent, Staff and Pupil access to ADAM
 
 The first two settings determine whether the authentication plugin will authorise staff and parents to log into Moodle. Pupils are always allowed to log into Moodle if the authentication plugin is installed.
 
-### Synchronising Courses to Moodle {#h-qum14wtcz1qv}
+### Synchronising Courses to Moodle
 
 When Moodle encounters a course in ADAM that it does not have, it can be configured to create it. When it is created, the first option, **Subject Category for new courses**, directs Moodle where to place the new course. Choose something generic. We will create this category on Moodle later.
 
@@ -32,23 +32,23 @@ Most schools tend to opt for the **grade** option since this keeps grade specif
 
 The last option, **Template course for new courses**, allows you to specify a template course that all new courses will be based on. This means that you can create some default settings which will be copied later. In the screenshot above, the course is called **template** and this will need to be created in Moodle also.
 
-### Subject settings {#h-45jfvxd}
+### Subject settings
 
 It is possible to have some subjects included and others excluded from creation in Moodle. While the default value is to include all subjects, this can be changed by editing a specific subject and changing its value there.
 
 Note that it is not possible to limit individual classes from being created or not. Of course, if the courses are created in Moodle but never used, it doesn’t matter too much!
 
-### A note on integration {#h-2koq656}
+### A note on integration
 
 It is important that Moodle and ADAM use the same usernames. If the usernames do not match, then ADAM will not be able to assign the correct people to the correct courses with the correct privileges.
 
 ADAM will use the usernames of teachers to assign them teacher privileges in Moodle and the usernames of pupils to assign them student access to their courses.
 
-## Authentication {#h-1nsihke95vlc}
+## Authentication
 
 The ADAM authentication plugin needs to be installed. This plugin is not publicly available, but you can get it by emailing us at [help@adam.co.za](mailto:help@adam.co.za). We will send you a ZIP file containing an “adam” folder that needs to be extracted into Moodle’s **auth** folder on your Moodle server. Transferring the plugin to the server and extracting it there is not covered here because it depends on the configuration and setup of your server.
 
-### Configuring ADAM to allow Authentication {#h-6y8ykpkc3y61}
+### Configuring ADAM to allow Authentication
 
 While logged on to ADAM with a site administrator account, navigate to **Administration → Security Administration → Manage API Tokens**.
 
@@ -66,9 +66,9 @@ Finally, in the **Notes** add a reason that this token has been generated. In t
 
 Now click on **Save Token**.
 
-There is more information on [managing API tokens](api-access-to-adam.md#h-m0b4zvwuxgjc) elsewhere in this manual. Please take special note of the **regenerate** option which should be used to get a new random token if you suspect that the token has been compromised.
+There is more information on [managing API tokens](api-access-to-adam.md#managing-api-tokens-in-adam) elsewhere in this manual. Please take special note of the **regenerate** option which should be used to get a new random token if you suspect that the token has been compromised.
 
-### Configuring the Authentication Plugin {#h-7cklhdbdybg7}
+### Configuring the Authentication Plugin
 
 You will need to log in to Moodle as a site administrator and visit the “Site administration” page. Click on the **Plugins** section and then click on **Plugins Overview**. Scroll down to the **Authentication methods** and find **ADAM Authentication** in the list.
 
@@ -80,9 +80,9 @@ In the “Shared Secret” field, enter the API token that you got from the sect
 
 While Moodle is now ready to accept logins via the plugin, any existing users may have another authentication type set. These users will need to have their Moodle profiles adjusted to allow them to authenticate with the ADAM Authentication plugin.
 
-## Course Synchronisation {#h-zu0gcz}
+## Course Synchronisation
 
-### Preparing Moodle for Course Synchronisation {#h-lkj289on9c1n}
+### Preparing Moodle for Course Synchronisation
 
 We first need to create the subject category (“Subject Resources” in the example) and a template course. If you have an existing category, it is not necessary to create a new one.
 
@@ -104,7 +104,7 @@ Log on to your Moodle server with an administrators account. You should have acc
 
 Note that when a new course is created, the template course is copied and becomes a fully-fledged stand-alone course. If you then make changes to the template course, these will only apply to courses that are made subsequently and will have no effect on courses that were made from it previously.
 
-### Configuring Moodle for Course Synchronisation {#h-3jtnz0s}
+### Configuring Moodle for Course Synchronisation
 
 In the settings block, expand the **Plugins** section and then expand on **Enrolments**. Click on **Manage enrol plugins** in the menu and ensure that **External database** is enabled. All enabled plugins will appear at the top of the list and will have an “open eye” icon. If the eye is shut, simply click on it to enable the plugin. Once the plugin is enabled, click on the **Settings** link. The following values need to be configured. Text to be entered is written in fixed width font.
 
@@ -139,9 +139,9 @@ Once you have entered all that information, click on **Save changes**.
 
 To test that it is working, logout and login as a teacher or student. You should see new course enrolments in the **Navigation** block under **My Courses**.
 
-### Some Common Problems with Moodle Course Sync {#h-1yyy98l}
+### Some Common Problems with Moodle Course Sync
 
-#### I can log into Moodle, but I don’t see any courses {#h-4iylrwe}
+#### I can log into Moodle, but I don’t see any courses
 
 Once working, individuals tend to not be enrolled for courses if their username is not correctly set on ADAM.
 
@@ -151,7 +151,7 @@ This all means that a pupil might well be able to log into Moodle even if their 
 
 Once the username is entered into ADAM, they will need to log on again to Moodle to have their courses reflected there.
 
-#### I have been enrolled in the wrong class {#h-2y3w247}
+#### I have been enrolled in the wrong class
 
 The courses that Moodle creates are based on the short codes and class descriptions stored within ADAM. A course is named using the subject’s full name but pupils and teachers are enrolled in the subject using the subject’s short name. It is thus important to ensure that the subjects have appropriate short names. A common oversight is to have a blank short-code in several subjects.
 
@@ -159,15 +159,15 @@ The courses that Moodle creates are based on the short codes and class descripti
 -   **Grade:** The course gets an identifier based on the subject’s short-code and grade, e.g.: Mat9, Eng8, Eng10, etc.
 -   **Class:** The course gets an identifier based on the subject’s short-code, grade and the class description as entered in the class info, e.g.: Mat8R, Eng10C, IT12Ch1, etc.
 
-#### I am being enrolled for subjects I don’t want {#h-1d96cc0}
+#### I am being enrolled for subjects I don’t want
 
 Remember you can turn off whether a subject has a course created or not by adjusting the subject settings. Note that if a course has already been created (in error), if the settings are changed in ADAM, the course will NOT be deleted, but pupils will be unenrolled from it. Moodle might create courses automatically, but won’t ever delete courses automatically.
 
-#### What about next year? {#h-3x8tuzt}
+#### What about next year?
 
 Moodle will only create a course if it doesn’t exist. It automatically unenrols pupils from courses when they are no longer registered for them. At the end of the year, pupils will be taken out of the courses that they were enrolled for and automatically enrolled in other courses for which they are now enrolled. These courses may well have content from the year gone by and so teachers will need to ensure that they examine the content. However, it does mean that as time goes by, these courses can become excellent resources for pupils.
 
-#### I want some subject-level courses and some grade level courses {#h-2ce457m}
+#### I want some subject-level courses and some grade level courses
 
 This can’t be done automatically. However, Moodle has a useful feature called **Meta-courses** which you should investigate. Basically, this is a course that uses other courses to determine its enrolments.
 

@@ -1,4 +1,4 @@
-# Changing Site Settings {#h-3j2qqm3}
+# Changing Site Settings
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/lnAzBE0iblg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 

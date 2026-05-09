@@ -1,10 +1,10 @@
-# Staff Passwords {#h-cuxr7xfmvhp2}
+# Staff Passwords
 
-There are a number of ways that ADAM can authenticate staff members. This is normally done with a password that ADAM manages (an “internal” password), but ADAM can delegate the password management to other systems such as Active Directory. Staff can also enrol a [passkey](passkey-authentication.md#h-68qerlruak0n) on each of their devices, which lets them sign in with a fingerprint or face scan rather than a password.
+There are a number of ways that ADAM can authenticate staff members. This is normally done with a password that ADAM manages (an “internal” password), but ADAM can delegate the password management to other systems such as Active Directory. Staff can also enrol a [passkey](passkey-authentication.md#passkey-authentication) on each of their devices, which lets them sign in with a fingerprint or face scan rather than a password.
 
-This page covers password-based logins. For information on enrolling and managing passkeys — including how an administrator can revoke a passkey on a lost or stolen device — see the [Passkey Authentication](passkey-authentication.md#h-68qerlruak0n) page.
+This page covers password-based logins. For information on enrolling and managing passkeys — including how an administrator can revoke a passkey on a lost or stolen device — see the [Passkey Authentication](passkey-authentication.md#passkey-authentication) page.
 
-## Checking Usernames and Authentication Methods {#h-87mj6iu0gpko}
+## Checking Usernames and Authentication Methods
 
 In order for a staff member to make use of an internal password, it is important to check that their username and authentication type is set up correctly in their profile. Navigate to **Staff → Staff Administration → Edit a staff member’s information**.
 
@@ -12,7 +12,7 @@ Find the section called “**ADAM Access**” and make sure that a username is s
 
 ![](assets/screenshots/staff-passwords/staff-passwords-01.png)
 
-## Resetting a Staff Member’s Password {#h-ylobzxjdgrit}
+## Resetting a Staff Member’s Password
 
 If a staff member forgets their password, it is not possible to recover it. It is, however, possible to reset the password to something new. To change a staff member’s password, navigate to **Staff → Security Administration → Change a teacher’s password**.
 
@@ -22,7 +22,7 @@ Enter the new password twice into the “Password” fields. You can also decide
 
 Once you’re happy, click on the “**Change password**” button.
 
-## Changing Your Own Password {#h-xziujx3xvnnw}
+## Changing Your Own Password
 
 If a user wishes to change their password, they can do so by visiting: **Staff → Security Administration → Change your password**.
 
@@ -32,11 +32,11 @@ The user will need to enter their existing password and then enter a new passwor
 
 To save the password, click on the **Change password** button that appears at the bottom.
 
-Note that if the password entered does not conform to the password policy, the button will be disabled. Read more [below about the password policy](#h-30voois3siuv).
+Note that if the password entered does not conform to the password policy, the button will be disabled. Read more [below about the password policy](#password-policy).
 
-## Common Issues {#h-x1hfremg64hv}
+## Common Issues
 
-### Password Policy {#h-30voois3siuv}
+### Password Policy
 
 Temporary passwords set here must still fit in with ADAM’s password policy, even if the staff member is going to have to change it.
 
@@ -48,6 +48,6 @@ If you see a message like this, it means that the password you have chosen alrea
 
 ![](assets/screenshots/staff-passwords/staff-passwords-04.png)
 
-### Incorrect Username {#h-9mw07rh9y0rh}
+### Incorrect Username
 
 Please double check the username is correct. Also double check that the user is using the correct username. It is surprising how many times the user is using a different username to the one that is configured in ADAM.

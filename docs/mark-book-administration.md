@@ -1,15 +1,15 @@
-# Mark Book Administration {#h-haapch}
+# Mark Book Administration
 
 ADAM comes complete with a powerful mark book that allows for complete control over the marks in a teacher’s mark book. The mark book is controlled nearly entirely by each teacher and so they are able to manipulate it to suit their classes’ assessment needs.
 
 !!! warning
     Administrators will need to ensure that there is a reporting period configured to accept marks. See Editing Reporting Period Time Frames on page.
 
-## Managing Assessments {#h-nemgm7e6zt9e}
+## Managing Assessments
 
 To manage assessments for a class, navigate to **Assessments → Assessment Administration**
 
-## Adding a New Assessment {#h-319y80a}
+## Adding a New Assessment
 
 A new assessment is added by visiting **Assessments → Assessment Administration → Add a new assessment task**.
 
@@ -21,7 +21,7 @@ If this assessment was written by multiple classes, don’t worry – you will g
 
 Assessments can be created in two ways. The first is to enter the details manually, but the second is to copy an assessment (without the marks) from another teacher’s markbook.
 
-### Entering an Assessment Manually {#h-1gf8i83}
+### Entering an Assessment Manually
 
 ![](assets/screenshots/mark-book-administration/mark-book-administration-03.png)
 
@@ -34,7 +34,7 @@ On this screen, the **New Assessment** tab should already be selected, as shown 
 -   Date: This is the date that the assessment was written. It will show today’s date by default, but you can change that.
 -   Results Release Time: If your school allows parent and pupil logins, the results will only be shown to parents and pupils after this time. It will show today’s date and midnight (meaning that the results will be visible as soon as you enter them), but if you are marking in phases, you might wish to extend this to a time when you expect to be finished.
 -   Assessment Total: This is the number of marks that the assessment was marked out of. Typically, this will reflect the total that appears at the top of your test.
--   Adjusted (Weighted) Total: This total refers to how ADAM will weight this assessment against the others. Please see [Weighting Assessments and Assessment Categories](#h-upglbi) for more information.
+-   Adjusted (Weighted) Total: This total refers to how ADAM will weight this assessment against the others. Please see [Weighting Assessments and Assessment Categories](#weighting-assessments-and-assessment-categories) for more information.
 -   Number of Questions: While the word “questions” is used here, this is actually asking for the number of subtotals that you wish to enter. This allows you to record marks against different learning outcomes, sections or topics for either reporting or later analysis.
 -   Copy This Assessment To Other Classes: You also have the option of copying this assessment to any other classes in the same subject and same grade. Only users who have permission to create assessments in other teachers’ markbooks will see this option.
 
@@ -61,7 +61,7 @@ Click on the “Next” button to finally create the assessment.
 
 A link is then provided to enter the results of the assessment.
 
-### Copying an Assessment {#h-40ew0vw}
+### Copying an Assessment
 
 It is possible, in the first step, to choose an existing assessment in another teacher’s mark book to use as a template for your own assessment. Under normal circumstances, they should have copied the assessment into your mark book when they created it, but perhaps forgot. It is still possible to get that assessment into your mark book.
 
@@ -77,7 +77,7 @@ When you click on “Copy assessment”, a confirmation screen is shown giving t
 
 Click on “Next” to confirm the settings.
 
-## Editing an Assessment {#h-nxzf0hf3fx2w}
+## Editing an Assessment
 
 To edit an assessment’s details, such as it’s name, number of marks etc., navigate to **Assessment → Assessment Administration → Manage assessments and weightings**.
 
@@ -87,7 +87,7 @@ Next to the assessment that you wish to change, click on the **edit** action:
 
 ![](assets/screenshots/mark-book-administration/mark-book-administration-10.png)
 
-A similar screen to the one you completed when you [added an assessment](#h-319y80a) will appear:
+A similar screen to the one you completed when you [added an assessment](#adding-a-new-assessment) will appear:
 
 ![](assets/screenshots/mark-book-administration/mark-book-administration-11.png)
 
@@ -95,13 +95,13 @@ Depending on the reporting periods that are currently open, it may or may not be
 
 All other settings can be changed here. Note carefully that if you change the **Assessment Total**, the total listed for the number of questions must also change.
 
-### Monitoring Changes to Assessments {#h-pljxq0b13oxl}
+### Monitoring Changes to Assessments
 
 When editing an assessment, a list of previous changes is shown below the assessment:
 
 ![](assets/screenshots/mark-book-administration/mark-book-administration-12.png)
 
-## Capturing Assessment Results {#h-2fk6b3p}
+## Capturing Assessment Results
 
 Once you’ve added an assessment, there is a link provided to capture the results immediately. However, it might not be a convenient time to capture the results at that point and so you will need to come back later to do so.
 
@@ -123,7 +123,7 @@ Once you have finished capturing the marks, remember to click on the “Save res
 
 ADAM will then update the pupils’ term marks based on the current weightings of the assessments.
 
-## Weighting Assessments and Assessment Categories {#h-upglbi}
+## Weighting Assessments and Assessment Categories
 
 After the marks are collected, it will be necessary to ensure that the weightings for the assessment is done correctly. A handy management screen is available to adjust these weightings without having to revisit each assessment.
 
@@ -157,7 +157,7 @@ In the same example, we could have a total out of 25 (7 + 8 + 10 = 25). Note tha
 
 Another way of thinking about what ADAM is doing here is scaling the results of the assessments to be marks out of these adjusted totals. In this last example, the “Romeo and Juliet Comprehension” is out of 57 marks, but ADAM is scaling it to be a mark out of 10 for the purposes of working out a term mark.
 
-### Weighting an assessment as a fraction of the term {#h-3ep43zb}
+### Weighting an assessment as a fraction of the term
 
 Assessments are weighted as a fraction of the classwork result. However, many teachers prefer to think about assessments as a fraction of the *term result*.
 
@@ -173,11 +173,11 @@ See here that each classwork category weighting is simply to total of the weight
 
 In this case, while the weightings of the assessments within each category is technically accurate (the “Formal assessment” counts 20 out of 35 marks or 57.1% of the “Classwork” result), this is merely a mathematical side-effect of the model that ADAM uses.
 
-## Assessment Groups {#h-q72qrq528kma}
+## Assessment Groups
 
 To simplify the management of large markbooks with many assessments, it is often useful to make use of “Assessment Groups”.  Assessment groups are automatically copied across into all teachers mark books of the same subject and grade. The weightings are also shared.
 
-### Assigning the Privileges for Teachers {#h-fjlbldo5hx9}
+### Assigning the Privileges for Teachers
 
 Note that this option is not normally enabled by default and so privileges to use “Assessment Groups” will need to be assigned. Normally it is best to assign it to the “General Teacher” role.
 
@@ -187,7 +187,7 @@ Note that this option is not normally enabled by default and so privileges to us
 4.  Click on the “Assessments” tab
 5.  Choose the option “Make use of Assessment Groups to categorise assessments”
 
-### Creating Assessment Groups {#h-fm4hinpnlweh}
+### Creating Assessment Groups
 
 Assessment groups should ideally be created before any other assessments are created.
 
@@ -198,7 +198,7 @@ On the “Manage assessments and weightings” page for a class, the option for 
 
 ![](assets/screenshots/mark-book-administration/mark-book-administration-22.png)
 
-Note that if it does not appear, the [appropriate privilege](#h-fjlbldo5hx9) will need to be assigned to the teachers.
+Note that if it does not appear, the [appropriate privilege](#assigning-the-privileges-for-teachers) will need to be assigned to the teachers.
 
 Clicking on this option for the first time brings up a blank screen with room for new groups in each assessment category.
 
@@ -242,23 +242,23 @@ One last point is that once groups have been created in a markbook, ADAM will au
 
 ![](assets/screenshots/mark-book-administration/mark-book-administration-29.png)
 
-## Viewing a Mark Book Printout {#h-1tuee74}
+## Viewing a Mark Book Printout
 
 On the “Assessments” tab, under the “Assessment Analysis” tab, is an option for “Summary of results”. This will allow you to display a typical mark book summary of your class:
 
 ![](assets/screenshots/mark-book-administration/mark-book-administration-30.png)
 
-## Viewing Detailed Assessment Analysis {#h-4du1wux}
+## Viewing Detailed Assessment Analysis
 
 ADAM has a number of tools that can be used to analyse the assessments – both those written in a single class or those written by multiple classes. The latter also shows how the classes performed against each other. More options and other analysis tools can be found on the “Assessments” tab.
 
-## Blinded Marking with QR Codes {#h-712mmlauhtbg}
+## Blinded Marking with QR Codes
 
 ADAM can now assist your teachers with blinded marking by producing QR codes which can be affixed to pupils’ answer sheets and scanned by a regular webcam, facilitating quick results capture of the marked script.
 
-Labels are printed that are specific to a pupil and the assessment being written. Each assessment will require new labels to be printed. See “[Scanning QR Code Labels](#h-5iscpojlfxlu)” lower down for more information.
+Labels are printed that are specific to a pupil and the assessment being written. Each assessment will require new labels to be printed. See “[Scanning QR Code Labels](#scanning-qr-code-labels)” lower down for more information.
 
-### Printing QR Code Labels {#h-mgc17nbujr5m}
+### Printing QR Code Labels
 
 In the Weightings and Assessment Management screen (**Assessments → Assessment Administration → Manage assessments and weightings**), each assessment has a **labels** action shown on the right-hand side of the screen:
 
@@ -268,7 +268,7 @@ Clicking on this option will allow you to choose various options for the labels 
 
 ![](assets/screenshots/mark-book-administration/mark-book-administration-32.png)
 
-The **Label Size** should be chosen to match the labels that you are printing on. Note that it is possible to add custom label sizes by [creating a new label size](labels.md#h-sr4w83twoy83).
+The **Label Size** should be chosen to match the labels that you are printing on. Note that it is possible to add custom label sizes by [creating a new label size](labels.md#creating-a-custom-size-label).
 
 If you are using partially used label sheets, you can ask ADAM to **skip a number of labels**. These are counted across and then down.
 
@@ -286,15 +286,15 @@ Click on the **Print Labels** button to generate the labels. ADAM will generate
 
 *Please take special care, when printing labels, to ensure that all “scale to page” or “scale to fit” options are turned off. ADAM measures the labels quite precisely and scaling options introduced by your computer will distort the printing, resulting in the printed content of the label spilling into the next label.*
 
-### Scanning QR Code Labels {#h-5iscpojlfxlu}
+### Scanning QR Code Labels
 
 QR Codes can be scanned by a QR Code scanner on a mobile device or even your own webcam. You can use a special QR Code scanner on your phone or use ADAM and your computer’s webcam.
 
-#### Using your phone {#h-3dnqoxo0lnqb}
+#### Using your phone
 
 Many QR Code scanners are available on iOS and Android app stores. Install one of these scanners and follow the instructions for that app to scan the code. The QR Code will reveal a URL which will open directly in ADAM. Note that the user *must* be logged in to ADAM. The first time the user scans a code, they may be redirected to the login screen. Once they have logged in, they can scan the code again. They should not need to log in again, provided that their login session doesn’t expire from inactivity.
 
-#### Using your webcam on your computer {#h-trv7zpqqhp2u}
+#### Using your webcam on your computer
 
 In ADAM, visit **Assessment → Assessment Administration → Scan assessment barcodes**.
 
@@ -310,7 +310,7 @@ Hold the QR Code up to the webcam. The manner in which you will need to hold the
 
 Once you’ve scanned the barcode, a mark entry screen will appear for one pupil. Enter their marks and click on the **Save** button.
 
-## Mark Book Results Recalculation {#h-c8hwdhlvdk7n}
+## Mark Book Results Recalculation
 
 Mostly, ADAM will automatically recalculate the term mark for a particular subject based on the assessment results. This is done whenever the assessment results change. However, there are some circumstances where this recalculation might not happen or do not automatically recalculate. This seems to happen erratically and we have not yet identified the circumstances under which the results are not automatically recalculated. However, it does appear to happen very infrequently.
 
@@ -318,9 +318,9 @@ To force ADAM to recalculate the mark book results, you can navigate to **Report
 
 ADAM will ask you to confirm a reporting period and a Grade, and then proceed to recalculate the results.
 
-If a result has been [manually overridden on the reporting page](report-comments.md#h-d8yv9caez322), ADAM will **not** recalculate it until you [cancel the override](report-comments.md#h-d8yv9caez322).
+If a result has been [manually overridden on the reporting page](report-comments.md#my-marks-on-the-reporting-screen-are-wrong-and-wont-update), ADAM will **not** recalculate it until you [cancel the override](report-comments.md#my-marks-on-the-reporting-screen-are-wrong-and-wont-update).
 
-## Customising the Year-to-Date Calculation {#h-7so5x1pkfis7}
+## Customising the Year-to-Date Calculation
 
 For ADAM to calculate the Year-to-Date mark for an individual pupil, it will check for a calculation to use in the following order:
 
@@ -328,13 +328,13 @@ For ADAM to calculate the Year-to-Date mark for an individual pupil, it will che
 2.  Does the reporting period have a Year-to-Date calculation specified? If not:
 3.  Use the Term result.
 
-This means that there are two possible places to set a Year-to-Date calculation. If everyone in the grade must use the same calculation, then you should set the calculation in the [reporting period settings](reporting-period-administration.md#h-u5xim02o9rs5) (option 2 in the list above) and not set anything for the class.
+This means that there are two possible places to set a Year-to-Date calculation. If everyone in the grade must use the same calculation, then you should set the calculation in the [reporting period settings](reporting-period-administration.md#editing-a-reporting-period) (option 2 in the list above) and not set anything for the class.
 
 However, where each subject has its own unique calculation, these can be set from the markbook screen.
 
-An appropriate [aggregated result calculation](aggregated-results.md#h-mk1c22te1pt8) needs to be created first.
+An appropriate [aggregated result calculation](aggregated-results.md#creating-aggregated-result-calculations) needs to be created first.
 
-### Setting the Calculation for Use {#h-b5n23ip4cjmh}
+### Setting the Calculation for Use
 
 Navigate to a class’s assessment management screen by visiting: **Assessments → Assessment Administration → Manage assessments and weightings**. Choose the necessary options to find the class whose weightings you need to update.
 
@@ -342,7 +342,7 @@ Scroll to the bottom of the screen and you will see the following options:
 
 ![](assets/screenshots/mark-book-administration/mark-book-administration-34.png)
 
-Note, here, that in the block on the right, ADAM is using the “grade’s default calculation instead”. This calculation, “T3-G11 - Grade 11” is a calculation that has already been created and has been set for use in the [reporting period settings](reporting-period-administration.md#h-u5xim02o9rs5).
+Note, here, that in the block on the right, ADAM is using the “grade’s default calculation instead”. This calculation, “T3-G11 - Grade 11” is a calculation that has already been created and has been set for use in the [reporting period settings](reporting-period-administration.md#editing-a-reporting-period).
 
 To set a specific calculation for this class, click on the **Change YTD mark calculation** button.
 
@@ -356,21 +356,21 @@ Click on the **Save Calculation** button when you’re done.
 
 ADAM will now recalculate the class’s YTD results with your new calculation.
 
-If the claculation you want does not show, you will have to [create it first](aggregated-results.md#h-mk1c22te1pt8) - a link is provided at the bottom of the screen to take you to the appropriate screen to create the calculation. Documentation on [creating the calculations is found elsewhere in this manual](aggregated-results.md#h-mk1c22te1pt8).
+If the claculation you want does not show, you will have to [create it first](aggregated-results.md#creating-aggregated-result-calculations) - a link is provided at the bottom of the screen to take you to the appropriate screen to create the calculation. Documentation on [creating the calculations is found elsewhere in this manual](aggregated-results.md#creating-aggregated-result-calculations).
 
-## Importing Assessment Results {#h-35v8w5hs4224}
+## Importing Assessment Results
 
 ADAM has the ability to import assessment results from CSV. In this example, we will work through the process of importing the Independent Examinations Board results - something at the more complex end of the scale.
 
-### Staff Privileges {#h-n13s31fep3j6}
+### Staff Privileges
 
 Ensure that the necessary staff privileges are in place. A staff member needs to have the privilege to “import assessment results for any subject” and “import assessment results for subjects taught by the user”. These will allow a single user to import a single spreadsheet with all the exam results on it. Without these privileges, a teacher will only be able to import results for pupils in their own classes.
 
-### Save the results as a CSV file {#h-g64gn2cxat6m}
+### Save the results as a CSV file
 
 The spreadsheet must have, at the very least, the pupils’ names and a result. Additionally, in the case of the IEB sheet, it must also have subject names. The IEB send two sheets to schools. One, entitled “Result Matrix per subject” is a perfect candidate for this operation:
 
-### Import the Results {#h-xg9egxgfdok3}
+### Import the Results
 
 Navigate to **Assessment → Assessment Administration → Import assessment results**.
 
@@ -386,6 +386,6 @@ When you move to the next page, ADAM will match pupils as best it can with exist
 
 Once all is correct, click the **Next** button to begin the import.
 
-### Notes {#h-56weg5qryi4v}
+### Notes
 
 If a pupil is not registered for a subject but ends up with a subject result, ADAM will create a new class and add that pupil to the new class in order to import the result. This can often be the case for pupils who write Mathematical Literacy as an option, for example, but who were never registered for the subject. The teacher performing the import becomes the teacher of such classes.

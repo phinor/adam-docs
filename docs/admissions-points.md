@@ -1,10 +1,10 @@
-# Admissions Points {#h-wygf848tdmvz}
+# Admissions Points
 
 ADAM is capable of creating a list of applicants that can be assigned points based on their profile properties. In so doing, it is possible to favour entry to pupils of staff children, alumni and so on.
 
 The list of Admissions Points is static and applies to all grades within the school.
 
-## Managing Admissions Points {#h-nrzmub9mpeq9}
+## Managing Admissions Points
 
 On the **Admissions** tab, click on the entry **Modify the Admissions Points** which can be found under the heading **Admissions Points**.
 
@@ -30,7 +30,7 @@ ADAM allows for a number of comparative **conditions** to be used to compare th
 
 Finally, specify the number of **Points** that ADAM should award if the criteria are met for a particular pupil.
 
-## Generating the Points List {#h-yd15gxy311rt}
+## Generating the Points List
 
 On the **Admissions** tab, click on the entry **View the Admissions Points** which can be found under the heading **Admissions Points**.
 
@@ -48,7 +48,7 @@ Pupils are automatically sorted into descending rank order. Where pupils have th
 
 The column headers are always shown alphabetically. If you require them in a different order, you can prefix the descriptions with a number since that will result in them being sorted by that number first. (e.g. “4. Alumni Points” instead of simply “Alumni Points”).
 
-## Troubleshooting Issues {#h-mbx8u751993}
+## Troubleshooting Issues
 
 Because the comparisons that ADAM does in order to generate the admissions points are exact, there might be cases where data inconsistency results in some pupils missing out on points because of spelling mistakes in the data. Schools are advised to audit and check their admissions criteria carefully, along with the actual data that they are based on and identify any problems. Once problems are identified, they can be corrected in two ways:
 

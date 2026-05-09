@@ -1,4 +1,4 @@
-# Transferring Pupil Information Between Schools {#h-gzpu9gv34kdg}
+# Transferring Pupil Information Between Schools
 
 ADAM is capable of allowing individual pupil records to be transferred between ADAM schools. This is useful for feeder prep schools where children apply to the high school automatically, for example.
 
@@ -12,7 +12,7 @@ The following information is transferred:
 
 -   Family Profile Information
 
-## Security Considerations {#h-sgofcl888bt1}
+## Security Considerations
 
 Sharing personal information is something that needs to be done carefully and with authorisation of the people concerned. Doing so without permission is likely to be a breach of the POPI Act.
 
@@ -23,11 +23,11 @@ To this end, ADAM has some precautions built in to mitigate against accidental d
 -   Transfer requests can have the PIN entered incorrectly 4 times. On the 5th time, the information will be deleted from the receiving database.
 -   Transfer requests that have not been actioned within a week are deleted.
 
-## Initial Setup {#h-ov1pjrv6k9i8}
+## Initial Setup
 
-The receiving school should nominate one or more people to be notified of incoming data transfers. Navigate to the [Site Settings](changing-site-settings.md#h-3j2qqm3) and on the **Admissions** tab, scroll down to the bottom for the section **Pupil Transfers In**. Add in one or more email addresses, separated by commas, that should be notified when a new pupil is transferred to the school.
+The receiving school should nominate one or more people to be notified of incoming data transfers. Navigate to the [Site Settings](changing-site-settings.md#changing-site-settings) and on the **Admissions** tab, scroll down to the bottom for the section **Pupil Transfers In**. Add in one or more email addresses, separated by commas, that should be notified when a new pupil is transferred to the school.
 
-## Transfers Out {#h-pjrs1tbqyf55}
+## Transfers Out
 
 All data transfers are initiated by the school with the information who wish to transfer it to a school without the information.
 
@@ -45,9 +45,9 @@ ADAM now begins the process of transferring information from your ADAM server to
 
 ![](assets/screenshots/transferring-pupil-information-between-schools/transferring-pupil-information-between-schools-03.png)
 
-## Transfer In {#h-i93rqmams6hb}
+## Transfer In
 
-When a pupil’s information is transferred to your server, you will be notified by email (see [Initial Setup](#h-ov1pjrv6k9i8) above). You can also navigate to **Admissions → Pupil Administration → Pupil Transfers In**.
+When a pupil’s information is transferred to your server, you will be notified by email (see [Initial Setup](#initial-setup) above). You can also navigate to **Admissions → Pupil Administration → Pupil Transfers In**.
 
 Clicking on this list will show you a list of pupils waiting for processing:
 

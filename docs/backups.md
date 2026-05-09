@@ -1,6 +1,6 @@
-# Backups {#h-od9y0s45317p}
+# Backups
 
-## Database Snapshots {#h-hzq2a2hkn0iu}
+## Database Snapshots
 
 ADAM will create snapshots of the database at predefined times during the day. Snapshots are kept for differing lengths of time:
 

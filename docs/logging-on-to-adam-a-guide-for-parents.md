@@ -1,16 +1,16 @@
-# Logging on to ADAM: A Guide for Parents {#h-3wf37gt5yaio}
+# Logging on to ADAM: A Guide for Parents
 
 **In order to protect the privacy and security of personal information in ADAM, parents are required to set a password that will be used in conjunction with their ID number in order to log into ADAM. This document explains how to do this.**
 
 There are several sections in this document. The following links will jump you to the appropriate section depending on what you’re trying to do:
 
-1.  [Logging into ADAM for the first time](#h-lhdo3qnuhw2w)
-2.  [Logging into ADAM on subsequent occasions](#h-dp8f3p7ftvyl)
-3.  [Help! I’ve forgotten my password!](#h-29nl2v8fue2g)
-4.  [Help! ADAM doesn’t recognise my information!](#h-ypjo9gg1d2c1)
-5.  [Help! ADAM tells me that no information is permitted to be shown!](#h-tldxvzanj4a6)
+1.  [Logging into ADAM for the first time](#logging-into-adam-for-the-first-time)
+2.  [Logging into ADAM on subsequent occasions](#logging-into-adam-on-subsequent-occasions)
+3.  [Help! I’ve forgotten my password!](#help-ive-forgotten-my-password)
+4.  [Help! ADAM doesn’t recognise my information!](#help-adam-doesnt-recognise-my-information)
+5.  [Help! ADAM tells me that no information is permitted to be shown!](#help-adam-tells-me-that-no-information-is-permitted-to-be-shown)
 
-## Logging into ADAM for the first time {#h-lhdo3qnuhw2w}
+## Logging into ADAM for the first time
 
 Before you begin:
 
@@ -61,7 +61,7 @@ Click on the “Change your password” button and ADAM should confirm that your
 
 Click on the “login” tab to begin the login process again.
 
-## Logging into ADAM on subsequent occasions {#h-dp8f3p7ftvyl}
+## Logging into ADAM on subsequent occasions
 
 Proceed to “Parent Login” on the ADAM home page:
 
@@ -81,9 +81,9 @@ If you are successfully logged in, you will see a login status message at the to
 
 ![](assets/screenshots/logging-on-to-adam-a-guide-for-parents/logging-on-to-adam-a-guide-for-parents-13.png)
 
-You may find that ADAM gives you a warning message that “No information is permitted to be shown”. In this instance, please see the section titled [Help! ADAM tells me that information is permitted to be shown!](#h-tldxvzanj4a6)
+You may find that ADAM gives you a warning message that “No information is permitted to be shown”. In this instance, please see the section titled [Help! ADAM tells me that information is permitted to be shown!](#help-adam-tells-me-that-no-information-is-permitted-to-be-shown)
 
-## Logging in with a Passkey {#h-u9ub5n59zgzk}
+## Logging in with a Passkey
 
 If your phone, tablet or laptop supports a fingerprint reader, face recognition, or a screen-lock PIN, you can choose to log in with a passkey instead of typing your ID number and password. A passkey is a small piece of information that lives on your device. To log in, you simply tap a button on the ADAM log-in page and confirm with your fingerprint or face — ADAM never sees your fingerprint or face, only the “yes, this is the right person” answer from your device.
 
@@ -91,9 +91,9 @@ To set up a passkey, log in with your ID number and password as usual. At the to
 
 From then on, when you visit the parent log-in page, you can click Log in with a passkey instead of entering your ID and password. The button is only shown when your browser supports passkeys; if it is not visible, just continue to log in with your ID number and password as before.
 
-To rename or remove a passkey at any time, go to **Family Portal → Security → Manage your passkeys**. Remove a passkey if you have lost the device it was set up on, or if you no longer use that device for ADAM. See [Passkey Authentication](passkey-authentication.md#h-68qerlruak0n) for the full guide.
+To rename or remove a passkey at any time, go to **Family Portal → Security → Manage your passkeys**. Remove a passkey if you have lost the device it was set up on, or if you no longer use that device for ADAM. See [Passkey Authentication](passkey-authentication.md#passkey-authentication) for the full guide.
 
-## Help! I’ve forgotten my password! {#h-29nl2v8fue2g}
+## Help! I’ve forgotten my password!
 
 If you have **forgotten your ADAM password**, you can get ADAM to send to a password reset link similar to the one you received when you first created your password.
 
@@ -113,7 +113,7 @@ ADAM will then send you a password reset email. Please allow 5 to 10 minutes for
 
 In the email is a link that you can click on which will take you back to ADAM and you can then enter a new password.
 
-## Help! ADAM doesn’t recognise my information! {#h-ypjo9gg1d2c1}
+## Help! ADAM doesn’t recognise my information!
 
 You may find that ADAM does not recognise your ID number or cell number when you first are setting your password:
 
@@ -125,7 +125,7 @@ In many cases, the database will have your details with a simple typographical e
 
 Kindly note that the developers of ADAM cannot assist with the resolution of this issue.
 
-## Help! ADAM tells me that no information is permitted to be shown! {#h-tldxvzanj4a6}
+## Help! ADAM tells me that no information is permitted to be shown!
 
 Parents may see this error notification from time to time:
 

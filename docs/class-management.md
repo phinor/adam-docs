@@ -1,10 +1,10 @@
-# Class Management {#h-mvzndakmkiiy}
+# Class Management
 
-You will need to make sure that you have created subjects in ADAM first. To read up about subjects, please [click here](subjects.md#h-3nqndbk).
+You will need to make sure that you have created subjects in ADAM first. To read up about subjects, please [click here](subjects.md#subjects).
 
 A class can be considered a container. Its primary purpose is to link a teacher to pupils and link pupils to an activity, whether academic or otherwise.
 
-## Creating a new class {#h-4i7ojhp}
+## Creating a new class
 
 To create a new class, click on the “**Add a new class**” option on the “**Classes**” tab, found under the “**Class Administration**” heading.
 
@@ -42,7 +42,7 @@ The different headings are explained below:
 
 -   **Teaching Venue**
 
--   This is used by the [timetable module](timetable-module.md#h-hpdeljllmcbc) for informational purposes only. It is an optional field to fill in.
+-   This is used by the [timetable module](timetable-module.md#timetable-module) for informational purposes only. It is an optional field to fill in.
 
 -   **Reporting Teacher**
 
@@ -54,7 +54,7 @@ The different headings are explained below:
 
 -   **Language of Teaching and Learning**
 
--   This field is only important if your school is a parallel medium school with different classes being taught in different languages. Select the language that this class is taught in so that ADAM uses the appropriate [subject translation](subjects.md#h-ecvd10cxvq8z) when displaying the details of this class.
+-   This field is only important if your school is a parallel medium school with different classes being taught in different languages. Select the language that this class is taught in so that ADAM uses the appropriate [subject translation](subjects.md#translating-subject-names) when displaying the details of this class.
 
 Once you are happy with the options, click on the “**Add class**” button at the bottom of the page.
 
@@ -62,17 +62,17 @@ ADAM then shows you this confirmation screen:
 
 ![](assets/screenshots/class-management/class-management-03.png)
 
-This allows you to [enrol pupils in this class or group](class-registration.md#h-1ci93xb), to edit and change the settings of the class (see “[Edit an existing class](#h-2xcytpi)” below, bearing in mind that you will skip the first few steps of selecting a class) or to take you back to add a new class, as you’ve just done.
+This allows you to [enrol pupils in this class or group](class-registration.md#class-registration), to edit and change the settings of the class (see “[Edit an existing class](#editing-an-existing-class)” below, bearing in mind that you will skip the first few steps of selecting a class) or to take you back to add a new class, as you’ve just done.
 
-## Editing an existing class {#h-2xcytpi}
+## Editing an existing class
 
 To edit an existing class, click on the “**Edit a class’s details**” option on the “**Classes**” tab under the “**Class Administration**” heading.
 
 Select the class to edit by first selecting its subject category, then the subject and finally, the class you wish to edit.
 
-When changing the details of the class, please take note of [the details given above about the different fields](#h-4i7ojhp).
+When changing the details of the class, please take note of [the details given above about the different fields](#creating-a-new-class).
 
-### Re-registration of Pupils when editing a class {#h-stwgi3cbmfjn}
+### Re-registration of Pupils when editing a class
 
 One important consideration is whether the changes to a class need to be backdated or whether the changes are made in order to reflect current changes moving forward.
 
@@ -80,6 +80,6 @@ If you wish to have changes backdated, then it is important that the option to �
 
 If you wish to have the changes reflected only for future reports, then it is important that the option to “**Re-register Pupils**” is set to “Yes”.
 
-## Deleting a class {#h-wgy67l4h3cjq}
+## Deleting a class
 
 Please follow the same instructions for “Editing an existing class”. On the editing screen, at the bottom, there will be a button to “DELETE CLASS”. Clicking on this will confirm that you are sure you want to continue. Clicking on “Yes, delete this class” will result in the class being deleted and all pupils will be un-enrolled from it.

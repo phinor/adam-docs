@@ -1,16 +1,16 @@
-# Attendance Registers {#h-ypqmq1nus3d4}
+# Attendance Registers
 
-## Deprecation Notice {#h-9tv0k3tr7u9j}
+## Deprecation Notice
 
-*Kindly note that the* ***Attendance Register*** *functionality has been deprecated and replaced with the* ***[Roll Call](roll-calls.md#h-74ctdmgnp3ca)*** *[function](roll-calls.md#h-74ctdmgnp3ca)**. The ability to add attendance registers will be removed at the start of 2027.*
+*Kindly note that the* ***Attendance Register*** *functionality has been deprecated and replaced with the* ***[Roll Call](roll-calls.md#roll-calls)*** *[function](roll-calls.md#roll-calls)**. The ability to add attendance registers will be removed at the start of 2027.*
 
-## Introduction {#h-6twtweykv68s}
+## Introduction
 
-Attendance registers should not be confused with [Absentees](absentee-administration.md#h-1fob9te). The two functions serve fundamentally different purposes. Whereas absentees is concerned with recording an official record of whether a pupil was present during the school day, attendance registers can be used to record a multitude of other things, such as whether a pupil attended play rehearsal or rugby practice.
+Attendance registers should not be confused with [Absentees](absentee-administration.md#absentee-administration). The two functions serve fundamentally different purposes. Whereas absentees is concerned with recording an official record of whether a pupil was present during the school day, attendance registers can be used to record a multitude of other things, such as whether a pupil attended play rehearsal or rugby practice.
 
-## Creating a new attendance register {#h-23elta9aexum}
+## Creating a new attendance register
 
-### Creating a class register {#h-8g2uis250135}
+### Creating a class register
 
 The most common type of register is one that is created to record attendance for a class. On the **Classes** tab, click on the **Add new class register** option under the **Attendance Registers** heading.
 
@@ -22,7 +22,7 @@ The **Options** that are present can be customised. Three default options are p
 
 Write each option on a new line.
 
-*The default options (shown above as “Attended, Excused, Absent”) can be changed in* *[the Site Settings](changing-site-settings.md#h-3j2qqm3)* *under the* ***Attendance*** *tab. If you change this, it will apply only to new registers that are created after the change is made and will have no effect on any registers that already exist.*
+*The default options (shown above as “Attended, Excused, Absent”) can be changed in* *[the Site Settings](changing-site-settings.md#changing-site-settings)* *under the* ***Attendance*** *tab. If you change this, it will apply only to new registers that are created after the change is made and will have no effect on any registers that already exist.*
 
 Once done, click on the **Next** button to create the register:
 
@@ -30,7 +30,7 @@ Once done, click on the **Next** button to create the register:
 
 ADAM give shortcut options to either record your first register entries, or to create another register for a different class.
 
-### Add new class registers in bulk {#h-rbgdb8h7xx0o}
+### Add new class registers in bulk
 
 ADAM also provides the option of adding class registers for a range of classes.
 
@@ -44,7 +44,7 @@ Click on **Next** to create the registers.
 
 ![](assets/screenshots/attendance-registers/attendance-registers-04.png)
 
-### Creating a new subject register {#h-ic9mujjsd3cz}
+### Creating a new subject register
 
 On occasion, it may be desirable to create a single register for an entire subject. This might be for a support lesson where any pupil who takes that subject might elect to attend a voluntary session.
 
@@ -56,7 +56,7 @@ Notice that because this register is for a voluntary activity, the options that 
 
 Note that a subject register will create a single register with every pupil who does that subject. If this is a very large subject, then it will be a very long list!
 
-## Recording Register Entries {#h-qztxyit6j3af}
+## Recording Register Entries
 
 On the **Classes** tab, click on the **Record register entries** option under the **Attendance Registers** heading.
 
@@ -80,13 +80,13 @@ Once completed, click on the **Save…** button at the bottom of the screen.
 
 Once saved, an “edit” option will appear above the column. If you need to change any of the values, click on the edit link and you can make any changes you need to.
 
-## Archiving a register {#h-qjbeazfok9uk}
+## Archiving a register
 
 Once you have finished with your register, you can archive it. ADAM will keep the records, but no longer allow any further changes to the register.
 
 Open the register as you would to record a new attendance column, but click on the **Archive this register…** button.
 
-## Editing a register {#h-gciaqcfifjv7}
+## Editing a register
 
 If you wish to change the name or options of a register, click on the **Edit register** option under the **Attendance Registers** heading on the **Classes** tab.
 
@@ -96,7 +96,7 @@ Make any changes required and click on the **Next** button to save those change
 
 Note that if you change a register that was created as part of a bulk operation, ADAM will automatically change all the registers that were created at the same time.
 
-## Bulk register summaries {#h-9qfhx8mu0ig}
+## Bulk register summaries
 
 Registers that were created as part of a bulk operation can be summarised together using the option on the **Attendance Registers** card on the **Classes** tab.
 

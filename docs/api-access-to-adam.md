@@ -1,24 +1,24 @@
-# API Access to ADAM {#h-kvj4kzzehoy5}
+# API Access to ADAM
 
-## Introduction the ADAM API {#h-gvx2caivkc8q}
+## Introduction the ADAM API
 
 An API allows for another computer program to connect to ADAM to either access data stored in its database or to make changes to that data. ADAM makes use of a “RESTful” API and returns data mostly in JSON format.
 
-### What is a RESTful system? {#h-jt1520ptxz}
+### What is a RESTful system?
 
 REST is a technique of communicating with an API which is very common amongst web-based applications - such as ADAM. Other programs will make one of four types of web request depending on what they are hoping to do in the database, and include the necessary information for ADAM. ADAM then responds to that request with the appropriate data or success code.
 
-### How does access control work? {#h-2anco744ohi}
+### How does access control work?
 
 Access to the ADAM database is controlled using a token system. These are essentially random passwords that are created which are shared only with the other program that wishes to access the API. Because these tokens are really only meant to be used by a computer, it is not important that they are memorable or easy to type. In fact, ADAM will generate a random set of characters to be used as the API key and you are strongly encouraged to make use of the suggested token.
 
-It is vitally important that the token is kept confidential between the person issuing it and the person using it. Anyone who knows the token will be able to access the API. Please read the [Best Practices](#h-cgkcahxt9qdq) section below for further information.
+It is vitally important that the token is kept confidential between the person issuing it and the person using it. Anyone who knows the token will be able to access the API. Please read the [Best Practices](#best-practice-security-principals) section below for further information.
 
-Each API token can be given access to one or more [API resources](#h-5w2169akgfvy). Anyone who knows the API token can access all the resources that have been allocated to that token.
+Each API token can be given access to one or more [API resources](#api-resources). Anyone who knows the API token can access all the resources that have been allocated to that token.
 
 API tokens can be revoked at any point and can have their resources changed and added to over time. Any changes you make to the token and its API resource assignments will take place immediately.
 
-## Managing API Tokens in ADAM {#h-m0b4zvwuxgjc}
+## Managing API Tokens in ADAM
 
 In ADAM: Navigate to **Administration → Security Administration → Manage API Tokens**.
 
@@ -34,7 +34,7 @@ A list of existing API tokens will be shown. Click on **Add new API Token** to 
 !!! warning
     The random 30 character token must be kept secret since will will allow anyone who knows it access to the data stored in the ADAM database. It will need to be shared with the integration provider and great care should be taken with how they are provided the API key. We strongly recommend against sending this information via email or other unsecured means.
 
-### Managing Existing Tokens {#h-6m7cajpelkf2}
+### Managing Existing Tokens
 
 In the table of existing API tokens, you have the option to **edit**, **delete** or **regenerate** the API token.
 
@@ -44,7 +44,7 @@ In the table of existing API tokens, you have the option to **edit**, **delete**
 
 **Deleting** the token will remove it from the list and it will no longer be available for use. Systems that rely on the resources will no longer have access to the data supplied by ADAM.
 
-## Best Practice Security Principals {#h-cgkcahxt9qdq}
+## Best Practice Security Principals
 
 The following are provided as best practice guidelines for managing API tokens.
 
@@ -52,9 +52,9 @@ The following are provided as best practice guidelines for managing API tokens.
 2.  Each entity (e.g. a program that is accessing data from ADAM) should have its **own** token or tokens. Tokens should never be shared between entities. If another entity requires access to the same data, give it a new token. This allows you to revoke each token individually and stop one program from accessing the data without affecting any other programs.
 3.  Programmers integrating with the ADAM API should not, under any circumstances, include API tokens in their source code and should always fetch them from some form of access controlled data storage.
 
-## API Interactions {#h-gn5nnwf22e33}
+## API Interactions
 
-### Authentication {#h-b32fflj8006}
+### Authentication
 
 All API requests should be authenticated using a Bearer Token.
 
@@ -68,7 +68,7 @@ ADAM also will accept a Basic Authorization header with an arbitrary username. A
 
 Authorize: Basic YXBpdG9rZW46c3Z5ekJ2a3V1WExkSndWN1ljZFlzUUZWWDVoYTU0
 
-### API Requests {#h-auzo0pdekau3}
+### API Requests
 
 All API requests, as listed below, should be prefixed with the “api” folder to make the URL end-point:
 
@@ -82,7 +82,7 @@ Parameters should be “[percent encoded](https://www.google.com/url?q=https://w
 
 A GET request to this API end-point would require token access to the resource: request/test:get. Note that without specifically assigned access, access to the resource - even this test resource - will be denied.
 
-### API Responses {#h-4ql5zp9n8ghq}
+### API Responses
 
 All responses will be returned within JSON objects. The basic structure of these objects is:
 
@@ -112,24 +112,24 @@ The **message** attribute contains a human-readable message which, in most cases
 
 The **response code** should mirror the HTTP response code which will be descriptive of the success or failure of the call. The **error** attribute will provide a human-readable description of the error. The error message is not intended to be interpreted by machines.
 
-## API Resources {#h-5w2169akgfvy}
+## API Resources
 
 These are the available documented resources. Other resources are available but are not listed here until their development is complete and considered stable.
 
-### AbsenteeKiosk/register:post {#h-7ic9k29sv57f}
+### AbsenteeKiosk/register:post
 
 This registers a pupil as either present or late. It is intended to be used either by automated access control systems or ADAM’s own absentee kiosk.
 
-#### Request {#h-fh0wszazdbkn}
+#### Request
 
 -   POST to /api/absenteekiosk/register/<pupil>
 -   POST to /api/absenteekiosk/register with pupil=<pupil> as a form variable in the POST body
 
-#### Parameters {#h-zccg95c8sgxn}
+#### Parameters
 
 -   <pupil>: The ADAM identifier of the pupil.
 
-#### Response {#h-7rr5e18zgzuc}
+#### Response
 
 If the pupil identifier can be matched against an existing pupil, the endpoint will return two items in the data object. These are used internally by ADAM’s “Absentee Kiosk” feature.
 
@@ -172,20 +172,20 @@ In each case, the status code will be corroborated by a more descriptive message
 
 
 
-### Absentees/summarycount:get {#h-nywv6ove5uxk}
+### Absentees/summarycount:get
 
 Returns a list of pupils and the number of days they’ve been absent. This counts all the absentees with a reason that is set to count as “absent”. Only pupils with absentee records are returned. All pupils, including those that might have left the school, are returned.
 
-#### Request {#h-dvfpjjgq4lvo}
+#### Request {#absenteessummarycountget-request}
 
 GET to /api/absentees/summarycount/<from>\[/<to>\]
 
-#### Parameters {#h-t2xk5ih7pck7}
+#### Parameters {#absenteessummarycountget-parameters}
 
 -   <from>: An ISO formatted date to begin the summary. This date is included in the summary.
 -   <to>: OPTIONAL. An ISO formatted date to mark the end of the range of the summary. This date is included in the summary. If omitted, the current date is used instead.
 
-#### Response {#h-k9204ev9ndv0}
+#### Response {#absenteessummarycountget-response}
 
 The data attribute will be an array of zero or more JSON objects.
 
@@ -237,20 +237,20 @@ GET /api/absentees/summarycount/2018-01-01/2018-01-31
 -   **pupil\_admin** is the user-defined administration number. While this should not change, it may do so at the school’s discretion.
 -   **absentee\_count** is the number of days that the pupil has been recorded as absent. This does not include absentee records which do not prejudice a pupil (such as “away on sports tour”). These reasons are customisable by the school.
 
-### Absentees/list:get {#h-8c7t4x6gqzx2}
+### Absentees/list:get
 
 Gets a list of pupils absent with the reasons.
 
-#### Request {#h-nxh0k0go56ms}
+#### Request {#absenteeslistget-request}
 
 GET to /api/absentees/list/\[<date>\[/<to>\]\]
 
-#### Parameters {#h-8mrj6qpygg2}
+#### Parameters {#absenteeslistget-parameters}
 
 -   <date>: OPTIONAL. An ISO formatted date to query the absentees. If omitted, today’s date is used.
 -   <to>: OPTIONAL. An ISO formatted date. If provided, all absentees on or between the <date> and <to> dates will be provided. If omitted, <to> effectively takes the same value as <date> and only absentees for that date are provided.
 
-#### Response {#h-vlfjr0dk75bq}
+#### Response {#absenteeslistget-response}
 
 GET /api/absentees/list/2018-01-30
 
@@ -299,36 +299,36 @@ The data attribute contains an array of zero or more absentee records. Each reco
 -   **absent\_reason\_description** is the descriptor for the absentee reason. It will be consistent per **absent\_reason** in any one API call, but may change between calls at the school’s discretion.
 -   **absent\_notes** contain the end-user provided notes related to the pupil’s absence. This may contain personal information.
 
-### Absentees/daysabsentforpupil:get {#h-nnqpu1tnbymr}
+### Absentees/daysabsentforpupil:get
 
 Returns the absentee log for a specific pupil.
 
-#### Request {#h-4r4waxt52yrx}
+#### Request {#absenteesdaysabsentforpupilget-request}
 
 GET /api/absentees/daysabsentforpupil/<pupil>/<year>
 
-#### Parameters {#h-9od702ruous9}
+#### Parameters {#absenteesdaysabsentforpupilget-parameters}
 
 -   <pupil>: ADAM internal pupil identifier (required)
 -   <year>: Calendar year to filter by (optional; returns all records if omitted)
 
-#### Response {#h-uh1dkkbmle6a}
+#### Response {#absenteesdaysabsentforpupilget-response}
 
 Data attribute contains the pupil's absentee log entries.
 
-### Admin/test:get {#h-pxhgatdl2pns}
+### Admin/test:get
 
 Internal test endpoint for verifying API connectivity.
 
-#### Request {#h-xybs4xa4q6n}
+#### Request {#admintestget-request}
 
 GET /api/admin/test
 
-#### Parameters {#h-y6cnbcw1usxv}
+#### Parameters {#admintestget-parameters}
 
 None.
 
-#### Response {#h-lds7m3749mdv}
+#### Response {#admintestget-response}
 
 ****{
 
@@ -342,19 +342,19 @@ None.
 
 
 
-### Applications/applicationformfields:get {#h-1zn1xvss1ob4}
+### Applications/applicationformfields:get
 
 The ability to see which fields are accepted as part of the application form. These fields can be customised by updating the core and custom fields to change their availability in the application form.
 
-#### Request {#h-mhjcyy28pcfu}
+#### Request {#applicationsapplicationformfieldsget-request}
 
 GET request to /api/applications/applicationformfields
 
-#### Parameters {#h-748k94mg51af}
+#### Parameters {#applicationsapplicationformfieldsget-parameters}
 
 None
 
-#### Response {#h-nt0xf4jnrd1g}
+#### Response {#applicationsapplicationformfieldsget-response}
 
 The output data will be a JSON object containing the fields that are accepted. Within the data property are two sub arrays for families and pupils. These list the field names that are accepted.
 
@@ -554,19 +554,19 @@ https://demo.adam.co.za/api/applications/applicationformfields
 
 
 
-### Applications/apply:post {#h-d7arjgqf95x7}
+### Applications/apply:post
 
 Submit an application to the site. Note that if the ID number submitted matches an existing parent, the child will automatically be linked to that parent. Note that when applications are submitted through ADAM’s web interface, ADAM automatically authenticates the parent to ensure that strange children are not linked to their profiles. Implicit in the web application is the validation of the email address which is done as part of the application process. Applications received via the API are not given such scrutiny and special care should be taken on the sending system to mitigate against spam and fraudulent attempts at applications.
 
-#### Request {#h-7h0i59i4ebwq}
+#### Request {#applicationsapplypost-request}
 
 POST request to /api/applications/apply
 
-#### Parameters {#h-kfmzot3y32ry}
+#### Parameters {#applicationsapplypost-parameters}
 
 None - data sent by message body.
 
-#### Body {#h-l86r4mtrt8xa}
+#### Body
 
 The body of the request should contain the data required for the application. The data should either be in JSON format, or as an encoded query string (as is typical with normal form-submitted data).
 
@@ -601,7 +601,7 @@ A minimum set of required fields is:
 -   Month of entry (entry\_month) - note non-standard field naming
 -   Grade of entry (entry\_grade) - note non-standard field naming. Note, integers accepted only. For grades prior to Grade 1, zero or negative grades: Grade R = 0, Grade RR = -1, Grade RRR = -2, etc.
 
-##### Example (JSON): {#h-9h9ycmwhqeit}
+##### Example (JSON):
 
 {
 
@@ -723,11 +723,11 @@ A minimum set of required fields is:
 
 
 
-##### Example (URL Encoded): {#h-ykyec7ttpm4j}
+##### Example (URL Encoded):
 
 idnumber=1234567890123&email=morticia%40adam.co.za&phone=0834699569&application%5Bpupil%5D%5B0%5D%5Bpupil\_lastname%5D=Addams&application%5Bpupil%5D%5B0%5D%5Bpupil\_firstname%5D=Wednesday&application%5Bpupil%5D%5B0%5D%5Bpupil\_fullfirst%5D=Wednesday+Jane&application%5Bpupil%5D%5B0%5D%5Bpupil\_gender%5D=Female&application%5Bpupil%5D%5B0%5D%5Bentry\_year%5D=2019&application%5Bpupil%5D%5B0%5D%5Bentry\_month%5D=1&application%5Bpupil%5D%5B0%5D%5Bentry\_grade%5D=10&application%5Bpupil%5D%5B0%5D%5Brelationship%5D%5B0%5D%5Bprimary%5D=biological&application%5Bpupil%5D%5B0%5D%5Brelationship%5D%5B0%5D%5Bsecondary%5D=step+parent&application%5Bpupil%5D%5B1%5D%5Bpupil\_lastname%5D=Addams&application%5Bpupil%5D%5B1%5D%5Bpupil\_firstname%5D=Pugsley&application%5Bpupil%5D%5B1%5D%5Bpupil\_fullfirst%5D=Pugsley+George&application%5Bpupil%5D%5B1%5D%5Bpupil\_gender%5D=Male&application%5Bpupil%5D%5B1%5D%5Bentry\_year%5D=2019&application%5Bpupil%5D%5B1%5D%5Bentry\_month%5D=1&application%5Bpupil%5D%5B1%5D%5Bentry\_grade%5D=8&application%5Bpupil%5D%5B1%5D%5Brelationship%5D%5B0%5D%5Bprimary%5D=step+parent&application%5Bpupil%5D%5B1%5D%5Brelationship%5D%5B0%5D%5Bsecondary%5D=biological&application%5Bfamily%5D%5Bfamily\_primary\_idnum%5D=1234567890123&application%5Bfamily%5D%5Bfamily\_primary\_lastname%5D=Addams&application%5Bfamily%5D%5Bfamily\_primary\_firstname%5D=Gomez&application%5Bfamily%5D%5Bfamily\_primary\_fullfirst%5D=Gomez&application%5Bfamily%5D%5Bfamily\_secondary\_idnum%5D=1234567890123&application%5Bfamily%5D%5Bfamily\_secondary\_lastname%5D=Addams&application%5Bfamily%5D%5Bfamily\_secondary\_firstname%5D=Morticia&application%5Bfamily%5D%5Bfamily\_secondary\_fullfirst%5D=Morticia+May&application%5Bemail%5D%5B0%5D%5Bmember%5D=primary&application%5Bemail%5D%5B0%5D%5Baddress%5D=gomes%40adam.co.za&application%5Bemail%5D%5B0%5D%5Bbulk%5D=Yes&application%5Bemail%5D%5B0%5D%5Breports%5D=Yes&application%5Bemail%5D%5B1%5D%5Bmember%5D=secondary&application%5Bemail%5D%5B1%5D%5Baddress%5D=morticia%40adam.co.za&application%5Bemail%5D%5B1%5D%5Bbulk%5D=Yes&application%5Bemail%5D%5B1%5D%5Breports%5D=Yes
 
-#### Response {#h-yd1j75jd4om9}
+#### Response {#applicationsapplypost-response}
 
 A simple object providing notification of success or failure. The application field gives a code unique to this application which will, in a future development, allow for editing of the application.
 
@@ -753,19 +753,19 @@ A simple object providing notification of success or failure. The application fi
 
 
 
-### Applications/verifyid:get {#h-szis8dwf6yey}
+### Applications/verifyid:get
 
 Checks whether an ID number is associated with an existing family login account.
 
-#### Request {#h-pufrl6q1kbif}
+#### Request {#applicationsverifyidget-request}
 
 GET /api/applications/verifyid?idNumber=<idNumber>
 
-#### Parameters {#h-qs07qcskap85}
+#### Parameters {#applicationsverifyidget-parameters}
 
 -   <idNumber>: South African ID number to look up (required)
 
-#### Response {#h-3bgyfzoc7nth}
+#### Response {#applicationsverifyidget-response}
 
 No data attribute. The response.message field indicates the result:
 
@@ -773,19 +773,19 @@ No data attribute. The response.message field indicates the result:
 -   "authorization not possible" — ID number found but no password set
 -   "id number not found" (code 404) — no matching record
 
-### Assessment/recentresults:get {#h-m6voq3ceumfa}
+### Assessment/recentresults:get
 
 Returns recent assessment results for a pupil.
 
-#### Request {#h-v9xprwdtdhee}
+#### Request {#assessmentrecentresultsget-request}
 
 GET /api/assessment/recentresults/<pupil>
 
-#### Parameters {#h-nywvovosbuxc}
+#### Parameters {#assessmentrecentresultsget-parameters}
 
 -   <pupil>: ADAM internal pupil identifier (required)
 
-#### Response {#h-8szk9unojvha}
+#### Response {#assessmentrecentresultsget-response}
 
 Data attribute contains an array of assessment result objects:
 
@@ -831,20 +831,20 @@ Data attribute contains an array of assessment result objects:
 
 
 
-### Questions/questionbreakdown:get {#h-klcy8hd45c31}
+### Questions/questionbreakdown:get
 
 Returns a per-question breakdown of a pupil's assessment results.
 
-#### Request {#h-txlfo8cftyu3}
+#### Request {#questionsquestionbreakdownget-request}
 
 GET /api/questions/questionbreakdown?pupil=<pupil>&assessment=<assessment>
 
-#### Parameters {#h-l6lrxwmxbjt}
+#### Parameters {#questionsquestionbreakdownget-parameters}
 
 -   <pupil>: ADAM internal pupil identifier (required)
 -   <assessment>: Assessment identifier (required)
 
-#### Response {#h-djjtscp1icpp}
+#### Response {#questionsquestionbreakdownget-response}
 
 Data attribute contains an array of question result objects:
 
@@ -872,19 +872,19 @@ Data attribute contains an array of question result objects:
 
 
 
-### Calendar/pupillinks:get {#h-sbvq0t3wwxb8}
+### Calendar/pupillinks:get
 
 This provides calendar subscription links for all current pupils. API keys are generated automatically for pupils who don't have one yet.
 
-#### Request {#h-5t21pmnytj6q}
+#### Request {#calendarpupillinksget-request}
 
 GET /api/calendar/pupillinks/
 
-#### Parameters {#h-fqqi4bcko9mx}
+#### Parameters {#calendarpupillinksget-parameters}
 
 None required.
 
-#### Response {#h-l8gu0ce28nlr}
+#### Response {#calendarpupillinksget-response}
 
 GET /api/calendar/pupillinks/
 
@@ -916,19 +916,19 @@ GET /api/calendar/pupillinks/
 
      
 
-### Calendar/stafflinks:get {#h-r4m5urz5ki}
+### Calendar/stafflinks:get
 
 This provides calendar subscription links for all current staff. API keys are generated automatically for staff who don't have one yet.
 
-#### Request {#h-pw5r88qw3a2x}
+#### Request {#calendarstafflinksget-request}
 
 GET /api/calendar/stafflinks/
 
-#### Parameters {#h-3dsdod446rkj}
+#### Parameters {#calendarstafflinksget-parameters}
 
 None required.
 
-#### Response {#h-vwwczhyk0yxk}
+#### Response {#calendarstafflinksget-response}
 
 GET /api/calendar/stafflinks/
 
@@ -960,37 +960,37 @@ GET /api/calendar/stafflinks/
 
 
 
-### Changelog/undo:post {#h-j17xssofefwd}
+### Changelog/undo:post
 
 Undoes a changelog entry, reverting a field to its previous value.
 
-#### Request {#h-bfsocte3g78o}
+#### Request {#changelogundopost-request}
 
 POST /api/changelog/undo/<changeSet>
 
-#### Parameters {#h-2gidy9oo3x8b}
+#### Parameters {#changelogundopost-parameters}
 
 -   <changeSet>: The changelog entry identifier (URL path parameter)
 
-#### Response {#h-1t3qd1ma1t5t}
+#### Response {#changelogundopost-response}
 
 -   Code 200: Undo successful
 -   Code 403: Cannot undo the original entry (no previous value to restore)
 -   Code 202: Undo operation failed
 
-### Classes/pupilteachers:get {#h-9h96nhf0btzh}
+### Classes/pupilteachers:get
 
 This provides a list of classes that an individual pupil is registered for.
 
-#### Request {#h-c9a8uayt88yj}
+#### Request {#classespupilteachersget-request}
 
 GET /api/classes/pupilteachers/<pupil>
 
-#### Parameters {#h-uma30ziaevm4}
+#### Parameters {#classespupilteachersget-parameters}
 
 -   <pupil> is the pupil identifier
 
-#### Response {#h-icm0za8ogkk8}
+#### Response {#classespupilteachersget-response}
 
 GET /api/classes/pupilteachers/123
 
@@ -1068,21 +1068,21 @@ Note that the **class\_gradeyear** property can be negative to represent pre-sc
 
 One **staff** member (the teacher of the class) will be provided, and the **teaching\_assistants** may contain 0 or more staff objects.
 
-### Classes/bygradeperiodsubject:get {#h-2twspce7y5jn}
+### Classes/bygradeperiodsubject:get
 
 Returns classes matching a specific grade, reporting period, and subject combination.
 
-#### Request {#h-vn7fkqaengj}
+#### Request {#classesbygradeperiodsubjectget-request}
 
 GET /api/classes/bygradeperiodsubject/<grade>/<period>/<subject>
 
-#### Parameters {#h-tyqfmukrxfe}
+#### Parameters {#classesbygradeperiodsubjectget-parameters}
 
 -   <grade>: Grade identifier (required)
 -   <period>: Reporting period identifier (required)
 -   <subject>: Subject identifier (required)
 
-#### Response {#h-p3p2z9r9d2g0}
+#### Response {#classesbygradeperiodsubjectget-response}
 
 ****{
 
@@ -1114,29 +1114,29 @@ GET /api/classes/bygradeperiodsubject/<grade>/<period>/<subject>
 
 
 
-### Cron/cronlog:get {#h-rg3fgabjh8rv}
+### Cron/cronlog:get
 
 Returns cron job execution logs. Restricted to super-admin tokens.
 
-#### Request {#h-4r965rgszt4z}
+#### Request {#croncronlogget-request}
 
 GET /api/cron/cronlog/<cronLogID>
 
-#### Parameters {#h-w14gazzddzk3}
+#### Parameters {#croncronlogget-parameters}
 
 -   <cronLogID>: Either a numeric log entry ID (returns that specific record with full log content) or any non-numeric value (returns all records without log content)
 
-#### Response {#h-6jis2wmkzc9q}
+#### Response {#croncronlogget-response}
 
 When requesting a specific entry, returns the full cron log record including log output. When requesting all entries, returns an array of records without the log body to reduce payload size.
 
-### DataQuery/get:get {#h-mmc5jc17jjue}
+### DataQuery/get:get
 
 Provides automated access to a whole-school scratch list. The contents of the scratch list fields can be customised as per the settings in ADAM found at **Administration → Security → Manage Data Query API Fields**.
 
 Please treat this feature with the utmost care. By its very definition, it gives wide access to a range of personal data.
 
-#### Create a Data Query Secret {#h-ucmmird25yvj}
+#### Create a Data Query Secret
 
 In order to use this API endpoint, an additional data query token must be defined.
 
@@ -1157,7 +1157,7 @@ A second screen will show, allowing you to select the fields required for this q
 
 Check the fields that you require and **save** your selections using the button at the bottom.
 
-#### Request {#h-rizx5ahmic0h}
+#### Request {#dataquerygetget-request}
 
 GET /api/dataquery/get/<secret>
 
@@ -1165,11 +1165,11 @@ OR, for a modified data structure to provide more consistency for automated syst
 
 GET /api/dataquery/get/<secret>/2
 
-#### Parameters {#h-qk9i47vp7d2b}
+#### Parameters {#dataquerygetget-parameters}
 
--   <secret> is a series of random characters as [created above](#h-ucmmird25yvj).
+-   <secret> is a series of random characters as [created above](#create-a-data-query-secret).
 
-#### Response {#h-wm3xrgk0hehr}
+#### Response {#dataquerygetget-response}
 
 GET /api/dataquery/get/GXiE4V5qYB
 
@@ -1303,55 +1303,55 @@ Where the optional parameter “2” is included at the end, the structure of th
 
 
 
-### DataQuery/getsince:get {#h-vr7le3n3smfh}
+### DataQuery/getsince:get
 
 See above.
 
-#### Request {#h-w0o3jw8qmewg}
+#### Request {#dataquerygetsinceget-request}
 
 GET /api/dataquery/getsince/<secret>/<timestamp>\[/<version>\]
 
-#### Parameters {#h-vzm8ze1h4nqk}
+#### Parameters {#dataquerygetsinceget-parameters}
 
 -   <secret> is the secret defined for a list. This also determines what type of data and which fields are returned.
 -   <timestamp> is a [Unix integer timestamp](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Unix_time&sa=D&source=editors&ust=1778246675689130&usg=AOvVaw3Bx1tu5NfQ41epG1AstACP).
 -   <version> , if supplied, is the version of the data structure to be returned. See above.
 
-#### Response {#h-syazfrp84dmm}
+#### Response {#dataquerygetsinceget-response}
 
 See above.
 
-### DataQuery/getone:get {#h-ssc4le9b3oa0}
+### DataQuery/getone:get
 
 See above.
 
-#### Request {#h-9fany0qb1zec}
+#### Request {#dataquerygetoneget-request}
 
 GET /api/dataquery/getone/<secret>/<identifier>\[/<version>\]
 
-#### Parameters {#h-pwp06ru0lij6}
+#### Parameters {#dataquerygetoneget-parameters}
 
 -   <secret> is the secret defined for a list. This also determines what type of data and which fields are returned.
 -   <identifier> is the identifier of the dataobject to be returned.
 -   <version> , if supplied, is the version of the data structure to be returned. See above.
 
-#### Response {#h-xwjizln86ukm}
+#### Response {#dataquerygetoneget-response}
 
 See above.
 
-### Documents/categories:get {#h-7y29se9q9gzy}
+### Documents/categories:get
 
 Returns a list of document categories that the current API token has any permissions for, along with the permission flags for each.
 
-#### Request {#h-emfqylulawpt}
+#### Request {#documentscategoriesget-request}
 
 GET to /api/documents/categories
 
-#### Parameters {#h-mtxu0dgwf4x1}
+#### Parameters {#documentscategoriesget-parameters}
 
 None.
 
-#### Response {#h-r67famxx3rsa}
+#### Response {#documentscategoriesget-response}
 
 The data attribute will be an array of zero or more JSON objects representing categories.
 
@@ -1407,20 +1407,20 @@ GET /api/documents/categories
 -   **parent\_id** is the identifier of the parent category (top-level categories have a parent of 0).
 -   **permissions** indicates which operations the token is allowed to perform on this category.
 
-### Documents/list:get {#h-r3bs9entcwaw}
+### Documents/list:get
 
 Returns a list of documents for a given entity within a specific category.
 
-#### Request {#h-2da42t11u5sq}
+#### Request {#documentslistget-request}
 
 GET to /api/documents/list/<categoryId>/<entityId>
 
-#### Parameters {#h-7azohi9ttu8m}
+#### Parameters {#documentslistget-parameters}
 
 -   **categoryId**: The ADAM identifier of the document category.
 -   **entityId**: The ADAM identifier of the entity (pupil, staff member, family, or site record).
 
-#### Response {#h-jx1qc46ab2cc}
+#### Response {#documentslistget-response}
 
 The data attribute will be an array of zero or more JSON objects representing documents. Requires **read** permission on the category.
 
@@ -1474,19 +1474,19 @@ GET /api/documents/list/108/4561
 -   **category\_id** is the category the document belongs to.
 -   **link** is a unique random string identifier for the document.
 
-### Documents/document:get {#h-rhf6oxkl663u}
+### Documents/document:get
 
 Returns detailed metadata for a single document, including its entity links.
 
-#### Request {#h-yojmefhkikif}
+#### Request {#documentsdocumentget-request}
 
 GET to /api/documents/document/<documentId>
 
-#### Parameters {#h-c6qqzwhs2nt8}
+#### Parameters {#documentsdocumentget-parameters}
 
 -   **documentId**: The ADAM identifier of the document.
 
-#### Response {#h-sr440dgx9m8e}
+#### Response {#documentsdocumentget-response}
 
 The data attribute will be a JSON object with document metadata and linked entities. Requires **read** permission on the document's category.
 
@@ -1550,35 +1550,35 @@ GET /api/documents/document/12345
 -   **category\_name** is the display name of the document's category.
 -   **links** is an array of entity associations. Each link contains the entity **table** (pupils, staff, families, or site), the **entity\_id**, and the **link\_date**.
 
-### Documents/download:get {#h-2jntd0hgizru}
+### Documents/download:get
 
 Downloads the binary file content of a document.
 
-#### Request {#h-9ka0iur6r0w2}
+#### Request {#documentsdownloadget-request}
 
 GET to /api/documents/download/<documentId>
 
-#### Parameters {#h-kplgitdus0dr}
+#### Parameters {#documentsdownloadget-parameters}
 
 -   **documentId**: The ADAM identifier of the document.
 
-#### Response {#h-1j9movgokc6t}
+#### Response {#documentsdownloadget-response}
 
 Returns the raw binary file content with the appropriate Content-type header. Requires **read** permission on the document's category.
 
 If the document is not found, a standard JSON error response is returned with code 404.
 
-### Documents/upload:post {#h-yhehd4ew7nox}
+### Documents/upload:post
 
 Uploads a new document and links it to an entity.
 
-#### Request {#h-o1v9z1db2ftm}
+#### Request {#documentsuploadpost-request}
 
 POST to /api/documents/upload
 
 The request body must be JSON with the following fields:
 
-#### Parameters {#h-ali4rky530as}
+#### Parameters {#documentsuploadpost-parameters}
 
 -   **category** (required): The ADAM identifier of the target category.
 -   **entity\_type** (required): The type of entity to link the document to. Must be one of: pupils, staff, families, site.
@@ -1588,7 +1588,7 @@ The request body must be JSON with the following fields:
 -   **file\_data** (required): The file content encoded as a base64 string.
 -   **mimetype** (optional): The MIME type. If omitted, ADAM will attempt to detect it automatically.
 
-#### Response {#h-arisrlc8konc}
+#### Response {#documentsuploadpost-response}
 
 Returns the new document's identifier. Requires **add** permission on the target category.
 
@@ -1638,24 +1638,24 @@ Example response:
 
 
 
-### Documents/document:patch {#h-3f17nel3k28s}
+### Documents/document:patch
 
 Updates the metadata of an existing document. Can change the name, notes, or move the document to a different category.
 
-#### Request {#h-2rzfyo8593pd}
+#### Request {#documentsdocumentpatch-request}
 
 PATCH to /api/documents/document/<documentId>
 
 The request body must be JSON with one or more of the following fields:
 
-#### Parameters {#h-9mdrhbfl1exj}
+#### Parameters {#documentsdocumentpatch-parameters}
 
 -   **documentId** (URL): The ADAM identifier of the document.
 -   **name** (optional): New descriptive name for the document.
 -   **notes** (optional): New notes text for the document.
 -   **category** (optional): ADAM identifier of a category to move the document to. The token must also have **add** permission on the destination category.
 
-#### Response {#h-sbg26v1vx3d4}
+#### Response {#documentsdocumentpatch-response}
 
 Returns a success message. Requires **add** permission on the document's current category (and on the destination category if moving).
 
@@ -1695,19 +1695,19 @@ Example response:
 
 
 
-### Documents/document:delete {#h-22pu8hwmi7a}
+### Documents/document:delete
 
 Permanently deletes a document and its file from the repository.
 
-#### Request {#h-bz8nttxpgx7j}
+#### Request {#documentsdocumentdelete-request}
 
 DELETE to /api/documents/document/<documentId>
 
-#### Parameters {#h-n55t03wz7pfc}
+#### Parameters {#documentsdocumentdelete-parameters}
 
 -   **documentId**: The ADAM identifier of the document.
 
-#### Response {#h-ujqpuav5fww0}
+#### Response {#documentsdocumentdelete-response}
 
 Returns a success message. Requires **delete** permission on the document's category.
 
@@ -1737,11 +1737,11 @@ DELETE /api/documents/document/12345
 
 
 
-### Export/families:get {#h-muoin9bjt9vo}
+### Export/families:get
 
 Allows family information to be extracted easily.
 
-#### Request {#h-qdxcy4y7fkki}
+#### Request {#exportfamiliesget-request}
 
 GET /api/export/families
 
@@ -1755,7 +1755,7 @@ GET /api/export/families/all?updated\_since=2024-10-01+08:15:30
 
 GET /api/export/families/current?updated\_since=2024-10-01+08:15:30
 
-#### Parameters {#h-kpnxw8n106rj}
+#### Parameters {#exportfamiliesget-parameters}
 
 The last parameter (all or current) may be omitted - the default setting is to return current families only. The structure of the data is unchanged.
 
@@ -1763,7 +1763,7 @@ An optional parameter, updated\_since, will only return changes that have been m
 
 *Note well that changes to email addresses are* ***not*** *reflected in the modified time.*
 
-#### Response {#h-25dj22g6hmw7}
+#### Response {#exportfamiliesget-response}
 
 Valid responses will contain an array of family objects in the data property. The family\_primary\_email and family\_secondary\_email will be arrays of email addresses:
 
@@ -1869,24 +1869,24 @@ Valid responses will contain an array of family objects in the data property. Th
 
 
 
-### ExternalAuth/auth:post {#h-lwdo8eq6q3q}
+### ExternalAuth/auth:post
 
 Allows ADAM to be used as an external authentication source.
 
 ***Note well:*** *This API endpoint will divulge user information for a valid login name. As with any API key, it is imperative that it is kept secret and changed if a breach is suspected.*
 
-#### Request {#h-bb626l1bqpgh}
+#### Request {#externalauthauthpost-request}
 
 POST /api/externalauth/auth/
 
-#### Parameters {#h-669w75xbdo8a}
+#### Parameters {#externalauthauthpost-parameters}
 
 These parameters are sent via form-data parameters.
 
 -   username: The username of the staff member or pupil, or the Identification number or passport number of a family member.
 -   password: The password associated with the username
 
-#### Response {#h-hec68kie0nxy}
+#### Response {#externalauthauthpost-response}
 
 Integrating systems should check the HTTP response code rather than the presence of user information in the data object.
 
@@ -1978,35 +1978,35 @@ If an invalid username is supplied, the HTTP response code will be 401. The data
 
 
 
-### Pupils/image:get {#h-hudrgyyxcetd}
+### Pupils/image:get
 
 Returns an image of a pupil.
 
-#### Request {#h-dob6oseys8rg}
+#### Request {#pupilsimageget-request}
 
 GET /api/pupils/image/<pupil\_id>
 
-#### Parameters {#h-pbc27u1thbi2}
+#### Parameters {#pupilsimageget-parameters}
 
 -   <pupil\_id>: The internal identifier of the pupil.
 
-#### Response {#h-5u8cnokd7ehp}
+#### Response {#pupilsimageget-response}
 
 GET /api/reporting/pupils/image/123
 
 Unlike other API calls, this will return an image file and not a JSON object. The image type will be specified by the response’s Content-Type header, but will almost certainly be a JPG image. A response code of 404 suggests that the image does not exist.
 
-### Families/currentchildren:get {#h-pnsrndps78f5}
+### Families/currentchildren:get
 
-#### Request {#h-wus5reiliowd}
+#### Request {#familiescurrentchildrenget-request}
 
 GET /api/families/currentchildren/<family\_id>
 
-#### Parameters {#h-c448jutit4jv}
+#### Parameters {#familiescurrentchildrenget-parameters}
 
 -   <family\_id>: The internal identifier of the family.
 
-#### Response {#h-sd2la0h8woq3}
+#### Response {#familiescurrentchildrenget-response}
 
 This query returns an array of pupils. If no pupils are attached to the family, or if the family identifier does not exist, then the response will be returned with a “404” HTTP status code.
 
@@ -2034,20 +2034,20 @@ This query returns an array of pupils. If no pupils are attached to the family, 
 
 
 
-### Famillies/email:get {#h-qutj67sgz5vp}
+### Famillies/email:get
 
 Get a list of email addresses associated with a family or family member.
 
-#### Request {#h-bvomnhgzd5ez}
+#### Request {#familliesemailget-request}
 
 GET /api/families/email/<family\_id>\[/(primary|secondary)\]
 
-#### Parameters {#h-dp83cykhpz8y}
+#### Parameters {#familliesemailget-parameters}
 
 -   <family\_id>: The internal identifier of the family.
 -   (primary|secondary): OPTIONAL - whether to return only email addresses of the primary or secondary parent
 
-#### Response {#h-4ftorin0pmb3}
+#### Response {#familliesemailget-response}
 
 This query returns an array of zero or more email address records.
 
@@ -2095,15 +2095,15 @@ This query returns an array of zero or more email address records.
 
 
 
-### Families/email:post {#h-qx3nghtmvudm}
+### Families/email:post
 
 Add an email address to a family member.
 
-#### Request {#h-47kzppvjq21l}
+#### Request {#familiesemailpost-request}
 
 POST /api/families/email/<family\_id>/(primary|secondary)
 
-#### Parameters {#h-xwx1s6z5lj6z}
+#### Parameters {#familiesemailpost-parameters}
 
 -   <family\_id>: The internal identifier of the family.
 -   (primary|secondary): Which parent the email address should be added to
@@ -2112,19 +2112,19 @@ In the POST body:
 
 -   email: a string containing the email address
 
-#### Response {#h-7pnr017iahrx}
+#### Response {#familiesemailpost-response}
 
 “201 Created” if added successfully, 200 if not added, with an appropriate error message in the response.error property (e.g. the email address may already exist?).
 
-### Families/email:delete {#h-bjd4p732n7wg}
+### Families/email:delete
 
 Remove an email address to a family member.
 
-#### Request {#h-pre0pwm6b6e8}
+#### Request {#familiesemaildelete-request}
 
 DELETE /api/families/email/<family\_id>/(primary|secondary)
 
-#### Parameters {#h-xlb257u4nll9}
+#### Parameters {#familiesemaildelete-parameters}
 
 -   <family\_id>: The internal identifier of the family.
 -   (primary|secondary): Which parent the email address should be added to
@@ -2133,21 +2133,21 @@ In the body which must be x-www-form-urlencoded:
 
 -   email: a string containing the email address to delete
 
-#### Response {#h-p4ior5spq8ez}
+#### Response {#familiesemaildelete-response}
 
 200 if deleted successfully, 404 if not found, with an appropriate error message in the response.error property.
 
-### Families/searchbyid:get {#h-w14kprbtj9cl}
+### Families/searchbyid:get
 
-#### Request {#h-wnxgrzk1qpbo}
+#### Request {#familiessearchbyidget-request}
 
 GET /api/families/searchbyid/<RSA\_ID\_Number>
 
-#### Parameters {#h-z2s8ogtk2uxx}
+#### Parameters {#familiessearchbyidget-parameters}
 
 -   <RSA\_ID\_Number>: A South African ID number or international passport number for parents without an ID number. The parameter should be trimmed of spaces. This performs a simple text match with the database field and thus relies on reasonable data hygiene.
 
-#### Response {#h-ec0dvd1dlauc}
+#### Response {#familiessearchbyidget-response}
 
 This response returns an array of generally one family identifier, but if an ID number is associated with many parents, all will be returned in the array. This is discouraged in the interface, but schools may still do this.
 
@@ -2175,19 +2175,19 @@ Where the ID number cannot be found, a response will be returned with an HTTP 40
 
 
 
-### Families/children:get {#h-7yfqnzftgar2}
+### Families/children:get
 
 Returns the children linked to a family. Alias: families/get\_children\_by\_family.
 
-#### Request {#h-a6te6kelmvgm}
+#### Request {#familieschildrenget-request}
 
 GET /api/families/children?family=<family>
 
-#### Parameters {#h-1h38pgeiyxb4}
+#### Parameters {#familieschildrenget-parameters}
 
 -   <family>: ADAM internal family identifier (required)
 
-#### Response {#h-jooxv6r0lzz9}
+#### Response {#familieschildrenget-response}
 
 Data attribute contains an array of child records with pupil details, grade, and default class status.
 
@@ -2217,19 +2217,19 @@ Data attribute contains an array of child records with pupil details, grade, and
 
 Note: Pupils at the "pre" (admissions) stage show "Admission" instead of a class name, and will show their current grade rather than their grade of entry.
 
-### Families/contactlist:get {#h-m0x0ep1jnjvi}
+### Families/contactlist:get
 
 Returns contact details for all families.
 
-#### Request {#h-w31iivt73psy}
+#### Request {#familiescontactlistget-request}
 
 GET /api/families/contactlist
 
-#### Parameters {#h-8ve436aqpd8h}
+#### Parameters {#familiescontactlistget-parameters}
 
 None.
 
-#### Response {#h-3u6cvdc7qefb}
+#### Response {#familiescontactlistget-response}
 
 ****{
 
@@ -2273,19 +2273,19 @@ None.
 
 If no secondary contact exists, the secondary field is an empty array.
 
-### Families/familyrelationships:get {#h-1vg4ukoc5tnj}
+### Families/familyrelationships:get
 
 Returns all pupil-to-family relationship mappings.
 
-#### Request {#h-7ha2nr2zj77o}
+#### Request {#familiesfamilyrelationshipsget-request}
 
 GET /api/families/familyrelationships
 
-#### Parameters {#h-ew5ut9vyygg}
+#### Parameters {#familiesfamilyrelationshipsget-parameters}
 
 None.
 
-#### Response {#h-swrrqo1kyb9b}
+#### Response {#familiesfamilyrelationshipsget-response}
 
 ****{
 
@@ -2301,67 +2301,67 @@ None.
 
 
 
-### Families/fields:get {#h-q9tbc3fz92c8}
+### Families/fields:get
 
 Returns the list of valid fields for family records.
 
-#### Request {#h-j6hw3iki08iu}
+#### Request {#familiesfieldsget-request}
 
 GET /api/families/fields/<action>
 
-#### Parameters {#h-9q64s7q78w27}
+#### Parameters {#familiesfieldsget-parameters}
 
 -   <action>: Action context (optional; e.g. "add" or "edit" to filter relevant fields)
 
-#### Response {#h-flfp1230owlj}
+#### Response {#familiesfieldsget-response}
 
 Data attribute contains a mapping of field names to their descriptions.
 
-### Families/add:post {#h-fi4ooeqo8m4a}
+### Families/add:post
 
 Creates a new family record.
 
-#### Request {#h-jnao60q4d4ir}
+#### Request {#familiesaddpost-request}
 
 POST /api/families/add
 
-#### Parameters {#h-vdp2cm4ovi5b}
+#### Parameters {#familiesaddpost-parameters}
 
 JSON request body containing family fields. Use families/fields to retrieve valid field names.
 
-#### Response {#h-zg5wwj183oq5}
+#### Response {#familiesaddpost-response}
 
 -   Code 200: Returns the new family ID
 -   Code 400: Validation error — response includes list of invalid fields
 
-### Families/family:patch {#h-8f6sowdtbwe}
+### Families/family:patch
 
 Updates an existing family record.
 
-#### Request {#h-e224rhzehudh}
+#### Request {#familiesfamilypatch-request}
 
 PATCH /api/families/family/<family>
 
-#### Parameters {#h-xdqnt6acrdq9}
+#### Parameters {#familiesfamilypatch-parameters}
 
 -   <family>: ADAM internal family identifier (URL path parameter)
 -   JSON request body containing fields to update
 
-#### Response {#h-vx2irivrn3au}
+#### Response {#familiesfamilypatch-response}
 
 -   Code 200: Returns the updated family record
 -   Code 400: Validation error
 -   Code 404: Family not found
 
-### Families/link:post {#h-uaqioqb59czk}
+### Families/link:post
 
 Links a pupil to a family with specified relationship types.
 
-#### Request {#h-9vyv56xztm3p}
+#### Request {#familieslinkpost-request}
 
 POST /api/families/link
 
-#### Parameters {#h-15n2kdbj8w6c}
+#### Parameters {#familieslinkpost-parameters}
 
 JSON request body:
 
@@ -2381,42 +2381,42 @@ JSON request body:
 
 Valid relationship types: biological, adoptive parent, step parent, foster parent, guardian, sponsor, relative, other.
 
-#### Response {#h-q3g839j81dx7}
+#### Response {#familieslinkpost-response}
 
 Code 200 on success.
 
-### Families/detailsupdateform:get {#h-qrs2dtfj3l2l}
+### Families/detailsupdateform:get
 
 Triggers an email to the family with a details update form.
 
-#### Request {#h-rcjke2mq6abs}
+#### Request {#familiesdetailsupdateformget-request}
 
 GET /api/families/detailsupdateform?family=<family>
 
-#### Parameters {#h-3d1eobkk7mrp}
+#### Parameters {#familiesdetailsupdateformget-parameters}
 
 -   <family>: ADAM internal family identifier (required)
 
-#### Response {#h-6xxlkxltv3tc}
+#### Response {#familiesdetailsupdateformget-response}
 
 No data returned.
 
 -   Code 200: "Detail update form sent."
 -   Code 500: Error sending form
 
-### FamilyLogin/privileges:get {#h-w1gd4a9p2myk}
+### FamilyLogin/privileges:get
 
 Returns the portal privileges available for the currently authenticated family or pupil login.
 
-#### Request {#h-l568ylgwjk00}
+#### Request {#familyloginprivilegesget-request}
 
 GET /api/familylogin/privileges
 
-#### Parameters {#h-f10uvsh51d9u}
+#### Parameters {#familyloginprivilegesget-parameters}
 
 None — uses the current authentication session context.
 
-#### Response {#h-gofqyjifi4v4}
+#### Response {#familyloginprivilegesget-response}
 
 Data attribute maps pupil IDs to their available privilege strings.
 
@@ -2434,19 +2434,19 @@ Data attribute maps pupil IDs to their available privilege strings.
 
 
 
-### FamilyRelationships/family:get {#h-oqfmnuxplapy}
+### FamilyRelationships/family:get
 
 Gets a list of *current* pupils linked to a family with their relationships descriptors for primary and secondary parents.
 
-#### Request {#h-2uvyn1unt8il}
+#### Request {#familyrelationshipsfamilyget-request}
 
 GET /api/familyrelationships/family\[/<family\_id>\]
 
-#### Parameters {#h-amjdeb1lnt60}
+#### Parameters {#familyrelationshipsfamilyget-parameters}
 
 -   <family\_id>: The internal identifier for the family. If omitted, all families are returned.
 
-#### Response {#h-w0j6ifqdgk9t}
+#### Response {#familyrelationshipsfamilyget-response}
 
 The **data** attribute contains an array of 0 or more objects.
 
@@ -2506,19 +2506,19 @@ GET /api/familyrelationships/family/123
 
 
 
-### FamilyRelationships/pupil:get {#h-lt3m2zvo4r4y}
+### FamilyRelationships/pupil:get
 
 Gets a list of families linked to a pupil with their relationships descriptors for primary and secondary parents.
 
-#### Request {#h-lm2510ugnvfd}
+#### Request {#familyrelationshipspupilget-request}
 
 GET /api/familyrelationships/pupil\[/<pupil\_id>\]
 
-#### Parameters {#h-6h6po8i7ncp7}
+#### Parameters {#familyrelationshipspupilget-parameters}
 
 -   <pupil\_id>: The internal identifier for the pupil. If omitted, all pupils are returned
 
-#### Response {#h-h6y75suxj7mj}
+#### Response {#familyrelationshipspupilget-response}
 
 GET /api/familyrelationships/pupil/123
 
@@ -2628,36 +2628,36 @@ GET /api/familyrelationships/pupil
 
 
 
-### FormFields/fields:get {#h-xmy381swko4j}
+### FormFields/fields:get
 
 Returns field definitions for a specified database table.
 
-#### Request {#h-rgv5ojvzrb7j}
+#### Request {#formfieldsfieldsget-request}
 
 GET /api/formfields/fields/<table>/<action>
 
-#### Parameters {#h-eczsntqd37wk}
+#### Parameters {#formfieldsfieldsget-parameters}
 
 -   <table>: Table name (required)
 -   <action>: Action context (optional)
 
-#### Response {#h-odoss3xh0h64}
+#### Response {#formfieldsfieldsget-response}
 
 Data attribute maps field names to their descriptions.
 
-### Leaves/approved:get {#h-a4gkhiaudakw}
+### Leaves/approved:get
 
 Gets a list of approved leaves with an end date that is either today or in the future.
 
-#### Request {#h-bb70dzh5a3u0}
+#### Request {#leavesapprovedget-request}
 
 GET /api/leaves/approved\[/<pupil>\]
 
-#### Parameters {#h-sdzitikubzqb}
+#### Parameters {#leavesapprovedget-parameters}
 
 -   <pupil>: Optional: The identifier of the pupil in question.
 
-#### Response {#h-xi71hne5wz2b}
+#### Response {#leavesapprovedget-response}
 
 GET /api/leaves/approved/6050
 
@@ -2723,19 +2723,19 @@ GET /api/leaves/approved/6050
 
 The **data** attribute contains an array of 0 or more leave records.
 
-### Medical/offsport:get {#h-c1o60zquah2j}
+### Medical/offsport:get
 
 Returns a list of pupil IDs currently off sport due to medical reasons.
 
-#### Request {#h-nde9lx9a5683}
+#### Request {#medicaloffsportget-request}
 
 GET /api/medical/offsport?date=<date>
 
-#### Parameters {#h-re4dorwgvps9}
+#### Parameters {#medicaloffsportget-parameters}
 
 -   <date>: ISO-formatted date (optional; defaults to current date)
 
-#### Response {#h-otej7axl91pw}
+#### Response {#medicaloffsportget-response}
 
 ****{
 
@@ -2749,55 +2749,55 @@ GET /api/medical/offsport?date=<date>
 
 
 
-### MessagingLogs/messages:get {#h-1t1bpfrdj69o}
+### MessagingLogs/messages:get
 
 Returns 20 delivered messages for a family or pupil, paginated.
 
-#### Request {#h-1id96kld8ai6}
+#### Request {#messaginglogsmessagesget-request}
 
 GET /api/messaginglogs/messages/<type>/<id>\[/<start>\]
 
-#### Parameters {#h-ypmj5jcx0im2}
+#### Parameters {#messaginglogsmessagesget-parameters}
 
 -   <type>: family or pupil (required)
 -   <id>: Family or pupil identifier (required)
 -   <start>: Pagination offset (optional; defaults to 0). Returns 20 messages per page.
 
-#### Response {#h-ye65xg602mm7}
+#### Response {#messaginglogsmessagesget-response}
 
 Data attribute contains an array of delivered message summaries.
 
-### MessagingLogs/message:get {#h-z8hlrfuikvju}
+### MessagingLogs/message:get
 
 Returns a single message's details.
 
-#### Request {#h-zbq4zmhls6af}
+#### Request {#messaginglogsmessageget-request}
 
 GET /api/messaginglogs/message/<type>/<id>/<messageId>
 
-#### Parameters {#h-is3lcrsr0mr8}
+#### Parameters {#messaginglogsmessageget-parameters}
 
 -   <type>: family, pupil, or staff (required)
 -   <id>: Identifier for the family, pupil, or staff member (required)
 -   <messageId>: Message identifier (required)
 
-#### Response {#h-r80mvyd1rss6}
+#### Response {#messaginglogsmessageget-response}
 
 Data attribute contains the full message details.
 
-### MessagingLogs/messagebyid:get {#h-ahdln7x9p6fm}
+### MessagingLogs/messagebyid:get
 
 Returns a message by its ID, including attachments.
 
-#### Request {#h-uczgfwwhjo3y}
+#### Request {#messaginglogsmessagebyidget-request}
 
 GET /api/messaginglogs/messagebyid/<messageId>
 
-#### Parameters {#h-v6oh1rvzt351}
+#### Parameters {#messaginglogsmessagebyidget-parameters}
 
 -   <messageId>: Message identifier (required)
 
-#### Response {#h-bbxvbnoqt7cj}
+#### Response {#messaginglogsmessagebyidget-response}
 
 Data attribute contains the message with an attachments array:
 
@@ -2821,33 +2821,33 @@ Data attribute contains the message with an attachments array:
 
 }
 
-#### Privileges {#h-rrcukkbz2j7t}
+#### Privileges
 
 Requires one of: messagelog\_staff\_view, messagelog\_family\_view, messagelog\_pupil\_view (staff tokens); or viewmessagelog\_family, viewmessagelog\_pupil (family/pupil tokens).
 
-### Psychometric/assessmentsbycategory:get {#h-g1n35u4yrx6y}
+### Psychometric/assessmentsbycategory:get
 
 Returns active psychometric assessments for a category. Alias: psychometric/assessments\_by\_category.
 
-#### Request {#h-d95a17gtq2a6}
+#### Request {#psychometricassessmentsbycategoryget-request}
 
 GET /api/psychometric/assessmentsbycategory/<category>
 
-#### Parameters {#h-k3wtym83bw8f}
+#### Parameters {#psychometricassessmentsbycategoryget-parameters}
 
 -   <category>: Psychometric category identifier (required)
 
-#### Response {#h-53rg5d70etay}
+#### Response {#psychometricassessmentsbycategoryget-response}
 
 Data attribute contains an array of active assessment records (where assessment\_disabled = 'No').
 
-### Pupils/add:post {#h-8yy5w4lxu6m3}
+### Pupils/add:post
 
-#### Request {#h-qz113kr20qh3}
+#### Request {#pupilsaddpost-request}
 
 POST /api/pupils/add
 
-#### Parameters {#h-wdz9nker00g}
+#### Parameters {#pupilsaddpost-parameters}
 
 The body of the request is a JSON object of field names and values.
 
@@ -2865,9 +2865,9 @@ The body of the request is a JSON object of field names and values.
 
 
 
-#### Response {#h-hpjxnqvm7x5j}
+#### Response {#pupilsaddpost-response}
 
-The response code will determine whether the pupil was added or not, with invalid requests returning a 400 error. Acceptable field names can be inspected by using the [pupils/pupil:get](#h-u5mf318iqimb) endpoint. The following fields are mandatory:
+The response code will determine whether the pupil was added or not, with invalid requests returning a 400 error. Acceptable field names can be inspected by using the [pupils/pupil:get](#pupilspupilget) endpoint. The following fields are mandatory:
 
 -   pupil\_lastname \- the pupil’s last name
 -   pupil\_firstname \- the pupil’s preferred legal name
@@ -2877,38 +2877,38 @@ The response code will determine whether the pupil was added or not, with invali
 
 Note that while pupils may be added to the database even if these fields are omitted, doing so will make the pupils nearly impossible to manage on the receiving end.
 
-For fields ending in an “\_id” suffix, some values can be determined from [Appendix A](appendix-a-import-and-export-codes.md#h-280hiku). Note that pupil\_registration\_id field refers to a many-to-many relationship and thus cannot be completed by this end-point. If it exists in the submitted data, it is silently discarded.
+For fields ending in an “\_id” suffix, some values can be determined from [Appendix A](appendix-a-import-and-export-codes.md#appendix-a-import-and-export-codes). Note that pupil\_registration\_id field refers to a many-to-many relationship and thus cannot be completed by this end-point. If it exists in the submitted data, it is silently discarded.
 
 If any other invalid fields are passed in, the response message will contain details of those invalid fields.
 
-### Pupils/image:get {#h-pb9ir1vm0bc1}
+### Pupils/image:get {#api-resources-pupilsimageget}
 
-#### Request {#h-7tkc69bh014e}
+#### Request {#api-resources-request}
 
 GET /api/pupils/image/<ADAM\_Identifier>\[/<width>\]
 
-#### Parameters {#h-k4j9knf249l8}
+#### Parameters {#api-resources-parameters}
 
 -   <ADAM\_Identifier>: An integer referring to the pupil’s internal ADAM identifier.
 -   <width>: An optional integer to determine the maximum width of the image. If omitted, the image is not resized. If the width provided is larger than the image’s width, the image will not be  resized.
 
-#### Response {#h-s5c1krfhbp4e}
+#### Response {#api-resources-response}
 
 This response returns an image. No JSON information is returned.
 
 Where the identifier cannot be found, a response will be returned with an HTTP 404 status code.
 
-### Pupils/pupil:get {#h-u5mf318iqimb}
+### Pupils/pupil:get
 
-#### Request {#h-l12ojj9z1m83}
+#### Request {#pupilspupilget-request}
 
 GET /api/pupils/pupil/<ADAM\_Identifier>
 
-#### Parameters {#h-6bcdv5r8kfpe}
+#### Parameters {#pupilspupilget-parameters}
 
 -   <ADAM\_Identifier>: An integer referring to the pupil’s internal ADAM identifier.
 
-#### Response {#h-5ktix9dp02hu}
+#### Response {#pupilspupilget-response}
 
 This response returns a JSON object of data for a single pupil.
 
@@ -2942,17 +2942,17 @@ Where the identifier cannot be found, a response will be returned with an HTTP 4
 
 
 
-### Pupils/search-admin:get {#h-ah6w0lklqx8r}
+### Pupils/search-admin:get
 
-#### Request {#h-rtlm1nnc8s0f}
+#### Request {#pupilssearch-adminget-request}
 
 GET /api/pupils/search-admin/<AdminNumber>
 
-#### Parameters {#h-rar81412ojva}
+#### Parameters {#pupilssearch-adminget-parameters}
 
 -   <AdminNumber>: The school-assigned administration number for a pupil.. The parameter should be trimmed of spaces. This performs a simple text match with the database field and thus relies on reasonable data hygiene.
 
-#### Response {#h-wa6nnthfflbd}
+#### Response {#pupilssearch-adminget-response}
 
 This response returns an array of generally one pupil identifier, but if an Admin number is associated with many pupils, all will be returned in the array. This is discouraged in the interface, but schools may still do this.
 
@@ -2980,18 +2980,18 @@ Where the Admin number cannot be found, a response will be returned with an HTTP
 
 
 
-### Pupils/searchbyid:get {#h-liy46bghpulk}
+### Pupils/searchbyid:get
 
-#### Request {#h-vozky1e4xl2d}
+#### Request {#pupilssearchbyidget-request}
 
 GET /api/pupils/search-id/<RSA\_ID\_Number>
 GET /api/pupils/searchbyid/<RSA\_ID\_Number>
 
-#### Parameters {#h-c6vuomgbuzx1}
+#### Parameters {#pupilssearchbyidget-parameters}
 
 -   <RSA\_ID\_Number>: A South African ID number or international passport number for pupils without an ID number. The parameter should be trimmed of spaces. This performs a simple text match with the database field and thus relies on reasonable data hygiene.
 
-#### Response {#h-m76t6qd02eu4}
+#### Response {#pupilssearchbyidget-response}
 
 This response returns an array of generally one pupil identifier, but if an ID number is associated with many pupils, all will be returned in the array. This is discouraged in the interface, but schools may still do this.
 
@@ -3019,54 +3019,54 @@ Where the ID number cannot be found, a response will be returned with an HTTP 40
 
 
 
-### Pupils/fields:get {#h-s1ijfbnjhffu}
+### Pupils/fields:get
 
 Returns the list of valid fields for pupil records.
 
-#### Request {#h-svgyttdm4txv}
+#### Request {#pupilsfieldsget-request}
 
 GET /api/pupils/fields/<action>
 
-#### Parameters {#h-dzm4whokdc72}
+#### Parameters {#pupilsfieldsget-parameters}
 
 -   <action>: Action context (optional; e.g. "add" or "edit")
 
-#### Response {#h-rnmz8yqphuc2}
+#### Response {#pupilsfieldsget-response}
 
 Data attribute maps field names to their descriptions.
 
-### Pupils/pupil:patch {#h-6s8murkvy87g}
+### Pupils/pupil:patch
 
 Updates an existing pupil record.
 
-#### Request {#h-xjiblfpf7aka}
+#### Request {#pupilspupilpatch-request}
 
 PATCH /api/pupils/pupil/<pupil>
 
-#### Parameters {#h-617id9lz50el}
+#### Parameters {#pupilspupilpatch-parameters}
 
 -   <pupil>: ADAM internal pupil identifier (URL path parameter)
 -   JSON request body containing fields to update
 
-#### Response {#h-5hf7ot9hcgva}
+#### Response {#pupilspupilpatch-response}
 
 -   Code 200: Returns the updated pupil record (includes pupil\_gender as name and pupil\_grade)
 -   Code 400: Validation error
 -   Code 404: Pupil not found
 
-### Pupils/contactlist:get {#h-o5mpolaii6r8}
+### Pupils/contactlist:get
 
 Returns contact details for all pupils.
 
-#### Request {#h-6el7p1yy8dh1}
+#### Request {#pupilscontactlistget-request}
 
 GET /api/pupils/contactlist
 
-#### Parameters {#h-78fkc22qjz90}
+#### Parameters {#pupilscontactlistget-parameters}
 
 None.
 
-#### Response {#h-m0tvqb53uvke}
+#### Response {#pupilscontactlistget-response}
 
 ****{
 
@@ -3094,38 +3094,38 @@ None.
 
 
 
-### Pupils/search-id:get {#h-n636o5lvgca9}
+### Pupils/search-id:get
 
 Searches for pupils by ID number. Alias: pupils/searchbyid (note: this is a different endpoint from the documented Pupils/searchbyid which searches by admin number — verify the documented version is correct).
 
-#### Request {#h-ejkf2v9r9gao}
+#### Request {#pupilssearch-idget-request}
 
 GET /api/pupils/search-id/<idNumber>
 
-#### Parameters {#h-514riu3vbwm9}
+#### Parameters {#pupilssearch-idget-parameters}
 
 -   <idNumber>: ID number to search for (required)
 
-#### Response {#h-xriojj6a6ngb}
+#### Response {#pupilssearch-idget-response}
 
 -   Code 200: Array of matching pupil IDs
 -   Code 400: Empty idNumber parameter
 -   Code 404: No pupils found
 
-### RecordsAndPoints/recentpupilrecords:get {#h-w0szlui6wizt}
+### RecordsAndPoints/recentpupilrecords:get
 
 Returns the most recent Records and Points entries for a pupil.
 
-#### Request {#h-l81ayglpe68d}
+#### Request {#recordsandpointsrecentpupilrecordsget-request}
 
 GET /api/recordsandpoints/recentpupilrecords/<pupil>\[/<number>\]
 
-#### Parameters {#h-2y32r0om5zl8}
+#### Parameters {#recordsandpointsrecentpupilrecordsget-parameters}
 
 -   <pupil>: ADAM internal pupil identifier (required)
 -   <number>: Maximum number of records to return (optional; defaults to 10)
 
-#### Response {#h-b90y81hihqwm}
+#### Response {#recordsandpointsrecentpupilrecordsget-response}
 
 ****{
 
@@ -3155,19 +3155,19 @@ GET /api/recordsandpoints/recentpupilrecords/<pupil>\[/<number>\]
 
 
 
-### RecordsAndPoints/pupilrecords:get {#h-o9pirqng3za0}
+### RecordsAndPoints/pupilrecords:get
 
 Returns all Records and Points entries for a pupil, grouped by category group and category.
 
-#### Request {#h-algghaxc9i1w}
+#### Request {#recordsandpointspupilrecordsget-request}
 
 GET /api/recordsandpoints/pupilrecords/<pupil>
 
-#### Parameters {#h-j7zpz1dt63bq}
+#### Parameters {#recordsandpointspupilrecordsget-parameters}
 
 -   <pupil>: ADAM internal pupil identifier (required)
 
-#### Response {#h-3j9flqddslz5}
+#### Response {#recordsandpointspupilrecordsget-response}
 
 Data attribute is a nested structure grouped by discipline group, then by category, with all records within each category.
 
@@ -3211,15 +3211,15 @@ Data attribute is a nested structure grouped by discipline group, then by catego
 
 
 
-### Registration/status:post {#h-hch1nx3ndugh}
+### Registration/status:post
 
 Updates the registration status of a pupil by adding a record to their registration status log.
 
-#### Request {#h-2xb5a1q3rmko}
+#### Request {#registrationstatuspost-request}
 
 POST /api/registration/status/<pupil>
 
-#### Parameters {#h-2ic60xp2gec3}
+#### Parameters {#registrationstatuspost-parameters}
 
 URL parameters:
 
@@ -3230,25 +3230,25 @@ These parameters are sent via form-data parameters.
 -   status: The identifier of the new registration status
 -   notes: Notes to add to the registration status
 
-#### Response {#h-hqzyznxy4xx2}
+#### Response {#registrationstatuspost-response}
 
 If the request was successful, a 200 OK code is returned. If an invalid status was chosen, a 400 Bad Request code is returned.
 
 This endpoint is restricted in that updating the registration status of a pupil cannot change the “stage” of a pupil’s registration (a “stage” being one of “admissions”, “current enrolment” or “alumni”). Changing to a new stage requires additional processing to be done within ADAM and so attempts to change between statuses that are from different stages will be responded to with a 400 code.
 
-### Registration/statuses:get {#h-g5ycev4e5vkr}
+### Registration/statuses:get
 
 Gets a list of registration statuses that are active on the system.
 
-#### Request {#h-xtcf6dsdry2g}
+#### Request {#registrationstatusesget-request}
 
 GET /api/registration/statuses
 
-#### Parameters {#h-annjaxrb4tl9}
+#### Parameters {#registrationstatusesget-parameters}
 
 None
 
-#### Response {#h-39ak7fghhi9d}
+#### Response {#registrationstatusesget-response}
 
 GET /api/registration/statuses
 
@@ -3296,24 +3296,24 @@ GET /api/registration/statuses
 
 The following boolean values are also given:
 
--   status\_active: Whether the pupil record is active or inactive. Inactive pupils might include those who have withdrawn from the registration process, withdrawn from the school, died, and so on. When combined with status\_stage, this provides [six broad categories of registration status](enrolment-process.md#h-1egqt2p).
+-   status\_active: Whether the pupil record is active or inactive. Inactive pupils might include those who have withdrawn from the registration process, withdrawn from the school, died, and so on. When combined with status\_stage, this provides [six broad categories of registration status](enrolment-process.md#enrolment-process).
 -   status\_default: Each of the three status\_stage values has one default status. This is automatically applied to pupils entering this stage for the first time.
 -   status\_official: Whether this status refers to an official enrolment or not. Unofficial enrolments may include exchange or visiting pupils.
 -   status\_familyshow: Whether or not pupils with this status should be shown on the family portal. For example, it can be distressing for parents of a deceased child to see that child appear on their family portal landing page. Similarly, withdrawn pupils might not show, but graduated pupils should.
 
-### Registration/statuslist:get {#h-gk9zk8lud3lt}
+### Registration/statuslist:get
 
 Gets a list of pupils who belong to a specific registration status
 
-#### Request {#h-hk3box62bz7t}
+#### Request {#registrationstatuslistget-request}
 
 GET /api/registration/statuslist/<status>
 
-#### Parameters {#h-9lcpii6pam53}
+#### Parameters {#registrationstatuslistget-parameters}
 
 -   <status>: The identifier of the registration status.
 
-#### Response {#h-b02r5s37o7mp}
+#### Response {#registrationstatuslistget-response}
 
 GET /api/registration/statuslist/2
 
@@ -3345,19 +3345,19 @@ GET /api/registration/statuslist/2
 
 The data attribute contains an array of 0 or more integers representing the identifiers of pupils who belong to this registration status.
 
-### Registrations/grade:get {#h-da7r9o5tpvg4}
+### Registrations/grade:get
 
 Returns a list of classes that a grade of pupils is registered for.
 
-#### Request {#h-iu1ou47ygthb}
+#### Request {#registrationsgradeget-request}
 
 GET /api/registrations/grade/<grade>
 
-#### Parameters {#h-rvhhzxpyhgaw}
+#### Parameters {#registrationsgradeget-parameters}
 
 -   <grade> is an integer representing the grade of pupils to retrieve from the database. Note that 0 represents Grade R and negative grades represent the pre-school grades.
 
-#### Response {#h-tgirfbm3uqwy}
+#### Response {#registrationsgradeget-response}
 
 The response is an array of pupil registration objects, each following the structure below:
 
@@ -3419,19 +3419,19 @@ The response is an array of pupil registration objects, each following the struc
 
 
 
-### Reporting/periods:get {#h-jhqf9ok7r8se}
+### Reporting/periods:get
 
 Gets a list of reporting periods for a year.
 
-#### Request {#h-ojo6lofpko2w}
+#### Request {#reportingperiodsget-request}
 
 GET /api/reporting/periods\[/<year>\]
 
-#### Parameters {#h-91m6iaiczohn}
+#### Parameters {#reportingperiodsget-parameters}
 
 -   <year>: OPTIONAL. The calendar year in question. If omitted, the current calendar year is used.
 
-#### Response {#h-2elmiy23zpcr}
+#### Response {#reportingperiodsget-response}
 
 GET /api/reporting/periods/2018
 
@@ -3477,19 +3477,19 @@ The **data** attribute contains an array of 0 or more reporting period objects.
 -   **period\_end** is the date on which the reporting period is deemed to have finished.
 -   **period\_publish** is the date and time when the reports are made available on the parent portal. This date may change at the user discretion and so this value should always be double checked on or after this time if important actions are to occur.
 
-### Reporting/results:get {#h-wnwg486d0di2}
+### Reporting/results:get
 
 Gets all academic results for a reporting period.
 
-#### Request {#h-nurkk7ag53c9}
+#### Request {#reportingresultsget-request}
 
 GET to /api/reporting/results/<reportingperiod>
 
-#### Parameters {#h-q5tl67wja0m}
+#### Parameters {#reportingresultsget-parameters}
 
 -   <reportingperiod> is the value of the reporting period identifier. See the **period\_id** property returned in the Reporting/periods/get request above.
 
-#### Response {#h-gd986qpltx2f}
+#### Response {#reportingresultsget-response}
 
 GET /api/reporting/results/31
 
@@ -3578,19 +3578,19 @@ The **data** attribute contains an array of 0 or more pupil objects. The pupil 
 -   **report\_aggregate\_ytd** is a summary year-to-date result. Again, this is often, but not always an average of the subject results.
 -   **report\_modified** is a timestamp of the last modification time of that report.
 
-### Reporting/pupilreportingperiods:ge {#h-7kr96cfr1wkk}
+### Reporting/pupilreportingperiods:ge
 
 Returns reporting periods available for a specific pupil, including report availability.
 
-#### Request {#h-3hu8jju6ol70}
+#### Request {#reportingpupilreportingperiodsge-request}
 
 GET /api/reporting/pupilreportingperiods/<pupil>
 
-#### Parameters {#h-yo9wkyuer9y5}
+#### Parameters {#reportingpupilreportingperiodsge-parameters}
 
 -   <pupil>: ADAM internal pupil identifier (required)
 
-#### Response {#h-6a0djfn4jy14}
+#### Response {#reportingpupilreportingperiodsge-response}
 
 ****{
 
@@ -3626,19 +3626,19 @@ GET /api/reporting/pupilreportingperiods/<pupil>
 
 
 
-### Reporting/subjectmarksbypupil:get {#h-7ac7kw7tn25j}
+### Reporting/subjectmarksbypupil:get
 
 Returns subject marks for a pupil across all reporting periods.
 
-#### Request {#h-hr2t0om1ligt}
+#### Request {#reportingsubjectmarksbypupilget-request}
 
 GET /api/reporting/subjectmarksbypupil/<pupil>
 
-#### Parameters {#h-h2srcw107anq}
+#### Parameters {#reportingsubjectmarksbypupilget-parameters}
 
 -   <pupil>: ADAM internal pupil identifier (required)
 
-#### Response {#h-501za0z7h6ua}
+#### Response {#reportingsubjectmarksbypupilget-response}
 
 Data attribute contains an array of reporting periods, each with a nested subjects array:
 
@@ -3684,20 +3684,20 @@ Data attribute contains an array of reporting periods, each with a nested subjec
 
 
 
-### Reporting/markbook:get {#h-r9hlki6uoxn4}
+### Reporting/markbook:get
 
 Returns the markbook (assessment results by category) for a pupil in a specific reporting period.
 
-#### Request {#h-w5r2z9wumezk}
+#### Request {#reportingmarkbookget-request}
 
 GET /api/reporting/markbook/<period>/<pupil>
 
-#### Parameters {#h-rdgii3r2qfi7}
+#### Parameters {#reportingmarkbookget-parameters}
 
 -   <period>: Reporting period identifier (required)
 -   <pupil>: ADAM internal pupil identifier (required)
 
-#### Response {#h-rbpyfeinfy4h}
+#### Response {#reportingmarkbookget-response}
 
 Data attribute contains an array of subjects with assessment categories and individual assessments.
 
@@ -3739,54 +3739,54 @@ Data attribute contains an array of subjects with assessment categories and indi
 
 
 
-### Reporting/report:get {#h-8js3tn658qgk}
+### Reporting/report:get
 
 Returns a pupil's report as a PDF document.
 
-#### Request {#h-xbjmecmk13nb}
+#### Request {#reportingreportget-request}
 
 GET /api/reporting/report?period=<period>&pupil=<pupil>
 
-#### Parameters {#h-eghyw15wyfp0}
+#### Parameters {#reportingreportget-parameters}
 
 -   <period>: Reporting period identifier (required)
 -   <pupil>: ADAM internal pupil identifier (required)
 
-#### Response {#h-dknl424bj04z}
+#### Response {#reportingreportget-response}
 
 Binary PDF response with content type application/pdf.
 
-### Reporting/previousreports:get {#h-gvmss4bgfy1l}
+### Reporting/previousreports:get
 
 Returns historical report information for a pupil.
 
-#### Request {#h-9bn66hu06nuw}
+#### Request {#reportingpreviousreportsget-request}
 
 GET /api/reporting/previousreports?pupil=<pupil>
 
-#### Parameters {#h-1g5ae9kwhgw8}
+#### Parameters {#reportingpreviousreportsget-parameters}
 
 -   <pupil>: ADAM internal pupil identifier (required)
 
-#### Response {#h-4z83h94ixw4j}
+#### Response {#reportingpreviousreportsget-response}
 
 Data attribute contains previous report table data.
 
-### Request/test:get {#h-6uwif1pohb4a}
+### Request/test:get
 
 A test method to the API.
 
-#### Request {#h-cv5eze5rxn06}
+#### Request {#requesttestget-request}
 
 GET /api/request/test/\[Parameter1\]/\[Parameter2\]
 
-#### Parameters {#h-m3eqelc7ov8g}
+#### Parameters {#requesttestget-parameters}
 
 \[Parameter1\]: An arbitrary parameter that is returned.
 
 \[Parameter2\]: An arbitrary parameter that is returned.
 
-#### Output {#h-uinqwqru317}
+#### Output
 
 The output data will be a JSON object containing attributes parameter1 and parameter2, both of which will contain the values provided in the request.
 
@@ -3818,86 +3818,86 @@ https://demo.adam.co.za/api/request/test/First%20Parameter/Second
 
 
 
-### Staff/image:get {#h-kbpciqinj1od}
+### Staff/image:get
 
 Returns an image of a staff member.
 
-#### Request {#h-ktlzpjwtxvri}
+#### Request {#staffimageget-request}
 
 GET /api/staff/image/<staff\_id>
 
-#### Parameters {#h-xfwx6go07vkr}
+#### Parameters {#staffimageget-parameters}
 
 -   <staff\_id>: The internal identifier of the pupil.
 
-#### Response {#h-weaey8p1syde}
+#### Response {#staffimageget-response}
 
 GET /api/reporting/staff/image/123
 
 Unlike other API calls, this will return an image file and not a JSON object. The image type will be specified by the response’s Content-Type header, but will almost certainly be a JPG image. A response code of 404 suggests that the image does not exist.
 
-### Subjects/get\_by\_grades:get {#h-87c01tknrlrc}
+### Subjects/get\_by\_grades:get
 
 Returns subjects available for one or more grades.
 
-#### Request {#h-d6adiu6ok6k0}
+#### Request {#subjectsgetbygradesget-request}
 
 GET /api/subjects/get\_by\_grades/<grades>
 
-#### Parameters {#h-37l0tdtgsr7k}
+#### Parameters {#subjectsgetbygradesget-parameters}
 
 -   <grades>: Comma-separated list of grade identifiers (required)
 
-#### Response {#h-40nwolxifh38}
+#### Response {#subjectsgetbygradesget-response}
 
 Data attribute contains an array of subjects valid for the specified grades that have active class registrations.
 
-### Subjects/get\_by\_grade:get {#h-nigupc6i4nux}
+### Subjects/get\_by\_grade:get
 
 Returns subjects available for a single grade.
 
-#### Request {#h-rod812hgbeok}
+#### Request {#subjectsgetbygradeget-request}
 
 GET /api/subjects/get\_by\_grade/<grade>
 
-#### Parameters {#h-yt2434i2z568}
+#### Parameters {#subjectsgetbygradeget-parameters}
 
 -   <grade>: Grade identifier (required)
 
-#### Response {#h-o5nzw18bwx2l}
+#### Response {#subjectsgetbygradeget-response}
 
 Data attribute contains an array of subjects for the specified grade with active class registrations.
 
-### TableFields/fields:get {#h-6awu0bhamiwi}
+### TableFields/fields:get
 
 Returns field definitions for a specified database table. Similar to FormFields/fields but uses the TableFields system.
 
-#### Request {#h-xuhdhirbi4h7}
+#### Request {#tablefieldsfieldsget-request}
 
 GET /api/tablefields/fields?table=<table>&action=<action>
 
-#### Parameters {#h-7vt0dkgz9n5g}
+#### Parameters {#tablefieldsfieldsget-parameters}
 
 -   <table>: Table name (required)
 -   <action>: Action context (optional)
 
-#### Response {#h-kh2xsnlt2hhd}
+#### Response {#tablefieldsfieldsget-response}
 
 Data attribute maps field names to their descriptions.
 
-### XDevMan/alumni:get {#h-dax0ng6mj4gf}
+### XDevMan/alumni:get
 
 Returns a list of Alumni and their last-modified dates
 
-#### Request {#h-2quzlarugj2m}
+#### Request {#xdevmanalumniget-request}
 
 GET /api/xdevman/alumni/<year>
 
-#### Parameters {#h-l4zngu5ptcsj}
+#### Parameters {#xdevmanalumniget-parameters}
 
 -   <year>: The year of matriculation of the pupils
 
-#### Response {#h-5636mxu3j1ym}
+#### Response {#xdevmanalumniget-response}
 
 GET /api/xdevman/alumni/2019
 
@@ -3947,19 +3947,19 @@ GET /api/xdevman/alumni/2019
 
 In each record, the internal ID and school-provided administration number are returned. There are two modification times because data for alumni is stored in two separate places (one from the historical pupil information, and another from the alumni-specific information).
 
-### XDevMan/currentpupils:get {#h-60h59z800bdq}
+### XDevMan/currentpupils:get
 
 Returns a list of current pupils and their list of modification dates.
 
-#### Request {#h-x6rj1t625o1f}
+#### Request {#xdevmancurrentpupilsget-request}
 
 GET /api/xdevman/currentpupils
 
-#### Parameters {#h-j6a6jtnpjoz}
+#### Parameters {#xdevmancurrentpupilsget-parameters}
 
 -   none
 
-#### Response {#h-hv5fh67topcz}
+#### Response {#xdevmancurrentpupilsget-response}
 
 GET /api/xdevman/currentpupils
 
@@ -4005,19 +4005,19 @@ GET /api/xdevman/currentpupils
 
 In each record, the internal ID and school-provided administration number are returned. There are two modification times because data for alumni is stored in two separate places (one from the historical pupil information, and another from the alumni-specific information).
 
-### XDevMan/leavers:get {#h-dcudqsgn6jea}
+### XDevMan/leavers:get
 
 Returns a list of Leavers and their last-modified dates. A leaver for a year is a person who was deregistered during the course of that year. It includes people from all grades.
 
-#### Request {#h-bac616qm2ps4}
+#### Request {#xdevmanleaversget-request}
 
 GET /api/xdevman/leavers/<year>
 
-#### Parameters {#h-kzhk8lrje4qb}
+#### Parameters {#xdevmanleaversget-parameters}
 
 -   <year>: The year of matriculation of the pupils
 
-#### Response {#h-l0q5fu386h23}
+#### Response {#xdevmanleaversget-response}
 
 GET /api/xdevman/leavers/2019
 
@@ -4067,19 +4067,19 @@ GET /api/xdevman/leavers/2019
 
 In each record, the internal ID and school-provided administration number are returned. There are two modification times because data for alumni is stored in two separate places (one from the historical pupil information, and another from the alumni-specific information).
 
-### XDevMan/alumnus:get {#h-xh7mc13tggw}
+### XDevMan/alumnus:get
 
 Returns the details of a single alumnus.
 
-#### Request {#h-lwh7kxpo56he}
+#### Request {#xdevmanalumnusget-request}
 
 GET /api/xdevman/alumnus/<pupil\_id>
 
-#### Parameters {#h-r1zmsqcfu9sl}
+#### Parameters {#xdevmanalumnusget-parameters}
 
 -   <year>: The year of matriculation of the pupils
 
-#### Response {#h-3kxlxqnh7nbz}
+#### Response {#xdevmanalumnusget-response}
 
 GET /api/xdevman/alumnus/999
 
@@ -4305,6 +4305,6 @@ GET /api/xdevman/alumnus/999
 
 A record of a single alumnus is returned.
 
-## Specific Integration Requirements {#h-5cd7pexluph4}
+## Specific Integration Requirements
 
-Please see the [Third Party Integration](third-party-integration.md#h-bh1uvqo6yoh) section in this documentation.
+Please see the [Third Party Integration](third-party-integration.md#third-party-integration) section in this documentation.

@@ -1,4 +1,4 @@
-# Sign-up Module {#h-3qwpj7n}
+# Sign-up Module
 
 The Sign-up module is designed to allow staff, pupils and parents the ability to sign up for lists, events and appointments. The sign-up module has the following data structure:
 
@@ -54,7 +54,7 @@ Here is an example of how this might translate into real-life - using the same c
 
 As can be seen in these examples, it is possible to have a wide variety of appointment types – some are time-dependent and others are not.
 
-## Terminology: Event Categories vs Events vs Appointments {#h-hlg1s5yll43u}
+## Terminology: Event Categories vs Events vs Appointments
 
 These three terms are easily confused. ADAM and this documentation makes very specific use of them. We have used them to represent a hierarchical structure. The top level being “Event Category” and the bottom level being “Appointment”.
 
@@ -67,13 +67,13 @@ Here are some examples to illustrate the differences to you.
 -   When signing up pupils who wish to attend a voluntary presentation by a visiting speaker, the “Event Category” might be “Visiting Speakers”, the “Event” might be the name of the speaker and the appointment would be the date of the presentation (this also allows there to be multiple presentations, for example). I.e. Visiting Speakers → Nelson Mandela Foundation → Tuesday 5th, 7pm.
 -   In boarding schools, pupils often need to request permission to visit venues such as the library. Here, the “Event Category” might be “Evening Prep”, the “Event” might be “Library” or “Computer Lab” and the appointment would be the date of the visit. I.e. Evening Prep → Library → Thursday 14th.
 
-## Managing Event Categories {#h-261ztfg}
+## Managing Event Categories
 
 On the “**Pupils”** tab, under the “**Sign Ups”** heading, click on the option to “**Manage event categories**”.
 
 ![](assets/screenshots/sign-up-module/sign-up-module-01.png)
 
-### Adding a new Signup Category {#h-l7a3n9}
+### Adding a new Signup Category
 
 At the top of the page, click on the “**Add new Sign-up Category**” link.
 
@@ -93,7 +93,7 @@ Once saved, you should be taken back to the “Sign-up Categories” list shown 
 
 ![](assets/screenshots/sign-up-module/sign-up-module-03.png)
 
-### Creating Events {#h-356xmb2}
+### Creating Events
 
 This will display any events that have been created for this category. Because ours is still new, it shows nothing. Click on the link “**Add a new event**”.
 
@@ -117,7 +117,7 @@ For example, it may be necessary for the pupil’s Home Room Teacher to approve 
 
 Click on the “**Save this event**” button.
 
-### Creating Appointment Slots {#h-1kc7wiv}
+### Creating Appointment Slots
 
 After saving a new event, you are automatically taken to this screen:
 
@@ -127,7 +127,7 @@ This screen allows you to choose the type of appointment you require. There are 
 
 We will work through each example:
 
-#### Team sign-up {#h-u92qdmyd64ts}
+#### Team sign-up
 
 ![](assets/screenshots/sign-up-module/sign-up-module-06.png)
 
@@ -145,7 +145,7 @@ Here is an example of what a “Team sign-up” set of appointments may look lik
 
 Notice that the limits on each appointment are entirely independent of each other. In this example, each activity has approximately one week to sign up for the activities, with each providing a limit to the number of spaces available for that. Only 10 people, for example, can sign up for “Sky Diving”.
 
-#### Once-off Event {#h-qtgexcv6ukls}
+#### Once-off Event
 
 This is a single event which generally has a time and date associated with it, but which happens only once. This might be attending a specific presentation or activity.
 
@@ -153,7 +153,7 @@ This is a single event which generally has a time and date associated with it, b
 
 With this particular appointment type, there is no option to add a second appointment.
 
-#### Daily Signup {#h-b3peajugzk04}
+#### Daily Signup
 
 This option allows you to create similar appointments on successive days.
 
@@ -171,7 +171,7 @@ If you wish to add in weekend appointments, these can be done manually at the bo
 
 Additionally, if you wish to delete certain appointments (e.g. no Fridays), then this must also be done manually by clicking on the “**del**” option next to the rows that you don’t want. Each event must have at least one appointment, so you won’t be able to delete the last entry.
 
-#### Multiple Daily Appointments {#h-wck7ndhd69jn}
+#### Multiple Daily Appointments
 
 This option allows you to set starting and finishing times for your appointment and to add in consecutive appointments based on the previously entered appointment. Here is an example of an appointment slot for pupil meetings:
 
@@ -203,18 +203,18 @@ To edit the appointment, click on the “**edit**” link. *CURRENTLY THIS DOES 
 
 To cancel the appointment, click on the “**cancel**” link. Any pupils who might already have signed up for this appointment will receive an email notifying them that the appointment has been cancelled.
 
-## Navigating through without creating a new event {#h-44bvf6o}
+## Navigating through without creating a new event
 
 We navigated through all the screens above by creating a new event. If you need to get back to any of them, use the menu items on the **“Pupils”** tab under the “**Sign Ups**” heading.
 
 -   To see a list of events, click on “**View category events**”. From there, you will be able to view and edit events. You can also see the event appointments from that screen.
 -   Alternatively, the third option “**Manage appointment slots for an event**” will also allow you to view the appointments, attendance lists and to cancel specific appointments.
 
-## Signing Pupils Up for an Event {#h-2jh5peh}
+## Signing Pupils Up for an Event
 
-Staff members can sign up pupils for events, and pupils can sign themselves up for events. Note that both staff and pupils will require privileges to access these sections. Information on [how to set up staff privileges](security-administration-for-staff.md#h-3ls5o66) is available, as is information on [how to assign pupil privileges](security-administration-for-families-and-pupils.md#h-mg1sc7iv8w2n).
+Staff members can sign up pupils for events, and pupils can sign themselves up for events. Note that both staff and pupils will require privileges to access these sections. Information on [how to set up staff privileges](security-administration-for-staff.md#security-administration-for-staff) is available, as is information on [how to assign pupil privileges](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
-### Individual Pupils {#h-id50ajw9wdio}
+### Individual Pupils
 
 Navigate to the pupil’s profile and click on the “**Sign-Up**” link:
 
@@ -230,7 +230,7 @@ If a pupil is already signed up for an event, they will see “**cancel**” nex
 
 Appointments that are full, and have no more space left, also have no option to sign up. Also note that if an event has a limit for the number of appointments that a pupil can sign up for, once they reach that limit all other appointments in that event are closed to them. If they cancel one appointment, however, they will then be able to sign up for another.
 
-### By Class {#h-bo9ljrsvlpmu}
+### By Class
 
 Navigate to the **Classes** tab and under the **Sign Ups** heading, click on the option **Sign up for an event by class**.
 
@@ -242,6 +242,6 @@ If there is a limit to the number of pupils that can sign up to the appointment,
 
 Also be aware that in spite of a page reporting that an event has a number of spaces available, this does not take into account other staff members who might be signing up pupils concurrently.
 
-### On the Pupil Portal {#h-5q4rc1wmk2qu}
+### On the Pupil Portal
 
 When pupils log in to the pupil portal, if they have been given permissions to access the sign-up module, they will click through to see all the available appointments that they can sign up for. They simply need to click on the **sign up** link next to the appointments that they wish to sign up for.

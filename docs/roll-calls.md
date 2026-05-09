@@ -1,14 +1,14 @@
-# Roll Calls {#h-74ctdmgnp3ca}
+# Roll Calls
 
 ADAM allows for roll calls to be taken at school events. Roll calls can be scheduled either from the timetable, from a
 scheduler (for other non-academic purposes), or on an ad-hoc basis (e.g. sports practices).
 
 !!! warning
     *Please note that the Roll Call module is intended to replace the*
-    *[Attendance Registers](attendance-registers.md#h-ypqmq1nus3d4)**feature in ADAM. The Attendance Registers functionality
+    *[Attendance Registers](attendance-registers.md#attendance-registers)**feature in ADAM. The Attendance Registers functionality
     will be removed during the course of 2026.*
 
-## Choosing A Roll Call {#h-ng4rxdj7pnao}
+## Choosing A Roll Call
 
 To take a roll call, there are two routes to the roll call screen.
 
@@ -26,7 +26,7 @@ one to take the roll call.
 If no roll calls have been automatically scheduled to be taken (either by the Timetable or by a Scheduled Roll Call),
 teachers still have the option of adding an **On-demand Roll Call** or a **Free-attendance Roll Call**.
 
-### On-demand Roll Call {#h-mk0yi1ularll}
+### On-demand Roll Call
 
 An on-demand Roll Call is a quick way to choose one of your classes and conduct a roll call against it. From the **Take
 a Roll Call** page, click on the **Add an on-demand Roll Call** button:
@@ -34,7 +34,7 @@ a Roll Call** page, click on the **Add an on-demand Roll Call** button:
 ![](assets/screenshots/roll-calls/roll-calls-02.png)
 
 Choose the class you wish to take a roll call for and enter the date and time for the roll call. Note that while it is
-possible to choose any date and time for the roll call, the normal [scheduling rules will apply](#h-esr5628of73i).
+possible to choose any date and time for the roll call, the normal [scheduling rules will apply](#configuring-roll-calls).
 
 Therefore, if your roll call is entered too far in the past, after a normal roll call should have closed, then this roll
 call will close too and no roll call will be able to be taken.
@@ -47,9 +47,9 @@ will not be allowed to be taken until the specified time before, as configured i
 Click on the **Add roll call** button to add the roll call. If the roll call is currently open, you will be taken
 straight to the screen where you can record your roll call. Otherwise, you will be taken back to the list of roll calls.
 
-Taking the roll call is the same as for [a scheduled roll call](#h-3q3hfdg9y53v).
+Taking the roll call is the same as for [a scheduled roll call](#taking-a-roll-call).
 
-### Adding a Free-attendance Roll Call {#h-qh8vpnqn43cg}
+### Adding a Free-attendance Roll Call
 
 A free-attendance roll call allows you to dynamically add pupils to a roll call. This is often useful for recording
 pupils present at events with optional attendance and which might be attended outside of a class structure. Such
@@ -84,7 +84,7 @@ expected to attend, but didn’t.
     While ADAM will add pupils to the roll call, if you wish to change any reasons or add any notes, you must click on the **Save** button that appears at the bottom. If you make changes to this list, and then add another pupil before you
     save the changes, those changes will be lost.
 
-## Taking a Roll Call {#h-3q3hfdg9y53v}
+## Taking a Roll Call
 
 Once you have chosen a roll call, you will see a screen similar to this:
 
@@ -105,9 +105,9 @@ recordkeeping.
 At the top of the table an option appears to **Mark all as present** which can be ticked to immediately highlight all
 pupils as present.
 
-## Planned Absences {#h-evmfpme954cg}
+## Planned Absences
 
-### Adding a new Planned Absence {#h-qznq60a8fkha}
+### Adding a new Planned Absence
 
 Where you are aware that a pupil is leaving the school for a period of time, a **Planned Absence** can be added to
 pre-populate the roll call.
@@ -138,7 +138,7 @@ Click on **Save**to add this planned absence. The planned absence should now app
 
 ![](assets/screenshots/roll-calls/roll-calls-12.png)
 
-### Editing a Planned Absence {#h-2es0kci0a38x}
+### Editing a Planned Absence
 
 Click on the **edit** icon next to the planned absence that you wish to edit.
 
@@ -154,38 +154,38 @@ Please note well:
   1 pm, when the change was made, will not be impacted. This does imply that prompt alteration to planned absences will
   be necessary.
 
-### Absences from Other Modules in ADAM {#h-gkry6r8vq4e0}
+### Absences from Other Modules in ADAM
 
 Apart from the roll call module monitoring planned absences, other modules in ADAM also contribute to absences and help
 to pre-populate the roll call. The idea is to allow for a complete summary of where a pupil is at any point in time.
 
-#### Absentee Module {#h-5a5fg6ffgzyn}
+#### Absentee Module
 
 If pupils are marked as absent in the absentee module, they will show as absent for all their roll calls on that day.
 
-#### Leave Module {#h-wn0mpm39hlpo}
+#### Leave Module
 
 Any pupil who is listed as being on leave in the Leaves module (mostly used by boarding schools) will show as being on
-leave in their roll calls. Note that in the [Site Settings](changing-site-settings.md#h-3j2qqm3)(**Cron Settings → Roll
+leave in their roll calls. Note that in the [Site Settings](changing-site-settings.md#changing-site-settings)(**Cron Settings → Roll
 Call → Reason to show for Leaves**) you must select the absentee reason that ADAM will use for a pupil on Leave. You
-might need to create your own [absentee reason](absentee-administration.md#h-i74ma3ruchb0)for this reason, first.
+might need to create your own [absentee reason](absentee-administration.md#absentee-reasons)for this reason, first.
 
-## Configuring Roll Calls {#h-esr5628of73i}
+## Configuring Roll Calls
 
-In the [Site Settings](changing-site-settings.md#h-3j2qqm3), The **Cron Settings** tab has a section with **Roll Call**
+In the [Site Settings](changing-site-settings.md#changing-site-settings), The **Cron Settings** tab has a section with **Roll Call**
 settings.
 
 ![](assets/screenshots/roll-calls/roll-calls-13.png)
 
-### Email Staff Reminders {#h-pu99dr4nnjc}
+### Email Staff Reminders
 
 The **Send Reminders** and **Reminder Time** settings allow ADAM to send your teachers reminders if their roll calls are
 not recorded before the time, specified in **Reminder Time**, has elapsed after the close of the roll call session.
 
 The email that is sent to staff can be customised (as can most automated emails sent by ADAM) be editing the **Roll Call
-**[Email Message Template](email-message-templates.md#h-5rkfadj40kta).
+**[Email Message Template](email-message-templates.md#email-message-templates).
 
-### Opening and Closing Roll Calls {#h-cafv7b7dc06u}
+### Opening and Closing Roll Calls
 
 ADAM will allow roll calls to be taken from a specific time before the roll call is due to start (defined by the **Open
 Roll Call** setting) and will allow the roll call to be completed up until the time specified in **Close Roll Call**.
@@ -196,7 +196,7 @@ If the roll call is closed, no reminder will be sent. This means, for example, i
 1 hour, but your **Send Reminders** time is set to 2 hours, no reminders will be sent since the roll calls is already
 closed when the reminders are due to be sent.
 
-### Adding Roll Calls {#h-c8x3b4c278xl}
+### Adding Roll Calls
 
 Each morning at 5am, ADAM scheduled the roll calls that are due to happen each day. At this time, ADAM can optionally
 look at the timetable module in order to schedule a roll call for each lesson that is scheduled to take place that day.
@@ -206,7 +206,7 @@ schedule.
 When set to **Yes**, lessons are added. If set to **No** ADAM does not use the timetable and will not create lesson roll
 calls.
 
-## Scheduling Roll Calls {#h-b88n8hdz302g}
+## Scheduling Roll Calls
 
 Each morning at 5am, ADAM will look to see what roll calls need to be taken for the day and schedule them. Ideally, any
 changes that need to be made (such as schedules or special arrangements) will be done the day prior so that roll calls
@@ -218,7 +218,7 @@ are created accurately.
 
 Roll Calls can be created from three sources:
 
-### On-Demand Roll Calls {#h-7p3gfrisftdt}
+### On-Demand Roll Calls
 
 If a roll call needs to be taken but has not been scheduled, it is possible for a teacher to add an “on-demand” roll
 call. To do this, click on the option to “take a roll call”, as normal, and, at the top, choose the option to “Add an
@@ -235,15 +235,15 @@ Click on the **Add roll call** button when finished.
 If the roll call is able to be taken, according to the times set for opening and closing roll calls, ADAM will
 immediately display the roll call. If the roll call is not current, then the list of roll calls will be displayed again.
 
-### Timetabled Lessons {#h-vz79qzaxjspb}
+### Timetabled Lessons
 
 ADAM can automatically add all timetabled lessons as roll calls. This must be enabled in
-the [site settings](#h-c8x3b4c278xl). Any lessons that are scheduled for the day will have roll calls added. This means
+the [site settings](#adding-roll-calls). Any lessons that are scheduled for the day will have roll calls added. This means
 that if classes go away on tours, for example, that their lessons
-be [removed from the timetable calendar](timetable-module.md#h-4dyracbn67lz). If there are schedule changes, these
+be [removed from the timetable calendar](timetable-module.md#adding-days-to-a-calendar). If there are schedule changes, these
 should also be adjusted in the timetable.
 
-### Scheduled Roll Calls {#h-s7d9bpj8s590}
+### Scheduled Roll Calls
 
 ADAM has a basic Roll Call scheduler that allows you to schedule roll calls for specific days in the week for either a
 single class (e.g. “Marimba Band”), or all classes within a subject (e.g. “Registration Class”).
@@ -288,16 +288,16 @@ Friday morningsa, two schedules would need to be added: one for each set times:
 
 Note that the ability to create exceptions (e.g. public and other school holidays) will come in time.
 
-### Free-attendance Roll Call {#h-kl1vg6ruy8au}
+### Free-attendance Roll Call
 
 ADAM allows a roll call to be taken with no fixed class register. This might be useful for monitoring pupil attendance
 at support lessons, their whereabouts during free lessons and so on. Pupils who are added to a free-attendance roll call
 are marked present as they are added, but it is possible to mark a pupil as absent if they were expected to attend but
 did not show.
 
-## Roll Call Absence Alerts {#h-vlgh6kvxbzm6}
+## Roll Call Absence Alerts
 
-### Overview {#h-ygfdvlwkycuz}
+### Overview
 
 The Roll Call Absence Alerts feature notifies selected staff members when a pupil is marked absent from a roll call.
 Alerts are sent by email and as a notification on the recipient's staff dashboard, so staff can react quickly to
@@ -316,7 +316,7 @@ The feature is fully configurable:
 Alerts are only triggered by manual attendance marks (a person clicking "Absent"). Marks created automatically when a
 roll call is opened (planned absences) do not trigger alerts.
 
-### Quick Start {#h-n3adistam0i8}
+### Quick Start
 
 To start using the feature on a new ADAM site:
 
@@ -331,7 +331,7 @@ To start using the feature on a new ADAM site:
 That's it — the next time a teacher marks a pupil absent with one of the flagged reasons, the configured staff members
 will be notified after the delay period.
 
-### Step 1 — Mark Reasons That Should Trigger an Alert {#h-emym3ihtt4fj}
+### Step 1 — Mark Reasons That Should Trigger an Alert
 
 The starting point of the feature is the absence reason. Only reasons flagged with Alert staff when marked = Yes will
 ever cause an alert to be sent.
@@ -346,7 +346,7 @@ To configure reasons:
 *Note: This is a separate field from Include in alert, which controls the cumulative family digest sent by the existing
 Absentees module. The two flags are independent — you can use any combination.*
 
-#### Recommended Reason Flags {#h-1b0nu1iux7n3}
+#### Recommended Reason Flags
 
 | **Reason**                       | **Alert staff when marked** |
 |----------------------------------|-----------------------------|
@@ -358,7 +358,7 @@ Absentees module. The two flags are independent — you can use any combination.
 In general, set Yes for reasons that mean "we don't yet know where this pupil is", and No for reasons that represent a
 known and accepted absence. The goal is to alert staff to surprises, not to spam them with expected events.
 
-### Step 2 — Configure the Type Defaults {#h-adngidhallhy}
+### Step 2 — Configure the Type Defaults
 
 Open **Administration → Roll Call → Absence Alert Configuration**. You will see a table with one row for each of the
 four roll-call types:
@@ -372,12 +372,12 @@ four roll-call types:
 
 Click Edit next to a type to configure its alert defaults. Each form exposes the same set of fields:
 
-#### Enabled {#h-mzxax49ajd83}
+#### Enabled
 
 Master switch for this type. When set to No, no alerts are ever sent for roll calls of this type, regardless of the
 other settings.
 
-#### Notification Delay (minutes, 0–240) {#h-f2xidxi133uv}
+#### Notification Delay (minutes, 0–240)
 
 How long the system waits after a pupil is marked absent before sending the alert. During this window:
 
@@ -388,7 +388,7 @@ How long the system waits after a pupil is marked absent before sending the aler
 A delay of 10 minutes is a good default. Setting it to 0 sends alerts immediately and removes the safety net for
 corrections. The maximum is 240 minutes (4 hours).
 
-#### Role Rules {#h-en1yjyc0soqp}
+#### Role Rules
 
 Each rule, if enabled, automatically picks the appropriate staff member for each individual alert based on who the pupil
 is and which roll call they were absent from. You can combine any number of rules — recipients are deduplicated.
@@ -400,7 +400,7 @@ is and which roll call they were absent from. You can combine any number of rule
 |Notify all roll-call series members|Notifies every staff member listed as a collaborator on the series. Only applies to on-demand (Free) roll calls, since they are the only type that can have a series with collaborators.|
 |Notify the subject teacher|Notifies the teacher of the class being taught. Only applies to Timetable roll calls.|
 
-#### Explicit Staff Recipients {#h-nq8jpdc382zo}
+#### Explicit Staff Recipients
 
 A free-form list of staff members to always notify, regardless of the role rules. Use the multi-select picker to add or
 remove names. The picker lists every currently-employed staff member.
@@ -408,12 +408,12 @@ remove names. The picker lists every currently-employed staff member.
 Use this for fixed audiences such as a head of attendance, a year-group co-ordinator, or a deputy head — anyone who
 should hear about every absence of this type.
 
-#### Saving {#h-wewk75rmzcxg}
+#### Saving
 
 Click Save to apply the changes. You will be returned to the index page with a confirmation flash message. Changes take
 effect immediately — the next absence mark will use the new configuration.
 
-### Step 3 — (Optional) Override a Specific Series {#h-j291hrye5p24}
+### Step 3 — (Optional) Override a Specific Series
 
 A roll-call series can override the type default. This is useful for:
 
@@ -436,11 +436,11 @@ the type default, open the override and click Remove override.
     for the series — it does not fall back to the type default. This is deliberate: a disabled override is a positive "do
     not alert for this series" signal. Use Remove override if you want the series to inherit the type setting again.
 
-### How Alerts Are Delivered {#h-nntr03gf7obd}
+### How Alerts Are Delivered
 
 Each recipient receives two things for each alert:
 
-#### Email {#h-anf4hrevy3kg}
+#### Email
 
 Sent via the Roll Call Absence Alert email template, which lives under **Administration → Site Administration → Email
 Templates → Roll Call** and is fully customisable.
@@ -461,7 +461,7 @@ Available merge codes:
 Recipients can edit the subject and body of this template like any other ADAM email template; the merge codes above are
 the supported placeholders.
 
-### Landing Page Notification {#h-q8yf98pg90p5}
+### Landing Page Notification
 
 A row is added to the recipient's Staff Notifications dashboard widget, shown on the main page when they log in. The
 widget displays up to ten unread notifications, each with:
@@ -475,7 +475,7 @@ widget displays up to ten unread notifications, each with:
 Marking a notification as read removes it from the widget but keeps the row on file. Each notification is private to its
 recipient — staff cannot mark each other's notifications as read.
 
-### How the Delay (Debounce) Works {#h-pvkj0p7s2w7z}
+### How the Delay (Debounce) Works
 
 The delay protects against false alerts caused by quick corrections. Here is the lifecycle of an absence mark:
 
@@ -490,14 +490,14 @@ If the teacher had instead changed the mark from one alerting reason to another 
 The delay also handles bulk-marking: if a teacher opens a roll call and marks 10 pupils absent in quick succession, all
 10 alerts are queued and sent after a single batch delay rather than firing one by one as they tick through.
 
-#### What does not trigger alerts {#h-7q8o3df1cq09}
+#### What does not trigger alerts
 
 - Marks created automatically when a roll call is opened (the system marks pupils absent by default — these are "
   planned" absences).
 - Marks where the reason has Alert staff when marked = No.
 - Roll calls whose status is cancelled.
 
-### Cron Cadence {#h-hzgx1dw1x5sr}
+### Cron Cadence
 
 The dispatcher that sends alerts runs as an automatic cron job. By default it runs every minute, so the time between an
 alert becoming due (after its delay) and it being delivered is at most one minute plus normal email delivery time.
@@ -513,7 +513,7 @@ Increase this value to reduce load on busy servers; decrease (or leave at 1) for
 run processes up to 200 queued alerts; if the system needs to handle more, the dispatcher will pick up the remainder on
 the next tick.
 
-### Email Template Customisation {#h-6jngjz5pyeyi}
+### Email Template Customisation
 
 To adjust the wording, branding, or layout of the alert email:
 
@@ -529,19 +529,19 @@ Roll call absence: {pupil\_name} in {rollcall\_name}
 and the default body explains who was marked absent, when, by whom, and why, with a link to open the roll call. You can
 replace any of this with your school's preferred wording.
 
-### Frequently Asked Questions {#h-z3jmj5i87l3d}
+### Frequently Asked Questions
 
-#### A teacher marked a pupil absent and corrected it almost immediately. Did anyone get an email? {#h-h5kv79zakft0}
+#### A teacher marked a pupil absent and corrected it almost immediately. Did anyone get an email?
 
 No, provided the correction happened inside the delay window (default 10 minutes). The pending alert is cancelled
 atomically when the mark is updated to a non-alerting reason or to "Present".
 
-#### A teacher kept the absent mark but changed the reason. What happens? {#h-3hym61283xz}
+#### A teacher kept the absent mark but changed the reason. What happens?
 
 If both reasons are flagged "Alert staff when marked", the delay restarts from the new mark and a single alert is sent
 reflecting the latest reason. If the new reason is not flagged for alerts, the pending alert is cancelled.
 
-#### Will alerts be sent during school holidays? {#h-q01lqfuu4rhj}
+#### Will alerts be sent during school holidays?
 
 Yes — the dispatcher runs continuously and reacts to whatever absence marks are saved. If you do not want alerts during
 holidays, you can either:
@@ -549,24 +549,24 @@ holidays, you can either:
 - Set Enabled = No on each type for the holiday period; or
 - Avoid taking roll calls during the period.
 
-#### Can I see who has been alerted historically? {#h-srkf2a2aracn}
+#### Can I see who has been alerted historically?
 
 The cron job retains processed queue rows for 30 days before purging them, and the in-app notifications widget keeps
 both unread and read rows on file indefinitely. Email delivery records are tracked through ADAM's normal messaging logs.
 
-#### A staff member resigned. Will they still receive alerts? {#h-ajuf46wdyz3v}
+#### A staff member resigned. Will they still receive alerts?
 
 No. Before sending each alert the dispatcher checks that the recipient is still a current staff member (via
 view\_staff\_current). Resigned or former staff are skipped automatically, even if they are still listed as explicit
 recipients. Removing them from the recipient list is a tidy-up step but is not required for correctness.
 
-#### What happens if email delivery fails for a batch? {#h-qkqqxtodkac1}
+#### What happens if email delivery fails for a batch?
 
 The dispatcher commits the email batch before it marks the queue rows as processed. If the commit fails, the queue rows
 are left in place and the next cron tick will retry them — so transient mail-server problems do not silently drop
 alerts.
 
-#### Does the landing page notification get sent if the email also fails? {#h-qtoe6u13wf3c}
+#### Does the landing page notification get sent if the email also fails?
 
 The landing page notification is created during the same processing step as the email. If the cron tick fails partway
 through, neither has been committed yet and the alert is retried on the next run. If the email batch succeeds but a

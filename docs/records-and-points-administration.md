@@ -1,8 +1,8 @@
-# Records and Points Administration {#h-1mrcu09}
+# Records and Points Administration
 
 ADAM offers a reasonably sophisticated means to deal with the disciplinary and award records that is compatible with many schools’ requirements. The following sections will explain the different features of the system.
 
-## Events vs Points {#h-46r0co2}
+## Events vs Points
 
 Broadly, there are two different kinds of records that can be stored by ADAM. These are broken down into an “event” and a “point”. Distinguishing between the two is best started with some examples:
 
@@ -23,7 +23,7 @@ The key distinguishing elements are:
 -   Events are mostly associated with some date in the future to when they were recorded. Importantly, they can record who attended the event (i.e. served their detention or received their certificate) and who might still need to do so.
 -   Points either count the number of occurrences (such as homework infringements) or sum a number of points to arrive at a total.
 
-## Managing Records and Points Category Groups {#h-cajckn6q1qyd}
+## Managing Records and Points Category Groups
 
 Three default groups are provided: “Good”, “Neutral” and “Bad”. These groups are used only to sort the Records and Points categories and have no other meaning. Some combined primary and secondary schools choose to have groups such as “Junior Primary”, “Senior Primary” and “High School” to help separate out the categories. This also allows different consequences (see later!) for demerits in the prep school vs in the high school.
 
@@ -33,7 +33,7 @@ On this screen, you can edit existing groups, add new ones and change the order 
 
 ![](assets/screenshots/records-and-points-administration/records-and-points-administration-01.png)
 
-### Adding a New Group {#h-2k7z08lxqzu9}
+### Adding a New Group
 
 ![](assets/screenshots/records-and-points-administration/records-and-points-administration-02.png)
 
@@ -41,13 +41,13 @@ ADAM also allows you to maintain a running total for each group if you would lik
 
 Schools can optionally restrict categories within a group to be used solely by people who have permission to view sensitive information of pupils within the school.
 
-## Managing Records and Points Categories {#h-7sum2a3v44l3}
+## Managing Records and Points Categories
 
 This is certainly where most of the work is done when setting up Records and Points for your school.
 
 From the **Administration** tab, look under the **Pastoral Administration** heading and click on the **Edit the Records and Points categories** option.
 
-### Adding a new Records and Points Category {#h-3lnsfyslep9m}
+### Adding a new Records and Points Category
 
 ![](assets/screenshots/records-and-points-administration/records-and-points-administration-03.png)
 
@@ -67,7 +67,7 @@ The screen, shown above, has a number of options, explained below:
 -   Expire on a specific date: Here, you can specify a date before which all points will expire.
 
 -   **Publish to Parent/Pupil Portal:** The options here change depending on whether there is an attendance register associated with this category or not. If there is an attendance register, an additional option appears: the category can either be shown to parents as soon as it is recorded or alternatively only once the pupil has been marked as present on the attendance register.
--   **Show Teacher Name on Parent/Pupil Portal:** Sometimes, particularly when records related to [consequences](#h-nqnke3xkaiox) are shown to parents, it can be confusing to see the teacher who triggered the consequence shown there. When consequences are awarded, they are automatically assigned to the teacher that awarded them. This can make it seem that a relatively minor infraction caused an over-reaction from the teacher, without the context that this consequence is as a result of a number of other issues. Hiding the teacher’s name prevents this confusion.
+-   **Show Teacher Name on Parent/Pupil Portal:** Sometimes, particularly when records related to [consequences](#records-and-points-consequences) are shown to parents, it can be confusing to see the teacher who triggered the consequence shown there. When consequences are awarded, they are automatically assigned to the teacher that awarded them. This can make it seem that a relatively minor infraction caused an over-reaction from the teacher, without the context that this consequence is as a result of a number of other issues. Hiding the teacher’s name prevents this confusion.
 -   **Published on Supported Reporting Templates:** This setting will be used by specific reporting templates to draw further information onto the reports. If this is one of the categories that should be displayed on a report, you can change this setting to “Yes”. Note that only supported templates will search for any categories that are set to display.
 -   **Send email notification to pupils:** This will alert pupils of the fact that they have received a an entry in the Records and Points module. The email notification is automatically delayed by 5 minutes in case there was an error while adding.
 -   **Options:** Normally, when recording an entry for a pupil, the notes field is a free text field. However, you can limit the options available and show cause a drop-down list to show by typing in the allowed options here. Leaving these empty allows the free text field.
@@ -76,7 +76,7 @@ The screen, shown above, has a number of options, explained below:
 
 Click the button at the bottom to **Save the Records and Points Category**.
 
-## Adding and Editing Records and Points {#h-111kx3o}
+## Adding and Editing Records and Points
 
 There are several ways to add records and points to a student’s profile.
 
@@ -88,17 +88,17 @@ You can now record the information necessary. Be sure to include a note explaini
 
 If you have permission, or if you added a record to a pupil, you will see an option to “edit” or “delete” the record in the **Actions** column.
 
-When a record is deleted, ADAM will check whether any automatically generated consequences are affected and flag them for review if necessary (see [Flagged Consequences](#h-8jp0qgwsnfzb) below).
+When a record is deleted, ADAM will check whether any automatically generated consequences are affected and flag them for review if necessary (see [Flagged Consequences](#flagged-consequences) below).
 
-## Displaying a Pupil’s Records and Points {#h-1w58o8tdmbuw}
+## Displaying a Pupil’s Records and Points
 
 From a pupil’s profile, you can click on the **Records and Points** option and you will see a tabbed summary page of the different categories. Click on each category to see that pupil’s records.
 
-## Records and Points Consequences {#h-nqnke3xkaiox}
+## Records and Points Consequences
 
 Consequences allow ADAM to automatically generate records when a pupil's running total in a category reaches a defined threshold. For example, when a pupil accumulates 5 demerits, ADAM can automatically create a detention record.
 
-### Setting Up Consequences {#h-flci3b78ijqz}
+### Setting Up Consequences
 
 Navigate to **Administration → Pastoral Administration → Edit the Records and Points consequences**.
 
@@ -119,7 +119,7 @@ To add further consequences, click on the “**Add consequence**” button at th
 
 Click on the **Next** button to save the consequences.
 
-### Flagged Consequences {#h-8jp0qgwsnfzb}
+### Flagged Consequences
 
 When a Records and Points entry is deleted (e.g. because it was added in error), any consequence that was automatically generated from it may no longer be valid. ADAM detects this and flags the affected consequence record for review.
 
@@ -141,17 +141,17 @@ For each flagged consequence, staff with the appropriate permissions can:
 
 If a flagged consequence is deleted and it had *itself* triggered further consequences, those downstream consequences will be flagged in turn.
 
-## Records and Points Alerts {#h-h0rxz268pgqp}
+## Records and Points Alerts
 
 Using Records and Points Alerts, ADAM is able to send emails to staff on a regular basis to alert them to records and points that have been added to a pupil’s profile. Alerts are sent at a regular time interval each day to staff members. The exact staff members that are alerted can be configured per alert.
 
-### Timing of the Alerts {#h-s8768adi1qe}
+### Timing of the Alerts
 
 To configure the time at which ADAM sends Records and Points alerts, navigate to **Administration → Site Administration → Edit Site Settings**. On the Site Settings page navigate to the **Cron Settings** tab and scroll down to the **Alerts** section. Within that is a time selector for  **Records and Points alerts times**.
 
 Click to select a time to send the alert. It is possible to send alerts multiple times each day. Alerts will only be sent for items that were added since the last time the assessments were run.
 
-### Creating Alerts {#h-blg23yzkc89}
+### Creating Alerts
 
 To create a new alert, navigate to **Administration → Pastoral Administration → Manage Records and Points Alerts**. You will be shown a list of existing alerts, if there are any on your server.
 
@@ -179,11 +179,11 @@ The second option, **Email teachers of these subjects**, will alert any staff me
 
 Click on **Save Changes** to save the alert.
 
-## Certificates from Records and Points {#h-p45jqc4m895}
+## Certificates from Records and Points
 
 Where a Record and Points category has an attendance register included as part of its setup, ADAM can offer to print certificates for pupils who have had a record added to their profile, but who have not yet been listed as having “attended.” In this context, “attended” could be read as being: “attending the awards ceremony”.
 
-### Uploading Certificate Templates {#h-b2e0uwkhe83d}
+### Uploading Certificate Templates
 
 Traditionally, this feature was designed to print over a pre-printed certificate. However, with more and more awards being issued electronically, even for archival purposes, it is useful to have a purely electronic certificate that can be emailed.
 
@@ -196,13 +196,13 @@ Kindly note the following:
 -   The certificates should be one of the standard sizes A4 or A5 (either portrait or landscape). Other will be truncated to fit the size chosen in the print settings.
 -   The PDF document must be compatible with PDF Version 1.4 (Adobe 5). If you have a graphic designer working with your certificates, they should be able to export the template in this format for you. If you upload the certificate in a newer format, it *may* work, but it may give unpredictable results and errors.
 
-### Choosing the Printing Settings {#h-9juw4j64wbz8}
+### Choosing the Printing Settings
 
 Once you’ve chosen the awards for which you want to print certificates, ADAM will show you this screen:
 
 ![](assets/screenshots/records-and-points-administration/records-and-points-administration-10.png)
 
-If you have [uploaded any templates](#h-b2e0uwkhe83d), then you will see these listed in the drop-down. If you are printing onto pre-printed certificates, leave this as “No template”.
+If you have [uploaded any templates](#uploading-certificate-templates), then you will see these listed in the drop-down. If you are printing onto pre-printed certificates, leave this as “No template”.
 
 Choose your desired report size.
 

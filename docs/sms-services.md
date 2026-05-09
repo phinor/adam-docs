@@ -1,4 +1,4 @@
-# SMS Services {#h-1pgrrkc}
+# SMS Services
 
 ADAM uses three third party service providers to send SMS messages from the [Messaging Centre](messaging-centre.md). These are:
 
@@ -10,31 +10,31 @@ The three service offer different pricing models and it is up to the school whic
 
 Schools must sign up for an account directly with the provider and purchase credits directly from them. ADAM merely passes the messages to your chosen provider at which points your credits are deducted and the messages sent.
 
-## SMSWeb Setup {#h-awfi1msb9u62}
+## SMSWeb Setup
 
 Please let us know if you are setting up an SMSweb account and we will gladly assist!
 
-### Configuring the SMS Service {#h-49gfa85}
+### Configuring the SMS Service
 
-On signing up with SMSweb, they will provide you with a username and password. These details should be entered into the site settings (see [Changing Site Settings](changing-site-settings.md#h-3j2qqm3)).
+On signing up with SMSweb, they will provide you with a username and password. These details should be entered into the site settings (see [Changing Site Settings](changing-site-settings.md#changing-site-settings)).
 
 !!! warning
     *Check to see which teachers have the* *[privileges to send SMS messages](security-administration-for-staff.md)* *and that they are aware of the school’s policy for communicating with parents.*
 
-## ZoomConnect Setup {#h-184mhaj}
+## ZoomConnect Setup
 
 Part of the process of signing up to ZoomConnect will provide you with a username and password to access the ZoomConnect portal.
 
 Begin your signup process at [https://www.zoomconnect.com/](https://www.google.com/url?q=https://www.zoomconnect.com/&sa=D&source=editors&ust=1778246676738212&usg=AOvVaw0h2-CY5Gq2_qdv1w1ecw-Q) 
 
-### Before you begin {#h-3s49zyc}
+### Before you begin
 
 Your ADAM server will need unhindered web access to the internet in order to be able to communicate with the ZoomConnect servers. The message transfer happens using normal HTTP/HTTPS calls and so your firewall needs to be configured to allow that traffic.
 
 !!! warning
     If you host your own ADAM server: Note that ADAM will run on your server as a system service and so any firewalls that require authentication, even if that happens transparently, will generally not allow this traffic through. In these instances, whitelisting the ADAM server’s IP address may be necessary.
 
-### Configuring ZoomConnect {#h-279ka65}
+### Configuring ZoomConnect
 
 -   Log into the ZoomConnect portal, which you can find at: [https://www.zoomconnect.com/zoom/login](https://www.google.com/url?q=https://www.zoomconnect.com/zoom/login&sa=D&source=editors&ust=1778246676739193&usg=AOvVaw2M9I5olrnfp4PXwJsTifmp) 
 -   Click on the “Company Name” at the top right of the screen. A dropdown list will appear. Select the “Developer settings” from this list:
@@ -62,7 +62,7 @@ And then:
 
 ![](assets/screenshots/sms-services/sms-services-06.png)
 
-### Configuring ADAM {#h-meukdy}
+### Configuring ADAM
 
 -   From the “Administration” tab, open the “Site Settings”, and navigate to the “Communications” tab.
 -   Under the “Communications” heading, look for the “Enabled Communications Modules” setting. Ensure that ZoomConnect is selected. You may wish to disable SMSWeb, unless you are using both systems. Hold down “Ctrl” to select additional modules and deselect modules.
@@ -87,11 +87,11 @@ And then:
 
 -   **Save** the changes.
 
-## SMSguys Setup {#h-b1by14vh9fes}
+## SMSguys Setup
 
 @todo - Please lest us know if you are setting up an SMSguys account and we will gladly assist!
 
-## SMS Statistics Report {#h-2olpkfy}
+## SMS Statistics Report
 
 A statistics report is available to see how many cell numbers on your system are enabled to receive SMS messages from the [messaging centre](messaging-centre.md). To see the report, navigate to “Administration” and under the “Database administration” heading, click on “View SMS statistics”.
 
@@ -99,6 +99,6 @@ A statistics report is available to see how many cell numbers on your system are
 
 The report lists the total number of *unique* parent numbers and pupil numbers. Note that where numbers have been duplicated (e.g. mum’s cell number entered as the pupil’s cell number), this will be detected by the system and only one SMS sent per batch. It is for this reason that the parent numbers added to the pupil numbers do not necessarily add up to the “Unique family numbers” total.
 
-## Sending SMS Messages {#h-13qzunr}
+## Sending SMS Messages
 
 Sending SMS messages is done through the messaging centre. Please see more information about [Messaging Centre](messaging-centre.md).

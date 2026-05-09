@@ -1,12 +1,12 @@
-# Server Setup and Configuration {#h-unpopmkkkk2z}
+# Server Setup and Configuration
 
 If you host your ADAM server on our cloud platform, you probably won’t need to worry about this section. However, if you’re hosting ADAM locally on your own server, it may be necessary to change some of the settings.
 
-## Maintenance Mode {#h-e2rl9x6lrmbb}
+## Maintenance Mode
 
 ADAM has a “Maintenance Mode” which will prevent most users from logging into the system. This can be useful for times where you need to undertake maintenance on your ADAM server, or even just restrict access to the server temporarily.
 
-### Enabling and Disabling Maintenance Mode {#h-bjjmegmzbdie}
+### Enabling and Disabling Maintenance Mode
 
 Navigate to the Site Settings (**Administration → Site Administration → Edit Site Settings**). On the **General** tab, scroll down to find the **Maintenance Mode** heading.
 
@@ -33,7 +33,7 @@ This will show a list of all staff, families and pupils who are currently logged
 
 ![](assets/screenshots/server-setup-and-configuration/server-setup-and-configuration-04.png)
 
-### Allowing Certain Users Access While in Maintenance Mode {#h-i8y0wjjvtv4q}
+### Allowing Certain Users Access While in Maintenance Mode
 
 Some schools use Maintenance Mode to prevent access to the server at short notice. However, there might be reasons for specific staff members to have access to ADAM while most other users are not permitted to log in. While logins are blocked for most users while the server is in Maintenance Mode, ADAM does have a privilege that can be assigned to a group of users that will allow that group to log in while the server is in Maintenance Mode.
 
@@ -43,7 +43,7 @@ The privilege is found on the **Site Admin** tab of the staff privileges, is ca
 
 Note that Site Administrators will always be able to log in, even when the server is in Maintenance Mode.
 
-## Setting up an ADAM server {#h-8q4x8u2gss8q}
+## Setting up an ADAM server
 
 Maintaining your own ADAM server will require some expertise in managing, maintaining and configuring a Linux operating system from yhe command line. The skills required to manage the server include:
 
@@ -71,7 +71,7 @@ We require that you run ADAM on an Ubuntu Server operating system, with Ubuntu 2
 
 In order for the server to receive updates, we require that the server is accessible from the greater internet via SSH. As part of the server setup in the initial stages of onboarding your school with ADAM, we will assist you in configuring the server to only allow certificate-based authentication.
 
-## Editing the configuration file {#h-x27qf2tjfh9}
+## Editing the configuration file
 
 *Please don’t edit the configuration file unless you are confident in what you are doing.*
 

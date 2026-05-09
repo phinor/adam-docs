@@ -1,6 +1,6 @@
-# Appendix A: Import and Export Codes {#h-280hiku}
+# Appendix A: Import and Export Codes
 
-## Population Group Codes {#h-n5rssn}
+## Population Group Codes
 
 Code
 
@@ -26,7 +26,7 @@ White
 
 Other or Unknown
 
-## Language Codes {#h-375fbgg}
+## Language Codes
 
 Code
 
@@ -84,7 +84,7 @@ Sign Language
 
 Other
 
-## Disability Codes - Pupils {#h-1maplo9}
+## Disability Codes - Pupils
 
 Code
 
@@ -178,7 +178,7 @@ Attention deficit disorder with hyperactivity
 
 Attention deficit disorder without hyperactivity
 
-## Countries recognised by ADAM {#h-46ad4c2}
+## Countries recognised by ADAM
 
 Country
 
@@ -682,7 +682,7 @@ Zambia
 
 Zimbabwe
 
-## Orphan Status Codes {#h-2lfnejv}
+## Orphan Status Codes
 
 Code
 
@@ -704,7 +704,7 @@ Only biological father deceased
 
 Both biological parents deceased
 
-## Province Codes {#h-10kxoro}
+## Province Codes
 
 Code
 
@@ -750,7 +750,7 @@ Limpopo
 
 Other country
 
-## Boarder Codes {#h-3kkl7fh}
+## Boarder Codes
 
 Code
 

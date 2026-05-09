@@ -1,4 +1,4 @@
-# Profile Overview Customisation {#h-zfmia96w0aa}
+# Profile Overview Customisation
 
 ADAM allows each school and, potentially, each staff member, to update the overview screens for staff, pupils and families as required.
 
@@ -6,7 +6,7 @@ Those with the necessary privileges will see an “edit this page” option to t
 
 ![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-01.png)
 
-## Assigning the Privileges to Staff {#h-evcuhsoxuc0p}
+## Assigning the Privileges to Staff
 
 There are six privileges in total to allow for the customisation of the screens, divided into two categories:
 
@@ -19,15 +19,15 @@ There are six privileges in total to allow for the customisation of the screens,
 It would be feasible to allow most teachers the privileges to customise their own overview screens if they want to.
 
 !!! warning
-    *Note that they can only ever get access to the information that has been allowed for them to view via the* *[scratch list privileges](scratch-lists.md#h-lwhyrvik02r7)**.*
+    *Note that they can only ever get access to the information that has been allowed for them to view via the* *[scratch list privileges](scratch-lists.md#controlling-access-to-scratch-list-fields)**.*
 
-To [assign the privileges](security-administration-for-staff.md#h-3ls5o66), open the **privileges** view of the appropriate staff group and under “Pupil Admin”, “Staff Admin” or “Family Admin”, look for the **Overview** heading. Then assign the appropriate privileges:
+To [assign the privileges](security-administration-for-staff.md#security-administration-for-staff), open the **privileges** view of the appropriate staff group and under “Pupil Admin”, “Staff Admin” or “Family Admin”, look for the **Overview** heading. Then assign the appropriate privileges:
 
 ![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-04.png)
 
 Note that, as normal, a site administrator will automatically get access to the ability to edit the default page and their own page.
 
-## Changing the Overview Page {#h-nhpcezw4tuzv}
+## Changing the Overview Page
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/fOtliGrFp0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -58,7 +58,7 @@ Then, within each block, are several options.
 
 -   Finally, one can choose whether to display a list of fields or to display one of the available widgets that are available.
 
--   When choosing to display a **field list**, one or more of the scratch list fields can be chosen. Staff will only see the fields that they have been [given privileges to see](scratch-lists.md#h-lwhyrvik02r7). If only one field is chosen, the name of the field is not shown and the contents of that field are shown in a plain paragraph. Make sure to use the heading to give context. As an example, see how the default *Allergies* block is set up:
+-   When choosing to display a **field list**, one or more of the scratch list fields can be chosen. Staff will only see the fields that they have been [given privileges to see](scratch-lists.md#controlling-access-to-scratch-list-fields). If only one field is chosen, the name of the field is not shown and the contents of that field are shown in a plain paragraph. Make sure to use the heading to give context. As an example, see how the default *Allergies* block is set up:
 
 ![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-09.png)
 
@@ -70,7 +70,7 @@ Note that its appearance is Red and its field list contains a single field. This
 
 When done, click on the **Save** button.
 
-## Reverting a personalised overview screen to the default view {#h-jhr19setx2h}
+## Reverting a personalised overview screen to the default view
 
 A user can choose to revert their view to the default view at any point. To do this they should click on the **edit this page** link. On the customisation page, they should click on the option **reset this view to the default**.
 

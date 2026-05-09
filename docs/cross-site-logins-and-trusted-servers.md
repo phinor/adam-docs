@@ -1,8 +1,8 @@
-# Cross-Site Logins and Trusted Servers {#h-djnilg713rn6}
+# Cross-Site Logins and Trusted Servers
 
 ADAM allows administrators to set up a trust relationship between two or more servers to allow users a once-click login to facilitate access to other servers.
 
-## Setting up a pair of Trusted Servers {#h-dlz5acxcvqy7}
+## Setting up a pair of Trusted Servers
 
 Navigate to **Administration → Security administration → Manage cross-site login trusted servers**.
 
@@ -48,7 +48,7 @@ Go back to your first server and refresh the page to ensure that the connection 
 
 You have now created a successful Trusted Server relationship.
 
-## Adding a Third (or Fourth) Server {#h-w5d7z5bn4ezh}
+## Adding a Third (or Fourth) Server
 
 While the process for adding a third or subsequent server is no different to that described above, note that Trusted Servers are created in pairs. Thus, your third server would need to have a trust relationship set up with your first server and your second server.
 
@@ -56,9 +56,9 @@ The more servers you have, the more complex this can be!
 
 Remember, though, that each pair of trusted servers should have their own unique shared secret. If a shared secret is leaked, for example, then only that shared secret would need to be changed.
 
-## Cross-Site Logins {#h-fcoaurjq7ykb}
+## Cross-Site Logins
 
-### Prerequisites {#h-ydhzyavc7p1}
+### Prerequisites
 
 In order for ADAM to allow cross-site logins, the following must be in place for all those who are going to perform cross-site logins:
 
@@ -79,7 +79,7 @@ In order for ADAM to allow cross-site logins, the following must be in place for
 -   Their **Admin Number** must be the same on both servers. If they are not, ADAM will not be able to find the corresponding user and log them in.
 -   Note that if the Admin Numbers are not standardised, then ADAM may log a user into another user’s profile.
 
-### Performing Cross-Site Logins {#h-rywg6hrxaw9}
+### Performing Cross-Site Logins
 
 Once ADAM has been configured with at least once trusted server relationship that allows logins for the appropriate type of user, the following icon will appear on their navigation bar:
 
@@ -93,7 +93,7 @@ When  they click on that option, a list of Trusted Servers will appear:
 
 The user should click on the “login” option next to the server. ADAM will request a login from the trusted server and, if the trusted server grants the request, the user is then logged on to the trusted server.
 
-## Technical Details {#h-vq1srbf6q3g2}
+## Technical Details
 
 Trust relationships are technically complicated and it is important to understand the request cycle here. Most communication is initiated by a user, but then happens directly between the two servers, meaning that the user cannot modify the requests for login and cannot spoof a result.
 
@@ -110,22 +110,22 @@ The process is outlined here:
 
 Because the communication between Server A and Server B happens behind the scenes, there is no way for the User to intercept and forge a response. Servers A and B trust each other and all the target server needs to know is that the token it gave Server A is now being presented for authentication, thereby knowing who is asking for a login.
 
-## Troubleshooting Cross-Site Logins {#h-tezvd8pv0urj}
+## Troubleshooting Cross-Site Logins
 
 A good number of things can go wrong when two automated systems are involved. Here are some more common issues to check if Cross-Site Logins are being denied.
 
-### Do their credentials match? {#h-t08suctjdnjs}
+### Do their credentials match?
 
 Check that both users on both systems have matching credentials. Check that no other users have the same credentials. ADAM uses the **Admin Number** field for both Staff and Pupil logins, and the parents’ ID number / passport field.
 
-### DNS Issues {#h-wdm78pdhyuf4}
+### DNS Issues
 
 DNS is a core service which allows two servers to communicate with each other. DNS is the “phone book” of the internet and without it, one server won’t be able to look up the IP address of the other and thus won’t be able to initiate communication with them.
 
-### The Target Server is Down {#h-qrjxsuhaesm6}
+### The Target Server is Down
 
 If the server is unavailable, then the systems won’t be able to communicate with each other. Are you able to access the target server? Check the Manage Trusted Servers page to see if ADAM is able to establish a connection with the other servers.
 
-### Has the Shared Secret Changed? {#h-7x6q4bn7igoy}
+### Has the Shared Secret Changed?
 
 While perhaps the most unlikely, please check the Manage Trusted Servers page to see if ADAM is able to establish a connection with the other servers. Verify that the secrets are the same on both servers.

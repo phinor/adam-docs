@@ -1,12 +1,12 @@
-# Scratch Lists {#h-bg6zukpa7qwi}
+# Scratch Lists
 
 A “scratch list” is often referred to as simply a class list. However, they go beyond just class lists in that you can produce a scratch list for a grade or even using a filter. You can choose a number of different field and output mechanisms when producing a scratch list.
 
-## Choosing Your Data {#h-myniac6lv9me}
+## Choosing Your Data
 
 There are a number of different ways to start off producing a scratch list, depending on what information you want and how you want the lists grouped.
 
-### Pupil Scratch Lists {#h-qlotk73180qx}
+### Pupil Scratch Lists
 
 These can be produced by class, by subject, by grade, by age group, by filter or simply choosing everyone in the school.
 
@@ -53,17 +53,17 @@ To generate these lists, navigate to the appropriate sections:
 -   View a list of all the pupils who graduated in a particular year:  **Alumni → Lists and Labels → Alumni scratch lists**
 -   View a list of all the pupils who *left* in a particular year: **Alumni → Lists and Labels → Leavers’ scratch lists**
 
-### Staff Scratch Lists {#h-2wrck4ivd7nz}
+### Staff Scratch Lists
 
 Staff scratch lists can only be produced in one way (compared to the many available ways mentioned above for pupils). The lists are found at **Staff → Lists and Labels → View staff scratch list**.
 
-### Family Scratch Lists {#h-ecdxo0wejsdw}
+### Family Scratch Lists
 
 It is also possible to produce scratch lists with families as the primary area of focus at **Families → Lists and Labels → Family scratch list by Grade**.
 
 This is essentially no different from the pupil grade list mentioned above, except that families are listed first and in order of family surname.
 
-## Choosing the List Options {#h-lagtj62upd6p}
+## Choosing the List Options
 
 Each scratch lists will have a slightly different path from the options you choose above. This manual will not attempt to describe them all! However, once you have made the choices for which subject, teacher, class, grade and so on, there are some standard options that you will be faced with at the end which bear some discussion. The options might change for pupils, alumni, families and staff, but the principles will remain the same.
 
@@ -71,27 +71,27 @@ Each scratch lists will have a slightly different path from the options you choo
 
 Below the button which would otherwise produce and display the scratch lists to you, there are several options that you can customise.
 
-### Output: {#h-qc2o61jnxhoo}
+### Output:
 
 ADAM allows you 5 different ways to display your data. These are:
 
 -   **Web browser:** This is the most common option and is selected by default. The lists will be generated in a new window and can be printed directly from your web browser. If there are multiple lists (e.g. more than one class), then each list will automatically start on a new pag when printed, even though it might look as if they are running into each other on the screen.
 -   **Excel:** ADAM will create an Excel spreadsheet of your class lists for you to download. You can then manipulate these as you require. If you have selected multiple lists (e.g. more than one class), then each class will appear on its own worksheet or tab in the spreadsheet.
--   **Pivot Tables:** Pivot Tables are excellent mechanisms to summarise your data. If you are more interested in “how many” rather than “who”, consider a pivot table. Note that if you choose a pivor table, only the first list you choose is considered. [We discuss the pivot tables in more detail later on.](#h-s4dxborvjlaw)
+-   **Pivot Tables:** Pivot Tables are excellent mechanisms to summarise your data. If you are more interested in “how many” rather than “who”, consider a pivot table. Note that if you choose a pivor table, only the first list you choose is considered. [We discuss the pivot tables in more detail later on.](#pivot-tables)
 -   **Photo List:** This will include a photograph of each pupil in your list. If you include multiple classes or lists, each will start on a new page when you print them.
 -   **Comma-separated Variable (CSV)**: This is the least commonly used output format as most people prefer dealing with the data in Excel format. Users who require CSV output are likely to know why and what they will do with it. It’s normally a safe assumption that most users will never choose this option.
 
-### Columns: {#h-3i7dr57pwh14}
+### Columns:
 
 In the Web browser and Excel output modes, you can choose for ADAM to include a number of blank columns. These can be used to record marks, ticks and so on (in fact, this “scratching” is why the lists are called what they are). If you don’t want any blank columns, you can change this to “No extra columns”. You can have a maximum of 20 columns. If you require more, you will have to take your list into Excel for manipulation there.
 
-### Field Information: {#h-6tmpre10jwlt}
+### Field Information:
 
 In the screen shot above, you will notice that there is the heading **Pupil Information**. Some of the fields are ticked and will be ticked when you first get to this screen. If you need any additional information to appear on your list, you can simply tick the field.
 
-If you are using the pivot table, [discussed later](#h-s4dxborvjlaw), then you should choose the different fields that you want to summarise your information by.
+If you are using the pivot table, [discussed later](#pivot-tables), then you should choose the different fields that you want to summarise your information by.
 
-### Class Registration Information: {#h-660y2yd09h7d}
+### Class Registration Information:
 
 Additionally, if you select a list of pupils that involves currently registered pupils (i.e. not admissions lists or alumni), then there are additional options right at the bottom of the screen:
 
@@ -117,7 +117,7 @@ Where a pupil is registered for one of the subjects (say “Afrikaans”) their 
 
 This is often used when printing lists for Cycle tests where these tests are written in a registration class venue. The testing teacher would produce scratch lists for each Register Teacher (using the option “**Classes → Scratch Lists → A subject’s scratch lists**” and choose “General / Registration Class” as the subject. In the scratch list options, they would choose to show the registration details of **their** specific subjects. This allows the registration class teacher to see which pupils should be writing that cycle test.
 
-## Pivot Tables {#h-s4dxborvjlaw}
+## Pivot Tables
 
 In order to work through the pivot tables, we will make use of an example to illustrate the functionality. We need to know the number of learners in each grade, broken up be age and gender.
 
@@ -152,7 +152,7 @@ You can change the order of the fields within either the column space or the row
 
 It’s the same information, but just arranged slightly differently. See now that instead of each age group appearing beneath each gender, we now have each gender appearing below each age group.
 
-## Controlling Access to Scratch List Fields {#h-lwhyrvik02r7}
+## Controlling Access to Scratch List Fields
 
 The Scratch List fields are used widley across ADAM to show information about pupils, staff and families. However, it may be desirable to limit the information that specific teachers can see, specifically in light of the POPI Act. ADAM Allows you to restrict the fields that the groups of teachers can see. These changes will impact both the scratch lists that are generated and other areas in ADAM where the values are shown.
 

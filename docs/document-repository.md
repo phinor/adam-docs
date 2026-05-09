@@ -1,42 +1,42 @@
-# Document Repository {#h-3l18frh}
+# Document Repository
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/v-7J2HtRrQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 The Document Repository is an online file storage utility that can store files against pupil, staff or family profiles. This makes finding information easier.
 
-## Document Repository Location {#h-206ipza}
+## Document Repository Location
 
 To begin with, ADAM needs a location in which to save files on the actual server. A folder needs to be created on the server and configured in the site settings (see page ).
 
 *Please ensure that this folder is not a sub-folder of the web-root. If it is, then files can be accessed without necessarily following the correct privileges.*
 
-## Categories {#h-4k668n3}
+## Categories
 
 ADAM allows you to create multiple categories in which to save your documents.
 
 To edit the categories, click on the “**Administration**” tab, and under the “**Document Repository**” heading, click on “**Edit Document Repository Categories**”.
 
-### Adding a New Category {#h-exo5dokeqmje}
+### Adding a New Category
 
 To add a new category, click on the “Add new document category” at the top of the screen.
 
 Simply enter the name of the category, a description and then the parent category. The parent category (staff, pupils or families) cannot be changed later, although the category can be moved around within those three areas.
 
-### Editing a Category {#h-ug1z84fmsup5}
+### Editing a Category
 
 ADAM allows you to edit any custom categories and not the built in ones. Some of these categories are required. Editing a category allows you to change its name and its parent (within its existing group of staff, pupils or family).
 
-### Deleting a Category {#h-mof3uy6samvj}
+### Deleting a Category
 
 The “delete” option next to the custom categories allows you to delete a category. However, it will not delete the files. When you delete a category, ADAM will move all the files within that category to a category that you specify when you delete it.
 
-## Pupil and Family Privileges {#h-z0pmr3athvkh}
+## Pupil and Family Privileges
 
 If you allow parent and pupil access to the Document Repository through the Parent and Pupil Portals, then you can control which categories they can see. Note that parents are not able to upload information into the repository or delete anything from it – only access information, and only from the categories that you give access to.
 
-[Allowing parents to upload documents](#h-erpi5roz7byn) to the document repository is handled separately to this and parents do not need specific permissions granted here in order to upload a document.
+[Allowing parents to upload documents](#parent-uploads-into-the-document-repository) to the document repository is handled separately to this and parents do not need specific permissions granted here in order to upload a document.
 
-Even if you do give access to categories, parents still won’t get access to the Document Repository until they are given the permission to actually [see the Document Repository in the portal](security-administration-for-families-and-pupils.md#h-mg1sc7iv8w2n).
+Even if you do give access to categories, parents still won’t get access to the Document Repository until they are given the permission to actually [see the Document Repository in the portal](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
 To edit the permissions, click on the “**Administration**” tab, and under the “**Document Repository**” heading, click on “**Edit pupil and family privileges**”.
 
@@ -54,13 +54,13 @@ Note that if you change the privileges for a restricted group, ADAM will show th
 
 ![](assets/screenshots/document-repository/document-repository-04.png)
 
-Unlike the [staff privileges](security-administration-for-staff.md#h-3ls5o66), we now are simply controlling whether the groups can be seen by families or pupils. Parents and pupils can only ever get read-only access from this screen.
+Unlike the [staff privileges](security-administration-for-staff.md#security-administration-for-staff), we now are simply controlling whether the groups can be seen by families or pupils. Parents and pupils can only ever get read-only access from this screen.
 
-## Parent Uploads into the Document Repository {#h-erpi5roz7byn}
+## Parent Uploads into the Document Repository
 
 ADAM can allow parents, and potentially pupils, to upload documents to ADAM for potential inclusion into the Document Repository. All files that are uploaded by parents or pupils are not directly loaded into the document repository and must first be approved by either the site administrator or a staff member with appropriate permissions to do so before the document is available.
 
-### Creating Upload Spaces {#h-9ns6ldupcuff}
+### Creating Upload Spaces
 
 ADAM allows you to create a number of different upload spaces and, within each of these, specify a number of files, with descriptions, for parents to upload. All uploads are optional and cannot be forced.
 
@@ -74,7 +74,7 @@ Click on “**add a new upload**” to begin. Consider the example here where a 
 
 Please take note: The “audience” allows us to focus these upload forms to families or pupils who are either applicants to the school or are current pupils.
 
-Note also, that the audience choice (pupils vs families) will dictate which of the [document repository categories](#h-4k668n3) you can choose from. Choosing a “Family” audience” and a “Pupil” category will result in the documents being uploaded to the “Unfiled” category in the “Family” section of the document repository. The same is true if a “Pupil” audience is selected, but a family category is chosen.
+Note also, that the audience choice (pupils vs families) will dictate which of the [document repository categories](#categories) you can choose from. Choosing a “Family” audience” and a “Pupil” category will result in the documents being uploaded to the “Unfiled” category in the “Family” section of the document repository. The same is true if a “Pupil” audience is selected, but a family category is chosen.
 
 The person listed under the **Notify** option will be notified when new documents have been uploaded to ADAM for approval. They will *not* appear in the document repository until they have been approved.
 
@@ -88,7 +88,7 @@ Look carefully at the example above. Within the one file upload section, we are 
 
 ![](assets/screenshots/document-repository/document-repository-07.png)
 
-### Instructions for Parents {#h-vs9rzpxgpt52}
+### Instructions for Parents
 
 Depending on the privileges assigned to the parents and pupils, the options to upload documents will appear as follows in the portal:
 
@@ -112,7 +112,7 @@ To clear the file, click on **Choose file** and then either choose another file
 
 ![](assets/screenshots/document-repository/document-repository-12.png)
 
-### Approving Documents {#h-1xc0j219yh0b}
+### Approving Documents
 
 ADAM will notify the selected staff member when new documents have been uploaded to ADAM and which require approval.
 
@@ -131,7 +131,7 @@ If you choose to reject the upload, be aware that it will be deleted with no way
 !!! warning
     Note that ADAM makes no attempt to scan any uploaded files for viruses and provides no warranty that the uploaded files will be safe to open. Please ensure that staff who are responsible for approving document uploads are well-versed in the appropriate computer security protocols to follow, and that their computers are equipped with up-to-date antivirus scanners.
 
-## Staff Permissions {#h-a6043un8am4k}
+## Staff Permissions
 
 You can customise the access to the Document Repository based on the staff security groups.
 
@@ -149,11 +149,11 @@ Next to each option, click on “Read”, “Add” or “Delete” to assign th
 
 Click on the “Save privileges” button at the bottom to save these changes. The privilege category table should now reflect these new privileges.
 
-## Uploading Documents in Bulk {#h-9vy1c3hcdfza}
+## Uploading Documents in Bulk
 
 Pupil and staff documents can be uploaded in bulk to the document repository.
 
-### Naming of Documents {#h-mn1nlyr49roy}
+### Naming of Documents
 
 In order to be uploaded in bulk, the documents must be named so that ADAM can match them to the pupils or staff members. Documents can be named in any of four ways:
 
@@ -166,7 +166,7 @@ The document names are not case sensitive and so a document named john smith.pdf
 
 You can also mix methods in a single upload. So ADAM will check all possible versions of each file to match it.
 
-### Uploading the Documents {#h-aufsxus4k6ts}
+### Uploading the Documents
 
 Navigate to **Pupils → Document Repository → Upload documents in bulk** or to **Staff → Document Repository → Upload documents in bulk**. Both options take you to the same screen with the same set of options.
 
@@ -184,7 +184,7 @@ Any documents that are not matched to a person are noted with an “X” next to
 
 ![](assets/screenshots/document-repository/document-repository-16.png)
 
-### Troubleshooting Failed Matches {#h-79vvpxv1ey5s}
+### Troubleshooting Failed Matches
 
 Sometimes ADAM fails to match documents. This can happen for a number of reasons. Most commonly are:
 
@@ -194,13 +194,13 @@ Sometimes ADAM fails to match documents. This can happen for a number of reasons
 -   There is more than one person with the same name. If ADAM finds two (or more) possible matches for a document, it will not be uploaded to either. In this case you will need to either rename the document using an Admin number or username. Alternatively, you may have to upload these documents manually.
 -   The pupil is not a currently registered pupil or the staff member is not an active member of staff. ADAM won’t allow bulk uploading for people who are not currently enrolled or engaed in the school.
 
-## Removing Documents {#h-ul9s2c8q3l3s}
+## Removing Documents
 
 Documents can either be removed individually or in bulk. To remove an individual document, navigate to the Document Repository of the person concerned and click on the **delete** option next to the file that you would like removed:
 
 ![](assets/screenshots/document-repository/document-repository-17.png)
 
-### Removing Documents in Bulk {#h-xe5xiebk2asg}
+### Removing Documents in Bulk
 
 To remove many documents at once, ADAM provides a tool to do this. Navigate to **Administration → Document Repository → Delete documents from the Document Repository**.
 
@@ -224,7 +224,7 @@ ADAM will also show a list of the files that will be deleted. Scroll to the bott
 
 Once the files are deleted, ADAM will confirm the number of files that were removed.
 
-### Deleting Unlinked Files {#h-acd4n0gxdbnd}
+### Deleting Unlinked Files
 
 ADAM links every file in the document repository to either a pupil, a family or a staff member. Occasionally, if one of these data entries is deleted, it can result in there being “orphaned” files in the Document Repository. Navigate to **Administration → Document Repository → Delete unlinked documents for the Document Repository**.
 
@@ -234,7 +234,7 @@ ADAM will show you a list of these documents and invite you to download a ZIP co
 
 Click on the **Remove these files** to delete them.
 
-## Site Document Repository {#h-1jqikprtzgyq}
+## Site Document Repository
 
 Some files are needed for sharing across the site. These can include graphics that are used for reporting templates. To upload a document to the Site Repository, navigate to **Administration → Document Repository → View the Site Document Repository**.
 
@@ -244,5 +244,5 @@ The category is important here:
 
 -   The **Site** category is not used, currently, and will only act as a store for site-related information. *You are encouraged not to use this category*.
 -   The **Certificates** category is used for PDF certificate templates for electronically generated certificates. Note that these PDFs must be saved in PDF Version 1.5 or earlier for ADAM to understand them.
--   The **Logos** category is used for specifying logos that ADAM should use for display and printing. It also can store email banners and imagery. For more information about school logos, please see the [specific documentation](school-logos.md#h-2mn7vak).
+-   The **Logos** category is used for specifying logos that ADAM should use for display and printing. It also can store email banners and imagery. For more information about school logos, please see the [specific documentation](school-logos.md#school-logos).
 -   The **Reporting** category is used for miscellaneous files that ADAM might need for report templates. Note that this may include logos, but those will probably catered for in the **Logos** category above. You will be given specific instructions regarding your report templates.

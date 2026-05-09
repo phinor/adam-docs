@@ -1,4 +1,4 @@
-# Tags for Pupils, Families and Staff {#h-6kgjz9jr8cqy}
+# Tags for Pupils, Families and Staff
 
 ADAM can add tags to pupils’, families’ and staff name banners so that whenever the profiles are viewed, the tags can be quickly and easily seen to alert your staff to important information regarding that profile.
 
@@ -8,13 +8,13 @@ While there are privileges to control who can see which type of tags (i.e. a sta
 
 Please consider, carefully, using these tags to store personal, private or sensitive information.
 
-## Managing the Tags {#h-tfmgjn2evp31}
+## Managing the Tags
 
 Navigate to **Administration → Tags → Manage Tags**.
 
 ![](assets/screenshots/tags-for-pupils-families-and-staff/tags-for-pupils-families-and-staff-02.png)
 
-### Adding a new tag {#h-i4dhs5hqynyi}
+### Adding a new tag
 
 To add a new tag, click on the “**Add new Tag**” link at the top of the screen.
 
@@ -30,7 +30,7 @@ You can also choose a background colour and a foreground colour. Please make sur
 
 Click on **Save this Tag** to see the changes. ADAM will show a preview of the tag in the next window.
 
-### Editing a tag {#h-hfwsnwhvw603}
+### Editing a tag
 
 From the list of tags, click on the **edit** option to the right of the tag you’d like to edit:
 
@@ -39,7 +39,7 @@ You can then adjust the name and colours associated with the tag. Note that any 
 !!! warning
     If you edit a tag and change its type - for example, from being a “Pupil” tag to being a “Family” tag, ADAM will remove the tag from all pupils when you save your changes. There is no way to undo this.
 
-### Deleting a tag {#h-bqohdlv8y3g4}
+### Deleting a tag
 
 Next to the tag in the table, click on the **delete** button.
 
@@ -47,7 +47,7 @@ You will be asked to confirm your actions. Note that every pupil who is assigned
 
 ![](assets/screenshots/tags-for-pupils-families-and-staff/tags-for-pupils-families-and-staff-06.png)
 
-## Assigning Tags to a Profile {#h-39ewlr3bcwwp}
+## Assigning Tags to a Profile
 
 Navigate to the profile and click on the “**Tags**” option.
 
@@ -59,11 +59,11 @@ A list of active and available tags are shown. Click on an “Available Tag” t
 
 ![](assets/screenshots/tags-for-pupils-families-and-staff/tags-for-pupils-families-and-staff-08.png)
 
-## Privileges For Tags {#h-lj1ezzb3vqt9}
+## Privileges For Tags
 
 When the module is initially opened, no privileges will have been assigned to any staff and thus the tag feature won’t be visible to them.
 
-Assigning privileges is [discussed elsewhere](security-administration-for-staff.md#h-thw4kt).
+Assigning privileges is [discussed elsewhere](security-administration-for-staff.md#managing-security-groups).
 
 The following privileges control the Tag module:
 

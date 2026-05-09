@@ -1,10 +1,10 @@
-# LURITS {#h-39kk8xu}
+# LURITS
 
 ADAM no longer submits data to LURITS since the District Offices took responsibility for this, using the SA-SAMS database exports. However, in order to get the LURITS numbers added to ADAM, the LURITS feedback files need to be returned from your District Office to you.
 
 These files consist of a number of XML files, each with a different transaction number.
 
-## Getting Feedback from LURITS {#h-1302m92}
+## Getting Feedback from LURITS
 
 -   Once feedback has been received from the LURITS database (normally within 24 to 48 hours of submitting), you will receive a feedback file that you are required to import into ADAM. This ensures that ADAM is aware of any issues with the data and to synchronise the statuses of pupils and staff between ADAM and LURITS. For example, new pupils will receive a LURITS number. This number is imported as part of the feedback process.
 

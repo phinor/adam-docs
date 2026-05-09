@@ -1,14 +1,14 @@
-# Logging on to ADAM {#h-clv8x8a7ujwh}
+# Logging on to ADAM
 
-## Passkeys {#h-9zn9jl9lfze1}
+## Passkeys
 
 A passkey is a credential stored on the user’s device (phone, tablet or computer) that signs the user in to ADAM using a fingerprint, face recognition or device PIN, instead of a password. Passkeys are resistant to phishing, are not reusable across sites, and never travel across the internet, so they are considerably safer than passwords. ADAM supports passkeys for staff, parents and pupils.
 
 Each user may enrol more than one passkey — for example, one on their phone and one on their work laptop — and each passkey can be named so that it is easy to identify later. Passkeys never replace a user’s password and Two-Factor Authentication settings: they are an additional, optional way to log in, and the password and one-time PIN remain available as a fallback.
 
-For a more detailed walkthrough, see the dedicated [Passkey Authentication](passkey-authentication.md#h-68qerlruak0n) page.
+For a more detailed walkthrough, see the dedicated [Passkey Authentication](passkey-authentication.md#passkey-authentication) page.
 
-### Signing in with a Passkey {#h-b08u2kb04cq8}
+### Signing in with a Passkey
 
 On the staff, parent and pupil log-in pages, ADAM offers a Log in with a passkey button (marked with a fingerprint icon) above the username and password form. The button is only shown if the browser supports passkeys; older browsers will continue to see the password form on its own.
 
@@ -19,13 +19,13 @@ To sign in:
 3.  The browser will prompt for the device’s biometric (fingerprint or face) or PIN.
 4.  Once the gesture is recognised, ADAM signs the user in and takes them to their dashboard or portal home.
 
-A successful passkey login satisfies the Two-Factor Authentication requirement on its own — the user is not asked for a one-time PIN as well. See [Passkeys and Two-Factor Authentication](#h-p9xu2wahh50k) below.
+A successful passkey login satisfies the Two-Factor Authentication requirement on its own — the user is not asked for a one-time PIN as well. See [Passkeys and Two-Factor Authentication](#passkeys-and-two-factor-authentication) below.
 
-### Setting Up a Passkey for Staff {#h-la12kjftrq15}
+### Setting Up a Passkey for Staff
 
 The first time a staff member logs in after passkeys are enabled, their dashboard will display a card titled “Log in with your fingerprint or face”, with a Set up a passkey button. Clicking the button takes the staff member to the Passkeys management page.
 
-Once a passkey has been registered, the dashboard card disappears. To return to the Passkeys management page after that, see [Managing Your Passkeys](#h-tr6n82c0msvb) below.
+Once a passkey has been registered, the dashboard card disappears. To return to the Passkeys management page after that, see [Managing Your Passkeys](#managing-your-passkeys) below.
 
 To register a new passkey:
 
@@ -34,27 +34,27 @@ To register a new passkey:
 3.  The browser will ask the operating system to create a passkey. On a phone or tablet this typically requires a fingerprint or face scan; on a desktop it may use Windows Hello, Touch ID, a security key, or a paired phone.
 4.  Once the device confirms the gesture, the passkey is saved and listed on the management page.
 
-### Setting Up a Passkey for Parents and Pupils {#h-x5pxak7fa2ic}
+### Setting Up a Passkey for Parents and Pupils
 
 Parents and pupils manage their passkeys through the portal:
 
 -   Family Portal → Security → Manage your passkeys
 -   Pupil Portal → Security → Manage your passkeys
 
-The Pupil Portal menu item is only shown to pupils whose accounts have logins enabled (see [Enabling and Disabling Pupil Logins](#h-pgvqow2v6moj)).
+The Pupil Portal menu item is only shown to pupils whose accounts have logins enabled (see [Enabling and Disabling Pupil Logins](#enabling-and-disabling-pupil-logins)).
 
-Until the user has registered their first passkey, the top of the portal page will also show a “Log in with your fingerprint or face” card with a Set up a passkey button, which is a shortcut to the same page. The registration steps are the same as those described under [Setting Up a Passkey for Staff](#h-la12kjftrq15).
+Until the user has registered their first passkey, the top of the portal page will also show a “Log in with your fingerprint or face” card with a Set up a passkey button, which is a shortcut to the same page. The registration steps are the same as those described under [Setting Up a Passkey for Staff](#setting-up-a-passkey-for-staff).
 
-### Managing Your Passkeys {#h-tr6n82c0msvb}
+### Managing Your Passkeys
 
 The Passkeys management page lists every passkey enrolled on the current account, showing the name, the date it was enrolled, and the date it was last used. Each passkey has two actions:
 
 -   rename — change the name shown for the passkey (up to 100 characters). This does not affect the credential itself.
 -   remove — permanently delete the passkey from ADAM. The user will no longer be able to sign in with that passkey, although the credential will still take up space in the device’s passkey manager (and can be removed there separately).
 
-Users should remove a passkey if the device it lives on has been lost, sold, or is no longer in their possession. As long as the user can still log in another way (using their password and Two-Factor Authentication, or another passkey on a different device), they can remove a stale passkey themselves. Should a user lose their only passkey and be unable to log in to delete it, an administrator can remove it on their behalf — see [Revoking a Staff Member’s Passkey](#h-83ojpg1gzptn).
+Users should remove a passkey if the device it lives on has been lost, sold, or is no longer in their possession. As long as the user can still log in another way (using their password and Two-Factor Authentication, or another passkey on a different device), they can remove a stale passkey themselves. Should a user lose their only passkey and be unable to log in to delete it, an administrator can remove it on their behalf — see [Revoking a Staff Member’s Passkey](#revoking-a-staff-members-passkey).
 
-### Revoking a Staff Member’s Passkey {#h-83ojpg1gzptn}
+### Revoking a Staff Member’s Passkey
 
 If a staff member loses a device, has it stolen, or leaves the school, an ADAM Super-Administrator can revoke any of their passkeys without needing the staff member’s cooperation. This is reached through the Manage Staff Passkeys page, where a Super-Administrator can:
 
@@ -64,35 +64,35 @@ If a staff member loses a device, has it stolen, or leaves the school, an ADAM S
 
 The Super-Administrator cannot rename a staff member’s passkey or register a new passkey on their behalf — only the staff member, signed in as themselves, can do that. The same is true of parent and pupil passkeys: there is no administrator override for these, because they are tied to a specific device that only the parent or pupil has access to. If a parent or pupil cannot remove their own passkey, they should reset their password and use that to sign back in, then delete the passkey from their management page.
 
-### Passkeys and Two-Factor Authentication {#h-p9xu2wahh50k}
+### Passkeys and Two-Factor Authentication
 
-A passkey is itself a strong second factor (the device the passkey is stored on, plus the biometric or PIN that unlocks it), so when a user logs in with a passkey ADAM does not additionally prompt for a one-time PIN. This is true even when the Two Factor Authentication Forced for Staff setting (see [Login Settings](#h-76mtqpklmjiq)) is enabled.
+A passkey is itself a strong second factor (the device the passkey is stored on, plus the biometric or PIN that unlocks it), so when a user logs in with a passkey ADAM does not additionally prompt for a one-time PIN. This is true even when the Two Factor Authentication Forced for Staff setting (see [Login Settings](#login-settings)) is enabled.
 
 Users who log in with their username and password continue to be prompted for a one-time PIN exactly as before. The Two-Factor Authentication setting therefore continues to govern password-based logins, and is unaffected by passkey enrolment.
 
-### Browser and Device Requirements {#h-y88o4miqy8a3}
+### Browser and Device Requirements
 
 Passkeys require a modern browser (recent versions of Chrome, Edge, Firefox or Safari) and a device with a fingerprint reader, face camera,pass or device PIN. ADAM must be reached over an HTTPS connection — passkeys will not work on plain HTTP. Users on older browsers, or on devices without an authenticator, will not see the Log in with a passkey button and should continue to use their password.
 
-### Audit Trail for Passkeys {#h-ozo7ognfmjip}
+### Audit Trail for Passkeys
 
 Every passkey enrolment, rename, removal and login is recorded in the ADAM logs alongside other authentication events. Each passkey’s “Last used” date on the management page is also updated on every successful login, so users and administrators can see at a glance which credentials are still in active use.
 
-## General Login Settings {#h-jcwooevtgo7g}
+## General Login Settings
 
-A number of common login settings can be found in the [Site Settings](changing-site-settings.md#h-3j2qqm3). Navigate to the “Security” tab.
+A number of common login settings can be found in the [Site Settings](changing-site-settings.md#changing-site-settings). Navigate to the “Security” tab.
 
-### Active Directory Authentication {#h-xde759ytj24y}
+### Active Directory Authentication
 
 If your school has an Active Directory server, you can capture its details here. The LDAP module may need to be installed before this will work.
 
 If ADAM will communicate via the public internet with your AD server, you must use a Secure LDAP Connection to prevent your users’ login credentials from being visible.
 
-### OAuth Authentication Settings {#h-ijzca4x95vyk}
+### OAuth Authentication Settings
 
 This can allow your users to authenticate to ADAM if they are signed in with their school-issued Google or Microsoft account. ***Please contact*** ***[help@adam.co.za](mailto:help@adam.co.za)*** ***before you enable any of these settings.***
 
-### Internal Password Administration {#h-ecvmyawii5uh}
+### Internal Password Administration
 
 Here you can set the minimum password length required. Note that passwords shorter than 8 characters are not permitted.
 
@@ -117,13 +117,13 @@ This is no less safe than having ADAM manage user passwords itself. On a success
 
 -   It is important that user accounts in ADAM are also suspended and that AD is not relied upon.
 
-### LDAP Authentication {#h-3e8y3i10wwjb}
+### LDAP Authentication
 
 In Linux based networks it is possible to have ADAM use a pure LDAP server for authentication. Note that while the Active Directory logins are conducted over LDAP, many of the settings for the AD LDAP implementation have been preconfigured.
 
-### Login Settings {#h-76mtqpklmjiq}
+### Login Settings
 
-The **Login time out** is the amount of time in minutes that must elapse between any two page loads on ADAM before the user account is considered logged out. Note that typing a message (especially in the [Messaging Centre](messaging-centre.md#h-o6jbiu0gh9e)) is not considered activity because there is no information going between the server and the client computer.
+The **Login time out** is the amount of time in minutes that must elapse between any two page loads on ADAM before the user account is considered logged out. Note that typing a message (especially in the [Messaging Centre](messaging-centre.md#messaging-centre)) is not considered activity because there is no information going between the server and the client computer.
 
 The setting for **Remember logged-in machines** will set a long-term cookie on a computer which ADAM will then use to determine whether a user has logged in from that machine or not. If no user logs in on that machine within that length of time, ADAM will “forget” the machine and the user will consider to be logged in from a new machine. This has implications for Two-Factor Authentication settings (see below!)
 
@@ -139,43 +139,43 @@ ADAM can enforce a number of different **Two Facor Authentication Method** polic
 
 Finally, ADAM can ensure that all staff make use of Two Factor Authentication by setting the **Two Factor Authentication Forced for Staff** setting to “Yes”. When staff login for the first time not having previously set up their two factor authentication, ADAM will prompt them to do so and not permit them to proceed with their logins until they have correctly setup their authentication app to generate one time PINs.
 
-### POP3 Authentication {#h-j9g4lz3w9lwa}
+### POP3 Authentication
 
 ADAM can use a POP3 server as an external authentication source. Provide the necessary settings here to communicate with your POP3 server. This method is not commonly used because generally schools will have another more commonly used authentication source available to them.
 
-## Staff Logins {#h-37g965a9fxch}
+## Staff Logins
 
 Staff logins are governed by a number of different settings in ADAM.
 
-### Site Settings {#h-6vhh2g12hnrg}
+### Site Settings
 
-Within the [Site Settings](changing-site-settings.md#h-3j2qqm3), navigate to the “Security” tab. Here, a number of settings will affect staff logins.
+Within the [Site Settings](changing-site-settings.md#changing-site-settings), navigate to the “Security” tab. Here, a number of settings will affect staff logins.
 
-## Pupil Logins {#h-7qtfqmqt5stl}
+## Pupil Logins
 
-ADAM Administrators may also want to see [Understanding Pupil Login](parent-and-pupil-portal.md#h-g3b7qwfm794s).
+ADAM Administrators may also want to see [Understanding Pupil Login](parent-and-pupil-portal.md#understanding-pupil-login).
 
-### Enabling and Disabling Pupil Logins {#h-pgvqow2v6moj}
+### Enabling and Disabling Pupil Logins
 
-Pupil logins can be disabled from within the [Site Settings](changing-site-settings.md#h-3j2qqm3). On the Security tab under the heading “Pupil and Family Login”, change the setting “Allow pupil logins” to “No”.
+Pupil logins can be disabled from within the [Site Settings](changing-site-settings.md#changing-site-settings). On the Security tab under the heading “Pupil and Family Login”, change the setting “Allow pupil logins” to “No”.
 
-### Default Settings {#h-rtk1k7vbdz1f}
+### Default Settings
 
-Within the [Site Settings](changing-site-settings.md#h-3j2qqm3), navigate to the “Security” tab. Under the heading “Pupil and Family Login”, ADAM has two settings which dictate the default login options for pupils.
+Within the [Site Settings](changing-site-settings.md#changing-site-settings), navigate to the “Security” tab. Under the heading “Pupil and Family Login”, ADAM has two settings which dictate the default login options for pupils.
 
 The “Default Login Method” and “Default pupil & family login privileges” settings are automatically applied to any pupils when they are first added to the database. Note that changing these settings will not change any pupils’ login details: they are only used at the moment that the pupil is added to the database for the first time.
 
-## Parent Logins {#h-ic3j5wvtebz7}
+## Parent Logins
 
-Parents may wish to refer to the section on [Logging on to ADAM: A Guide for Parents](logging-on-to-adam-a-guide-for-parents.md#h-3wf37gt5yaio).
+Parents may wish to refer to the section on [Logging on to ADAM: A Guide for Parents](logging-on-to-adam-a-guide-for-parents.md#logging-on-to-adam-a-guide-for-parents).
 
-ADAM Administrators may also want to see [Understanding Parent Logins](parent-and-pupil-portal.md#h-j9oqjiq3ubit).
+ADAM Administrators may also want to see [Understanding Parent Logins](parent-and-pupil-portal.md#understanding-parent-login).
 
-Parent logins can be disabled from within the [Site Settings](changing-site-settings.md#h-3j2qqm3). On the Security tab under the heading “Pupil and Family Login”, change the setting “Allow family logins” to “No”.
+Parent logins can be disabled from within the [Site Settings](changing-site-settings.md#changing-site-settings). On the Security tab under the heading “Pupil and Family Login”, change the setting “Allow family logins” to “No”.
 
-## Troubleshooting Logins {#h-z8yv3tysouka}
+## Troubleshooting Logins
 
-### Parent requests a password reset, but does not receive an email {#h-98p3ofgkmqfm}
+### Parent requests a password reset, but does not receive an email
 
 There are several possibilities as to why this might happen. If a parent doesn’t receive the password reset email, check each of these possibilities in the following order:
 
@@ -190,7 +190,7 @@ There are several possibilities as to why this might happen. If a parent doesn�
 
 *However, if we do this, it would also help hackers and* *criminals* *find real ID numbers in our system.* *Not only is it against the law to share information with people who shouldn't have it, but it's even more serious because it could put children in danger if someone finds out they go to a certain school.*
 
-### The login is very slow {#h-r7c710tjb2zq}
+### The login is very slow
 
 The most likely reason is that ADAM is implementing a login delay which is based on a sudden influx of failed logins.
 

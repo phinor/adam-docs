@@ -1,8 +1,8 @@
-# Database Field Management {#h-k59ad92ofuu4}
+# Database Field Management
 
 While the fields in ADAM are reasonably standard, there might be reason for a school to want to edit the headings and order of the fields. Some schools may choose not to use certain fields and would like to streamline the interface so that only the necessary fields appear.
 
-## Sensitive Information {#h-a7gi6xdc9kgm}
+## Sensitive Information
 
 With the arrival of the Protection of Personal Information (POPI) Act in the near future, schools must be able to take responsible care of the data that they are entrusted with.
 
@@ -16,7 +16,7 @@ You can manage personal information for Pupils, Staff and Families. Note careful
 
 Tick the fields that you consider to be sensitive and then click on the **Save** button at the bottom of the screen.
 
-## Managing Custom Database Fields {#h-1hmsyys}
+## Managing Custom Database Fields
 
 It is possible to store any other information you wish in ADAM which is not catered for by the core database fields. You can create custom fields for each of the pupils, staff and family data types.
 
@@ -24,7 +24,7 @@ Before you create a new custom field, please speak to the development team to se
 
 The options for managing the custom database fields are found on the **Administration** tab under the **Database Administration** heading. Click on **Manage custom data fields** to begin.
 
-### Adding a new custom field {#h-21edxgckhf01}
+### Adding a new custom field
 
 At the top of the table of fields is an option to **Add a new custom field…**. Click on this link to begin the process.
 
@@ -51,17 +51,17 @@ Note that custom fields are always available on “Add” and “Edit” operati
 
 **Save** the field once you are finished.
 
-You will need to [add your custom data field to one or more input forms](#h-bsq2ddj5fimi) for it to be useful.
+You will need to [add your custom data field to one or more input forms](#managing-data-input-forms) for it to be useful.
 
-### Editing custom fields {#h-7hojythcbu1o}
+### Editing custom fields
 
-You can edit any custom field by clicking on the **edit** link next to its entry. A description of the fields is [provided above](#h-21edxgckhf01).
+You can edit any custom field by clicking on the **edit** link next to its entry. A description of the fields is [provided above](#adding-a-new-custom-field).
 
-### Deleting custom fields {#h-h833dzx69ie3}
+### Deleting custom fields
 
 It is possible to delete the custom field. Note that the table shows the number of times the field has been used. If you delete a custom field, you will lose ***all*** the information that it contained.
 
-## Managing Data Input Forms {#h-bsq2ddj5fimi}
+## Managing Data Input Forms
 
 ADAM has a number of core and custom fields that can be customised. To manage the fields that are present, including adding fields, removing fields and determining which fields are mandatory, navigate to **Administration → Database Administration → Manage input forms**.
 
@@ -102,7 +102,7 @@ Click on the **add** button and drag the field into the correct position on the
 
 Click on **Save form information** when done.
 
-## Managing Scratch List Fields {#h-gspstgybl5ba}
+## Managing Scratch List Fields
 
 The options for managing the scratch list fields are found on the **Administration** tab under the **Database Administration** heading. Click on **Manage scratch list fields** to begin.
 

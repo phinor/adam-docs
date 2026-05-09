@@ -1,8 +1,8 @@
-# Configuring Logins {#h-qsh70q}
+# Configuring Logins
 
 All login configurations take place in the Site Settings. These can be accessed from the “Administration” tab, under the “Site Administration” heading, by clicking on the “Edit site settings” option. Once in the site settings, click on the “Security” section.
 
-## Login Security {#h-3as4poj}
+## Login Security
 
 The login security settings, found on the **Administration** tab, under **Site Settings**, are shown in the screenshot below.
 
@@ -16,7 +16,7 @@ The “Login time out” is the number of minutes that ADAM will keep a user log
 
 Other settings, discussed later, are shown also.
 
-## Staff Logins {#h-1pxezwc}
+## Staff Logins
 
 The staff login option is always available from the main login screen. Staff will enter their usernames and passwords here. ADAM will then consider how that staff member is to be authenticated and pass the login credentials to the authentication mechanism.
 
@@ -28,7 +28,7 @@ This helps users by reducing the number of passwords that they need to remember.
 
 The authentication method for each staff member is set in his or her staff information page and the school can have any combination of the different authentication methods.
 
-### Setting an authentication method {#h-49x2ik5}
+### Setting an authentication method
 
 Each staff member can use one of the three authentication methods. They are set individually.
 
@@ -37,7 +37,7 @@ Each staff member can use one of the three authentication methods. They are set 
 
 ![](assets/screenshots/configuring-logins/configuring-logins-03.png)
 
-### Configuring Active Directory LDAP Authentication {#h-2p2csry}
+### Configuring Active Directory LDAP Authentication
 
 In order for ADAM to process Active Directory LDAP authentication, it must be pointed to an Active Directory server. This set up is done in the class\_config.php file which will be located in the ADAM install folder. The specific options to look for are:
 
@@ -56,7 +56,7 @@ In order to associate an account on ADAM with a user account in Active Directory
 
 Access is only granted if all three steps can be followed.
 
-### Configuring POP3 Authentication {#h-147n2zr}
+### Configuring POP3 Authentication
 
 In order for ADAM to process POP3 authentication, it must be given a POP3 server to use. This is done in the “**Site Settings**” page (**Administration** / **Site** **Administration** / **Edit Site Settings**) and clicking on the “**Security**” tab.
 
@@ -78,18 +78,18 @@ In order to associate an account on ADAM with a user account on a mail server, t
 
 Access is only granted if all three steps can be followed.
 
-### Configuring Internal Passwords {#h-3o7alnk}
+### Configuring Internal Passwords
 
 Sometimes, especially for temporary staff members, it is easier to create an internal password within ADAM. This is generally NOT a good idea since by using your Active Directory authentication (see page ) and POP3 authentication (see page ), more sophisticated restrictions can apply to the passwords including lockout times if the password is guessed incorrectly after a certain amount of times. These features do not apply to internal passwords.
 
 An internal password can be set when the staff member is created. Alternatively, a password can be set and changed using the “**Change a teacher’s password**” option on the “**Staff**” tab, under the “**Security Administration**” heading.
 
 !!! warning
-    *Note that ADAM irreversibly encrypts the passwords that it stores according to currently recommended guidelines. To this end, we encrypt the passwords and store them as “salted hashes”. This dramatically increases the difficulty of brute-force cracking the passwords. This does mean that it is essentially impossible to tell what the password is. More information here:* *[Security Administration](security-administration-for-staff.md#h-3ls5o66)* *and here* *[https://en.wikipedia.org/wiki/Salt\_(cryptography)](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Salt_\(cryptography\)&sa=D&source=editors&ust=1778246675899540&usg=AOvVaw3yLRyS_pHN0MhaTkZPV-OD)*
+    *Note that ADAM irreversibly encrypts the passwords that it stores according to currently recommended guidelines. To this end, we encrypt the passwords and store them as “salted hashes”. This dramatically increases the difficulty of brute-force cracking the passwords. This does mean that it is essentially impossible to tell what the password is. More information here:* *[Security Administration](security-administration-for-staff.md#security-administration-for-staff)* *and here* *[https://en.wikipedia.org/wiki/Salt\_(cryptography)](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Salt_\(cryptography\)&sa=D&source=editors&ust=1778246675899540&usg=AOvVaw3yLRyS_pHN0MhaTkZPV-OD)*
 
-### Allowing staff to change their own passwords {#h-23ckvvd}
+### Allowing staff to change their own passwords
 
-If staff use internal passwords, administrators should ensure that they belong to a privilege group that gives them the ability to change their passwords (this is not needed with other login mechanisms, since ADAM never stores those passwords and thus cannot change them). For more information on changing privileges, see the section “[Security Administration](security-administration-for-staff.md#h-3ls5o66)”.
+If staff use internal passwords, administrators should ensure that they belong to a privilege group that gives them the ability to change their passwords (this is not needed with other login mechanisms, since ADAM never stores those passwords and thus cannot change them). For more information on changing privileges, see the section “[Security Administration](security-administration-for-staff.md#security-administration-for-staff)”.
 
 Staff can change their passwords by clicking on the “**Staff**” tab and then looking under the “**Security Administration**” heading. An option should appear there to “**Change your own password**”
 
@@ -99,11 +99,11 @@ In the window that appears, the user will have to type in their existing passwor
 
 The password is finally changed by clicking on the “Change password” button.
 
-## Google Sign-In for Staff and Pupils {#h-h6l0oy4tlvfa}
+## Google Sign-In for Staff and Pupils
 
 Schools that make use of Google’s Workspace for their email, can make use of the “Sign-In With Google” service to authenticate staff and pupils to ADAM. This is a secure login method that makes use of OAuth2 technology to provide secure, passwordless logins that are protected by Google’s security.
 
-### Requirements {#h-e9yyyitrkizy}
+### Requirements
 
 8.  Your server must be authoried to conduct logins *before* you enable Google Sign-In. Google will reject all sign-in attempts if the server has not been properly authorized to log in your users. Please contact us at [help@adam.co.za](mailto:help@adam.co.za) to request authorization and wait for confirmation before continuing with the final step of enabling Google Sign-In.
 9.  Your staff and pupils must have their Google Workspace addresses included as their **work or school email addresses**. This email address must match their Google Workspace account. Note that users who have email aliases stored in ADAM may not be able to sign on using Google Sign-In.
@@ -117,11 +117,11 @@ Once saved, a “Sign-in with Google” link will appear on the login screen:
 
 Click on the logo to begin the login process. If required, Google will ask you for username and passwords to get access to ADAM.
 
-## Microsoft Sign-in for Staff and Pupils {#h-5se426hhami3}
+## Microsoft Sign-in for Staff and Pupils
 
 Schools that make use of Microsoft 365 for their email, can make use of the “Sign-In With Microsoft” service to authenticate staff and pupils to ADAM. This is a secure login method that makes use of OAuth2 technology to provide secure, passwordless logins that are protected by Microsoft’s security.
 
-### Requirements {#h-afp4g2kkgm1}
+### Requirements {#microsoft-sign-in-for-staff-and-pupils-requirements}
 
 1.  Your server must be authoried to conduct logins *before* you enable Microsoft Sign-In. Microsoft will reject all sign-in attempts if the server has not been properly authorized to log in your users. Please contact us at [help@adam.co.za](mailto:help@adam.co.za) to request authorization and wait for confirmation before continuing with the final step of enabling Microsoft Sign-In.
 2.  Your staff and pupils must have their Microsoft 365 addresses included as their **work or school email addresses**. This email address must match their Microsoft 365 account. Note that users who have email aliases stored in ADAM may not be able to sign on using Microsoft Sign-In.
@@ -137,7 +137,7 @@ Click on the logo to begin the login process. If required, Microsoft will ask yo
 
 It is possible to enable either or both of Google and Microsoft Sign-in modules.
 
-## Parent Logins {#h-ihv636}
+## Parent Logins
 
 If your ADAM website does not show “Parent Login” on the Login tab, then you will need to adjust the privileges assigned to the group “Logged Out”. These steps are not needed by most servers.
 
@@ -162,9 +162,9 @@ Subsequent logins will require their ID number and their recently set password.
 !!! warning
     *We have compiled a separate document with* *[instructions for parents](https://www.google.com/url?q=https://docs.google.com/document/d/1vHiaDoheupdosNEEv32az8MjiVfSFUNmRiAk3TBZuuo/edit&sa=D&source=editors&ust=1778246675906859&usg=AOvVaw0qlTp4GtFz-H6EtTbxOtpn)* *that you can modify for your needs.*
 
-Privileges for parents are determined by [pupil login groups](security-administration-for-families-and-pupils.md#h-mg1sc7iv8w2n).
+Privileges for parents are determined by [pupil login groups](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
-## Pupil Logins {#h-32hioqz}
+## Pupil Logins
 
 If your ADAM website does not show “Pupil Login” on the Login tab, then you will need to adjust the privileges assigned to the group “Logged Out”. These steps are not needed by most servers.
 
@@ -179,9 +179,9 @@ Pupil logins can be enabled and their authentication method set on the “Site S
 !!! warning
     The authentication method used for pupils is a global setting and cannot be controlled individually. They can either make use of the Active Directory LDAP Authentication or the POP3 Authentication as used and described in the Staff Logins section.
 
-Privileges for pupils are determined by [pupil login groups](security-administration-for-families-and-pupils.md#h-mg1sc7iv8w2n).
+Privileges for pupils are determined by [pupil login groups](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
-## Login Notifications {#h-h06zgp4i6g3l}
+## Login Notifications
 
 ADAM can send a login notification to any user (staff, pupil or parent) to notify them of their login to the system. To prevent ADAM from notifying them of every login, ADAM can be configured to send notifications only when they log into a new computer.
 
@@ -199,11 +199,11 @@ ADAM sends a notification under the following circumstances:
 !!! warning
     Note that if a user clears all their browser cookies, ADAM will interpret this as the user logging on to a new computer. The only affect that this will have is that a notification will be sent warning them.
 
-### Changing Login Notification Settings {#h-vx8odxd96hcj}
+### Changing Login Notification Settings
 
 In the **Site Settings**, navigate to the **Security** tab and scroll down to the section **Login Settings**. Search for the setting **Remember logged-in machines for** and change the setting to any value other than **disabled** to enable the notifications.
 
-### Login Notification Emails {#h-sbeyhsg8rb35}
+### Login Notification Emails
 
 The login notification email appears as follows:
 

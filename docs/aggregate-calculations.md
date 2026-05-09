@@ -1,14 +1,14 @@
-# Aggregate Calculations {#h-n3thyo3fac7f}
+# Aggregate Calculations
 
 Aggregates are the overall average across subjects for either a single reporting period or multiple reporting periods in the case of a year-to-date aggregate.
 
-## Calculating Year-to-Date Aggregates {#h-91shwzeoum8u}
+## Calculating Year-to-Date Aggregates
 
 ADAM uses the year-to-date results for each subject and then uses your chosen aggregate calculation to calculate a year-to-date aggregate.
 
 This means that ADAM does *not* calculate the year-to-date aggregate in the same way that ADAM calculates the year-to-date results for each subject. The year-to-date calculation looks “across” the year, whereas an aggregate calculation looks “down” the subjects. The promotion aggregate makes use of an aggregate calculation that looks “down” the subjects’ year-to-date results.
 
-### Example Calculation {#h-hcd5epe4fge6}
+### Example Calculation
 
 ![](assets/screenshots/aggregate-calculations/aggregate-calculations-01.png)
 
@@ -18,45 +18,45 @@ In Term 1 and Term 2, Physical Science is omitted. In Term 3 Life Sciences is om
 
 The final year aggregate is based on the year marks of each subject. Thus, the result of **76.23** is calculated by **omitting Physical Sciences** which is the lowest year mark.
 
-### Possible discrepancies in calculation methods {#h-wzz26vinlzy4}
+### Possible discrepancies in calculation methods
 
 Normally, the final year aggregate will match the result if you were to weight the aggregates for each term (in the example above 72.29, 76.14, 76.57 and 78.00). However, because the final year aggregate does not include Phsyical Science when Term 3 and Term 4 results do, and the final year aggregate includes Life Sciences when Term 3’s aggregate does not, and the final year aggregate includes Geography when Term 4’s aggregate does not, the weighted averages are not equivalent.
 
 The weighted average of the Terms in the above example (10% of 72.29 + 30% of 76.14 + 10% of 76.57 + 50% of 78.00) yield a result of 76.73, which is different to the calculated final year aggregate.
 
-### Why this method? {#h-34w3uomyakng}
+### Why this method?
 
 This method is important to keep consistency and fairness, particularly in instances where a pupil has dropped a subject. Using the YTD results ensures that only the final subject choice is considered. If ADAM were to use the aggregates from each term, the final aggregate would be negatively impacted by a subject that is no longer offered by the pupil.
 
-## Calculation Methods {#h-iw2vqu6bd3ta}
+## Calculation Methods
 
-### Weighted Average {#h-7tysxcf68rgs}
+### Weighted Average
 
-In each [subject’s settings](subjects.md#h-nqu9bv1rb1n), a weighting is specified. This weighting determines the importance of that subject in the aggregate total. Some schools may choose to weight Life Orientation as 0.5 of a subject. If ADAM uses the “weighted average” method within the reporting period settings, these weightings are used.
+In each [subject’s settings](subjects.md#editing-a-subject), a weighting is specified. This weighting determines the importance of that subject in the aggregate total. Some schools may choose to weight Life Orientation as 0.5 of a subject. If ADAM uses the “weighted average” method within the reporting period settings, these weightings are used.
 
 ADAM calculates the weighted average using the subject’s weighting as a proportion of the total weights across all subjects offered by a pupil.
 
-### Top 7 Subjects {#h-47y3958y0sx}
+### Top 7 Subjects
 
 ADAM will only consider the top 7 subjects in an aggregate calculation and, using those top 7 results, will calculate a weighted average as discussed above.
 
-### Top 7 Subjects (including compulsory) {#h-90tx1ue4brr7}
+### Top 7 Subjects (including compulsory)
 
-If a pupil offers any subjects that are marked as “compulsory” subjects, within the [subject settings](subjects.md#h-nqu9bv1rb1n), that subject will be used as part of the calculation. Once ADAM has considered all the compulsory subjects offered by a pupil, the remaining subjects are ranked and used to fill the remaining spots to reach 7 subjects in total. A weighted average, as discussed above, is then calculated.
+If a pupil offers any subjects that are marked as “compulsory” subjects, within the [subject settings](subjects.md#editing-a-subject), that subject will be used as part of the calculation. Once ADAM has considered all the compulsory subjects offered by a pupil, the remaining subjects are ranked and used to fill the remaining spots to reach 7 subjects in total. A weighted average, as discussed above, is then calculated.
 
-### Top 7 Subjects (including compulsory, Maths/Lit combo {#h-9qnvy8bcguos}
+### Top 7 Subjects (including compulsory, Maths/Lit combo
 
 This operates similarly to the calculation above, except it takes into account the directive from the IEB on how Maths is accounted for when a pupil offers both Mathematics and Mathematical Literacy.
 
 If Mathematics is above 50%, its result is used in the calculation. If it is below 50% and the pupil does Mathematical Literacy, then the Mathematical Literacy result is used instead. If the pupil does not offer Mathematical Literacy, then the Mathematics result, no matter how low, is used.
 
-### Custom Aggregate Calculation {#h-rao1bqqoxbs6}
+### Custom Aggregate Calculation
 
-ADAM can use a custom aggregate calculation where schools have more complex requirements. These are discussed in [detail below](#h-dhwiuunreiv7).
+ADAM can use a custom aggregate calculation where schools have more complex requirements. These are discussed in [detail below](#custom-aggregate-calculations).
 
-## Custom Aggregate Calculations {#h-dhwiuunreiv7}
+## Custom Aggregate Calculations
 
-When [editing a reporting period’s settings](reporting-period-administration.md#h-u5xim02o9rs5), it is possible to choose from one of four pre-defined aggregate calculations designed for the South African context. However, some schools prefer to create their own calculations which take their specific circumstances into account.
+When [editing a reporting period’s settings](reporting-period-administration.md#editing-a-reporting-period), it is possible to choose from one of four pre-defined aggregate calculations designed for the South African context. However, some schools prefer to create their own calculations which take their specific circumstances into account.
 
 Custom calculations are entered using a text box which requires knowledge of the following syntax to express the calculation.
 

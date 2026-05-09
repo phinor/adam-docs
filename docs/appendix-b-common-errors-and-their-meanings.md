@@ -1,10 +1,10 @@
-# Appendix B: Common Errors and their Meanings {#h-uakst1fvzlae}
+# Appendix B: Common Errors and their Meanings
 
 We are slowly growing this section with errors that users come across.
 
-## Incorrect Validation Token {#h-e7w4o1n9ydql}
+## Incorrect Validation Token
 
-### The Problem {#h-grxuhqonts75}
+### The Problem
 
 This error is most commonly experienced on mobile devices such as smartphones and will almost always happen after filling in a form and pressing the button at the bottom. Very commonly, this happens when logging into ADAM.
 
@@ -12,7 +12,7 @@ Mobile devices are especially prone to this error because fetching the page from
 
 ADAM checks the validation tokens to make sure that the page is new and that ADAM is not getting the contents of a very old form. If the tokens are too old, ADAM shows this error.
 
-### How to Fix It {#h-3sk5q8j6kbdt}
+### How to Fix It
 
 The easiest way is to **refresh the page** that you are looking at before clicking on the button at bottom of the form.
 

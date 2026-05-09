@@ -1,6 +1,6 @@
-# Staff Information {#h-ymfzma}
+# Staff Information
 
-## Adding new staff to the database {#h-3im3ia3}
+## Adding new staff to the database
 
 To add a new staff member to ADAM, click on the “**Staff**” tab and, under the “**Staff Administration**” heading, click on “**Add a new teacher**”.
 
@@ -13,9 +13,9 @@ There are several sections that will appear in the next screen, and we’ll disc
 5.  Employment Information
 6.  Custom Fields (this might not appear – see Custom Data Fields on page  for more information)
 
-### ![](assets/screenshots/staff-information/staff-information-01.png) {#h-1xrdshw}
+### ![](assets/screenshots/staff-information/staff-information-01.png)
 
-### General Information {#h-9ggf77dwgt57}
+### General Information
 
 In this section, you will enter simple information about the teacher of staff member. The following points are worth noting:
 
@@ -23,7 +23,7 @@ In this section, you will enter simple information about the teacher of staff me
 
 The fields for **Population Grouping**, **Home Language**, **Disabilities** and **Marital Status** are used for reporting to the Department of Basic Education through the LURITS system.
 
-### Contact Information {#h-4hr1b5p}
+### Contact Information
 
 This section includes contact information for the teacher.
 
@@ -37,7 +37,7 @@ Please take note of the following:
 
 All phone numbers in ADAM should be entered as simple 10-digit numbers. Do not use any spacing or punctuation. For example, we prefer “0821112222” to “(082) 111 2222”. Whenever ADAM has to display a telephone number, it automatically spaces it out for you.
 
-### Qualification and Registration Information {#h-2wwbldi}
+### Qualification and Registration Information
 
 The next section collects information about the qualification levels of the teachers. Some of this information might seem redundant but this is because of the different reporting mechanisms that the Department of Education requires.
 
@@ -45,7 +45,7 @@ The SACE and PERSAL Numbers should be entered without spaces or punctuation.
 
 ![](assets/screenshots/staff-information/staff-information-03.png)
 
-### Employment Information {#h-1c1lvlb}
+### Employment Information
 
 This is the most important part, as far as ADAM is concerned, of adding a new staff member to the database. The information that is captured here will determine even if they can log in to ADAM or not, so it must be captured carefully!
 
@@ -63,17 +63,17 @@ Finally, the **Authentication Method** tells ADAM how this user should log on. 
 
 You will also have the chance to add in an initial password for the user. This is only necessary if you are adding in a user that will use the **Internal Password** option. Remember that if the user using either POP3 Mail Server or Active Directory LDAP Authentication then their password is never stored in ADAM and ADAM asks that other service each time whether the password supplied by the user is correct.
 
-### Custom Fields {#h-3w19e94}
+### Custom Fields
 
 If you have created any custom fields, please note that they will appear below this information in the next section.
 
-### Finishing the process {#h-2b6jogx}
+### Finishing the process
 
 Once you have entered all the information necessary for a staff member, simply click on the button at the bottom: “Add staff member”.
 
 ADAM should then display a “Success!” message to you. A link is provided to quickly add another staff member. This will take you to the start of the process.
 
-## Staff who leave the school {#h-qbtyoq}
+## Staff who leave the school
 
 If a staff member leaves the school, it is usually desirable that they should not be able to login to ADAM anymore.
 
@@ -87,11 +87,11 @@ If there are multiple employment records, as appear in the screenshot above, one
 
 Ensure that the termination date is accurate, and click on the button **Terminate employment** at the bottom of the screen.
 
-## Staff security permissions {#h-3abhhcj}
+## Staff security permissions
 
-Please see [Security Administration](security-administration-for-staff.md#h-3ls5o66)
+Please see [Security Administration](security-administration-for-staff.md#security-administration-for-staff)
 
-## Online Staff Update Forms {#h-bfotdl7k3zu0}
+## Online Staff Update Forms
 
 In order to keep staff information up to date, many schools resort to giving staff the privileges to edit staff information. This is not advised since all staff then have the privileges to edit, and see, any other staff member’s personal details.
 
@@ -106,7 +106,7 @@ There are three steps in the process:
 2.  Staff click on the links in those emails, log into ADAM, and update any information that has changed.
 3.  An email is then sent to an administrative contact who is in a position to approve and update the new information.
 
-### Setting up ADAM: {#h-xg6tsumbfip0}
+### Setting up ADAM:
 
 Before you begin, please make sure that ADAM has been configured with the email address of the person who will be responsible for verifying and approving this information. This is configured in “Site Settings”, under the “General” tab.
 
@@ -116,7 +116,7 @@ Add in one or more email addresses (separate them with commas if you have more t
 
 Save the site settings!
 
-### Distribute the detail update requests: {#h-id2hf1r4opat}
+### Distribute the detail update requests:
 
 1.  Navigate to the “**Staff**” tab and under the heading “**Staff Administration**”, click on the option “**Send online detail update form emails**”.
 2.  A list of current staff is shown. Select those who should receive a link to update their information:
@@ -127,7 +127,7 @@ Save the site settings!
 
 ![](assets/screenshots/staff-information/staff-information-10.png)
 
-### Updating the Information: {#h-sj071nd2amm6}
+### Updating the Information:
 
 Staff can either update their information by clicking on the provided link in their email, or, at any time can click on the option “Update your personal information” located on the “Staff” tab under the heading “Staff Administration”.
 
@@ -135,7 +135,7 @@ When staff update their information, they will see a screen similar to the edit 
 
 ![](assets/screenshots/staff-information/staff-information-11.png)
 
-### Approving the Information: {#h-yi3i8064qpqp}
+### Approving the Information:
 
 ADAM will send the following email to the specified email addresses when a staff member updates their information:
 
@@ -157,13 +157,13 @@ Click on “Save changes” when done. The changes are now recorded in the syste
 
 Note that in the change log, the reviewer will be recorded as the person making those changes.
 
-## Staff Signatures for Reports {#h-waqadkotv8ta}
+## Staff Signatures for Reports
 
-Many report templates allow for the automatic placement of electronic signatures. Each teacher will need a signature scanned and uploaded onto the ADAM. Please see the section in [Report Publishing](report-publishing.md#h-6oj305rlncaz) for more information.
+Many report templates allow for the automatic placement of electronic signatures. Each teacher will need a signature scanned and uploaded onto the ADAM. Please see the section in [Report Publishing](report-publishing.md#staff-signatures) for more information.
 
-## Staff Name Pronunciation {#h-2nwqprhfce0e}
+## Staff Name Pronunciation
 
-ADAM contains a specific category in the [Document Repository](document-repository.md#h-3l18frh) which can have digital recordings of the pronunciation of a staff member’s name uploaded. Once uploaded, a media control will appear on the name card in their profile and users can use this to listen to the recording of the name.
+ADAM contains a specific category in the [Document Repository](document-repository.md#document-repository) which can have digital recordings of the pronunciation of a staff member’s name uploaded. Once uploaded, a media control will appear on the name card in their profile and users can use this to listen to the recording of the name.
 
 ![](assets/screenshots/staff-information/staff-information-15.png)
 
@@ -173,4 +173,4 @@ If the button is greyed out, it may be because an invalid audio file has been up
 
 *Note that different web browsers may display the media control buttons differently. This is a function of the web browser rather than of ADAM.*
 
-Have a look at the Document Repository documentation for more information on uploading many files at once using the [Bulk Upload feature](document-repository.md#h-9vy1c3hcdfza).
+Have a look at the Document Repository documentation for more information on uploading many files at once using the [Bulk Upload feature](document-repository.md#uploading-documents-in-bulk).

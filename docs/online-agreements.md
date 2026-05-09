@@ -1,8 +1,8 @@
-# Online Agreements {#h-5b9vt8tdejne}
+# Online Agreements
 
 ADAM has the ability to ask staff, families and pupils to agree to, or decline, online agreements. These may include terms of enrolment, important notifications and so on.
 
-## Creating Online Agreements {#h-mhm0gvbcj8b4}
+## Creating Online Agreements
 
 Online Agreements can be created for one of four different audiences:
 
@@ -39,7 +39,7 @@ Next, we have the **text of the agreement**. This can be formatted using some ba
 
 At the bottom of the screen is an option to **change the ordering of the agreements**. If a user has more than one agreement to view, they will be shown in the order specified.
 
-## Other Options {#h-d6azgglca7zi}
+## Other Options
 
 From the list of agreements, each agreement will show the options to be edited or to view the associated report with the responses.
 
@@ -47,7 +47,7 @@ From the list of agreements, each agreement will show the options to be edited o
 
 The “**up**” and “**down**” options will simply change the list ordering of the agreements. Where there are long lists, it is easier to edit the agreement and, at the bottom, choose a new list position for the agreement.
 
-### Editing Agreements {#h-3ldvwim8dibn}
+### Editing Agreements
 
 It is possible to edit an agreement by clicking on the **edit** link next to the agreement name.
 
@@ -58,14 +58,14 @@ If you edit the text of an agreement in any way, ADAM will automatically archive
 !!! warning
     *Above, we mentioned that changing the email setting on old agreements would cause the agreements to be emailed out. This only holds if the text of the agreement is not changed when the setting is turned on. If the text is changed, then the instruction to email the agreements is saved with the* ***new*** *agreement and not the old one.*
 
-### Disabling and Enabling Agreements {#h-nkgrawskmapb}
+### Disabling and Enabling Agreements
 
 It is possible to disable an agreement. Disabling an agreement means that users will not be asked to agree.
 
 !!! warning
     Please be careful when enabling agreements, particularly ones that are not the latest version. Editing these older agreements will cause confusion in the numbering.
 
-### Viewing Agreement Responses {#h-4l1kzrc43cua}
+### Viewing Agreement Responses
 
 Next to the appropriate agreement, click on the “report” option. Currently ADAM shows a simple list of the names of people who have responded to the agreement.
 
@@ -73,7 +73,7 @@ The report shows those who have responded as well as their response and, in a se
 
 ![](assets/screenshots/online-agreements/online-agreements-07.png)
 
-## Online Agreements in the Parent Portal {#h-6rdyuuxss6pl}
+## Online Agreements in the Parent Portal
 
 Parents are able to see and manage their online agreements in the Parent Portal. A menu option is provided in the **Family** block.
 
@@ -87,7 +87,7 @@ Viewing the agreement shows them the text of the agreement and their response:
 
 ![](assets/screenshots/online-agreements/online-agreements-10.png)
 
-### Recission of Online Agreements {#h-8jaaqpxo2tax}
+### Recission of Online Agreements
 
 If a parent choses to rescind an agreement, they are presented with the following screen:
 
@@ -103,6 +103,6 @@ As soon as the agreement is rescinded and the parent returns to the main page, A
 
 If the online agreement requires an affirmative response, they will not be able to proceed unless they once again agree to the terms set out in the agreement.
 
-### Viewing Rescinded Agreements {#h-kjdqu6aedtpx}
+### Viewing Rescinded Agreements
 
-When viewing the [Online Agreement report](#h-4l1kzrc43cua), ADAM will list all recisions in that report, including the date the agreement was initially responded to and the date and time that the agreement was rescinded.
+When viewing the [Online Agreement report](#viewing-agreement-responses), ADAM will list all recisions in that report, including the date the agreement was initially responded to and the date and time that the agreement was rescinded.

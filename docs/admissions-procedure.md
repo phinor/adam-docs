@@ -1,3 +1,3 @@
-# Admissions Procedure {#h-cm50pdimbdf4}
+# Admissions Procedure
 
-Please see [Enrolment Process](enrolment-process.md#h-1egqt2p) later in this document.
+Please see [Enrolment Process](enrolment-process.md#enrolment-process) later in this document.

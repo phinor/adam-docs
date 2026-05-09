@@ -1,4 +1,4 @@
-# Communication Policies {#h-ukeo0dt5hhfn}
+# Communication Policies
 
 ADAM allows parents to be quite specific about what each of their email addresses receives from ADAM. However, to allow schools some control, ADAM allows for a policy override so that schools can be sure that parents will receive necessary emails form the school.
 

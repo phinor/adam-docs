@@ -1,4 +1,4 @@
-# School Information {#h-47hxl2r}
+# School Information
 
 This section controls the information used in administrative reports for systems such as LURITS and SA-SAMS.
 

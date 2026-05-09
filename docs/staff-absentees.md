@@ -1,10 +1,10 @@
-# Staff Absentees {#h-sejx81ujf53h}
+# Staff Absentees
 
-ADAM is able to record staff absentee information for staff. This information is largely collected in order to submit it with [SA-SAMS exports](roll-calls.md#h-74ctdmgnp3ca).
+ADAM is able to record staff absentee information for staff. This information is largely collected in order to submit it with [SA-SAMS exports](roll-calls.md#roll-calls).
 
 While leave can be recorded on ADAM, it is important to realise that ADAM is not an HR package and thus cannot manage the leave owing to a staff member.
 
-## Recording absentee information {#h-n8sxy35pmz0y}
+## Recording absentee information
 
 Navigate to **Staff → Staff Absentees → Add absentee records (individual)**. Choose the staff member to add absentee records for and click on **Next**.
 
@@ -18,6 +18,6 @@ Click on the **record staff absenteeism** button to save the records.
 
 ![](assets/screenshots/staff-absentees/staff-absentees-02.png)
 
-## Clearing absentee records {#h-sf7fghmlh68n}
+## Clearing absentee records
 
 If an absentee record was added in error, it can be removed by first selecting the date range to remove and then clicking on the **Clear staff absenteeism** button.

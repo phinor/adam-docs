@@ -1,8 +1,8 @@
-# Timetable Module {#h-hpdeljllmcbc}
+# Timetable Module
 
 The timetable module displays current timetables in ADAM for staff and pupils, and allows both to subscribe to their timetables using third-party calendar software, including Google Calendar, Microsoft Outlook and the Calendar App on iPhones and iPads.
 
-## Creating a Timetable {#h-klnf623z9grp}
+## Creating a Timetable
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/cYVtdd6xuyk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -16,7 +16,7 @@ To add a new timetable, click on the **Add new Timetable** option at the top of
 
 ![](assets/screenshots/timetable-module/timetable-module-03.png)
 
-#### Adding Days to a Timetable {#h-wytf6nddw5vn}
+#### Adding Days to a Timetable
 
 A timetable will be made up of a number of days. It is useful to clarify some terminology at this point.
 
@@ -36,7 +36,7 @@ Initially, only 10 days will be shown. If you require more days, simply save the
 
 Once you are satisfied with your days, you can click on the **Save this Schedule** button at the bottom of the screen.
 
-## Creating Daily Schedules {#h-5gedwwc8rueo}
+## Creating Daily Schedules
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/VI3cl1n0mBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -68,7 +68,7 @@ Note that if, for example, a certain schedule requires that you move lesson 7 to
 
 Firstly, note that lesson 1 has no times associated with it. In this schedule, there will not be a lesson 1. Note also the start and end times of lesson 7. This lesson will be scheduled to happen first in the day, ending at 08h45 and this is then followed by lesson 2 which starts at 08h45.
 
-## Adding Lessons to the Timetable {#h-p9iuvz2tl7vr}
+## Adding Lessons to the Timetable
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/wkhb8lUUIfc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -108,7 +108,7 @@ The diagram above shows all the Mathematics lessons in the timetable (note the m
 
 One can click on the check-boxes individually, but by clicking on the yellow number, it will also tick all the other matching (highlighted) tickboxes. This allows you to change multiple lessons easily if there are mistakes.
 
-## Adding Days to a Calendar {#h-4dyracbn67lz}
+## Adding Days to a Calendar
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/A79nSgj-gEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -121,7 +121,7 @@ Firstly, it will help to identify the type of timetable that your school uses. T
 -   A **fixed timetable** is one that operates off a week-based cycle. This might be 5 days or 10 days with a “Week A” and “Week B”-type setup. In these cases, Mondays are Mondays (could be Monday A or Monday B, but still a Monday). If a public holiday falls mid-week, the day that it falls on is generally lost as a teaching day, and does not affect the other days around it.
 -   A **rolling timetable** is one that operates off a cycle of a number of days. Seven-day cycles are popular, but certainly there are other options. In this case, the school term starts with “Day 1” and proceeds through the timetable until the last day is reached and then they start again with Day 1. Day 1s are not fixed to Mondays. If a public holiday falls mid-week, the timetable carries on around it. If it was Day 2 before the holiday, it will be Day 3 on the day after it.
 
-#### Adding multiple days to the timetable {#h-c6bg6nfu6swk}
+#### Adding multiple days to the timetable
 
 Click on the option to add multiple dates to the calendar.
 
@@ -140,7 +140,7 @@ You can run this procedure multiple times for different grades, or to change the
 
 For example, you may wish to schedule Grade 12s separately so that you can take into account their exam dates without having to edit individual days later.
 
-#### Editing or Adding Individual Days {#h-7extqa1co1zu}
+#### Editing or Adding Individual Days
 
 It is possible to edit existing days or add individual days to the timetable. To do this, click on the **edit** link next to a day or click on the option to add a single day.
 
@@ -154,13 +154,13 @@ If you wish to run the timetable from a different day, simply choose the new day
 
 It is also possible to set no lessons for a particular grade (perhaps they are on an excursion or writing exams). Simply change the timetable day to “No day” for that grade.
 
-#### Removing an entire day from the timetable {#h-r5ylfz7mxkpi}
+#### Removing an entire day from the timetable
 
 On public holidays, you may wish to remove the lessons from the timetable. From the screen that lists the calendar days, click on the **remove** link next to the date of a public holiday.
 
 ![](assets/screenshots/timetable-module/timetable-module-20.png)
 
-## Subscribing to a Timetable {#h-8xmm4hc11xwi}
+## Subscribing to a Timetable
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/_Uy2YPnefjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -174,9 +174,9 @@ The exact method of adding a calendar to these programs is different and you are
 ![](assets/screenshots/timetable-module/timetable-module-22.png)
 
 !!! warning
-    *Please note that* *[pupils require privileges](security-administration-for-families-and-pupils.md#h-mg1sc7iv8w2n)* *to view and subscribe to their calendars in the Parent and Pupil Portal.*
+    *Please note that* *[pupils require privileges](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils)* *to view and subscribe to their calendars in the Parent and Pupil Portal.*
 
-## Resetting a Timetable Link {#h-rrg907re98m0}
+## Resetting a Timetable Link
 
 When you copy the timetable URL for the first time, ADAM will generate a random 30-letter key that can access your timetable alone. Guessing this key is statistically impossible so if someone doesn’t know your key, they won’t be able to subscribe to your calendar.
 

@@ -1,6 +1,6 @@
-# Labels {#h-sfy96rfuv2mq}
+# Labels
 
-## Creating a Custom Size Label {#h-sr4w83twoy83}
+## Creating a Custom Size Label
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/dHhNC3wXCNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -20,7 +20,7 @@ As you change the measurements on the left of the diagram, so the measurements o
 
 When you are done, click on the “Save…” button at the bottom. The new label should now appear in your list of labels.
 
-## Managing Label Templates {#h-lojhvdhppyf}
+## Managing Label Templates
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/8qWuXgfWTFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -28,7 +28,7 @@ We create label templates that ADAM will use to fill in the appropriate data whe
 
 You have the option to add a new label template or to edit an existing one. To add a new template, click on the link at the top of the page. To edit a template, click on the appropriate edit link next to the label template that you want to edit.
 
-### Adding a New Label {#h-xbpocuz1zk5m}
+### Adding a New Label
 
 When creating a new label, you will be asked to say where it gets its data from. You cannot change this later and so if you choose the wrong source, you will have to start again with a new label. You can disable any labels that you no longer wish to use.
 
@@ -46,7 +46,7 @@ If you do not choose a pupil label, you will not see this option.
 
 The rest of the instructions for creating the label are the same as the instructions below for editing an existing label.
 
-### Editing an Existing Label {#h-af7akbt5d1v7}
+### Editing an Existing Label
 
 The label is divided into 5 areas:
 
@@ -66,7 +66,7 @@ When in doubt, simply copy and paste the merge code into the appropriate text bl
 
 Don’t worry if you don’t get the label right the first time: you can always come back and edit.
 
-### A note about sources and family information {#h-rgoxk0i6t5ap}
+### A note about sources and family information
 
 When printing pupil labels, it makes sense to have pupil fields. Likewise, when printing family information, it makes sense to use the family fields. However, there can be situations where it is useful to mix these up.
 

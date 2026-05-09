@@ -1,18 +1,18 @@
-# Parent and Pupil Portal {#h-f2h1db358hth}
+# Parent and Pupil Portal
 
 Many schools open the parent and pupil portals to improve the information that is available to parents. There are a number of different steps that need to be taken before parent and pupil access can be successfully given. This particular section in the manual will provide you with links to other parts that will guide you through the tasks in more detail.
 
-## Pupil Privilege Groups {#h-jepq6a1v6j35}
+## Pupil Privilege Groups
 
 It may seem counterintuitive, but parent *and* pupil access to ADAM is controlled through Pupil Privilege groups. This is done because it allows parents to see different views for each of their children. For example, a parent with a child in the high school might get to see the mark book for that child but this may not be available for their child in the primary school.
 
-Please read more about [Pupil Login Groups](security-administration-for-families-and-pupils.md#h-mg1sc7iv8w2n) and, once customised, how to [assign them to classes of pupils](security-administration-for-families-and-pupils.md#h-dhbrfm3k0p0c) at a time.
+Please read more about [Pupil Login Groups](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils) and, once customised, how to [assign them to classes of pupils](security-administration-for-families-and-pupils.md#assigning-pupils-to-groups-by-class) at a time.
 
-## Understanding Pupil Login {#h-g3b7qwfm794s}
+## Understanding Pupil Login
 
 Pupils can log in to the portal using one of two different ways.
 
-### Username and Password {#h-cj4hcfgwlg61}
+### Username and Password
 
 The first is using a username or password. Most schools will either have this match their school usernames and use external Active Directory authentication to ensure that their passwords are correct. ADAM can store internal passwords too, if required.
 
@@ -34,19 +34,19 @@ After this, it will show you a list of randomly generated passwords. You will no
 
 Pupils will be asked to change these passwords when they next log in.
 
-Pupils and parents who prefer not to type a password each time can also enrol a passkey from the portal at **Pupil Portal → Security → Manage your passkeys** or **Family Portal → Security → Manage your passkeys**. Once a passkey has been enrolled, the pupil or parent can log in with their device’s fingerprint or face instead of a password. Their existing password remains valid as a fallback. See [Passkey Authentication](passkey-authentication.md#h-68qerlruak0n) for more.
+Pupils and parents who prefer not to type a password each time can also enrol a passkey from the portal at **Pupil Portal → Security → Manage your passkeys** or **Family Portal → Security → Manage your passkeys**. Once a passkey has been enrolled, the pupil or parent can log in with their device’s fingerprint or face instead of a password. Their existing password remains valid as a fallback. See [Passkey Authentication](passkey-authentication.md#passkey-authentication) for more.
 
-### OAuth logins using Google or Microsoft accounts {#h-lrvac6oeqz1e}
+### OAuth logins using Google or Microsoft accounts
 
-It is also possible to enable logins using your organisation’s Google or Microsoft accounts. Please see the [Security section](configuring-logins.md#h-qsh70q) for more information on enabling this setting.
+It is also possible to enable logins using your organisation’s Google or Microsoft accounts. Please see the [Security section](configuring-logins.md#configuring-logins) for more information on enabling this setting.
 
-## Understanding Parent Login {#h-j9oqjiq3ubit}
+## Understanding Parent Login
 
 Parents do not use a username to log into ADAM. Instead they type in their ID number (or passport number in the case of foreign parents):
 
 ![](assets/screenshots/parent-and-pupil-portal/parent-and-pupil-portal-04.png)
 
-### Logging in for the First Time {#h-oxx1bnpvyvpa}
+### Logging in for the First Time
 
 If you have never logged into ADAM before, click on the button at the bottom of the screen “**New Account? Forgotten password?**”
 
@@ -56,21 +56,21 @@ Enter your ID number or Passport number and click on the **Send me a reset link*
 
 Check your inbox for the email to arrive. You may also want to make sure that it does not arrive in your spam folder.
 
-### Forgotten Passwords {#h-eu2jzab8dpvd}
+### Forgotten Passwords
 
 If they forget their password, a button is provided at the bottom of the login page for them to click on to get a password reset link sent to their email.
 
 ![](assets/screenshots/parent-and-pupil-portal/parent-and-pupil-portal-06.png)
 
-### Guide for Parent Logins {#h-1nd5o9vnedvh}
+### Guide for Parent Logins
 
-We have drawn up [a guide for parents to follow](logging-on-to-adam-a-guide-for-parents.md#h-3wf37gt5yaio), guiding them through the login process which you are welcome to point them to, or adjust for your own uses.
+We have drawn up [a guide for parents to follow](logging-on-to-adam-a-guide-for-parents.md#logging-on-to-adam-a-guide-for-parents), guiding them through the login process which you are welcome to point them to, or adjust for your own uses.
 
-## Troubleshooting Parent Logins {#h-8u68nd892osi}
+## Troubleshooting Parent Logins
 
 The following is a checklist that you can go through when parents are having a problem logging in.
 
-### Duplicate ID Numbers {#h-nd6jryf75nhx}
+### Duplicate ID Numbers
 
 The most common problem arises when the same ID number is assigned to multiple families on ADAM. When parents login, they provide their ID number and ADAM uses this ID number to identify the family profile that is logging in. If there is more than one profile, ADAM is unable to determine which should be logging in and denies the login.
 
@@ -80,7 +80,7 @@ Similarly, when parents attempt to change their passwords and provide a duplicat
 
 ![](assets/screenshots/parent-and-pupil-portal/parent-and-pupil-portal-07.png)
 
-### Spam Email and Email Delivery Problems {#h-5gixko28a1rx}
+### Spam Email and Email Delivery Problems
 
 For reasons of privacy and security, ADAM does not put password reset emails into the parent’s messaging log. It is thus difficult to tell if a password reset email has been sent to parents.
 
@@ -88,13 +88,13 @@ It often happens, by the nature of the email, that password reset emails are oft
 
 You will need to check your email service’s delivery logs to ensure that ADAM sent the password reset email and that the receipient server accepted delivery thereof. This is normally sufficient, since most recipient email servers will report it when they reject an email, but it can happen that a recipient server will receive and silently delete such emails. This remains out of ADAM’s control and, if this is happening, additional work will need to be done to improve the deliverability of email from your school’s domain, including things like ensuring SPF records, DKIM signing and DMARC policies are in place to improve the reputation of your email.
 
-### Password Changing {#h-pzalq31he3g8}
+### Password Changing
 
-ADAM [scans all passwords against a database of passwords](passwords-and-security-information.md#h-ew9mw0a78pk2) that have been scraped from database breaches from around the world. This is in an effort to make sure that users are using unique, strong passwords. If a parent chooses a new password that might be already in this database, ADAM may prevent it immediately (depending on how weak the password is) or allow it for a few months. Parents who have existing passwords which are later added to this database from other breaches, may suddenly find that they are being forced to change their passwords.
+ADAM [scans all passwords against a database of passwords](passwords-and-security-information.md#adam-tells-me-there-is-a-problem-with-my-password-why) that have been scraped from database breaches from around the world. This is in an effort to make sure that users are using unique, strong passwords. If a parent chooses a new password that might be already in this database, ADAM may prevent it immediately (depending on how weak the password is) or allow it for a few months. Parents who have existing passwords which are later added to this database from other breaches, may suddenly find that they are being forced to change their passwords.
 
 This is normal and is part of our commitment to keeping the information that is stored within ADAM safe.
 
-## Enabling The Portal, The Final Settings {#h-lhaocp6w28nv}
+## Enabling The Portal, The Final Settings
 
 Once the privileges are set up, you must enable the portal for parents and/or pupils. This is done in Site Settings:
 
@@ -110,17 +110,17 @@ Once set, this can be changed individually for pupils in the database. This coul
 
 If your pupils use an Active Directory server, choose this here. ADAM can also manage the passwords internally if you require. Set the method to “internal passwords.” Other authentication mechanisms are also provided.
 
-**Default Privilege Group:** It is an excellent idea to set this [privilege group](security-administration-for-families-and-pupils.md#h-mg1sc7iv8w2n) so that it gives new pupils and their families an appropriate level of access to the portal. Normally, this should be set to the same privilege group that would normally be applied to the bulk of your student intake.
+**Default Privilege Group:** It is an excellent idea to set this [privilege group](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils) so that it gives new pupils and their families an appropriate level of access to the portal. Normally, this should be set to the same privilege group that would normally be applied to the bulk of your student intake.
 
 Again, be aware that this privilege group is set when the child is *first* captured onto the system.
 
-ADAM provides some simple privilege groups “out the box”, but these can be [customised and new ones added as required](security-administration-for-families-and-pupils.md#h-mg1sc7iv8w2n).
+ADAM provides some simple privilege groups “out the box”, but these can be [customised and new ones added as required](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
 **Allow Family/Pupil Logins:** Change these settings to “Yes” as required.
 
 Finally, save the Site Settings.
 
-## Testing the Logins and Privileges {#h-wwwrxezhbpfl}
+## Testing the Logins and Privileges
 
 Many schools have a staff member who has children at the school. Such a staff member makes an excellent test subject when testing parent logins.
 
@@ -128,11 +128,11 @@ Alternatively, an excellent way to test is to create a new family and link some 
 
 If you want to verify the information that can be seen by a specific family, system administrators can navigate to **Families → Security → Login as a family**. Then, by searching for the family concerned, ADAM will perform a login as if you were that family. This login is in all senses indistinguishable from a normal family login.
 
-## Parent Login Instructions {#h-emx8xsm3513q}
+## Parent Login Instructions
 
 [Please see this separately maintained instruction guide for parents.](https://www.google.com/url?q=https://docs.google.com/document/d/1vHiaDoheupdosNEEv32az8MjiVfSFUNmRiAk3TBZuuo/edit&sa=D&source=editors&ust=1778246676379604&usg=AOvVaw2atf3cB6ua9dNXHaOMewVK) You are welcome to amend this guide for your own purposes, or simply send it to parents in its current form.
 
-## Accessing the QR Code {#h-sfc4hv43rhd3}
+## Accessing the QR Code
 
 Any parent or student who has access to the portal will see a **QR Code** menu option listed under the **General** heading. Tap on the link to see the QR Code.
 

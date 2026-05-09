@@ -1,4 +1,4 @@
-# Login Messages {#h-8ee18vhiwcbw}
+# Login Messages
 
 It is possible for site administrators to add notifications to the home page for users to see. These messages are either highlighted in red or green to make them stand out and be easily visible.
 
@@ -6,7 +6,7 @@ To add a message, click on the **Administration** tab and look under the **Site
 
 The window will show a list of all currently programmed messages. An option at the top of the screen allows you to add a new login message.
 
-## Adding a new login message {#h-hphtenos67eo}
+## Adding a new login message
 
 The options available for each message are as follows:
 

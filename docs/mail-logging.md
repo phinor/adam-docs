@@ -1,4 +1,4 @@
-# Mail Logging {#h-8m8tndmj8fs7}
+# Mail Logging
 
 !!! warning
     This feature is no longer actively supported and no further development is being done in this regard. It negatively impacts the ADAM database’s performance considerably and has significant concerns in terms of privacy.
@@ -11,7 +11,7 @@ ADAM scans the mail every five minutes and processes a batch of mail. Thus most 
 
 *Note that ADAM will not store attachments.*
 
-## Enabling and Disabling Mail Logging for Families {#h-653z9pj4p22d}
+## Enabling and Disabling Mail Logging for Families
 
 Edit the family concerned and, next to each of their email addresses choose whether to enable or disable mail logging for that address.
 
@@ -19,7 +19,7 @@ Edit the family concerned and, next to each of their email addresses choose whet
 
 Note that with staff, it may be preferable to disable both mother and father even if only one is an employee of the school. This is because the server may intercept personal communication from one of the parties and store it.
 
-## Configuring Your Mail Server {#h-5hayaks6f4ms}
+## Configuring Your Mail Server
 
 The goal here is to have your mail server place a duplicate copy of every mail that it sends or receives into a mailbox that can be accessed by ADAM using a POP3 connection.
 
@@ -27,7 +27,7 @@ The instructions are different for each mail server. You will need to enquire wi
 
 You do not need to worry about space issues on your mail server since ADAM will delete the mails once they are processed.
 
-## Setting up ADAM {#h-omvlkj2ogpnh}
+## Setting up ADAM
 
 Once configured, confirm that you have POP3 access to the mailbox concerned. Make a note of the username and password, as well as the IP address of the server concerned (which may be different from your outgoing SMTP server, in some instances).
 
@@ -48,7 +48,7 @@ Note that 90 mails every 5 minutes, gives ADAM the capacity to process a maximum
 
 If the cron process stops running, then the mails will be stored in the mail box on the server, waiting for ADAM to process them. In these cases, it might be necessary to increase the number of messages that can be processed at once to work through the backlog of unchecked mail. ADAM will, however, keep chipping away at the pile until there are none left. In such instances, older messages are generally processed first, so if there is a backlog, it may take some time for newly sent messages to be reflected in ADAM.
 
-## Privileges to View Logged Mail {#h-i4frryysz8cb}
+## Privileges to View Logged Mail
 
 Privileges to view logged mail should be given sparingly since mail may contain sensitive information. In the privilege groups, the following privileges, found under the “**Family Admin**” tab, are relevant:
 

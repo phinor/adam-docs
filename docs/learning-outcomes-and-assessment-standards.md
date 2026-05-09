@@ -1,4 +1,4 @@
-# Learning Outcomes and Assessment Standards {#h-eerhiyndsatf}
+# Learning Outcomes and Assessment Standards
 
 In the Outcomes Based Education policy of the National Senior Certificate, introduced into South African schools shortly after 2007, subject content was broken down into several Learning Outcomes. These LOs were further broken down into Assessment Standards which described the criteria for achieving each Learning Outcomes.
 
@@ -10,7 +10,7 @@ One final point is that LOs and ASs should be considered as objective measures o
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/sqvVM-0Fa04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-## Managing Learning Outcomes {#h-deo5jvne1x4g}
+## Managing Learning Outcomes
 
 The option to manage Learning Outcomes can be found on the **Subjects** tab, under the heading **LO and AS administration**.
 
@@ -35,7 +35,7 @@ Once you save the Learning Outcomes, you can continue editing the LOs for that g
 
 ADAM will also give you the opportunity to edit the assessment standards for that Learning Outcome. This is a shortcut into the next section.
 
-## Managing Assessment Standards {#h-kncddgaz3yer}
+## Managing Assessment Standards
 
 The option to manage Assessment Standards can be found on the **Subjects** tab, under the heading **LO and AS administration**.
 
@@ -47,7 +47,7 @@ ADAM will ask you to choose a subject and then a grade.
 
 Each of the Learning Outcomes is listed with any associated Assessment Standards. ADAM will always provide five blank spaces for new ASs. If you require more, save the ASs first and revisit this page: five more blank spaces will be added for you.
 
-In the screenshot above, take special note that the first LO (“Management and Presentation”) has a red warning next to it. This Learning Outcome has been disabled in the LO section (see the screenshot on the previous page where we [discussed Learning Outcomes](#h-deo5jvne1x4g)). You will see that the first LO is not enabled. That means that none of these ASs, whether enabled or not, will be available for reporting. This might well be intentional. However, it can cause some anxiety if ASs aren’t showing - checking in Learning Outcomes is not immediately obvious and hence we display this warning here.
+In the screenshot above, take special note that the first LO (“Management and Presentation”) has a red warning next to it. This Learning Outcome has been disabled in the LO section (see the screenshot on the previous page where we [discussed Learning Outcomes](#managing-learning-outcomes)). You will see that the first LO is not enabled. That means that none of these ASs, whether enabled or not, will be available for reporting. This might well be intentional. However, it can cause some anxiety if ASs aren’t showing - checking in Learning Outcomes is not immediately obvious and hence we display this warning here.
 
 For each assessment standard, you will need to enter the following:
 
