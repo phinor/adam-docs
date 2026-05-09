@@ -4,9 +4,9 @@ ADAM allows for roll calls to be taken at school events. Roll calls can be sched
 scheduler (for other non-academic purposes), or on an ad-hoc basis (e.g. sports practices).
 
 !!! warning
-    *Please note that the Roll Call module is intended to replace the*
-    *[Attendance Registers](attendance-registers.md#attendance-registers)**feature in ADAM. The Attendance Registers functionality
-    will be removed during the course of 2026.*
+    Please note that the Roll Call module is intended to replace the 
+    **[Attendance Registers](attendance-registers.md#attendance-registers)** module in ADAM. The Attendance Registers moduile
+    will be removed at the end of 2026.*
 
 ## Choosing A Roll Call
 
@@ -81,8 +81,9 @@ It is possible to mark a pupil as absent for a free-attendance roll call. This m
 expected to attend, but didn’t.
 
 !!! warning
-    While ADAM will add pupils to the roll call, if you wish to change any reasons or add any notes, you must click on the **Save** button that appears at the bottom. If you make changes to this list, and then add another pupil before you
-    save the changes, those changes will be lost.
+    While ADAM will add pupils to the roll call, if you wish to change any reasons or add any notes, you must click on 
+    the **Save** button that appears at the bottom. If you make changes to this list, and then add another pupil before
+    you save the changes, those changes will be lost.
 
 ## Taking a Roll Call
 

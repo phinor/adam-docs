@@ -3,7 +3,7 @@
 ## Deprecation Notice
 
 !!! warning
-    Kindly note that the* ***Attendance Register*** functionality has been deprecated and replaced with the* **[Roll Call function](roll-calls.md#roll-calls)**. The ability to add attendance registers will be removed at the end of 2026.
+    Kindly note that the* **Attendance Register** functionality has been deprecated and replaced with the **[Roll Call module](roll-calls.md#roll-calls)**. The ability to add attendance registers will be removed at the end of 2026.
 
 ## Introduction
 
