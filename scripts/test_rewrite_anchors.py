@@ -208,5 +208,31 @@ class TestRewriteReferences(unittest.TestCase):
         self.assertEqual(orphans, [])
 
 
+class TestRewriteHeadings(unittest.TestCase):
+    def test_strip_when_not_explicit(self):
+        text = "# Foo {#h-a}\n\nbody\n"
+        entries = [ra.MappingEntry(old_id="h-a", new_slug="foo", explicit=False, heading="Foo", line_index=0)]
+        out = ra.rewrite_headings(text, entries)
+        self.assertEqual(out, "# Foo\n\nbody\n")
+
+    def test_replace_when_explicit(self):
+        text = "## Overview {#h-b}\n"
+        entries = [ra.MappingEntry(old_id="h-b", new_slug="mark-book-overview", explicit=True, heading="Overview", line_index=0)]
+        out = ra.rewrite_headings(text, entries)
+        self.assertEqual(out, "## Overview {#mark-book-overview}\n")
+
+    def test_append_when_no_old_id_but_explicit(self):
+        text = "# !!!\n"
+        entries = [ra.MappingEntry(old_id=None, new_slug="section-1", explicit=True, heading="!!!", line_index=0)]
+        out = ra.rewrite_headings(text, entries)
+        self.assertEqual(out, "# !!! {#section-1}\n")
+
+    def test_leaves_other_lines_alone(self):
+        text = "# Foo {#h-a}\nSome [link](#h-a) stays as-is here.\n"
+        entries = [ra.MappingEntry(old_id="h-a", new_slug="foo", explicit=False, heading="Foo", line_index=0)]
+        out = ra.rewrite_headings(text, entries)
+        self.assertEqual(out, "# Foo\nSome [link](#h-a) stays as-is here.\n")
+
+
 if __name__ == "__main__":
     unittest.main()

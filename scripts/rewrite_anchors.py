@@ -185,6 +185,23 @@ def rewrite_references(text: str, current_file: str, lookup: dict[tuple[str, str
     return "".join(out_lines), orphans
 
 
+def rewrite_headings(text: str, entries: list[MappingEntry]) -> str:
+    """Rewrite each entry's heading line: strip or replace its {#h-xxx}."""
+    by_line = {e.line_index: e for e in entries}
+    lines = text.splitlines(keepends=True)
+    for i, line in enumerate(lines):
+        e = by_line.get(i)
+        if e is None:
+            continue
+        body = line.rstrip("\n")
+        eol = line[len(body):]
+        body = re.sub(r"\s*\{#h-[a-z0-9]+\}\s*$", "", body)
+        if e.explicit:
+            body = f"{body} {{#{e.new_slug}}}"
+        lines[i] = body + eol
+    return "".join(lines)
+
+
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="phase", required=True)
