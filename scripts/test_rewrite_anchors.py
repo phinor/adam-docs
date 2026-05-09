@@ -162,5 +162,51 @@ class TestBuildFileMapping(unittest.TestCase):
         self.assertEqual(len(set(slugs)), len(slugs))
 
 
+class TestRewriteReferences(unittest.TestCase):
+    def test_intra_page(self):
+        text = "See [the section](#h-abc) for details."
+        lookup = {("foo.md", "h-abc"): "the-section"}
+        new, orphans = ra.rewrite_references(text, "foo.md", lookup)
+        self.assertEqual(new, "See [the section](#the-section) for details.")
+        self.assertEqual(orphans, [])
+
+    def test_cross_page(self):
+        text = "See [overview](other.md#h-xyz)."
+        lookup = {("other.md", "h-xyz"): "overview"}
+        new, orphans = ra.rewrite_references(text, "foo.md", lookup)
+        self.assertEqual(new, "See [overview](other.md#overview).")
+        self.assertEqual(orphans, [])
+
+    def test_orphan_left_alone(self):
+        text = "See [missing](#h-gone)."
+        lookup = {}
+        new, orphans = ra.rewrite_references(text, "foo.md", lookup)
+        self.assertEqual(new, text)
+        self.assertEqual(len(orphans), 1)
+        self.assertEqual(orphans[0], ("foo.md", "foo.md", "h-gone"))
+
+    def test_skips_code_fence(self):
+        text = "\n".join([
+            "Real [link](#h-a).",
+            "```",
+            "Fake [link](#h-a).",
+            "```",
+            "Another [link](#h-a).",
+        ])
+        lookup = {("foo.md", "h-a"): "alpha"}
+        new, _ = ra.rewrite_references(text, "foo.md", lookup)
+        lines = new.splitlines()
+        self.assertEqual(lines[0], "Real [link](#alpha).")
+        self.assertEqual(lines[2], "Fake [link](#h-a).")
+        self.assertEqual(lines[4], "Another [link](#alpha).")
+
+    def test_does_not_match_non_h_anchors(self):
+        text = "See [x](#section-1)."
+        lookup = {}
+        new, orphans = ra.rewrite_references(text, "foo.md", lookup)
+        self.assertEqual(new, text)
+        self.assertEqual(orphans, [])
+
+
 if __name__ == "__main__":
     unittest.main()

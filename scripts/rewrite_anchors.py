@@ -150,6 +150,41 @@ def build_file_mapping(headings: list[Heading]) -> list[MappingEntry]:
     return entries
 
 
+_REF_RE = re.compile(r"\]\(([a-z0-9][a-z0-9_-]*\.md)?#(h-[a-z0-9]+)\)")
+
+
+def rewrite_references(text: str, current_file: str, lookup: dict[tuple[str, str], str]):
+    """
+    Rewrite ](#h-xxx) and ](file.md#h-xxx) references using lookup.
+    Returns (new_text, orphans). Each orphan is (source_file, target_file, old_id).
+    """
+    orphans: list[tuple[str, str, str]] = []
+    out_lines: list[str] = []
+    in_fence = False
+
+    def replace(match: re.Match) -> str:
+        target_file = match.group(1) or current_file
+        old_id = match.group(2)
+        new_slug = lookup.get((target_file, old_id))
+        if new_slug is None:
+            orphans.append((current_file, target_file, old_id))
+            return match.group(0)
+        prefix = match.group(1) or ""
+        return f"]({prefix}#{new_slug})"
+
+    for line in text.splitlines(keepends=True):
+        stripped = line.lstrip()
+        if stripped.startswith("```") or stripped.startswith("~~~"):
+            in_fence = not in_fence
+            out_lines.append(line)
+            continue
+        if in_fence:
+            out_lines.append(line)
+            continue
+        out_lines.append(_REF_RE.sub(replace, line))
+    return "".join(out_lines), orphans
+
+
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="phase", required=True)
