@@ -107,7 +107,15 @@ The simplest approach is to treat the new phone as a new device: log in to ADAM 
 
 Very old browsers, or browsers in private or incognito mode, may not support passkeys. Check that you are using an up-to-date browser (Chrome, Edge, Safari, or Firefox), and that you are not in private browsing mode.
 
+!!! warning
+    On these browsers, the **login with passkey** option should be hidden on the login screen, but the menu options to manage passkey authentication may still be present, and might result in user confusion when passkey registration is not able to take place.
+
 On a desktop computer without a fingerprint reader, the browser may offer to use your phone instead - it will show a QR code that you scan with your phone. Your phone's fingerprint or face unlock is then used to confirm the login.
+
+Passkeys are entirely dependent on the web browser and require a compatible web browser that is able to perform its part in the authentication of users. Luckily, this includes most modern web browsers on both desktop and mobile platforms.
+
+!!! warning 
+    One area of incompatibility that we have seen involves mobile apps that link through to ADAM. In many instances, these mobile links open ADAM in an internal application web browser and not the device's native browser. Such "in-app browsers" are inherently handicapped by the mobile operating system for security and privacy reasons and do not support passkey authentication.
 
 ## For Administrators
 
