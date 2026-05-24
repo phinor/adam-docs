@@ -50,7 +50,7 @@ For example:
 
 ## Creating Aggregated Result Calculations
 
-<div class="video-embed"><iframe src="https://www.youtube.com/embed/F1z8DAcEVbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+https://www.youtube.com/embed/F1z8DAcEVbo
 
 To create a new Aggregated Result Calculation, navigate to **Reporting → Aggregated Result Calculations → Manage aggregated result calculations**. A list of already created calculations will be shown to you, if any exist.
 
@@ -129,7 +129,7 @@ You can add as many lines as you like. Each line will appear as a separate colum
 
 ## Using an Aggregated Result Calculation as a Year-To-Date Result
 
-<div class="video-embed"><iframe src="https://www.youtube.com/embed/hZjMpQKarA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+https://www.youtube.com/embed/hZjMpQKarA4
 
 You must have [created your aggregated result calculation](#creating-aggregated-result-calculations) first.
 
@@ -146,7 +146,7 @@ Note that only “whole grade” calculations can be selected to apply to a whol
 The second is to set the calculation in the [mark book](mark-book-administration.md#mark-book-administration). This is done either when each class requires an individual calculation, or the calculation for a specific class must differ, for some reason, from the rest of the grade.
 
 !!! warning
-    *Setting a calculation in the mark book will* ***override*** *any calculation that might be set for the grade in the reporting period settings.*
+    Setting a calculation in the mark book will* ***override*** *any calculation that might be set for the grade in the reporting period settings.
 
 At the bottom right of the mark book screen is a block that shows the currently applicable **Year-to-Date Mark Calculation**. If none has been set in the reporting period settings, then ADAM will simply be duplicating the Term result as a year-to-date result. If one has been set in the reporting period settings, then ADAM will use that one to calculate the results.
 
@@ -157,6 +157,31 @@ Note in the diagram above, the calculation is being pulled from the **grade’s 
 Click on the button to **Change YTD mark calculation**. A list of available calculations will be shown in the dropdown list. Choose the appropriate one and click on **Save calculation**.
 
 ![](assets/screenshots/aggregated-results/aggregated-results-14.png)
+
+### Year-to-Date Results throughout the year
+
+An important consideration is that if you require a Year-to-Date result to be calculated at different points in the year, you will need different calculations to do this.
+
+As an example, a school has the following weighting structure over the four terms:
+
+- Term 1: 10%
+- Term 2: 30%
+- Term 3: 10%
+- Term 4: 50%
+
+The **three** calculations would be set out as follows:
+
+|Term  |Calculation|Notes|
+|------|-----------|-----|
+|Term 1|No calculation|In the first term, the YTD result is simply a duplicate of the term result. If no calculation is provided, ADAM will duplicate this automatically.|
+|Term 2|T1: 10, T2: 30, T3: 0, T4: 0|While this works out to be a 25% / 75% split (total of 40 marks between the two terms, 10 / 40 = 25%, 30 / 40 = 75%), it is important that the remaining terms in the year are set to zero. This is to prevent a reprint of a term 2 report later in the year from now including Term 3 or 4 results.|
+|Term 3|T1: 10, T2: 30, T3: 10, T4: 0|Term 3 is now included, with Term 4 still set at zero for the same reasons as set out above.|
+|Term 4|T1: 10, T2: 30, T3: 10, T4: 50|Term 4 is now included for the final year mark.|
+
+!!! warning
+    This *does* require three calculations. If you are tempted to set up a single calculation for the whole year, be aware that while it will give the appearance that it is working, this is only because the results in the following terms are all still absent and so ADAM ignores them faithfully. The  danger comes in for the reprints of old reports - particularly if updates need to be done and the archived copies are refreshed. Now, a Term 2 report - which uses a calculation that involves Term 3 and Term 4 marks - will show the same YTD result as the Term 4 report because it is using a calculation that *includes* the Term 4 marks.
+
+    These calculations are done outside of the context of the report and so no assumption can be made about which marks should be included and excluded from the report. It is therefore necessary to have a calculation that is entirely unambiguous for the calculation to be done correctly.
 
 ## Using an Aggregated Result Calculation to calculate Term Results
 
@@ -215,17 +240,16 @@ However, if this calculation was applied to the semesterised subjects, it become
 Therefore, many schools will set up separate calculations for the semesterised subjects that can be applied. Generally, a first semester calculation and a second semester calculation will be created. Perhaps they look like this:
 
 -   Semester 1 Calculation
-
--   40% Term 1
--   60% Term 2
--   0% Term 3 - since there won’t be any Term 3 marks for a Semester 1 subject, we weight the term zero.
--   0% Term 4 - since there won’t be any Term 4 marks for a Semester 1 subject, we weight the term zero.
+    -   40% Term 1
+    -   60% Term 2
+    -   0% Term 3 - since there won’t be any Term 3 marks for a Semester 1 subject, we weight the term zero.
+    -   0% Term 4 - since there won’t be any Term 4 marks for a Semester 1 subject, we weight the term zero.
 
 -   Semester 2 Calculation
-
--   0% Term 1 - since there won’t be any Term 1 marks for a Semester 2 subject, we weight the term zero.
--   0% Term 2 - since there won’t be any Term 2 marks for a Semester 2 subject, we weight the term zero.
--   40% Term 3
--   60% Term 4
+    -   0% Term 1 - since there won’t be any Term 1 marks for a Semester 2 subject, we weight the term zero.
+    -   0% Term 2 - since there won’t be any Term 2 marks for a Semester 2 subject, we weight the term zero.
+    -   40% Term 3
+    -   60% Term 4
 
 These calculations can now be assigned to the different terms, [as described above](#method-2-markbook-calculation).
+ 
