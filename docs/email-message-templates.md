@@ -19,7 +19,8 @@ Click on **Save Message** when done.
 
 Where schools have demanding CI requirements, ADAM allows for the customisation and modification of the default email template.
 
-***Kindly note that we do not provide any support for the modification or formatting of email messages. This feature is provided for your use entirely at your risk. In the event that your email template is changed in any way, our only offer of support is to replace this with the default message template.***
+!!! warning
+    Kindly note that we do not provide any support for the modification or formatting of email messages. This feature is provided for your use entirely at your risk. In the event that your email template is changed in any way, our only offer of support is to replace this with the default message template.***
 
 Navigate to **Administration → Site Administration → Manage Email Messages**. Click on **edit** next to the **All Email** template, listed under the **General** heading.
 
@@ -31,7 +32,8 @@ Unlike other message templates, this one does not provide a “rich” text edit
 
 Note carefully the four merge codes. The {body} and {footer} merge codes MUST be included in the template.
 
-*Please be aware that while this allows you to enter and CSS and HTML code you wish, not all CSS styling and HTML is honoured by the email client that will show the email to the final recipient. Additionally, there is no standard as to which email clients honour which CSS directives, meaning that to get an email to display consistently across all email viewers is, in short, impossible. A simple Google search on “email css styling” will reveal as much. You are thus advised to keep your styling general and also to test it across as many email clients as possible to ensure that emails are displayed correctly and are legible in their final destinations.* ***ADAM will not attempt to make any suggestions or corrections and will assume that you know what you’re doing!***
+!!! warning 
+    Please be aware that while this allows you to enter and CSS and HTML code you wish, not all CSS styling and HTML is honoured by the email client that will show the email to the final recipient. Additionally, there is no standard as to which email clients honour which CSS directives, meaning that to get an email to display consistently across all email viewers is, in short, impossible. A simple Google search on “email css styling” will reveal as much. You are thus advised to keep your styling general and also to test it across as many email clients as possible to ensure that emails are displayed correctly and are legible in their final destinations.* ***ADAM will not attempt to make any suggestions or corrections and will assume that you know what you’re doing!***
 
 Alternatively, there are a number of HTML template generators available who will ensure that your emails look as consistent as they can across different email clients. However, these are normally not free and should be used at your own risk.
 
@@ -41,7 +43,8 @@ Finally, if your school employs a graphic designer, they might be able to assist
 
 There are two merge codes for banner images: {bannertop} and {bannerbottom}. These banners should be uploaded in the same place as the [school logos](school-logos.md#school-logos).
 
-*Be aware that these banners are not automatically resized by ADAM. While the banner images can be resized in the CSS of the email (perhaps with a surrounding div tag with fixed dimensions), again be aware that no all email clients will support such modifications and you are advised to upload appropriately sized images that will display correctly for a large number of users without and styling intervention.* ***Again, we emphasise the need to test your emails on a wide variety of email clients and platforms!***
+!!! warning
+    Be aware that these banners are not automatically resized by ADAM. While the banner images can be resized in the CSS of the email (perhaps with a surrounding div tag with fixed dimensions), again be aware that no all email clients will support such modifications and you are advised to upload appropriately sized images that will display correctly for a large number of users without and styling intervention.* ***Again, we emphasise the need to test your emails on a wide variety of email clients and platforms!***
 
 ### Staff Email Signatures
 
