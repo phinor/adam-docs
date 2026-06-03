@@ -48,7 +48,7 @@ Click on the “change” option to adjust the privileges for that group:
 
 ![](assets/screenshots/document-repository/document-repository-03.png)
 
-When done, click on the **Save privileges** button.
+When done, click on the **Save privileges** button.
 
 Note that if you change the privileges for a restricted group, ADAM will show the following warning:
 
@@ -74,15 +74,23 @@ Click on “**add a new upload**” to begin. Consider the example here where a 
 
 Please take note: The “audience” allows us to focus these upload forms to families or pupils who are either applicants to the school or are current pupils.
 
-Note also, that the audience choice (pupils vs families) will dictate which of the [document repository categories](#categories) you can choose from. Choosing a “Family” audience” and a “Pupil” category will result in the documents being uploaded to the “Unfiled” category in the “Family” section of the document repository. The same is true if a “Pupil” audience is selected, but a family category is chosen.
+The audience selects **who** an upload is shown to, based on a person's admissions status: **Applicant** uploads are shown to applicants, and **Current** uploads to current pupils and families.
 
-The person listed under the **Notify** option will be notified when new documents have been uploaded to ADAM for approval. They will *not* appear in the document repository until they have been approved.
+**Applicant** uploads do double duty. They are presented to parents as a step within the [online application](online-applications.md#collecting-supporting-documents-during-the-application) itself; documents uploaded there are staged against the application and filed automatically into the document repository when it is approved, *without* passing through the approval step described below. The *same* upload definitions are also shown in the portal to anyone already in the database whose status is still at the applicant stage — for example, an applicant who has been approved but not yet enrolled — and documents that they upload through the portal **do** go through that approval step. Likewise, **Current** uploads are shown in the portal to current pupils and families.
+
+In other words, only documents collected *during an online application* are filed automatically when the application is approved. Everything uploaded through the portal — whatever the audience — must be [approved by a staff member](#approving-documents) before it appears in the document repository.
+
+Note also, that the audience choice (pupils vs families) will dictate which of the [document repository categories](#categories) you can choose from. Choosing a “Family” audience and a “Pupil” category will result in the documents being uploaded to the “Unfiled” category in the “Family” section of the document repository. The same is true if a “Pupil” audience is selected, but a family category is chosen.
+
+The people listed under the **Notify** option will be notified when new documents have been uploaded to ADAM for approval. They will *not* appear in the document repository until they have been approved.
 
 You can add more upload slots by clicking on the “**add a new file**” at the bottom. You can remove existing slots by clicking on the “**bin**” next to the row.
 
 The “Max Size” column specifies how large the file may be in megabytes. The size here may vary depending on what sort of documents you are asking parents to upload.
 
-Once you are done, click on the **Save File Upload** button.
+The **Required** column lets you mark a document as required rather than optional. This only has an effect for uploads whose audience is set to **Applicant**: when those documents are [collected during the online application](online-applications.md#collecting-supporting-documents-during-the-application), a parent who has not supplied a required document is warned before submitting, although they are still allowed to submit. Required documents do not force or block an upload anywhere else.
+
+Once you are done, click on the **Save File Upload** button.
 
 Look carefully at the example above. Within the one file upload section, we are asking for three documents. This allows parents to see the different upload sections and easily differentiate between them. These details, with some others already existing on the system, may look like this on the parent portal:
 
@@ -98,7 +106,7 @@ ADAM will list the documents that can be uploaded:
 
 ![](assets/screenshots/document-repository/document-repository-09.png)
 
-Parents should click on the **Choose file** button and select the file they wish to upload. They may choose one or more files. Once they have selected all the files they wish to upload, they should click on the **Upload documents** button below the files they have chosen.
+Parents should click on the **Choose file** button and select the file they wish to upload. They may choose one or more files. Once they have selected all the files they wish to upload, they should click on the **Upload documents** button below the files they have chosen.
 
 Note that if they choose a file that is larger than the maximum size allowed, they will receive the following error message:
 
@@ -108,7 +116,7 @@ Once they click on **Okay**, the offending file is shown in red and the button a
 
 ![](assets/screenshots/document-repository/document-repository-11.png)
 
-To clear the file, click on **Choose file** and then either choose another file or click on the **Cancel** button in the file selection window to clear the file:
+To clear the file, click on **Choose file** and then either choose another file or click on the **Cancel** button in the file selection window to clear the file:
 
 ![](assets/screenshots/document-repository/document-repository-12.png)
 
@@ -122,9 +130,9 @@ You may be asked to choose a particular section, particularly if there have been
 
 ![](assets/screenshots/document-repository/document-repository-13.png)
 
-Click on a **File Name** to download it and view it.
+Click on a **File Name** to download it and view it.
 
-Once you have made a decision, you can then click on the **reject** or **accept** option next to the file. If you accept it, the document will automatically appear in the appropriate category within the document repository.
+Once you have made a decision, you can then click on the **reject** or **accept** option next to the file. If you accept it, the document will automatically appear in the appropriate category within the document repository.
 
 If you choose to reject the upload, be aware that it will be deleted with no way of recovering it.
 
@@ -174,11 +182,11 @@ Navigate to **Pupils → Document Repository → Upload documents in bulk** or t
 
 Take special note of the limitations with regards to uploading files. These are server specific and so yours may well be different to the limits shown in the diagram above.
 
--   Choose the appropriate **document repository category** to upload the documents into. It is important that you choose an appropriate category for the document uploads. If you choose a pupil category, only pupil names will be checked when trying to match documents. Similarly, if you choose a staff category, only staff names will be checked.
+-   Choose the appropriate **document repository category** to upload the documents into. It is important that you choose an appropriate category for the document uploads. If you choose a pupil category, only pupil names will be checked when trying to match documents. Similarly, if you choose a staff category, only staff names will be checked.
 -   Add in a **description** for the documents. This description is important because all your documents are currently named to identify which pupil they belong to and so it will not be apparent what their content is.
--   Finally, use the **Choose Documents** button to select the files that you wish to upload. You can select multiple files, subject to the limits set on your server.
+-   Finally, use the **Choose Documents** button to select the files that you wish to upload. You can select multiple files, subject to the limits set on your server.
 
-Once you have provided the information, please click on the **Upload Documents** button to begin the document upload process.
+Once you have provided the information, please click on the **Upload Documents** button to begin the document upload process.
 
 Any documents that are not matched to a person are noted with an “X” next to their name in the confirmation screen:
 
@@ -196,7 +204,7 @@ Sometimes ADAM fails to match documents. This can happen for a number of reasons
 
 ## Removing Documents
 
-Documents can either be removed individually or in bulk. To remove an individual document, navigate to the Document Repository of the person concerned and click on the **delete** option next to the file that you would like removed:
+Documents can either be removed individually or in bulk. To remove an individual document, navigate to the Document Repository of the person concerned and click on the **delete** option next to the file that you would like removed:
 
 ![](assets/screenshots/document-repository/document-repository-17.png)
 
@@ -210,7 +218,7 @@ Choose the category to delete documents from (in the example above, we are delet
 
 Choose a “Start” and “End” time - only documents that were uploaded or created during this time window will be deleted.
 
-Click on the **Next** button to continue.
+Click on the **Next** button to continue.
 
 ADAM will now create a ZIP backup of these files which you can download for backup purposes.
 
@@ -232,7 +240,7 @@ ADAM links every file in the document repository to either a pupil, a family or 
 
 ADAM will show you a list of these documents and invite you to download a ZIP copy of them for backup purposes. If you do not download them here, ADAM will delete them permanently and they will not be recoverable.
 
-Click on the **Remove these files** to delete them.
+Click on the **Remove these files** to delete them.
 
 ## Site Document Repository
 
@@ -242,7 +250,7 @@ Some files are needed for sharing across the site. These can include graphics th
 
 The category is important here:
 
--   The **Site** category is not used, currently, and will only act as a store for site-related information. *You are encouraged not to use this category*.
--   The **Certificates** category is used for PDF certificate templates for electronically generated certificates. Note that these PDFs must be saved in PDF Version 1.5 or earlier for ADAM to understand them.
--   The **Logos** category is used for specifying logos that ADAM should use for display and printing. It also can store email banners and imagery. For more information about school logos, please see the [specific documentation](school-logos.md#school-logos).
--   The **Reporting** category is used for miscellaneous files that ADAM might need for report templates. Note that this may include logos, but those will probably catered for in the **Logos** category above. You will be given specific instructions regarding your report templates.
+-   The **Site** category is not used, currently, and will only act as a store for site-related information. *You are encouraged not to use this category*.
+-   The **Certificates** category is used for PDF certificate templates for electronically generated certificates. Note that these PDFs must be saved in PDF Version 1.5 or earlier for ADAM to understand them.
+-   The **Logos** category is used for specifying logos that ADAM should use for display and printing. It also can store email banners and imagery. For more information about school logos, please see the [specific documentation](school-logos.md#school-logos).
+-   The **Reporting** category is used for miscellaneous files that ADAM might need for report templates. Note that this may include logos, but those will probably catered for in the **Logos** category above. You will be given specific instructions regarding your report templates.

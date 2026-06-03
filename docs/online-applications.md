@@ -8,7 +8,7 @@ ADAM provides a similar data capture form that staff would normally use to add a
 
 All online applicants are manually screened first to ensure data quality and eligibility (e.g. girls into a boys school) and to fix minor errors.
 
-Once the application is approved, parents can then also upload supporting documentation directly into the document repository.
+If the school chooses to collect supporting documents (such as birth certificates or past school reports), parents can upload these as a step *within* the application itself, before it is submitted. When the application is approved, any documents that were uploaded are filed automatically into the document repository against the new pupil and family. Parents can still also upload further documents after approval through the [Parent and Pupil Portal](parent-and-pupil-portal.md#parent-and-pupil-portal).
 
 ### High-level Overview
 
@@ -20,8 +20,8 @@ The school sets up the online application process. This includes:
 
 1.  Customising the [application form](#customising-the-application-form)
 2.  Customising the [application notification emails](#communication-from-the-online-application-module)
-3.  Customising [document upload requirements](document-repository.md#parent-uploads-into-the-document-repository)
-4.  Enabling the [application form and notifications](#setting-up-online-applications) in site settings
+3.  Setting up any [supporting documents to collect during the application](#collecting-supporting-documents-during-the-application) and marking which are required
+4.  Enabling the [application form and notifications](#setting-up-online-applications) in site settings
 
 #### Step 1:
 
@@ -43,7 +43,7 @@ Internally, the school’s designated contacts are notified that a new applicati
 
 #### Step 4:
 
-The application form is reviewed. The school has the option to “Accept” or “Reject” the application form. This does not *enrol* the pupil to the school. If accepted, the pupil and the family - if they don’t already exist - are added to the database as *applicants* and ADAM can then manage them further.
+The application form is reviewed. The school has the option to “Accept” or “Reject” the application form. This does not *enrol* the pupil to the school. If accepted, the pupil and the family - if they don’t already exist - are added to the database as *applicants* and ADAM can then manage them further.
 
 If the application is rejected, the information is not added to the database and will remain in a list of rejected applicants for a period of 30 days before all information related to that application is deleted.
 
@@ -53,9 +53,12 @@ A real world analogy to this process is having a parent fill out a paper form. T
 
 #### Step 5:
 
-At the point that the application is accepted or rejected, ADAM can send out an optional email to notify parents thereof. This email would include further information such as the need to pay a deposit, submit forms and so on.
+At the point that the application is accepted or rejected, ADAM can send out an optional email to notify parents thereof. This email would include further information such as the need to pay a deposit, perhaps.
 
-We strongly recommend enabling and customising the acceptance email, but we strongly recommend not using the rejection email at all. An application can be rejected for hundreds of reasons and it seems improper to send a generic rejection mail out when there are either material or minor issues with the application. In these cases, we strongly suggest that schools respond directly to the applying parents directly to address any issues that might have arisen.
+We strongly recommend enabling and customising the acceptance email, but we strongly recommend not using the rejection email at all.
+
+!!! warning
+    An application can be rejected for hundreds of reasons, and it seems improper to send a generic rejection mail out when there are either material or minor issues with the application. One example is a duplicated application where the parents applied twice: one might accept one and reject another. They would receive confusing messaging and perhaps be unaware that they had a valid application that was being considered. In these cases, we strongly suggest that schools respond directly to the applying parents directly to address any issues that might have arisen.
 
 #### Step 6:
 
@@ -71,13 +74,13 @@ There are a few things that need to be checked first. In the [Site Settings](cha
 
 -   **General / Online Applications:**
 
--   **Online application recipients:** Enter an email address or a comma-separated list of email addresses of people who will be notified when a online application has been received by the school.
--   **Enable online applications:** Ensure that this is set to “Yes” to allow parents access to the application form.
--   **Expire applications (days):** This setting will automatically expire and eventually remove incomplete applications. These are applications that were started, but never submitted to the school for consideration. The default setting is 7 days, but some schools have it as low as 2 or 3. Ask yourself how long it should take a person to complete this information.
+-   **Online application recipients:** Enter an email address or a comma-separated list of email addresses of people who will be notified when a online application has been received by the school.
+-   **Enable online applications:** Ensure that this is set to “Yes” to allow parents access to the application form.
+-   **Expire applications (days):** This setting will automatically expire and eventually remove incomplete applications. These are applications that were started, but never submitted to the school for consideration. The default setting is 7 days, but some schools have it as low as 2 or 3. Ask yourself how long it should take a person to complete this information.
 
 -   **General / Site Settings:**
 
--   **URL for external access:** Ensure that this matches the address that you normally type in to get to ADAM. Note that this setting might not be configurable on some servers and a message will appear saying “Set in the configuration file.” If this is the case, you can carry on!
+-   **URL for external access:** Ensure that this matches the address that you normally type in to get to ADAM. Note that this setting might not be configurable on some servers and a message will appear saying “Set in the configuration file.” If this is the case, you can carry on!
 
 Don’t forget to save the settings when you’ve updated them!
 
@@ -87,8 +90,8 @@ ADAM has four different data capture screens for each of families and pupils. Th
 
 -   Adding a new family/pupil: this is done internally by staff when a new pupil is added.
 -   Editing a family/pupil: this is done internally by staff when information changes.
--   Applying: this is done *externally* by a parent applying for a position at your school.
--   Updating: this is done *externally* by a parent updating their contact details.
+-   Applying: this is done *externally* by a parent applying for a position at your school.
+-   Updating: this is done *externally* by a parent updating their contact details.
 
 Each of these screens can be customised, within reason, to show only the fields that are required.
 
@@ -113,6 +116,18 @@ Anything more than this is, strictly speaking, not required for ADAM’s functio
 
 If you would like to add in fields which are not part of ADAM’s default setup, then please read up about adding [custom fields](database-field-management.md#managing-custom-database-fields).
 
+### Collecting Supporting Documents During the Application
+
+You can ask parents to upload supporting documents — such as a birth certificate, proof of residence, or past school reports — as part of completing their online application, rather than waiting until after the application has been approved. Any documents uploaded this way are held against the application and filed automatically into the document repository when the application is approved.
+
+These document requests are configured in the same place as all other parent and pupil uploads. Navigate to **Administration → Document Repository → Manage parent and pupil uploads**, and create an upload whose **Audience** is set to **Applicant**. Each file you add to that upload becomes a slot that applicants will see during their application.
+
+When configuring the slots, you can mark each one as **Required** or not using the **Required** column. Required documents are shown to parents with a “Required” badge, and if any are still missing when the parent reaches the final step, they are warned about the outstanding documents — but they are still allowed to submit. Optional documents are never enforced.
+
+The full set of options for creating these uploads — audience, document scope (per family or per child), descriptions, maximum file size and the document repository category each document is filed into — is described under [Parent Uploads into the Document Repository](document-repository.md#parent-uploads-into-the-document-repository).
+
+If the school has not configured any **Applicant** uploads, the document step is skipped entirely and parents move straight from their details to the review screen.
+
 ### Finding the address of your Application Form
 
 There are a number of steps that need to be considered before opening up your online application portal. The application portal is easy to find. You can link to it either from your website or by sending parents and email link. The application form can be found by simply adding “apply” to the end of your ADAM address. For example:
@@ -123,24 +138,24 @@ https://demo.adam.co.za**/apply**
 
 During the applicaiton process, ADAM sends an email to applicants in order for them to confirm their email addresses. There are three other emails that can be sent out, but each of these must be enabled before they will be sent:
 
-1.  **Confirmation of receipt of application form:** This email is sent at the end of the application process once they have clicked on the “Submit Application” button at the end of their application procedure.
-2.  **Application approval:** When the school accepts the application by “approving” it, an email can be sent to parents with further steps. This may include instructions for paying a deposit and for [uploading documents into ADAM](document-repository.md#parent-uploads-into-the-document-repository).
-3.  **Application rejection:** When the school rejects an application, an email can be sent to parents with further information. Note that we do not recommend that this feature be used since the email, apart from general customisation below, cannot be tailored to provide reasons why the application was rejected. Given that there are so many reasons that one might decide to reject an application, we strongly recommend personalised communication to parents in this regard.
+1.  **Confirmation of receipt of application form:** This email is sent at the end of the application process once they have clicked on the “Submit Application” button at the end of their application procedure.
+2.  **Application approval:** When the school accepts the application by “approving” it, an email can be sent to parents with further steps. This may include instructions for paying a deposit and for [uploading documents into ADAM](document-repository.md#parent-uploads-into-the-document-repository).
+3.  **Application rejection:** When the school rejects an application, an email can be sent to parents with further information. Note that we do not recommend that this feature be used since the email, apart from general customisation below, cannot be tailored to provide reasons why the application was rejected. Given that there are so many reasons that one might decide to reject an application, we strongly recommend personalised communication to parents in this regard.
 
 The contents of the emails that ADAM sends [can be customised](email-message-templates.md#email-message-templates).
 
 ![](assets/screenshots/online-applications/online-applications-01.png)
 
-In the “**Applications**” section, you will find the emails that are relevant here. The first, **New Application**, is the email confirmation message that is sent is to confirm a parent’s email address. Note that it is crucial that this email contain the “{link}” code for parents to be able to continue the application process.
+In the “**Applications**” section, you will find the emails that are relevant here. The first, **New Application**, is the email confirmation message that is sent is to confirm a parent’s email address. Note that it is crucial that this email contain the “{link}” code for parents to be able to continue the application process.
 
--   The template listed second, **Notify Parent of Application Approval**, is used when the application is approved. Edit this template to give the parent information for appropriate next steps.
+-   The template listed second, **Notify Parent of Application Approval**, is used when the application is approved. Edit this template to give the parent information for appropriate next steps.
 -   The template listed third, **Notify Parent of Application Rejection**, is used when the application is rejected. We strongly discourage the use of this email template and suggest that schools make direct contact with parents.
 -   The fourth template, **Notify Parent of Application Submission**, is sent to parents when they click on the final button to submit their application.
 -   The fifth template, **Notify School of Completed Application**, is used to notify a member of staff at the school that a new application form is waiting for acceptance of rejection.
 
 Because you are customising the template for your school, you do not have to make use of the other codes that are provided.
 
-The three additional emails are enabled via the site settings. Under the **General** tab, look for the section on **Online Applications**. The three settings that control the three emails are shown below:
+The three additional emails are enabled via the site settings. Under the **General** tab, look for the section on **Online Applications**. The three settings that control the three emails are shown below:
 
 ![](assets/screenshots/online-applications/online-applications-02.png)
 
@@ -150,9 +165,9 @@ Note, again, that we **do not recommend that the Rejection email is sent automat
 
 ### Testing the Application Form
 
-Once you have completed the steps outlined above, you are encouraged to complete the application form to ensure that you are happy with its content. To do this, follow the [instructions for parents](#the-application-process-procedure-for-parents) below.
+Once you have completed the steps outlined above, you are encouraged to complete the application form to ensure that you are happy with its content. To do this, follow the [instructions for parents](#the-application-process-procedure-for-parents) below.
 
-Once the application process has been completed, you will need to put on your “staff member” hat in order to finalise the admission. More of this is provided in the [instructions for staff](#application-process-procedure-for-staff) below.
+Once the application process has been completed, you will need to put on your “staff member” hat in order to finalise the admission. More of this is provided in the [instructions for staff](#application-process-procedure-for-staff) below.
 
 ## Online Application Reminder Emails
 
@@ -173,7 +188,7 @@ To enable automatic reminder emails:
 
 1.  Go to **Administration → Site Administration → Edit site settings**
 2.  Navigate to the **Admissions** category
-3.  Set **Enable Reminder Emails** to Yes
+3.  Set **Enable Reminder Emails** to Yes
 
 When disabled, no reminder emails will be sent regardless of other settings.
 
@@ -268,7 +283,7 @@ If a parent saves their application, the incomplete reminder countdown resets. F
 
 ### Email Templates
 
-Two email templates are used for reminder messages. These can be customised in **Administration → Site Admnistration → Edit email templates**, under the **Applications** section.
+Two email templates are used for reminder messages. These can be customised in **Administration → Site Admnistration → Edit email templates**, under the **Applications** section.
 
 #### Reminder: Application Not Started
 
@@ -378,7 +393,7 @@ For most schools, the default settings work well:
 3.  Start reminders early - The first reminder should come before parents might forget about their application. Day 3 is a good starting point.
 4.  Leave room before expiry - Ensure your final reminder gives parents adequate time to complete the application before it expires.
 5.  Customise your templates - Personalise the email templates to match your school's tone and include any specific instructions parents might need.
-6.  Include clear calls to action - Use the {button:Text} merge code to create prominent, clickable buttons that make it easy for parents to access their application.
+6.  Include clear calls to action - Use the {button:Text} merge code to create prominent, clickable buttons that make it easy for parents to access their application.
 
 ### Frequently Asked Questions
 
@@ -442,6 +457,20 @@ There is a button at the bottom of the form to save it.
 
 Parents can return at any time within the 7 day window they are given to continue completing the form. To return to the screen, they simply need to use the email link that was sent to them.
 
+From this point on, a progress bar is shown across the top of each screen so that parents can see where they are in the process. The steps are **Your Details**, **Documents** and **Review & Submit**. The **Documents** step only appears if the school has [asked for supporting documents](#collecting-supporting-documents-during-the-application); if not, parents move straight from their details to the review screen.
+
+### Uploading Supporting Documents
+
+If the school has set up [supporting documents to collect during the application](#collecting-supporting-documents-during-the-application), parents are taken to a **Supporting Documents** screen after saving their details. A counter at the top shows how many of the requested documents have been uploaded so far.
+
+Each requested document is shown with its name, a short description, and a **Required** badge if it must be supplied. Documents that apply to a particular child are repeated for each child and labelled “Child 1”, “Child 2”, and so on.
+
+To upload a document, the parent clicks **Choose file** next to the slot and selects the file. The file is uploaded immediately and the slot shows a tick alongside the file name. If a parent uploads the wrong file, they can click the **remove** option next to it and choose another. If a file is larger than the maximum size set for that slot, it will be rejected and the parent asked to choose a smaller file.
+
+Uploading documents here is not the same as having them approved — the documents are held against the application and only filed into the document repository once a staff member approves the application.
+
+When all the required documents have been uploaded (or the parent chooses to continue without them), they click **Continue to review** to move to the final step.
+
 Once the form is fully complete, they will need to finalise their submission before it will be sent to the school:
 
 ![](assets/screenshots/online-applications/online-applications-09.png)
@@ -450,7 +479,9 @@ They are asked to confirm their contact details and the details of their childre
 
 ![](assets/screenshots/online-applications/online-applications-10.png)
 
-Finally, they click on the **Confirm and Submit Application** button.
+If any documents that were marked as required have not been uploaded, a warning is shown on this screen listing the outstanding documents. This is only a reminder — parents are still able to submit their application without them.
+
+Finally, they click on the **Confirm and Submit Application** button.
 
 ![](assets/screenshots/online-applications/online-applications-11.png)
 
@@ -462,33 +493,37 @@ At this point a notification is sent to the system administrator, or the configu
 
 The content of this email can be [changed in the email templates](email-message-templates.md#email-message-templates). This template is called “Notify School of Completed Application”.
 
-The staff member can now visit **Admissions → Online Applications → Manage Online Applications** within ADAM. Here they will see a list of all the applications and their statuses. This list will include any applications that might be incomplete, might have expired (not completed within the 7 days) or which were rejected.
+The staff member can now visit **Admissions → Online Applications → Manage Online Applications** within ADAM. Here they will see a list of all the applications and their statuses. This list will include any applications that might be incomplete, might have expired (not completed within the 7 days) or which were rejected.
 
 ![](assets/screenshots/online-applications/online-applications-13.png)
 
 Note that applications can be revived from any status here by clicking on the “view” button. However, if an expired application is not viewed and approved within 3 weeks of it being requested by the parents, it will be deleted. Note that this expiry and deletion only happens if the application was never submitted to the school in the final step. However, it is possible for you to pick up an application that has expired (before it is deleted) and perform the enrolment from there.
 
-Click on **view** next to the application you’d like to see. ADAM brings up the same application form that the parents saw.
+Click on **view** next to the application you’d like to see. ADAM brings up the same application form that the parents saw.
 
 ![](assets/screenshots/online-applications/online-applications-14.png)
 
 The admissions officer can make changes to this form, correcting spelling, or making sure that the data conforms to the required standards.
+
+If the school collects [supporting documents during the application](#collecting-supporting-documents-during-the-application), a **Submitted Documents** panel appears on this screen. It lists each document the parent uploaded, who it relates to (the family or a particular child), and the file name. Click on a file name to view or download it. If any required documents were not uploaded, an **Outstanding required documents** warning lists what is missing, so the admissions officer can decide whether to follow these up before approving.
 
 At the bottom of this form are three options:
 
 ![](assets/screenshots/online-applications/online-applications-15.png)
 
 -   **Saving the information** will update the information in the application form, but will not process it. The applicant will remain on the list of submitted application forms. The pupil will not be added to the database.
--   **Approving the Application** will add the pupil and family (if it is new) to the database. The pupil is added as an applicant in the [default admissions status](enrolment-process.md#managing-the-registration-statuses). This does *not* guarantee them a place or add them as a current pupil. *Remember that no communication is sent by ADAM.*
--   **Reject Application** will remove the application from the pile. Typically, applicants are rejected here for stechnical reasons (incomplete form, incorrect grades, incorrect gender for monastic schooling, and so on). Rejection here essentially means tossing the application form into the bin. The pupil and the family will *not* be added to the database.
+-   **Approving the Application** will add the pupil and family (if it is new) to the database. The pupil is added as an applicant in the [default admissions status](enrolment-process.md#managing-the-registration-statuses). This does *not* guarantee them a place or add them as a current pupil. *Remember that no communication is sent by ADAM.* Any documents the parent uploaded during the application are filed automatically into the document repository against the new pupil and family at this point — there is no separate document approval step for them.
+-   **Reject Application** will remove the application from the pile. Typically, applicants are rejected here for stechnical reasons (incomplete form, incorrect grades, incorrect gender for monastic schooling, and so on). Rejection here essentially means tossing the application form into the bin. The pupil and the family will *not* be added to the database.
 
 !!! warning
-    ***Please note well: “Accepting” and “Rejecting” applications refers specifically to the*** ***application form******. This will add these details into your database as an Applicant profile.*** ***No decisions about enrolment into the school have been made*** ***at this point. Enrolment (or not!) will only happen at the very end of the application process.***
+    ***Please note well: “Accepting” and “Rejecting” applications refers specifically to the*** ***application form******. This will add these details into your database as an Applicant profile.*** ***No decisions about enrolment into the school have been made*** ***at this point. Enrolment (or not!) will only happen at the very end of the application process.***
 
 ## Uploading of Supporting Documents
 
-Part of the admissions process is normally to collect documentation for your applicants, including past school reports and a copy of a birth certificate, for example.
+Part of the admissions process is normally to collect documentation for your applicants, including past school reports and a copy of a birth certificate, for example. ADAM can collect these documents from parents in two ways.
 
-ADAM can process uploads from parents, but it does require that their application has been approved first. The reason for this is that ADAM needs to be able to link these to a profile and, before they’ve been accepted, they don’t technically have a profile in the database.
+**During the application.** If you set up [supporting documents to collect during the application](#collecting-supporting-documents-during-the-application), parents upload them as a step within the application itself, before it is submitted. The documents are held against the application and filed automatically into the document repository when the application is approved. This is usually the simplest experience for parents, because they complete everything in one sitting.
 
-Read more about [setting up the document repository](document-repository.md#document-repository) and [allowing parents to upload documents](document-repository.md#parent-uploads-into-the-document-repository).
+**After approval, through the portal.** Parents can also upload documents once their application has been approved, through the [Parent and Pupil Portal](parent-and-pupil-portal.md#parent-and-pupil-portal). Documents uploaded this way must be [approved by a staff member](document-repository.md#approving-documents) before they appear in the document repository. This route is also used for documents that are requested from existing pupils and families rather than at application time.
+
+Read more about [setting up the document repository](document-repository.md#document-repository) and [allowing parents to upload documents](document-repository.md#parent-uploads-into-the-document-repository).
