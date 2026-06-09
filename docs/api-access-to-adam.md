@@ -1073,7 +1073,7 @@ GET /api/dataquery/getsince/<secret>/<timestamp>[/<version>]
 #### Parameters {#dataquerygetsinceget-parameters}
 
 -   `<secret>` is the secret defined for a list. This also determines what type of data and which fields are returned.
--   `<timestamp>` is a [Unix integer timestamp](https://en.wikipedia.org/wiki/Unix_time).
+-   `<timestamp>` is a [Unix integer timestamp](https://en.wikipedia.org/wiki/Unix_time) - the number of non-leap seconds since 1 January 1970, 00:00:00 UTC. See also [Unix Timestamp - Epoch Converter](https://www.unixtimestamp.com/).
 -   `<version>` , if supplied, is the version of the data structure to be returned. See above.
 
 #### Response {#dataquerygetsinceget-response}
