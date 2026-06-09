@@ -16,7 +16,7 @@ The page will reload and the template should now appear in the top part of the p
 
 This video also demonstrates the process:
 
-https://www.youtube.com/embed/XJvKcyLhq9U
+https://www.youtube.com/watch?v=XJvKcyLhq9U
 
 ### Step 2: Check the Report Template Settings
 

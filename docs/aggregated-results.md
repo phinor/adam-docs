@@ -50,7 +50,7 @@ For example:
 
 ## Creating Aggregated Result Calculations
 
-https://www.youtube.com/embed/F1z8DAcEVbo
+https://www.youtube.com/watch?v=F1z8DAcEVbo
 
 To create a new Aggregated Result Calculation, navigate to **Reporting → Aggregated Result Calculations → Manage aggregated result calculations**. A list of already created calculations will be shown to you, if any exist.
 
@@ -129,7 +129,7 @@ You can add as many lines as you like. Each line will appear as a separate colum
 
 ## Using an Aggregated Result Calculation as a Year-To-Date Result
 
-https://www.youtube.com/embed/hZjMpQKarA4
+https://www.youtube.com/watch?v=hZjMpQKarA4
 
 You must have [created your aggregated result calculation](#creating-aggregated-result-calculations) first.
 

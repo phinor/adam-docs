@@ -16,7 +16,7 @@ On the **Classes** tab, under the **Registration Administration** heading, click
 !!! warning
     *If the class does not exist, you will need to create the class first (see “**[Creating a new class](class-management.md#creating-a-new-class)**”).*
 
-<div class="video-embed"><iframe src="https://www.youtube.com/embed/CN8B3F93-_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+https://www.youtube.com/watch?v=CN8B3F93-_M
 
 Once you have chosen a class, you will be presented with two lists – the left showing pupils currently in the class, and the right showing pupils who are not registered for any classes in the subject.
 

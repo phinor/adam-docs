@@ -1,6 +1,6 @@
 # Changing Site Settings
 
-<div class="video-embed"><iframe src="https://www.youtube.com/embed/lnAzBE0iblg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+https://www.youtube.com/watch?v=lnAzBE0iblg
 
 One of the most important aspects of managing the site initially is ensuring that the site settings are correctly configured.
 

@@ -1,6 +1,6 @@
 # Document Repository
 
-<div class="video-embed"><iframe src="https://www.youtube.com/embed/v-7J2HtRrQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+https://www.youtube.com/watch?v=v-7J2HtRrQY
 
 The Document Repository is an online file storage utility that can store files against pupil, staff or family profiles. This makes finding information easier.
 

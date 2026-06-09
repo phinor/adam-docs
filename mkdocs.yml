@@ -6,6 +6,9 @@ use_directory_urls: false
 
 plugins: []
 
+hooks:
+  - hooks/youtube_embed.py
+
 theme:
   name: null
   custom_dir: theme
