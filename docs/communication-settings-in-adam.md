@@ -58,7 +58,43 @@ If you sent the message and received a success notification, it means that ADAM 
 
 If you don’t receive the email from ADAM, you can check your junk mail or spam folder to see if it’s there. If not, you’ll have to get further help from your network support personnel who can investigate further.
 
-Have a look at our section on the [Messaging Centre and Spam mail](messaging-centre.md#the-messaging-centre-and-email-spam).
+Have a look at the section below on [improving email deliverability](#improving-email-deliverability).
+
+## Improving Email Deliverability
+
+When computers see multiple copies of the same email emanating from a single IP address, they generally treat that email more suspiciously than they would any other email destined to only one or two recipients.
+
+End users may find that mail sent via ADAM lands up in their spam or junk mail folders, or may not be delivered at all.
+
+To combat this, it is important that you take precautions to ensure that your mail is properly configured. There are a number of techniques that can help with this.
+
+We recommend using [MXToolbox’s Email Health service](https://www.google.com/url?q=https://mxtoolbox.com/emailhealth&sa=D&source=editors&ust=1778246676282232&usg=AOvVaw3FS2KdqQqWhznpMZfRzVE4) for more information regarding your email domain’s deliverability.
+
+### Sender Framework Policy (SPF) Configuration
+
+One of the simplest techniques to combat spam is to create or update your domain’s SPF record. This record, stored in your domain’s “zone file.” Your ISP may be required to make these changes for you.
+
+The SPF record works by listing the IP addresses of all the servers that are permitted to send email addressed from your email domain. This reduces the chances of recipient email servers from treating your email as spam.
+
+**Setting up an SPF record is strongly recommended.**
+
+For schools that make use of our managed hosting service, we recommend adding our ADAM SPF configuration to your SPF record. Schools that send email via Google’s “Google Workspace for Education” would likely have an SPF record such as:
+
+v=spf1 include:\_spf.google.com ~all
+
+### Domain Keys Identified Mail (DKIM) Signing
+
+DKIM is a robust method which signs individual emails with a cryptographic signature that can be verified online by a receiving email server. Because they are essentially impossible to fake, mail that has a valid DKIM signature is almost certainly not spam mail.
+
+Setting up DKIM signing is different for each service provider. Google’s “Google Workspace for Education” makes this a simple 1-click operation to turn on, but does require further setup in your domain’s “zone file”. Your ISP may be required to make these changes for you.
+
+If DKIM signing is enabled for your domain, it is recommended that email sent via ADAM is relayed to your DKIM-signing SMTP server so that it too can be sent with the benefit of DKIM signatures.
+
+### DMARC Records
+
+Although servers can voluntarily check and decide how to deal with mail based on the results of SPF and DKIM signing, DMARC records provide explicit instructions on how email servers should treat mail that emanates either from untrusted origins or from unsigned sources.
+
+Once again, this does require configuration and setup in your domain’s “zone file”. Your ISP may be required to make these changes for you.
 
 ## Sending email from ADAM if you use Google Workspace
 
@@ -147,7 +183,7 @@ On the **Communications** tab, scroll down to **Email Settings**. Update the fo
 
 ## Troubleshooting Email Delivery Issues in ADAM
 
-Have a look at our section on the [Messaging Centre and Spam mail](messaging-centre.md#the-messaging-centre-and-email-spam).
+Have a look at the section above on [improving email deliverability](#improving-email-deliverability).
 
 ADAM does not deliver mail directly to the recipients. It requires an intermediate server to take over the delivery of the mail. This is done for a number of reasons:
 

@@ -30,7 +30,7 @@ Advanced users might set up filters on their email which may mistakenly file or 
 
 ### Reducing spam mail detection
 
-If you find that mail sent from ADAM is commonly detected as spam or junk mail, there are some proactive steps that your school’s IT department can take to reduce this from happening. Please see the separate section on how to [mitigate against spam problems](messaging-centre.md#the-messaging-centre-and-email-spam).
+If you find that mail sent from ADAM is commonly detected as spam or junk mail, there are some proactive steps that your school’s IT department can take to reduce this from happening. Please see the separate section on how to [improve email deliverability](communication-settings-in-adam.md#improving-email-deliverability).
 
 ## 3) Can the IT department shed any light?
 
