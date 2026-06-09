@@ -1,10 +1,10 @@
 # Promotion Requirements
 
-The promotion decisions are based on ADAM’s Promotion Requirements. The set of criteria for a pupil are based on that pupil’s grade and their qualification. If they are not specifically registered for a qualification, then the default qualification as set in the [Reporting Period Settings](reporting-period-administration.md#reporting-period-administration) is used.
+The promotion decisions are based on ADAM’s Promotion Requirements. The set of criteria for a pupil are based on that pupil’s grade and their qualification. If they are not specifically registered for a qualification, then the default qualification as set in the [Reporting Period Settings](reporting-period-administration.md#reporting-period-administration) is used.
 
 ## Interpreting ADAM’s promotion decisions
 
-In the pupil’s **detailed academic history** page (Navigate to their **Pupil Info** page → **academic records** → **aggregate and promotion history**), ADAM will show the promotion criteria for a term as well as its reasoning for the decision.
+In the pupil’s **detailed academic history** page (Navigate to their **Pupil Info** page → **academic records** → **aggregate and promotion history**), ADAM will show the promotion criteria for a term as well as its reasoning for the decision.
 
 ![](assets/screenshots/promotion-requirements/promotion-requirements-01.png)
 
@@ -18,7 +18,7 @@ ADAM continues to check, in turn, whether the pupil meets all the criteria for e
 
 ADAM awards then pupil the first promotion result for which they meet all the criteria. This promotion result is not included in the list of reasons.
 
-Where a pupil has been listed as failed, note carefully the checks that ADAM lists. This may give you a clue as to why the pupil did not pass. Specifically, make sure that the pupil belongs to the qualification you imagine they should (or “default”) in the [pupil details](pupil-information.md#editing-a-pupil) and that there are appropriate promotion requirements for that grade and qualification.
+Where a pupil has been listed as failed, note carefully the checks that ADAM lists. This may give you a clue as to why the pupil did not pass. Specifically, make sure that the pupil belongs to the qualification you imagine they should (or “default”) in the [pupil details](pupil-information.md#editing-a-pupil) and that there are appropriate promotion requirements for that grade and qualification.
 
 ADAM will only check against promotion criterion that match the pupils’ grade and qualifications.
 
@@ -36,7 +36,7 @@ ADAM will then recalculate the promotion decisions according to the current prom
 
 ## Managing Promotion Decisions
 
-The promotion requirements can be found on the **Administration → Academic Administration** **→  Edit promotion requirements**.
+The promotion requirements can be found on the **Administration → Academic Administration** **→  Edit promotion requirements**.
 
 ![](assets/screenshots/promotion-requirements/promotion-requirements-03.png)
 
@@ -84,12 +84,12 @@ The following screen will appear:
 
 For each decision, enter the following information:
 
--   **Description:** this is an internal description of the promotion decision for your records. It does not get used when publishing or displaying reports.
--   **Priority:** the priority of the promotion decisions is crucial. ADAM tests these promotion decisions in order and will award the first one that works for a pupil. As such, the *hardest* promotion criteria should be set first and the *easiest* ones later.
--   **Grades:** select one or more grades that should consider this promotion criterion. You must have at least one grade, otherwise the promotion criteria will not be used.
--   **Qualifications:** select one or more qualifications that should consider this promotion criterion. You must have at least one qualification selected.
--   **Result:** this is the text that is printed on the report and in mark schedules. It will typically say something like “Promoted” or “Promoted with Bachelor Degree Pass”.
--   **Subject Codes:** the promotion criteria that are added at the bottom of the screen in the **Criteria** box are all based on subject codes. You can tell ADAM whether you want to use the Department subject codes (based on the DBE subject link in the subject settings) or ADAM’s internal subject code. The contents of the **Criteria** box are discussed below.
+-   **Description:** this is an internal description of the promotion decision for your records. It does not get used when publishing or displaying reports.
+-   **Priority:** the priority of the promotion decisions is crucial. ADAM tests these promotion decisions in order and will award the first one that works for a pupil. As such, the *hardest* promotion criteria should be set first and the *easiest* ones later.
+-   **Grades:** select one or more grades that should consider this promotion criterion. You must have at least one grade, otherwise the promotion criteria will not be used.
+-   **Qualifications:** select one or more qualifications that should consider this promotion criterion. You must have at least one qualification selected.
+-   **Result:** this is the text that is printed on the report and in mark schedules. It will typically say something like “Promoted” or “Promoted with Bachelor Degree Pass”.
+-   **Subject Codes:** the promotion criteria that are added at the bottom of the screen in the **Criteria** box are all based on subject codes. You can tell ADAM whether you want to use the Department subject codes (based on the DBE subject link in the subject settings) or ADAM’s internal subject code. The contents of the **Criteria** box are discussed below.
 
 ![](assets/screenshots/promotion-requirements/promotion-requirements-06.png)
 
@@ -110,7 +110,7 @@ In this example, ADAM must find 5 subjects with a minimum mark of 30 from the li
 
 ### Where are the subject codes?
 
-The list of subject codes will appear below the **Criteria** entry box. They will only appear once you have selected the Grades for which the promotion criteria are to apply since then ADAM can determine which of the many subjects you may have are actually used by those grades - this is in an attempt to simplify the process of finding the correct codes.
+The list of subject codes will appear below the **Criteria** entry box. They will only appear once you have selected the Grades for which the promotion criteria are to apply since then ADAM can determine which of the many subjects you may have are actually used by those grades - this is in an attempt to simplify the process of finding the correct codes.
 
 ### What is the difference between an Internal Subject Code and a DBE Subject Code?
 
@@ -338,13 +338,13 @@ Two subjects at 40%:2:40:38,37,42
 
 #### Details to Enter:
 
-**Description:**        Promoted GENERIC
+**Description:**        Promoted GENERIC
 
-**Priority:**        Evaluate after … (whatever is last!)
+**Priority:**        Evaluate after … (whatever is last!)
 
-**Grades:**        Select all grades except those that already have promotion requirements
+**Grades:**        Select all grades except those that already have promotion requirements
 
-**Result:**        Promoted
+**Result:**        Promoted
 
 #### Criteria to copy-and-paste:
 
@@ -354,7 +354,7 @@ Any subject:0:0:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18, 19,20,21,22,23,24,
 
 In each promotion criterion, there are a number lines, each with a different criterion. ADAM must be able to apply ALL of the criteria for the promotion decision to be valid.
 
-If ADAM is not able to match a criterion within the list against a pupil’s marks, a note of the *failed* condition is made and this is shown later as part of the detailed explanation of the promotion decision in the pupils “Detailed Academic History” within their profile on ADAM. A screen shot of this is shown below.
+If ADAM is not able to match a criterion within the list against a pupil’s marks, a note of the *failed* condition is made and this is shown later as part of the detailed explanation of the promotion decision in the pupils “Detailed Academic History” within their profile on ADAM. A screen shot of this is shown below.
 
 ![](assets/screenshots/promotion-requirements/promotion-requirements-07.png)
 

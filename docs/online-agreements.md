@@ -27,7 +27,7 @@ The next two fields determine whether acceptance is required and which responses
 
 However, should the second option be set to “No”, ADAM will also consider the possible responses listed in the next box: “**Acceptable Responses**”. These should be listed one-per-line. There can be as many as you’d like. Note that the first option will appear as a bright blue button (the “default” option) and any others will appear as a light blue button. The first option, therefore, should be the one that you expect most of your audience to choose.
 
-We can now set whether we would like the text of the agreement and the response chosen by the parent to be **emailed** to them.
+We can now set whether we would like the text of the agreement and the response chosen by the parent to be **emailed** to them.
 
 !!! warning
     Note that changing this setting on old agreements will cause users to be emailed a copy, even if they responded a long time ago.
@@ -49,14 +49,14 @@ The “**up**” and “**down**” options will simply change the list ordering
 
 ### Editing Agreements
 
-It is possible to edit an agreement by clicking on the **edit** link next to the agreement name.
+It is possible to edit an agreement by clicking on the **edit** link next to the agreement name.
 
 If you edit the text of an agreement in any way, ADAM will automatically archive the old version of the agreement and create a new version thereof. The old version of the email will be archived and a new version created. The “version” that appears in the list of agreements will also be incremented to help avoid confusion.
 
-**Users who agreed to the old version will be required to agree to the new version.** For this reason, cosmetic changes to the agreement should be kept to a minimum because any changes to the agreement, even cosmetic, will be interpreted by ADAM as a new agreement.
+**Users who agreed to the old version will be required to agree to the new version.** For this reason, cosmetic changes to the agreement should be kept to a minimum because any changes to the agreement, even cosmetic, will be interpreted by ADAM as a new agreement.
 
 !!! warning
-    *Above, we mentioned that changing the email setting on old agreements would cause the agreements to be emailed out. This only holds if the text of the agreement is not changed when the setting is turned on. If the text is changed, then the instruction to email the agreements is saved with the* ***new*** *agreement and not the old one.*
+    *Above, we mentioned that changing the email setting on old agreements would cause the agreements to be emailed out. This only holds if the text of the agreement is not changed when the setting is turned on. If the text is changed, then the instruction to email the agreements is saved with the* ***new*** *agreement and not the old one.*
 
 ### Disabling and Enabling Agreements
 
@@ -75,11 +75,11 @@ The report shows those who have responded as well as their response and, in a se
 
 ## Online Agreements in the Parent Portal
 
-Parents are able to see and manage their online agreements in the Parent Portal. A menu option is provided in the **Family** block.
+Parents are able to see and manage their online agreements in the Parent Portal. A menu option is provided in the **Family** block.
 
 ![](assets/screenshots/online-agreements/online-agreements-08.png)
 
-Clicking on this will show them a lis of all the agreements that they have responded to and the option to **view** or **rescind** their answers to any of the agreements:
+Clicking on this will show them a lis of all the agreements that they have responded to and the option to **view** or **rescind** their answers to any of the agreements:
 
 ![](assets/screenshots/online-agreements/online-agreements-09.png)
 

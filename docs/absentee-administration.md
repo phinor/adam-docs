@@ -21,11 +21,11 @@ Absentee Reasons allow us to categorise the pupil’s absence from school. While
 
 ### Editing the Absentee Reasons
 
-To manage the list of absentee reasons, click on the **Administration** tab and then, under the **Absentee Administration** heading, click on the ocption **Edit the absentee reasons**.
+To manage the list of absentee reasons, click on the **Administration** tab and then, under the **Absentee Administration** heading, click on the ocption **Edit the absentee reasons**.
 
 ![](assets/screenshots/absentee-administration/absentee-administration-01.png)
 
-To add a new absentee reason, click on the link at the top of the page **Add new Absentee Reason**. You can also choose to edit an existing reason by clicking on the **edit** link next to the reason.
+To add a new absentee reason, click on the link at the top of the page **Add new Absentee Reason**. You can also choose to edit an existing reason by clicking on the **edit** link next to the reason.
 
 ![](assets/screenshots/absentee-administration/absentee-administration-02.png)
 
@@ -52,7 +52,7 @@ The default behaviour, when doing a class’s absentees, is for ADAM to show all
 
 A teacher must now mark pupils who are absent as such.
 
-***This can lead to problems, however.*** Consider the scenario where a morning meeting happens during the registration period. The registration teacher would open the class and, seeing that a pupil was not there, mark them as absent. However, the other teacher running the morning meeting would see that the pupil is there and mark them as present. In this instance, if the registration teacher saved their records second, the absent record would be the last one saved and the pupil would be marked as absent for the day.
+***This can lead to problems, however.*** Consider the scenario where a morning meeting happens during the registration period. The registration teacher would open the class and, seeing that a pupil was not there, mark them as absent. However, the other teacher running the morning meeting would see that the pupil is there and mark them as present. In this instance, if the registration teacher saved their records second, the absent record would be the last one saved and the pupil would be marked as absent for the day.
 
 A teacher could select “Unknown” from the list above and this would avoid this problem. Where a pupil is marked as “Unknown”, ADAM will not update the absentee record meaning that the conflicting information above could be avoided.
 
@@ -62,7 +62,7 @@ In the above scenario, two teachers added conflicting information and the person
 
 To avoid this and to force more accountability on teachers when taking absentees, ADAM can default this decision to “Unknown”. If a pupil is marked as “Unknown”, ADAM does not make any attempt to save the absentee record. Such pupils will appear on the “Unaccounted for” list of the [daily absentee report](#daily-absentees).
 
-To change the default absentee reason to “Unknown”, navigate to **Administration → Site Administration → Edit site settings**. In the site settings, click on the **Attendance** tab and, under the **Absentee Recording** subheading, change the value of **Default Absentee Reason** to say “unknown”.
+To change the default absentee reason to “Unknown”, navigate to **Administration → Site Administration → Edit site settings**. In the site settings, click on the **Attendance** tab and, under the **Absentee Recording** subheading, change the value of **Default Absentee Reason** to say “unknown”.
 
 ## Absentee Records
 
@@ -70,9 +70,9 @@ There are a number of ways in which absentees can be recorded, depending on how 
 
 ### Adding Absentees Individually
 
-Navigate to the **Pupils** tab and, under the **Absentee Administration**, click on the option **Add Absentee Records (individually)**.
+Navigate to the **Pupils** tab and, under the **Absentee Administration**, click on the option **Add Absentee Records (individually)**.
 
-Type in the name of the pupil and click on the **Next** button.
+Type in the name of the pupil and click on the **Next** button.
 
 The following screen is shown:
 
@@ -84,9 +84,9 @@ Please note that if you wish to record a single day’s absence in advance of th
 
 If you are entering in absentee records for a large range of dates (perhaps a pupil is on exchange for a month), you can choose to **ignore weekends**. If you set this to “No”, ADAM will also add in absentee records for Saturdays and Sundays which may spoil your absentee statistics.
 
-Choose an **absentee type** (see [Absentee Reasons](#absentee-reasons) for more information). If you wish to enter a note to explain the absence, you may do so in the “Notes” block.
+Choose an **absentee type** (see [Absentee Reasons](#absentee-reasons) for more information). If you wish to enter a note to explain the absence, you may do so in the “Notes” block.
 
-Click on **Record absenteeism** to record this.
+Click on **Record absenteeism** to record this.
 
 Once saved, the new absentee record should appear in the log and summary at the bottom of the page.
 
@@ -106,7 +106,7 @@ You will then see a list of pupils in that class. All pupils are assumed present
 
 ![](assets/screenshots/absentee-administration/absentee-administration-07.png)
 
-Once you have selected the reason for the absent pupils and recorded it, you should click on the **Save changes** button at the bottom of the screen. Any notes will also be recorded.
+Once you have selected the reason for the absent pupils and recorded it, you should click on the **Save changes** button at the bottom of the screen. Any notes will also be recorded.
 
 ### Adding Bulk Absentees
 
@@ -118,11 +118,11 @@ At the bottom of the list are the same fields as when recording [individual abse
 
 ## Absentee Recording Reminders
 
-ADAM is able to send out an email reminder to staff who might not have recorded their absentees by a specific time. Ideally this reminder should be sent before the [Absentee Alerts](#absentee-alerts) to give teachers who have not completed their absentees a chance to do so.
+ADAM is able to send out an email reminder to staff who might not have recorded their absentees by a specific time. Ideally this reminder should be sent before the [Absentee Alerts](#absentee-alerts) to give teachers who have not completed their absentees a chance to do so.
 
 This alert can only be sent to teachers of the “Default Subject” - which is normally a home room or registration class in most schools.
 
-To enable the reminders, navigate to the Site Settings (**Administration → Site Administration → Edit Site Settings**) and, on the **Attendance** tab, scroll down to the **Absentee Alerts** heading.
+To enable the reminders, navigate to the Site Settings (**Administration → Site Administration → Edit Site Settings**) and, on the **Attendance** tab, scroll down to the **Absentee Alerts** heading.
 
 Add in a **Time at which to send absentee recording reminders**.
 
@@ -132,9 +132,9 @@ To stop ADAM sending these reminders, remove the time.
 
 ![](assets/screenshots/absentee-administration/absentee-administration-09.png)
 
-Don’t forget to save the site settings by clicking on the **Save** button at the bottom of the page.
+Don’t forget to save the site settings by clicking on the **Save** button at the bottom of the page.
 
-The content of the email that is sent to staff can be customised by editing the **Absentee Recording Reminder** email in the [Email Message Templates](email-message-templates.md#email-message-templates).
+The content of the email that is sent to staff can be customised by editing the **Absentee Recording Reminder** email in the [Email Message Templates](email-message-templates.md#email-message-templates).
 
 ## Absentee Alerts
 
@@ -154,35 +154,35 @@ The following screen will appear:
 
 ![](assets/screenshots/absentee-administration/absentee-administration-11.png)
 
-The **Absentee alert name** is used as a heading within the mail to indicate which type of alert this is. Examples might be:
+The **Absentee alert name** is used as a heading within the mail to indicate which type of alert this is. Examples might be:
 
 -   Daily absenteeism
 -   Frequent late arrivals
 -   Frequent absenteeism
 
-Choose an **Absentee reason** that ADAM should monitor for this alert. If you were monitoring late arrivals, you would choose “Late” from the list, for example. While you can have multiple alerts set up, each monitoring a different reason, a single alert cannot monitor more than one reason.
+Choose an **Absentee reason** that ADAM should monitor for this alert. If you were monitoring late arrivals, you would choose “Late” from the list, for example. While you can have multiple alerts set up, each monitoring a different reason, a single alert cannot monitor more than one reason.
 
-The **Start** and **End threshold** are used to determine between which two counts the alerts should be sent. For example:
+The **Start** and **End threshold** are used to determine between which two counts the alerts should be sent. For example:
 
 -   Daily absentee alerts would have a start threshold at 1 and an end threshold at 365. Alerts would then be sent each time they were absent.
 -   To alert a pastoral care member of staff if the pupil has been absent exactly 5 times, the start and end threshold would both be set to 5. In this case, an alert would be sent on the occasion of their fifth absence, but not their fourth or sixth.
--   The **Alert period** determines the time frame over which to monitor. This allows for monitoring of absences over a specific time frame. For example, three or more absences in a week could indicate health issues which the school should follow up on. Options are:
+-   The **Alert period** determines the time frame over which to monitor. This allows for monitoring of absences over a specific time frame. For example, three or more absences in a week could indicate health issues which the school should follow up on. Options are:
 
 -   “Total” counts a pupils absentee records over their entire career at the school.
 -   “Year” counts all absentee records for the current calendar year.
--   “Period” which will use the current reporting period to work out which absences are valid. Note that schools that use concurrent reporting periods *may* find unexpected results when using “Period”.
+-   “Period” which will use the current reporting period to work out which absences are valid. Note that schools that use concurrent reporting periods *may* find unexpected results when using “Period”.
 -   “Month” counts all absentee records in the preceding 30 days.
 -   “2 Weeks” counts all absentee records from the last two weeks
 -   “Week” counts all absentee records from the last 7 days.
 
--   ADAM allows specific staff to be emailed for a particular alert. Enter their names in the **Email staff** field. Such staff would typically be a deputy head in charge of pastoral care, the absentee administrator or so on. If a staff member’s name is entered here, they will receive a list of *all* absentees and not simply the pupils that they teach. As a general rule of thumb, names should be entered here as an exception rather than a rule.
+-   ADAM allows specific staff to be emailed for a particular alert. Enter their names in the **Email staff** field. Such staff would typically be a deputy head in charge of pastoral care, the absentee administrator or so on. If a staff member’s name is entered here, they will receive a list of *all* absentees and not simply the pupils that they teach. As a general rule of thumb, names should be entered here as an exception rather than a rule.
 -   In contrast with the setting above, one can choose to simply **Email teachers of these subjects**. Entering in subjects here will email those teachers of pupils who are registered for a class in that subject. Often, all academic subjects will be chosen as well as a Register Class and Grade Head subjects. This ensures that a register teacher will receive confirmation of their absences and a grade head will have a comprehensive view of their grade’s absences for that day.
 
 Once you’ve set up these options, click on **Save Changes**. Your alert is now saved.
 
 ### Managing Existing Alerts
 
-Next to each Absentee Alert is the option to **edit** or **disable** it:
+Next to each Absentee Alert is the option to **edit** or **disable** it:
 
 ![](assets/screenshots/absentee-administration/absentee-administration-12.png)
 
@@ -190,7 +190,7 @@ Next to each Absentee Alert is the option to **edit** or **disable** it:
 
 For absentee alerts to work properly, daily absentees must be completed by a certain time. Most schools will have their absentees captured by 9am. ADAM is then set to automatically send the alerts at this time. The automated sending is necessary to ensure that the alerts are sent.
 
-To change the time, navigate to **Administration → Site Administration → Edit site settings**. On the **Attendance** tab under the **Absentee Alerts** heading within the settings, look for the **Absentee alert times** option and select the time of day to send the alerts.
+To change the time, navigate to **Administration → Site Administration → Edit site settings**. On the **Attendance** tab under the **Absentee Alerts** heading within the settings, look for the **Absentee alert times** option and select the time of day to send the alerts.
 
 It is possible for more than a single time to be chosen and in this instance, ADAM will send out a complete, albeit revised if applicable, list at each time selected.
 
@@ -198,19 +198,19 @@ It is possible for more than a single time to be chosen and in this instance, AD
 
 ADAM sends out the Absentee Alerts from the configured default “From” address (see [Communication Settings](communication-settings-in-adam.md#communication-settings-in-adam)). However, it is often useful for the person in charge of absentees to get responses from teachers who may wish to report errors or changes to the absentees (i.e. a pupil arrives late, yet was marked as absent).
 
-To set a specific reply address, navigate to **Administration → Site Administration → Edit Site Settings** and look on the **Attendance** tab under the **Absentee Alerts** heading for the **Absentee Alert Reply Address**. Add in the email address of the person who should receive replies to the alerts.
+To set a specific reply address, navigate to **Administration → Site Administration → Edit Site Settings** and look on the **Attendance** tab under the **Absentee Alerts** heading for the **Absentee Alert Reply Address**. Add in the email address of the person who should receive replies to the alerts.
 
 ## Absentee Recording Report
 
 ADAM is able to send an emailed report to one or more email addresses with a summary of the absentees for the day. This will include a list of all the default classes, the number of pupils present, absent and unaccounted for.
 
-To enable the reminders, navigate to the Site Settings (**Administration → Site Administration → Edit Site Settings**) and, on the **Cron** tab, scroll down to the **Absentees** heading.
+To enable the reminders, navigate to the Site Settings (**Administration → Site Administration → Edit Site Settings**) and, on the **Cron** tab, scroll down to the **Absentees** heading.
 
-Add in a **Time at which to send absentee recording report**. Also add in one or more email addresses in the **Recipients for absentee recording report** setting.
+Add in a **Time at which to send absentee recording report**. Also add in one or more email addresses in the **Recipients for absentee recording report** setting.
 
 ![](assets/screenshots/absentee-administration/absentee-administration-13.png)
 
-Don’t forget to click on the **Save** button at the bottom of the screen!
+Don’t forget to click on the **Save** button at the bottom of the screen!
 
 The text of the email that is sent can be customised by editing the **Absentee Recording Report** email template in the [Email Message Templates](email-message-templates.md#email-message-templates).
 
@@ -222,13 +222,13 @@ A list of daily absentees can be generated by visiting **Pupils → Absentees �
 
 ![](assets/screenshots/absentee-administration/absentee-administration-14.png)
 
-Change the **Date** to show absentees from another date if required. This should always have today’s date in by default.
+Change the **Date** to show absentees from another date if required. This should always have today’s date in by default.
 
-ADAM allows you to **show unaccounted for pupils** in this list. Depending on one of the configuration options for absentees, ADAM may default pupils as “present” or “unknown” during a class register. Any pupil who has been recorded as “unknown” or who has not been recorded at all will show up as an unaccounted for pupil.
+ADAM allows you to **show unaccounted for pupils** in this list. Depending on one of the configuration options for absentees, ADAM may default pupils as “present” or “unknown” during a class register. Any pupil who has been recorded as “unknown” or who has not been recorded at all will show up as an unaccounted for pupil.
 
-The option to **show enrolment information** will show a list of the default classes (normally “Registration Class”, but your school may have a different default subject chosen). With each class, a count of present, absent, and unaccounted for pupils is shown.
+The option to **show enrolment information** will show a list of the default classes (normally “Registration Class”, but your school may have a different default subject chosen). With each class, a count of present, absent, and unaccounted for pupils is shown.
 
-Lastly, the option to **show recording information** will show which teachers recorded absentees for which classes. Note that this will *not* show recording detail for individuals and only for classes. Schools use this as a monitoring tool to ensure that their teachers have all completed their absentee records for the day.
+Lastly, the option to **show recording information** will show which teachers recorded absentees for which classes. Note that this will *not* show recording detail for individuals and only for classes. Schools use this as a monitoring tool to ensure that their teachers have all completed their absentee records for the day.
 
 ## Absentee SMSs
 
@@ -240,9 +240,9 @@ Navigate to **Pupils → Absentee Administration → Send absentee SMSs**.
 
 ![](assets/screenshots/absentee-administration/absentee-administration-15.png)
 
-Here you can choose which absentee reasons you would like to select to send to. By default, only absentee reasons that are considered **absent** will be selected.
+Here you can choose which absentee reasons you would like to select to send to. By default, only absentee reasons that are considered **absent** will be selected.
 
-You can also choose whether ADAM should send SMS messages to **Unaccounted For pupils** (a list of unaccounted for pupils can be seen on the [Daily Absentee](#daily-absentees) report).
+You can also choose whether ADAM should send SMS messages to **Unaccounted For pupils** (a list of unaccounted for pupils can be seen on the [Daily Absentee](#daily-absentees) report).
 
 ADAM allows you to filter by grade so that if you have a grade that is away (e.g. on camp, or writing exams), you can ignore them from the list of messages to be sent. This will also filter the unaccompanied pupils.
 
@@ -262,13 +262,13 @@ ADAM allows for an terminal to be set up, with a web camera, that allows pupils 
 
 The module can be configured with a start time, two windows (one to record pupils as present, one to record them as late) and then a closing time. Before the start time and after the closing time, any scans will be rejected.
 
-The times for these windows are configured in the **Site Settings** (navigate to **Administration -→ Site Administration → Edit site settings**). On the **Attendance** tab under the **Automatic Registration** heading, have a look at the **Absentees - Automatic Registration** settings:
+The times for these windows are configured in the **Site Settings** (navigate to **Administration -→ Site Administration → Edit site settings**). On the **Attendance** tab under the **Automatic Registration** heading, have a look at the **Absentees - Automatic Registration** settings:
 
 ![](assets/screenshots/absentee-administration/absentee-administration-16.png)
 
 In the example above, no scans will be accepted prior to 06h00. People scanned in between 06h00 and 07h30 will be marked as present. Those scanned between 07h30 and 10h00 will be marked as “Late” - the exact reason may be chosen. After 10h00, no scans will be accepted. This means that pupils who are very late should report to the office, for example, to be processed in.
 
-Once configured, please remember to **Save** the site settings.
+Once configured, please remember to **Save** the site settings.
 
 ### Allowing Pupils to find their QR Code via the Pupil Portal
 

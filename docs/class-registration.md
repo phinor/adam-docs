@@ -11,7 +11,7 @@ The second is used more commonly when a pupil arrives at the school late and nee
 
 ## Registering Pupils into a Class
 
-On the **Classes** tab, under the **Registration Administration** heading, click on **Subject registrations for a class**.
+On the **Classes** tab, under the **Registration Administration** heading, click on **Subject registrations for a class**.
 
 !!! warning
     *If the class does not exist, you will need to create the class first (see “**[Creating a new class](class-management.md#creating-a-new-class)**”).*
@@ -67,7 +67,7 @@ The pupil is now registered in that class for that reporting period.
 
 It may be necessary to change the start and end dates for a pupil’s registration into a class - this can be useful if the back-dated registrations (above) doesn’t solve the problem. This can also be used to remove pupils from a class retroactively.
 
-Call up the pupil’s profile and visit their **classes** section. Scroll down to view the **Class Change Record**.
+Call up the pupil’s profile and visit their **classes** section. Scroll down to view the **Class Change Record**.
 
 ![](assets/screenshots/class-registration/class-registration-10.png)
 
@@ -77,7 +77,7 @@ Next to each entry is a light-grey pencil icon. You can click on the icon to edi
 
 Modify the start date to reflect the required date.
 
-If you wish to specify a **Registration End Date**, ensure that the **Current Registration** setting is set to “No”, otherwise ADAM will discard any date that you enter.
+If you wish to specify a **Registration End Date**, ensure that the **Current Registration** setting is set to “No”, otherwise ADAM will discard any date that you enter.
 
 Once done, click on **Save dates**.
 
@@ -92,19 +92,19 @@ On the “**Classes**” tab, click on “**Subject registrations for a pupil**�
 
 ![](assets/screenshots/class-registration/class-registration-13.png)
 
-Search for the pupil you wish to enrol and click on the **Next >** button.
+Search for the pupil you wish to enrol and click on the **Next >** button.
 
 At list of current classes is shown for the pupil:
 
 ![](assets/screenshots/class-registration/class-registration-14.png)
 
-Next to each subject is an option to **drop** the subject altogether or to **change** classes within the same subject. The distinction is important here. Dropping will remove any marks from open Reporting Periods whereas changing will transfer marks from one class to another.
+Next to each subject is an option to **drop** the subject altogether or to **change** classes within the same subject. The distinction is important here. Dropping will remove any marks from open Reporting Periods whereas changing will transfer marks from one class to another.
 
 At the bottom of the page are options to change multiple classes or enroll the pupil in multiple classes. This will show all the academic subjects available and classes in that grade.
 
 One can also add a single new class if required.
 
-Clicking on **drop** will produce this confirmation page in ADAM:
+Clicking on **drop** will produce this confirmation page in ADAM:
 
 ![](assets/screenshots/class-registration/class-registration-15.png)
 
@@ -114,4 +114,4 @@ If you change a class, ADAM will show other available classes in the same grade 
 
 ![](assets/screenshots/class-registration/class-registration-16.png)
 
-Once the correct class has been chosen, click on **Save the Change** to confirm.
+Once the correct class has been chosen, click on **Save the Change** to confirm.

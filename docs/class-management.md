@@ -42,11 +42,11 @@ The different headings are explained below:
 
 -   **Teaching Venue**
 
--   This is used by the [timetable module](timetable-module.md#timetable-module) for informational purposes only. It is an optional field to fill in.
+-   This is used by the [timetable module](timetable-module.md#timetable-module) for informational purposes only. It is an optional field to fill in.
 
 -   **Reporting Teacher**
 
--   Because a class has been assigned a principal teacher already, this block can be left, most of the time, empty. However, when you wish to have multiple teachers, for example, displayed, you might enter those names here. Note that ADAM will only look at the principal teacher and this block when deciding what name to show next to a class. It does *not* consider the Teaching Assistants.
+-   Because a class has been assigned a principal teacher already, this block can be left, most of the time, empty. However, when you wish to have multiple teachers, for example, displayed, you might enter those names here. Note that ADAM will only look at the principal teacher and this block when deciding what name to show next to a class. It does *not* consider the Teaching Assistants.
 
 -   **Teaching Assistants**
 
@@ -54,7 +54,7 @@ The different headings are explained below:
 
 -   **Language of Teaching and Learning**
 
--   This field is only important if your school is a parallel medium school with different classes being taught in different languages. Select the language that this class is taught in so that ADAM uses the appropriate [subject translation](subjects.md#translating-subject-names) when displaying the details of this class.
+-   This field is only important if your school is a parallel medium school with different classes being taught in different languages. Select the language that this class is taught in so that ADAM uses the appropriate [subject translation](subjects.md#translating-subject-names) when displaying the details of this class.
 
 Once you are happy with the options, click on the “**Add class**” button at the bottom of the page.
 

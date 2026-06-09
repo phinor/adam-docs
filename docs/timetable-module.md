@@ -8,11 +8,11 @@ The timetable module displays current timetables in ADAM for staff and pupils, a
 
 The process of creating a timetable is a reasonably simple one. Usefully, one school can have multiple timetables so it is possible for schools with combined prep and high schools to enter and manage their timetables separately or with different numbers of schedules etc.
 
-Start by visiting the **Administration** tab. Look under the **Timetables** heading and click on **Manage Timetables**
+Start by visiting the **Administration** tab. Look under the **Timetables** heading and click on **Manage Timetables**
 
 ![](assets/screenshots/timetable-module/timetable-module-02.png)
 
-To add a new timetable, click on the **Add new Timetable** option at the top of the page.
+To add a new timetable, click on the **Add new Timetable** option at the top of the page.
 
 ![](assets/screenshots/timetable-module/timetable-module-03.png)
 
@@ -24,7 +24,7 @@ Timetables that have a simple five-day schedule where Mondays are Mondays (which
 
 This difference will be important later when setting up the calendar.
 
-Once you have added your timetable, click on the **days** link that appears next to it:
+Once you have added your timetable, click on the **days** link that appears next to it:
 
 ![](assets/screenshots/timetable-module/timetable-module-04.png)
 
@@ -34,7 +34,7 @@ On the next screen, enter as many days as you need for your timetable:
 
 Initially, only 10 days will be shown. If you require more days, simply save the first ten and then three blank days will be added to the bottom. You can continue to add an indefinite number of days.
 
-Once you are satisfied with your days, you can click on the **Save this Schedule** button at the bottom of the screen.
+Once you are satisfied with your days, you can click on the **Save this Schedule** button at the bottom of the screen.
 
 ## Creating Daily Schedules
 
@@ -46,17 +46,17 @@ You can create as many schedules as you need. Make sure to name them clearly so 
 
 Importantly, at a minimum, a schedule applies to one grade on one day. A single grade cannot have multiple schedules on the same day.
 
-To add a new schedule, navigate to **Administration**, then under the **Timetables** heading, click on **Manage Schedules**.
+To add a new schedule, navigate to **Administration**, then under the **Timetables** heading, click on **Manage Schedules**.
 
 ![](assets/screenshots/timetable-module/timetable-module-07.png)
 
-To add a new schedule click on the **Add new Timetable Schedule** link. To edit one, please click on the corresponding **edit** option.
+To add a new schedule click on the **Add new Timetable Schedule** link. To edit one, please click on the corresponding **edit** option.
 
 ![](assets/screenshots/timetable-module/timetable-module-08.png)
 
 Note that if you disable a schedule that is already in use (either for a day gone by or perhaps a day still coming in your timetable calendar), it will not have any impact. However, it will no longer show as an option for an available schedule when you edit the day in the calendar.
 
-To edit the times for a schedule, click on the corresponding **schedule** link shown on the right in the table of schedules that you’ve created.
+To edit the times for a schedule, click on the corresponding **schedule** link shown on the right in the table of schedules that you’ve created.
 
 ![](assets/screenshots/timetable-module/timetable-module-09.png)
 
@@ -74,11 +74,11 @@ Firstly, note that lesson 1 has no times associated with it. In this schedule, t
 
 The steps above setup the framework for the timetable. It is now time to capture the actual lessons.
 
-From the **Manage Timetables** menu option, click on the **lessons** link next to the corresponding timetable.
+From the **Manage Timetables** menu option, click on the **lessons** link next to the corresponding timetable.
 
 ![](assets/screenshots/timetable-module/timetable-module-12.png)
 
-Next to each grade, ADAM shows the number of classes that have been assigned to lessons. Click on the **edit** link to edit a particular grade’s timetable:
+Next to each grade, ADAM shows the number of classes that have been assigned to lessons. Click on the **edit** link to edit a particular grade’s timetable:
 
 ![](assets/screenshots/timetable-module/timetable-module-13.png)
 
@@ -96,7 +96,7 @@ Once you have selected the correct classes, you need to tick the boxes in the gr
 
 ![](assets/screenshots/timetable-module/timetable-module-16.png)
 
-Please take note that all classes will be **added to existing classes** in the period. If you wish to remove a class, you will need to click on the box at the bottom and all the ticked lessons will be **replaced** with the lessons that you selected at the top.
+Please take note that all classes will be **added to existing classes** in the period. If you wish to remove a class, you will need to click on the box at the bottom and all the ticked lessons will be **replaced** with the lessons that you selected at the top.
 
 By hovering your mouse over one of the numbers in brackets (an indication of how many classes are taught in that lesson, according to this timetable), you will get a notification of which classes are selected.
 
@@ -114,19 +114,19 @@ One can click on the check-boxes individually, but by clicking on the yellow num
 
 Once you have set up each grade with their timetable it is important to tell ADAM which dates correspond with which days in the timetable and, of course, with which schedule.
 
-On the **Administration** tab, under the **Timetables** heading, click on the **Manage calendar** option.
+On the **Administration** tab, under the **Timetables** heading, click on the **Manage calendar** option.
 
 Firstly, it will help to identify the type of timetable that your school uses. These are either “fixed” or “rolling”.
 
--   A **fixed timetable** is one that operates off a week-based cycle. This might be 5 days or 10 days with a “Week A” and “Week B”-type setup. In these cases, Mondays are Mondays (could be Monday A or Monday B, but still a Monday). If a public holiday falls mid-week, the day that it falls on is generally lost as a teaching day, and does not affect the other days around it.
--   A **rolling timetable** is one that operates off a cycle of a number of days. Seven-day cycles are popular, but certainly there are other options. In this case, the school term starts with “Day 1” and proceeds through the timetable until the last day is reached and then they start again with Day 1. Day 1s are not fixed to Mondays. If a public holiday falls mid-week, the timetable carries on around it. If it was Day 2 before the holiday, it will be Day 3 on the day after it.
+-   A **fixed timetable** is one that operates off a week-based cycle. This might be 5 days or 10 days with a “Week A” and “Week B”-type setup. In these cases, Mondays are Mondays (could be Monday A or Monday B, but still a Monday). If a public holiday falls mid-week, the day that it falls on is generally lost as a teaching day, and does not affect the other days around it.
+-   A **rolling timetable** is one that operates off a cycle of a number of days. Seven-day cycles are popular, but certainly there are other options. In this case, the school term starts with “Day 1” and proceeds through the timetable until the last day is reached and then they start again with Day 1. Day 1s are not fixed to Mondays. If a public holiday falls mid-week, the timetable carries on around it. If it was Day 2 before the holiday, it will be Day 3 on the day after it.
 
 #### Adding multiple days to the timetable
 
 Click on the option to add multiple dates to the calendar.
 
 1.  Choose the start and end date for the term.
-2.  **If you use a rolling timetable** please indicate which dates should be excluded from the calendar. This would include public holidays and other schools days that you might not have formal academic teaching on. If you use a **fixed timetable**, please ignore this block. Placing dates in here will cause your fixed timetable to fall out of sync with the working week.
+2.  **If you use a rolling timetable** please indicate which dates should be excluded from the calendar. This would include public holidays and other schools days that you might not have formal academic teaching on. If you use a **fixed timetable**, please ignore this block. Placing dates in here will cause your fixed timetable to fall out of sync with the working week.
 3.  Choose which days of the week are school days. This is likely to be Monday to Friday for most schools. *Note that this does not prevent Saturday school from being scheduled, but if your Saturdays are not a dedicated part of your timetable, they should be excluded here and added later.*
 4.  Select all the cycle days that should apply. Note that if you have more than one timetable active (e.g. prep and high school), you will see all the available days here. It is important to choose days from a single timetable! You can only schedule one timetable at a time. Use the “Ctrl” button on your keyboard to select multiple days.
 5.  Choose which grades you would like to work with. If you have a timetable that involves separate schedules for juniors and seniors (perhaps they have different break times), then you will need to repeat this process for juniors and seniors separately.
@@ -142,7 +142,7 @@ For example, you may wish to schedule Grade 12s separately so that you can take 
 
 #### Editing or Adding Individual Days
 
-It is possible to edit existing days or add individual days to the timetable. To do this, click on the **edit** link next to a day or click on the option to add a single day.
+It is possible to edit existing days or add individual days to the timetable. To do this, click on the **edit** link next to a day or click on the option to add a single day.
 
 ![](assets/screenshots/timetable-module/timetable-module-19.png)
 
@@ -174,7 +174,7 @@ The exact method of adding a calendar to these programs is different and you are
 ![](assets/screenshots/timetable-module/timetable-module-22.png)
 
 !!! warning
-    *Please note that* *[pupils require privileges](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils)* *to view and subscribe to their calendars in the Parent and Pupil Portal.*
+    *Please note that* *[pupils require privileges](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils)* *to view and subscribe to their calendars in the Parent and Pupil Portal.*
 
 ## Resetting a Timetable Link
 
@@ -184,4 +184,4 @@ However, it may happen that you wish to change this random key to prevent someon
 
 ![](assets/screenshots/timetable-module/timetable-module-24.png)
 
-Changing this calendar link will cause *all* existing calendar subscriptions to break. You will need to resubscribe any calendars that you use to the new link.
+Changing this calendar link will cause *all* existing calendar subscriptions to break. You will need to resubscribe any calendars that you use to the new link.

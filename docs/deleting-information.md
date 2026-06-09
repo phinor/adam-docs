@@ -1,6 +1,6 @@
 # Deleting Information
 
-**Deleting information is a dangerous thing.** Once information is deleted it generally cannot be recovered, without significant work to extract that data from backups that exist. If there are no backups, then deleted information is generally unrecoverable.
+**Deleting information is a dangerous thing.** Once information is deleted it generally cannot be recovered, without significant work to extract that data from backups that exist. If there are no backups, then deleted information is generally unrecoverable.
 
 There are some exceptions to this rule. In most places, where ADAM says “delete”, it really means “hide”. However, the following are very important exceptions to this rule.
 
@@ -18,7 +18,7 @@ Often it is difficult to work out which of the duplicate pupils is which. It wil
 
 ### Deleting a pupil
 
-To delete a pupil, on the **Pupils** tab, under the **Pupil Administration** heading, click on the **Delete a pupil** option.
+To delete a pupil, on the **Pupils** tab, under the **Pupil Administration** heading, click on the **Delete a pupil** option.
 
 Search for the pupil’s name and click on **Next**.
 
@@ -33,11 +33,11 @@ If you look below the pupil’s name, you will see that ADAM will display the un
 
 In the list of data that will be deleted, ADAM searches each table in the database to find data that is related to this pupil. Note that the list shown for this pupil indicates a significant amount of activity and it is a sure sign that it would be a mistake deleting this pupil.
 
-A minimal amount of information and activity would be indicated by a single row in the pupils table and perhaps 1 or 2 rows in the pupil\_registration\_statuses table. If a family has been linked to the pupil, then there might also be a row in the family\_relationships table.
+A minimal amount of information and activity would be indicated by a single row in the pupils table and perhaps 1 or 2 rows in the pupil\_registration\_statuses table. If a family has been linked to the pupil, then there might also be a row in the family\_relationships table.
 
 ### Undoing a Deletion
 
-ADAM does make a *backup* of the deleted data. However, this backup cannot be applied by an end user and technical support must be requested to restore these backups.
+ADAM does make a *backup* of the deleted data. However, this backup cannot be applied by an end user and technical support must be requested to restore these backups.
 
 ### Some additional warnings
 
@@ -46,7 +46,7 @@ ADAM does make a *backup* of the deleted data. However, this backup cannot be a
 ## Deleting Families
 
 !!! danger
-    ***Please see the warnings associated with*** ***[deleting other information](#deleting-information)*** ***in ADAM. Chances are you DO NOT want to delete a family since you will lose all record of the family.***
+    ***Please see the warnings associated with*** ***[deleting other information](#deleting-information)*** ***in ADAM. Chances are you DO NOT want to delete a family since you will lose all record of the family.***
 
 When a family has been duplicated or added in error, you will need to delete the family. Deleting a family can be done by navigating to **Families → Family Administration → Delete a family**.
 
@@ -63,25 +63,25 @@ There are very few staff members who will need the ability to delete families. A
 ## Deleting Staff
 
 !!! danger
-    ***It’s  a safe bet that you will almost never need to delete a staff member from the database. If you are hoping to delete a staff member that has left the school, STOP HERE. Deleting a staff member who has left is incorrect!***
+    ***It’s  a safe bet that you will almost never need to delete a staff member from the database. If you are hoping to delete a staff member that has left the school, STOP HERE. Deleting a staff member who has left is incorrect!***
 
 If a staff member leaves your school, you must [terminate their employment](staff-information.md#staff-who-leave-the-school).
 
-As with [deleting other information](#deleting-information) in ADAM, removing a staff member will not only remove all traces of their information, but also any information that is linked to them will also be lost. Removing a staff member will remove any report comments that they have written, any assessments that they have added to ADAM and any marks that they have assigned to pupils.
+As with [deleting other information](#deleting-information) in ADAM, removing a staff member will not only remove all traces of their information, but also any information that is linked to them will also be lost. Removing a staff member will remove any report comments that they have written, any assessments that they have added to ADAM and any marks that they have assigned to pupils.
 
-You may want  to delete a staff member only if they have been added to your database in error. For example, a new staff member might have been added twice to the database. In this instance, one of the records should be deleted.
+You may want  to delete a staff member only if they have been added to your database in error. For example, a new staff member might have been added twice to the database. In this instance, one of the records should be deleted.
 
 ### To Delete a Staff Member
 
 *Before you continue, please note that recovering a staff member deleted in error is not possible by the users and ADAM technical support must be involved. Please also note that this particular service, data recovery, will be invoiced over and above your SLA costs.*
 
-From the **Staff** tab, under the **Staff Administration** heading, click on **Delete a staff member**.
+From the **Staff** tab, under the **Staff Administration** heading, click on **Delete a staff member**.
 
 ![](assets/screenshots/deleting-information/deleting-information-05.png)
 
 Please read the warning carefully. ADAM isn’t joking.
 
-Choose the staff member to remove and click on the **Next** button.
+Choose the staff member to remove and click on the **Next** button.
 
 ADAM will then scour the database to see what impact this operation will have.
 
@@ -93,13 +93,13 @@ For staff members that have been added and have NO information in the database, 
 
 ![](assets/screenshots/deleting-information/deleting-information-07.png)
 
-In this case, there is minimal linked information that will be lost and so it is *probably* safe to continue.
+In this case, there is minimal linked information that will be lost and so it is *probably* safe to continue.
 
-Click on the button to **Delete all <staff member>’s data…** and ADAM will begin the process of deleting the staff member.
+Click on the button to **Delete all <staff member>’s data…** and ADAM will begin the process of deleting the staff member.
 
 ### Undoing a Deletion {#deleting-staff-undoing-a-deletion}
 
-ADAM does make a *backup* of the deleted data. However, this backup cannot be applied by an end user and technical support must be requested to restore these backups.
+ADAM does make a *backup* of the deleted data. However, this backup cannot be applied by an end user and technical support must be requested to restore these backups.
 
 ### Some additional warnings {#deleting-staff-some-additional-warnings}
 

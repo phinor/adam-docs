@@ -24,28 +24,28 @@ You can also tick the box which includes old (deleted) records for editing. In t
 Importing data from CSV can be a great time saver is there is lots of information that needs to be changed. ADAM can import into any of the tables that are mentioned above. To import data, navigate to **Administration → Database Administration → Import Data from CSV**.
 
 !!! warning
-    *Please pay careful attention to the formatting of numbers and dates in Excel before saving and importing the CSV file. Excel will do things such as reformat ID numbers, drop the leading 0s from phone numbers and so on.* ***It is strongly suggested that, once you have downloaded your export, that you make a copy of this file before starting to edit the contents.*** *In this way, you can always revert changes by importing the file you exported.*
+    *Please pay careful attention to the formatting of numbers and dates in Excel before saving and importing the CSV file. Excel will do things such as reformat ID numbers, drop the leading 0s from phone numbers and so on.* ***It is strongly suggested that, once you have downloaded your export, that you make a copy of this file before starting to edit the contents.*** *In this way, you can always revert changes by importing the file you exported.*
 
 ### Performing the Import
 
 !!! warning
-    *Please take special note of the sections below with regards to* *[structing your import file](#structuring-your-import-file)* *and ensuring that your file* *[contains only the information that is strictly needed](#import-only-what-you-need)**.*
+    *Please take special note of the sections below with regards to* *[structing your import file](#structuring-your-import-file)* *and ensuring that your file* *[contains only the information that is strictly needed](#import-only-what-you-need)**.*
 
 Navigage to **Administration → Database Administration → Import Data from CSV**.
 
-Click on the **Choose file** button and select your CSV file from the file selection window. You must tell ADAM what sort of **Data** you are going to import. ADAM will use this information to double check that your CSV file is properly structures, so it is very important that you get this right.
+Click on the **Choose file** button and select your CSV file from the file selection window. You must tell ADAM what sort of **Data** you are going to import. ADAM will use this information to double check that your CSV file is properly structures, so it is very important that you get this right.
 
 ![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-05.png)
 
-ADAM also allows you to manually specify a **Field Delimiter** if you wish, but it is mostly safe to allow ADAM to detect this by looking at the first row in your file which will contain the field names.
+ADAM also allows you to manually specify a **Field Delimiter** if you wish, but it is mostly safe to allow ADAM to detect this by looking at the first row in your file which will contain the field names.
 
 ADAM also asks for the **import operation type**. This tells ADAM what sort of data operations you are expecting to perform. If you are only updating records, then ADAM won’t create any new ones when you do the import. To tell this to ADAM, choose **Allow only record updates**. If you are expecting ADAM to create new records, then you can choose the option to **Allow only record creation**. If your file is a mixture of new and old records (*which is not recommended!*), then you can choose **Allow both updates and creation**.
 
-The option to **Create records for unknown IDs** tells ADAM that you may wish to have records created with specific identifiers. If not, ADAM will assume that a record with an unknown ID should be ignored - this setting is only looked at if you have chosen one of the options above to **create** records as part of your import.
+The option to **Create records for unknown IDs** tells ADAM that you may wish to have records created with specific identifiers. If not, ADAM will assume that a record with an unknown ID should be ignored - this setting is only looked at if you have chosen one of the options above to **create** records as part of your import.
 
 ADAM can perform **Date-based updates**. Here, ADAM looks at the records “modified by” date - which is generally set automatically - and will not update any records that have been modified since a certain time which is specified in the **Cut-off Date**. This functionality is very specific and will probably not need to be used ever.
 
-When you are ready,  click on the **Next** button for ADAM to perform the import. ADAM will confirm the number of records that have been updated and/or imported into the database.
+When you are ready,  click on the **Next** button for ADAM to perform the import. ADAM will confirm the number of records that have been updated and/or imported into the database.
 
 ### Structuring your import file
 
@@ -55,7 +55,7 @@ The first row of the import file must contain field names so that ADAM knows whi
 
 The first column of the import file must contain an “id” field so that ADAM knows which record you are updating. For example, if you are updating a pupil record, the first column will be pupil\_id.
 
-More information [about the fields can be found below](#field-information). It is often a good idea to start with an [export of the records](#csv-export) that you want to update. The export will allow you to start with the correct structure and the correct field names.
+More information [about the fields can be found below](#field-information). It is often a good idea to start with an [export of the records](#csv-export) that you want to update. The export will allow you to start with the correct structure and the correct field names.
 
 ### Import only what you need
 
@@ -117,7 +117,7 @@ When you save the file, use the “Save As” option and change the type to “C
 
 ADAM uses this first column to determine whether it should update an existing record (with the matching internal identifier) or create a new one.
 
-These identifiers **must not** be changed. Changing a value inthe first column may result in loss of information. The internal identifier cannot be changed, regardless of whether it is a pupil, parent or staff member.
+These identifiers **must not** be changed. Changing a value inthe first column may result in loss of information. The internal identifier cannot be changed, regardless of whether it is a pupil, parent or staff member.
 
 If the identifier column is left blank, ADAM will assume that the record is a new on and will add the new record to the database. For this reason, import files that contain new information should only ever be imported **once**. To make further changes to the data after an import, you will need to do an export first which will contain the new identifiers for the records you’ve just added.
 
@@ -130,7 +130,7 @@ Omitting a column will not remove any data. By omitting the column from your imp
 
 You can also savely leave out any rows that you don’t want to change. If you only need to update information about the Grade 8s, for example, you can filter and delete all other pupils from the CSV import file.
 
-It is advisable to remove any columns (except the first “id” column) that you are not making changes to in order to minimise the amount of damage that can be caused by an import. For more information on this, see [Excel and CSV Imports](#excel-and-csv-imports) to learn how Excel can “damage” your data in its quest to be “clever”.
+It is advisable to remove any columns (except the first “id” column) that you are not making changes to in order to minimise the amount of damage that can be caused by an import. For more information on this, see [Excel and CSV Imports](#excel-and-csv-imports) to learn how Excel can “damage” your data in its quest to be “clever”.
 
 ## Excel and CSV Imports
 
@@ -148,7 +148,7 @@ Mostly, we advise users to delete these columns from the import file and avoid t
 
 ![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-12.png)
 
--    Browse to find ADAM’s export file and click “Open”.
+-    Browse to find ADAM’s export file and click “Open”.
 -   Excel will now run you through the “Text Import Wizard”. Firstly, ensure that the “Delimited” option is chosen and that the “My data has headers” option is ticked.
 
 ![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-13.png)
@@ -187,16 +187,16 @@ Finally, click on “OK”. The dates should now show the new formatting:
 
 One of the most confusing thing when importing data into the database, particularly when adding new pupils, are three very important dates:
 
--   **p****upil\_entry** - the date that a pupil arrived or plans to arrive at the school. This is normally set to January 1st of the year that they arrived or intend to arrive. For future applicants, using the 1st of January does have many benefits.
--   **p****upil\_exit** - only needs to be set if the pupil has LEFT the school. This is normally set to December 31st of the year that they left.
+-   **p****upil\_entry** - the date that a pupil arrived or plans to arrive at the school. This is normally set to January 1st of the year that they arrived or intend to arrive. For future applicants, using the 1st of January does have many benefits.
+-   **p****upil\_exit** - only needs to be set if the pupil has LEFT the school. This is normally set to December 31st of the year that they left.
 -   **p****upil\_final** \- this field needs to contain the year that the pupil was in Grade 12 or will be in Grade 12. If your school only offers up to Grade 7, for example, this still needs to be set to their Grade 12 year. It is the *pupil’s* final school year, not simply the last year that they were at your school.
 
 If any of these fields are omitted or pose problems to the enrolment procedure, ADAM will make the following assumptions, in the following order (since some omissions will have run-on implications!)
 
 1.  If a **pupil\_entry** date is omitted, ADAM will assume that the pupils will start on January 1 of the next calendar year. Note that if the server is in roll-over mode when the import is done, it assumes that the year is already the next year and thus the pupils will be assumed to arrive in the year following that one.
 2.  If a pupil’s matric year (**pupil\_final**) is omitted, ADAM will calculate a matric year based on the assumption that they are entering the school in the lowest grade that the school offers.
-3.  If a **pupil\_exit** date is omitted *and* the pupil’s current grade indicates that they are no longer eligible to be in the school, ADAM will calculate the exit date to be on 31 December of the year that they were in the school’s highest offered grade.
-4.  Finally, a check is done to ensure that the pupil **does not enrol into the school into a grade that is not offered** by the school (e.g. the pupil is currently in Grade 1, has an entry date for next year (into Grade 2), but the school only starts from Grade 8). In this case, the enrolment date is adjusted to reflect the date that the pupil would be in Grade 8.
+3.  If a **pupil\_exit** date is omitted *and* the pupil’s current grade indicates that they are no longer eligible to be in the school, ADAM will calculate the exit date to be on 31 December of the year that they were in the school’s highest offered grade.
+4.  Finally, a check is done to ensure that the pupil **does not enrol into the school into a grade that is not offered** by the school (e.g. the pupil is currently in Grade 1, has an entry date for next year (into Grade 2), but the school only starts from Grade 8). In this case, the enrolment date is adjusted to reflect the date that the pupil would be in Grade 8.
 
 Without fully understanding these implications, ADAM’s import procedure may seem unpredictable and erratic!
 
@@ -264,7 +264,7 @@ In each case, we indicate which fields are required and which are optional. Thes
 
 Absentee data can be imported via CSV. The following fields must be provided in the import file:
 
--   One of pupil\_id or pupil\_admin. If ADAM is unable to identify a unique pupil record from the pupil\_admin field, the record will be ignored.
+-   One of pupil\_id or pupil\_admin. If ADAM is unable to identify a unique pupil record from the pupil\_admin field, the record will be ignored.
 -   date: the date of the pupil’s absence. This should be given in ISO format: “YYYY-MM-DD”
 -   reason\_id: the reason identifier. See the note below on finding the reason\_id values as they exist in ADAM.
 -   absent\_notes: This is an optional field and is not required. It is used to provide further context for the absence.
@@ -275,6 +275,6 @@ The following is an example of a file used for import:
 
 ### Finding the reason\_id values
 
-Navigate to **Administration → Absentee Administration → Edit the absentee reasons**. Click on the **edit** option next to each and notice the address bar end with the text &id=.... The digits that are shown there represent the id number of the reason. This is illustrated below, where the reason\_id value is set to 1.
+Navigate to **Administration → Absentee Administration → Edit the absentee reasons**. Click on the **edit** option next to each and notice the address bar end with the text &id=.... The digits that are shown there represent the id number of the reason. This is illustrated below, where the reason\_id value is set to 1.
 
 ![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-21.png)

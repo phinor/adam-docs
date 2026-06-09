@@ -8,7 +8,7 @@ A Medical Examination is conducted by a medical professional and several values 
 
 ### Viewing a Pupil’s Medical Examinations
 
-To view a history of a pupil’s medical examinations, visit the pupil’s profile, click on **medical records** and in the list of tabs below, choose **Medical Exams**.
+To view a history of a pupil’s medical examinations, visit the pupil’s profile, click on **medical records** and in the list of tabs below, choose **Medical Exams**.
 
 ![](assets/screenshots/medical-module/medical-module-01.png)
 
@@ -32,15 +32,15 @@ When adding a new Medical Examination Type or editing an existing one, ADAM will
 
 ![](assets/screenshots/medical-module/medical-module-03.png)
 
-The **Exam Type Description** will be used as a heading to describe the reason for the Medical Examination.
+The **Exam Type Description** will be used as a heading to describe the reason for the Medical Examination.
 
 Medical Examinations can be optionally **completed on the parents’ and pupils’ portal**. Parents and pupils have the option, [based on their privileges](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils), to complete medical examinations. These can be used to record the results screening examinations that are required to be completed by schools during the Covid-19 pandemic. Note that these instructions appear exactly as you capture them [on the portal screen](#parents-and-pupils-completing-medical-examinations).
 
 *Note that the medical examinations are completed from a pupil’s perspective and are recorded against the pupil’s profile. It is not possible to record a medical examination for a parent.*
 
-*Note that “out of the box”, parents and pupils do* not *have privileges to complete medical examinations. You may wish to differentiate based on primary school (allow only parents to complete) or high school (allow parents and pupils to complete). It is not possible to make this differentiation per medical examinations - one setting applies to all medical examinations.*
+*Note that “out of the box”, parents and pupils do* not *have privileges to complete medical examinations. You may wish to differentiate based on primary school (allow only parents to complete) or high school (allow parents and pupils to complete). It is not possible to make this differentiation per medical examinations - one setting applies to all medical examinations.*
 
-Additionally, **medical examination summaries** can be shown on the Pupil and Parent portal by selecting “Yes” to this question.
+Additionally, **medical examination summaries** can be shown on the Pupil and Parent portal by selecting “Yes” to this question.
 
 !!! warning
     *The* *privilege group for the pupils must also be assigned the privileges to view medical examination summaries.*
@@ -53,7 +53,7 @@ A list of metrics in the test, and those available for use, are shown in two tab
 
 ![](assets/screenshots/medical-module/medical-module-05.png)
 
-One can **add** or **remove** metrics. The order can be changed using the **up** and **down** options next to those metrics that appear in the test. This order can be adjusted for easier data capture.
+One can **add** or **remove** metrics. The order can be changed using the **up** and **down** options next to those metrics that appear in the test. This order can be adjusted for easier data capture.
 
 The changes are saved as you make them. Changing the fields available in a test does not change previously conducted tests and no data will be lost by removing a metric from a test. This might happen if you decide not to record this any more. All data that was previously recorded will remain on the system.
 
@@ -71,13 +71,13 @@ Here you can add (using the button at the top) new matrics and edit existing one
 
 ### Adding a new Metric
 
-To add a new metric, click on the **Add a new Medical Examination Metric** button  that appears at the top of the table.
+To add a new metric, click on the **Add a new Medical Examination Metric** button  that appears at the top of the table.
 
 ![](assets/screenshots/medical-module/medical-module-07.png)
 
-The **Description** is the name of the field and appears next to the input box. On the list of metrics that appeared above, these are listed in the left-hand column.
+The **Description** is the name of the field and appears next to the input box. On the list of metrics that appeared above, these are listed in the left-hand column.
 
-The **Unit** field will be displayed next to the input box. Examples of this are things like “cm”, “°C” or “mmHg”. This is to aid the data capturer in guiding them to choose the correct information.
+The **Unit** field will be displayed next to the input box. Examples of this are things like “cm”, “°C” or “mmHg”. This is to aid the data capturer in guiding them to choose the correct information.
 
 For numerical data, you can choose to have ADAM show a **graph** of the information on the pupil’s medical information page. This should be saved for the most important information. It can be changed later. You might want to have temperature displayed while you are conducting dailing health monitoring checks but then not displayed after that. In this case, you would need to edit this metric again and change the “Graph Type” to “None”.
 
@@ -87,15 +87,15 @@ If you are displaying a graph, ADAM can also limit the number of data points tha
 
 You can specify what **type** of information you are collecting. Options here are:
 
--   **Text****:** Use this for a note or a non-standard measurement like (e.g. vision “6/6” or “needs glasses”).
--   **Whole number:** Typically used for counting things or where smaller measurements are impractical. Often used for height measurements in cm, where the margin of error doesn’t make it worth measuring more accurately.
--   **Decimal number:** Used for measurements. The measurements will only be accurate to 1 decimal place. Often used for temperature measurements.
--   **Choice:** This provides the user with selectable choices. If you choose this option, enter in the choices you would like the user to choose from in the **Options for Choices** text box at the bottom of the list. Note that that depending on the number of options the user must choose from, this will either display visible “radio” options (if 5 or fewer choices) or a dropdown list (if more than 5 choices).
+-   **Text****:** Use this for a note or a non-standard measurement like (e.g. vision “6/6” or “needs glasses”).
+-   **Whole number:** Typically used for counting things or where smaller measurements are impractical. Often used for height measurements in cm, where the margin of error doesn’t make it worth measuring more accurately.
+-   **Decimal number:** Used for measurements. The measurements will only be accurate to 1 decimal place. Often used for temperature measurements.
+-   **Choice:** This provides the user with selectable choices. If you choose this option, enter in the choices you would like the user to choose from in the **Options for Choices** text box at the bottom of the list. Note that that depending on the number of options the user must choose from, this will either display visible “radio” options (if 5 or fewer choices) or a dropdown list (if more than 5 choices).
 -   An option to “choose more than one option” is not available.
 
-The **Default Value** of the field will be entered or selected automatically. Use this with caution since it might be easy to submit the medical exam accidentally. A person viewing these results later won’t know if the option is genuine or whether it was entered in error.
+The **Default Value** of the field will be entered or selected automatically. Use this with caution since it might be easy to submit the medical exam accidentally. A person viewing these results later won’t know if the option is genuine or whether it was entered in error.
 
-Finally, the **Options for Choices** text box allows the different options to be used in the **Choice** option above. Adding a “Yes / No” choice, for example, would require you to enter the data as shown below:
+Finally, the **Options for Choices** text box allows the different options to be used in the **Choice** option above. Adding a “Yes / No” choice, for example, would require you to enter the data as shown below:
 
 ![](assets/screenshots/medical-module/medical-module-08.png)
 
@@ -109,21 +109,21 @@ For the purposes of health screening, it may be desirable to have parents or pup
 
 *Where schools would like to provide instructions for parents to complete the medical examination, the instructions below should serve as a starting point and not be relied on to provide the specific information required for the medical exam as set up by the school.*
 
-Parents and pupils with the privilege to complete medical examinations will see a **Medical Records** heading in their portal menus:
+Parents and pupils with the privilege to complete medical examinations will see a **Medical Records** heading in their portal menus:
 
 ![](assets/screenshots/medical-module/medical-module-09.png)
 
 Once they select this option, one of three possible screens will appear.
 
-If there are **no medical examinations** that have been [set to display on the portal](#managing-the-medical-examinations), then they will see an error message to this effect: “There are no medical examinations available for completion.”
+If there are **no medical examinations** that have been [set to display on the portal](#managing-the-medical-examinations), then they will see an error message to this effect: “There are no medical examinations available for completion.”
 
 ![](assets/screenshots/medical-module/medical-module-10.png)
 
-If there are **two or more medical examinations** available, they will need to select which medical examination they wish to record. They must select the appropriate examination from the drop-down list and click on the **Next** button.
+If there are **two or more medical examinations** available, they will need to select which medical examination they wish to record. They must select the appropriate examination from the drop-down list and click on the **Next** button.
 
 ![](assets/screenshots/medical-module/medical-module-11.png)
 
-The third possibility is that there is **only one medical examination** available. In this instance, they will taken immediately to a screen to collect the results.
+The third possibility is that there is **only one medical examination** available. In this instance, they will taken immediately to a screen to collect the results.
 
 The following image shows an example of a medical examination that might be used for the Covid-19 pandemic information collection process. Please understand that this is provided as an illustrative example only and is not meant to reflect an actual Covid-19 pandemic screening test as might be required.
 
@@ -133,7 +133,7 @@ Underneath the heading for the medical examination, ADAM displays the time that 
 
 The instructions for parents, as defined when editing the medical examination’s details are then shown. The instructions shown above are example instructions only and are the same as those reflected in the editing screenshot above.
 
-Note that all questions, except for the **Other notes**, require a response before the user will be permitted to click on the **Save Examination** button at the bottom of the form and submit their readings.
+Note that all questions, except for the **Other notes**, require a response before the user will be permitted to click on the **Save Examination** button at the bottom of the form and submit their readings.
 
 Once submitted, ADAM will display a message confirming that the results have been saved:
 
@@ -143,4 +143,4 @@ Once submitted, ADAM will display a message confirming that the results have bee
 
 @todo - the off sports alerts were built around similar code to the [absentee alerts](absentee-administration.md#absentee-alerts). Please look there for inspiration in the meantime. To add an offsports alert, head to **Administration → Medical Module → Edit Off Sports Alerts**.
 
-The timing for the Off Sports Alerts can be set in the **Site Settings** under the **Cron** tab.
+The timing for the Off Sports Alerts can be set in the **Site Settings** under the **Cron** tab.

@@ -27,7 +27,7 @@ You can now choose the classes that you would like to message by ticking the box
 
 ![](assets/screenshots/messaging-centre/messaging-centre-04.png)
 
-Once selected, click on the **Next** button that appears at the bottom of the page.
+Once selected, click on the **Next** button that appears at the bottom of the page.
 
 ADAM will now show you a list of pupils in the classes you selected and any staff that may be associated with those classes (either as teachers or teaching assistants):
 
@@ -43,7 +43,7 @@ There are three tick-boxes in the table header. You can click on these to send t
 
 Individual pupils, parents or staff members can either be added or removed from the recipient list by ticking or unticking the boxes next to their names.
 
-At the top of the table is a **Next** button to click on when you are happy with your list of recipients.
+At the top of the table is a **Next** button to click on when you are happy with your list of recipients.
 
 ADAM now shows you the messaging centre composer. This works in a very similar way to your web-based email systems.
 
@@ -51,15 +51,15 @@ The image below shows all options that are available on the Messaging Centre and
 
 ![](assets/screenshots/messaging-centre/messaging-centre-08.png)
 
--   **Send email on behalf of:** ADAM will normally show your own name and email address as the sender of any messages from the messaging centre. However, where schools delegate the sending of messages to a central person, it is often useful for responses to be directed to the person who asked for the message to be sent rather than the person who actually sends it.
--   **Message Subject:** Enter the subject of your message here. This field is not visible for SMS messages.
--   **Message:** You can type in your message here. Please see the section below on [Composing your Message](#composing-your-message).
--   **Disable rich-text editor:** This will almost never be required, but some schools make use of specific design tools to format their emails in specific ways can use this to paste in a generated HTML email body that ADAM won’t attempt to fiddle with.
--   **Mark as confidential:** When notifications are sent out to administrators that a message has been sent from the messaging centre, ADAM normally includes the message body. However, when sending sensitive information via email or SMS, it can be useful to have the contents of the message not included. Such messages will also be restricted for viewing in the messaging centre logs.
--   **Delay sending until at least:** ADAM will accept your message and add it to the queue, but will not start processing that batch until the specified time has passed. Note that this will not be an exact time, and not all messages will be processed at once - and depending on the size and volume of messages, may take some time to process after that. But when sending embargoed information to your school community, this can be a useful tool.
--   **Attachments:** You can attach a number of files to your email for adam to send. Along side each is a drop-down list of options. If you are attaching an image file (e.g. JPG, PNG, GIF), ADAM will allow that to be embedded directly into the message body either at the top, bottom, or where it finds the code {embed} written in your email. Where you have multiple embedded images, they are placed in the order that you add them here. Note that for embedded images, ADAM does not attempt any resizing and so your original images that you use should take this into account. If you are unsure, use a 600px width as the maximum.
+-   **Send email on behalf of:** ADAM will normally show your own name and email address as the sender of any messages from the messaging centre. However, where schools delegate the sending of messages to a central person, it is often useful for responses to be directed to the person who asked for the message to be sent rather than the person who actually sends it.
+-   **Message Subject:** Enter the subject of your message here. This field is not visible for SMS messages.
+-   **Message:** You can type in your message here. Please see the section below on [Composing your Message](#composing-your-message).
+-   **Disable rich-text editor:** This will almost never be required, but some schools make use of specific design tools to format their emails in specific ways can use this to paste in a generated HTML email body that ADAM won’t attempt to fiddle with.
+-   **Mark as confidential:** When notifications are sent out to administrators that a message has been sent from the messaging centre, ADAM normally includes the message body. However, when sending sensitive information via email or SMS, it can be useful to have the contents of the message not included. Such messages will also be restricted for viewing in the messaging centre logs.
+-   **Delay sending until at least:** ADAM will accept your message and add it to the queue, but will not start processing that batch until the specified time has passed. Note that this will not be an exact time, and not all messages will be processed at once - and depending on the size and volume of messages, may take some time to process after that. But when sending embargoed information to your school community, this can be a useful tool.
+-   **Attachments:** You can attach a number of files to your email for adam to send. Along side each is a drop-down list of options. If you are attaching an image file (e.g. JPG, PNG, GIF), ADAM will allow that to be embedded directly into the message body either at the top, bottom, or where it finds the code {embed} written in your email. Where you have multiple embedded images, they are placed in the order that you add them here. Note that for embedded images, ADAM does not attempt any resizing and so your original images that you use should take this into account. If you are unsure, use a 600px width as the maximum.
 
-Once you have composed your message, click on the **Send** button to have ADAM queue the message for you.
+Once you have composed your message, click on the **Send** button to have ADAM queue the message for you.
 
 !!! warning
     Note that regardless of your selected delivery time, all messages are queued with a minimum of 5 minutes lead time before they are processed.
@@ -78,7 +78,7 @@ By default, ADAM includes the greeting “Dear ^n” as part of its template. Th
 
 ### Merge Codes
 
-Below the email window is a list of merge codes that can be used in your message. These are the same fields that you can call on when you draw up a [scratch list](scratch-lists.md#scratch-lists) of pupils.
+Below the email window is a list of merge codes that can be used in your message. These are the same fields that you can call on when you draw up a [scratch list](scratch-lists.md#scratch-lists) of pupils.
 
 ![](assets/screenshots/messaging-centre/messaging-centre-10.png)
 
@@ -117,7 +117,7 @@ Before a user can send messages from the messaging centre, they need a few privi
 
 ### Step 1:
 
-The first privilege is a general one that is applied to the whole privilege group. They require, at a minimum, “Can make use of the messaginge centre (*messaging\_centre*)”. This is found on the **Messaging** tab, and under the heading **E-mail**. For more information on changing staff privileges, please see [Security Administration for Staff](security-administration-for-staff.md#security-administration-for-staff) elsewhere in this documentation.
+The first privilege is a general one that is applied to the whole privilege group. They require, at a minimum, “Can make use of the messaginge centre (*messaging\_centre*)”. This is found on the **Messaging** tab, and under the heading **E-mail**. For more information on changing staff privileges, please see [Security Administration for Staff](security-administration-for-staff.md#security-administration-for-staff) elsewhere in this documentation.
 
 ### Step 2:
 
@@ -131,19 +131,19 @@ If you wish to set privileges for other messaging modules, you will need to enab
 
 Here you can specify which groups can use which modules to send to which audiences.
 
--   **Staff:** This allows the user to send messages to any staff members.
--   **Class Pupils:** This allows the user to send messages to any pupils who belong to any of their classes (i.e. they can send messages only if they “teach” the pupil).
--   **All Pupils:** This allows the user to send messages to all pupils in the school. This privilege is also needed to send messages to alumni and the pupil applicants.
+-   **Staff:** This allows the user to send messages to any staff members.
+-   **Class Pupils:** This allows the user to send messages to any pupils who belong to any of their classes (i.e. they can send messages only if they “teach” the pupil).
+-   **All Pupils:** This allows the user to send messages to all pupils in the school. This privilege is also needed to send messages to alumni and the pupil applicants.
 -   **Class Families:** This allows the user to send messages to the parents of any pupils that they teach.
--   **All Families:** This allows the user to send messages to all parents of the school. This privilege is also required to send messages to the parents of applicants.
+-   **All Families:** This allows the user to send messages to all parents of the school. This privilege is also required to send messages to the parents of applicants.
 
-Once you’ve set up the privileges, please click on the **Save** button at the bottom of the page.
+Once you’ve set up the privileges, please click on the **Save** button at the bottom of the page.
 
 ## Managing Messaging Centre Batches
 
 Once you’ve sent a message, you have a number of options regarding the batch, including seeing delivery reports and more. To access a list of batches, navigate to **Administration → Messaging Administration → View Messaging Centre batches**. A list of batches will be shown.
 
-To access the details of a specific batch, click on the **view** action.
+To access the details of a specific batch, click on the **view** action.
 
 ![](assets/screenshots/messaging-centre/messaging-centre-12.png)
 
@@ -167,7 +167,7 @@ Clicking on this option brings up a screen where you can choose when you want th
 
 Simply enter the date and time that you would like delivery to begin on. Note that ADAM will only allow you to choose a time in the future. If you choose a time in the past, ADAM will leave the delivery time unchanged. The same goes if you enter an invalid time.
 
-Click on the **Delay batch** button to delay any unsent messages to the time you’ve specified.
+Click on the **Delay batch** button to delay any unsent messages to the time you’ve specified.
 
 ![](assets/screenshots/messaging-centre/messaging-centre-16.png)
 
@@ -175,13 +175,13 @@ ADAM confirms that it has changed the delivery time.
 
 ## Sending SMSs from the Messaging Centre
 
-Please see [SMS Service](sms-services.md#sms-services) elsewhere in this manual.
+Please see [SMS Service](sms-services.md#sms-services) elsewhere in this manual.
 
 ## Messaging a Pupil’s Teachers
 
 It is very useful to be able to message the teachers of a single pupil. To do this, navigate to **Pupils → Messaging and Communications → Send email to a pupil’s teachers**.
 
-Type in the name of a pupil and click on the **Next** button:
+Type in the name of a pupil and click on the **Next** button:
 
 ![](assets/screenshots/messaging-centre/messaging-centre-17.png)
 
@@ -189,14 +189,14 @@ The following screen appears:
 
 ![](assets/screenshots/messaging-centre/messaging-centre-18.png)
 
-The buttons at the top allow you to select different types of teachers. For example, clicking on **Select Academic** will select only the teachers who are recorded against classes in the **Academic** subject category. Your server will show customised buttons depending on which categories are available on your server.
+The buttons at the top allow you to select different types of teachers. For example, clicking on **Select Academic** will select only the teachers who are recorded against classes in the **Academic** subject category. Your server will show customised buttons depending on which categories are available on your server.
 
-In the **Additional Staff** at the bottom, you can click and choose other staff members, not listed, to be included in the email. You can search for staff here by typing a part of their name. You can have many staff here if you require. If staff are duplicated by accident, they will *not* be sent the email twice.
+In the **Additional Staff** at the bottom, you can click and choose other staff members, not listed, to be included in the email. You can search for staff here by typing a part of their name. You can have many staff here if you require. If staff are duplicated by accident, they will *not* be sent the email twice.
 
-Click on the **Next** button to begin composing your message.
+Click on the **Next** button to begin composing your message.
 
 The screen shown is the standard messaging centre screen, which may have different options to those shown below, depending on your privileges:
 
 ![](assets/screenshots/messaging-centre/messaging-centre-19.png)
 
-Click on **Send emails** to queue your email.
+Click on **Send emails** to queue your email.

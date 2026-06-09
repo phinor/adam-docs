@@ -16,11 +16,11 @@ Photographs can be uploaded for staff members by visiting **Staff → Photograph
 
 ![](assets/screenshots/staff-photographs/staff-photographs-01.png)
 
-Click on the **Choose Files** button. A normal file selection window will appear. Click on a batch of files to upload, bearing in mind the limits that your server has in place. Click on the “Open” button at the bottom (this may differ depending on your web browser)
+Click on the **Choose Files** button. A normal file selection window will appear. Click on a batch of files to upload, bearing in mind the limits that your server has in place. Click on the “Open” button at the bottom (this may differ depending on your web browser)
 
 ![](assets/screenshots/staff-photographs/staff-photographs-02.png)
 
-Finally, click on the **Upload pictures** button.
+Finally, click on the **Upload pictures** button.
 
 ADAM will now upload the photographs and match them to staff in your database.
 
@@ -47,17 +47,17 @@ Some examples include:
 
 ### Managing Photographs in the Document Repository
 
-Visit the pupil’s information page (**Staff → Staff Administration → Staff Info**) and click on the **Document Repository** heading.
+Visit the pupil’s information page (**Staff → Staff Administration → Staff Info**) and click on the **Document Repository** heading.
 
 !!! warning
     You will need specific privileges to be able to access the Document Repository.
 
-Expand the **Photographs** section and use the **Choose Files** button to select a new photograph. Click on **Upload File…** to upload the file into the Document Repository.
+Expand the **Photographs** section and use the **Choose Files** button to select a new photograph. Click on **Upload File…** to upload the file into the Document Repository.
 
 !!! warning
     One might also take this opportunity of removing any incorrect photographs.
 
-Simply uploading a photograph to the document repository will *not* automatically change the photograph that ADAM displays. This must be done in a second step.
+Simply uploading a photograph to the document repository will *not* automatically change the photograph that ADAM displays. This must be done in a second step.
 
 ### Changing Which Photograph ADAM Displays
 

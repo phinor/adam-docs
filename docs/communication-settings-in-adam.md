@@ -4,19 +4,19 @@
 
 In order to send emails from ADAM’s [Messaging Centre](messaging-centre.md#messaging-centre), and to receive automated notifications from ADAM, it will be necessary to link ADAM up to an SMTP service provider through which it can send emails.
 
-Navigate to **Administration → Site Administration → Edit Site Settings**. On the **Communications** tab, scroll down to the **Email Settings** section.
+Navigate to **Administration → Site Administration → Edit Site Settings**. On the **Communications** tab, scroll down to the **Email Settings** section.
 
 ![](assets/screenshots/communication-settings-in-adam/communication-settings-in-adam-01.png)
 
-The **Email Return Name** and **Email “From” Address** fields are used only when ADAM sends an automated notification email - in other words, an email that wasn’t sent by a person.
+The **Email Return Name** and **Email “From” Address** fields are used only when ADAM sends an automated notification email - in other words, an email that wasn’t sent by a person.
 
 *Where a user sends a message from the Messaging Centre, ADAM will use their name as the “Return Name” and their email address and the “From Address”. This ensures that any replies to that person’s email are directed to them and not to another person who may not understand the reason for the reply.*
 
-The **SMTP Server for Outgoing Mail** and the **SMTP Server Port for Outgoing Mail** need to be specified and your network support personnel are best positioned to tell you what details go here. This includes whether the connection is **SSL** protected, and the **SMTP Username**  and **SMTP Password**.
+The **SMTP Server for Outgoing Mail** and the **SMTP Server Port for Outgoing Mail** need to be specified and your network support personnel are best positioned to tell you what details go here. This includes whether the connection is **SSL** protected, and the **SMTP Username**  and **SMTP Password**.
 
-The **SMTP Session Limit** tells ADAM how many emails its allowed to send once it has logged on to the server. Some servers have low limits, and others have higher limits. Again, your network support personnel are the best people to ask. If in doubt, leave this at **50**. It can always be changed later.
+The **SMTP Session Limit** tells ADAM how many emails its allowed to send once it has logged on to the server. Some servers have low limits, and others have higher limits. Again, your network support personnel are the best people to ask. If in doubt, leave this at **50**. It can always be changed later.
 
-The **Sending Mode** is important. The ideal scenario is to **Deliver from “sending user”**. However, this requires that the **SMTP Username** is permitted to send email on behalf of other users. This isn’t always allowed by email service providers.
+The **Sending Mode** is important. The ideal scenario is to **Deliver from “sending user”**. However, this requires that the **SMTP Username** is permitted to send email on behalf of other users. This isn’t always allowed by email service providers.
 
 A good option as a second choice, but one which is not permitted by many email servers is option 2: deliver from “sending user” with the return path as the “from” address.
 
@@ -30,7 +30,7 @@ To test these sending settings, you can navigate to **Administration → Messagi
 
 ![](assets/screenshots/communication-settings-in-adam/communication-settings-in-adam-02.png)
 
-Enter your own email address in the **Deliver To** field and click on the **Send** button. Note that changing the “From” option allows you to test the difference between an automated email (from ADAM) vs a message sent by a person from the Messaging Centre (“from You”).
+Enter your own email address in the **Deliver To** field and click on the **Send** button. Note that changing the “From” option allows you to test the difference between an automated email (from ADAM) vs a message sent by a person from the Messaging Centre (“from You”).
 
 When you click on the Send button, ADAM will immediately send you an email. Check your email inbox.
 
@@ -102,7 +102,7 @@ If you are a “Google School” that makes use of Google’s email offering, th
 
 ### Configure Google Workspace
 
-Follow [the official instructions](https://www.google.com/url?q=https://support.google.com/a/answer/2956491?hl%3Den&sa=D&source=editors&ust=1778246675879794&usg=AOvVaw1jhMftTtbiDngxGPJPZ2v6) to configure the SMTP relay service in Google Workspace’s Admin Console.
+Follow [the official instructions](https://www.google.com/url?q=https://support.google.com/a/answer/2956491?hl%3Den&sa=D&source=editors&ust=1778246675879794&usg=AOvVaw1jhMftTtbiDngxGPJPZ2v6) to configure the SMTP relay service in Google Workspace’s Admin Console.
 
 However, please take note of the following points:
 
@@ -114,16 +114,16 @@ Instructions are provided here to configure popular mail servers to communicate 
 
 Navigate to the ADAM Site Settings: **Administrator → Site Administration → Edit site settings**.
 
-On the **Communications** tab, scroll down to **Email Settings**. Update the following settings as indicated:
+On the **Communications** tab, scroll down to **Email Settings**. Update the following settings as indicated:
 
--   **SMTP Server for Outgoing Mail:** smtp-relay.gmail.com
--   **SMTP Server Port for Outgoing Mail:** 587
--   **SMTP Server Requires SSL:** Yes
--   **SMTP Username:** The email address of the user account you wish to authenticate with, if you chose to authenticate with a user when setting up the relay. *If you are using IP address authentication, you can ignore this. Note that while it is possible to use IP authentication when you host on our cloud service, the IP address may change without notice.*
+-   **SMTP Server for Outgoing Mail:** smtp-relay.gmail.com
+-   **SMTP Server Port for Outgoing Mail:** 587
+-   **SMTP Server Requires SSL:** Yes
+-   **SMTP Username:** The email address of the user account you wish to authenticate with, if you chose to authenticate with a user when setting up the relay. *If you are using IP address authentication, you can ignore this. Note that while it is possible to use IP authentication when you host on our cloud service, the IP address may change without notice.*
 -   **SMTP Password:** The password as set for that user. *Leave blank if using IP authentication.*
--   **SMTP Session Limit:** 50
+-   **SMTP Session Limit:** 50
 
-*If you see that any of these settings are “Set in the configuration file” and your ADAM server is hosted on our cloud platform, please contact* *[ADAM Support](mailto:help@adam.co.za)* *so that we can assist you in changing these settings! If you host your own ADAM server, please see elsewhere in this documentation for assistance* *[editing the configuration file](server-setup-and-configuration.md#editing-the-configuration-file)**.*
+*If you see that any of these settings are “Set in the configuration file” and your ADAM server is hosted on our cloud platform, please contact* *[ADAM Support](mailto:help@adam.co.za)* *so that we can assist you in changing these settings! If you host your own ADAM server, please see elsewhere in this documentation for assistance* *[editing the configuration file](server-setup-and-configuration.md#editing-the-configuration-file)**.*
 
 Once finished, save the settings. Navigate to **Administration → Messaging Administration → Send test emails**. From here, send yourself an email and check that:
 
@@ -138,7 +138,7 @@ If you can tick off both of those, then your mail is set up correctly.
 
 ### Configuring O365
 
-Follow the [instructions on Office 365’s official help site](https://www.google.com/url?q=https://learn.microsoft.com/en-us/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365%23smtp-relay-configure-a-connector-to-relay-email-from-your-device-or-application-through-microsoft-365-or-office-365&sa=D&source=editors&ust=1778246675883289&usg=AOvVaw19iry8kxl3h8GnP_9Eep2S) for details on how to “Configure a connector to relay SMTP email”.
+Follow the [instructions on Office 365’s official help site](https://www.google.com/url?q=https://learn.microsoft.com/en-us/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365%23smtp-relay-configure-a-connector-to-relay-email-from-your-device-or-application-through-microsoft-365-or-office-365&sa=D&source=editors&ust=1778246675883289&usg=AOvVaw19iry8kxl3h8GnP_9Eep2S) for details on how to “Configure a connector to relay SMTP email”.
 
 You will need to know the IP address of your ADAM server. If you make use of a hosted ADAM server, please inform us so that we can give you the IP address of the server.
 
@@ -146,40 +146,40 @@ You will need to know the IP address of your ADAM server. If you make use of a h
 
 Navigate to the ADAM Site Settings: **Administrator → Site Administration → Edit site settings**.
 
-On the **Communications** tab, scroll down to **Email Settings**. Update the following settings as indicated:
+On the **Communications** tab, scroll down to **Email Settings**. Update the following settings as indicated:
 
--   **SMTP Server for Outgoing Mail:** The “POINTS TO” address
--   **SMTP Server Port for Outgoing Mail:** 25
--   **SMTP Server Requires SSL:** Yes
--   **SMTP Username:** leave blank
+-   **SMTP Server for Outgoing Mail:** The “POINTS TO” address
+-   **SMTP Server Port for Outgoing Mail:** 25
+-   **SMTP Server Requires SSL:** Yes
+-   **SMTP Username:** leave blank
 -   **SMTP Password:** leave blank
--   **SMTP Session Limit:** 50
+-   **SMTP Session Limit:** 50
 
 ## Alternative Configuration for Microsoft’s O365
 
-*Kindly note that these are theoretical settings that have not been tested. They may be more reliable than the method discussed above, but have much more stringent controls with regards to the volume of messages that can be sent.* ***Try this at your own risk and make sure to*** ***[monitor the messaging centre batches](#troubleshooting-email-delivery-issues-in-adam)*** ***for failure notifications.***
+*Kindly note that these are theoretical settings that have not been tested. They may be more reliable than the method discussed above, but have much more stringent controls with regards to the volume of messages that can be sent.* ***Try this at your own risk and make sure to*** ***[monitor the messaging centre batches](#troubleshooting-email-delivery-issues-in-adam)*** ***for failure notifications.***
 
 This method makes use of a single address to send email from ADAM. We recommend creating a single user in your O365 control panel for this purpose. The user should be sufficiently generic (e.g. “Example School’s ADAM”. The user should have a strong password associated with it.
 
 ### Configuring Office 365 - Alternative Method
 
-Follow the [instructions on Office 365’s official help site](https://www.google.com/url?q=https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3&sa=D&source=editors&ust=1778246675885464&usg=AOvVaw2-LxuVdmMS3Gnz8eBdmATH) for **Option 1**.
+Follow the [instructions on Office 365’s official help site](https://www.google.com/url?q=https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3&sa=D&source=editors&ust=1778246675885464&usg=AOvVaw2-LxuVdmMS3Gnz8eBdmATH) for **Option 1**.
 
 ### Configuring ADAM - O365 Alternative Method
 
 Navigate to the ADAM Site Settings: **Administrator → Site Administration → Edit site settings**.
 
-On the **Communications** tab, scroll down to **Email Settings**. Update the following settings as indicated:
+On the **Communications** tab, scroll down to **Email Settings**. Update the following settings as indicated:
 
--   **Email From Name:** give the name of the user chosen above. A good example of this would be “*Example School’s* ADAM”
+-   **Email From Name:** give the name of the user chosen above. A good example of this would be “*Example School’s* ADAM”
 -   **Email From Address:** give the address of the user chosen above.
--   **SMTP Server for Outgoing Mail:** smtp.office365.com
--   **SMTP Server Port for Outgoing Mail:** 587
--   **SMTP Server Requires SSL:** Yes
--   **SMTP Username:** give the address of the user chosen above.
+-   **SMTP Server for Outgoing Mail:** smtp.office365.com
+-   **SMTP Server Port for Outgoing Mail:** 587
+-   **SMTP Server Requires SSL:** Yes
+-   **SMTP Username:** give the address of the user chosen above.
 -   **SMTP Password:** give the password of the user chosen above.
--   **SMTP Session Limit:** 50
--   **Sending Mode:** 5. Deliver from ‘SMTP username’ with ‘reply-to’ as sending user.
+-   **SMTP Session Limit:** 50
+-   **Sending Mode:** 5. Deliver from ‘SMTP username’ with ‘reply-to’ as sending user.
 
 ## Troubleshooting Email Delivery Issues in ADAM
 
@@ -201,7 +201,7 @@ The first thing for a site administrator to do is to check the messaging batch r
 
 ![](assets/screenshots/communication-settings-in-adam/communication-settings-in-adam-06.png)
 
-Click on the **view** link to view the details of a batch.
+Click on the **view** link to view the details of a batch.
 
 Here, ADAM records whether an email was sent and, depending on the email program that the recipient is using, when the message was opened.
 
@@ -211,13 +211,13 @@ ADAM will list the time that the email message was processed if it was successfu
 
 If ADAM did not send the messages (there is an “Error” listed under “Processed”), then you will need to investigate:
 
-1.  Which server is ADAM talking to (set in the **Site Settings** under the **Communications** tab, look for **SMTP Server**)?
+1.  Which server is ADAM talking to (set in the **Site Settings** under the **Communications** tab, look for **SMTP Server**)?
 2.  Is ADAM using the right authentication credentials to talk to the SMTP server?
 3.  Is the SMTP server on and configured to listen to ADAM?
 
 Advanced network administrators will want to check the logs of their SMTP server to see if there are clues there are to why the emails from ADAM are not being accepted for delivery.
 
-Further information as to *why* ADAM didn’t succeed in delivery are shown in the ADAM Error Logs.
+Further information as to *why* ADAM didn’t succeed in delivery are shown in the ADAM Error Logs.
 
 ### Step 2: Check your mail server for issues
 

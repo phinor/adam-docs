@@ -11,15 +11,15 @@ Passkeys are stronger than passwords for two reasons:
 
 ADAM supports passkeys for **staff**, **parents**, and **pupils**. You can continue to use your password as normal - a passkey is an extra way of logging in, not a replacement.
 
-On the ADAM login page you will see a **Log in with a passkey** option. Clicking it will ask your device to confirm it is you (usually by fingerprint or face) and then log you in.
+On the ADAM login page you will see a **Log in with a passkey** option. Clicking it will ask your device to confirm it is you (usually by fingerprint or face) and then log you in.
 
 ## What you need
 
 To use a passkey, you need one of the following:
 
--   A **modern phone or tablet** with fingerprint or face unlock (for example, an iPhone with Face ID or Touch ID, or an Android phone with a fingerprint sensor).
+-   A **modern phone or tablet** with fingerprint or face unlock (for example, an iPhone with Face ID or Touch ID, or an Android phone with a fingerprint sensor).
 -   A **modern laptop or desktop** with a fingerprint reader, Windows Hello, or Mac Touch ID.
--   A **hardware security key** (such as a YubiKey).
+-   A **hardware security key** (such as a YubiKey).
 
 Any reasonably up-to-date device will work. You do not need to install any extra app. Passkeys are a standard feature built into iOS, Android, Windows, macOS, and all modern web browsers.
 
@@ -34,15 +34,15 @@ Staff who have not yet enrolled a passkey will see a card titled “Log in with 
 To register additional pass keys you can:
 
 1.  Log in to ADAM as normal, using your username and password.
-2.  Click the **Set up a passkey** link that appears on your dashboard. If you do not see that link, go to **Staff → Security Administration → Manage Passkeys**.
+2.  Click the **Set up a passkey** link that appears on your dashboard. If you do not see that link, go to **Staff → Security Administration → Manage Passkeys**.
 3.  Click **Register a new passkey**.
 4.  Your device will prompt you to confirm - for example, by using your fingerprint, face, or PIN.
-5.  You can click on the **rename** option to give your passkey a descriptive name (for example, "My iPhone" or "Work laptop") so that you can recognise it later.
+5.  You can click on the **rename** option to give your passkey a descriptive name (for example, "My iPhone" or "Work laptop") so that you can recognise it later.
 
 ### If you are a parent or pupil
 
 1.  Log in to the parent or pupil portal with your username and password.
-2.  Click the **Set up a passkey** link on the portal page. If you do not see it, open the portal menu and choose **Manage your passkeys**.
+2.  Click the **Set up a passkey** link on the portal page. If you do not see it, open the portal menu and choose **Manage your passkeys**.
 3.  Click **Add a passkey**.
 4.  Your device will prompt you to confirm using your fingerprint, face, or PIN.
 5.  Give your passkey a name.
@@ -52,7 +52,7 @@ That's it. Next time you visit the login page, you can skip typing your password
 ## Logging in with a passkey
 
 1.  Open the ADAM login page on a device where you have set up a passkey.
-2.  Click the **Log in with a passkey** button.
+2.  Click the **Log in with a passkey** button.
 3.  Your device will ask you to confirm with your fingerprint, face, PIN, or screen lock.
 4.  You will be logged in.
 
@@ -60,7 +60,7 @@ There is no username or password to type in. On a phone, the whole process usual
 
 ## Managing your passkeys
 
-You can view, rename, and remove your passkeys at any time from the **Manage Passkeys** page. Each passkey is shown with the name you gave it, the device type it was created on, and the date it was last used.
+You can view, rename, and remove your passkeys at any time from the **Manage Passkeys** page. Each passkey is shown with the name you gave it, the device type it was created on, and the date it was last used.
 
 -   **Rename** a passkey if you change the device it is on or want a clearer label.
 -   **Remove** a passkey that is no longer needed - for example, if you have sold or lost the phone it was on, or left a workstation.
@@ -101,7 +101,7 @@ Use a passkey on devices that only you use. For shared or public computers, log 
 
 If your new phone is set up with the same cloud account (Apple ID, Google account, or Microsoft account) as your old phone, your passkeys may move across automatically. This depends on your cloud account settings.
 
-The simplest approach is to treat the new phone as a new device: log in to ADAM with your username and password, add a fresh passkey for the new phone, and then remove the old passkey from the **Manage Passkeys** page.
+The simplest approach is to treat the new phone as a new device: log in to ADAM with your username and password, add a fresh passkey for the new phone, and then remove the old passkey from the **Manage Passkeys** page.
 
 ### The browser is not offering to save a passkey.
 
@@ -121,6 +121,6 @@ Passkeys are entirely dependent on the web browser and require a compatible web 
 
 No server-side setup is required to enable passkeys. Passkey login is available to all users out of the box.
 
-ADAM Super-Administrators can view and revoke any staff member’s passkeys via the **Manage Staff Passkeys** page. The page lists only those staff who have at least one passkey enrolled. Selecting a staff member shows their passkeys with the date each was enrolled and last used; clicking remove revokes the passkey immediately.
+ADAM Super-Administrators can view and revoke any staff member’s passkeys via the **Manage Staff Passkeys** page. The page lists only those staff who have at least one passkey enrolled. Selecting a staff member shows their passkeys with the date each was enrolled and last used; clicking remove revokes the passkey immediately.
 
 Removing a passkey does not prevent the staff member from continuing to log in with their password.

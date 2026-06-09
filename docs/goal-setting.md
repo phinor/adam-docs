@@ -8,9 +8,9 @@ The pupils are actively involved in the setting of goals.
 
 ### Pupil and Family Privileges
 
-Individual [pupil login groups](security-administration-for-families-and-pupils.md#managing-login-groups) can be set up to be allowed access to goal setting. In many schools, you may only want your senior pupils to engage in goal setting. You are thus advised to set up different privilege groups for these sections of your school to give you better control over their usage of the system.
+Individual [pupil login groups](security-administration-for-families-and-pupils.md#managing-login-groups) can be set up to be allowed access to goal setting. In many schools, you may only want your senior pupils to engage in goal setting. You are thus advised to set up different privilege groups for these sections of your school to give you better control over their usage of the system.
 
-We won’t discuss exactly *how* to set up the privileges for the pupil login groups here ([this information is provided elsewhere in this guide](security-administration-for-families-and-pupils.md#managing-login-groups)). However, the following privileges are relevant:
+We won’t discuss exactly *how* to set up the privileges for the pupil login groups here ([this information is provided elsewhere in this guide](security-administration-for-families-and-pupils.md#managing-login-groups)). However, the following privileges are relevant:
 
 ![](assets/screenshots/goal-setting/goal-setting-01.png)
 
@@ -28,7 +28,7 @@ Note that the ability to set goals alone is not sufficient and more action is re
 
 Staff members have the ability to see, comment and amend pupils goals. There are a number of privilege for each of these and care should be taken to ensure that each staff member gets the correct privileges, particularly when it comes to the setting and changing of a pupil’s goals.
 
-We won’t discuss the mechanics of setting up staff privileges ([those are done elsewhere in this guide](security-administration-for-staff.md#managing-security-groups)) but the relevant privileges are found under the **Academic Admin** section of the privileges, under the subheading **Goal Setting**:
+We won’t discuss the mechanics of setting up staff privileges ([those are done elsewhere in this guide](security-administration-for-staff.md#managing-security-groups)) but the relevant privileges are found under the **Academic Admin** section of the privileges, under the subheading **Goal Setting**:
 
 ![](assets/screenshots/goal-setting/goal-setting-02.png)
 
@@ -42,9 +42,9 @@ These first three privileges in the list allow teachers to comment on pupils’ 
 
 The differences between these three options are as follows:
 
-1.  Comment on any pupil’s academic goals: This privilege would like to be given to a senior staff member, such as a head of academics. There is no restriction regarding which pupil a teacher can comment on their goals.
-2.  Comment on own pupil’s subject academic goals: This privilege allows teachers to comment on pupils’ goals for an pupil in their classes and only for the subject taught. They cannot comment on other goals. E.g. This would allow an English teacher to comment on the English goals of pupils that they teach. They cannot comment on the Mathematics goals of those same pupils.
-3.  Comment on pupil’s academic goals in their default class: This privilege would allow a teacher to comment on any subject’s academic goals for all the pupils that are registered in their “default subject” class. This would allow a register class teacher to comment on the academic goals of any subject for any of the pupils in their register class. A teacher would not be able to edit the academic goals of a person who is not in their register class. E.g. This privilege allows a register class teacher to comment on any of the academic goals of any of the pupils in their register class.
+1.  Comment on any pupil’s academic goals: This privilege would like to be given to a senior staff member, such as a head of academics. There is no restriction regarding which pupil a teacher can comment on their goals.
+2.  Comment on own pupil’s subject academic goals: This privilege allows teachers to comment on pupils’ goals for an pupil in their classes and only for the subject taught. They cannot comment on other goals. E.g. This would allow an English teacher to comment on the English goals of pupils that they teach. They cannot comment on the Mathematics goals of those same pupils.
+3.  Comment on pupil’s academic goals in their default class: This privilege would allow a teacher to comment on any subject’s academic goals for all the pupils that are registered in their “default subject” class. This would allow a register class teacher to comment on the academic goals of any subject for any of the pupils in their register class. A teacher would not be able to edit the academic goals of a person who is not in their register class. E.g. This privilege allows a register class teacher to comment on any of the academic goals of any of the pupils in their register class.
 
 The privileges above can be combined if required. This might allow for subject teachers to begin the goal setting process and for register teachers to complete it. The possibilities of how the process might work would be dictated by the school.
 
@@ -56,9 +56,9 @@ In an identical fashion to [above](#commenting-on-pupils-academic-goals), the th
 
 The three privileges that allow teachers to do this are:
 
-1.  Modify any pupil’s academic goals: Allows for the modification of any pupil’s goals.
-2.  Modify own pupils’ academic goals: Allows for the modification of subject specific goals for pupils taught by the staff member. E.g. This would allow an English teacher to modify a pupil’s English goal, but not their Mathematics goal.
-3.  Modify pupil’s academic goals in their default class: Allows for the modification of any subject goal for pupils in their default class. E.g. This would allow a register class teacher to modify the Mathematics goal of one of their register class pupils. They could not modify the goals of pupils who are not in their register class.
+1.  Modify any pupil’s academic goals: Allows for the modification of any pupil’s goals.
+2.  Modify own pupils’ academic goals: Allows for the modification of subject specific goals for pupils taught by the staff member. E.g. This would allow an English teacher to modify a pupil’s English goal, but not their Mathematics goal.
+3.  Modify pupil’s academic goals in their default class: Allows for the modification of any subject goal for pupils in their default class. E.g. This would allow a register class teacher to modify the Mathematics goal of one of their register class pupils. They could not modify the goals of pupils who are not in their register class.
 
 From a management perspective, it might be sensible to allow a teacher the ability to override a pupil’s goals in the event that they are not captured in time or need to be changed after the deadlines have been set.
 
@@ -68,12 +68,12 @@ The privileges all allow for the editing of the actual goal and the strategies r
 
 This privilege allows a teacher to view a pupil’s academic goals and strategies, as well as the teacher’s comments and internal notes on those goals.
 
-While similar to the privileges described above for [commenting](#commenting-on-pupils-academic-goals) and [modifying](#modifying-a-pupils-academic-goals) pupils’ goals, there are a number of different levels for viewing pupils’ goals; but with an additional option.
+While similar to the privileges described above for [commenting](#commenting-on-pupils-academic-goals) and [modifying](#modifying-a-pupils-academic-goals) pupils’ goals, there are a number of different levels for viewing pupils’ goals; but with an additional option.
 
-1.  View all academic goals: This allows a teacher to view every academic goal for any pupil in the school. This might be given to the academic head of the school.
-2.  View all academic goals for pupils in their default class: This allows a teacher to view all the academic goals for any pupils that are in their default class (e.g. register class).
-3.  View all academic goals for pupils they teach: This privilege is one that is not mirrored above. It allows any teacher of a pupil to see all the other academic goals of a pupil provided that they teach the pupil in an academic capacity (i.e. only academic subjects are considered here). This means that a Mathematics teacher could see the English goals of any of the pupils that are in the class. The could not see the academic goals of any other pupil in the school.
-4.  View subject academic goals for pupils they teach: This allows teachers to see the academic goals only of pupils that they teach and for the subjects taught. This would allow the Mathematics teacher to see the Mathematics goals, but not the Geography goals for the pupils they teach.
+1.  View all academic goals: This allows a teacher to view every academic goal for any pupil in the school. This might be given to the academic head of the school.
+2.  View all academic goals for pupils in their default class: This allows a teacher to view all the academic goals for any pupils that are in their default class (e.g. register class).
+3.  View all academic goals for pupils they teach: This privilege is one that is not mirrored above. It allows any teacher of a pupil to see all the other academic goals of a pupil provided that they teach the pupil in an academic capacity (i.e. only academic subjects are considered here). This means that a Mathematics teacher could see the English goals of any of the pupils that are in the class. The could not see the academic goals of any other pupil in the school.
+4.  View subject academic goals for pupils they teach: This allows teachers to see the academic goals only of pupils that they teach and for the subjects taught. This would allow the Mathematics teacher to see the Mathematics goals, but not the Geography goals for the pupils they teach.
 
 ## Setting up a Reporting Period for Goal Setting
 
@@ -100,7 +100,7 @@ Pupils will only be able to set their goals while the window is open. Once the w
 
 ## Capturing Goals: Instructions for Pupils
 
-Pupils with the [necessary privileges to view or capture goals](#pupil-and-family-privileges) will see the following option appear in their ADAM login page:
+Pupils with the [necessary privileges to view or capture goals](#pupil-and-family-privileges) will see the following option appear in their ADAM login page:
 
 ![](assets/screenshots/goal-setting/goal-setting-06.png)
 
@@ -122,7 +122,7 @@ Staff can review and comment on goals by visiting **Pupils → Goal Setting → 
 
 ![](assets/screenshots/goal-setting/goal-setting-09.png)
 
-Teachers can add in comments for each pupil. There are two comments available: “Teacher Comments” are visible to the pupil and their parents, while “Internal Comments” are only available to the teacher and any other [staff members who have privileges](#staff-privileges) to see those goals.
+Teachers can add in comments for each pupil. There are two comments available: “Teacher Comments” are visible to the pupil and their parents, while “Internal Comments” are only available to the teacher and any other [staff members who have privileges](#staff-privileges) to see those goals.
 
 ## What pupils and parents see
 
@@ -136,7 +136,7 @@ Next to each assessment (see Afrikaans in the picture above) where the goal has 
 
 ## What staff see
 
-Like pupils and parents, staff will see the goals listed in the pupil’s details markbook breakdown, available on the **academics** section of their Pupil Info page.
+Like pupils and parents, staff will see the goals listed in the pupil’s details markbook breakdown, available on the **academics** section of their Pupil Info page.
 
 However, staff will be made aware of goals when capturing assessment results:
 

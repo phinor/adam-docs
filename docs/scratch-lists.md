@@ -21,7 +21,7 @@ To generate these lists, navigate to the appropriate sections:
 
 -   Subject Lists:
 
--   All the class lists of a single subject (e.g. all the English classes): **Classes → Scratch Lists → A subjects’ class lists** or **Subjects → Scratch Lists → A subjects’ class lists**
+-   All the class lists of a single subject (e.g. all the English classes): **Classes → Scratch Lists → A subjects’ class lists** or **Subjects → Scratch Lists → A subjects’ class lists**
 -   All the pupils registered for a subject in a grade (e.g. All of the Grade 11 Mathematics pupils): **Subjects → Scratch Lists → A subject’s list by grade.**
 
 -   Grade lists:
@@ -37,21 +37,21 @@ To generate these lists, navigate to the appropriate sections:
 
 -   Age Group Lists:
 
--   **Pupils → Scratch Lists → Age Group List** *or* **Grades → Scratch Lists → Age group lists**
+-   **Pupils → Scratch Lists → Age Group List** *or* **Grades → Scratch Lists → Age group lists**
 
 -   Random Lists (e.g. for prizes, or random testing):
 
--   **Pupils → Scratch Lists → Generate random names list** (this is the first step, once generated, you can view the list of names using the option **View previously generated random names list**).
+-   **Pupils → Scratch Lists → Generate random names list** (this is the first step, once generated, you can view the list of names using the option **View previously generated random names list**).
 
 -   Admissions Lists:
 
 -   View a list of pupils by registration status: **Pupils → Scratch Lists → View Registration Status scratch List**
--   View Admissions pupils for a particular year, and grade:  **Admissions → Lists and Labels → Admissions scratch lists**
+-   View Admissions pupils for a particular year, and grade:  **Admissions → Lists and Labels → Admissions scratch lists**
 
 -   Alumni:
 
--   View a list of all the pupils who graduated in a particular year:  **Alumni → Lists and Labels → Alumni scratch lists**
--   View a list of all the pupils who *left* in a particular year: **Alumni → Lists and Labels → Leavers’ scratch lists**
+-   View a list of all the pupils who graduated in a particular year:  **Alumni → Lists and Labels → Alumni scratch lists**
+-   View a list of all the pupils who *left* in a particular year: **Alumni → Lists and Labels → Leavers’ scratch lists**
 
 ### Staff Scratch Lists
 
@@ -75,10 +75,10 @@ Below the button which would otherwise produce and display the scratch lists to 
 
 ADAM allows you 5 different ways to display your data. These are:
 
--   **Web browser:** This is the most common option and is selected by default. The lists will be generated in a new window and can be printed directly from your web browser. If there are multiple lists (e.g. more than one class), then each list will automatically start on a new pag when printed, even though it might look as if they are running into each other on the screen.
--   **Excel:** ADAM will create an Excel spreadsheet of your class lists for you to download. You can then manipulate these as you require. If you have selected multiple lists (e.g. more than one class), then each class will appear on its own worksheet or tab in the spreadsheet.
--   **Pivot Tables:** Pivot Tables are excellent mechanisms to summarise your data. If you are more interested in “how many” rather than “who”, consider a pivot table. Note that if you choose a pivor table, only the first list you choose is considered. [We discuss the pivot tables in more detail later on.](#pivot-tables)
--   **Photo List:** This will include a photograph of each pupil in your list. If you include multiple classes or lists, each will start on a new page when you print them.
+-   **Web browser:** This is the most common option and is selected by default. The lists will be generated in a new window and can be printed directly from your web browser. If there are multiple lists (e.g. more than one class), then each list will automatically start on a new pag when printed, even though it might look as if they are running into each other on the screen.
+-   **Excel:** ADAM will create an Excel spreadsheet of your class lists for you to download. You can then manipulate these as you require. If you have selected multiple lists (e.g. more than one class), then each class will appear on its own worksheet or tab in the spreadsheet.
+-   **Pivot Tables:** Pivot Tables are excellent mechanisms to summarise your data. If you are more interested in “how many” rather than “who”, consider a pivot table. Note that if you choose a pivor table, only the first list you choose is considered. [We discuss the pivot tables in more detail later on.](#pivot-tables)
+-   **Photo List:** This will include a photograph of each pupil in your list. If you include multiple classes or lists, each will start on a new page when you print them.
 -   **Comma-separated Variable (CSV)**: This is the least commonly used output format as most people prefer dealing with the data in Excel format. Users who require CSV output are likely to know why and what they will do with it. It’s normally a safe assumption that most users will never choose this option.
 
 ### Columns:
@@ -115,16 +115,16 @@ Other common uses are to see which second languages a pupil is registered for. W
 
 Where a pupil is registered for one of the subjects (say “Afrikaans”) their class details (we’ve chosen “Class Description” above) will appear in the “Afrikaans” column. The Zulu column for that pupil would be empty. The opposite would be true for pupils who take Zulu and not Afrikaans.
 
-This is often used when printing lists for Cycle tests where these tests are written in a registration class venue. The testing teacher would produce scratch lists for each Register Teacher (using the option “**Classes → Scratch Lists → A subject’s scratch lists**” and choose “General / Registration Class” as the subject. In the scratch list options, they would choose to show the registration details of **their** specific subjects. This allows the registration class teacher to see which pupils should be writing that cycle test.
+This is often used when printing lists for Cycle tests where these tests are written in a registration class venue. The testing teacher would produce scratch lists for each Register Teacher (using the option “**Classes → Scratch Lists → A subject’s scratch lists**” and choose “General / Registration Class” as the subject. In the scratch list options, they would choose to show the registration details of **their** specific subjects. This allows the registration class teacher to see which pupils should be writing that cycle test.
 
 ## Pivot Tables
 
 In order to work through the pivot tables, we will make use of an example to illustrate the functionality. We need to know the number of learners in each grade, broken up be age and gender.
 
 -   Because we are looking to summarise information across the whole school, let’s start with a Whole School Scratch List: **Pupils → Scratch Lists → Whole School Scratch List**.
--   Choose the **Output** for the scratch list to be **Pivot Table**.
+-   Choose the **Output** for the scratch list to be **Pivot Table**.
 -   In the field options, choose the fields that we want to summarise by: tick the boxes for Age Group, Gender and Grade Text (there are other fields that show similar information - we would not choose “Age” for example, because that includes the pupils’ age in years and days which is too details for our analysis).
--   Click on the **Show List** button.
+-   Click on the **Show List** button.
 
 ADAM will show the following on your screen (obviously your numbers will be different!):
 
@@ -174,6 +174,6 @@ Next to each field, you can choose the groups that are able to see each group. Y
 
 It is not necessary to select any other groups if you choose “ALL STAFF” as one of the groups.
 
-Once you have finished customising the groups that can see each field, click on the **Save** button at the bottom of the screen.
+Once you have finished customising the groups that can see each field, click on the **Save** button at the bottom of the screen.
 
 An immediate consequence of this is that the scratch list fields will update to only show the fields that have been selected.

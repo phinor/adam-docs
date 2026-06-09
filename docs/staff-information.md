@@ -11,7 +11,7 @@ There are several sections that will appear in the next screen, and we’ll disc
 3.  Qualification Information
 4.  Registration Information
 5.  Employment Information
-6.  Custom Fields (this might not appear – see Custom Data Fields on page  for more information)
+6.  Custom Fields (this might not appear – see Custom Data Fields on page  for more information)
 
 ### ![](assets/screenshots/staff-information/staff-information-01.png)
 
@@ -19,9 +19,9 @@ There are several sections that will appear in the next screen, and we’ll disc
 
 In this section, you will enter simple information about the teacher of staff member. The following points are worth noting:
 
-**ID Number:** if the teacher is a foreign national, please enter their passport number here. ADAM *will* produce a warning message saying that the number that is entered is not a valid South African ID number. This is not a problem since we know that we are entering a passport number.
+**ID Number:** if the teacher is a foreign national, please enter their passport number here. ADAM *will* produce a warning message saying that the number that is entered is not a valid South African ID number. This is not a problem since we know that we are entering a passport number.
 
-The fields for **Population Grouping**, **Home Language**, **Disabilities** and **Marital Status** are used for reporting to the Department of Basic Education through the LURITS system.
+The fields for **Population Grouping**, **Home Language**, **Disabilities** and **Marital Status** are used for reporting to the Department of Basic Education through the LURITS system.
 
 ### Contact Information
 
@@ -31,9 +31,9 @@ This section includes contact information for the teacher.
 
 Please take note of the following:
 
-**E-mail address** is the only field that ADAM uses to send emails to staff. The **Personal E-mail Address** field is only for information.
+**E-mail address** is the only field that ADAM uses to send emails to staff. The **Personal E-mail Address** field is only for information.
 
-**Dependents’ Names** should be listed one per line.
+**Dependents’ Names** should be listed one per line.
 
 All phone numbers in ADAM should be entered as simple 10-digit numbers. Do not use any spacing or punctuation. For example, we prefer “0821112222” to “(082) 111 2222”. Whenever ADAM has to display a telephone number, it automatically spaces it out for you.
 
@@ -51,17 +51,17 @@ This is the most important part, as far as ADAM is concerned, of adding a new st
 
 ![](assets/screenshots/staff-information/staff-information-04.png)
 
-All the headings from **Department** to **Teaching Level (Additional)** are for Departmental uses and so should be captured carefully.
+All the headings from **Department** to **Teaching Level (Additional)** are for Departmental uses and so should be captured carefully.
 
-ADAM will automatically fill in today’s date as the **Start Date** for a teacher. If you know the start date of a teacher, please capture it accurately. This is so that ADAM can work out the length of time teachers have worked at the school automatically.
+ADAM will automatically fill in today’s date as the **Start Date** for a teacher. If you know the start date of a teacher, please capture it accurately. This is so that ADAM can work out the length of time teachers have worked at the school automatically.
 
-The **Prior Teaching Experience** is a field that determines how much teaching experience a teacher has had *before* the started teaching at your school. With this number and the calculation that ADAM works out from the teacher’s start date, ADAM can also determine the total amount of teaching experience that a teacher has.
+The **Prior Teaching Experience** is a field that determines how much teaching experience a teacher has had *before* the started teaching at your school. With this number and the calculation that ADAM works out from the teacher’s start date, ADAM can also determine the total amount of teaching experience that a teacher has.
 
-The **Login name** is an important field. This is the username that the teacher will use to login to ADAM. If you are using an external authentication mechanism such as a POP3 Mail Server (see page ) or an Active Directory Server (see page ), then this username *must* match the username on that service. See also Staff Logins on page .
+The **Login name** is an important field. This is the username that the teacher will use to login to ADAM. If you are using an external authentication mechanism such as a POP3 Mail Server (see page ) or an Active Directory Server (see page ), then this username *must* match the username on that service. See also Staff Logins on page .
 
-Finally, the **Authentication Method** tells ADAM how this user should log on. It is possible to have different teachers using different methods, if necessary. However, ADAM should choose, by default, the most common setting on your server when you add a new staff member.
+Finally, the **Authentication Method** tells ADAM how this user should log on. It is possible to have different teachers using different methods, if necessary. However, ADAM should choose, by default, the most common setting on your server when you add a new staff member.
 
-You will also have the chance to add in an initial password for the user. This is only necessary if you are adding in a user that will use the **Internal Password** option. Remember that if the user using either POP3 Mail Server or Active Directory LDAP Authentication then their password is never stored in ADAM and ADAM asks that other service each time whether the password supplied by the user is correct.
+You will also have the chance to add in an initial password for the user. This is only necessary if you are adding in a user that will use the **Internal Password** option. Remember that if the user using either POP3 Mail Server or Active Directory LDAP Authentication then their password is never stored in ADAM and ADAM asks that other service each time whether the password supplied by the user is correct.
 
 ### Custom Fields
 
@@ -81,11 +81,11 @@ The way to stop this is simply to terminate their employment contract. Visit the
 
 ![](assets/screenshots/staff-information/staff-information-05.png)
 
-If there are multiple employment records, as appear in the screenshot above, one will be highlighted in bold. Click on the **terminate** option.
+If there are multiple employment records, as appear in the screenshot above, one will be highlighted in bold. Click on the **terminate** option.
 
 ![](assets/screenshots/staff-information/staff-information-06.png)
 
-Ensure that the termination date is accurate, and click on the button **Terminate employment** at the bottom of the screen.
+Ensure that the termination date is accurate, and click on the button **Terminate employment** at the bottom of the screen.
 
 ## Staff security permissions
 
@@ -159,11 +159,11 @@ Note that in the change log, the reviewer will be recorded as the person making 
 
 ## Staff Signatures for Reports
 
-Many report templates allow for the automatic placement of electronic signatures. Each teacher will need a signature scanned and uploaded onto the ADAM. Please see the section in [Report Publishing](report-publishing.md#staff-signatures) for more information.
+Many report templates allow for the automatic placement of electronic signatures. Each teacher will need a signature scanned and uploaded onto the ADAM. Please see the section in [Report Publishing](report-publishing.md#staff-signatures) for more information.
 
 ## Staff Name Pronunciation
 
-ADAM contains a specific category in the [Document Repository](document-repository.md#document-repository) which can have digital recordings of the pronunciation of a staff member’s name uploaded. Once uploaded, a media control will appear on the name card in their profile and users can use this to listen to the recording of the name.
+ADAM contains a specific category in the [Document Repository](document-repository.md#document-repository) which can have digital recordings of the pronunciation of a staff member’s name uploaded. Once uploaded, a media control will appear on the name card in their profile and users can use this to listen to the recording of the name.
 
 ![](assets/screenshots/staff-information/staff-information-15.png)
 

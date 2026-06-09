@@ -8,7 +8,7 @@ District offices will require print-outs and signatures from schools staff in or
 
 Some schools have sent notifications that their district offices require them to run additional software to extract information from the SA-SAMS database. Other district offices seem to require the entire database. Please clarify with your district office what is required.
 
-**We are unable to provide you with any support for using SA-SAMS.** You are encouraged, as far as possible, to make use of the support channels provided by your district office in order to best comply with their requirements. Each district office has the prerogative to request different information and ask you to follow different procedures. Unfortunately, we are simply unable to keep track of what each district office requires.
+**We are unable to provide you with any support for using SA-SAMS.** You are encouraged, as far as possible, to make use of the support channels provided by your district office in order to best comply with their requirements. Each district office has the prerogative to request different information and ask you to follow different procedures. Unfortunately, we are simply unable to keep track of what each district office requires.
 
 ## General Principles Regarding Privacy of Information
 
@@ -20,7 +20,7 @@ ADAM does export absentee information for Staff and Pupils, although if you do n
 
 ## Getting Started
 
-In order to get started, you will need to [verify your School Information](school-information.md#school-information) stored in ADAM. There are some significant changes to what is required for LURITS reporting and so your are encouraged to go through this information carefully if this is your first SA-SAMS submission. Once entered, it is not likely that you will need to revisit this information on a regular basis.
+In order to get started, you will need to [verify your School Information](school-information.md#school-information) stored in ADAM. There are some significant changes to what is required for LURITS reporting and so your are encouraged to go through this information carefully if this is your first SA-SAMS submission. Once entered, it is not likely that you will need to revisit this information on a regular basis.
 
 Check the school’s information by visiting **Administration → Site Administration → Edit School Information**. Pay special attention to the fact that there are three tabs of information and there is information on all of those tabs that needs to be completed.
 
@@ -36,7 +36,7 @@ ADAM will show you a list of subjects. You will notice that the third column has
 
 In the example above, notice that Mathematical Literacy, listed fifth in the table, does not have an entry in the DBE column.
 
-To fix this, please click on the **edit** button next to any subject, and then choose the appropriate subject from the list for the **DBE Subject Link** option:
+To fix this, please click on the **edit** button next to any subject, and then choose the appropriate subject from the list for the **DBE Subject Link** option:
 
 ![](assets/screenshots/sa-sams-export/sa-sams-export-02.png)
 
@@ -109,7 +109,7 @@ In summary, the process works as follows:
 
 If the database is removed by one of the mechanisms described above, you will know because your browser won’t start downloading a file, and instead you will be directed back to the verification screen with the button to begin the export again.
 
-If your export results in an error, you will be frustrated by the lack of insight that the error message provides. If you do get an error message, please do try the export again, but if it results in an error message, please send an email to [help@adam.co.za](mailto:help@adam.co.za) stating your school and, most importantly, the time that you tried to generate the database.
+If your export results in an error, you will be frustrated by the lack of insight that the error message provides. If you do get an error message, please do try the export again, but if it results in an error message, please send an email to [help@adam.co.za](mailto:help@adam.co.za) stating your school and, most importantly, the time that you tried to generate the database.
 
 While we wish everyone an error free experience, this is the first iteration of this feature and we kindly ask your patience as we iron out any unexpected bugs and issues that may arise!
 
@@ -119,7 +119,7 @@ Now that you have downloaded the database, you will need to open it with the SA-
 
 Information on where to download SA-SAMS and how to use it can be found [on the Tuthong website](https://www.google.com/url?q=http://www.thutong.doe.gov.za/administration/Administration/tabid/1570/Default.aspx&sa=D&source=editors&ust=1778246676653008&usg=AOvVaw0RkbFqbAw7IP9OIHMOKOhB).
 
-There are **three** components to the installation and you must run the setup in sequence:
+There are **three** components to the installation and you must run the setup in sequence:
 
 1.  Install the SA-SAMS base installation (“first time installation, Installation File”)
 2.  Install the “EdusolSAMS Spread” package
@@ -128,7 +128,7 @@ There are **three** components to the installation and you must run the setup i
 !!! warning
     *Note that, when you open SA-SAMS, you should see a version number in the title bar. Below, it shows “17.0.0.The first two digits correlate to the current calendar year: 17 corresponds with 2017.* ***If you do not see a version number in the title bar****, it indicates that the installation of the three components, discussed above, is not complete.*
 
-Once installed, look for the “**EdusolSAMS**” icon in your Start menu. When opening the database, choose the “**On the Network**” option and then click on the  “**Browse…**” button to find the database you saved:
+Once installed, look for the “**EdusolSAMS**” icon in your Start menu. When opening the database, choose the “**On the Network**” option and then click on the  “**Browse…**” button to find the database you saved:
 
 ![](assets/screenshots/sa-sams-export/sa-sams-export-07.png)
 

@@ -26,9 +26,9 @@ Head to the template management page: **Reporting → Report Period Administrati
 
 Clicking on this option will provide you with some settings to change. The settings that are available are unique for each template.
 
-Make the appropriate selections for the settings and then save the settings using the **Save** button at the bottom of the page. These changes will now take effect on the template.
+Make the appropriate selections for the settings and then save the settings using the **Save** button at the bottom of the page. These changes will now take effect on the template.
 
-**Note:** It may happen that your changes are not reflected immediately. If you are making these changes towards the end of your reporting period, near your publishing date, please make sure to [refresh the archived reports](#the-report-doesnt-show-new-information) to ensure that the changes you’ve made reflect on the reports that ADAM generates.
+**Note:** It may happen that your changes are not reflected immediately. If you are making these changes towards the end of your reporting period, near your publishing date, please make sure to [refresh the archived reports](#the-report-doesnt-show-new-information) to ensure that the changes you’ve made reflect on the reports that ADAM generates.
 
 ## Staff Signatures
 
@@ -66,7 +66,7 @@ The signatures must be uploaded to the individual staff members’ Document Repo
 
 ADAM will use the *first* signature that it finds in this document repository category. This can sometimes be unpredictable if there are multiple versions of the signature. Thus, you are advised to delete any old versions of the signature so that the final choice not left to chance.
 
-Navigate to the staff member’s profile (**Staff → Staff Administration → Staff Info**) and click on the **Document Repository** tab (if you can’t see this tab, ask your ADAM administrator for privileges first). Click on the “**Signatures**” section. Click on the “Choose files” button and locate the copy of the signature on your computer. The click on the **Upload files…** button. The signature should appear in the list of uploaded files.
+Navigate to the staff member’s profile (**Staff → Staff Administration → Staff Info**) and click on the **Document Repository** tab (if you can’t see this tab, ask your ADAM administrator for privileges first). Click on the “**Signatures**” section. Click on the “Choose files” button and locate the copy of the signature on your computer. The click on the **Upload files…** button. The signature should appear in the list of uploaded files.
 
 If you can see the Document Respository tab within the staff profile, but don’t see the “Signatures” category, then you will [need privileges to upload documents to that category first](document-repository.md#staff-permissions).
 
@@ -107,9 +107,9 @@ If you still cannot get the signature to display, please contact the ADAM Helpde
 ADAM can print reports by any class or grade group in the school.
 
 !!! warning
-    *Note that if you choose a class, you* ***must*** *choose a* ***single grade*** *class. This is especially important if the different grades use different templates. ADAM will use the template that for the first pupil on* ***all*** *the other pupils.*
+    *Note that if you choose a class, you* ***must*** *choose a* ***single grade*** *class. This is especially important if the different grades use different templates. ADAM will use the template that for the first pupil on* ***all*** *the other pupils.*
 
-On the **Reporting** tab, under the **Report Publishing** heading, please have a look for the option **Print a class’s reports** or **Print a grade’s reports**.
+On the **Reporting** tab, under the **Report Publishing** heading, please have a look for the option **Print a class’s reports** or **Print a grade’s reports**.
 
 Choose the appropriate grade or class and continue.
 
@@ -119,11 +119,11 @@ Depending on the report template that is in use, you may get the option to produ
 
 The option on the right allows you to force ADAM to make each report fit a certain **page multiple**. This is very useful if you are printing pages that vary between even and odd number of pages depending on the pupil. If you then wish to print back-to-back, setting your “Page multiple” to 2 would ensure that the back page of an odd-numbered page report was left blank and ensure that the next report started on a separate piece of paper.
 
-The option to **Refresh archived copies** will be ticked automatically if the publishing date is in the future. Otherwise ADAM will fetch previously generated copies from the Document Repository, where they exist.
+The option to **Refresh archived copies** will be ticked automatically if the publishing date is in the future. Otherwise ADAM will fetch previously generated copies from the Document Repository, where they exist.
 
-If you wish to have ADAM **print the correct number of reports per pupil** depending on how many families are linked to them and who require reports, then tick this box. Otherwise ADAM will print one copy  per pupil.
+If you wish to have ADAM **print the correct number of reports per pupil** depending on how many families are linked to them and who require reports, then tick this box. Otherwise ADAM will print one copy  per pupil.
 
-You also have the option of producing reports for selected pupils within the class or grade. You can use the checkbox **Select all pupils** at the top to select or deselect all pupils.
+You also have the option of producing reports for selected pupils within the class or grade. You can use the checkbox **Select all pupils** at the top to select or deselect all pupils.
 
 Click on the **View Reports** button when you are done. ADAM will now compile a single PDF document with all the reports, ready for printing.
 
@@ -134,12 +134,12 @@ Click on the **View Reports** button when you are done. ADAM will now compile a 
 
 ## Emailing Reports
 
-ADAM can send emailed reports to each parent of a pupil where the family is set to receive reports and the individual email address of that parent is set to receive reports.  
+ADAM can send emailed reports to each parent of a pupil where the family is set to receive reports and the individual email address of that parent is set to receive reports.  
 
 !!! warning
     Thus there are two settings to check if the emailing process indicates that the parents were not sent reports, or if the parents didn’t receive a report.
 
-To begin, visit the **Reporting** tab and under the **Report Publishing** heading click on **Email a class’s reports**. (There is no option to email a grade’s reports, so you may want to create some grade-wide classes if you don’t have any).
+To begin, visit the **Reporting** tab and under the **Report Publishing** heading click on **Email a class’s reports**. (There is no option to email a grade’s reports, so you may want to create some grade-wide classes if you don’t have any).
 
 The process for emailing reports is similar to printing above. Firstly, choose a reporting period:
 
@@ -151,23 +151,23 @@ Next choose a class of pupils to send to. Please don’t choose a class that has
 
 At the top, you can choose which sections of your report you wish to send. Note that these sections depend entirely on how your reporting template is set up and you may not see all the options shown above under the “**Sections**” heading.
 
-The **Page Multiple** value will force ADAM to add blank pages to the end of a report until its length is a multiple of the number chosen here. Typically this is used for printing only, and when printing back-to-back it is sensible to choose a page multiple of 2. Page multiples of 4 or 8 are only useful if you are printing archival copies of the report and wish to print multiple pages on a single side of paper (side-by-side and back-to-back printing, for example, would mean four pages per piece of paper and thus a page multiple of 4 would be useful)
+The **Page Multiple** value will force ADAM to add blank pages to the end of a report until its length is a multiple of the number chosen here. Typically this is used for printing only, and when printing back-to-back it is sensible to choose a page multiple of 2. Page multiples of 4 or 8 are only useful if you are printing archival copies of the report and wish to print multiple pages on a single side of paper (side-by-side and back-to-back printing, for example, would mean four pages per piece of paper and thus a page multiple of 4 would be useful)
 
 If you wish, you can perform a **Trial Run**. In this case, all the reports will be emailed to your address. This is useful to test with one or two pupils. Note that if the reporting period has not yet reached its publish date, this option is automatically turned on! This relates to the warning that appears at the top of the screen.
 
-ADAM allows you to **delay delivery** of your report emails until a specific time. The time that will display here by default is the report publishing time, but you can choose any time you’d like to. ADAM sends these reports via the messaging centre and so once you click on send here, the same controls that you have for [normal messaging batches](messaging-centre.md#managing-messaging-centre-batches) are also available to you for your reports (including adjusting the delivery time, suspending delivery indefinitely, or even aborting the batch). Also note that this time is automatically ignored if you choose to send a trial run. In this instance the reports will be delivered to you immediately and no messaging centre batch will be created.
+ADAM allows you to **delay delivery** of your report emails until a specific time. The time that will display here by default is the report publishing time, but you can choose any time you’d like to. ADAM sends these reports via the messaging centre and so once you click on send here, the same controls that you have for [normal messaging batches](messaging-centre.md#managing-messaging-centre-batches) are also available to you for your reports (including adjusting the delivery time, suspending delivery indefinitely, or even aborting the batch). Also note that this time is automatically ignored if you choose to send a trial run. In this instance the reports will be delivered to you immediately and no messaging centre batch will be created.
 
-The next option allows you to **email the reports to the pupils** also. Normally ADAM emails them only to their parents. When delivering final reports, the reports are always be emailed to parents and this cannot be disabled. During a trial run, reports are only delivered to the user who initiates the trial run.
+The next option allows you to **email the reports to the pupils** also. Normally ADAM emails them only to their parents. When delivering final reports, the reports are always be emailed to parents and this cannot be disabled. During a trial run, reports are only delivered to the user who initiates the trial run.
 
-The **refreshing of archived copies** causes ADAM to overwrite the archived copy of the report in the document repository. This setting is irrelevant if the publishing date is in the future: ADAM will always update the archived copy. However, if it is *past* the publishing date, ADAM will send out the copy that is in the document repository. This is discussed more in [the section below](#the-report-doesnt-show-new-information) that deals with report troubleshooting.
+The **refreshing of archived copies** causes ADAM to overwrite the archived copy of the report in the document repository. This setting is irrelevant if the publishing date is in the future: ADAM will always update the archived copy. However, if it is *past* the publishing date, ADAM will send out the copy that is in the document repository. This is discussed more in [the section below](#the-report-doesnt-show-new-information) that deals with report troubleshooting.
 
 You have the option of choosing which pupils’ reports to email. By default all pupils are ticked.
 
-Finally, click on the **Email reports** button at the bottom of the screen. A new screen will load and ADAM will update it with progress. Note that emailing of reports where the reports are being refreshed in the document repository can take a while. Please be patient and let the screen load fully.
+Finally, click on the **Email reports** button at the bottom of the screen. A new screen will load and ADAM will update it with progress. Note that emailing of reports where the reports are being refreshed in the document repository can take a while. Please be patient and let the screen load fully.
 
 ## Reports on the Parent and Pupil Portal
 
-In order for parents to access their children’s reports on the Parent and Pupil portal, they will need the [correct privileges](security-administration-for-families-and-pupils.md#managing-login-groups) in order to do so. Assuming that the privileges are set up correctly, they will have automatic access to the report as soon as the [publish date and time is reached](reporting-period-administration.md#reporting-period-administration).
+In order for parents to access their children’s reports on the Parent and Pupil portal, they will need the [correct privileges](security-administration-for-families-and-pupils.md#managing-login-groups) in order to do so. Assuming that the privileges are set up correctly, they will have automatic access to the report as soon as the [publish date and time is reached](reporting-period-administration.md#reporting-period-administration).
 
 ## Creating Custom Reports for Individuals
 
@@ -175,13 +175,13 @@ From time to time, a pupil may require a report that needs to be custom made rat
 
 Such reports might be drawn up in Microsoft Word or Canva as possible examples. The source is not important!
 
-**Save the report as a PDF file** (for best compatibility, we recommend saving it as a PDF version 1.4 document if you are able to - while an old PDF version, it has excellent adoption levels).
+**Save the report as a PDF file** (for best compatibility, we recommend saving it as a PDF version 1.4 document if you are able to - while an old PDF version, it has excellent adoption levels).
 
-Upload the report into the pupil’s **Reports** category within the [Document Repository](document-repository.md#document-repository).
+Upload the report into the pupil’s **Reports** category within the [Document Repository](document-repository.md#document-repository).
 
 Navigate to **Reporting → Report Publishing → Link Custom Reports to Report Periods**.
 
-Now choose the **grade of the pupil** and the **reporting period** this report  is for.
+Now choose the **grade of the pupil** and the **reporting period** this report  is for.
 
 ![](assets/screenshots/report-publishing/report-publishing-11.png)
 
@@ -189,7 +189,7 @@ ADAM will then show a list of all the pupils that have reports available for sel
 
 ![](assets/screenshots/report-publishing/report-publishing-12.png)
 
-Once done, you can click on the **Save** button at the bottom of the screen. ADAM will confirm how many pupils in that list have custom reports selected.
+Once done, you can click on the **Save** button at the bottom of the screen. ADAM will confirm how many pupils in that list have custom reports selected.
 
 Once a manual report is selected, ADAM will not override this report with a normal template report.
 
@@ -207,7 +207,7 @@ Here’s two reasons why ADAM might do this:
 
 #### Reason 1: The reports are already published
 
-Typically, this happens when the change has been made after the reporting period’s [publishing date](reporting-period-administration.md#reporting-period-time-frames) has been reached. Once the publish date is reached, ADAM “locks” the report that it produces to prevent any changes that might be made in error from conflicting with the published version.
+Typically, this happens when the change has been made after the reporting period’s [publishing date](reporting-period-administration.md#reporting-period-time-frames) has been reached. Once the publish date is reached, ADAM “locks” the report that it produces to prevent any changes that might be made in error from conflicting with the published version.
 
 You can check whether a report is published (and thus archived) by looking at the pupil’s report list in their profile:
 
@@ -271,7 +271,7 @@ There are a few things to check.
 
 #### Privilege Groups
 
-If in the list of names the pupil is crossed out and the message “this family does not have the required privileges to view the report; the report will not be emailed” is displayed next to the pupil, then the [pupil belongs to a privilege group](security-administration-for-families-and-pupils.md#managing-login-groups) that does not allow the parents to **view the most recent report**.
+If in the list of names the pupil is crossed out and the message “this family does not have the required privileges to view the report; the report will not be emailed” is displayed next to the pupil, then the [pupil belongs to a privilege group](security-administration-for-families-and-pupils.md#managing-login-groups) that does not allow the parents to **view the most recent report**.
 
 ![](assets/screenshots/report-publishing/report-publishing-15.png)
 

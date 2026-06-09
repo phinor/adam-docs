@@ -14,7 +14,7 @@ ADAM’s two-factor authentication system works using an Authenticator App that 
 
 ## Supported Authenticator Apps
 
-There are many different Authentor Apps that you can use. Popular ones include **Google Authenticator** (by Google LLC), **Microsoft Authenticator** (by Microsoft Corporation), or **Twilio Authy Authenticator** (previously simply “Authy”, by Twilio).
+There are many different Authentor Apps that you can use. Popular ones include **Google Authenticator** (by Google LLC), **Microsoft Authenticator** (by Microsoft Corporation), or **Twilio Authy Authenticator** (previously simply “Authy”, by Twilio).
 
 ![](assets/screenshots/two-factor-authentication/two-factor-authentication-01.png)
 
@@ -34,13 +34,13 @@ If your school makes use of Google Workspace, we recommend using the Google Auth
 
 ## Adding Two-Factor Authentication to your account
 
-First, [download and install an authenticator app](#supported-authenticator-apps) from your app store.
+First, [download and install an authenticator app](#supported-authenticator-apps) from your app store.
 
 Visit your ADAM login screen and login as normal.
 
-**Compulsory Enrolment:** If you are forced to add 2FA to your account, you will immediately be taken to the following screen after you log in to set up 2FA.
+**Compulsory Enrolment:** If you are forced to add 2FA to your account, you will immediately be taken to the following screen after you log in to set up 2FA.
 
-**Voluntary Enrolment:** If you are enabling 2FA voluntarily, visit **Staff → Security Administration → Manage Two-Factor Authentication**.
+**Voluntary Enrolment:** If you are enabling 2FA voluntarily, visit **Staff → Security Administration → Manage Two-Factor Authentication**.
 
 ADAM will display the following screen:
 
@@ -58,11 +58,11 @@ For example, in the Google Authenticator App, you would click on the “+” ico
 
 Once the QR code has been scanned, and confirmed, The Authenticator App will then show the account in the list, and a six-digit number will appear below it.
 
-The last step is to confirm to ADAM that the secret has been successfully saved in your Authenticator App. Do this by entering in the One-Time PIN that is shown on your app to confirm. Type it in to the **Confirmation Code** block.
+The last step is to confirm to ADAM that the secret has been successfully saved in your Authenticator App. Do this by entering in the One-Time PIN that is shown on your app to confirm. Type it in to the **Confirmation Code** block.
 
 ![](assets/screenshots/two-factor-authentication/two-factor-authentication-06.png)
 
-Finally, click on the button at the bottom of the screen: **Add Two-Factor Authentication Protection** to confirm the PIN and add 2FA to your account.
+Finally, click on the button at the bottom of the screen: **Add Two-Factor Authentication Protection** to confirm the PIN and add 2FA to your account.
 
 If you entered the confirmation PIN correctly, you will see this screen:
 
@@ -76,7 +76,7 @@ Once you have added two-factor authentication, you can remove 2FA by visiting **
 
 ![](assets/screenshots/two-factor-authentication/two-factor-authentication-08.png)
 
-Click on the **Remove Two-Factor Authentication** option at the bottom to begin the process.
+Click on the **Remove Two-Factor Authentication** option at the bottom to begin the process.
 
 You must then enter your ADAM password to confirm that you’d like to remove Two-Factor Authentication from your account:
 
@@ -119,11 +119,11 @@ Please be aware that the only time that ADAM and your Authenticator App will com
 
 Similarly, if you remove the protection from your account, it does not automatically remove the code from your app.
 
-If you lose your phone or are unable to generate an OTP for whatever reason (perhaps your battery is flat), only your [ADAM administrator can remove the 2FA protection](#removing-two-factor-authentication-for-another-staff-member) from your account.
+If you lose your phone or are unable to generate an OTP for whatever reason (perhaps your battery is flat), only your [ADAM administrator can remove the 2FA protection](#removing-two-factor-authentication-for-another-staff-member) from your account.
 
 ### I have two ADAM logins and need to scan two different QR codes for the two different accounts. Can I do this?
 
-Yes, most authenticator apps will support multiple accounts. Please be aware that if you scan a second QR Code for the same ADAM server, the Authenticator App *may* ask you if you want to replace the OTP.
+Yes, most authenticator apps will support multiple accounts. Please be aware that if you scan a second QR Code for the same ADAM server, the Authenticator App *may* ask you if you want to replace the OTP.
 
 Most authenticator apps will also allow you to rename the OTP entry so that you can differentiate between the two entries in your phone.
 
@@ -153,7 +153,7 @@ If this happens, there will be a mismatch between the codes that your phone gene
 
 ### Two-Factor Authentication Settings
 
-Within the Site Settings, navigate to **Security** tab and scroll down to the **Login Settings** heading.
+Within the Site Settings, navigate to **Security** tab and scroll down to the **Login Settings** heading.
 
 The relevant settings are highlighted below:
 
@@ -161,7 +161,7 @@ The relevant settings are highlighted below:
 
 ### 2FA Authentication Windows
 
-The **Two-Factor Authentication Window** determines how many OTPs should be allowed on either side of the window. Because OTPs are time-based, discrepancies in the user’s cellphone time and server time can play a factor.
+The **Two-Factor Authentication Window** determines how many OTPs should be allowed on either side of the window. Because OTPs are time-based, discrepancies in the user’s cellphone time and server time can play a factor.
 
 In most scenarios, these two clocks should be independently set (phones by GPS, servers by network time servers (NTP)) and should be very close to one another. This might not always be possible. To increase the life-span of an OTP, increase the window.
 
@@ -171,15 +171,15 @@ Each window represents 30 seconds. The default setting is 2 and will cause the s
 
 ### Forced Use of 2FA
 
-Administrators can force all staff members to make use of Two-Factor Authentication by changing a setting the [Site Settings](changing-site-settings.md#changing-site-settings). Within the Site Settings, navigate to **Security** tab and scroll down to the **Login Settings** heading.
+Administrators can force all staff members to make use of Two-Factor Authentication by changing a setting the [Site Settings](changing-site-settings.md#changing-site-settings). Within the Site Settings, navigate to **Security** tab and scroll down to the **Login Settings** heading.
 
-Change the setting **Two-Factor Authentication Forced For Staff** to “Yes”.
+Change the setting **Two-Factor Authentication Forced For Staff** to “Yes”.
 
-When implementing 2FA across your entire staff body, we encourage a phased in approach before implementing this setting. Please be sure to conduct training with your staff that use ADAM and get as many of them as possible to use the feature to [voluntarily enrol](#adding-two-factor-authentication-to-your-account) for two-factor authentication before it becomes a mandatory requirement.
+When implementing 2FA across your entire staff body, we encourage a phased in approach before implementing this setting. Please be sure to conduct training with your staff that use ADAM and get as many of them as possible to use the feature to [voluntarily enrol](#adding-two-factor-authentication-to-your-account) for two-factor authentication before it becomes a mandatory requirement.
 
 ### Changing How Frequently is the OTP required
 
-The **Two-Factor Authentication Method** determines when users will be requested for their OTP. The default option is at every login, but this can be frustrating to users who make use of ADAM throughout the day. Other options are to remember it once per computer or once per computer per day.
+The **Two-Factor Authentication Method** determines when users will be requested for their OTP. The default option is at every login, but this can be frustrating to users who make use of ADAM throughout the day. Other options are to remember it once per computer or once per computer per day.
 
 #### Require OTP at every login
 
@@ -193,13 +193,13 @@ ADAM will ask the users once each day on each device that the user logs in with 
 
 Whenever ADAM detects that a user is using a new computer, it will ask them for an OTP. If they are using a computer that they’ve used in the past, ADAM won’t ask them for an OTP. This is normally fine for users who have dedicated computers that they alone use. Note that ADAM may still ask for an OTP from time-to-time, but it may be as infrequently as once per month.
 
-If the “once per computer” option is chosen, then ADAM will ask for the OTP each time the user logs in on a new computer. Have a look at the **Remember logged-in machines for** setting. This means that ADAM will forget about a computer after a certain number of days and will automatically re-ask for the OTP when it does.
+If the “once per computer” option is chosen, then ADAM will ask for the OTP each time the user logs in on a new computer. Have a look at the **Remember logged-in machines for** setting. This means that ADAM will forget about a computer after a certain number of days and will automatically re-ask for the OTP when it does.
 
 ADAM uses a cookie stored on the devices to remember its identity. If the cookies are cleared, ADAM will effectively see the computer as a new device and ask the user for their OTP. Cookies are also specific to user sessions, browsers and more. Switching to a different web-browser on the same computer will also count as a new device and will require a new OTP.
 
 ## Removing Two Factor Authentication for another staff member
 
-If a user is enrolled for Two Factor Authentication, they can remove 2FA authentication by navigating to **Administration → Security Administration → Manage Two Factor Authentication** and then clicking on the **Remove 2FA** option next to their name in the list.
+If a user is enrolled for Two Factor Authentication, they can remove 2FA authentication by navigating to **Administration → Security Administration → Manage Two Factor Authentication** and then clicking on the **Remove 2FA** option next to their name in the list.
 
 !!! warning
     Note that if 2FA is reinstated by a user after being removed, their app will have to be updated with a new QR Code. ADAM does not allow a previous code to be used. The code should be removed from the 2FA app when 2FA is disabled from the account.

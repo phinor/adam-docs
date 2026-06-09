@@ -4,13 +4,13 @@ In this introductory section, we assume that the installation of ADAM is already
 
 1.  Staff Administration
 
-1.  [Adding new staff to ADAM](staff-information.md#adding-new-staff-to-the-database) 
-2.  [Changing staff permissions](security-administration-for-staff.md#security-administration-for-staff) 
+1.  [Adding new staff to ADAM](staff-information.md#adding-new-staff-to-the-database) 
+2.  [Changing staff permissions](security-administration-for-staff.md#security-administration-for-staff) 
 
 2.  Pupil Administration
 
-1.  [Adding new pupils to ADAM](pupil-information.md#adding-a-new-pupil) 
-2.  [Processing admissions](enrolment-process.md#processing-enrolments-of-pupils) 
+1.  [Adding new pupils to ADAM](pupil-information.md#adding-a-new-pupil) 
+2.  [Processing admissions](enrolment-process.md#processing-enrolments-of-pupils) 
 
 3.  Class Administration
 

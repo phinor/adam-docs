@@ -12,7 +12,7 @@ Click on the option to **Add a new notification**.
 
 ![](assets/screenshots/change-log-notifications/change-log-notifications-02.png)
 
-Enter the **name** of the notification at the top. This is used to generate the email subject, so it helps if it is named sensibly.
+Enter the **name** of the notification at the top. This is used to generate the email subject, so it helps if it is named sensibly.
 
 Secondly, choose the **notification interval**. ADAM can monitor for changes at intervals from 5 minutes to 1 week. Notifications will be sent only if changes have been made in that time span.
 
@@ -26,6 +26,6 @@ Next, choose the fields that ADAM should **monitor for changes**.
 !!! warning
     Please don’t mix field types here. Either choose all family, all pupil or all staff. Set up multiple notifications if you need to.
 
-Finally, if you require **additional information** to be included - perhaps an account number, choose this field from the selection at the bottom. Once again, please don’t mix the fields in this alert.
+Finally, if you require **additional information** to be included - perhaps an account number, choose this field from the selection at the bottom. Once again, please don’t mix the fields in this alert.
 
 Finally, click on the button at the bottom to save the notification.

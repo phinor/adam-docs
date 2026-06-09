@@ -15,7 +15,7 @@ Each subject is associated with a subject category. These categories exist for p
 
 These categories are especially important in terms of reporting. Many report templates use these categories to decide how to display and format the subject in question. Subjects in the “Sports” category may be treated differently from subjects in the “Academic” by a template.
 
-These categories can be managed by clicking on the **Subjects** tab, under the **Subject Administration** section, click on the **Edit the Subject Categories** option.
+These categories can be managed by clicking on the **Subjects** tab, under the **Subject Administration** section, click on the **Edit the Subject Categories** option.
 
 ![](assets/screenshots/subjects/subjects-01.png)
 
@@ -23,25 +23,25 @@ From this screen subject categories can be added, edited, re-ordered and disable
 
 ## Managing the Subjects
 
-To manage the subjects, click on the **Edit the subjects** menu option, found on the **Subjects** tab under the **Subject Administration** heading. You should see a screen that looks similar to this:
+To manage the subjects, click on the **Edit the subjects** menu option, found on the **Subjects** tab under the **Subject Administration** heading. You should see a screen that looks similar to this:
 
 ![](assets/screenshots/subjects/subjects-02.png)
 
 At the top of the screen, there is an option to **Add a new Subject**.
 
-To change an existing subject, click on the **edit** link next to the appropriate subject.
+To change an existing subject, click on the **edit** link next to the appropriate subject.
 
-To disable a subject, click on the **disable** link next to the subject that you want to disable.
+To disable a subject, click on the **disable** link next to the subject that you want to disable.
 
-If you want to change the ordering of the subjects, you can use the **up** and **down** options next to each subject.
+If you want to change the ordering of the subjects, you can use the **up** and **down** options next to each subject.
 
-If you have a parallel medium school, the option to enter **translations** will be important.
+If you have a parallel medium school, the option to enter **translations** will be important.
 
 Each of these functions is discussed in more detail below.
 
 ### Adding a new subject
 
-A new subject can be added by clicking on the **Subjects** tab, under the **Subject Administration** section, click on the **Edit the Subjects** option. Clicking on the link near the top **“Add a new subject”** will show the screen depicted alongside.
+A new subject can be added by clicking on the **Subjects** tab, under the **Subject Administration** section, click on the **Edit the Subjects** option. Clicking on the link near the top **“Add a new subject”** will show the screen depicted alongside.
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/Wc0_U8x9F-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -120,9 +120,9 @@ The following information is asked for when adding or editing a subject. A descr
 
 -   **List Order**
 
--   This simply allows you a faster way to change the order of the subject instead of having to click **up** or **down** repeatedly for a subject. This list allows you to choose its new position in one go.
+-   This simply allows you a faster way to change the order of the subject instead of having to click **up** or **down** repeatedly for a subject. This list allows you to choose its new position in one go.
 
-Once you are happy with the information, you can now click on the **Save this Subject** button to save the details you’ve captured.
+Once you are happy with the information, you can now click on the **Save this Subject** button to save the details you’ve captured.
 
 Once you have created your subjects, you are now ready to [create classes](class-management.md#class-management).
 
@@ -130,7 +130,7 @@ Once you have created your subjects, you are now ready to [create classes](class
 
 The order that the subjects are listed in here is used throughout ADAM and on the reports themselves.
 
-When looking at the list of subjects, as [described above](#managing-the-subjects), subjects can be moved using the **up** and **down** options next to each subject. This is only useful for moving a subject a small number of places. If you need to move the subject more than a few positions, click on the **edit** option next to the subject and change its sortorder to reflect its desired position in the list:
+When looking at the list of subjects, as [described above](#managing-the-subjects), subjects can be moved using the **up** and **down** options next to each subject. This is only useful for moving a subject a small number of places. If you need to move the subject more than a few positions, click on the **edit** option next to the subject and change its sortorder to reflect its desired position in the list:
 
 ![](assets/screenshots/subjects/subjects-06.png)
 
@@ -138,10 +138,10 @@ When complete, click on **Save this Subject**.
 
 ### Translating Subject Names
 
-If your school is parallel medium and you wish to have the names on subjects appear on the report in the language of teaching and learning, then you can click on the **translations** option next to the subject and enter in the translated names for the subject in each of the eleven official languages:
+If your school is parallel medium and you wish to have the names on subjects appear on the report in the language of teaching and learning, then you can click on the **translations** option next to the subject and enter in the translated names for the subject in each of the eleven official languages:
 
 ![](assets/screenshots/subjects/subjects-07.png)
 
-Click on **Save translations** when done.
+Click on **Save translations** when done.
 
-Importantly, the language of teaching and learning must be set correctly for the class concerned. The restriction here is that each class can only be taught in a single language and if a dual language exists, it would have to be captured as two individual classes on ADAM, one for each language. Have a look at [editing classes](class-management.md#editing-an-existing-class) for more information.
+Importantly, the language of teaching and learning must be set correctly for the class concerned. The restriction here is that each class can only be taught in a single language and if a dual language exists, it would have to be captured as two individual classes on ADAM, one for each language. Have a look at [editing classes](class-management.md#editing-an-existing-class) for more information.

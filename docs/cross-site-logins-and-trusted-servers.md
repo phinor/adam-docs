@@ -14,19 +14,19 @@ The following screen appears:
 
 ![](assets/screenshots/cross-site-logins-and-trusted-servers/cross-site-logins-and-trusted-servers-02.png)
 
-The **hostname** is the host name of the remote server which this server should trust. This is the part of the URL that follows the https:// portion. For example, adam.example.com.
+The **hostname** is the host name of the remote server which this server should trust. This is the part of the URL that follows the https:// portion. For example, adam.example.com.
 
-The **shared secret** is a random series of characters. You are strongly encouraged to keep this set of characters rather than type in something more memorable or easier to type in! The shared secret needs to be the same for both this servers in the trust relationship. Note, however, that if you are to trust more than one server, the shared secret can (and should!) be different for each relationship.
+The **shared secret** is a random series of characters. You are strongly encouraged to keep this set of characters rather than type in something more memorable or easier to type in! The shared secret needs to be the same for both this servers in the trust relationship. Note, however, that if you are to trust more than one server, the shared secret can (and should!) be different for each relationship.
 
 This secret should be kept highly confidential. You should not send it by email or via any other form of unencrypted communication. Any person with this key would be able to log in as any user on your server.
 
 Ideally, you would set up the trust relationship for both servers from the same computer and so you could just copy and paste this value without it having to send it to any other person.
 
-Finally, you can select which of **Parents**, **Staff** or **Pupils** you would like to be able to log in to the trusted servers. This can be changed later. Note that these values should be set to the same values on both servers. Otherwise, ADAM may assume that a certain type of logins are allowed on the trusted server only to have the logins rejected.
+Finally, you can select which of **Parents**, **Staff** or **Pupils** you would like to be able to log in to the trusted servers. This can be changed later. Note that these values should be set to the same values on both servers. Otherwise, ADAM may assume that a certain type of logins are allowed on the trusted server only to have the logins rejected.
 
 ![](assets/screenshots/cross-site-logins-and-trusted-servers/cross-site-logins-and-trusted-servers-03.png)
 
-Click on **Add Trusted Server** to save.
+Click on **Add Trusted Server** to save.
 
 After adding your first of the two servers, you will see a “connection was unsuccessful” error.
 
@@ -34,7 +34,7 @@ After adding your first of the two servers, you will see a “connection was uns
 
 This is entirely expected because we have yet to set up the trusted relationship on the second server.
 
-Repeat these steps on the second server. You will, for the **hostname**, however, enter that of the first server that you were just working on. Also remember that you will now need to replace the **Shared Secret** with the same secret that was set for your first server:
+Repeat these steps on the second server. You will, for the **hostname**, however, enter that of the first server that you were just working on. Also remember that you will now need to replace the **Shared Secret** with the same secret that was set for your first server:
 
 ![](assets/screenshots/cross-site-logins-and-trusted-servers/cross-site-logins-and-trusted-servers-05.png)
 
@@ -64,8 +64,8 @@ In order for ADAM to allow cross-site logins, the following must be in place for
 
 -   Staff:
 
--   Staff members **must** have an **Admin Number** set on their profiles. ADAM will not allow staff members with a blank Admin Number to perform a cross-site login.
--   Their **Admin Number** field must be the same on both servers. If not, ADAM will not find the corresponding user and will not let them in.
+-   Staff members **must** have an **Admin Number** set on their profiles. ADAM will not allow staff members with a blank Admin Number to perform a cross-site login.
+-   Their **Admin Number** field must be the same on both servers. If not, ADAM will not find the corresponding user and will not let them in.
 -   Note that if the Admin Numbers are not standardised, then ADAM may log a user into another user’s profile.
 
 -   Families:
@@ -75,8 +75,8 @@ In order for ADAM to allow cross-site logins, the following must be in place for
 
 -   Pupils:
 
--   Pupils **must** have an **Admin Number** set on their profiles. ADAM will not allow pupils with a blank Admin Nuimber to perform a cross-site login.
--   Their **Admin Number** must be the same on both servers. If they are not, ADAM will not be able to find the corresponding user and log them in.
+-   Pupils **must** have an **Admin Number** set on their profiles. ADAM will not allow pupils with a blank Admin Nuimber to perform a cross-site login.
+-   Their **Admin Number** must be the same on both servers. If they are not, ADAM will not be able to find the corresponding user and log them in.
 -   Note that if the Admin Numbers are not standardised, then ADAM may log a user into another user’s profile.
 
 ### Performing Cross-Site Logins
@@ -87,7 +87,7 @@ Once ADAM has been configured with at least once trusted server relationship tha
 
 Note that users must first have the appropriate privilege to allow them to see this option.
 
-When  they click on that option, a list of Trusted Servers will appear:
+When  they click on that option, a list of Trusted Servers will appear:
 
 ![](assets/screenshots/cross-site-logins-and-trusted-servers/cross-site-logins-and-trusted-servers-09.png)
 
@@ -116,7 +116,7 @@ A good number of things can go wrong when two automated systems are involved. He
 
 ### Do their credentials match?
 
-Check that both users on both systems have matching credentials. Check that no other users have the same credentials. ADAM uses the **Admin Number** field for both Staff and Pupil logins, and the parents’ ID number / passport field.
+Check that both users on both systems have matching credentials. Check that no other users have the same credentials. ADAM uses the **Admin Number** field for both Staff and Pupil logins, and the parents’ ID number / passport field.
 
 ### DNS Issues
 

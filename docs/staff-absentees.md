@@ -10,14 +10,14 @@ Navigate to **Staff → Staff Absentees → Add absentee records (individual)**.
 
 ![](assets/screenshots/staff-absentees/staff-absentees-01.png)
 
-Next, confirm the start and end date of the absence. If a range of dates is provided, ADAM can be instructed to **Exclude Weekends** from the absence.
+Next, confirm the start and end date of the absence. If a range of dates is provided, ADAM can be instructed to **Exclude Weekends** from the absence.
 
-Choose the **type** of absence and provide a **note** for your future reference.
+Choose the **type** of absence and provide a **note** for your future reference.
 
-Click on the **record staff absenteeism** button to save the records.
+Click on the **record staff absenteeism** button to save the records.
 
 ![](assets/screenshots/staff-absentees/staff-absentees-02.png)
 
 ## Clearing absentee records
 
-If an absentee record was added in error, it can be removed by first selecting the date range to remove and then clicking on the **Clear staff absenteeism** button.
+If an absentee record was added in error, it can be removed by first selecting the date range to remove and then clicking on the **Clear staff absenteeism** button.

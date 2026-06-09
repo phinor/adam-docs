@@ -8,15 +8,15 @@ ADAM has a “Maintenance Mode” which will prevent most users from logging int
 
 ### Enabling and Disabling Maintenance Mode
 
-Navigate to the Site Settings (**Administration → Site Administration → Edit Site Settings**). On the **General** tab, scroll down to find the **Maintenance Mode** heading.
+Navigate to the Site Settings (**Administration → Site Administration → Edit Site Settings**). On the **General** tab, scroll down to find the **Maintenance Mode** heading.
 
 ![](assets/screenshots/server-setup-and-configuration/server-setup-and-configuration-01.png)
 
 Enable or disable Maintenance Mode by changing the setting to “Yes” to enable Maintenance Mode, or “No” to disable Maintenance Mode.
 
-The **Maintenance Mode Message** can be customised to give users a better understanding of why ADAM is in maintenance mode and perhaps when you expect to be finished.
+The **Maintenance Mode Message** can be customised to give users a better understanding of why ADAM is in maintenance mode and perhaps when you expect to be finished.
 
-Once done, click on the **Save Settings** button that appears at the bottom of the screen.
+Once done, click on the **Save Settings** button that appears at the bottom of the screen.
 
 When Maintenance Mode is enabled, a banner will appear across the top of the screen:
 
@@ -29,7 +29,7 @@ Before any significant work is undertaken, you are advised to consult the list o
 
 The list of logged in users can be obtained from **Administration → Login Records → View logged in users**.
 
-This will show a list of all staff, families and pupils who are currently logged into ADAM. Next to each, appears an **activity** icon which allows you to get an approximate idea of what they are busy with.
+This will show a list of all staff, families and pupils who are currently logged into ADAM. Next to each, appears an **activity** icon which allows you to get an approximate idea of what they are busy with.
 
 ![](assets/screenshots/server-setup-and-configuration/server-setup-and-configuration-04.png)
 
@@ -39,7 +39,7 @@ Some schools use Maintenance Mode to prevent access to the server at short notic
 
 This permission should be given sparingly, since if too many people have it, it may negate the entire point of Maintenance Mode which is to restrict access to ADAM.
 
-The privilege is found on the **Site Admin** tab of the staff privileges, is called “**Log in while in Maintenance Mode**”.
+The privilege is found on the **Site Admin** tab of the staff privileges, is called “**Log in while in Maintenance Mode**”.
 
 Note that Site Administrators will always be able to log in, even when the server is in Maintenance Mode.
 
@@ -99,4 +99,4 @@ This is the part of relevance for us. In your configuration file, you could then
 
 settings\[academics\] = 1
 
-For example. Note, please, the plural “settings” is required in the configuration file even though the name attribute makes use of the singular “setting”.
+For example. Note, please, the plural “settings” is required in the configuration file even though the name attribute makes use of the singular “setting”.

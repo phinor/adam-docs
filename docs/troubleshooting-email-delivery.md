@@ -1,6 +1,6 @@
 # Troubleshooting Email Delivery
 
-It occasionally happens that a recipient will not recieve an email message that has been sent by ADAM. This is most notable when parents, for example, are waiting for a [password reset email](parent-and-pupil-portal.md#forgotten-passwords) that never arrives.
+It occasionally happens that a recipient will not recieve an email message that has been sent by ADAM. This is most notable when parents, for example, are waiting for a [password reset email](parent-and-pupil-portal.md#forgotten-passwords) that never arrives.
 
 When trying to find a problem, the first thing to note is that ADAM itself is not responsible for delivering mail. It should be configured to talk to your school’s existing mail service and send mail out via that mechanism. Thus, your school’s IT department must be brought into the conversation when this is provided for. Some schools prefer to use a special mail delivery service for mail from ADAM, but these can be costly with large quantities of mail.
 

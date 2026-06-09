@@ -2,18 +2,18 @@
 
 Many of the automated emails sent to parents and staff can be customised to meet your language requirements. To find the templates, navigate to **Administration → Site Administration → Manage Email Messages**.
 
-Click on **edit** next to the template you wish to edit.
+Click on **edit** next to the template you wish to edit.
 
 ![](assets/screenshots/email-message-templates/email-message-templates-01.png)
 
 Depending on the template you are editing, you may see one or more of the following sections:
 
--   **Email Subject:** This appears in the email subject line when the message is sent.
--   **Top of Message:** This is where the body is displayed. In emails that include automated report content, this message will appear above the report content.
--   **Bottom of Message:** This section is often omitted for emails that do not include automated report content. Where it is present, it will appear below the emailed report.
--   **Valid Merge Codes:** Each email template provides different merge codes. These merge codes can be used in any of the sections. They must appear exactly as shown with the braces `{}`.
+-   **Email Subject:** This appears in the email subject line when the message is sent.
+-   **Top of Message:** This is where the body is displayed. In emails that include automated report content, this message will appear above the report content.
+-   **Bottom of Message:** This section is often omitted for emails that do not include automated report content. Where it is present, it will appear below the emailed report.
+-   **Valid Merge Codes:** Each email template provides different merge codes. These merge codes can be used in any of the sections. They must appear exactly as shown with the braces `{}`.
 
-Click on **Save Message** when done.
+Click on **Save Message** when done.
 
 ## Editing the Default Template
 
@@ -22,7 +22,7 @@ Where schools have demanding CI requirements, ADAM allows for the customisation 
 !!! warning
     Kindly note that we do not provide any support for the modification or formatting of email messages. This feature is provided for your use entirely at your risk. In the event that your email template is changed in any way, our only offer of support is to replace this with the default message template.
 
-Navigate to **Administration → Site Administration → Manage Email Messages**. Click on **edit** next to the **All Email** template, listed under the **General** heading.
+Navigate to **Administration → Site Administration → Manage Email Messages**. Click on **edit** next to the **All Email** template, listed under the **General** heading.
 
 ![](assets/screenshots/email-message-templates/email-message-templates-02.png)
 
@@ -30,7 +30,7 @@ Unlike other message templates, this one does not provide a “rich” text edit
 
 ![](assets/screenshots/email-message-templates/email-message-templates-03.png)
 
-Note carefully the four merge codes. Importantly, the `{body}` and `{footer}` merge codes MUST be included in the template.
+Note carefully the four merge codes. Importantly, the `{body}` and `{footer}` merge codes MUST be included in the template.
 
 !!! warning 
     Please be aware that while this allows you to enter and CSS and HTML code you wish, not all CSS styling and HTML is honoured by the email client that will show the email to the final recipient. Additionally, there is no standard as to which email clients honour which CSS directives, meaning that to get an email to display consistently across all email viewers is, in short, impossible. A simple Google search on “email css styling” will reveal as much. You are thus advised to keep your styling general and also to test it across as many email clients as possible to ensure that emails are displayed correctly and are legible in their final destinations. ***ADAM will not attempt to make any suggestions or corrections and will assume that you know what you’re doing!***
@@ -41,14 +41,14 @@ Finally, if your school employs a graphic designer, they might be able to assist
 
 ### Using banner images
 
-There are two merge codes for banner images: `{bannertop}` and `{bannerbottom}`. These banners should be uploaded in the same place as the [school logos](school-logos.md#school-logos).
+There are two merge codes for banner images: `{bannertop}` and `{bannerbottom}`. These banners should be uploaded in the same place as the [school logos](school-logos.md#school-logos).
 
 !!! warning
     Be aware that these banners are not automatically resized by ADAM. While the banner images can be resized in the CSS of the email (perhaps with a surrounding div tag with fixed dimensions), again be aware that no all email clients will support such modifications and you are advised to upload appropriately sized images that will display correctly for a large number of users without and styling intervention. ***Again, we emphasise the need to test your emails on a wide variety of email clients and platforms!***
 
 ### Staff Email Signatures
 
-A number of merge codes are provided to allow ADAM to customise the email signature depending on which staff member is sending the email. It is also possible, using the `{staffsignature}` directive, to have ADAM use the most recently uploaded image file from the staff member’s document repository as an email signature.
+A number of merge codes are provided to allow ADAM to customise the email signature depending on which staff member is sending the email. It is also possible, using the `{staffsignature}` directive, to have ADAM use the most recently uploaded image file from the staff member’s document repository as an email signature.
 
 Because ADAM pulls the most recent one, to update it, all you need to do is upload a new one.
 

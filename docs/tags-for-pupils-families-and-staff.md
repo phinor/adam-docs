@@ -4,7 +4,7 @@ ADAM can add tags to pupils’, families’ and staff name banners so that whene
 
 ![](assets/screenshots/tags-for-pupils-families-and-staff/tags-for-pupils-families-and-staff-01.png)
 
-While there are privileges to control who can see which type of tags (i.e. a staff member can be assigned the privilege to view family tags), there is no control regarding *which* families or *which* tags they can see.
+While there are privileges to control who can see which type of tags (i.e. a staff member can be assigned the privilege to view family tags), there is no control regarding *which* families or *which* tags they can see.
 
 Please consider, carefully, using these tags to store personal, private or sensitive information.
 
@@ -20,7 +20,7 @@ To add a new tag, click on the “**Add new Tag**” link at the top of the scre
 
 ![](assets/screenshots/tags-for-pupils-families-and-staff/tags-for-pupils-families-and-staff-03.png)
 
-Decide whether the tag is to be used for Pupil profiles, Family profiles or Staff profiles. If you require the same tag for multiple types of profiles (e.g. “Allergies” may apply to Pupils *and* Staff), then you will need to add the tag multiple times, once for each type of profile.
+Decide whether the tag is to be used for Pupil profiles, Family profiles or Staff profiles. If you require the same tag for multiple types of profiles (e.g. “Allergies” may apply to Pupils *and* Staff), then you will need to add the tag multiple times, once for each type of profile.
 
 Give a name for the tag (limited to 50 characters), and a description. The description is visible if you hover the mouse over the tag when viewing a profile:
 
@@ -28,11 +28,11 @@ Give a name for the tag (limited to 50 characters), and a description. The descr
 
 You can also choose a background colour and a foreground colour. Please make sure that your foreground colour is sufficiently contrasted with the background so that it is legible!
 
-Click on **Save this Tag** to see the changes. ADAM will show a preview of the tag in the next window.
+Click on **Save this Tag** to see the changes. ADAM will show a preview of the tag in the next window.
 
 ### Editing a tag
 
-From the list of tags, click on the **edit** option to the right of the tag you’d like to edit:
+From the list of tags, click on the **edit** option to the right of the tag you’d like to edit:
 
 You can then adjust the name and colours associated with the tag. Note that any pupils who are assigned to this tag will automatically show the changed tag immediately.
 
@@ -41,7 +41,7 @@ You can then adjust the name and colours associated with the tag. Note that any 
 
 ### Deleting a tag
 
-Next to the tag in the table, click on the **delete** button.
+Next to the tag in the table, click on the **delete** button.
 
 You will be asked to confirm your actions. Note that every pupil who is assigned to the tag will lose the tag and there is no way to undo this action. Once deleted, the tag is gone! A deleted tag would have to be manually recreated and re-assigned to the necessary pupils.
 

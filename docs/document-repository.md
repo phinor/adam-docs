@@ -34,7 +34,7 @@ The “delete” option next to the custom categories allows you to delete a cat
 
 If you allow parent and pupil access to the Document Repository through the Parent and Pupil Portals, then you can control which categories they can see. Note that parents are not able to upload information into the repository or delete anything from it – only access information, and only from the categories that you give access to.
 
-[Allowing parents to upload documents](#parent-uploads-into-the-document-repository) to the document repository is handled separately to this and parents do not need specific permissions granted here in order to upload a document.
+[Allowing parents to upload documents](#parent-uploads-into-the-document-repository) to the document repository is handled separately to this and parents do not need specific permissions granted here in order to upload a document.
 
 Even if you do give access to categories, parents still won’t get access to the Document Repository until they are given the permission to actually [see the Document Repository in the portal](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
@@ -42,7 +42,7 @@ To edit the permissions, click on the “**Administration**” tab, and under th
 
 ![](assets/screenshots/document-repository/document-repository-02.png)
 
-Note, carefully, the warning messages that ADAM shows for certain categories (such as the “Reports” category in the image above). Some categories are used internally by ADAM and can store temporary documents. In the case of reports, for example, each time a report is generated, a copy is stored in the archive. This copy is continually updated until the report is published. If you allow parent access to this category, they will be able to see draft copies of the reports *before* the reports are published.
+Note, carefully, the warning messages that ADAM shows for certain categories (such as the “Reports” category in the image above). Some categories are used internally by ADAM and can store temporary documents. In the case of reports, for example, each time a report is generated, a copy is stored in the archive. This copy is continually updated until the report is published. If you allow parent access to this category, they will be able to see draft copies of the reports *before* the reports are published.
 
 Click on the “change” option to adjust the privileges for that group:
 
@@ -170,7 +170,7 @@ In order to be uploaded in bulk, the documents must be named so that ADAM can ma
 3.  AdminNumber: e.g. AB01234.pdf
 4.  Username: e.g. 53johns.pdf
 
-The document names are not case sensitive and so a document named john smith.pdf would be matched to John Smith.
+The document names are not case sensitive and so a document named john smith.pdf would be matched to John Smith.
 
 You can also mix methods in a single upload. So ADAM will check all possible versions of each file to match it.
 

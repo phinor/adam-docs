@@ -6,11 +6,11 @@ Uploading and changing the school logo that is shown on ADAM, shown on your repo
 
 Any logos should be uploaded to the Site Document Repository, into the Logos category. Navigate to **Administration → Document Repository → View the Site Document Repository.**
 
-In the **Logos** category, upload your new school logo.
+In the **Logos** category, upload your new school logo.
 
 ![](assets/screenshots/school-logos/school-logos-01.png)
 
-Click on the **Choose Files** button, find the file you want to upload and then click on the **Upload files** button.
+Click on the **Choose Files** button, find the file you want to upload and then click on the **Upload files** button.
 
 We recommend PNG format for onscreen and print logos. PNG format also allows for transparent backgrounds.
 
@@ -19,10 +19,10 @@ We recommend PNG format for onscreen and print logos. PNG format also allows for
 
 ## Choose the Correct Logo to be Displayed
 
-Once uploaded, navigate to the Site Settings: **Administration → Site Administration → Edit the Site Settings**. On the **General** tab, scroll down to the **Logos** section. Using the drop-downs, choose the logo that you would like to use for each one.
+Once uploaded, navigate to the Site Settings: **Administration → Site Administration → Edit the Site Settings**. On the **General** tab, scroll down to the **Logos** section. Using the drop-downs, choose the logo that you would like to use for each one.
 
 If you would rather not have a logo, leave the selection as “(none selected)”.
 
 ![](assets/screenshots/school-logos/school-logos-03.png)
 
-Remember to click on the **Save settings** button at the bottom of the page.
+Remember to click on the **Save settings** button at the bottom of the page.

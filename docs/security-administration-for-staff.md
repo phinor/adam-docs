@@ -42,7 +42,7 @@ You may wish to revise the privileges that this group is assigned.
 
 ## Managing Security Groups
 
-Security Groups can be managed from the “**Administration”** tab by clicking, under the “**Staff Groups”** heading, on the “**Manage staff groups”** option.
+Security Groups can be managed from the “**Administration”** tab by clicking, under the “**Staff Groups”** heading, on the “**Manage staff groups”** option.
 
 ### Adding a new Staff Group
 
@@ -59,11 +59,11 @@ The group name can be anything you like. Enter something that will tell you abou
 
 *Remember that people can belong to as many groups as you like.*
 
-The option for **“default”** is to say whether you want all new users to automatically become a member of this group. Note that setting a group to “Default” will *only* affect new users and any existing users will *not* be a member of this group until they are manually added.
+The option for **“default”** is to say whether you want all new users to automatically become a member of this group. Note that setting a group to “Default” will *only* affect new users and any existing users will *not* be a member of this group until they are manually added.
 
-The option for **“Restricted”** has to do with who can assign people to this group. As a good rule, if the group is going to be used for privilege assignment (as opposed to creating a group to use for easy messaging and list printing of specific staff), then it should be set as a restricted group.
+The option for **“Restricted”** has to do with who can assign people to this group. As a good rule, if the group is going to be used for privilege assignment (as opposed to creating a group to use for easy messaging and list printing of specific staff), then it should be set as a restricted group.
 
-Privilege groups can be assigned as **“Secondary Privilege”** groups. This allows these groups to be used for comments entered for pupils on the pupil profile. You can probably leave this set to “No” for most instances.
+Privilege groups can be assigned as **“Secondary Privilege”** groups. This allows these groups to be used for comments entered for pupils on the pupil profile. You can probably leave this set to “No” for most instances.
 
 Once you’ve named your group and chosen the settings, click on the button at the bottom.
 
@@ -82,11 +82,11 @@ If you wish to disable a security group so that it cannot be chosen as a new gro
 
 Navigate to the “[Manage Staff Groups](#managing-security-groups)” page.
 
-By clicking on the **privileges** link next to one of the groups, it is possible to change the privileges that are assigned by that group.
+By clicking on the **privileges** link next to one of the groups, it is possible to change the privileges that are assigned by that group.
 
 The privileges are separated on to different tabs and under different headings. Ticking a privilege will link it to the group and, of course, to any users that are members of the group.
 
-Descriptions of each privilege are given next to the privilege. If you require more assistance with privileges, please contact [help@adam.co.za](mailto:help@adam.co.za) for more information about your specific query.
+Descriptions of each privilege are given next to the privilege. If you require more assistance with privileges, please contact [help@adam.co.za](mailto:help@adam.co.za) for more information about your specific query.
 
 ### Changing Membership of a Group
 
@@ -96,9 +96,9 @@ By clicking on the **membership** option next to each group, you will be present
 
 Each of the existing members of the group are listed on the left (there are two in the diagram opposite) and those who are not in the group are listed on the right.
 
-To add members to the group, select their names from the list on the right and choose the “**<< add**” option. Their names should then move from the right to the left.
+To add members to the group, select their names from the list on the right and choose the “**<< add**” option. Their names should then move from the right to the left.
 
-To remove, members, select their names from the list on the left and choose the “**remove >>**” option. Their names should move from the left to the right.
+To remove, members, select their names from the list on the left and choose the “**remove >>**” option. Their names should move from the left to the right.
 
 !!! warning
     Remember that you can highlight multiple names by holding down “Ctrl” on your keyboard while you click on the names.
@@ -111,7 +111,7 @@ Navigate to **Administration → Staff Groups → Edit group membership en masse
 
 ![](assets/screenshots/security-administration-for-staff/security-administration-for-staff-07.png)
 
-This screen will show all the security groups along the top of the screen, and all the staff members going down. Make any changes and click on **Save** at the bottom of the screen.
+This screen will show all the security groups along the top of the screen, and all the staff members going down. Make any changes and click on **Save** at the bottom of the screen.
 
 ## Auditing Staff Privileges
 
@@ -121,21 +121,21 @@ Remember that site administrators do not get their privileges via the Staff Grou
 
 ### Individual Privilege Audits
 
-To investigate the privileges of a staff member, navigate to the staff information page: **Staff → Staff Administration → Staff Info**. Search for the staff member you want, and visit the **privileges** section:
+To investigate the privileges of a staff member, navigate to the staff information page: **Staff → Staff Administration → Staff Info**. Search for the staff member you want, and visit the **privileges** section:
 
 ![](assets/screenshots/security-administration-for-staff/security-administration-for-staff-08.png)
 
 With the user above, we can see that they are a “normal account” (i.e. not a site administrator) who belongs to two groups, including the “General Teacher” group.
 
-An option is provided to **[Edit the group memberships](#changing-membership-of-a-group)** for this teacher.
+An option is provided to **[Edit the group memberships](#changing-membership-of-a-group)** for this teacher.
 
-At the bottom is a list of privileges that are available to the teacher because of this. Next to each privilege, in *italics* is the name of the group, or groups, that have assigned the privilege concerned to the staff member. To remove a privilege from a staff member, then either they need to be removed from the group that is assigning that privilege, or the [privilege needs to be removed from the group](#changing-the-privileges-of-a-group).
+At the bottom is a list of privileges that are available to the teacher because of this. Next to each privilege, in *italics* is the name of the group, or groups, that have assigned the privilege concerned to the staff member. To remove a privilege from a staff member, then either they need to be removed from the group that is assigning that privilege, or the [privilege needs to be removed from the group](#changing-the-privileges-of-a-group).
 
 ### Auditing Group Membership in bulk
 
 To view the group memberships on a single screen, navigate to **Administration → Staff Groups → View group membership matrix**.
 
-Here, a readonly view of the [mass editing screen](#editing-group-memberships-in-bulk) is shown.
+Here, a readonly view of the [mass editing screen](#editing-group-memberships-in-bulk) is shown.
 
 It may be easier to deal with this report in a spreadsheet. You can copy and paste it there.
 

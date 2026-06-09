@@ -10,6 +10,6 @@ These files consist of a number of XML files, each with a different transaction 
 
 -   The feedback file is normally sent by e-mail, and are normally in a compressed ZIP file or RAR archive. Once saved to your computer from your email, right-click on the file and “Extract” the archive. Specific instructions will vary depending on your computer and operating system. Please ask your Desktop Support personnel for assistance.
 
--   Once the files are extracted, open ADAM and browse to the **Administration** tab, click on the **Import LURITS feedback information** option. Browse to the feedback files that you extracted, select all that end with “.xml” (it won’t hurt to select all of them - ADAM will quietly ignore files that it can’t use) and then import it by clicking on the “Next” button.
+-   Once the files are extracted, open ADAM and browse to the **Administration** tab, click on the **Import LURITS feedback information** option. Browse to the feedback files that you extracted, select all that end with “.xml” (it won’t hurt to select all of them - ADAM will quietly ignore files that it can’t use) and then import it by clicking on the “Next” button.
 
 -   ADAM will show the results of the feedback and also e-mail a copy of these results to the ADAM administrator and to ADAM EduTech. A copy of this e-mail should be sufficient proof for the DBE district office that LURITS information has been submitted.

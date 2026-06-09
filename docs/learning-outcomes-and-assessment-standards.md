@@ -12,7 +12,7 @@ One final point is that LOs and ASs should be considered as objective measures o
 
 ## Managing Learning Outcomes
 
-The option to manage Learning Outcomes can be found on the **Subjects** tab, under the heading **LO and AS administration**.
+The option to manage Learning Outcomes can be found on the **Subjects** tab, under the heading **LO and AS administration**.
 
 Click on the option **Edit or add a learning outcome (LO)**.
 
@@ -22,7 +22,7 @@ To begin, choose a subject
 
 ![](assets/screenshots/learning-outcomes-and-assessment-standards/learning-outcomes-and-assessment-standards-02.png)
 
-In the LO entry screen, any existing LOs should appear at the top. A series of blank entries should appear below. You can add any new LOs at the bottom. If you run out of blank LOs, simply click on the **Edit Learning Outcomes** button at the bottom of the screen.
+In the LO entry screen, any existing LOs should appear at the top. A series of blank entries should appear below. You can add any new LOs at the bottom. If you run out of blank LOs, simply click on the **Edit Learning Outcomes** button at the bottom of the screen.
 
 The information required:
 
@@ -33,11 +33,11 @@ The information required:
 
 Once you save the Learning Outcomes, you can continue editing the LOs for that grade and subject, choose a new grade, or even choose a new subject.
 
-ADAM will also give you the opportunity to edit the assessment standards for that Learning Outcome. This is a shortcut into the next section.
+ADAM will also give you the opportunity to edit the assessment standards for that Learning Outcome. This is a shortcut into the next section.
 
 ## Managing Assessment Standards
 
-The option to manage Assessment Standards can be found on the **Subjects** tab, under the heading **LO and AS administration**.
+The option to manage Assessment Standards can be found on the **Subjects** tab, under the heading **LO and AS administration**.
 
 Click on the option **Edit or add an assessment standard (AS)**.
 
@@ -51,6 +51,6 @@ In the screenshot above, take special note that the first LO (“Management and 
 
 For each assessment standard, you will need to enter the following:
 
--   **Enabled:** This allows certain criteria to be displayed or hidden for reporting entry.
--   **Number:** Every AS must have a number associated with it. This does not necessarily display on reporting templates (very few display this number) but it is used for sorting the ASs into the appropriate order.
--   **Assessment Standard Name:** Every AS must have a name. This is shown on the report.
+-   **Enabled:** This allows certain criteria to be displayed or hidden for reporting entry.
+-   **Number:** Every AS must have a number associated with it. This does not necessarily display on reporting templates (very few display this number) but it is used for sorting the ASs into the appropriate order.
+-   **Assessment Standard Name:** Every AS must have a name. This is shown on the report.

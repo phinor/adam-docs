@@ -52,7 +52,7 @@ Once the server is up and running, there are a few initial things that we need t
 -   Email
 
 -   ADAM uses external mail services to deliver mail. Many schools with Google Workspace Mail or Microsoft 365 use that infrastructure for ADAM to deliver mail. Other schools make use of external SMTP service providers to deliver mail on their behalf.
--   If you want to send mail via [Google Workspace Mail](communication-settings-in-adam.md#configure-google-workspace) or [Microsoft 365](communication-settings-in-adam.md#configuring-o365), there are configuration changes that must be made in your management consoles for each service. Details on these configuration requirements can be found at the links above.
+-   If you want to send mail via [Google Workspace Mail](communication-settings-in-adam.md#configure-google-workspace) or [Microsoft 365](communication-settings-in-adam.md#configuring-o365), there are configuration changes that must be made in your management consoles for each service. Details on these configuration requirements can be found at the links above.
 
 ## Data Import
 

@@ -31,28 +31,28 @@ The DevMan team will need to know your ADAM server’s web address as well as th
 
 ## Ed-Admin Integration with ADAM
 
-The Ed-Admin module is not enabled by default and it will need to be enabled before it can be used. To enable the integration, please navigate to **Administration → Site Administration → Edit site settings** and click on the **Custom Modules** tab. Enter the module name **edadminsync** 
+The Ed-Admin module is not enabled by default and it will need to be enabled before it can be used. To enable the integration, please navigate to **Administration → Site Administration → Edit site settings** and click on the **Custom Modules** tab. Enter the module name **edadminsync** 
 
-If there are existing custom modules enabled, leave a space between existing modules and this module name. The order of the custom modules, if there is more than one, does not matter. Click on **Save Settings** to save these settings.
+If there are existing custom modules enabled, leave a space between existing modules and this module name. The order of the custom modules, if there is more than one, does not matter. Click on **Save Settings** to save these settings.
 
 ![](assets/screenshots/third-party-integration/third-party-integration-01.png)
 
 ### Configuring the Integration
 
-Navigate back to the Site Settings: **Administration → Site Administration → Edit site settings** and click on the **Custom Modules** tab. A set of settings will appear beneath the **Ed-Admin Sync** header:
+Navigate back to the Site Settings: **Administration → Site Administration → Edit site settings** and click on the **Custom Modules** tab. A set of settings will appear beneath the **Ed-Admin Sync** header:
 
 ![](assets/screenshots/third-party-integration/third-party-integration-02.png)
 
 The settings are discussed below:
 
--   **Enable Automatic Ed-Admin Sync:** This will cause ADAM to syncrhonise data automatically from Ed-Admin at an interval determined by the **Ed-Admin Sync Frequency** interval. To start with, it is strongly recommended that schools leave this to “No” until they have conducted a few manual synchronisations are are happy that the process is working.
--   **Ed-Admin Server Hostname:** ADAM needs to communicate with your Ed-Admin server and so it needs to know where it is. The host name is its address on the internet. Do not enter any “https://” prefix, or any trailing slashes.
--   **Ed-Admin Server API Key:** Your Ed-Admin server will have a special password that can be used by APIs to communicate with your Ed-Admin database and get information. ADAM will need to know what that API Key is for it to communicate with Ed-Admin. It is a long string of random letters. Copy and paste it into this box.
--   **Ed-Admin Sync Frequency:** If you’ve chosen automatic sync in the first setting, ADAM will use this setting to determine how often it should check for updates. This setting is ignored if automatic synchronisation is disabled.
--   **Ed-Admin Sync Threshold:** Large and sudden changes to your database can often mean that something has been misconfigfured. As a security precaution, ADAM will check this threshold to ensure that it is not going to remove data in error. This number is treated as a percentage and ADAM must find at least 80% of its current students returned in the Ed-Admin data set. If there is fewer, it means the change is too large and ADAM ignores the update, thinking it is suspicious. The manual update ignores this setting on the understanding that you know what you’re doing!
--   **Ed-Admin Campuses:** If you are limiting your synchronisation to one or more campuses, you can enter these here, comma separated. For staff, they must have one of these values either as their campus value, or as one of their “Areas of Work”. This allows staff to feature in multiple campuses, if required.
--   **Ed-Admin Match Method:** Consult ADAM support for the best value that will work for your school. The default, *Internal ID*, is almost never a good idea if you only started synchronising data later, once the two databases ADAM and Ed-Admin were both fully established.
--   **Ed-Admin Grade Definitions:** While there is a field here that can be manually edited, please rather see the section below on [Setting up Grade Definitions](#setting-up-grade-definitions).
+-   **Enable Automatic Ed-Admin Sync:** This will cause ADAM to syncrhonise data automatically from Ed-Admin at an interval determined by the **Ed-Admin Sync Frequency** interval. To start with, it is strongly recommended that schools leave this to “No” until they have conducted a few manual synchronisations are are happy that the process is working.
+-   **Ed-Admin Server Hostname:** ADAM needs to communicate with your Ed-Admin server and so it needs to know where it is. The host name is its address on the internet. Do not enter any “https://” prefix, or any trailing slashes.
+-   **Ed-Admin Server API Key:** Your Ed-Admin server will have a special password that can be used by APIs to communicate with your Ed-Admin database and get information. ADAM will need to know what that API Key is for it to communicate with Ed-Admin. It is a long string of random letters. Copy and paste it into this box.
+-   **Ed-Admin Sync Frequency:** If you’ve chosen automatic sync in the first setting, ADAM will use this setting to determine how often it should check for updates. This setting is ignored if automatic synchronisation is disabled.
+-   **Ed-Admin Sync Threshold:** Large and sudden changes to your database can often mean that something has been misconfigfured. As a security precaution, ADAM will check this threshold to ensure that it is not going to remove data in error. This number is treated as a percentage and ADAM must find at least 80% of its current students returned in the Ed-Admin data set. If there is fewer, it means the change is too large and ADAM ignores the update, thinking it is suspicious. The manual update ignores this setting on the understanding that you know what you’re doing!
+-   **Ed-Admin Campuses:** If you are limiting your synchronisation to one or more campuses, you can enter these here, comma separated. For staff, they must have one of these values either as their campus value, or as one of their “Areas of Work”. This allows staff to feature in multiple campuses, if required.
+-   **Ed-Admin Match Method:** Consult ADAM support for the best value that will work for your school. The default, *Internal ID*, is almost never a good idea if you only started synchronising data later, once the two databases ADAM and Ed-Admin were both fully established.
+-   **Ed-Admin Grade Definitions:** While there is a field here that can be manually edited, please rather see the section below on [Setting up Grade Definitions](#setting-up-grade-definitions).
 
 Once done, click on **Save Settings**.
 
@@ -72,7 +72,7 @@ ADAM will query the Ed-Admin database to find a list of all grades that are in u
 
 ![](assets/screenshots/third-party-integration/third-party-integration-04.png)
 
-Once done, click on the **Save** button at the bottom of the page.
+Once done, click on the **Save** button at the bottom of the page.
 
 It is recommended to check your Grade settings before doing a synchronisation.
 
@@ -96,7 +96,7 @@ If this happens, check your settings and try again.
 
 In spite of the tick boxes at the top, pupils/staff can be individually selected/deselected from the list for synchronisation.
 
-Click on **Synchronise Information** to begin the process of pulling the information into ADAM.
+Click on **Synchronise Information** to begin the process of pulling the information into ADAM.
 
 ### Changes in the Change Log
 
@@ -164,7 +164,7 @@ Before you can configure Papyrus, please make sure you have completed the steps 
 
 ## Wonde Integration with ADAM
 
-[Wonde](https://www.google.com/url?q=https://www.wonde.com/za/home/&sa=D&source=editors&ust=1778246676836843&usg=AOvVaw0wynRTi95MY6YrdlDX-b-e) provides a go-between platform to synchronise information from ADAM to a variety of other service providers. In order to achieve this, Wonde needs to be given permissions to view and access the data in your ADAM database. Wonde needs access to the [ADAM API](api-access-to-adam.md#api-access-to-adam) in order to retrieve information from the database.
+[Wonde](https://www.google.com/url?q=https://www.wonde.com/za/home/&sa=D&source=editors&ust=1778246676836843&usg=AOvVaw0wynRTi95MY6YrdlDX-b-e) provides a go-between platform to synchronise information from ADAM to a variety of other service providers. In order to achieve this, Wonde needs to be given permissions to view and access the data in your ADAM database. Wonde needs access to the [ADAM API](api-access-to-adam.md#api-access-to-adam) in order to retrieve information from the database.
 
 ### Create an API Key for Wonde
 
@@ -184,7 +184,7 @@ In the Notes field, put the text “Wonde Integration”.
 
 ![](assets/screenshots/third-party-integration/third-party-integration-09.png)
 
-Click on the **Save Token** button.
+Click on the **Save Token** button.
 
 Once saved, your API Token list should include an entry like this. The most important part is to ensure that the list of resources is identical to the list shown below:
 
@@ -212,11 +212,11 @@ Click on **Add a new set of fields**.
 
 ![](assets/screenshots/third-party-integration/third-party-integration-12.png)
 
-Ensure that the **API Token** shows the same “Wonde Integration token that you created in the first step.
+Ensure that the **API Token** shows the same “Wonde Integration token that you created in the first step.
 
-Each of the three secrets that you create will use a different data source. The first will be **Current Pupils**, the second will be **Current Families** and the third will be **Current Staff**.
+Each of the three secrets that you create will use a different data source. The first will be **Current Pupils**, the second will be **Current Families** and the third will be **Current Staff**.
 
-Put “Wonde Integration” as your **Comment** and then click on **Add Record**.
+Put “Wonde Integration” as your **Comment** and then click on **Add Record**.
 
 You will then see all the fields related to the data source that you chose. Here, we have fields relating to families:
 
@@ -230,7 +230,7 @@ Tick all the fields so that Wonde has access to all the information *(NB: for fa
 
 ![](assets/screenshots/third-party-integration/third-party-integration-15.png)
 
-Click on **Save Details** at the bottom of the list.
+Click on **Save Details** at the bottom of the list.
 
 ![](assets/screenshots/third-party-integration/third-party-integration-16.png)
 
@@ -248,15 +248,15 @@ People who have access to this information will have access to all personal and 
 
 ## SOCS Integration with ADAM
 
-[SOCS](https://www.google.com/url?q=http://www.misocs.com/&sa=D&source=editors&ust=1778246676843442&usg=AOvVaw3m8FmvYn0TwYO9fiwJh4ss) is an online co-curriculum and calendar management system that many schools use to manage sports fixtures and programmes. ADAM is able to make information available to SOCS in their required format.
+[SOCS](https://www.google.com/url?q=http://www.misocs.com/&sa=D&source=editors&ust=1778246676843442&usg=AOvVaw3m8FmvYn0TwYO9fiwJh4ss) is an online co-curriculum and calendar management system that many schools use to manage sports fixtures and programmes. ADAM is able to make information available to SOCS in their required format.
 
 ### SOCS Export
 
 To get the exports working, you will need to do the following:
 
-1.  In [Site Settings](changing-site-settings.md#changing-site-settings), under the **Third Party Integration** tab, look for the “SOCS” section.
+1.  In [Site Settings](changing-site-settings.md#changing-site-settings), under the **Third Party Integration** tab, look for the “SOCS” section.
 2.  Enter a **Secret Key**. This is just a long random string of characters that will be the secret password for SOCS to access ADAM. We recommend at least 20 random characters. This does not need to be memorable since you will never need to type this in. Here is a website that can help you [generate a string of random characters](https://www.google.com/url?q=https://www.random.org/strings/?num%3D10%26len%3D20%26digits%3Don%26upperalpha%3Don%26loweralpha%3Don%26unique%3Don%26format%3Dhtml%26rnd%3Dnew&sa=D&source=editors&ust=1778246676844517&usg=AOvVaw060cJRQZQUUAoG73trP9TS).
-3.  If you have sports houses captured as classes in ADAM, configure the subject as needed. If you don’t, and if your pupils’ houses are not important, you can leave this as your default registration class. The **Sports House** setting is on the **General** tab in the Site Settings.
+3.  If you have sports houses captured as classes in ADAM, configure the subject as needed. If you don’t, and if your pupils’ houses are not important, you can leave this as your default registration class. The **Sports House** setting is on the **General** tab in the Site Settings.
 4.  Save these changes to your Site Settings.
 5.  Send the URL to your SOCS export to your SOCS contact. The URL is described in more detail below.
 
@@ -283,21 +283,21 @@ https://demo.adam.co.za/api/socs/abcdefghijklmnopqrst
 Test your link by copying and pasting it into the address bar of your web browser. You should see output that looks similar to this:
 
 <Pupils>
- <Pupil>
-   <Firstname>John</Firstname>
-   <Middlenames>James</Middlenames>
-   <Knownname>John</Knownname>
-   <Surname>Doe</Surname>
-   <Initials>JJ</Initials>
-   <Gender>M</Gender>
-   <YearGroup>10</YearGroup>
-   <Formname>Grade 10</Formname>
-   <Housename>Blue House</Housename>
-   <EmailAddress>pupil\_1754@adam.co.za</EmailAddress>
-   <UniquePupilIdentifier>55012</UniquePupilIdentifier>
- </Pupil>
- <Pupil>
-   ...
+ <Pupil>
+   <Firstname>John</Firstname>
+   <Middlenames>James</Middlenames>
+   <Knownname>John</Knownname>
+   <Surname>Doe</Surname>
+   <Initials>JJ</Initials>
+   <Gender>M</Gender>
+   <YearGroup>10</YearGroup>
+   <Formname>Grade 10</Formname>
+   <Housename>Blue House</Housename>
+   <EmailAddress>pupil\_1754@adam.co.za</EmailAddress>
+   <UniquePupilIdentifier>55012</UniquePupilIdentifier>
+ </Pupil>
+ <Pupil>
+   ...
 
 If you get a “403 - Forbidden” error, it is likely that your secret key is incorrect.
 
@@ -313,7 +313,7 @@ Notably, if you’ve been using SOCS before, the admin numbers that were in use 
 
 ## SportCap Integration with ADAM
 
-[SportsCap](https://www.google.com/url?q=https://www.sportscap.co.za&sa=D&source=editors&ust=1778246676847900&usg=AOvVaw17YgDMPz3Hacb7-H7DM3rd) is a sports and fixture management system for schools with direct integration to the SA Rugby “BokSmart” system. SportsCap can pull information directly from ADAM to populate its database.
+[SportsCap](https://www.google.com/url?q=https://www.sportscap.co.za&sa=D&source=editors&ust=1778246676847900&usg=AOvVaw17YgDMPz3Hacb7-H7DM3rd) is a sports and fixture management system for schools with direct integration to the SA Rugby “BokSmart” system. SportsCap can pull information directly from ADAM to populate its database.
 
 ### Requirements:
 
@@ -323,7 +323,7 @@ Notably, if you’ve been using SOCS before, the admin numbers that were in use 
 -   DataQuery/getone/get
 -   DataQuery/getsince/get
 
--   Two [DataQuery Secrets](api-access-to-adam.md#create-a-data-query-secret) both linked to the API Token above, one for Pupils and the other for Staff. The fields required are:
+-   Two [DataQuery Secrets](api-access-to-adam.md#create-a-data-query-secret) both linked to the API Token above, one for Pupils and the other for Staff. The fields required are:
 
 -   Pupils:
 

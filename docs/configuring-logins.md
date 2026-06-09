@@ -4,7 +4,7 @@ All login configurations take place in the Site Settings. These can be accessed 
 
 ## Login Security
 
-The login security settings, found on the **Administration** tab, under **Site Settings**, are shown in the screenshot below.
+The login security settings, found on the **Administration** tab, under **Site Settings**, are shown in the screenshot below.
 
 ![](assets/screenshots/configuring-logins/configuring-logins-01.png)
 
@@ -39,7 +39,7 @@ Each staff member can use one of the three authentication methods. They are set 
 
 ### Configuring Active Directory LDAP Authentication
 
-In order for ADAM to process Active Directory LDAP authentication, it must be pointed to an Active Directory server. This set up is done in the class\_config.php file which will be located in the ADAM install folder. The specific options to look for are:
+In order for ADAM to process Active Directory LDAP authentication, it must be pointed to an Active Directory server. This set up is done in the class\_config.php file which will be located in the ADAM install folder. The specific options to look for are:
 
 -   ad accsuf: This is set to the domain suffix. This is normally a string starting with “@” followed by the domain name. E.g. @myschool.local
 -   ad basedn: This is the base domain name. It consists of the same information as above, but given in the following format: DC=myschool,DC=local
@@ -58,7 +58,7 @@ Access is only granted if all three steps can be followed.
 
 ### Configuring POP3 Authentication
 
-In order for ADAM to process POP3 authentication, it must be given a POP3 server to use. This is done in the “**Site Settings**” page (**Administration** / **Site** **Administration** / **Edit Site Settings**) and clicking on the “**Security**” tab.
+In order for ADAM to process POP3 authentication, it must be given a POP3 server to use. This is done in the “**Site Settings**” page (**Administration** / **Site** **Administration** / **Edit Site Settings**) and clicking on the “**Security**” tab.
 
 ![](assets/screenshots/configuring-logins/configuring-logins-05.png)
 
@@ -85,7 +85,7 @@ Sometimes, especially for temporary staff members, it is easier to create an int
 An internal password can be set when the staff member is created. Alternatively, a password can be set and changed using the “**Change a teacher’s password**” option on the “**Staff**” tab, under the “**Security Administration**” heading.
 
 !!! warning
-    *Note that ADAM irreversibly encrypts the passwords that it stores according to currently recommended guidelines. To this end, we encrypt the passwords and store them as “salted hashes”. This dramatically increases the difficulty of brute-force cracking the passwords. This does mean that it is essentially impossible to tell what the password is. More information here:* *[Security Administration](security-administration-for-staff.md#security-administration-for-staff)* *and here* *[https://en.wikipedia.org/wiki/Salt\_(cryptography)](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Salt_\(cryptography\)&sa=D&source=editors&ust=1778246675899540&usg=AOvVaw3yLRyS_pHN0MhaTkZPV-OD)*
+    *Note that ADAM irreversibly encrypts the passwords that it stores according to currently recommended guidelines. To this end, we encrypt the passwords and store them as “salted hashes”. This dramatically increases the difficulty of brute-force cracking the passwords. This does mean that it is essentially impossible to tell what the password is. More information here:* *[Security Administration](security-administration-for-staff.md#security-administration-for-staff)* *and here* *[https://en.wikipedia.org/wiki/Salt\_(cryptography)](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Salt_\(cryptography\)&sa=D&source=editors&ust=1778246675899540&usg=AOvVaw3yLRyS_pHN0MhaTkZPV-OD)*
 
 ### Allowing staff to change their own passwords
 
@@ -93,7 +93,7 @@ If staff use internal passwords, administrators should ensure that they belong t
 
 Staff can change their passwords by clicking on the “**Staff**” tab and then looking under the “**Security Administration**” heading. An option should appear there to “**Change your own password**”
 
-In the window that appears, the user will have to type in their existing password, and their new password *twice* for confirmation:
+In the window that appears, the user will have to type in their existing password, and their new password *twice* for confirmation:
 
 ![](assets/screenshots/configuring-logins/configuring-logins-07.png)
 
@@ -105,9 +105,9 @@ Schools that make use of Google’s Workspace for their email, can make use of t
 
 ### Requirements
 
-8.  Your server must be authoried to conduct logins *before* you enable Google Sign-In. Google will reject all sign-in attempts if the server has not been properly authorized to log in your users. Please contact us at [help@adam.co.za](mailto:help@adam.co.za) to request authorization and wait for confirmation before continuing with the final step of enabling Google Sign-In.
+8.  Your server must be authoried to conduct logins *before* you enable Google Sign-In. Google will reject all sign-in attempts if the server has not been properly authorized to log in your users. Please contact us at [help@adam.co.za](mailto:help@adam.co.za) to request authorization and wait for confirmation before continuing with the final step of enabling Google Sign-In.
 9.  Your staff and pupils must have their Google Workspace addresses included as their **work or school email addresses**. This email address must match their Google Workspace account. Note that users who have email aliases stored in ADAM may not be able to sign on using Google Sign-In.
-10.  Enable Google Sign-in for either Staff, Pupils or both. This is done in the Site Settings, on the **Security** tab, under the heading “**OAuth Authentication**” - don’t forget to save the settings!
+10.  Enable Google Sign-in for either Staff, Pupils or both. This is done in the Site Settings, on the **Security** tab, under the heading “**OAuth Authentication**” - don’t forget to save the settings!
 
 ![](assets/screenshots/configuring-logins/configuring-logins-08.png)
 
@@ -123,9 +123,9 @@ Schools that make use of Microsoft 365 for their email, can make use of the “S
 
 ### Requirements {#microsoft-sign-in-for-staff-and-pupils-requirements}
 
-1.  Your server must be authoried to conduct logins *before* you enable Microsoft Sign-In. Microsoft will reject all sign-in attempts if the server has not been properly authorized to log in your users. Please contact us at [help@adam.co.za](mailto:help@adam.co.za) to request authorization and wait for confirmation before continuing with the final step of enabling Microsoft Sign-In.
+1.  Your server must be authoried to conduct logins *before* you enable Microsoft Sign-In. Microsoft will reject all sign-in attempts if the server has not been properly authorized to log in your users. Please contact us at [help@adam.co.za](mailto:help@adam.co.za) to request authorization and wait for confirmation before continuing with the final step of enabling Microsoft Sign-In.
 2.  Your staff and pupils must have their Microsoft 365 addresses included as their **work or school email addresses**. This email address must match their Microsoft 365 account. Note that users who have email aliases stored in ADAM may not be able to sign on using Microsoft Sign-In.
-3.  Enable Microsoft Sign-in for either Staff, Pupils or both. This is done in the Site Settings, on the **Security** tab, under the heading “**OAuth Authentication**” - don’t forget to save the settings!
+3.  Enable Microsoft Sign-in for either Staff, Pupils or both. This is done in the Site Settings, on the **Security** tab, under the heading “**OAuth Authentication**” - don’t forget to save the settings!
 
 ![](assets/screenshots/configuring-logins/configuring-logins-10.png)
 
@@ -160,7 +160,7 @@ The first time that a parent logs into ADAM, they will be required to enter the 
 Subsequent logins will require their ID number and their recently set password.
 
 !!! warning
-    *We have compiled a separate document with* *[instructions for parents](https://www.google.com/url?q=https://docs.google.com/document/d/1vHiaDoheupdosNEEv32az8MjiVfSFUNmRiAk3TBZuuo/edit&sa=D&source=editors&ust=1778246675906859&usg=AOvVaw0qlTp4GtFz-H6EtTbxOtpn)* *that you can modify for your needs.*
+    *We have compiled a separate document with* *[instructions for parents](https://www.google.com/url?q=https://docs.google.com/document/d/1vHiaDoheupdosNEEv32az8MjiVfSFUNmRiAk3TBZuuo/edit&sa=D&source=editors&ust=1778246675906859&usg=AOvVaw0qlTp4GtFz-H6EtTbxOtpn)* *that you can modify for your needs.*
 
 Privileges for parents are determined by [pupil login groups](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
@@ -201,7 +201,7 @@ ADAM sends a notification under the following circumstances:
 
 ### Changing Login Notification Settings
 
-In the **Site Settings**, navigate to the **Security** tab and scroll down to the section **Login Settings**. Search for the setting **Remember logged-in machines for** and change the setting to any value other than **disabled** to enable the notifications.
+In the **Site Settings**, navigate to the **Security** tab and scroll down to the section **Login Settings**. Search for the setting **Remember logged-in machines for** and change the setting to any value other than **disabled** to enable the notifications.
 
 ### Login Notification Emails
 
@@ -212,5 +212,5 @@ The login notification email appears as follows:
 In the email, a link is presented that will allow the user to block their ADAM user. This will have the effect of logging out all currently logged in instances of their user account (throwing a possible intruder out of the system) as well as preventing any future logins.
 
 !!! warning
-    *An ADAM Administrator will be required to allow access for the user again. When a user account is blocked in this fashion, their* ***Authentication Method*** *in their profile is set to* ***Disabled****. It would thus need to be changed to reflect their actual authentication method (normally either Internal Password or Active Directory).*
+    *An ADAM Administrator will be required to allow access for the user again. When a user account is blocked in this fashion, their* ***Authentication Method*** *in their profile is set to* ***Disabled****. It would thus need to be changed to reflect their actual authentication method (normally either Internal Password or Active Directory).*
 

@@ -14,14 +14,14 @@ If you have never used the Questionnaire module before, you will need to set up 
 
 The Questionnaire module adds the following privileges to ADAM:
 
--   **Create a new questionnaire:** this privilege should be assigned to a member of staff involved at a management level with pupil affairs and pastoral matters within your school. It allows the staff member to add a new questionnaire and assign questions to it.
--   **Edit an existing questionnaire:** In order for a staff member to edit existing questionnaires, they will need this privilege.
--   **Edit questionnaire questions:** In order for a staff member to add or edit questions to a questionnaire, they will need this privilege.
--   **Assign pupils to questionnaires for completion:** This privilege should be given to grade controllers or teachers in charge of pupils in a pastoral capacity. This privilege allows those teachers to choose a particular questionnaire and ask teachers to complete it for a certain pupils.
--   **Respond to questionnaires:** This privilege should be assigned to all teachers who will need to complete questionnaires. We recommend giving this privilege to the “General Teacher” privilege group.
+-   **Create a new questionnaire:** this privilege should be assigned to a member of staff involved at a management level with pupil affairs and pastoral matters within your school. It allows the staff member to add a new questionnaire and assign questions to it.
+-   **Edit an existing questionnaire:** In order for a staff member to edit existing questionnaires, they will need this privilege.
+-   **Edit questionnaire questions:** In order for a staff member to add or edit questions to a questionnaire, they will need this privilege.
+-   **Assign pupils to questionnaires for completion:** This privilege should be given to grade controllers or teachers in charge of pupils in a pastoral capacity. This privilege allows those teachers to choose a particular questionnaire and ask teachers to complete it for a certain pupils.
+-   **Respond to questionnaires:** This privilege should be assigned to all teachers who will need to complete questionnaires. We recommend giving this privilege to the “General Teacher” privilege group.
 -   **View questionnaire summaries:** This privilege should be given to people who need to see summary reports of the questionnaires that were answered.
 
-Example: We recommend assigning the first three privileges to a teacher in charge of pupil affairs. The fourth privilege to the grade controllers, the fifth to all teachers and the last to grade controllers.
+Example: We recommend assigning the first three privileges to a teacher in charge of pupil affairs. The fourth privilege to the grade controllers, the fifth to all teachers and the last to grade controllers.
 
 ### Assigning Privileges
 
@@ -35,7 +35,7 @@ Individual privileges are assigned to security groups. Staff may belong to one o
 
 In the “Pupils” tab, under the “Questionnaires” heading, click on the “Manage Questionnaires” link. A screen will be shown giving you options to manage the questionnaires. If you have no questionnaires, click on the “Add new questionnaire” link to get started.
 
-You will be required to enter a **name** for the questionnaire, an optional description for it and, importantly, all the subjects that the questionnaire is applicable for. For example, if you are surveying the staff on pupils’ participation in sport, you would select only the sports from the list. If it was to do with languages, perhaps you would select only the languages from the list of subjects. Remember that you can select multiple values using “Ctrl” and “Shift” to select multiple values.
+You will be required to enter a **name** for the questionnaire, an optional description for it and, importantly, all the subjects that the questionnaire is applicable for. For example, if you are surveying the staff on pupils’ participation in sport, you would select only the sports from the list. If it was to do with languages, perhaps you would select only the languages from the list of subjects. Remember that you can select multiple values using “Ctrl” and “Shift” to select multiple values.
 
 Click on “Save this questionnaire” when done.
 
@@ -47,11 +47,11 @@ To start, click on “Add a new question”.
 
 ADAM allows five types of questions in the questionnaire:
 
--   **Rating:** A rating question is rated from 1 to 5. Use the “Explanation” field to indicate what the 1 to 5 scale means.
--   **Comment:** A free-form block for paragraph answers.
--   **Yes or No:** A yes-or-no option.
--   **Number:** A numeric entry option which displays options from 0 to 100.
--   **Options:** This allows you to build your own option selectors. To add your own options, type each option separated by a comma in the “Options” block. So you could enter the values “Always, Often, Sometimes, Never” as possible options.
+-   **Rating:** A rating question is rated from 1 to 5. Use the “Explanation” field to indicate what the 1 to 5 scale means.
+-   **Comment:** A free-form block for paragraph answers.
+-   **Yes or No:** A yes-or-no option.
+-   **Number:** A numeric entry option which displays options from 0 to 100.
+-   **Options:** This allows you to build your own option selectors. To add your own options, type each option separated by a comma in the “Options” block. So you could enter the values “Always, Often, Sometimes, Never” as possible options.
 
 In the list of questions, you can click on “edit” to change the questions, “delete” to remove the question from the database, or “up” and “down” to change the order of the questions in the questionnaire.
 

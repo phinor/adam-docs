@@ -62,14 +62,14 @@ Every event must have an element of all three. It might seem odd that an “Even
 
 Here are some examples to illustrate the differences to you.
 
--   In the scenario where we are creating a signup sheet for parents to book meetings with teachers at a parent-teacher evening, the “Event Category” would be “Parent-Teacher Meetings”, each teacher would then have an “Event” within this category. The “Event” is then broken down into the 5-minute “Appointments” that are available. I.e. Parent-Teacher Meetings → Mrs Smith → 18h45 to 18h50
--   When signing up pupils for sports teams, the “Event Category” would be “Sports Teams Signups”. Each sport would be an “Event” and each “Appointment” could be a term or season. I.e. Sports Teams → Cricket → 1st Term
--   When signing up pupils who wish to attend a voluntary presentation by a visiting speaker, the “Event Category” might be “Visiting Speakers”, the “Event” might be the name of the speaker and the appointment would be the date of the presentation (this also allows there to be multiple presentations, for example). I.e. Visiting Speakers → Nelson Mandela Foundation → Tuesday 5th, 7pm.
--   In boarding schools, pupils often need to request permission to visit venues such as the library. Here, the “Event Category” might be “Evening Prep”, the “Event” might be “Library” or “Computer Lab” and the appointment would be the date of the visit. I.e. Evening Prep → Library → Thursday 14th.
+-   In the scenario where we are creating a signup sheet for parents to book meetings with teachers at a parent-teacher evening, the “Event Category” would be “Parent-Teacher Meetings”, each teacher would then have an “Event” within this category. The “Event” is then broken down into the 5-minute “Appointments” that are available. I.e. Parent-Teacher Meetings → Mrs Smith → 18h45 to 18h50
+-   When signing up pupils for sports teams, the “Event Category” would be “Sports Teams Signups”. Each sport would be an “Event” and each “Appointment” could be a term or season. I.e. Sports Teams → Cricket → 1st Term
+-   When signing up pupils who wish to attend a voluntary presentation by a visiting speaker, the “Event Category” might be “Visiting Speakers”, the “Event” might be the name of the speaker and the appointment would be the date of the presentation (this also allows there to be multiple presentations, for example). I.e. Visiting Speakers → Nelson Mandela Foundation → Tuesday 5th, 7pm.
+-   In boarding schools, pupils often need to request permission to visit venues such as the library. Here, the “Event Category” might be “Evening Prep”, the “Event” might be “Library” or “Computer Lab” and the appointment would be the date of the visit. I.e. Evening Prep → Library → Thursday 14th.
 
 ## Managing Event Categories
 
-On the “**Pupils”** tab, under the “**Sign Ups”** heading, click on the option to “**Manage event categories**”.
+On the “**Pupils”** tab, under the “**Sign Ups”** heading, click on the option to “**Manage event categories**”.
 
 ![](assets/screenshots/sign-up-module/sign-up-module-01.png)
 
@@ -81,11 +81,11 @@ At the top of the page, click on the “**Add new Sign-up Category**” link.
 
 The fields have the following meanings:
 
--   **Category Description:** This is the name of the category and is used in the displaying and sorting of events and appointments.
--   **About this category:** This field is a note field and is not used for display purposes.
--   **Notify teacher for each sign-up:** If this option is set to “Yes”, the organising teacher will receive an email after each pupil signs up for the event. Please choose this setting carefully as a wildly popular event could cause a lot of mail to be delivered.
--   **Notify teacher of final sign-up list:** If this option is set to “Yes”, then the organising teacher will receive a list of signed-up participants when the booking time closes.
--   **Limit number of signups:** This option sets a default limit for each appointment (it is easily overridden later). This serves to prevent an activity being oversubscribed.
+-   **Category Description:** This is the name of the category and is used in the displaying and sorting of events and appointments.
+-   **About this category:** This field is a note field and is not used for display purposes.
+-   **Notify teacher for each sign-up:** If this option is set to “Yes”, the organising teacher will receive an email after each pupil signs up for the event. Please choose this setting carefully as a wildly popular event could cause a lot of mail to be delivered.
+-   **Notify teacher of final sign-up list:** If this option is set to “Yes”, then the organising teacher will receive a list of signed-up participants when the booking time closes.
+-   **Limit number of signups:** This option sets a default limit for each appointment (it is easily overridden later). This serves to prevent an activity being oversubscribed.
 
 Click on “**Save this Sign-up Category**” to save it.
 
@@ -101,17 +101,17 @@ This will display any events that have been created for this category. Because o
 
 The fields on this page are explained as follows:
 
--   **Event Name:** Type in the name of the event. See the list on page  for examples of event names.
--   **Category:** This should already reflect the category of the event, but you can change it if you need to.
--   **Organising Teacher:** Please select the organising teacher from the list. This teacher will receive attendance lists and more from the appointments that will be scheduled later.
--   **Event Information:** The information for this event will be shown to pupils and should explain what the event is about.
--   **Limit Pupil Signups:** This will prevent pupils from signing up for too many appointments. If these are schedules for one-on-one appointments, for example, you may wish that a pupil only signs up for only one of them.
+-   **Event Name:** Type in the name of the event. See the list on page  for examples of event names.
+-   **Category:** This should already reflect the category of the event, but you can change it if you need to.
+-   **Organising Teacher:** Please select the organising teacher from the list. This teacher will receive attendance lists and more from the appointments that will be scheduled later.
+-   **Event Information:** The information for this event will be shown to pupils and should explain what the event is about.
+-   **Limit Pupil Signups:** This will prevent pupils from signing up for too many appointments. If these are schedules for one-on-one appointments, for example, you may wish that a pupil only signs up for only one of them.
 
 Please note that only future appointments count towards a pupil’s limit. If an appointment passes, it will no longer count towards the pupil’s limit and they may be able to sign up for further appointments. If you wish to avoid this, then all bookings should be set to close before the first appointment takes place.
 
--   **Limit to classes:** The event and its appointments will only be shown to pupils who are members of the selected classes. If no classes are selected, it will be available to all pupils. It may be useful, for example, when setting up appointments for pupils to see teachers to limit those appointments to appear for pupils taught by the organising teacher.
+-   **Limit to classes:** The event and its appointments will only be shown to pupils who are members of the selected classes. If no classes are selected, it will be available to all pupils. It may be useful, for example, when setting up appointments for pupils to see teachers to limit those appointments to appear for pupils taught by the organising teacher.
 -   **Confirmation Reminders:** This can be used to send out reminders to people who signed up for appointments. *PLEASE NOTE: THIS IS NOT YET FUNCTIONAL.*
--   **Appointment Approval:** It may be possible that your appointment or sign-up requires teacher approval. If this is the case, it is possible to set either the organising teacher or another teacher that teaches the pupil, to approve the appointment.
+-   **Appointment Approval:** It may be possible that your appointment or sign-up requires teacher approval. If this is the case, it is possible to set either the organising teacher or another teacher that teaches the pupil, to approve the appointment.
 
 For example, it may be necessary for the pupil’s Home Room Teacher to approve sign up to an extension activity. In this case, one would choose “Approval by another subject teacher required” and in the “**Approving Subject Teacher**” dropdown, choose the “Home Room” subject. When a pupil signed up for this event, an email would be sent to their Home Room teacher requesting their approval. The subject that is in this list is otherwise ignored.
 
@@ -131,9 +131,9 @@ We will work through each example:
 
 ![](assets/screenshots/sign-up-module/sign-up-module-06.png)
 
--   In this instance, the **Description** is the most important option since it will differentiate it from the other appointments.
--   The **Limit** will default to what you set in the event category. You can override it here on an appointment-by-appointment basis.
--   Please ensure to choose the signup **start** and **end** dates and times carefully. ADAM currently does not check for poorly chosen entries (such as things that close before they open). When the signup end date is reached, ADAM will automatically send the organising teacher a list of attendees.
+-   In this instance, the **Description** is the most important option since it will differentiate it from the other appointments.
+-   The **Limit** will default to what you set in the event category. You can override it here on an appointment-by-appointment basis.
+-   Please ensure to choose the signup **start** and **end** dates and times carefully. ADAM currently does not check for poorly chosen entries (such as things that close before they open). When the signup end date is reached, ADAM will automatically send the organising teacher a list of attendees.
 
 Below the table is an option to “**Add a new appointment**”. Clicking on this will duplicate the row, including the signup start and end dates. Before you add new appointments, set the sign-up start and end times to appropriately before you add new appointments!
 
@@ -161,11 +161,11 @@ For this particular type of appointment, a description is not necessary since it
 
 ![](assets/screenshots/sign-up-module/sign-up-module-09.png)
 
-Clicking on the “Add next day” option will add a new appointment for the next *weekday* date. It will also advance the sign-up *end date* by a day also, but keep the signup start date the same. In the example below, on the second entry, ADAM kept the sign-up start date for the event the same (2 Feb), but changed the end date to a day later (9 Feb).
+Clicking on the “Add next day” option will add a new appointment for the next *weekday* date. It will also advance the sign-up *end date* by a day also, but keep the signup start date the same. In the example below, on the second entry, ADAM kept the sign-up start date for the event the same (2 Feb), but changed the end date to a day later (9 Feb).
 
 ![](assets/screenshots/sign-up-module/sign-up-module-10.png)
 
-Clicking on the option for “**Add for rest of reporting period**” will again add in options for all *weekday* appointments from the last date in the form until the end of the reporting period.
+Clicking on the option for “**Add for rest of reporting period**” will again add in options for all *weekday* appointments from the last date in the form until the end of the reporting period.
 
 If you wish to add in weekend appointments, these can be done manually at the bottom of the form. It does not matter that these might be out of order. Simply click on “Add next day” (which will add a “week day”) and then change the date of that appointment to be a weekend.
 
@@ -205,14 +205,14 @@ To cancel the appointment, click on the “**cancel**” link. Any pupils who mi
 
 ## Navigating through without creating a new event
 
-We navigated through all the screens above by creating a new event. If you need to get back to any of them, use the menu items on the **“Pupils”** tab under the “**Sign Ups**” heading.
+We navigated through all the screens above by creating a new event. If you need to get back to any of them, use the menu items on the **“Pupils”** tab under the “**Sign Ups**” heading.
 
 -   To see a list of events, click on “**View category events**”. From there, you will be able to view and edit events. You can also see the event appointments from that screen.
 -   Alternatively, the third option “**Manage appointment slots for an event**” will also allow you to view the appointments, attendance lists and to cancel specific appointments.
 
 ## Signing Pupils Up for an Event
 
-Staff members can sign up pupils for events, and pupils can sign themselves up for events. Note that both staff and pupils will require privileges to access these sections. Information on [how to set up staff privileges](security-administration-for-staff.md#security-administration-for-staff) is available, as is information on [how to assign pupil privileges](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
+Staff members can sign up pupils for events, and pupils can sign themselves up for events. Note that both staff and pupils will require privileges to access these sections. Information on [how to set up staff privileges](security-administration-for-staff.md#security-administration-for-staff) is available, as is information on [how to assign pupil privileges](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
 ### Individual Pupils
 
@@ -232,16 +232,16 @@ Appointments that are full, and have no more space left, also have no option to 
 
 ### By Class
 
-Navigate to the **Classes** tab and under the **Sign Ups** heading, click on the option **Sign up for an event by class**.
+Navigate to the **Classes** tab and under the **Sign Ups** heading, click on the option **Sign up for an event by class**.
 
 Choose an event category, then the event and finally the appointment. The choose the class for which you want to sign up pupils. Note that if an event has specifically had classes specified for it, then only those classes will be available in the dropdown list.
 
-Finally, click on the **sign up** link next to a pupil’s name to sign them up for the appointment.
+Finally, click on the **sign up** link next to a pupil’s name to sign them up for the appointment.
 
-If there is a limit to the number of pupils that can sign up to the appointment, the **sign up** links will disappear when the limit is reached.
+If there is a limit to the number of pupils that can sign up to the appointment, the **sign up** links will disappear when the limit is reached.
 
 Also be aware that in spite of a page reporting that an event has a number of spaces available, this does not take into account other staff members who might be signing up pupils concurrently.
 
 ### On the Pupil Portal
 
-When pupils log in to the pupil portal, if they have been given permissions to access the sign-up module, they will click through to see all the available appointments that they can sign up for. They simply need to click on the **sign up** link next to the appointments that they wish to sign up for.
+When pupils log in to the pupil portal, if they have been given permissions to access the sign-up module, they will click through to see all the available appointments that they can sign up for. They simply need to click on the **sign up** link next to the appointments that they wish to sign up for.

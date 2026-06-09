@@ -12,19 +12,19 @@ If you are adding a new pupil to the database, once you’ve saved the pupil, AD
 
 To link existing pupils to a family, navigate to **Families → Family Administration → Link Children to a Family**.
 
-Type in the name of the family that the pupil is to be linked to and click on the **Next** button.
+Type in the name of the family that the pupil is to be linked to and click on the **Next** button.
 
 ![](assets/screenshots/family-management/family-management-01.png)
 
-ADAM will allow you to make changes to the family structure (which we describe how to do below). After each change, it is a good idea to click on the **Update the list above** button to see the changes. Note that the changes are not made immediately and you will need to click on the **Confirm changes** button before they will be saved.
+ADAM will allow you to make changes to the family structure (which we describe how to do below). After each change, it is a good idea to click on the **Update the list above** button to see the changes. Note that the changes are not made immediately and you will need to click on the **Confirm changes** button before they will be saved.
 
 A list of currently linked pupils is shown at the top. You can untick any pupil to have them removed.
 
 On the lower left side, a list of pupils that share the same last name as either of the parents will be shown. Simply tick any pupil to have them added to your list.
 
-On the lower right side, you will see a search box. Here you can search for any pupil. This is useful if the child does not share the same last name as the family member (this can often be the case when one is adding an *au pair*, guardian or other contact for the pupil. Click on the **Search** button to show any pupils that match the surname you specified.
+On the lower right side, you will see a search box. Here you can search for any pupil. This is useful if the child does not share the same last name as the family member (this can often be the case when one is adding an *au pair*, guardian or other contact for the pupil. Click on the **Search** button to show any pupils that match the surname you specified.
 
-Once you’ve clicked on the **Confirm changes** button, ADAM will show a summary of the options it is about to perform on the family. It will confirm pupils that are being added and being removed from the family. You can then click on the **Save Changes** button to save these to the database.
+Once you’ve clicked on the **Confirm changes** button, ADAM will show a summary of the options it is about to perform on the family. It will confirm pupils that are being added and being removed from the family. You can then click on the **Save Changes** button to save these to the database.
 
 ## Merging Two Families into One
 
@@ -34,15 +34,15 @@ Navigate to **Families → Family Administration → Merge two families into one
 
 ADAM will ask you for two families.
 
-It is important to note that the **primary** parent in each family will be used to make the merged family. If there is a secondary parent, they will be split off into a separate family. If you need to move the **secondary** parent into the new merged family, you can either first [swap the parents](#swapping-parents-in-a-family) so that the secondary parent becomes the primary parent in the original family, or, which makes more sense, [split the family into two](#splitting-a-family-in-two) first.
+It is important to note that the **primary** parent in each family will be used to make the merged family. If there is a secondary parent, they will be split off into a separate family. If you need to move the **secondary** parent into the new merged family, you can either first [swap the parents](#swapping-parents-in-a-family) so that the secondary parent becomes the primary parent in the original family, or, which makes more sense, [split the family into two](#splitting-a-family-in-two) first.
 
-The primary parent of the family that you search for first will become the primary parent in the merged family. The primary parent of the family that you search for second will become the secondary parent in the merged family. If you get these the wrong way around, you can always [switch the primary and secondary parents](#swapping-parents-in-a-family) after you’ve merged.
+The primary parent of the family that you search for first will become the primary parent in the merged family. The primary parent of the family that you search for second will become the secondary parent in the merged family. If you get these the wrong way around, you can always [switch the primary and secondary parents](#swapping-parents-in-a-family) after you’ve merged.
 
-If there are secondary parents in either of the families that you choose to merge, they will automatically be [split off into their own families](#splitting-a-family-in-two) before the merge takes place. Please check the important notes about splitting a family in that section.
+If there are secondary parents in either of the families that you choose to merge, they will automatically be [split off into their own families](#splitting-a-family-in-two) before the merge takes place. Please check the important notes about splitting a family in that section.
 
 ![](assets/screenshots/family-management/family-management-02.png)
 
-Click on the **Merge families** button to merge the families.
+Click on the **Merge families** button to merge the families.
 
 ## Splitting a Family in Two
 
@@ -54,7 +54,7 @@ Type in the name of the family that needs to be split.
 
 ![](assets/screenshots/family-management/family-management-03.png)
 
-To confirm the operation, click on the **Split** button at the bottom of the screen.
+To confirm the operation, click on the **Split** button at the bottom of the screen.
 
 !!! warning
     Note that when first split, each family will have a copy of the same household information. It will be necessary to update this manually.
@@ -70,11 +70,11 @@ Occasionally, perhaps because of how information was first captured in ADAM, it 
 
 Two swap the parents in a family, navigate to **Families → Family Administration → Swap parents in a family**.
 
-Type in the name of the family and click on the **Next** button. ADAM will show the following confirmation screen:
+Type in the name of the family and click on the **Next** button. ADAM will show the following confirmation screen:
 
 ![](assets/screenshots/family-management/family-management-06.png)
 
-Click on the **Swap parents** button to make the changes in the database.
+Click on the **Swap parents** button to make the changes in the database.
 
 ## Non-Conventional Family Setups
 
@@ -84,6 +84,6 @@ In situations such as these, communication about the children is best directed t
 
 When situations like this arise, it is often most useful to separate out the three parents into individual households so that there are three families, each with a single parent in them. In this way, the pupils can then be connected to the parents that are linked to them. The father, in our example, could be connected to both his children and the mothers could each be connected to their children.
 
-You can use the [Split a Family in Two](#splitting-a-family-in-two) function, described above, to separate any joined parents into two separate families.
+You can use the [Split a Family in Two](#splitting-a-family-in-two) function, described above, to separate any joined parents into two separate families.
 
 Be careful to check that each parent ends up with a single profile once you’re done. Often this scenario arises when one of the parents has been put as a family member into two households. This causes problems because ADAM won’t then allow that parent to log in because ADAM can’t tell which profile they should be using. As such, this complaint normally presents to the school as the parent not being able to log in.

@@ -16,7 +16,7 @@ ADAM contains several default categories which you can either add to or even mod
 
 The option at the top of the page allows a short-cut to [manage the psychometric assessments](#managing-psychometric-tests).
 
-Click on the option **Add new Psychometric Assessment Category** to add a new one, or simply click on the **edit** option next to an existing one.
+Click on the option **Add new Psychometric Assessment Category** to add a new one, or simply click on the **edit** option next to an existing one.
 
 ![](assets/screenshots/psychometric-testing/psychometric-testing-02.png)
 
@@ -40,7 +40,7 @@ Type in an appropriate **name for the assessment**.
 
 You may type in a **description** for the assessment if you wish. This is not used for any important purposes and can be used to keep your own notes regarding the assessment and its implementation.
 
-You will then choose a **category** for this assessment to fit into. The [management of the categories](#managing-psychometric-test-categories) is covered elsewhere in this document.
+You will then choose a **category** for this assessment to fit into. The [management of the categories](#managing-psychometric-test-categories) is covered elsewhere in this document.
 
 The most important aspect of this page is determining whether the test will require a numeric score or an age-based score to be recorded. Numeric scores can be used to store integer values whereas age-based scores will record an age in years and months.
 
@@ -50,21 +50,21 @@ The process for capturing assessment results can be done per individual or per c
 
 ### For an individual
 
-Navigate to **Pupils → Psychometric Testing→ Record Assessment Results (by pupil)**. Enter the name of a pupil and click on the **Next** button.
+Navigate to **Pupils → Psychometric Testing→ Record Assessment Results (by pupil)**. Enter the name of a pupil and click on the **Next** button.
 
 ![](assets/screenshots/psychometric-testing/psychometric-testing-05.png)
 
-Choose the **Assessment Category** and then the correct **Assessment** from the list. Click on the **Next** button.
+Choose the **Assessment Category** and then the correct **Assessment** from the list. Click on the **Next** button.
 
 ![](assets/screenshots/psychometric-testing/psychometric-testing-06.png)
 
 Enter the **date** on which the assessment was conducted as well as the name of the **Psychometrist**, if known.
 
-The **Session Notes** will contain the name of the pupil. These notes will allow you to identify this session from a list later if you need to edit the results and so you are advised against changing them if you don’t need to.
+The **Session Notes** will contain the name of the pupil. These notes will allow you to identify this session from a list later if you need to edit the results and so you are advised against changing them if you don’t need to.
 
 Finally, enter the **result** at the bottom of the screen. In the screenshot above, we are capturing a result for an age-based score and hence are asked to give a result in years and months.
 
-Click on **Save** when you’re done.
+Click on **Save** when you’re done.
 
 ### For a class
 
@@ -80,7 +80,7 @@ On the next screen, confirm the date of the assessment and the name of the psych
 
 ![](assets/screenshots/psychometric-testing/psychometric-testing-09.png)
 
-You will notice that there is no place to record results on this screen. Click on **Next** to begin recording the results.
+You will notice that there is no place to record results on this screen. Click on **Next** to begin recording the results.
 
 ![](assets/screenshots/psychometric-testing/psychometric-testing-10.png)
 
@@ -94,7 +94,7 @@ Navigate to **Pupils → Psychometric Testing → Edit Assessment Results**.
 
 ![](assets/screenshots/psychometric-testing/psychometric-testing-11.png)
 
-Select the assessment from the list. Please note that only assessments from the last 60 days can be edited. Click on the **Edit Results** button.
+Select the assessment from the list. Please note that only assessments from the last 60 days can be edited. Click on the **Edit Results** button.
 
 Change the results as you would if you were entering the results.
 

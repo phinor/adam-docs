@@ -25,7 +25,7 @@ To this end, ADAM has some precautions built in to mitigate against accidental d
 
 ## Initial Setup
 
-The receiving school should nominate one or more people to be notified of incoming data transfers. Navigate to the [Site Settings](changing-site-settings.md#changing-site-settings) and on the **Admissions** tab, scroll down to the bottom for the section **Pupil Transfers In**. Add in one or more email addresses, separated by commas, that should be notified when a new pupil is transferred to the school.
+The receiving school should nominate one or more people to be notified of incoming data transfers. Navigate to the [Site Settings](changing-site-settings.md#changing-site-settings) and on the **Admissions** tab, scroll down to the bottom for the section **Pupil Transfers In**. Add in one or more email addresses, separated by commas, that should be notified when a new pupil is transferred to the school.
 
 ## Transfers Out
 
@@ -47,13 +47,13 @@ ADAM now begins the process of transferring information from your ADAM server to
 
 ## Transfer In
 
-When a pupil’s information is transferred to your server, you will be notified by email (see [Initial Setup](#initial-setup) above). You can also navigate to **Admissions → Pupil Administration → Pupil Transfers In**.
+When a pupil’s information is transferred to your server, you will be notified by email (see [Initial Setup](#initial-setup) above). You can also navigate to **Admissions → Pupil Administration → Pupil Transfers In**.
 
 Clicking on this list will show you a list of pupils waiting for processing:
 
 ![](assets/screenshots/transferring-pupil-information-between-schools/transferring-pupil-information-between-schools-04.png)
 
-Click on the **import** button to begin the process.
+Click on the **import** button to begin the process.
 
 Enter the PIN and click on **View Record**:
 

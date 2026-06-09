@@ -6,7 +6,7 @@ A passkey is a credential stored on the user’s device (phone, tablet or comput
 
 Each user may enrol more than one passkey — for example, one on their phone and one on their work laptop — and each passkey can be named so that it is easy to identify later. Passkeys never replace a user’s password and Two-Factor Authentication settings: they are an additional, optional way to log in, and the password and one-time PIN remain available as a fallback.
 
-For a more detailed walkthrough, see the dedicated [Passkey Authentication](passkey-authentication.md#passkey-authentication) page.
+For a more detailed walkthrough, see the dedicated [Passkey Authentication](passkey-authentication.md#passkey-authentication) page.
 
 ### Signing in with a Passkey
 
@@ -19,13 +19,13 @@ To sign in:
 3.  The browser will prompt for the device’s biometric (fingerprint or face) or PIN.
 4.  Once the gesture is recognised, ADAM signs the user in and takes them to their dashboard or portal home.
 
-A successful passkey login satisfies the Two-Factor Authentication requirement on its own — the user is not asked for a one-time PIN as well. See [Passkeys and Two-Factor Authentication](#passkeys-and-two-factor-authentication) below.
+A successful passkey login satisfies the Two-Factor Authentication requirement on its own — the user is not asked for a one-time PIN as well. See [Passkeys and Two-Factor Authentication](#passkeys-and-two-factor-authentication) below.
 
 ### Setting Up a Passkey for Staff
 
 The first time a staff member logs in after passkeys are enabled, their dashboard will display a card titled “Log in with your fingerprint or face”, with a Set up a passkey button. Clicking the button takes the staff member to the Passkeys management page.
 
-Once a passkey has been registered, the dashboard card disappears. To return to the Passkeys management page after that, see [Managing Your Passkeys](#managing-your-passkeys) below.
+Once a passkey has been registered, the dashboard card disappears. To return to the Passkeys management page after that, see [Managing Your Passkeys](#managing-your-passkeys) below.
 
 To register a new passkey:
 
@@ -90,7 +90,7 @@ If ADAM will communicate via the public internet with your AD server, you must u
 
 ### OAuth Authentication Settings
 
-This can allow your users to authenticate to ADAM if they are signed in with their school-issued Google or Microsoft account. ***Please contact*** ***[help@adam.co.za](mailto:help@adam.co.za)*** ***before you enable any of these settings.***
+This can allow your users to authenticate to ADAM if they are signed in with their school-issued Google or Microsoft account. ***Please contact*** ***[help@adam.co.za](mailto:help@adam.co.za)*** ***before you enable any of these settings.***
 
 ### Internal Password Administration
 
@@ -123,13 +123,13 @@ In Linux based networks it is possible to have ADAM use a pure LDAP server for a
 
 ### Login Settings
 
-The **Login time out** is the amount of time in minutes that must elapse between any two page loads on ADAM before the user account is considered logged out. Note that typing a message (especially in the [Messaging Centre](messaging-centre.md#messaging-centre)) is not considered activity because there is no information going between the server and the client computer.
+The **Login time out** is the amount of time in minutes that must elapse between any two page loads on ADAM before the user account is considered logged out. Note that typing a message (especially in the [Messaging Centre](messaging-centre.md#messaging-centre)) is not considered activity because there is no information going between the server and the client computer.
 
-The setting for **Remember logged-in machines** will set a long-term cookie on a computer which ADAM will then use to determine whether a user has logged in from that machine or not. If no user logs in on that machine within that length of time, ADAM will “forget” the machine and the user will consider to be logged in from a new machine. This has implications for Two-Factor Authentication settings (see below!)
+The setting for **Remember logged-in machines** will set a long-term cookie on a computer which ADAM will then use to determine whether a user has logged in from that machine or not. If no user logs in on that machine within that length of time, ADAM will “forget” the machine and the user will consider to be logged in from a new machine. This has implications for Two-Factor Authentication settings (see below!)
 
-Some schools may chose to **Allow “Remember Me” Logins**. This will prevent the login time-out from affecting the user. Schools should be cautioned against allowing this if the computers that staff use are often left unsupervised and unlocked (consider a desktop computer in a classroom which may have pupils in unsupervised, as opposed to a laptop which is more likely to be turned off and locked). The number of days that ADAM can remember a user for can be set with the **Remember Me Duration** setting.
+Some schools may chose to **Allow “Remember Me” Logins**. This will prevent the login time-out from affecting the user. Schools should be cautioned against allowing this if the computers that staff use are often left unsupervised and unlocked (consider a desktop computer in a classroom which may have pupils in unsupervised, as opposed to a laptop which is more likely to be turned off and locked). The number of days that ADAM can remember a user for can be set with the **Remember Me Duration** setting.
 
-The **Two Factor Authentication Window** allows users a more gracious sliding window with which to use their one-time PINs. Each window is 30s and is defined by the current time of day as determined by the server. OTPs require the time windows to align on the server and client devices. This can cause issues where users are using devices that may not be synchronised accurately to network time, or, indeed, the server is not accurately synchronized.
+The **Two Factor Authentication Window** allows users a more gracious sliding window with which to use their one-time PINs. Each window is 30s and is defined by the current time of day as determined by the server. OTPs require the time windows to align on the server and client devices. This can cause issues where users are using devices that may not be synchronised accurately to network time, or, indeed, the server is not accurately synchronized.
 
 When the setting is set to 1, for example, ADAM will check both the current window as well as the 1 window before and 1 window after to check if the OTP supplied would be valid in any of them. This allows for approximately 30 seconds leeway in terms of time slippage. A window setting of 3 would allow 90 seconds of time slippage.
 
@@ -137,7 +137,7 @@ Where device and server times are accurate, a setting more than 2 is discouraged
 
 ADAM can enforce a number of different **Two Facor Authentication Method** policies. Administrators can require OTPs from users at each login, once per computer per day or, the most lenient, once per computer. Where staff make use of shared computers without unique user accounts, the “once per computer” option is strongly discouraged.
 
-Finally, ADAM can ensure that all staff make use of Two Factor Authentication by setting the **Two Factor Authentication Forced for Staff** setting to “Yes”. When staff login for the first time not having previously set up their two factor authentication, ADAM will prompt them to do so and not permit them to proceed with their logins until they have correctly setup their authentication app to generate one time PINs.
+Finally, ADAM can ensure that all staff make use of Two Factor Authentication by setting the **Two Factor Authentication Forced for Staff** setting to “Yes”. When staff login for the first time not having previously set up their two factor authentication, ADAM will prompt them to do so and not permit them to proceed with their logins until they have correctly setup their authentication app to generate one time PINs.
 
 ### POP3 Authentication
 
@@ -179,16 +179,16 @@ Parent logins can be disabled from within the [Site Settings](changing-site-sett
 
 There are several possibilities as to why this might happen. If a parent doesn’t receive the password reset email, check each of these possibilities in the following order:
 
-1.  **Check that their email address is captured accurately.** If the incorrect email address is captured, any password reset requests will be sent to the wrong address. In the worst case, this could mean that someone else will get access to their ADAM profile. In some instances, where ADAM can see obvious issues with the email address which makes it invalid (e.g. spaces in the domain), then ADAM won’t even attempt to send the email.
-2.  **Check that their ID number is captured accurately.** It may be that ADAM simply isn’t able to match the ID number against any family member. This happens often with passport numbers which change from time to time when a new passport is issued.
-3.  **Check that the ID number is linked to only one family profile.** Sometimes divorced or separated parents end up with multiple profiles on ADAM. In these instances, ADAM is unable to determine which family profile is logging in or, by extension, which children it should be showing. You can check if the ID number is associated with the family by searching for it: **Families → Messaging and Communications → Search for ID numbers**. Make sure that only one family profile is shown. If you are searching for a staff member who is also a parent, you should expect to see one family profile and one staff profile appear in the search results. It is only a problem if they have more than one family profile.
-4.  **Ask the parent to check that the email hasn’t been delivered to a spam or junk mail folder.** In many instances, emails requesting password changes are treated suspiciously by many email providers and have a higher chance of being flagged as spam.
-5.  **Ask your IT department to trace the email’s delivery in your email service’s logs.** It will be helpful to report the time when the parent requested the login. The more accurate the time is, the easier it will be to trace. They should see a record of the message being received from ADAM and it then being delivered onward on to the family member’s email service. If the email server had problems with onward delivery, they should be able to report these to you. The resolution of any problems here will, of course, depend on the issue that your IT department discovers. If, however, there is no record of any email being sent, and assuming that ADAM can send other email without issue, the problem is almost definitely going to be linked to one of the first three points above.
+1.  **Check that their email address is captured accurately.** If the incorrect email address is captured, any password reset requests will be sent to the wrong address. In the worst case, this could mean that someone else will get access to their ADAM profile. In some instances, where ADAM can see obvious issues with the email address which makes it invalid (e.g. spaces in the domain), then ADAM won’t even attempt to send the email.
+2.  **Check that their ID number is captured accurately.** It may be that ADAM simply isn’t able to match the ID number against any family member. This happens often with passport numbers which change from time to time when a new passport is issued.
+3.  **Check that the ID number is linked to only one family profile.** Sometimes divorced or separated parents end up with multiple profiles on ADAM. In these instances, ADAM is unable to determine which family profile is logging in or, by extension, which children it should be showing. You can check if the ID number is associated with the family by searching for it: **Families → Messaging and Communications → Search for ID numbers**. Make sure that only one family profile is shown. If you are searching for a staff member who is also a parent, you should expect to see one family profile and one staff profile appear in the search results. It is only a problem if they have more than one family profile.
+4.  **Ask the parent to check that the email hasn’t been delivered to a spam or junk mail folder.** In many instances, emails requesting password changes are treated suspiciously by many email providers and have a higher chance of being flagged as spam.
+5.  **Ask your IT department to trace the email’s delivery in your email service’s logs.** It will be helpful to report the time when the parent requested the login. The more accurate the time is, the easier it will be to trace. They should see a record of the message being received from ADAM and it then being delivered onward on to the family member’s email service. If the email server had problems with onward delivery, they should be able to report these to you. The resolution of any problems here will, of course, depend on the issue that your IT department discovers. If, however, there is no record of any email being sent, and assuming that ADAM can send other email without issue, the problem is almost definitely going to be linked to one of the first three points above.
 
 !!! warning
-    *Parents tell us that they find the error messages about logging into ADAM* *to be* *unhelpful and vauge. They* *ask* *us to change these messages to show* *more detail about what is wrong**.* *We agree this would help solve problems faster.*
+    *Parents tell us that they find the error messages about logging into ADAM* *to be* *unhelpful and vauge. They* *ask* *us to change these messages to show* *more detail about what is wrong**.* *We agree this would help solve problems faster.*
 
-*However, if we do this, it would also help hackers and* *criminals* *find real ID numbers in our system.* *Not only is it against the law to share information with people who shouldn't have it, but it's even more serious because it could put children in danger if someone finds out they go to a certain school.*
+*However, if we do this, it would also help hackers and* *criminals* *find real ID numbers in our system.* *Not only is it against the law to share information with people who shouldn't have it, but it's even more serious because it could put children in danger if someone finds out they go to a certain school.*
 
 ### The login is very slow
 

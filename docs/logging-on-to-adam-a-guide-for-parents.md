@@ -14,8 +14,8 @@ There are several sections in this document. The following links will jump you t
 
 Before you begin:
 
-1.  You must know your **South African ID number** or your **passport** number, as captured on the ADAM database.
-2.  You must also have access to an **email address** that is entered against your name in the database. Part of the process will involve ADAM sending a confirmation link to your email address for verification. The process of verifying the email link must be done within two hours of starting.
+1.  You must know your **South African ID number** or your **passport** number, as captured on the ADAM database.
+2.  You must also have access to an **email address** that is entered against your name in the database. Part of the process will involve ADAM sending a confirmation link to your email address for verification. The process of verifying the email link must be done within two hours of starting.
 
 *Note that some parents, who share a single email address, may have difficulty in accessing ADAM. This is because the email address is likely associated with only one parent. If you receive the error that there is no email address associated with you, please make contact with the school who can copy the address for both parents.*
 
@@ -91,7 +91,7 @@ To set up a passkey, log in with your ID number and password as usual. At the to
 
 From then on, when you visit the parent log-in page, you can click Log in with a passkey instead of entering your ID and password. The button is only shown when your browser supports passkeys; if it is not visible, just continue to log in with your ID number and password as before.
 
-To rename or remove a passkey at any time, go to **Family Portal → Security → Manage your passkeys**. Remove a passkey if you have lost the device it was set up on, or if you no longer use that device for ADAM. See [Passkey Authentication](passkey-authentication.md#passkey-authentication) for the full guide.
+To rename or remove a passkey at any time, go to **Family Portal → Security → Manage your passkeys**. Remove a passkey if you have lost the device it was set up on, or if you no longer use that device for ADAM. See [Passkey Authentication](passkey-authentication.md#passkey-authentication) for the full guide.
 
 ## Help! I’ve forgotten my password!
 

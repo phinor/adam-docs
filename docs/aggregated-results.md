@@ -3,7 +3,7 @@
 ADAM has a feature called “Aggregated Results” which are used to create aggregated results reports for pupils. This feature has two purposes:
 
 -   **Year-to-date and year-end marks:** Most commonly, ADAM will use Aggregated Results to calculate a “Year-To-Date” mark for a class or grade. You will choose an aggregated result to use as the default result. Classes, however, have the opportunity of overriding that default aggregated result by choosing one of their own. This provides the opportunity for some subjects to have their year marks calculated differently to other subjects.
--   **Analysis and statistical tools:** We might use this to calculate an aggregated examination result or to perhaps use a “best of” scenario to include and exclude some assessments. In some subjects, it might be useful to create a “practical” and a “theory” result, and the Aggregated Results now allows for this.
+-   **Analysis and statistical tools:** We might use this to calculate an aggregated examination result or to perhaps use a “best of” scenario to include and exclude some assessments. In some subjects, it might be useful to create a “practical” and a “theory” result, and the Aggregated Results now allows for this.
 
 ## Types of Aggregated Result Calculations
 
@@ -60,21 +60,21 @@ Specify which audience you’d like this calculation to be made available to:
 
 ![](assets/screenshots/aggregated-results/aggregated-results-03.png)
 
-The most common choices are **a whole grade** or **a specific grade and subject**. If you wish to make an aggregated result calculation that is based on *individual assessment results*, then you must choose **a specific grade and subject**. ADAM cannot create a calculation based on individual assessments across subjects or across grades.
+The most common choices are **a whole grade** or **a specific grade and subject**. If you wish to make an aggregated result calculation that is based on *individual assessment results*, then you must choose **a specific grade and subject**. ADAM cannot create a calculation based on individual assessments across subjects or across grades.
 
-Once you have selected the audience, click on **Next** and ADAM will ask for details of the calculation:
+Once you have selected the audience, click on **Next** and ADAM will ask for details of the calculation:
 
 ![](assets/screenshots/aggregated-results/aggregated-results-04.png)
 
-The **Description** field should be something to identify the calculation, such as “year mark,” “portfolio result” or even “practical results”.
+The **Description** field should be something to identify the calculation, such as “year mark,” “portfolio result” or even “practical results”.
 
-You will need to specify the **Academic Year** that this applies to. ADAM cannot create a calculation that has results from multiple years.
+You will need to specify the **Academic Year** that this applies to. ADAM cannot create a calculation that has results from multiple years.
 
-If you chose to make a calculation available to a **grade** or a **specific grade and subject**, then you will be asked to specify which **Grade** that is. If you chose to make a calculation available to a **subject** or a **specific grade and subject**, then you will be asked to specify which **Subject** that is. Because we chose “specific grade and subject” on the previous page, ADAM is asking us for both the grade and the subject.
+If you chose to make a calculation available to a **grade** or a **specific grade and subject**, then you will be asked to specify which **Grade** that is. If you chose to make a calculation available to a **subject** or a **specific grade and subject**, then you will be asked to specify which **Subject** that is. Because we chose “specific grade and subject” on the previous page, ADAM is asking us for both the grade and the subject.
 
 Finally, tell ADAM what results your **calculation will be based on**.
 
-Click on **Next** when you want to proceed.
+Click on **Next** when you want to proceed.
 
 Depending on the type of calculation, you will see one of the following screens. Jump to the appropriate section below!
 
@@ -102,7 +102,7 @@ In the diagram above, one might set the “Examinations” section of “Term 1�
 !!! warning
     Take note that the numbers you see are not strictly percentages (they can be if you want them to be). ADAM will work them out as fractions of the total. Above, the total of all the 17s adds to 102. ADAM will actually use 17 / 102 as the fraction to work out the percentage weighting (16.67%)
 
-Click on the **Save changes** button when you’re happy with your weightings.
+Click on the **Save changes** button when you’re happy with your weightings.
 
 ### Individual Assessments {#creating-aggregated-result-calculations-individual-assessments}
 
@@ -118,10 +118,10 @@ On the left, write a description for the assessment. For example “Listening Co
 
 The types of calculation include:
 
--   **Average of:** here, ADAM works out a simple average of all the results.
--   **Weighted average of:** when working out the averages, ADAM will take the markbook weightings into account.
--   **Best 1 from:** ADAM will take the result with the highest percentage for each pupil of the assessments selected.
--   **Best X of (weighted average):** Here ADAM will take the best number of assessment results for each pupil from the ones selected and produce a weighted averages (based on markbook weightings).
+-   **Average of:** here, ADAM works out a simple average of all the results.
+-   **Weighted average of:** when working out the averages, ADAM will take the markbook weightings into account.
+-   **Best 1 from:** ADAM will take the result with the highest percentage for each pupil of the assessments selected.
+-   **Best X of (weighted average):** Here ADAM will take the best number of assessment results for each pupil from the ones selected and produce a weighted averages (based on markbook weightings).
 
 Note well that the assessments selected can be from multiple classes. This is useful so that you only need one calculation for all the classes in that grade. Also, it is necessary to catch results from pupils who may have written an assessment in one class in the first term, but moved to another class in the second term.
 
@@ -131,7 +131,7 @@ You can add as many lines as you like. Each line will appear as a separate colum
 
 https://www.youtube.com/embed/hZjMpQKarA4
 
-You must have [created your aggregated result calculation](#creating-aggregated-result-calculations) first.
+You must have [created your aggregated result calculation](#creating-aggregated-result-calculations) first.
 
 There are two ways to set an aggregated result calculation as a Year-to-date result.
 
@@ -152,7 +152,7 @@ At the bottom right of the mark book screen is a block that shows the currently 
 
 ![](assets/screenshots/aggregated-results/aggregated-results-13.png)
 
-Note in the diagram above, the calculation is being pulled from the **grade’s default calculation** which is set in the reporting period settings.
+Note in the diagram above, the calculation is being pulled from the **grade’s default calculation** which is set in the reporting period settings.
 
 Click on the button to **Change YTD mark calculation**. A list of available calculations will be shown in the dropdown list. Choose the appropriate one and click on **Save calculation**.
 
@@ -196,7 +196,7 @@ In the assessment summary and weighting page, one would set the Year-to-Date cal
 
 ![](assets/screenshots/aggregated-results/aggregated-results-16.png)
 
-Click on the button **Change term mark calculation** and then choose the Aggregate Result Calculation that you created above.
+Click on the button **Change term mark calculation** and then choose the Aggregate Result Calculation that you created above.
 
 ## Semesterised Subjects on Reports
 
@@ -218,7 +218,7 @@ To force ADAM to calculate a YTD result, you can visit **Reporting → Promotion
 
 ![](assets/screenshots/aggregated-results/aggregated-results-17.png)
 
-Choose the appropriate reporting period and click on the **Next** button.
+Choose the appropriate reporting period and click on the **Next** button.
 
 ![](assets/screenshots/aggregated-results/aggregated-results-18.png)
 
@@ -226,7 +226,7 @@ Then choose the appropriate grade. ADAM will now recalculate all the marks for t
 
 ### Using a different calculation for Semesterised Subjects
 
-It is possible that your semesterised subjects will require a different aggregated calculation to provide different weightings when compared to subjects that are taught across the whole year. For example, some subjects may not have a mid-year exam, but the semesterised subjects require a midyear exam. [Setting a different YTD calculation for a specific class](#method-2-markbook-calculation) is dealt with above.
+It is possible that your semesterised subjects will require a different aggregated calculation to provide different weightings when compared to subjects that are taught across the whole year. For example, some subjects may not have a mid-year exam, but the semesterised subjects require a midyear exam. [Setting a different YTD calculation for a specific class](#method-2-markbook-calculation) is dealt with above.
 
 This is an example of how a Year-to-date result might be calculated for a subject taught over a whole year, emphasising Terms 2 and 4 because they contain exam results.
 

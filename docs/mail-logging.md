@@ -31,7 +31,7 @@ You do not need to worry about space issues on your mail server since ADAM will 
 
 Once configured, confirm that you have POP3 access to the mailbox concerned. Make a note of the username and password, as well as the IP address of the server concerned (which may be different from your outgoing SMTP server, in some instances).
 
-Navigate in ADAM to “**Administration** >> **Site Administration** >> **Edit site settings**”.
+Navigate in ADAM to “**Administration** >> **Site Administration** >> **Edit site settings**”.
 
 When in Site Settings, click on the “Mail Logging” tab.
 
@@ -40,7 +40,7 @@ When in Site Settings, click on the “Mail Logging” tab.
 -   Enter the password for the journaling mailbox.
 -   Depending on the volume of mail to be processed, you can set the number of messages to be processed to be as high as 90.
 
-Click on the **Save settings** button.
+Click on the **Save settings** button.
 
 ADAM will now check the mailbox every 5 minutes and process mail that is waiting there. If there are more messages waiting than the maximum allows, then ADAM will process those mails on its next run.
 
@@ -52,7 +52,7 @@ If the cron process stops running, then the mails will be stored in the mail box
 
 Privileges to view logged mail should be given sparingly since mail may contain sensitive information. In the privilege groups, the following privileges, found under the “**Family Admin**” tab, are relevant:
 
--   **View any correspondence:** This privilege allows a user to see the correspondence of any and all families. This should probably only be given to senior management of the school.
--   **View correspondence from specified subjects:** Here, the teacher will only be able to read the correspondence of a family, provided that the student is registered in a class that they teach. This should be reserved for housemasters, grade tutors or other such pastoral responsibilities. The subjects concerned are selected on the Mail Logging configuration screen on the Site Settings page.
--   **View correspondence of class pupils:** In this privilege, which is similar to the one above, they will see correspondence from that pupil if they teach any of the pupils in the family, in any class. This privilege is more wide-reaching that the one contemplated above and, as such, is rarely useful. If this were given to teachers, for example, they would be able to see correspondence between other teachers and families of any of the pupils that they taught.
--   **View sent and received correspondence:** This privilege is safe to give to all staff. It allows them to see correspondence that matches with their email address and the family. They cannot see correspondence sent by other teachers.
+-   **View any correspondence:** This privilege allows a user to see the correspondence of any and all families. This should probably only be given to senior management of the school.
+-   **View correspondence from specified subjects:** Here, the teacher will only be able to read the correspondence of a family, provided that the student is registered in a class that they teach. This should be reserved for housemasters, grade tutors or other such pastoral responsibilities. The subjects concerned are selected on the Mail Logging configuration screen on the Site Settings page.
+-   **View correspondence of class pupils:** In this privilege, which is similar to the one above, they will see correspondence from that pupil if they teach any of the pupils in the family, in any class. This privilege is more wide-reaching that the one contemplated above and, as such, is rarely useful. If this were given to teachers, for example, they would be able to see correspondence between other teachers and families of any of the pupils that they taught.
+-   **View sent and received correspondence:** This privilege is safe to give to all staff. It allows them to see correspondence that matches with their email address and the family. They cannot see correspondence sent by other teachers.

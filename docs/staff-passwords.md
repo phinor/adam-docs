@@ -1,8 +1,8 @@
 # Staff Passwords
 
-There are a number of ways that ADAM can authenticate staff members. This is normally done with a password that ADAM manages (an “internal” password), but ADAM can delegate the password management to other systems such as Active Directory. Staff can also enrol a [passkey](passkey-authentication.md#passkey-authentication) on each of their devices, which lets them sign in with a fingerprint or face scan rather than a password.
+There are a number of ways that ADAM can authenticate staff members. This is normally done with a password that ADAM manages (an “internal” password), but ADAM can delegate the password management to other systems such as Active Directory. Staff can also enrol a [passkey](passkey-authentication.md#passkey-authentication) on each of their devices, which lets them sign in with a fingerprint or face scan rather than a password.
 
-This page covers password-based logins. For information on enrolling and managing passkeys — including how an administrator can revoke a passkey on a lost or stolen device — see the [Passkey Authentication](passkey-authentication.md#passkey-authentication) page.
+This page covers password-based logins. For information on enrolling and managing passkeys — including how an administrator can revoke a passkey on a lost or stolen device — see the [Passkey Authentication](passkey-authentication.md#passkey-authentication) page.
 
 ## Checking Usernames and Authentication Methods
 
@@ -30,7 +30,7 @@ If a user wishes to change their password, they can do so by visiting: **Staff �
 
 The user will need to enter their existing password and then enter a new password, twice.
 
-To save the password, click on the **Change password** button that appears at the bottom.
+To save the password, click on the **Change password** button that appears at the bottom.
 
 Note that if the password entered does not conform to the password policy, the button will be disabled. Read more [below about the password policy](#password-policy).
 
