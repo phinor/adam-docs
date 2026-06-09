@@ -2064,7 +2064,7 @@ GET /api/familyrelationships/pupil/123
 
 ```json
 {
-  "data": [
+  "data": {
     "111": {
       "primary": "biological",
       "secondary": "step parent"
@@ -2073,7 +2073,7 @@ GET /api/familyrelationships/pupil/123
       "primary": "step parent",
       "secondary": "biological"
     }
-  ],
+  },
   "message": "",
   "response": {
     "error": "OK",
@@ -2104,7 +2104,7 @@ GET /api/familyrelationships/pupil
 
 ```json
 {
-  "data": [
+  "data": {
     "123": {
       "111": {
         "primary": "biological",
@@ -2121,7 +2121,7 @@ GET /api/familyrelationships/pupil
         "secondary": "biological"
       }
     }
-  ],
+  },
   "message": "",
   "response": {
     "error": "OK",
