@@ -117,7 +117,7 @@ While we wish everyone an error free experience, this is the first iteration of 
 
 Now that you have downloaded the database, you will need to open it with the SA-SAMS software to verify that the information has been imported correctly and that your database is valid and meets the SA-SAMS requirements. Sadly, this is beyond the scope of this help document and you are requested to pass queries about the operations and functions of SA-SAMS to your district office for resolution.
 
-Information on where to download SA-SAMS and how to use it can be found [on the Tuthong website](https://www.google.com/url?q=http://www.thutong.doe.gov.za/administration/Administration/tabid/1570/Default.aspx&sa=D&source=editors&ust=1778246676653008&usg=AOvVaw0RkbFqbAw7IP9OIHMOKOhB).
+Information on where to download SA-SAMS and how to use it can be found [on the Tuthong website](http://www.thutong.doe.gov.za/administration/Administration/tabid/1570/Default.aspx).
 
 There are **three** components to the installation and you must run the setup in sequence:
 

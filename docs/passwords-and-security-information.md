@@ -24,16 +24,16 @@ As an analogy: how could you tell if someone used the same ingredients to make t
 
 Never in anything that could be considered permanent storage.
 
-To be clear, when you type in your password, your computer encrypts the login request and sends that to the ADAM server which decrypts it into memory. The password is then checked against your account (see one-way hashing above) for validity and, if it hasn’t already been checked before, ADAM will check your password against the [haveibeenpwned.com](https://www.google.com/url?q=https://haveibeenpwned.com/Passwords&sa=D&source=editors&ust=1778246676393486&usg=AOvVaw0CIzvUxx-D-5zq9Ryoqhgf) password service which checks passwords against a database of known breached passwords.
+To be clear, when you type in your password, your computer encrypts the login request and sends that to the ADAM server which decrypts it into memory. The password is then checked against your account (see one-way hashing above) for validity and, if it hasn’t already been checked before, ADAM will check your password against the [haveibeenpwned.com](https://haveibeenpwned.com/Passwords) password service which checks passwords against a database of known breached passwords.
 
-If you are technically minded, you can read the [technical details](https://www.google.com/url?q=https://haveibeenpwned.com/API/v2%23PwnedPasswords&sa=D&source=editors&ust=1778246676393831&usg=AOvVaw072VEy9cJvWjaVPB7lx50F) of how we manage this [without compromising your password security](https://www.google.com/url?q=https://blog.cloudflare.com/validating-leaked-passwords-with-k-anonymity/&sa=D&source=editors&ust=1778246676394039&usg=AOvVaw3qvsORu21vpdIIWNloDqy6).
+If you are technically minded, you can read the [technical details](https://haveibeenpwned.com/API/v2#PwnedPasswords) of how we manage this [without compromising your password security](https://blog.cloudflare.com/validating-leaked-passwords-with-k-anonymity/).
 
 !!! warning
     In the process of checking your password, ADAM stores a SHA-1 hash of your password in the database until such time as the password is checked. SHA-1 hashing is a common, secure, but unsalted mechanism of one-way hashing a password. This hash is required by the haveibeenpwned.com service and is used solely for that reason. The checks happen every 5 minutes. The storage space is located entirely in temporary memory and is not written to disk. The data for password checks is not backed up.
 
 ## ADAM tells me there is a problem with my password. Why?
 
-When you log in to ADAM with a new password, ADAM will check your password against the [haveibeenpwned.com](https://www.google.com/url?q=https://haveibeenpwned.com/Passwords&sa=D&source=editors&ust=1778246676394989&usg=AOvVaw2NHdxnpFd6S_ayJU7oOKCx) database of over 500 million compromised passwords. If it discovers that the password has been used before, it records how many times it has been used. We’re hoping it isn’t there at all!
+When you log in to ADAM with a new password, ADAM will check your password against the [haveibeenpwned.com](https://haveibeenpwned.com/Passwords) database of over 500 million compromised passwords. If it discovers that the password has been used before, it records how many times it has been used. We’re hoping it isn’t there at all!
 
 When you visit your landing page, if the password has been used before, ADAM will display a warning similar to this one:
 

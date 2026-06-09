@@ -23,7 +23,7 @@ Note that with staff, it may be preferable to disable both mother and father eve
 
 The goal here is to have your mail server place a duplicate copy of every mail that it sends or receives into a mailbox that can be accessed by ADAM using a POP3 connection.
 
-The instructions are different for each mail server. You will need to enquire with your mail server’s providers on how to achieve this. Here are instructions for Microsoft Exchange 2013 to set up this process, called “[Journaling](https://www.google.com/url?q=https://technet.microsoft.com/en-us/library/aa998649\(v%3Dexchg.150\).aspx&sa=D&source=editors&ust=1778246676205321&usg=AOvVaw0-PlwtspGIr_NcGPElj_DB)”.
+The instructions are different for each mail server. You will need to enquire with your mail server’s providers on how to achieve this. Here are instructions for Microsoft Exchange 2013 to set up this process, called “[Journaling](https://technet.microsoft.com/en-us/library/aa998649\(v=exchg.150\).aspx)”.
 
 You do not need to worry about space issues on your mail server since ADAM will delete the mails once they are processed.
 

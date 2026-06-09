@@ -130,7 +130,7 @@ Also, indented lines in the examples below, indicate a long, continued line that
 
 ### Templates for Typical Promotion Requirements
 
-The following requirements are based on [official guidelines](https://www.google.com/url?q=https://www.education.gov.za/Portals/0/Documents/Policies/PolicyProgPromReqNCS.pdf?ver%3D2015-02-03-154857-397&sa=D&source=editors&ust=1778246676418656&usg=AOvVaw2TW4RV5LN7kxgY4MBAEub7). All these promotion criteria are linked to DBE codes and so all criteria need to be set to use DBE codes.
+The following requirements are based on [official guidelines](https://www.education.gov.za/Portals/0/Documents/Policies/PolicyProgPromReqNCS.pdf?ver=2015-02-03-154857-397). All these promotion criteria are linked to DBE codes and so all criteria need to be set to use DBE codes.
 
 #### Promoted (Grades 10 – 12) BD
 

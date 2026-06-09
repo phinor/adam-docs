@@ -69,4 +69,4 @@ If the ADAM server cannot lookup the IP address of the Ping server, it won’t b
 
 #### The Ping Server may be down
 
-You can check on the status of the Ping server here: [https://status.adam.co.za/780189792](https://www.google.com/url?q=https://status.adam.co.za/780189792&sa=D&source=editors&ust=1778246675918851&usg=AOvVaw05K7eTGIkb5HfDDmdkQlWr)
+You can check on the status of the Ping server here: [https://status.adam.co.za/780189792](https://status.adam.co.za/780189792)

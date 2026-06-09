@@ -117,7 +117,7 @@ https://demo.adam.co.za/api/request/test/parameter
 ```
 
 Parameters should
-be “[percent encoded](https://www.google.com/url?q=https://www.w3schools.com/tags/ref_urlencode.asp&sa=D&source=editors&ust=1778246675609863&usg=AOvVaw3YqxCg2gCwh23giGyigZmH)”.
+be “[percent encoded](https://www.w3schools.com/tags/ref_urlencode.asp)”.
 Spaces should be encoded as %20 and not as a “+”.
 
 A `GET` request to this API end-point would require token access to the resource: request/test:get. Note that without
@@ -1073,7 +1073,7 @@ GET /api/dataquery/getsince/<secret>/<timestamp>[/<version>]
 #### Parameters {#dataquerygetsinceget-parameters}
 
 -   `<secret>` is the secret defined for a list. This also determines what type of data and which fields are returned.
--   `<timestamp>` is a [Unix integer timestamp](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Unix_time&sa=D&source=editors&ust=1778246675689130&usg=AOvVaw3Bx1tu5NfQ41epG1AstACP).
+-   `<timestamp>` is a [Unix integer timestamp](https://en.wikipedia.org/wiki/Unix_time).
 -   `<version>` , if supplied, is the version of the data structure to be returned. See above.
 
 #### Response {#dataquerygetsinceget-response}

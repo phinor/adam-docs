@@ -130,7 +130,7 @@ If you want to verify the information that can be seen by a specific family, sys
 
 ## Parent Login Instructions
 
-[Please see this separately maintained instruction guide for parents.](https://www.google.com/url?q=https://docs.google.com/document/d/1vHiaDoheupdosNEEv32az8MjiVfSFUNmRiAk3TBZuuo/edit&sa=D&source=editors&ust=1778246676379604&usg=AOvVaw2atf3cB6ua9dNXHaOMewVK) You are welcome to amend this guide for your own purposes, or simply send it to parents in its current form.
+[Please see this separately maintained instruction guide for parents.](https://docs.google.com/document/d/1vHiaDoheupdosNEEv32az8MjiVfSFUNmRiAk3TBZuuo/edit) You are welcome to amend this guide for your own purposes, or simply send it to parents in its current form.
 
 ## Accessing the QR Code
 

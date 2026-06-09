@@ -112,7 +112,7 @@ Please see the separate section on [Moodle Integration](moodle-integration.md#mo
 
 ## Papyrus Integration with ADAM
 
-ADAM is able to integrate with the cloud-based library management system, [Papyrus](https://www.google.com/url?q=https://www.papyrus.co.za/&sa=D&source=editors&ust=1778246676833937&usg=AOvVaw3t_CgjBmywu3G25xtDxoQ2).
+ADAM is able to integrate with the cloud-based library management system, [Papyrus](https://www.papyrus.co.za/).
 
 ADAM first needs to be configured to allow Papyrus access to the data in its database.
 
@@ -164,7 +164,7 @@ Before you can configure Papyrus, please make sure you have completed the steps 
 
 ## Wonde Integration with ADAM
 
-[Wonde](https://www.google.com/url?q=https://www.wonde.com/za/home/&sa=D&source=editors&ust=1778246676836843&usg=AOvVaw0wynRTi95MY6YrdlDX-b-e) provides a go-between platform to synchronise information from ADAM to a variety of other service providers. In order to achieve this, Wonde needs to be given permissions to view and access the data in your ADAM database. Wonde needs access to the [ADAM API](api-access-to-adam.md#api-access-to-adam) in order to retrieve information from the database.
+[Wonde](https://www.wonde.com/za/home/) provides a go-between platform to synchronise information from ADAM to a variety of other service providers. In order to achieve this, Wonde needs to be given permissions to view and access the data in your ADAM database. Wonde needs access to the [ADAM API](api-access-to-adam.md#api-access-to-adam) in order to retrieve information from the database.
 
 ### Create an API Key for Wonde
 
@@ -240,7 +240,7 @@ The data source and secret now appear in the list. Repeat these steps for the ot
 
 You need to give Wonde the following information:
 
--   Your ADAM server URL where you log in (e.g. [https://demo.adam.co.za/](https://www.google.com/url?q=https://demo.adam.co.za/&sa=D&source=editors&ust=1778246676842681&usg=AOvVaw0K9RKOk_VWPhjr6Ku2CvXA));
+-   Your ADAM server URL where you log in (e.g. [https://demo.adam.co.za/](https://demo.adam.co.za/));
 -   The API Key that you created in the first step; and
 -   The three Secret Keys that you created in the second step.
 
@@ -248,14 +248,14 @@ People who have access to this information will have access to all personal and 
 
 ## SOCS Integration with ADAM
 
-[SOCS](https://www.google.com/url?q=http://www.misocs.com/&sa=D&source=editors&ust=1778246676843442&usg=AOvVaw3m8FmvYn0TwYO9fiwJh4ss) is an online co-curriculum and calendar management system that many schools use to manage sports fixtures and programmes. ADAM is able to make information available to SOCS in their required format.
+[SOCS](http://www.misocs.com/) is an online co-curriculum and calendar management system that many schools use to manage sports fixtures and programmes. ADAM is able to make information available to SOCS in their required format.
 
 ### SOCS Export
 
 To get the exports working, you will need to do the following:
 
 1.  In [Site Settings](changing-site-settings.md#changing-site-settings), under the **Third Party Integration** tab, look for the “SOCS” section.
-2.  Enter a **Secret Key**. This is just a long random string of characters that will be the secret password for SOCS to access ADAM. We recommend at least 20 random characters. This does not need to be memorable since you will never need to type this in. Here is a website that can help you [generate a string of random characters](https://www.google.com/url?q=https://www.random.org/strings/?num%3D10%26len%3D20%26digits%3Don%26upperalpha%3Don%26loweralpha%3Don%26unique%3Don%26format%3Dhtml%26rnd%3Dnew&sa=D&source=editors&ust=1778246676844517&usg=AOvVaw060cJRQZQUUAoG73trP9TS).
+2.  Enter a **Secret Key**. This is just a long random string of characters that will be the secret password for SOCS to access ADAM. We recommend at least 20 random characters. This does not need to be memorable since you will never need to type this in. Here is a website that can help you [generate a string of random characters](https://www.random.org/strings/?num=10&len=20&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
 3.  If you have sports houses captured as classes in ADAM, configure the subject as needed. If you don’t, and if your pupils’ houses are not important, you can leave this as your default registration class. The **Sports House** setting is on the **General** tab in the Site Settings.
 4.  Save these changes to your Site Settings.
 5.  Send the URL to your SOCS export to your SOCS contact. The URL is described in more detail below.
@@ -313,7 +313,7 @@ Notably, if you’ve been using SOCS before, the admin numbers that were in use 
 
 ## SportCap Integration with ADAM
 
-[SportsCap](https://www.google.com/url?q=https://www.sportscap.co.za&sa=D&source=editors&ust=1778246676847900&usg=AOvVaw17YgDMPz3Hacb7-H7DM3rd) is a sports and fixture management system for schools with direct integration to the SA Rugby “BokSmart” system. SportsCap can pull information directly from ADAM to populate its database.
+[SportsCap](https://www.sportscap.co.za) is a sports and fixture management system for schools with direct integration to the SA Rugby “BokSmart” system. SportsCap can pull information directly from ADAM to populate its database.
 
 ### Requirements:
 

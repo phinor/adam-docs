@@ -68,7 +68,7 @@ End users may find that mail sent via ADAM lands up in their spam or junk mail f
 
 To combat this, it is important that you take precautions to ensure that your mail is properly configured. There are a number of techniques that can help with this.
 
-We recommend using [MXToolbox’s Email Health service](https://www.google.com/url?q=https://mxtoolbox.com/emailhealth&sa=D&source=editors&ust=1778246676282232&usg=AOvVaw3FS2KdqQqWhznpMZfRzVE4) for more information regarding your email domain’s deliverability.
+We recommend using [MXToolbox’s Email Health service](https://mxtoolbox.com/emailhealth) for more information regarding your email domain’s deliverability.
 
 ### Sender Framework Policy (SPF) Configuration
 
@@ -102,7 +102,7 @@ If you are a “Google School” that makes use of Google’s email offering, th
 
 ### Configure Google Workspace
 
-Follow [the official instructions](https://www.google.com/url?q=https://support.google.com/a/answer/2956491?hl%3Den&sa=D&source=editors&ust=1778246675879794&usg=AOvVaw1jhMftTtbiDngxGPJPZ2v6) to configure the SMTP relay service in Google Workspace’s Admin Console.
+Follow [the official instructions](https://support.google.com/a/answer/2956491?hl=en) to configure the SMTP relay service in Google Workspace’s Admin Console.
 
 However, please take note of the following points:
 
@@ -138,7 +138,7 @@ If you can tick off both of those, then your mail is set up correctly.
 
 ### Configuring O365
 
-Follow the [instructions on Office 365’s official help site](https://www.google.com/url?q=https://learn.microsoft.com/en-us/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365%23smtp-relay-configure-a-connector-to-relay-email-from-your-device-or-application-through-microsoft-365-or-office-365&sa=D&source=editors&ust=1778246675883289&usg=AOvVaw19iry8kxl3h8GnP_9Eep2S) for details on how to “Configure a connector to relay SMTP email”.
+Follow the [instructions on Office 365’s official help site](https://learn.microsoft.com/en-us/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365#smtp-relay-configure-a-connector-to-relay-email-from-your-device-or-application-through-microsoft-365-or-office-365) for details on how to “Configure a connector to relay SMTP email”.
 
 You will need to know the IP address of your ADAM server. If you make use of a hosted ADAM server, please inform us so that we can give you the IP address of the server.
 
@@ -163,7 +163,7 @@ This method makes use of a single address to send email from ADAM. We recommend 
 
 ### Configuring Office 365 - Alternative Method
 
-Follow the [instructions on Office 365’s official help site](https://www.google.com/url?q=https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3&sa=D&source=editors&ust=1778246675885464&usg=AOvVaw2-LxuVdmMS3Gnz8eBdmATH) for **Option 1**.
+Follow the [instructions on Office 365’s official help site](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3) for **Option 1**.
 
 ### Configuring ADAM - O365 Alternative Method
 

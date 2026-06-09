@@ -2,9 +2,9 @@
 
 ADAM uses three third party service providers to send SMS messages from the [Messaging Centre](messaging-centre.md). These are:
 
--   SMSWeb: [http://www.smsweb.co.za](https://www.google.com/url?q=http://www.smsweb.co.za&sa=D&source=editors&ust=1778246676736054&usg=AOvVaw1iUgcGfxkM-YH6iZc63kyS)
--   ZoomConnect: [http://www.zoomconnect.com](https://www.google.com/url?q=http://www.zoomconnect.com&sa=D&source=editors&ust=1778246676736304&usg=AOvVaw0V3gqpXxOfwuum7JkBPeNu) 
--   SMSGuys: [http://www.smsguys.co.za](https://www.google.com/url?q=http://www.smsguys.co.za&sa=D&source=editors&ust=1778246676736525&usg=AOvVaw3YZBG0o7lGmDxPf3XZ5e4E) 
+-   SMSWeb: [http://www.smsweb.co.za](http://www.smsweb.co.za)
+-   ZoomConnect: [http://www.zoomconnect.com](http://www.zoomconnect.com) 
+-   SMSGuys: [http://www.smsguys.co.za](http://www.smsguys.co.za) 
 
 The three service offer different pricing models and it is up to the school which model they wish to use.
 
@@ -25,7 +25,7 @@ On signing up with SMSweb, they will provide you with a username and password. T
 
 Part of the process of signing up to ZoomConnect will provide you with a username and password to access the ZoomConnect portal.
 
-Begin your signup process at [https://www.zoomconnect.com/](https://www.google.com/url?q=https://www.zoomconnect.com/&sa=D&source=editors&ust=1778246676738212&usg=AOvVaw0h2-CY5Gq2_qdv1w1ecw-Q) 
+Begin your signup process at [https://www.zoomconnect.com/](https://www.zoomconnect.com/) 
 
 ### Before you begin
 
@@ -36,7 +36,7 @@ Your ADAM server will need unhindered web access to the internet in order to be 
 
 ### Configuring ZoomConnect
 
--   Log into the ZoomConnect portal, which you can find at: [https://www.zoomconnect.com/zoom/login](https://www.google.com/url?q=https://www.zoomconnect.com/zoom/login&sa=D&source=editors&ust=1778246676739193&usg=AOvVaw2M9I5olrnfp4PXwJsTifmp) 
+-   Log into the ZoomConnect portal, which you can find at: [https://www.zoomconnect.com/zoom/login](https://www.zoomconnect.com/zoom/login) 
 -   Click on the “Company Name” at the top right of the screen. A dropdown list will appear. Select the “Developer settings” from this list:
 
 ![](assets/screenshots/sms-services/sms-services-03.png)

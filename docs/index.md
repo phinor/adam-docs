@@ -6,7 +6,7 @@ This is a living document and will be added to and improved over time.
 
 ## Printing Out This Guide
 
-The [original Google Doc is available](https://www.google.com/url?q=https://docs.google.com/document/d/1epgSTyfSQFIxZjODH_w_pvuABHJqxWmlB2WNUIgK3c4/edit&sa=D&source=editors&ust=1778246675497114&usg=AOvVaw3IYo2JMZcQu8d6Q40DgtG1) if you wish to print the document with a table of contents. A PDF version can also be downloaded. The document contains a table of contents with page numbers for easier reference. However, please note that this document is *exceptionally long* and it changes frequently - meaning that your printout will soon become out of date!
+The [original Google Doc is available](https://docs.google.com/document/d/1epgSTyfSQFIxZjODH_w_pvuABHJqxWmlB2WNUIgK3c4/edit) if you wish to print the document with a table of contents. A PDF version can also be downloaded. The document contains a table of contents with page numbers for easier reference. However, please note that this document is *exceptionally long* and it changes frequently - meaning that your printout will soon become out of date!
 
 ## Additional Support
 
