@@ -74,13 +74,13 @@ There are a few things that need to be checked first. In the [Site Settings](cha
 
 -   **General / Online Applications:**
 
--   **Online application recipients:** Enter an email address or a comma-separated list of email addresses of people who will be notified when a online application has been received by the school.
--   **Enable online applications:** Ensure that this is set to “Yes” to allow parents access to the application form.
--   **Expire applications (days):** This setting will automatically expire and eventually remove incomplete applications. These are applications that were started, but never submitted to the school for consideration. The default setting is 7 days, but some schools have it as low as 2 or 3. Ask yourself how long it should take a person to complete this information.
+    -   **Online application recipients:** Enter an email address or a comma-separated list of email addresses of people who will be notified when a online application has been received by the school.
+    -   **Enable online applications:** Ensure that this is set to “Yes” to allow parents access to the application form.
+    -   **Expire applications (days):** This setting will automatically expire and eventually remove incomplete applications. These are applications that were started, but never submitted to the school for consideration. The default setting is 7 days, but some schools have it as low as 2 or 3. Ask yourself how long it should take a person to complete this information.
 
 -   **General / Site Settings:**
 
--   **URL for external access:** Ensure that this matches the address that you normally type in to get to ADAM. Note that this setting might not be configurable on some servers and a message will appear saying “Set in the configuration file.” If this is the case, you can carry on!
+    -   **URL for external access:** Ensure that this matches the address that you normally type in to get to ADAM. Note that this setting might not be configurable on some servers and a message will appear saying “Set in the configuration file.” If this is the case, you can carry on!
 
 Don’t forget to save the settings when you’ve updated them!
 
@@ -100,17 +100,15 @@ Spend a moment deciding which fields are necessary for an application form. Our 
 The most important fields are, from ADAM’s point of view:
 
 -   Families:
-
--   Primary parent’s names
--   Primary parent’s ID number
--   Primary parent’s email address
--   Primary parent’s cell number
+    -   Primary parent’s names
+    -   Primary parent’s ID number
+    -   Primary parent’s email address
+    -   Primary parent’s cell number
 
 -   Pupils:
-
--   Pupil’s names
--   Pupil’s ID number
--   Pupil’s grade and year of entry (these fields appear differently after the pupil has been added, as “date of entry” and “grade 12 year”.
+    -   Pupil’s names
+    -   Pupil’s ID number
+    -   Pupil’s grade and year of entry (these fields appear differently after the pupil has been added, as “date of entry” and “grade 12 year”.
 
 Anything more than this is, strictly speaking, not required for ADAM’s functionality. Other information is certainly required, as mentioned, later in the process once the child has been admitted to the school.
 
@@ -254,25 +252,12 @@ The day settings accept a comma-separated list of numbers. Each number represent
 
 #### Examples
 
-**Setting**
-
-**Meaning**
-
-3
-
-Send one reminder on day 3
-
-3,7
-
-Send reminders on days 3 and 7
-
-3,7,14,21
-
-Send reminders on days 3, 7, 14, and 21
-
-1,2,3,5,7
-
-Send reminders on days 1, 2, 3, 5, and 7 (more frequent early reminders)
+|**Setting**|**Meaning**|
+|-----------|-----------|
+|3|Send one reminder on day 3|
+|3,7|Send reminders on days 3 and 7|
+|3,7,14,21|Send reminders on days 3, 7, 14, and 21|
+|1,2,3,5,7|Send reminders on days 1, 2, 3, 5, and 7 (more frequent early reminders)|
 
 #### How the Base Date Works
 
@@ -306,15 +291,15 @@ This template is used for parents who started but haven't submitted their applic
 
 **Available merge codes:**
 
-| Merge Code | Description |
-|------------|-------------|
-| `{school}` | The name of your school |
-| `{greeting}` | Parent/guardian name if available, or a default greeting |
-| `{children}` | Names of children on the application |
-| `{daysremaining}` | Number of days until the application link expires |
-| `{link}` | The URL to the application form |
-| `{schoolphone}` | The school's phone number |
-| `{button:Text}` | A clickable button linking to the application (e.g., `{button:Complete Application}`) |
+|Merge Code|Description|
+|----------|-----------|
+|`{school}`|The name of your school|
+|`{greeting}`|Parent/guardian name if available, or a default greeting|
+|`{children}`|Names of children on the application|
+|`{daysremaining}`|Number of days until the application link expires|
+|`{link}`|The URL to the application form|
+|`{schoolphone}`|The school's phone number|
+|`{button:Text}`|A clickable button linking to the application (e.g., {button:Complete Application})|
 
 ### Expiry Protection
 
