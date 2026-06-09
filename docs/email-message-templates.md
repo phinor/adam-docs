@@ -46,11 +46,39 @@ There are two merge codes for banner images: `{bannertop}` and `{bannerbottom}`.
 !!! warning
     Be aware that these banners are not automatically resized by ADAM. While the banner images can be resized in the CSS of the email (perhaps with a surrounding div tag with fixed dimensions), again be aware that no all email clients will support such modifications and you are advised to upload appropriately sized images that will display correctly for a large number of users without and styling intervention. ***Again, we emphasise the need to test your emails on a wide variety of email clients and platforms!***
 
-### Staff Email Signatures
+### Staff Sender Details and Signatures
 
-A number of merge codes are provided to allow ADAM to customise the email signature depending on which staff member is sending the email. It is also possible, using the `{staffsignature}` directive, to have ADAM use the most recently uploaded image file from the staff member’s document repository as an email signature.
+When an email is sent by a particular staff member — for example, a message composed in the [Messaging Centre](messaging-centre.md#messaging-centre) — ADAM can personalise the **All Email** template with that sender’s own details. This allows every message to close with the name, position and contact details of the person who sent it, rather than a generic, school-wide signature.
 
-Because ADAM pulls the most recent one, to update it, all you need to do is upload a new one.
+There are two ways to include sender details: a set of text merge codes for the sender’s details, and an image merge code for an uploaded signature graphic. The two can be used together or independently.
+
+#### Sender detail merge codes
+
+In addition to the structural merge codes (`{body}`, `{footer}`, `{bannertop}` and `{bannerbottom}`), the **All Email** template recognises the following codes. Each is replaced with the corresponding detail of the staff member who is sending the message:
+
+-   `{staff_title}` — The sender’s title (e.g. Ms)
+-   `{staff_firstname}` — The sender’s first name
+-   `{staff_lastname}` — The sender’s last name
+-   `{staff_initials}` — The sender’s initials
+-   `{staff_department}` — The sender’s department
+-   `{staff_position}` — The sender’s position
+-   `{staff_email}` — The sender’s email address
+
+These are the same codes that are listed under **Valid Merge Codes** when you edit the **All Email** template. You can combine them with ordinary HTML to build a signature block, for example:
+
+```html
+<p>Kind regards,<br>
+{staff_title} {staff_firstname} {staff_lastname}<br>
+{staff_position}, {staff_department}<br>
+{staff_email}</p>
+```
+
+!!! warning
+    These codes are only filled in when an email has an identifiable staff sender, such as a message sent from the Messaging Centre. Many of ADAM’s automated emails — system notifications, report deliveries and the like — are sent on behalf of the school as a whole and have no individual sender. In those cases the sender detail codes are replaced with nothing, so be sure to design your template so that it still reads correctly when these details are absent.
+
+#### Signature images
+
+It is also possible, using the `{staffsignature}` code, to have ADAM insert an image signature for the sending staff member. ADAM uses the most recently uploaded file in that staff member’s **Email Signatures** document repository category, so to update a signature all you need to do is upload a new one.
 
 To upload signatures in bulk, please look at the [Document Repository documentation for instructions](document-repository.md#uploading-documents-in-bulk).
 
