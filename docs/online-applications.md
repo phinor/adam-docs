@@ -291,33 +291,14 @@ This template is used for parents who haven't begun their application form.
 
 **Available merge codes:**
 
-**Merge Code**
-
-**Description**
-
-{school}
-
-The name of your school
-
-{requestdate}
-
-The date the application was requested
-
-{daysremaining}
-
-Number of days until the application link expires
-
-{childcount}
-
-Number of children on the application
-
-{link}
-
-The URL to the application form
-
-{button:Text}
-
-A clickable button linking to the application (e.g., {button:Start Application})
+| Merge Code | Description |
+|------------|-------------|
+| `{school}` | The name of your school |
+| `{requestdate}` | The date the application was requested |
+| `{daysremaining}` | Number of days until the application link expires |
+| `{childcount}` | Number of children on the application |
+| `{link}` | The URL to the application form |
+| `{button:Text}` | A clickable button linking to the application (e.g., `{button:Start Application}`) |
 
 #### Reminder: Application Incomplete
 
@@ -325,37 +306,15 @@ This template is used for parents who started but haven't submitted their applic
 
 **Available merge codes:**
 
-**Merge Code**
-
-**Description**
-
-{school}
-
-The name of your school
-
-{greeting}
-
-Parent/guardian name if available, or a default greeting
-
-{children}
-
-Names of children on the application
-
-{daysremaining}
-
-Number of days until the application link expires
-
-{link}
-
-The URL to the application form
-
-{schoolphone}
-
-The school's phone number
-
-{button:Text}
-
-A clickable button linking to the application (e.g., {button:Complete Application})
+| Merge Code | Description |
+|------------|-------------|
+| `{school}` | The name of your school |
+| `{greeting}` | Parent/guardian name if available, or a default greeting |
+| `{children}` | Names of children on the application |
+| `{daysremaining}` | Number of days until the application link expires |
+| `{link}` | The URL to the application form |
+| `{schoolphone}` | The school's phone number |
+| `{button:Text}` | A clickable button linking to the application (e.g., `{button:Complete Application}`) |
 
 ### Expiry Protection
 
