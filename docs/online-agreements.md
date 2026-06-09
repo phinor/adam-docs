@@ -21,7 +21,7 @@ When setting up a new agreement, the following screen is displayed:
 
 The agreement should be given a **name**. This is used to identify the broad contents and purpose of the document.
 
-The **audience** can then be chosen. They will all be prompted to agree to the terms when they next log in to ADAM.
+The **audience** can then be chosen. Pupils, Current Parents and Staff are prompted to agree to the terms the next time they log in to ADAM. The **Admissions Parents** audience is a special case: applicants do not log in to ADAM, so they are shown any outstanding agreements as a step *during* the [online application](online-applications.md#responding-to-online-agreements) — after they have confirmed their email address and before they reach the application form.
 
 The next two fields determine whether acceptance is required and which responses are acceptable. If “**Acceptance Required**” is set to “Yes”, then ADAM provides a single button for the user to click on which reads “I agree to the conditions above”. If this option is set to “No”, then an additional button is shown which reads “I do NOT agree to the conditions above”.
 

@@ -29,7 +29,7 @@ Parents visit the online application form and submit their ID number, cell numbe
 
 #### Step 2:
 
-After submitting their details, ADAM sends an email to confirm the parents email address. The email will contain a link to the application form which they will need to click on to proceed. The parent will be asked to complete the application form with both their and the applicant child’s information.
+After submitting their details, ADAM sends an email to confirm the parents email address. The email will contain a link to the application form which they will need to click on to proceed. If the school has set up [online agreements](online-agreements.md#online-agreements) for the **Admissions Parents** audience, applicants are first asked to read and respond to each outstanding agreement before the application form is shown. The parent will be asked to complete the application form with both their and the applicant child’s information.
 
 If ADAM determines that the family already exists in its database, they will be prompted to log in first. Only the child’s information will be requested.
 
@@ -441,13 +441,21 @@ If the ID number does match an existing family in ADAM, the screen will only off
 
 ![](assets/screenshots/online-applications/online-applications-06.png)
 
-ADAM follows this with an email to confirm the email address. A link should be clicked on in the email to request that they set a password to confirm their information:
+ADAM follows this with an email to confirm the email address. The email contains a link which they click on to continue with their application:
 
 ![](assets/screenshots/online-applications/online-applications-07.png)
 
 The contents of this email [are customisable](email-message-templates.md#email-message-templates).
 
-When parents click on the link provided, ADAM will provide an application form for them to complete. The parent information is completed first with the pupil (or pupils, if more than one was chosen) appearing below.
+### Responding to Online Agreements
+
+When parents click on the link provided, ADAM first checks whether the school has set up any [online agreements](online-agreements.md#online-agreements) for the **Admissions Parents** audience. If there are any, parents must read and respond to each outstanding agreement before they can continue. Where an agreement has **Acceptance Required** set to Yes, parents are given a single button to accept it; where it is set to No, they may also decline. Once every outstanding agreement has been answered, ADAM moves the parent on to the application form automatically.
+
+If the school has not set up any agreements for applicants, this step is skipped and parents go straight to the application form.
+
+### Completing the Application Form
+
+ADAM now presents an application form for the parents to complete. The parent information is completed first with the pupil (or pupils, if more than one was chosen) appearing below.
 
 ![](assets/screenshots/online-applications/online-applications-08.png)
 
