@@ -296,6 +296,35 @@ at support lessons, their whereabouts during free lessons and so on. Pupils who 
 are marked present as they are added, but it is possible to mark a pupil as absent if they were expected to attend but
 did not show.
 
+## Roll Call Reports
+
+ADAM provides several reports for reviewing roll-call attendance. They are all found under the **Roll Call** heading on the **Pupils** or **Classes** tab, and all require the **View roll call reports** permission. Alongside the **Roll Call reports** summary, the **Class Roll Call Report** and the **Weekly Attendance Report**, there is the **Daily Subject Roll Call Report** described below.
+
+### Daily Subject Roll Call Report
+
+This report answers the question “*which subject roll calls were taken for this group of pupils each day, and who was present?*” — across every subject those pupils attend, rather than for a single class.
+
+To open it, navigate to **Pupils → Roll Call → Daily Subject Roll Call Report** (it also appears on the **Classes** tab). On the filter form, choose:
+
+- **Class** — the group of pupils to report on. The class only selects *who* appears in the report; the subjects and roll calls are gathered from every class those pupils attend.
+- **Date From** and **Date To** — the range to cover. This defaults to the current school week (Monday to Friday) and may span up to 92 days.
+
+Click **View Report**.
+
+ADAM then shows one table per day that had roll calls, with the date as a heading (for example, “Monday, 25 May 2026”). Each table lists the pupils down the side and, across the top, the subjects they had roll calls for that day, ordered as the school day ran. The list of pupils is fixed for the whole report — it is the pupils registered in the selected class on the **Date To** date — so the rows stay consistent from one day to the next.
+
+Each cell shows that pupil’s status for that subject on that day, using the key shown above the report:
+
+- a green tick — **Present**
+- an amber tick — **Late / left early**
+- a red cross — **Absent**
+- a grey question mark — **Roll call not taken**: the lesson’s roll call was never recorded, or the pupil was not marked on it
+- a blank cell — the pupil had no roll call for that subject that day
+
+The grey question mark is the useful one for spotting gaps, as it highlights lessons where attendance was never captured. Hover over any amber, red or grey mark to see the reason, and click a pupil’s name to open their roll-call history.
+
+If there are no pupils registered on the chosen end date, or no roll calls in the range, ADAM tells you instead of showing an empty report.
+
 ## Roll Call Absence Alerts
 
 ### Overview
