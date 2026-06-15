@@ -72,13 +72,39 @@ Select the class to edit by first selecting its subject category, then the subje
 
 When changing the details of the class, please take note of [the details given above about the different fields](#creating-a-new-class).
 
-### Re-registration of Pupils when editing a class
+Note that a class’s **Subject** and **Grade Level** cannot be changed once the class exists — choosing a different subject or grade really means creating a different class. These two fields are therefore shown for reference only on the editing screen.
 
-One important consideration is whether the changes to a class need to be backdated or whether the changes are made in order to reflect current changes moving forward.
+### Setting the effective date of a change
 
-If you wish to have changes backdated, then it is important that the option to “**Re-register Pupils**” is set to “No”.
+When you edit a class, ADAM records what changed and when, so that the class keeps a full history (see “[Viewing a class’s history](#viewing-a-classs-history)” below). At the bottom of the editing screen there is an “**Effective from**” date, which sets the date your changes take effect. It defaults to today.
 
-If you wish to have the changes reflected only for future reports, then it is important that the option to “**Re-register Pupils**” is set to “Yes”.
+-   Leave it as today, or choose a future date, when the change reflects something happening now or going forward — for example, a new teacher taking over next term. Reports for earlier periods keep the previous details.
+
+-   Choose a date in the past when you are correcting the record — for example, noting that a teacher actually changed earlier in the year.
+
+Back-dating a change into a reporting period whose reports have already been published requires an additional permission, “**Edit class details within closed reporting periods**”. Without it, ADAM will refuse the change and tell you why. With it, ADAM will warn you that already-published reports will reflect the change the next time they are regenerated and the archive refreshed.
+
+## Viewing a class’s history
+
+Every change you make to a class — the teacher, class description, teaching venue, teaching time, reporting teacher or language — is recorded over time. To see this history, open the class’s profile page: click the “**Class Info**” option on the “**Classes**” tab, found under the “**Class Administration**” heading, then choose the subject category, the subject and the class. On the class profile, click the “**History**” tab.
+
+The History tab shows a timeline chart showing the class versions and the reporting period dates.
+
+This is followed by a table. Each row is the state of the class from a particular effective date, with the most recent at the top. Cells that changed from the previous version are highlighted, and a change of teacher is shown in bold, so you can see at a glance who the teacher was during any part of the year and exactly when something changed. The “**Changed by**” column shows who recorded each change — the earliest entry is marked “cut-over”, meaning it pre-dates history tracking. The chart above the table shows which version each reporting period’s end date falls into, which helps you understand the details a particular report would have used.
+
+The History tab is shown to staff who can administer the class: those with class administration permission, the class’s own teacher or teaching assistants, and the head of the class’s subject.
+
+### Editing or removing a history entry
+
+If a change was recorded with the wrong details or the wrong date, you can put it right. In the “**Actions**” column of the History table, click the pencil icon next to a version to open the “**Edit class version**” screen. Here you can adjust the teacher, class description, teaching venue, teaching time, reporting teacher, language and the “**Effective from**” date, then click “**Save version**”.
+
+A version can also be removed when it is safe to do so. A trash icon appears in the “**Actions**” column — and a “**Delete version**” button on the edit screen — only for versions that may be deleted. When you delete a version, the previous version extends to cover the gap it leaves behind. To protect your records, ADAM will not let you:
+
+-   delete the only remaining version, because a class must always keep at least one, or
+
+-   edit or delete a version when marks, comments or other reporting data already exist for the period it covers.
+
+As when editing a class, moving a change into a reporting period whose reports have already been published requires the “**Edit class details within closed reporting periods**” permission.
 
 ## Deleting a class
 
