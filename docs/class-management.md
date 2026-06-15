@@ -78,6 +78,8 @@ Note that a class’s **Subject** and **Grade Level** cannot be changed once the
 
 When you edit a class, ADAM records what changed and when, so that the class keeps a full history (see “[Viewing a class’s history](#viewing-a-classs-history)” below). At the bottom of the editing screen there is an “**Effective from**” date, which sets the date your changes take effect. It defaults to today.
 
+![](assets/screenshots/class-management/class-management-06.png)
+
 -   Leave it as today, or choose a future date, when the change reflects something happening now or going forward — for example, a new teacher taking over next term. Reports for earlier periods keep the previous details.
 
 -   Choose a date in the past when you are correcting the record — for example, noting that a teacher actually changed earlier in the year.
@@ -90,6 +92,8 @@ Every change you make to a class — the teacher, class description, teaching ve
 
 The History tab shows a timeline chart showing the class versions and the reporting period dates.
 
+![](assets/screenshots/class-management/class-management-04.png)
+
 This is followed by a table. Each row is the state of the class from a particular effective date, with the most recent at the top. Cells that changed from the previous version are highlighted, and a change of teacher is shown in bold, so you can see at a glance who the teacher was during any part of the year and exactly when something changed. The “**Changed by**” column shows who recorded each change — the earliest entry is marked “cut-over”, meaning it pre-dates history tracking. The chart above the table shows which version each reporting period’s end date falls into, which helps you understand the details a particular report would have used.
 
 The History tab is shown to staff who can administer the class: those with class administration permission, the class’s own teacher or teaching assistants, and the head of the class’s subject.
@@ -97,6 +101,8 @@ The History tab is shown to staff who can administer the class: those with class
 ### Editing or removing a history entry
 
 If a change was recorded with the wrong details or the wrong date, you can put it right. In the “**Actions**” column of the History table, click the pencil icon next to a version to open the “**Edit class version**” screen. Here you can adjust the teacher, class description, teaching venue, teaching time, reporting teacher, language and the “**Effective from**” date, then click “**Save version**”.
+
+![](assets/screenshots/class-management/class-management-05.png)
 
 A version can also be removed when it is safe to do so. A trash icon appears in the “**Actions**” column — and a “**Delete version**” button on the edit screen — only for versions that may be deleted. When you delete a version, the previous version extends to cover the gap it leaves behind. To protect your records, ADAM will not let you:
 

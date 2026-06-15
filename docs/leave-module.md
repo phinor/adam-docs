@@ -109,8 +109,12 @@ To open it, navigate to **Pupils → Leave Management → Leave Option Lists** a
     - tick values across *different* options to match only pupils who chose **all** of them — for example, *Saturday Lunch = yes* **and** *Transport Back = yes*.
 - **From Date** and **To Date** — the period to cover. **From Date** defaults to a week ago and **To Date** to now.
 
+![](assets/screenshots/leave-module/leave-module-05.png)
+
 Click **Generate Report**. The report opens in a new window.
 
 Only **approved** leave requests are included. The report lists each matching pupil with their **Name**, **Grade** and **Class**, a column for each of the leave type’s options showing what that pupil chose, and the **Leaving** and **Returning** dates and times. The headings confirm the leave type, the date range and the options you filtered on.
+
+![](assets/screenshots/leave-module/leave-module-06.png)
 
 To save or print the list, click the **Download as Excel** button at the top of the report to download it as a spreadsheet.

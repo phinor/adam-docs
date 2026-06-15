@@ -311,7 +311,11 @@ To open it, navigate to **Pupils → Roll Call → Daily Subject Roll Call Repor
 
 Click **View Report**.
 
+![](assets/screenshots/roll-calls/roll-calls-18.png)
+
 ADAM then shows one table per day that had roll calls, with the date as a heading (for example, “Monday, 25 May 2026”). Each table lists the pupils down the side and, across the top, the subjects they had roll calls for that day, ordered as the school day ran. The list of pupils is fixed for the whole report — it is the pupils registered in the selected class on the **Date To** date — so the rows stay consistent from one day to the next.
+
+![](assets/screenshots/roll-calls/roll-calls-19.png)
 
 Each cell shows that pupil’s status for that subject on that day, using the key shown above the report:
 

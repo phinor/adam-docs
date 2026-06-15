@@ -92,6 +92,14 @@ If a pupil was **absent** for the assessment, simply check the box to record the
 
 As well as recording the result, you can attach the psychologist’s report for the session — for example the educational psychologist’s individual report for the child. A **Report** field (a **Report** column when capturing by class) appears beside each pupil on the capture screens. Click it, choose the file, and ADAM uploads it immediately — there is no separate upload button. Carry on and click **Save** to store the results as usual. Attaching a report is always optional.
 
+When capturing for an individual pupil, the **Report** field appears beneath the result:
+
+![](assets/screenshots/psychometric-testing/psychometric-testing-12.png)
+
+When capturing for a class, each pupil has a **Report** column:
+
+![](assets/screenshots/psychometric-testing/psychometric-testing-13.png)
+
 Reports are filed privately in the [document repository](document-repository.md#document-repository) under an internal **Psychometric Reports** category. This category is not shown on the Family or Pupil Portal, so these reports are never visible to parents or pupils. The **Report** field is only shown to staff who have permission to add documents to that category — if you do not see it, ask your administrator to grant you access to the **Psychometric Reports** category.
 
 If your school keeps these reports in a different document repository category, an administrator can change where they are filed: on the “**Administration**” tab, under the “**Site Administration**” heading, click “**Edit site settings**” (see [Changing Site Settings](changing-site-settings.md#changing-site-settings)) and open the **Document Repository → Psychometric Reports** section, where the **Target Category** option selects the category. Most schools will not need to change this.
@@ -107,6 +115,8 @@ Select the assessment from the list. Please note that only assessments from the 
 Change the results as you would if you were entering the results.
 
 The **Report** field on this screen also lets you manage an attached report. If a report is already attached, its name is shown as a link that opens the document in a new tab; you can choose a new file to replace it, or click **Remove** to detach and delete it (you will be asked to confirm). If no report is attached yet, you can add one here in the same way as on the capture screens.
+
+![](assets/screenshots/psychometric-testing/psychometric-testing-14.png)
 
 ## Viewing Psychometric Test Results
 
