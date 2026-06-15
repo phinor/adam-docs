@@ -88,3 +88,29 @@ Submitting leave requests is slightly different for staff vs parents and pupils.
 ### Submitting a Leave Request by Staff for/on behalf of a Pupil
 
 Navigate to **Pupils → Leave Management → Submit a Leave Request for a Pupil**.
+
+## Leave Reports
+
+ADAM offers reports for reviewing the leaves that pupils have requested. They are found under the **Leave Management** heading on the **Pupils** tab, and require the **View Leave Reports Globally** permission.
+
+- **Leave Option Responses** shows, for a chosen leave type and date range, *how many* pupils selected each option — for example, how many requested Saturday lunch.
+- **Leave Option Lists** lists the *named pupils* who selected particular options. This is described below.
+
+### Leave Option Lists
+
+Where the **Leave Option Responses** report gives you totals, the **Leave Option Lists** report gives you the actual names. It is ideal for building a working list — for example, the pupils who requested transport back to school for a given weekend, or who signed up for Saturday lunch.
+
+To open it, navigate to **Pupils → Leave Management → Leave Option Lists** and complete the filter form:
+
+- **Leave Type** — required. Choose the leave type to report on. The options to tick appear only once a leave type has been chosen, because each leave type defines its own options.
+- **Options** — once a leave type is chosen, its options (such as *Saturday Lunch* or *Transport Back*) appear as tick boxes. Tick the values you want to list. You can:
+    - leave everything unticked to list **all** pupils on this leave type within the date range;
+    - tick more than one value of the *same* option to match pupils who chose **any** of those values;
+    - tick values across *different* options to match only pupils who chose **all** of them — for example, *Saturday Lunch = yes* **and** *Transport Back = yes*.
+- **From Date** and **To Date** — the period to cover. **From Date** defaults to a week ago and **To Date** to now.
+
+Click **Generate Report**. The report opens in a new window.
+
+Only **approved** leave requests are included. The report lists each matching pupil with their **Name**, **Grade** and **Class**, a column for each of the leave type’s options showing what that pupil chose, and the **Leaving** and **Returning** dates and times. The headings confirm the leave type, the date range and the options you filtered on.
+
+To save or print the list, click the **Download as Excel** button at the top of the report to download it as a spreadsheet.
