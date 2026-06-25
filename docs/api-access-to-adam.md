@@ -19,9 +19,10 @@ which are shared only with the other program that wishes to access the API. Beca
 to be used by a computer, it is not important that they are memorable or easy to type. In fact, ADAM will generate a
 random set of characters to be used as the API key and you are strongly encouraged to make use of the suggested token.
 
-It is vitally important that the token is kept confidential between the person issuing it and the person using it.
-Anyone who knows the token will be able to access the API. Please read
-the [Best Practices](#best-practice-security-principals) section below for further information.
+!!! warning
+    It is vitally important that the token is kept confidential between the person issuing it and the person using it.
+    Anyone who knows the token will be able to access the API. Please read
+    the [Best Practices](#best-practice-security-principals) section below for further information.
 
 Each API token can be given access to one or more [API resources](#api-resources). Anyone who knows the API token can
 access all the resources that have been allocated to that token.
@@ -1010,7 +1011,12 @@ GET /api/dataquery/get/GXiE4V5qYB
 }
 ```
 
-The `data` attribute is a JSON object with zero or more attributes, each being the ID of the relevant data object as specified in the Data Query setup. Each of these objects will have a number of attributes depending on the fields chosen. Note that the names of these attributes **can** be overridden by the school. However, there is a unique numeric identifier that is appended to each which will remain constant. Logic should be based around that identifier. Note that custom fields will contain the word “custom” before the unique identifier and so that should also be checked for.
+The `data` attribute is a JSON object with zero or more attributes, each being the ID of the relevant data object as specified in the Data Query setup. Each of these objects will have a number of attributes depending on the fields chosen. 
+
+!!! warning
+    Note that the names of these attributes **can** be overridden by the school. However, there is a unique numeric identifier that is appended to each which will remain constant. Logic should be based around that identifier. 
+    
+Note that custom fields will contain the word “custom” before the unique identifier and so that should also be checked for.
 
 ```
 GET /api/dataquery/get/GXiE4V5qYB/2
