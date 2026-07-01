@@ -82,7 +82,10 @@ In other words, only documents collected *during an online application* are file
 
 Note also, that the audience choice (pupils vs families) will dictate which of the [document repository categories](#categories) you can choose from. Choosing a “Family” audience and a “Pupil” category will result in the documents being uploaded to the “Unfiled” category in the “Family” section of the document repository. The same is true if a “Pupil” audience is selected, but a family category is chosen.
 
-The people listed under the **Notify** option will be notified when new documents have been uploaded to ADAM for approval. They will *not* appear in the document repository until they have been approved.
+The people listed under the **Notify** option will be notified when new documents have been uploaded to ADAM for approval. Documents will *not* appear in the document repository until they have been approved by a staff member with the permission to approve them.
+
+!!! warning
+    If no staff members are listed under the **Notify** option, then all staff who have permissions to approve documents will be notified. Depending on your permission setup, this could be many staff members.
 
 You can add more upload slots by clicking on the “**add a new file**” at the bottom. You can remove existing slots by clicking on the “**bin**” next to the row.
 
