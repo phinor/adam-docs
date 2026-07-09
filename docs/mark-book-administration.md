@@ -3,7 +3,7 @@
 ADAM comes complete with a powerful mark book that allows for complete control over the marks in a teacher’s mark book. The mark book is controlled nearly entirely by each teacher and so they are able to manipulate it to suit their classes’ assessment needs.
 
 !!! warning
-    Administrators will need to ensure that there is a reporting period configured to accept marks. See Editing Reporting Period Time Frames on page.
+    Your ADAM Administrator will need to ensure that there is a [reporting period](reporting-period-administration.md) configured to accept marks. In an open reporting period, add a [**Markbook Entry** time frame](reporting-period-administration.md#reporting-period-time-frames) to cover the time when you would like your teachers to capture their marks.
 
 ## Managing Assessments
 
