@@ -46,9 +46,11 @@ Each grade is able to have its own reporting template with its own set of requir
 -   The **Report Template** field determines which template will be used with the grade that has been selected. Note that ADAM will only show enabled templates here (unless a selected template has since been disabled, then it, too, will show). See the section on [manging reporting templates](report-publishing.md#managing-report-templates) for more information.
 
     If a grade is set to have “(No Report)”, then ADAM will not generate reports for them, and their list of historical reports will not reflect a report from this reporting period.
+    
 -   If a template has been chosen that displays results from multiple terms (most likely because you have a mark grid which displays information from other reporting periods), you will have the option to enter which terms are displayed and in which order.
 
     Choose terms in the order they should be displayed. For earlier terms in the year, it is almost certain that at least one or more of the later terms will need to be set as “-- No term --”. If you are setting up a term 2 reporting period, for example, please do not create and set Terms 3 and 4 in that reporting period. While you might not notice anything odd at the time, if you were to produce a historical “Term 2” report, ADAM would then include Term 3 and 4’s results on that report. This can be confusing! How could an end of year mark be present on a Term 2 report?
+    
 -   The **Comment** is a comment that typically is added to your report template. It may consist of a message giving notice of the term start dates and so on.
 -   The **Qualification** field tells ADAM which qualification is associated with this grade. This impacts how ADAM calculates promotion decisions as well as which symbol set it uses for its results.
 
@@ -66,11 +68,15 @@ The next set of options, under the heading **Reporting Screen**, determine what 
 -   The **Assessment Standard Levels** option indicates whether this grade records Assessment Standards for their reports or not. *Note that your reporting template must specifically support Assessment Standard Levels for them to display.*
 -   The **Academic Behavioural Indicators** fields allow schools to collect indicators about items such as behaviour, work ethic and so on. There is a field specifically for “Academic” indicators and then a field, in spite of its name, for everything else. To collect these for a report, they should be entered as follows:
 
+```
 Effort:1,2,3,4,5
+```
 
 It is also possible to have more than one behavioural indicator by separating them with a vertical “pipe” character: |
 
+```
 Effort:1,2,3,4,5|Behaviour:Good,Indifferent,Bad|Punctuality:Early,Late
+```
 
 The teachers, in this example, will have five options to choose from for “Effort”, three options to choose from for “Behaviour” and two for “Punctuality”.
 
@@ -86,11 +92,11 @@ The next set of options is titled **Calculation Information** and allows you to 
 -   The **Qualification** sets a default qualification that should be used for this reporting period. This impacts the levels that are awarded for the differing symbols. For more information, please see the section on [academic qualifications](academic-qualifications.md#academic-qualifications).
 -   The **Aggregate Calculation** field indicates how ADAM calculates the aggregate marks. There are four options that can be chosen:
 
--   Weighted Average calculates an average influenced by the weighting associated with each subject (see [Editing a subject](subjects.md#editing-a-subject)). *This is the normal setting for IP and GET phase pu** pils.*
--   Top 7 Subjects calculates a weighted average using only the top seven subjects.
--   Top 7 Subjects (with compulsory) calculates a weighted average using any subjects that are marked as compulsory for aggregate calculation with the highest from the remaining subjects until 7 subjects have been included. *This is the option typically chosen for* *NSC* *grades.*
--   Top 7 Subjects (with compulsory, Maths/Lit combo) calculates the average using the above calculation with the added step of checking whether a candidate offers both Mathematics and Mathematical Literacy. Using the Umalusi guidelines, if the result for Mathematics is 50% or higher, the Mathematical Literacy result is discarded. If it is not, the Mathematics mark is discarded.
--   Other uses a manually entered calculation to calculate the aggregate. This is [explained in some detail below](#custom-aggregate-calculations).
+-   Weighted Average calculates an average influenced by the weighting associated with each subject (see [Editing a subject](subjects.md#editing-a-subject)). *This is the normal setting for IP and GET phase pupils.*
+-   Top _n_ Subjects calculates a weighted average using only the top seven subjects.
+-   Top _n_ Subjects (with compulsory) calculates a weighted average using any subjects that are marked as **compulsory for aggregate calculation** with the highest from the remaining subjects until _n_ subjects have been included. *This is the option typically chosen for* *NSC* *grades.*
+-   Top _n_ Subjects (with compulsory, Maths/Lit combo) calculates the average using the above calculation with the added step of checking whether a candidate offers both Mathematics and Mathematical Literacy. Using the Umalusi guidelines, if the result for Mathematics is 50% or higher, the Mathematical Literacy result is discarded. If it is not, the Mathematics mark is discarded.
+-   Other uses a manually entered calculation to calculate the aggregate. This is [explained in some detail elsewhere in the documentation](aggregate-calculations.md).
 
 ### Other Settings and Advanced Options
 
@@ -210,7 +216,3 @@ Similarly, this privilege allows the editing of Behavioural Indicators by teache
 #### Capture Goals (for pupils)
 
 If set, this setting determines when pupils are able to set and make changes to their goals. See elsewhere in the manual for more information on [Goal Setting](goal-setting.md#goal-setting).
-
-## Custom Aggregate Calculations
-
-This is discussed in its [own separate section](aggregate-calculations.md#aggregate-calculations).
