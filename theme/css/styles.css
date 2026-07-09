@@ -120,7 +120,7 @@ article {
 
 /* Tables ------------------------------------ */
 #bodycontainer {
-    & table:not(.gsc-*) {
+    & table:not([class^="gsc-"]) {
         width: 100%;
         border-collapse: collapse;
         margin: 1em 0;
