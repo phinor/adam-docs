@@ -29,3 +29,19 @@ Next, choose the fields that ADAM should **monitor for changes**.
 Finally, if you require **additional information** to be included - perhaps an account number, choose this field from the selection at the bottom. Once again, please don’t mix the fields in this alert.
 
 Finally, click on the button at the bottom to save the notification.
+
+## Watching Site Settings
+
+As well as profile fields, you can watch your **site settings** for changes. In the field selection you will find a **Site Settings** group listing every setting that can be monitored.
+
+![](assets/screenshots/change-log-notifications/change-log-notifications-03.png)
+
+Choose the settings you want to watch in the same way as any other field, and a notification will be sent whenever one of them changes.
+
+!!! note
+    Secret settings – such as passwords – are deliberately left out of this list, so their values are never included in an alert.
+
+!!! warning
+    Treat Site Settings as a field type of their own. Just as you shouldn’t mix family, pupil and staff fields, set up a separate notification for the site settings you want to watch rather than combining them with profile fields.
+
+If you would rather review setting changes after the fact than be alerted to them, super administrators can see the complete audit trail on the **Site settings history** page. See [Change History Reports](change-history-reports.md) for details.
