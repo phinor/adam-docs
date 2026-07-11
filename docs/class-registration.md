@@ -26,6 +26,8 @@ Once you have chosen a class, you will be presented with two lists – the left 
 
 Highlight the names on the right (you can hold down “Ctrl” and click on names in order to select more than one at a time) and then click on “**<< add**” to have those names added to the class list. Similarly, pupils can be removed from the class by selecting names on the left and clicking on “**remove >>**”.
 
+When you add or remove pupils, ADAM confirms how many were actually changed. If some of the pupils you selected were skipped – for example, because they were already registered for the subject in another class, or were not currently enrolled – ADAM reports the real figure, such as “18 of the 25 selected pupils were added to the class”.
+
 ### Show students from a different grade
 
 By default, ADAM will show one grade at a time – typically the grade that is associated with the class. It is possible, using the “Show students from:” option to change which grade is displayed. This can be very useful for compiling sports teams and other non-academic groups that you may need.
