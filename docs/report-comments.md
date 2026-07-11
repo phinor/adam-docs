@@ -10,7 +10,7 @@ Administrators should be careful to follow the [Quick Start Guide](quick-start-g
 
 Depending on the phase you teach and the reporting comments you are writing, it might be useful to write your report comments in different views. For example:
 
-A Foundation Phase teacher might want to write the comments and enter data for each pupil across multiple different areas of assessment (these would be captured on ADAM as different classes). As such, this FP teacher could report via **Reporting → Report Comments → Report Comments (by pupil)**.
+A Foundation Phase teacher might want to write the comments and enter data for each pupil across multiple different areas of assessment (these would be captured on ADAM as different classes). As such, this FP teacher could report via **Reporting → Report Comments → Report comments (by pupil)**.
 
 Notice, in the image below, that we are looking at a report belonging to Alessandro Kannemeyer. At the top we have his set of English report results (his teacher in Mr Dicey). Below this, we have his Business Studies report (his teacher is Mr Nkosi):
 
@@ -23,6 +23,23 @@ Look at the diagram below. Here we are looking at Mr Dicey’s English class. No
 ![](assets/screenshots/report-comments/report-comments-02.png)
 
 Importantly, how the information is captured here does not impact how it will be used later when applied to the reporting template. If you enter some of your comments in the “(by pupils)” view, that same information will be visible later if you choose to go and enter other comments “(by class)”.
+
+## Working Through the Selection Screens
+
+Whichever perspective you choose, ADAM guides you through a short sequence of selection screens before the reporting screen itself appears. Each screen asks for a single piece of information and provides a **Next** button to carry you forward.
+
+1.  **Choose the reporting period.** The first screen shows a **Reporting Period** drop-down beneath the instruction “Please select the reporting period from the list below:”. Choose the period and click **Next**. If only one reporting period is available to you, ADAM skips this screen and moves you straight on to the next step.
+2.  **Choose who or what to report on.** The screen that follows depends on the perspective you picked from the menu:
+    -   **Report comments (by pupil)** asks you to search for and select a pupil.
+    -   **Report comments (by class)** first asks you to choose the **Subject**, then the **Class**.
+    -   **Report comments (by teacher)** asks you to choose a **Staff Member** and then the **Class**. If you are only permitted to enter your own comments, ADAM skips the staff selection and takes you straight to your own classes.
+    -   **Report comments (by grade and subject)** asks you to choose a **Grade** and a **Subject** together.
+3.  **Enter the comments.** Once your selections are complete, the reporting screen described below appears.
+
+The chosen reporting period is shown as a heading at the top of each screen so that you always know which period you are working in. On the reporting screen, you can click on the pupil’s or staff member’s name card to step back and pick a different pupil or teacher without starting the whole sequence again.
+
+!!! note
+    In previous versions of ADAM these selections were all made on a single, growing page. They are now split across separate screens, each with its own **Next** button, but the choices you make and the reporting screen you end up on are exactly the same.
 
 ## Basic Principles of the Reporting Screen
 
@@ -55,6 +72,54 @@ Finally, the “page” icon will show you the marks that this pupil has achieve
 ![](assets/screenshots/report-comments/report-comments-06.png)
 
 Click on any of the icons again to hide their information.
+
+## The Pupil Index and Pagination
+
+When you enter comments for a whole class (or for a whole subject or teacher), ADAM shows a **pupil index panel** down the left-hand side of the reporting screen. This panel travels with you as you scroll, so you can always see where you are and jump straight to any pupil.
+
+![](assets/screenshots/report-comments/report-comments-17.png)
+
+The panel lists every pupil in the class. Click on a pupil’s name to jump directly to that pupil’s comment block - ADAM will scroll the block into view (and, for larger classes, load the correct page first, as described below). The pupil you are currently working on is highlighted in the list.
+
+On narrow screens, such as a phone or a small tablet, the index collapses to save space. Tap the **☰ Pupil Index** heading at the top of the panel to open or close it.
+
+!!! note
+    As you scroll down through a pupil’s Learning Outcomes and other blocks, the pupil’s name and photograph stay pinned near the top of the screen. This means you always know whose report you are editing, even for subjects with a long list of outcomes.
+
+### Completion Status Dots
+
+Next to each pupil’s name in the index is a small row of coloured dots. These give you an at-a-glance summary of what has and has not yet been captured for that pupil, so you can quickly spot who still needs attention. Which dots appear depends on what the reporting period has been set up to collect for that pupil’s grade - a pupil may show all of the dots below, or only some of them.
+
+| Dot | What it represents | Colours |
+|-----|--------------------|---------|
+| **Mark** | Whether a term or year-to-date mark has been captured. This dot only appears for academic subjects. | Green when a mark has been entered; grey when it is still outstanding. |
+| **Comment** | Whether a written comment has been captured. | Green when a comment has been entered; grey when it is still blank. |
+| **LOs** | How much of the pupil’s **Learning Outcomes** have been completed. | Red for none captured, orange for less than half, yellow for partly complete, and green when every outcome has been captured. |
+| **ASs** | How much of the pupil’s **Assessment Standards** have been completed. | Same four colours as the Learning Outcomes dot. |
+| **BIs** | Whether the pupil’s **Behavioural Indicators** (“effort scores”) have been captured. | Green when captured; grey when still outstanding. |
+
+Hover your mouse over any dot to see a short label confirming what it represents (for example, the Learning Outcomes and Assessment Standards dots show the exact percentage captured).
+
+![](assets/screenshots/report-comments/report-comments-18.png)
+
+These dots update **live** as you work. As soon as ADAM saves a mark, comment or other value (see [Saving Report Comments](#saving-report-comments) below), the matching dot for that pupil changes colour in the index without you having to reload the page.
+
+### Working Through a Large Class
+
+For a large class, loading every pupil at once would make the screen slow to open. When a class has more pupils than the display limit set by your ADAM Administrator, ADAM loads the pupils a **page at a time** instead. You will then see navigation controls above the pupil comment blocks:
+
+![](assets/screenshots/report-comments/report-comments-19.png)
+
+- Use the **Prev** and **Next** links, or click a **page number**, to move between pages of pupils. The page you are on is highlighted.
+- Use the **Per page** drop-down to choose how many pupils to show on each page.
+- Clicking a pupil in the index panel always takes you to the right pupil, loading the correct page automatically if that pupil is not on the page you are currently viewing.
+
+If you would rather concentrate on one pupil at a time, click **Switch to one-at-a-time**. ADAM then shows a single pupil, with links carrying the name of the previous and next pupil so you can step through the class one report at a time. Click **Switch to paginated view** to return to seeing several pupils per page.
+
+!!! note
+    When you enter comments **by subject** (across several classes at once), the index panel groups the pupils under a heading for each class, and the navigation controls let you move from one class to the next. Everything else - the status dots, the sticky pupil name and jumping to a pupil by clicking their name - works in exactly the same way.
+
+If the index panel shows “Failed to load the pupil index” or a page shows “Failed to load”, this usually points to a brief interruption in your internet connection. Use the **Retry** link provided, or reload the page. See the [Troubleshooting section](#troubleshooting-report-comments) for more help.
 
 ## Saving Report Comments
 
