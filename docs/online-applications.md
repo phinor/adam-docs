@@ -122,7 +122,9 @@ These document requests are configured in the same place as all other parent and
 
 When configuring the slots, you can mark each one as **Required** or not using the **Required** column. Required documents are shown to parents with a “Required” badge, and if any are still missing when the parent reaches the final step, they are warned about the outstanding documents — but they are still allowed to submit. Optional documents are never enforced.
 
-The full set of options for creating these uploads — audience, document scope (per family or per child), descriptions, maximum file size and the document repository category each document is filed into — is described under [Parent Uploads into the Document Repository](document-repository.md#parent-uploads-into-the-document-repository).
+Each slot also has an **Accepted Types** column, where you tick which kinds of file may be uploaded — such as **PDF document** or **JPEG image**. Applicants can only upload a file whose type you have allowed, and the accepted types are shown to them next to each slot. Every slot must have at least one type ticked before the upload can be saved.
+
+The full set of options for creating these uploads — audience, document scope (per family or per child), descriptions, maximum file size, the file types each slot accepts and the document repository category each document is filed into — is described under [Parent Uploads into the Document Repository](document-repository.md#parent-uploads-into-the-document-repository).
 
 If the school has not configured any **Applicant** uploads, the document step is skipped entirely and parents move straight from their details to the review screen.
 
@@ -415,9 +417,11 @@ From this point on, a progress bar is shown across the top of each screen so tha
 
 If the school has set up [supporting documents to collect during the application](#collecting-supporting-documents-during-the-application), parents are taken to a **Supporting Documents** screen after saving their details. A counter at the top shows how many of the requested documents have been uploaded so far.
 
-Each requested document is shown with its name, a short description, and a **Required** badge if it must be supplied. Documents that apply to a particular child are repeated for each child and labelled “Child 1”, “Child 2”, and so on.
+Each requested document is shown with its name, a short description, the file types it accepts (shown as *Accepted: …*), and a **Required** badge if it must be supplied. Documents that apply to a particular child are repeated for each child and labelled “Child 1”, “Child 2”, and so on.
 
-To upload a document, the parent clicks **Choose file** next to the slot and selects the file. The file is uploaded immediately and the slot shows a tick alongside the file name. If a parent uploads the wrong file, they can click the **remove** option next to it and choose another. If a file is larger than the maximum size set for that slot, it will be rejected and the parent asked to choose a smaller file.
+![](assets/screenshots/online-applications/online-applications-16.png)
+
+To upload a document, the parent clicks **Choose file** next to the slot and selects the file. The file is uploaded immediately and the slot shows a tick alongside the file name. If a parent uploads the wrong file, they can click the **remove** option next to it and choose another. If a file is larger than the maximum size set for that slot, it will be rejected and the parent asked to choose a smaller file. Likewise, if the parent selects a file whose type is not accepted for that slot, ADAM rejects it with a message listing the accepted types — for example *'birth-certificate.key' must be one of: PDF document, JPEG image.*
 
 Uploading documents here is not the same as having them approved — the documents are held against the application and only filed into the document repository once a staff member approves the application.
 
