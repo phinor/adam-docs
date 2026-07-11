@@ -93,6 +93,8 @@ The “Max Size” column specifies how large the file may be in megabytes. The 
 
 The **Required** column lets you mark a document as required rather than optional. This only has an effect for uploads whose audience is set to **Applicant**: when those documents are [collected during the online application](online-applications.md#collecting-supporting-documents-during-the-application), a parent who has not supplied a required document is warned before submitting, although they are still allowed to submit. Required documents do not force or block an upload anywhere else.
 
+The **Accepted Types** column controls which kinds of file a parent or applicant may upload into that slot. Tick one or more of the file types on offer — **PDF document**, **JPEG image**, **PNG image**, **GIF image**, **Word document**, **Excel spreadsheet**, **CSV file** and **Plain text**. A parent is only able to upload a file whose type you have ticked here, and the accepted types are shown to them alongside the slot (see [Instructions for Parents](#instructions-for-parents) below). Each slot must have at least one type ticked. If you leave a slot with nothing ticked, ADAM will refuse to save the whole upload and ask you to choose at least one accepted file type for that slot.
+
 Once you are done, click on the **Save File Upload** button.
 
 Look carefully at the example above. Within the one file upload section, we are asking for three documents. This allows parents to see the different upload sections and easily differentiate between them. These details, with some others already existing on the system, may look like this on the parent portal:
@@ -109,7 +111,11 @@ ADAM will list the documents that can be uploaded:
 
 ![](assets/screenshots/document-repository/document-repository-09.png)
 
+Beneath each document, ADAM shows the file types that may be uploaded into that slot — for example *Accepted: PDF document, JPEG image*. These are the accepted types you ticked when [creating the upload space](#creating-upload-spaces). Where a slot has not had any file types configured, ADAM shows *Accepted: no file types configured* instead, and nothing can be uploaded until you tick at least one type.
+
 Parents should click on the **Choose file** button and select the file they wish to upload. They may choose one or more files. Once they have selected all the files they wish to upload, they should click on the **Upload documents** button below the files they have chosen.
+
+If a parent chooses a file whose type is not accepted for that slot, ADAM rejects it and shows a message naming the accepted types — for example *That file type is not accepted. Accepted types: PDF document, JPEG image.*
 
 Note that if they choose a file that is larger than the maximum size allowed, they will receive the following error message:
 
@@ -160,6 +166,14 @@ Next to each option, click on “Read”, “Add” or “Delete” to assign th
 
 Click on the “Save privileges” button at the bottom to save these changes. The privilege category table should now reflect these new privileges.
 
+### File Types Staff May Upload
+
+A site setting controls which file types staff are allowed to upload into the document repository. Navigate to **Administration → Site Administration → Edit site settings**, open the **Documents** category and find the **Document Repository Staff Allowed Filetypes** setting in the **Storage** section. It holds a comma-separated list of file extensions (by default `pdf,jpg,jpeg,png,gif,doc,docx,xls,xlsx,csv,txt`) that staff may upload.
+
+If you upload one or more documents whose type is not on this list, ADAM skips those files and shows a warning that names them and lists the accepted types, so that nothing disappears without explanation — for example *These files were not uploaded because their type is not allowed: notes.key. Accepted types: PDF document, JPEG image, …*
+
+This staff allow-list is separate from the per-slot accepted types you set for parent and applicant uploads (see [Creating Upload Spaces](#creating-upload-spaces)). The **Document Repository Banned Filetypes** setting alongside it always applies as a final backstop, regardless of what is allowed.
+
 ## Uploading Documents in Bulk
 
 Pupil and staff documents can be uploaded in bulk to the document repository.
@@ -191,9 +205,18 @@ Take special note of the limitations with regards to uploading files. These are 
 
 Once you have provided the information, please click on the **Upload Documents** button to begin the document upload process.
 
-Any documents that are not matched to a person are noted with an “X” next to their name in the confirmation screen:
+ADAM then shows a **Bulk Upload Results** page summarising what happened. A short summary line at the top counts the outcomes (for example *8 uploaded, 1 no match, 1 multiple matches.*), followed by a table with a row for each file you uploaded:
+
+-   **File** — the name of the file you uploaded.
+-   **Matched person** — the pupil or staff member the file was matched to. For pupils, the current grade is shown in brackets to help you confirm the right match. A dash (—) appears where nothing was matched.
+-   **Status** — the outcome for that file: **Uploaded**, **No match**, **Multiple matches** or **Upload failed**.
 
 ![](assets/screenshots/document-repository/document-repository-16.png)
+
+An **Upload more documents** link appears above and below the table so that you can start another upload straight away.
+
+!!! note
+    This results page can only be viewed once, immediately after the upload. If you navigate away and try to return to it, ADAM shows the message *These results are no longer available. Please upload your documents again.* — you would need to upload the documents again to see a fresh report.
 
 ### Troubleshooting Failed Matches
 
