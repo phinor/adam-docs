@@ -4,6 +4,8 @@ ADAM is capable of creating a list of applicants that can be assigned points bas
 
 The list of Admissions Points is static and applies to all grades within the school.
 
+*Not to be confused with the [Admission Point Score](admission-point-score.md#admission-point-score) module, which works out university-style academic point scores from existing pupils’ subject results.*
+
 ## Managing Admissions Points
 
 On the **Admissions** tab, click on the entry **Modify the Admissions Points** which can be found under the heading **Admissions Points**.
