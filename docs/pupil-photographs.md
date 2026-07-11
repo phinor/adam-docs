@@ -66,6 +66,9 @@ Simply uploading a photograph to the document repository will *not* automaticall
 
 Navigate to **Pupils → Photographs → Change pupil photograph**. Type in the name of the pupil whose photograph you’d like to change.
 
+!!! warning
+    To use this function you must be able to **read** documents from the **Photographs** category in the pupils’ Document Repository. If you lack this permission, ADAM explains what is required and, if you hold the necessary administrative rights, offers a link to adjust the category permissions. Otherwise, please ask your ADAM Administrator for assistance.
+
 ![](assets/screenshots/pupil-photographs/pupil-photographs-09.png)
 
 ADAM will show the current picture at the top and any other pictures that are available at the bottom. This includes the generic image. Simply click on a picture at the bottom to have it selected as the current photograph.
