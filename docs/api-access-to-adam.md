@@ -27,8 +27,9 @@ random set of characters to be used as the API key and you are strongly encourag
 Each API token can be given access to one or more [API resources](#api-resources). Anyone who knows the API token can
 access all the resources that have been allocated to that token.
 
-API tokens can be revoked at any point and can have their resources changed and added to over time. Any changes you make
-to the token and its API resource assignments will take place immediately.
+API tokens can be revoked at any point and can have their resources changed and added to over time. A token can also be
+**suspended** — temporarily blocked without deleting it — and later **reactivated**. Any changes you make to the token
+and its API resource assignments will take place immediately.
 
 ## Managing API Tokens in ADAM
 
@@ -54,7 +55,10 @@ are provided the API key. We strongly recommend against sending this information
 
 ### Managing Existing Tokens
 
-In the table of existing API tokens, you have the option to **edit**, **delete** or **regenerate** the API token.
+In the table of existing API tokens, each row has a **Status** column and an **Actions** column. The **Status** column
+shows whether the token is currently **Active** or **Suspended**. In the **Actions** column you have the option to
+**edit**, **delete**, **regenerate**, and — depending on the current status — **suspend** or **reactivate** the API
+token.
 
 **Edit** allows you to change the **Resources** and **Notes** associated with an endpoint, but does not allow you to
 edit the Token.
@@ -64,6 +68,43 @@ If you do regenerate a token, please remember to update your external systems wi
 
 **Deleting** the token will remove it from the list and it will no longer be available for use. Systems that rely on the
 resources will no longer have access to the data supplied by ADAM.
+
+### Suspending and Reactivating Tokens
+
+Suspending a token is a reversible alternative to deleting it. A suspended token is kept in the list, together with all
+its resources and notes, but is rejected by the API until it is reactivated. This is useful when you need to stop a
+service from accessing ADAM temporarily — for example while you investigate unexpected activity — without losing the
+token and having to reconfigure the external system with a new one later.
+
+![](assets/screenshots/api-access-to-adam/api-access-to-adam-05.png)
+
+To suspend an active token, click **suspend** in the **Actions** column of that token’s row. You will be asked to
+confirm with the message “Suspend API token? This immediately blocks all requests using this token.” Once confirmed,
+the token’s **Status** changes to **Suspended** and ADAM shows the message “The API token has been suspended.”
+
+A suspended token is clearly marked in the list, and its **Actions** column offers **reactivate** in place of
+**suspend**.
+
+![](assets/screenshots/api-access-to-adam/api-access-to-adam-06.png)
+
+To bring a suspended token back into use, click **reactivate** in the **Actions** column of that token’s row. Its
+**Status** returns to **Active** and ADAM shows the message “The API token has been reactivated.”
+
+!!! note
+    Suspending and reactivating a token both take effect immediately. Because the token value itself is unchanged, you
+    do not need to update your external systems when you reactivate a token — it simply starts working again.
+
+!!! warning
+    While a token is suspended, any request that uses it is refused as though the token had no access to the resource,
+    and the calling system receives a “403 Forbidden” response. Make sure the service that relies on the token is
+    prepared to handle being blocked before you suspend it.
+
+The difference between the two ways of stopping a token is important:
+
+- **Suspend** is temporary and fully reversible. The token, its resources and its notes are all kept, and access can be
+  restored at any time by reactivating it.
+- **Delete** is permanent and cannot be undone. The token is removed from the list entirely and cannot be recovered; a
+  new token would have to be created and shared with the external system.
 
 ## Best Practice Security Principals
 
