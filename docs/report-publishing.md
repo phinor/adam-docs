@@ -30,7 +30,7 @@ Clicking on this option will provide you with some settings to change. The setti
 
 Make the appropriate selections for the settings and then save the settings using the **Save** button at the bottom of the page. These changes will now take effect on the template.
 
-**Note:** It may happen that your changes are not reflected immediately. If you are making these changes towards the end of your reporting period, near your publishing date, please make sure to [refresh the archived reports](#the-report-doesnt-show-new-information) to ensure that the changes you’ve made reflect on the reports that ADAM generates.
+**Note:** It may happen that your changes are not reflected immediately. If you are making these changes towards the end of your reporting period, near your publishing date, please make sure to [refresh the archived reports](#refreshing-archived-reports) to ensure that the changes you’ve made reflect on the reports that ADAM generates.
 
 ### Step 3: Select the Template in your Reporting Period Settings
 
@@ -171,6 +171,44 @@ You have the option of choosing which pupils’ reports to email. By default all
 
 Finally, click on the **Email reports** button at the bottom of the screen. A new screen will load and ADAM will update it with progress. Note that emailing of reports where the reports are being refreshed in the document repository can take a while. Please be patient and let the screen load fully.
 
+## Refreshing Archived Reports
+
+When you make a change that should appear on a report — updating a class, changing a comment, revising a mark, or even adjusting the report template — ADAM may continue to show you an older version of the report. This is because ADAM stores an archived copy of each report in the [Document Repository](document-repository.md#document-repository) and, once a report is published, that copy is no longer updated automatically. (For a fuller explanation of *why* this happens, see [The report doesn’t show new information!](#the-report-doesnt-show-new-information) under troubleshooting.)
+
+To make your changes appear, you need to tell ADAM to refresh the archived reports. There are a few ways to do this:
+
+### Update the reports for a whole class / other group of pupils
+
+Continue as if you were going to print reports for a class or grade: **Reporting → Report Publishing → Print a Class’s/Grades reports**.
+
+On the report generation screen, click on the option which says “**Refresh archive copy**”. This is useful if you need to change a whole lot of reports at once. You can, of course, just select the single pupil whose report needs updating.
+
+![](assets/screenshots/report-publishing/report-publishing-14.png)
+
+### Delete the Document Repository copy
+
+The archived report is stored in ADAM’s [Document Repository](document-repository.md#document-repository). When ADAM returns to fetch the archived copy, it will be seen as missing and ADAM will automatically regenerate it using whatever information is currently available.
+
+### Force a recalculation of averages and promotion results
+
+If the report has not been published, you may be required to force ADAM to manually recalculate the averages across subjects and the promotion results.
+
+This often happens after changes are made to the calculation, promotion requirements.
+
+To effect the recalculation, visit **Reporting → Promotion Results → Recalculate Aggregate and Promotions**.
+
+You will be asked to choose a reporting period and a grade.
+
+### Force a mark book recalculation
+
+If the report has not been published, forcing ADAM to recalculate both term and Year-to-Date results may update the results of an individual pupil and their report. This often needs to be done if marks were changed in a different reporting period that affect the Year-to-Date results of the current reporting period. ADAM only normally updates marks when the marks in that reporting period change.
+
+To effect the recalculation, visit **Reporting → Promotion Results → Recalculate Marks and Symbols**.
+
+You will be asked to choose a reporting period and a Grade to recalculate. All the marks in all subjects will be recalculated.
+
+Repeat for any other affected grades.
+
 ## Reports on the Parent and Pupil Portal
 
 In order for parents to access their children’s reports on the Parent and Pupil portal, they will need the [correct privileges](security-administration-for-families-and-pupils.md#managing-login-groups) in order to do so. Assuming that the privileges are set up correctly, they will have automatic access to the report as soon as the [publish date and time is reached](reporting-period-administration.md#reporting-period-administration).
@@ -237,39 +275,7 @@ For example, the reporting period comment which is set in the Reporting Period S
 
 #### Solution: get ADAM to refresh the archived reports
 
-We need to tell ADAM to update the version of the report that it is showing you. There are two ways to do this:
-
-##### Update the reports for a whole class / other group of pupils
-
-Continue as if you were going to print reports for a class or grade: **Reporting → Report Publishing → Print a Class’s/Grades reports**.
-
-On the report generation screen, click on the option which says “**Refresh archive copy**”. This is useful if you need to change a whole lot of reports at once. You can, of course, just select the single pupil whose report needs updating.
-
-![](assets/screenshots/report-publishing/report-publishing-14.png)
-
-##### Delete the Document Repository copy
-
-The archived report is stored in ADAM’s [Document Repository](document-repository.md#document-repository). When ADAM returns to fetch the archived copy, it will be seen as missing and ADAM will automatically regenerate it using whatever information is currently available.
-
-##### Force a recalculation of averages and promotion results
-
-If the report has not been published, you may be required to force ADAM to manually recalculate the averages across subjects and the promotion results.
-
-This often happens after changes are made to the calculation, promotion requirements.
-
-To effect the recalculation, visit **Reporting → Promotion Results → Recalculate Aggregate and Promotions**.
-
-You will be asked to choose a reporting period and a grade.
-
-##### Force a mark book recalculation
-
-If the report has not been published, forcing ADAM to recalculate both term and Year-to-Date results may update the results of an individual pupil and their report. This often needs to be done if marks were changed in a different reporting period that affect the Year-to-Date results of the current reporting period. ADAM only normally updates marks when the marks in that reporting period change.
-
-To effect the recalculation, visit **Reporting → Promotion Results → Recalculate Marks and Symbols**.
-
-You will be asked to choose a reporting period and a Grade to recalculate. All the marks in all subjects will be recalculated.
-
-Repeat for any other affected grades.
+To fix this, you need to tell ADAM to refresh the archived copy of the report. See [Refreshing Archived Reports](#refreshing-archived-reports) for the available methods.
 
 ### The report isn’t being emailed!
 
