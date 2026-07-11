@@ -6,16 +6,35 @@ Notifications of large updates with significant changes in functionality are com
 
 ## Applying Updates Manually
 
-From 2018, most updates will be applied automatically without any intervention required from you. However, it is useful to know how one can apply an update if it is required for an urgent change.
+Most updates are applied automatically without any intervention required from you. However, it is useful to know how one can apply an update if it is required for an urgent change.
 
-### To apply an automatically downloaded update
+### Applying database updates
 
-1.  Log into ADAM using an administrator account with the necessary privileges from any computer with Internet access.
-2.  Once logged in, on the the login messages screen, ADAM will tell you that there is an update available.
-3.  Click on the link to update ADAM.
-4.  ADAM will perform the update.
-5.  Please wait for the summary report to be shown. ADAM will show you any inconsistencies that might exist between your server and the manifest that was included in the update.
-6.  Click on the link back to the home page to ensure that there are no other updates available for ADAM.
+Some updates include changes to the structure of the database. These database updates are applied on the ADAM server using ADAM’s command-line tools. They are **not** applied through the web interface, and they are no longer applied automatically when you log in or by the overnight cron service.
+
+!!! warning
+    While database updates are pending, ADAM is unavailable to everyone using it through a web browser. Anyone who visits the site sees an “ADAM is being upgraded” page reading *“The database is being updated to a new version. Please try again shortly.”* (an HTTP 503 response). The site becomes available again automatically as soon as the pending updates have been applied.
+
+To apply the pending database updates:
+
+1.  Log in to the ADAM server over SSH as a user that is permitted to run ADAM’s command-line tools.
+2.  Change to the ADAM installation directory (for example, `/var/www/adam`).
+3.  Check which updates are pending:
+
+    ```bash
+    php adam schema:status
+    ```
+
+4.  Apply the pending updates:
+
+    ```bash
+    php adam schema:migrate
+    ```
+
+5.  ADAM lists each update as it is applied and confirms when the database is up to date. Once the command has finished, the web interface becomes available again automatically.
+
+!!! note
+    On servers with an automated deployment process, `php adam schema:migrate` runs as part of each deployment, so pending database updates are normally applied for you. You only need to run it by hand if a deployment did not complete, or when the ADAM support team asks you to.
 
 ### To apply an update file sent by email
 
@@ -26,3 +45,6 @@ From 2018, most updates will be applied automatically without any intervention r
 5.  ADAM will double-check to ensure that you have not skipped an update or are attempting to apply updates in the wrong order. ADAM will then apply the update.
 6.  Please wait for the summary report to be shown. ADAM will show you any inconsistencies that might exist between your server and the manifest that was included in the update.
 7.  Please log out of ADAM and log back in again with your administrator account.
+
+!!! note
+    If the update includes database changes, apply them from the server afterwards by running `php adam schema:migrate`, as described under [Applying database updates](#applying-database-updates) above.
