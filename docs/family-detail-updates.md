@@ -164,6 +164,11 @@ Click **review changes** to open a side-by-side comparison of the old and new va
 
 ![](assets/screenshots/family-detail-updates/family-detail-updates-08.png)
 
+The *Field* column names each changed field, prefixed with the section it belongs to — for example *First Parent: First Name* or *Second Parent: Cell Number*. Because the two parents (and the various groupings on a child's own details) often share identical field names, this prefix makes clear at a glance which parent or section a change applies to. Where a field belongs to no named section, the field name is shown on its own.
+
+!!! note
+    The same section prefix appears on the equivalent staff detail-review screen, reached from **Staff → Staff Administration → Review submitted changes**.
+
 Click **Save Changes** at the bottom to commit the approvals. The family's portal banner updates to *Information update reviewed* the next time they sign in.
 
 ### Tracking outstanding updates
