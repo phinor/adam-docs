@@ -82,6 +82,9 @@ Once completed, click on the **Save…** button at the bottom of the screen.
 
 Once saved, an “edit” option will appear above the column. If you need to change any of the values, click on the edit link and you can make any changes you need to.
 
+!!! tip
+    To keep the register manageable, ADAM shows only the ten most recent columns by default. A line of text above the register reads “Showing the most recent 10 records”, followed by a **Click here** link to show all records. When every column is displayed, the same line reads “Showing all records” with a **Click here** link to return to the ten most recent.
+
 ## Archiving a register
 
 Once you have finished with your register, you can archive it. ADAM will keep the records, but no longer allow any further changes to the register.
