@@ -16,7 +16,7 @@ Photographs can be uploaded for staff members by visiting **Staff → Photograph
 
 ![](assets/screenshots/staff-photographs/staff-photographs-01.png)
 
-Click on the **Choose Files** button. A normal file selection window will appear. Click on a batch of files to upload, bearing in mind the limits that your server has in place. Click on the “Open” button at the bottom (this may differ depending on your web browser)
+Click on the **Choose Files** button. A normal file selection window will appear. Click on a batch of files to upload, bearing in mind the limits that your server has in place. The page displays these limits for you — the maximum number of files you may upload at a time and the maximum total size — so you can select your batch accordingly. Click on the “Open” button at the bottom (this may differ depending on your web browser)
 
 ![](assets/screenshots/staff-photographs/staff-photographs-02.png)
 
