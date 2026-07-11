@@ -19,6 +19,9 @@ These settings are shared across all the grades. They are discussed as follows:
 -   The **Period Dates** are the start and finish of the term. **The end date is particularly important** since when looking at historical data, ADAM considers the end date of the reporting period to see if a pupil was enrolled in a class for a particular reporting period. The pupil is considered to be enrolled if they were enrolled on the end date.
 -   The **Publish Date** and time are used by ADAM to determine at what time parents and pupils are allowed to see these reports on the parent and pupil portal. This date can be set before the end of the reporting period if required. Take note, however, that any changes to classes prior to the end of period date will have an impact on the report.
 
+!!! note
+    The end date must fall on or after the start date. If you enter an end date that is earlier than the start date, ADAM will not create the reporting period and will show the message “The reporting period start date cannot be after the end date. The reporting period was not created.” Correct the dates and try again.
+
 Once you’re happy with these settings, click on the **Add a new Reporting Period**  button at the bottom. ADAM will now show you some additional settings as well as the grade specific settings for this reporting period. Have a look at the next section, “Editing a reporting period” for more information.
 
 ## Editing a Reporting Period
@@ -35,6 +38,9 @@ At the top of the screen are the same settings for the reporting period which we
 !!! warning
     Please be circumspect about changing the period’s end date. It can have unintended consequences. ADAM uses this date to see who should be in each class. If you change this date after the fact, you may find pupils “disappear” from their classes because they were not enrolled in those classes on that date.
 
+!!! note
+    The end date must fall on or after the start date. If you save the page with an end date that is earlier than the start date, ADAM rejects the change and shows the message “The reporting period start date cannot be after the end date. No changes were saved.” None of the other changes you made on the page are saved either, so correct the dates and save again.
+
 Additional settings control whether this reporting period is considered a **formal report** (in other words, whether it will collect marks for the pupil, as opposed to, say, comments or other behavioural indicators), and whether the reporting period should be shown at all to parents and pupils on their respective **portals**.
 
 ### Report Template Options
@@ -50,6 +56,14 @@ Each grade is able to have its own reporting template with its own set of requir
 -   If a template has been chosen that displays results from multiple terms (most likely because you have a mark grid which displays information from other reporting periods), you will have the option to enter which terms are displayed and in which order.
 
     Choose terms in the order they should be displayed. For earlier terms in the year, it is almost certain that at least one or more of the later terms will need to be set as “-- No term --”. If you are setting up a term 2 reporting period, for example, please do not create and set Terms 3 and 4 in that reporting period. While you might not notice anything odd at the time, if you were to produce a historical “Term 2” report, ADAM would then include Term 3 and 4’s results on that report. This can be confusing! How could an end of year mark be present on a Term 2 report?
+
+    To make these choices easier to check, each reporting period in the dropdown now shows its date range, always ending with the year — for example “Term 1 (10 Jan - 15 Mar 2026)”. The periods are also grouped under a heading for each year. This is especially helpful when you have copied the settings from a previous period, since those slots will still be pointing at the previous year’s terms.
+
+    ![](assets/screenshots/reporting-period-administration/reporting-period-administration-17.png)
+
+    If a slot is pointing at a reporting period from a different year to the one you are editing, ADAM shows an amber warning next to that slot reading “⚠ from 2025 — different year” (with the relevant year). The warning updates live as you change a slot, so choosing a term from the correct year, or setting the slot to “-- No term --”, clears it immediately.
+
+    ![](assets/screenshots/reporting-period-administration/reporting-period-administration-18.png)
     
 -   The **Comment** is a comment that typically is added to your report template. It may consist of a message giving notice of the term start dates and so on.
 -   The **Qualification** field tells ADAM which qualification is associated with this grade. This impacts how ADAM calculates promotion decisions as well as which symbol set it uses for its results.
