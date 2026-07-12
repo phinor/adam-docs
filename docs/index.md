@@ -8,4 +8,4 @@ Any issues that are not covered in this help documentation can be addressed to [
 
 ## Suggesting Changes
 
-This is a living document and will be added to and improved over time. If you have any suggestions or wish to assist in improving the documentation, you can contribute through [GitHub](https://github.com/phinor/adam-docs).
+This is a living document and will be added to and improved over time. If you have any suggestions or wish to assist in improving the documentation, please see our [contributing guide](https://github.com/phinor/adam-docs/blob/main/CONTRIBUTING.md) — you do not need to be a programmer to help.
