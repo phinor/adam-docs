@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ADAM Help{% if page and page.title and not page.is_homepage %} - {{ page.title|striptags }}{% endif %}</title>
+    <title>ADAM Help{% if page and page.title and not page.is_homepage %} - {{ page.title|striptags }}{% endif
+        %}</title>
     {% if page and page.meta and page.meta.description %}
     <meta name="description" content="{{ page.meta.description }}">
     {% else %}
@@ -23,29 +24,33 @@
     <nav>
         <ul class="menu1">
             {% for nav_item in nav %}
-                <li><a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a></li>
+            <li><a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a></li>
             {% endfor %}
         </ul>
     </nav>
 
     <article>
         <div id="bodycontainer">
-            <script async src="https://cse.google.com/cse.js?cx=017047591166674552263:0idgv_vajd0">
-            </script>
-            <div class="gcse-search" data-linkTarget="_self"></div>
-            {{ page.content }}
+            <div class="searchbar">
+                <script async src="https://cse.google.com/cse.js?cx=017047591166674552263:0idgv_vajd0">
+                </script>
+                <div class="gcse-search" data-linkTarget="_self"></div>
+            </div>
+            <div class="content">
+                {{ page.content }}
+            </div>
         </div>
     </article>
 
     {% macro render_toc(items) %}
-        {% set list_items = items | list %}
-        {% if list_items %}
-        <ul>
-            {% for item in list_items %}
-            <li><a href="{{ item.url }}">{{ item.title }}</a>{{ render_toc(item.children) }}</li>
-            {% endfor %}
-        </ul>
-        {% endif %}
+    {% set list_items = items | list %}
+    {% if list_items %}
+    <ul>
+        {% for item in list_items %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a>{{ render_toc(item.children) }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
     {% endmacro %}
 
     {% set toc_list = page.toc | list %}
