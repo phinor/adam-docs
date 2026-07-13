@@ -60,10 +60,10 @@ To associate an account on ADAM with a user account in Active Directory, the use
 2.  Then ADAM will check that the staff member in question is “current” – that is, their start date is in the past, and their end date is in the future.
 3.  Then ADAM takes the username and password that were provided and attempts a login on the Active Directory LDAP server. If the Active Directory LDAP server grants access, the username and password that were supplied must be correct and ADAM will grant the login.
 
+Access is only granted if all three steps can be followed.
+
 !!! note
     ADAM cannot tell, in this instance, why a user's credentials might have been denied. Common reasons include a) an incorrect password, b) a locked user account or c) a forced password change is pending (because this cannot be done over LDAP, the login is denied).
-
-Access is only granted if all three steps can be followed.
 
 ### Configuring POP3 Authentication
 
