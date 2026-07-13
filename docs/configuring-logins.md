@@ -37,18 +37,30 @@ Each staff member can use one of the three authentication methods. They are set 
 
 ![](assets/screenshots/configuring-logins/configuring-logins-03.png)
 
-### Configuring Active Directory LDAP Authentication
+### Configuring Active Directory Authentication
 
-In order for ADAM to process Active Directory LDAP authentication, it must be pointed to an Active Directory server. This set up is done in the class\_config.php file which will be located in the ADAM install folder. The specific options to look for are:
+When a user logs into ADAM, ADAM attempts to log in to the Active Directory server's **LDAP service** using the user's credentials. If the credentials are accepted, then ADAM allows the login. If the credentials are not accepted, then ADAM denies the login.
 
--   ad accsuf: This is set to the domain suffix. This is normally a string starting with “@” followed by the domain name. E.g. @myschool.local
--   ad basedn: This is the base domain name. It consists of the same information as above, but given in the following format: DC=myschool,DC=local
--   ad domcon: This is an array of IP addresses of domain servers which should be consulted.
+!!! note
+    ADAM cannot tell, in this instance, why a user's credentials might have been denied. Common reasons include a) an incorrect password, b) a locked user account or c) a forced password change is pending (because this cannot be done over LDAP, the login is denied).
+
+In order for ADAM to process Active Directory LDAP authentication, it must be pointed to an Active Directory server with appropriate settings.
+
+In **[Site Settings](changing-site-settings.md)**, under the **Security** tab, scroll down to the **Authentication Provider: Active Directory** section.
+
+-   **AD Account Name Suffix**: This is set to the domain suffix. This is normally a string starting with “@” followed by the domain name. E.g. @myschool.local
+-   **AD Domain Controller**: This is the IP addresses of domain servers which should be consulted. Multiple values can be separated with commas.
+
+!!! warning
+    Providing multiple IP addresses does not provide a _failover_, but rather a _load balancer_. An IP address is chosen at random from this list. For example, if one of your two servers is down, 50% of logins will fail.
+
+-   **Use Secure LDAP Connection**: Strongly advised to select this, especially if your server is hosted on the wider internet. Otherwise, passwords will be sent over the wire in plain text.
+-   **AD Server Has Self-signed Certificate**: Tell ADAM whether it should check for a valid signature or not - if self-signed, ADAM won't check.
 
 !!! warning
     In all cases, the files must obey strict PHP syntax and thus should be edited with care.
 
-In order to associate an account on ADAM with a user account in Active Directory, the user must have the same username set in ADAM as they would use in Active Directory. The following procedure is followed on login:
+To associate an account on ADAM with a user account in Active Directory, the user must have the same username set in ADAM as they would use in Active Directory. The following procedure is followed on login:
 
 1.  ADAM checks that the username entered matches a staff member in the database.
 2.  Then ADAM will check that the staff member in question is “current” – that is, their start date is in the past, and their end date is in the future.
