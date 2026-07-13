@@ -16,6 +16,10 @@
 #   GIT_BRANCH     Branch to deploy. Default: main.
 #   MKDOCS_IMAGE   Docker image to build with. Default: squidfunk/mkdocs-material:latest.
 #   FORCE_PULL     If "1", always pull the latest image before building. Default: 0.
+#   STRICT         If "1", build with --strict so warnings (e.g. broken links)
+#                  abort the build. Default: 0. Leave off for unattended
+#                  deploys so a single broken link can't freeze the whole site;
+#                  turn on locally/in CI to catch issues before they ship.
 #
 # Exit codes:
 #   0  build succeeded (or no new commits to deploy)
@@ -31,6 +35,7 @@ PUBLISH_DIR="${PUBLISH_DIR:-$REPO_DIR/site}"
 GIT_BRANCH="${GIT_BRANCH:-main}"
 MKDOCS_IMAGE="${MKDOCS_IMAGE:-squidfunk/mkdocs-material:latest}"
 FORCE_PULL="${FORCE_PULL:-0}"
+STRICT="${STRICT:-0}"
 
 log () { printf '[%s] %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$*"; }
 
@@ -59,13 +64,18 @@ fi
 STAGE_DIR="$REPO_DIR/.build-staging"
 rm -rf "$STAGE_DIR"
 
-log "Building site"
+STRICT_FLAG=()
+if [[ "$STRICT" == "1" ]]; then
+    STRICT_FLAG=(--strict)
+fi
+
+log "Building site${STRICT:+ (strict=$STRICT)}"
 docker run --rm \
     --user "$(id -u):$(id -g)" \
     -v "$REPO_DIR:/docs" \
     -w /docs \
     "$MKDOCS_IMAGE" \
-    build --strict --site-dir /docs/.build-staging \
+    build "${STRICT_FLAG[@]}" --site-dir /docs/.build-staging \
     || { log "mkdocs build failed"; rm -rf "$STAGE_DIR"; exit 2; }
 
 # Swap into place.
