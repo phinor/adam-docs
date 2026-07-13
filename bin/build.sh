@@ -22,6 +22,13 @@
 #                  issues before they ship). Set explicitly to override either.
 #
 # Options:
+#   --force, -f    Rebuild even if the checkout is already up-to-date with the
+#                  remote. Normally a deploy run exits early when there are no
+#                  new commits and the site is already published; --force skips
+#                  that check. Useful after changing the theme, this script, or
+#                  the Docker image without a new content commit, or to seed a
+#                  fresh server. (Env: FORCE_BUILD=1. No effect with --dev, which
+#                  always builds.)
 #   --dev          Local build: skip all git operations (fetch/reset) and build
 #                  the working tree exactly as it is on disk. Still builds via
 #                  the staging dir and atomically swaps into PUBLISH_DIR (default
@@ -38,9 +45,11 @@
 set -euo pipefail
 
 DEV=0
+FORCE_BUILD="${FORCE_BUILD:-0}"
 for arg in "$@"; do
     case "$arg" in
         --dev) DEV=1 ;;
+        --force|-f) FORCE_BUILD=1 ;;
         -h|--help) sed -n '2,/^$/p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
         *) printf 'unknown argument: %s\n' "$arg" >&2; exit 64 ;;
     esac
@@ -71,10 +80,14 @@ else
     LOCAL=$(git rev-parse HEAD)
     REMOTE=$(git rev-parse "origin/$GIT_BRANCH")
 
-    if [[ "$LOCAL" == "$REMOTE" ]] && [[ -d "$PUBLISH_DIR" ]] && [[ -n "$(ls -A "$PUBLISH_DIR" 2>/dev/null)" ]]; then
+    if [[ "$FORCE_BUILD" != "1" ]] \
+        && [[ "$LOCAL" == "$REMOTE" ]] \
+        && [[ -d "$PUBLISH_DIR" ]] \
+        && [[ -n "$(ls -A "$PUBLISH_DIR" 2>/dev/null)" ]]; then
         log "Already up-to-date at $LOCAL; nothing to do"
         exit 0
     fi
+    [[ "$FORCE_BUILD" == "1" ]] && log "Force build requested; rebuilding even if up-to-date"
 
     log "Updating working tree from $LOCAL to $REMOTE"
     git reset --hard "origin/$GIT_BRANCH"
