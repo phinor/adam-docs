@@ -17,9 +17,17 @@
 #   MKDOCS_IMAGE   Docker image to build with. Default: squidfunk/mkdocs-material:latest.
 #   FORCE_PULL     If "1", always pull the latest image before building. Default: 0.
 #   STRICT         If "1", build with --strict so warnings (e.g. broken links)
-#                  abort the build. Default: 0. Leave off for unattended
-#                  deploys so a single broken link can't freeze the whole site;
-#                  turn on locally/in CI to catch issues before they ship.
+#                  abort the build. Default: 0 for deploys (so a single broken
+#                  link can't freeze the whole site), 1 in --dev mode (to catch
+#                  issues before they ship). Set explicitly to override either.
+#
+# Options:
+#   --dev          Local build: skip all git operations (fetch/reset) and build
+#                  the working tree exactly as it is on disk. Still builds via
+#                  the staging dir and atomically swaps into PUBLISH_DIR (default
+#                  $REPO_DIR/site), and defaults STRICT=1. Use this to inspect
+#                  the generated site/ without pulling. For a live-reloading
+#                  preview, `mkdocs serve` is nicer (see README).
 #
 # Exit codes:
 #   0  build succeeded (or no new commits to deploy)
@@ -29,31 +37,48 @@
 
 set -euo pipefail
 
+DEV=0
+for arg in "$@"; do
+    case "$arg" in
+        --dev) DEV=1 ;;
+        -h|--help) sed -n '2,/^$/p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
+        *) printf 'unknown argument: %s\n' "$arg" >&2; exit 64 ;;
+    esac
+done
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_DIR="${REPO_DIR:-$(dirname "$SCRIPT_DIR")}"
 PUBLISH_DIR="${PUBLISH_DIR:-$REPO_DIR/site}"
 GIT_BRANCH="${GIT_BRANCH:-main}"
 MKDOCS_IMAGE="${MKDOCS_IMAGE:-squidfunk/mkdocs-material:latest}"
 FORCE_PULL="${FORCE_PULL:-0}"
-STRICT="${STRICT:-0}"
+# STRICT defaults on for local --dev builds, off for unattended deploys.
+if [[ -n "${STRICT:-}" ]]; then STRICT="$STRICT"; elif [[ "$DEV" == "1" ]]; then STRICT=1; else STRICT=0; fi
 
 log () { printf '[%s] %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$*"; }
 
 cd "$REPO_DIR"
 
-log "Fetching $GIT_BRANCH"
-git fetch --quiet origin "$GIT_BRANCH" || { log "git fetch failed"; exit 1; }
+if [[ "$DEV" == "1" ]]; then
+    SOURCE="working tree ($(git rev-parse --short HEAD 2>/dev/null || echo 'no git'))"
+    log "Dev build: skipping git; building working tree as-is"
+else
+    SOURCE="origin/$GIT_BRANCH"
 
-LOCAL=$(git rev-parse HEAD)
-REMOTE=$(git rev-parse "origin/$GIT_BRANCH")
+    log "Fetching $GIT_BRANCH"
+    git fetch --quiet origin "$GIT_BRANCH" || { log "git fetch failed"; exit 1; }
 
-if [[ "$LOCAL" == "$REMOTE" ]] && [[ -d "$PUBLISH_DIR" ]] && [[ -n "$(ls -A "$PUBLISH_DIR" 2>/dev/null)" ]]; then
-    log "Already up-to-date at $LOCAL; nothing to do"
-    exit 0
+    LOCAL=$(git rev-parse HEAD)
+    REMOTE=$(git rev-parse "origin/$GIT_BRANCH")
+
+    if [[ "$LOCAL" == "$REMOTE" ]] && [[ -d "$PUBLISH_DIR" ]] && [[ -n "$(ls -A "$PUBLISH_DIR" 2>/dev/null)" ]]; then
+        log "Already up-to-date at $LOCAL; nothing to do"
+        exit 0
+    fi
+
+    log "Updating working tree from $LOCAL to $REMOTE"
+    git reset --hard "origin/$GIT_BRANCH"
 fi
-
-log "Updating working tree from $LOCAL to $REMOTE"
-git reset --hard "origin/$GIT_BRANCH"
 
 if [[ "$FORCE_PULL" == "1" ]]; then
     log "Pulling latest $MKDOCS_IMAGE"
@@ -95,4 +120,4 @@ mv "$STAGE_DIR" "$PUBLISH_DIR" || {
 }
 rm -rf "$OLD_DIR"
 
-log "Deployed $REMOTE to $PUBLISH_DIR"
+log "Deployed $SOURCE to $PUBLISH_DIR"
