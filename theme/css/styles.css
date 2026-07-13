@@ -119,7 +119,7 @@ article {
 }
 
 /* Tables ------------------------------------ */
-article#bodycontainer div.content {
+#bodycontainer div.content {
     & table {
         width: 100%;
         border-collapse: collapse;
