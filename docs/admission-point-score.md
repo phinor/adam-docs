@@ -55,6 +55,8 @@ ADAM then lists each pupil with their **Pupil** name and **Class**, followed by 
 
 Only enabled definitions appear as columns. If no definitions are enabled, ADAM tells you so and invites you to enable or create one first.
 
+![](assets/screenshots/admission-point-score/admission-point-score-08.png)
+
 ### Exporting the Grade List to Excel
 
 Above the list is an **export to Excel** link. Click it to download the same grade, period and columns as an `.xlsx` spreadsheet, ready to open in Excel or another spreadsheet program for further sorting, filtering or sharing. The incomplete-score asterisk is carried through to the spreadsheet.
@@ -62,8 +64,6 @@ Above the list is an **export to Excel** link. Click it to download the same gra
 ## Showing APS on a Pupil’s Overview
 
 APS can also be shown as a small card on a pupil’s **overview** (profile) screen. The card lists each active definition with the pupil’s score for the current reporting period, and offers a **Compute / breakdown** link that opens the preview tool for the full per-subject working.
-
-![](assets/screenshots/admission-point-score/admission-point-score-08.png)
 
 The card is added through the same mechanism as any other overview block — see [Profile Overview Customisation](profile-overview-customisation.md#profile-overview-customisation). When editing an overview layout, add a block, choose to display a **widget**, and select the **Admission Point Score** widget from the list.
 
