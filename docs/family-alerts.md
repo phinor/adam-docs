@@ -8,8 +8,11 @@ Family Alerts can be sent to parents and or pupils at regular intervals to send 
 
 To configure the Family Alerts, one must first choose which [pupil login privilege groups](security-administration-for-families-and-pupils.md#login-group-principles) will get what information. In so doing, it is possible for parents to to receive differentiated information based on the privilege group that their child belongs to.
 
-!!! warning
-    If no alerts are generated for a child in a particular time frame, no email is sent.
+!!! tip
+    Many combined prep and high schools take advantage of this so that high school pupils can get assessment notifications, for example, but pupils in the prep school will not. This requires that high school and prep school pupils belong to [different permission groups](security-administration-for-families-and-pupils.md#login-group-principles).
+
+!!! note
+    If no records have been generated for a child in a particular time frame, no email is sent.
 
 ## Enabling Family Alerts for Privilege Groups
 
@@ -23,9 +26,10 @@ Navigate to **Families → Security → Edit family privileges for Family Alerts
 
 Next to each privilege group, place a checkbox in the appropriate columns of the alerts that you’d like them to receive.
 
-Note that if there is a “hyphen” in the **Sent to…** column, you will need to [change the privileges for that group](#enabling-family-alerts-for-privilege-groups) before alerts will be sent.
+!!! note
+    If there is a “hyphen” in the **Sent to…** column, you will need to [change the privileges for that group](#enabling-family-alerts-for-privilege-groups) before alerts will be sent to that group.
 
-The Family Alerts delivery can be changed lower down on this page. These settings are the same ones that you might find in the site settings (**Administration → Site Administration → Site Settings**), under the **Communications** tab below the heading **Family Alerts**. However, this allows someone to edit these particular settings without having to give them access to the entire site’s settings.
+The Family Alerts delivery options can be changed lower down on this page. These settings are the same ones that you might find in the site settings (**Administration → Site Administration → Site Settings**), under the **Communications** tab below the heading **Family Alerts**. However, this allows someone to edit these particular settings without having to give them access to the entire site’s settings.
 
 ![](assets/screenshots/family-alerts/family-alerts-03.png)
 
@@ -36,7 +40,7 @@ One can choose **which days to send** the alerts, as well as the **time of the d
 If alerts have not been sent before, or have been turned off for a long time, ADAM will only look back a **maximum number of days** as defined here. This prevents the first Family Alert from containing information from years back.
 
 !!! warning
-    Note that if the “maximum number of days” is less that the interval between alerts (e.g. you set a maximum number of days to 1, but alerts are sent out on Fridays - every 7 days), then there is an excellent chance that information will be missing from your alerts.
+    Note that if the “maximum number of days” is less that the interval between alerts (e.g. you set a maximum number of days to 1, but alerts are sent out on Fridays - every 7 days), then information generated from Saturday to Wednesday will be missing from your alerts.
 
 If a **reply address is provided**, then any parent replies to their alert will be directed to that person. If left blank, the default “from” address will be used. For a number of schools, this is a generic “noreply” address which may be problematic.
 
