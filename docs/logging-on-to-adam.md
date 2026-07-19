@@ -141,6 +141,9 @@ Finally, ADAM can ensure that all staff make use of Two Factor Authentication by
 
 ### POP3 Authentication
 
+!!! warning
+   POP3 authentication is not secure. As such, we are removing this as an authentication option from ADAM with effect from 1 October 2026. We recommend using OAuth authentication instead, such as **Sign in with Google** or **Sign in with Microsoft**.
+
 ADAM can use a POP3 server as an external authentication source. Provide the necessary settings here to communicate with your POP3 server. This method is not commonly used because generally schools will have another more commonly used authentication source available to them.
 
 ## Staff Logins
