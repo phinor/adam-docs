@@ -26,6 +26,13 @@ On the lower right side, you will see a search box. Here you can search for any 
 
 Once you’ve clicked on the **Confirm changes** button, ADAM will show a summary of the options it is about to perform on the family. It will confirm pupils that are being added and being removed from the family. You can then click on the **Save Changes** button to save these to the database.
 
+## Deleting a Family
+
+!!! warning
+    **Deleting a family is destructive and you will lose information regarding that family which cannot be easily restored.**
+
+    Deleting families is only occasionally necessary when facing issues of duplication or erroneous correction. However, you should **not** be deleting families as a normal course of business. It is done on the exception, rather than as a rule.
+
 ## Merging Two Families into One
 
 On occasion, two families might need to merge into a single family. This might be to correct a data capturing error, or to reflect two parents that are now living together.
@@ -39,6 +46,11 @@ It is important to note that the **primary** parent in each family will be used 
 The primary parent of the family that you search for first will become the primary parent in the merged family. The primary parent of the family that you search for second will become the secondary parent in the merged family. If you get these the wrong way around, you can always [switch the primary and secondary parents](#swapping-parents-in-a-family) after you’ve merged.
 
 If there are secondary parents in either of the families that you choose to merge, they will automatically be [split off into their own families](#splitting-a-family-in-two) before the merge takes place. Please check the important notes about splitting a family in that section.
+
+!!! warning
+    When merging two families, their history on ADAM is generally **not** merged. This includes communication records, uploaded documents and so on.
+
+    When merging, you are advised to [swap](#swapping-parents-in-a-family) and [split](#splitting-a-family-in-two) parents to be merged from their existing families so that their history remains with the appropriate family. When splitting, note that the primary parent retains history.
 
 ![](assets/screenshots/family-management/family-management-02.png)
 
@@ -82,8 +94,8 @@ Some “common” non-conventional family setups include situations, for example
 
 In situations such as these, communication about the children is best directed to their biological parents, however, ADAM only allows two parents in a household and the family as a whole is linked to a pupil.
 
-When situations like this arise, it is often most useful to separate out the three parents into individual households so that there are three families, each with a single parent in them. In this way, the pupils can then be connected to the parents that are linked to them. The father, in our example, could be connected to both his children and the mothers could each be connected to their children.
+When situations like this arise, it is often most useful to separate out the three parents into individual households so that there are three, families, each with a single parent in them. In this way, the pupils can then be connected to the parents that are linked to them. The father, in our example, could be connected to both his children and the mothers could each be connected to their specific children.
 
-You can use the [Split a Family in Two](#splitting-a-family-in-two) function, described above, to separate any joined parents into two separate families.
+You can use the [Split a Family in Two](#splitting-a-family-in-two) function, described above, to separate any joined parents into two separate families. This will create two profiles for the parent who was in both families. You can remove the duplicate with the [Delete a family](#deleting-a-family) function.
 
 Be careful to check that each parent ends up with a single profile once you’re done. Often this scenario arises when one of the parents has been put as a family member into two households. This causes problems because ADAM won’t then allow that parent to log in because ADAM can’t tell which profile they should be using. As such, this complaint normally presents to the school as the parent not being able to log in.
