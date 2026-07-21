@@ -409,6 +409,8 @@ The contents of this application form can be customised by controlling which fie
 
 There is a button at the bottom of the form to save it.
 
+Where an application was started for the parent by another system — an application-fee payment provider, for example, using the [API](api-access-to-adam.md#applicationscreatepost) — some of the form may already be filled in. Fields that the other system has supplied are pre-filled, and those it has marked as fixed are shown but cannot be changed by the parent. Values supplied that way are also the ones written to the family and pupil records when a member of staff approves the application, even where the parent was allowed to edit them.
+
 Parents can return at any time within the 7 day window they are given to continue completing the form. To return to the screen, they simply need to use the email link that was sent to them.
 
 From this point on, a progress bar is shown across the top of each screen so that parents can see where they are in the process. The steps are **Your Details**, **Documents** and **Review & Submit**. The **Documents** step only appears if the school has [asked for supporting documents](#collecting-supporting-documents-during-the-application); if not, parents move straight from their details to the review screen.

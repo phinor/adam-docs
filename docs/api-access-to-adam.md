@@ -675,6 +675,165 @@ application which will, in a future development, allow for editing of the applic
 }
 ```
 
+### Applications/create:post
+
+Creates a **partially completed application** and invites the parent to finish it themselves. This is intended for
+authoritative external systems — for example an application-fee payment provider — that already hold verified
+information about the parent and their children, and want that information to be carried into ADAM without the parent
+being able to contradict it.
+
+The difference between this resource and `Applications/apply:post` is important:
+
+- `Applications/apply:post` submits a **finished** application. The application is completed immediately and appears in
+  the list of applications awaiting approval.
+- `Applications/create:post` creates an application that is **left open**. The supplied information is stored as
+  *locked* data, an email containing a continuation link is sent to the parent, and the parent then completes the rest
+  of the application form in ADAM in the normal way. Only once the parent submits it does it appear for approval.
+
+Locked information survives everything the parent does to the form, and is written authoritatively onto the family and
+pupil records when a member of staff approves the application.
+
+#### Request {#applicationscreatepost-request}
+
+```
+POST /api/applications/create
+```
+
+#### Parameters {#applicationscreatepost-parameters}
+
+None - data sent by message body.
+
+#### Body
+
+The body should either be in JSON format, or as an encoded query string (as is typical with normal form-submitted
+data).
+
+- `email`: The email address of the parent. The continuation link is sent to this address, so it must be a valid email
+  address.
+- `idnumber`: The South African ID or passport number of the parent making the application. Any non-empty identifier is
+  accepted, since parents may apply with a passport number. If this matches an existing family in ADAM, the application
+  is linked to that family.
+- `phone`: The contact number for the parent.
+- `children`: The number of children on the application. A valid application must have at least one child and no more
+  than 5 children. This determines how many sets of pupil details the parent is asked to complete.
+- `locked`: The information which the sending system is asserting. This contains:
+
+    - `family`: An object of family field names and their values.
+    - `pupil`: An array of objects of pupil field names and their values, one entry per child, numbered from zero. The
+      array may be sparse: a child with nothing locked can be omitted or sent as `{}`.
+    - `readonly`: The manifest of which of the locked fields the parent may not change.
+
+        - `family`: A list of family field names.
+        - `pupil`: An array, per child, of lists of pupil field names.
+
+The field names accepted in the `family` and `pupil` objects are exactly those reported by
+`Applications/applicationformfields:get`.
+
+##### Read-only and editable locked fields
+
+A locked field listed in `readonly` is presented to the parent as a field they can see but cannot change. A locked
+field which is *not* listed in `readonly` is presented as an ordinary, editable field pre-filled with the supplied
+value — but the value supplied by the sending system is still the one written to ADAM when the application is
+approved. Use `readonly` where it would confuse a parent to be able to edit something (a payment reference, for
+example) and leave a field editable where the parent’s own correction is helpful to see but should not overrule the
+authoritative source.
+
+##### Example (JSON):
+
+```json
+{
+  "email": "morticia@adam.co.za",
+  "idnumber": "1234567890123",
+  "phone": "0834699569",
+  "children": 2,
+  "locked": {
+    "family": {
+      "family_primary_idnum": "1234567890123",
+      "family_primary_lastname": "Addams"
+    },
+    "pupil": [
+      {
+        "pupil_lastname": "Addams",
+        "custom_38": "INV-00417"
+      },
+      {
+        "custom_38": "INV-00418"
+      }
+    ],
+    "readonly": {
+      "family": [
+        "family_primary_idnum"
+      ],
+      "pupil": [
+        [
+          "custom_38"
+        ],
+        [
+          "custom_38"
+        ]
+      ]
+    }
+  }
+}
+```
+
+#### Response {#applicationscreatepost-response}
+
+On success the data object contains two items:
+
+- `application`: A code unique to this application, for the sending system’s own record keeping. It is not a
+  credential and cannot be used to open the application form.
+- `continue_url`: The same continuation link that has been emailed to the parent. A sending system can present this
+  directly — as a “Continue your application” button after a payment, for instance — so that the parent does not have
+  to wait for the email. The link expires after 7 days and may be used at most 20 times.
+
+```json
+{
+  "data": {
+    "application": "6ESKmQYMWH3KbJUdAESsZUi3BysaLx",
+    "continue_url": "https://demo.adam.co.za/api/click/dHrLPUuoSHi0tbAkNsX2NwYtoxlLPqIYr8ozfQxWCcIS7uzUEq"
+  },
+  "message": "",
+  "response": {
+    "error": "OK",
+    "code": 200
+  }
+}
+```
+
+The continuation link is the only credential that opens the application, and it is exactly the secret contained in the
+parent’s email. It must be transmitted over HTTPS and must not be written to logs.
+
+The email is sent whether or not the sending system uses `continue_url`.
+
+#### Errors {#applicationscreatepost-errors}
+
+Every failure is reported as `400 (Bad request)` and nothing is created — there are no half-made applications to clean
+up. Where more than one thing is wrong, all of the messages are returned together in `response.error`.
+
+- `Body of request not understood.` — the body was empty or could not be read.
+- `A valid email address is required.`
+- `A primary ID number is required.`
+- `Invalid number of children; cannot continue.` — fewer than one, or more than five.
+- `Unknown family fields: <list>` / `Unknown pupil fields (child <n>): <list>` — a field name that is not accepted on
+  the application form.
+- `Locked pupil index out of range: <n>` — locked information sent for a child beyond the number given in `children`.
+- `Read-only family field has no value: <field>` / `Read-only pupil field has no value (child <n>): <field>` — a field
+  was named as read-only but no value was supplied for it.
+- `Primary id number mismatch between idnumber and locked family_primary_idnum.` — where `family_primary_idnum` is
+  locked it must be identical to `idnumber`.
+
+If the application cannot be written to the database, `500 (Internal server error)` is returned with the error
+`Unable to create application.`
+
+#### Existing families {#applicationscreatepost-existingfamilies}
+
+If the ID number matches a family already in ADAM, the application is linked to that family and the parent is not asked
+to complete the family section again. In that case locked **family** fields are stored but are not written to the
+existing family record when the application is approved; this is the same protection that stops an application
+overwriting an existing family’s details. Locked **pupil** fields are applied as normal. Sending systems whose locked
+information is about the children — payment references and the like — are unaffected by this.
+
 ### Applications/verifyid:get
 
 Checks whether an ID number is associated with an existing family login account.
