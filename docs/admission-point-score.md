@@ -65,7 +65,7 @@ Above the list is an **export to Excel** link. Click it to download the same gra
 
 APS can also be shown as a small card on a pupil’s **overview** (profile) screen. The card lists each active definition with the pupil’s score for the current reporting period, and offers a **Compute / breakdown** link that opens the preview tool for the full per-subject working.
 
-The card is added through the same mechanism as any other overview block — see [Profile Overview Customisation](profile-overview-customisation.md#profile-overview-customisation). When editing an overview layout, add a block, choose to display a **widget**, and select the **Admission Point Score** widget from the list.
+The card is added through the same mechanism as any other overview block — see [Profile Overview Layouts](profile-overview-customisation.md#profile-overview-layouts). When editing an overview layout, add a block, set its **Contents** to **Widget**, and select the **Admission Point Score** widget from the list.
 
 !!! note
     The card only appears for staff who hold the **View & Compute APS** privilege, and only when there is at least one enabled definition and a current reporting period to score. If any of these is missing, the block is simply left off the page.
