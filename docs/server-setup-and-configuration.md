@@ -63,13 +63,40 @@ Where schools opt to manage their own servers, all server support options will b
 We require that you run ADAM on an Ubuntu Server operating system, with Ubuntu 24.04 LTS being the current recommended version. This server should be used only for ADAM and no other software. We cannot guarantee that other software will conflict with ADAM if running on the same server.
 
 -   Apache: 2.4
--   PHP: 8.2
+-   PHP: 8.4
 
--   PHP 8.4 will be a requirement for new servers from July 2025.
+-   PHP 8.6 will be set as a requirement in the first half of 2027.
 
 -   MySQL: 8.0
 
 In order for the server to receive updates, we require that the server is accessible from the greater internet via SSH. As part of the server setup in the initial stages of onboarding your school with ADAM, we will assist you in configuring the server to only allow certificate-based authentication.
+
+### Setting the server’s time zone
+
+PHP itself must be configured with the same time zone as ADAM is set to use. This is done with the
+`date.timezone` setting in PHP’s own configuration — for South African schools:
+
+    date.timezone = Africa/Johannesburg
+
+It must be set for every way PHP is run on the server (the web server, and the command line), because
+ADAM checks the clock very early in each request, before it has applied the school’s own time zone
+setting.
+
+!!! warning
+    If PHP has no time zone of its own it falls back to UTC, and the times ADAM records for staff
+    logins are then two hours behind. Because those times are read back on the very next request and
+    look like a long period of inactivity, **staff are logged out immediately after logging in**.
+    There is nothing in the logs to explain it. This is most likely to happen after a PHP upgrade
+    that quietly discards an existing configuration file.
+
+To check that the two agree, run the following from the ADAM folder on the server:
+
+    php adam env:check
+
+It reports either that the environment is in order, or exactly which two zones disagree and what to
+set. It compares the zones by the actual time they give rather than by name, so equivalent spellings
+are accepted, and it checks at two points six months apart so that a mismatch which only shows up
+under daylight saving is still caught.
 
 ## Editing the configuration file
 
