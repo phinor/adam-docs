@@ -118,3 +118,26 @@ Choose which type of scratch list fields you want to manage and click on the **e
 -   Hidden: In an attempt to simplify the scratch list options, some options can appear hidden at first. If there are any hidden fields, ADAM will show an option to toggle the hidden fields on and off.
 
 Once you’re done editing these options, click on the **Save** button at the bottom of the screen.
+
+### Restoring the Default Settings
+
+Every scratch list field has a set of default settings — its name, its category, its position in the
+list and its three options — that ADAM ships with. Anything you change on this screen is stored as
+*your school’s customisation* of that field, sitting on top of those defaults.
+
+That means a customisation can always be undone:
+
+-   To restore a **single field**, click on the **Reset** button at the end of its row. ADAM asks you
+    to confirm, and then restores that field’s name, category and options to the shipped defaults.
+-   To restore **every field of this type at once**, click on **Restore all defaults** at the bottom
+    of the screen. This discards every customisation for the fields on this screen, so ADAM asks you
+    to confirm before doing it.
+
+Neither option deletes any pupil, family or staff information — they only affect how the fields
+themselves are named, grouped and offered.
+
+!!! note
+    Because only genuine customisations are stored, improvements that ADAM makes to a field’s default
+    name now reach your school automatically, instead of being masked by a stored copy of the old
+    name. If a field is showing a name your school has never chosen — an old or plainly wrong one —
+    resetting that field is the quickest way to pick up the corrected default.
