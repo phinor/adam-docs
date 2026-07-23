@@ -23,9 +23,9 @@ A successful passkey login satisfies the Two-Factor Authentication requirement o
 
 ### Setting Up a Passkey for Staff
 
-The first time a staff member logs in after passkeys are enabled, their dashboard will display a card titled “Log in with your fingerprint or face”, with a Set up a passkey button. Clicking the button takes the staff member to the Passkeys management page.
+Whenever a staff member signs in without using a passkey — for example with their username and password — their dashboard displays a card titled “Log in with your fingerprint or face”, with a Set up a passkey button. Clicking the button takes the staff member to the Passkeys management page.
 
-Once a passkey has been registered, the dashboard card disappears. To return to the Passkeys management page after that, see [Managing Your Passkeys](#managing-your-passkeys) below.
+The card is hidden whenever the staff member signs in with a passkey (and on administrator “log in as” sessions), so it stays out of the way once a passkey is in use on that device. It will reappear on any later password login — for example on a shared computer where no passkey has been set up — as a reminder that a passkey can be added there too. To return to the Passkeys management page at any time, see [Managing Your Passkeys](#managing-your-passkeys) below.
 
 To register a new passkey:
 
@@ -43,7 +43,7 @@ Parents and pupils manage their passkeys through the portal:
 
 The Pupil Portal menu item is only shown to pupils whose accounts have logins enabled (see [Enabling and Disabling Pupil Logins](#enabling-and-disabling-pupil-logins)).
 
-Until the user has registered their first passkey, the top of the portal page will also show a “Log in with your fingerprint or face” card with a Set up a passkey button, which is a shortcut to the same page. The registration steps are the same as those described under [Setting Up a Passkey for Staff](#setting-up-a-passkey-for-staff).
+Whenever a parent or pupil signs in without using a passkey, the top of the portal page will also show a “Log in with your fingerprint or face” card with a Set up a passkey button, which is a shortcut to the same page. As with staff, the card is hidden only on sessions where the user signed in with a passkey, so it will reappear on any later password login. The registration steps are the same as those described under [Setting Up a Passkey for Staff](#setting-up-a-passkey-for-staff).
 
 ### Managing Your Passkeys
 

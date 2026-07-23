@@ -90,7 +90,7 @@ You may find that ADAM gives you a warning message that “No information is per
 
 If your phone, tablet or laptop supports a fingerprint reader, face recognition, or a screen-lock PIN, you can choose to log in with a passkey instead of typing your ID number and password. A passkey is a small piece of information that lives on your device. To log in, you simply tap a button on the ADAM log-in page and confirm with your fingerprint or face — ADAM never sees your fingerprint or face, only the “yes, this is the right person” answer from your device.
 
-To set up a passkey, log in with your ID number and password as usual. At the top of your portal page, ADAM will display a card titled “Log in with your fingerprint or face” with a Set up a passkey button. Click it, give the passkey a name (for example, “My phone”), and confirm with your device’s biometric or PIN.
+To set up a passkey, log in with your ID number and password as usual. At the top of your portal page, ADAM will display a card titled “Log in with your fingerprint or face” with a Set up a passkey button. Click it, give the passkey a name (for example, “My phone”), and confirm with your device’s biometric or PIN. The card appears whenever you log in with your ID number and password rather than a passkey, so you may still see it on a device where you have not yet added a passkey.
 
 From then on, when you visit the parent log-in page, you can click Log in with a passkey instead of entering your ID and password. The button is only shown when your browser supports passkeys; if it is not visible, just continue to log in with your ID number and password as before.
 

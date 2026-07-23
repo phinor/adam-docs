@@ -29,7 +29,7 @@ You can add as many passkeys to your ADAM account as you like - typically one fo
 
 ### If you are a staff member
 
-Staff who have not yet enrolled a passkey will see a card titled “Log in with your fingerprint or face” on their dashboard, with a **Set up a passkey button**. Clicking it opens the Passkeys management page. From there, click **Register a new passkey**, and confirm with the device’s fingerprint, face scan or PIN. The new passkey is then listed on the management page.
+Whenever you sign in **without** using a passkey — for example with your username and password — your dashboard shows a card titled “Log in with your fingerprint or face”, with a **Set up a passkey** button. Clicking it opens the Passkeys management page. From there, click **Register a new passkey**, and confirm with the device’s fingerprint, face scan or PIN. The new passkey is then listed on the management page. You will not see the card on sessions where you signed in with a passkey, so once you are logging in with a passkey on a device the prompt stays out of your way — but it will reappear if you later log in with your password (for example on a shared or public computer).
 
 To register additional pass keys you can:
 
