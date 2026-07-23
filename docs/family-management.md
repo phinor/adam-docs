@@ -41,16 +41,16 @@ Navigate to **Families → Family Administration → Merge two families into one
 
 ADAM will ask you for two families.
 
-It is important to note that the **primary** parent in each family will be used to make the merged family. If there is a secondary parent, they will be split off into a separate family. If you need to move the **secondary** parent into the new merged family, you can either first [swap the parents](#swapping-parents-in-a-family) so that the secondary parent becomes the primary parent in the original family, or, which makes more sense, [split the family into two](#splitting-a-family-in-two) first.
+It is important to note that the **primary** parent in each family will be used to make the merged family. If you need to move a **secondary** parent into the new merged family, you can either first [swap the parents](#swapping-parents-in-a-family) so that the secondary parent becomes the primary parent in the original family, or, which makes more sense, [split the family into two](#splitting-a-family-in-two) first.
 
 The primary parent of the family that you search for first will become the primary parent in the merged family. The primary parent of the family that you search for second will become the secondary parent in the merged family. If you get these the wrong way around, you can always [switch the primary and secondary parents](#swapping-parents-in-a-family) after you’ve merged.
 
-If there are secondary parents in either of the families that you choose to merge, they will automatically be [split off into their own families](#splitting-a-family-in-two) before the merge takes place. Please check the important notes about splitting a family in that section.
+If a family you choose to merge has a secondary parent, that parent is separated from the primary parent before the merge takes place. For the **first** family, its secondary parent is [split off into a new family](#splitting-a-family-in-two). For the **second** family, its secondary parent stays behind in the original family and keeps that household’s existing history (its communication records and uploaded documents), while its primary parent joins the merged family. Please check the important notes about splitting a family in that section.
 
 !!! warning
-    When merging two families, their history on ADAM is generally **not** merged. This includes communication records, uploaded documents and so on.
+    When you merge two families, the communication records and uploaded documents belonging to the second family follow into the merged family rather than being lost. The parent who joins the merged family also keeps their own login and password.
 
-    When merging, you are advised to [swap](#swapping-parents-in-a-family) and [split](#splitting-a-family-in-two) parents to be merged from their existing families so that their history remains with the appropriate family. When splitting, note that the primary parent retains history.
+    If you want a particular parent’s history to stay with a particular family, [swap](#swapping-parents-in-a-family) and/or [split](#splitting-a-family-in-two) the families first, so that the history sits where you want it before you merge.
 
 ![](assets/screenshots/family-management/family-management-02.png)
 
@@ -74,7 +74,7 @@ To confirm the operation, click on the **Split** button at the bottom of the scr
 The children that were linked to the family will automatically be linked to both families.
 
 !!! warning
-    Note that the secondary parent’s family will contain no history - no record of communication, logins, etc. This is because in this process, ADAM has created a brand new family.
+    Note that the secondary parent’s new family will contain no communication history or uploaded documents, because ADAM creates a brand new family in this process. However, that parent keeps their own login and password, so they can still sign in with their existing credentials.
 
 ## Swapping Parents in a Family
 
