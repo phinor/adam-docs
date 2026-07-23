@@ -67,6 +67,13 @@ Access is only granted if all three steps can be followed.
 
 ### Configuring POP3 Authentication
 
+!!! warning
+    POP3 authentication is not secure. As such, we are removing this as an authentication option from ADAM with effect from 1 October 2026. We recommend using OAuth authentication instead, such as **Sign in with Google** or **Sign in with Microsoft**.
+
+    Schools that are using POP3 Authentication will see a warning banner appear which will notify the administrators how many staff and pupils are affected. To get actual names of staff and pupils, you can create a **scratchlist by filter** and use the **Authenticate** field in your filter, being equal to "POP3".
+
+    If no action is taken, these users will be unable to log in, starting from 1 October 2026. On this date, their authentication method will be changed to "suspended" which will prevent logins until they are updated to another method.
+
 In order for ADAM to process POP3 authentication, it must be given a POP3 server to use. This is done in the “**Site Settings**” page (**Administration** / **Site** **Administration** / **Edit Site Settings**) and clicking on the “**Security**” tab.
 
 ![](assets/screenshots/configuring-logins/configuring-logins-05.png)
@@ -186,7 +193,7 @@ Note that simply allowing the menu option to appear will not automatically allow
 Pupil logins can be enabled and their authentication method set on the “Site Settings” page (Administration / Site Administration / Edit Site Settings) and clicking on the “Pupil & Family Login” section. Once there, the “Allow pupil logins?” option should be set to “Yes”.
 
 !!! warning
-    The authentication method used for pupils is a global setting and cannot be controlled individually. They can either make use of the Active Directory LDAP Authentication or the POP3 Authentication as used and described in the Staff Logins section.
+    The authentication method used for pupils is a global setting and cannot be controlled individually. They can either make use of the Active Directory LDAP Authentication or the POP3 Authentication as used and described in the Staff Logins section. (POP3 authentication is being retired on 1 October 2026 — see the warning under [Configuring POP3 Authentication](#configuring-pop3-authentication) above.)
 
 Privileges for pupils are determined by [pupil login groups](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
