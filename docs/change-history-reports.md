@@ -1,6 +1,6 @@
 # Change History Reports
 
-ADAM keeps an audit trail of two areas that were previously hard to review after the fact: changes to your **staff security groups** and changes to your **site settings**. Each area has its own history report, described below.
+ADAM keeps an audit trail of several areas that were previously hard to review after the fact: changes to your **staff security groups**, changes to your **site settings**, and changes to **assessment marks and comments**. Each area has its own history report, described below.
 
 These reports only show what has happened – they are read-only. They do not let you undo a change, but they do let you see exactly who did what, and when.
 
@@ -70,3 +70,19 @@ The table lists every setting change, newest first:
     The Site Settings History page is visible to **super administrators** only.
 
 Separately from this report, ADAM also e-mails a digest whenever a site setting changes, so that administrators are alerted even if they do not check the history page. See [Changing Site Settings](changing-site-settings.md) for more on the settings themselves, and [Change Log Notifications](change-log-notifications.md) for how to watch individual settings for change alerts.
+
+## Assessment Mark Change History
+
+ADAM records every change to a pupil’s assessment marks and comments, so you can see who entered or changed a mark, and when. Unlike the two reports above, these views live with the mark book rather than under the Change Log menu, and they are read-only.
+
+There are two ways in:
+
+- **For one pupil on one assessment** – open the pupil’s marks and click the **View mark change history for this pupil...** link. This shows a **When / Who / Change** table of every recorded change to that pupil’s marks and comments. It is available to management (any class) and to a subject head (their own subject only).
+- **For one member of staff, across all subjects** – navigate to **Assessment → Assessment Analysis → Mark change history by staff**, choose the staff member, and ADAM lists every mark change that person made, with **When / Pupil / Change** columns. This is available to management only.
+
+Both views are described in more detail, including the columns and the history-start-date caveat, under [Viewing Who Changed a Mark](mark-book-administration.md#viewing-who-changed-a-mark).
+
+!!! note
+    Like the other audit trails, the mark history is only recorded from the date the feature was switched on for your school. An empty list means there is no recorded change since then, not that a mark was never changed.
+
+Seeing the mark history is **view-only** and does not grant the ability to change marks – it is deliberately separate from the mark-editing permissions, so that staff such as registrars can review changes without being able to make them.

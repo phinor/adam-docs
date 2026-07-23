@@ -123,6 +123,27 @@ Once you have finished capturing the marks, remember to click on the “Save res
 
 ADAM will then update the pupils’ term marks based on the current weightings of the assessments.
 
+## Viewing Who Changed a Mark
+
+ADAM keeps a history of every change made to a pupil’s marks and comments, so you can see who entered or changed a mark, and when. This is useful when a result is queried and you need to establish what happened.
+
+When you open an **individual pupil’s** marks for an assessment, a **View mark change history for this pupil...** link (with a clock icon) appears beneath the marks. Clicking it opens a **Mark history** page listing each change in date order, with three columns:
+
+| Column | Meaning |
+| ------ | ------- |
+| **When** | The date and time of the change. |
+| **Who** | The staff member who made the change. A change that ADAM could not attribute to a person — for example one made directly in the database — is shown as **Unknown (not attributed)** rather than left blank. |
+| **Change** | A plain-language description of what happened, such as “Set the mark to 33”, “Changed the mark from 33 to 45”, “Cleared the mark (was 33)”, or a change to the comment. |
+
+!!! note
+    The history is only recorded from the date this feature was switched on for your school. The page always shows that date, and changes made before it are not listed. An empty list therefore means “there is no recorded change since we started keeping history”, **not** that a mark was never changed.
+
+This is a **view-only** report — being able to see the history does not grant the ability to change marks. It is available to management (who can view the history for any class) and to a subject head (who can view it for their own subject only). To see the changes made by a particular member of staff across all subjects, see [Mark change history by staff](#mark-change-history-by-staff) below.
+
+### Mark change history by staff
+
+Management can also review every mark change made by a single member of staff, across all subjects. Navigate to **Assessment → Assessment Analysis → Mark change history by staff**, choose the staff member, and ADAM lists their changes with **When**, **Pupil** and **Change** columns. The same history-start-date note above applies, and this report requires the *View mark history for any class* permission.
+
 ## Weighting Assessments and Assessment Categories
 
 After the marks are collected, it will be necessary to ensure that the weightings for the assessment is done correctly. A handy management screen is available to adjust these weightings without having to revisit each assessment.
