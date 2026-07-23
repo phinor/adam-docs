@@ -3279,6 +3279,363 @@ GET /api/reporting/previousreports/<pupil>
 
 Data attribute contains previous report table data.
 
+!!! note "Report detail endpoints and publication"
+    The four `reporting/…` endpoints that follow (and their `reporting/grade/…` counterparts) expose the
+    detail that appears on a pupil's printed report — subject comments, learning outcomes, assessment
+    standards and behavioural indicators — as JSON. Every value is read through the same report engine
+    that renders the PDF, so the figures match the printed report exactly.
+
+    **Only published reporting periods are exposed.** A period is published once its publish date and time
+    has passed (see `period_publish` under [Reporting/periods](#reportingperiodsget-response)). Behaviour
+    for the period identifier supplied in the request:
+
+    - Period not yet published → `403 (Forbidden)`, with no data.
+    - Period identifier not recognised → `400 (Bad Request)`.
+    - Published period with no captured detail → `200 (OK)` with an empty `data` array.
+
+    Wherever a value has not been captured it is returned as `null`. This covers absent marks and any text
+    field left blank on the report.
+
+### Reporting/comments:get
+
+Returns the subject comments and result summary for a pupil's report in a published reporting period.
+
+#### Request {#reportingcommentsget-request}
+
+```
+GET /api/reporting/comments/<pupil>/<period>
+```
+
+#### Parameters {#reportingcommentsget-parameters}
+
+- `<pupil>`: ADAM internal pupil identifier (required).
+- `<period>`: Reporting period identifier (required). The period must be published (see the note above).
+
+#### Response {#reportingcommentsget-response}
+
+The **data** attribute contains an array with one object per reporting subject on the pupil's report.
+
+```json
+{
+  "data": [
+    {
+      "subject_id": 5,
+      "subject_name": "Mathematics",
+      "subject_short": "Maths",
+      "subject_category_id": 2,
+      "class_id": 812,
+      "class_friendly": "10A Maths",
+      "teacher_name": "Mr Smith",
+      "comment": "A pleasing term's work.",
+      "comment_generic": null,
+      "result_term": 78,
+      "result_ytd": 74.5,
+      "symbol_term": "B",
+      "symbol_ytd": "B",
+      "level": null
+    }
+  ],
+  "message": "",
+  "response": {
+    "error": "OK",
+    "code": 200
+  }
+}
+```
+
+- `subject_id` is the internal identifier for the subject in ADAM (see [Reporting/results](#reportingresultsget-response)).
+- `subject_name` is the subject's full name.
+- `subject_short` is the subject's short name.
+- `subject_category_id` is the identifier of the subject category the subject belongs to.
+- `class_id` is the identifier of the class the pupil is registered in for this subject.
+- `class_friendly` is a human-readable class name, or `null` if none is configured.
+- `teacher_name` is the class teacher's name, or `null`.
+- `comment` is the pupil's subject comment for this period, or `null` if none was captured.
+- `comment_generic` is the generic (shared) subject comment, or `null`.
+- `result_term` is the term result as a **float**, or `null` if absent.
+- `result_ytd` is the year-to-date result as a **float**, or `null` if absent.
+- `symbol_term` is the term result symbol, or `null`.
+- `symbol_ytd` is the year-to-date result symbol, or `null`.
+- `level` is the subject level descriptor, or `null`.
+
+### Reporting/outcomes:get
+
+Returns the learning outcomes captured on a pupil's report in a published reporting period.
+
+#### Request {#reportingoutcomesget-request}
+
+```
+GET /api/reporting/outcomes/<pupil>/<period>
+```
+
+#### Parameters {#reportingoutcomesget-parameters}
+
+- `<pupil>`: ADAM internal pupil identifier (required).
+- `<period>`: Reporting period identifier (required). The period must be published (see the note above).
+
+#### Response {#reportingoutcomesget-response}
+
+The **data** attribute contains an array with one object per populated learning outcome, across all of the
+pupil's subjects. Outcomes with no captured value are omitted, matching the printed report.
+
+```json
+{
+  "data": [
+    {
+      "subject_id": 5,
+      "outcome_id": 41,
+      "outcome_number": "1",
+      "outcome_name": "Numbers, Operations and Relationships",
+      "outcome_description": "Recognises, describes and represents numbers.",
+      "symbol": "4",
+      "symbol_name": "Adequate",
+      "symbol_description": "Adequate achievement (50 – 59%)",
+      "mark": null,
+      "weighting": 25,
+      "comment": null
+    }
+  ],
+  "message": "",
+  "response": {
+    "error": "OK",
+    "code": 200
+  }
+}
+```
+
+- `subject_id` is the subject the learning outcome belongs to.
+- `outcome_id` is the internal identifier of the learning outcome.
+- `outcome_number` is the outcome's display number.
+- `outcome_name` is the outcome's name.
+- `outcome_description` is the outcome's longer description.
+- `symbol` is the captured symbol/level for the outcome, or `null`.
+- `symbol_name` is the name associated with that symbol, or `null`.
+- `symbol_description` is the description associated with that symbol, or `null`.
+- `mark` is the numeric mark for the outcome as a **float**, or `null` when the outcome is assessed by symbol rather than a mark.
+- `weighting` is the outcome's weighting as a **float**, or `null`.
+- `comment` is the outcome comment, or `null`.
+
+### Reporting/standards:get
+
+Returns the assessment standards captured on a pupil's report in a published reporting period.
+
+#### Request {#reportingstandardsget-request}
+
+```
+GET /api/reporting/standards/<pupil>/<period>
+```
+
+#### Parameters {#reportingstandardsget-parameters}
+
+- `<pupil>`: ADAM internal pupil identifier (required).
+- `<period>`: Reporting period identifier (required). The period must be published (see the note above).
+
+#### Response {#reportingstandardsget-response}
+
+The **data** attribute contains an array with one object per assessment standard that has a captured symbol,
+across all of the pupil's learning outcomes. Standards with no captured symbol are omitted, matching the
+printed report.
+
+```json
+{
+  "data": [
+    {
+      "subject_id": 5,
+      "outcome_id": 41,
+      "criterion_id": 233,
+      "criterion_number": "1.1",
+      "criterion_name": "Counts objects",
+      "criterion_description": "Counts to at least 100 everyday objects reliably.",
+      "symbol": "3"
+    }
+  ],
+  "message": "",
+  "response": {
+    "error": "OK",
+    "code": 200
+  }
+}
+```
+
+- `subject_id` is the subject the assessment standard belongs to.
+- `outcome_id` is the learning outcome the standard falls under.
+- `criterion_id` is the internal identifier of the assessment standard (criterion).
+- `criterion_number` is the standard's display number, or `null`.
+- `criterion_name` is the standard's name, or `null`.
+- `criterion_description` is the standard's longer description, or `null`.
+- `symbol` is the captured symbol for the standard, or `null`.
+
+### Reporting/indicators:get
+
+Returns the behavioural indicators captured on a pupil's report in a published reporting period.
+
+#### Request {#reportingindicatorsget-request}
+
+```
+GET /api/reporting/indicators/<pupil>/<period>
+```
+
+#### Parameters {#reportingindicatorsget-parameters}
+
+- `<pupil>`: ADAM internal pupil identifier (required).
+- `<period>`: Reporting period identifier (required). The period must be published (see the note above).
+
+#### Response {#reportingindicatorsget-response}
+
+The **data** attribute contains an array with one object per behavioural indicator captured against a
+subject. Behavioural indicators are configured per grade and period, so a period/grade without a
+behavioural-indicator configuration returns an empty array.
+
+```json
+{
+  "data": [
+    {
+      "subject_id": 5,
+      "descriptor": "Participates in class",
+      "value": "Often"
+    }
+  ],
+  "message": "",
+  "response": {
+    "error": "OK",
+    "code": 200
+  }
+}
+```
+
+- `subject_id` is the subject the behavioural indicator was captured against.
+- `descriptor` is the behavioural indicator descriptor.
+- `value` is the captured value for the indicator, or `null`.
+
+### Reporting/grade/comments:get
+
+Returns the same detail as [Reporting/comments](#reportingcommentsget-response), but for **every pupil**
+registered for a given subject in a given grade during a published reporting period, rather than a single
+pupil.
+
+Each row carries two extra leading keys — `pupil_id` and `pupil_admin` — identifying the pupil the row
+belongs to. The remaining keys are exactly those of the pupil-scoped endpoint. The publication rules and
+`null` handling described in the note above apply identically.
+
+#### Request {#reportinggradecommentsget-request}
+
+```
+GET /api/reporting/grade/comments/<grade>/<subject>/<period>
+```
+
+#### Parameters {#reportinggradecommentsget-parameters}
+
+- `<grade>`: The grade identifier (required). Values are integers between -3 (Grade 0000) and 13 (Post Matric); negative values denote pre-primary grades.
+- `<subject>`: The internal subject identifier (required).
+- `<period>`: Reporting period identifier (required). The period must be published (see the note above).
+
+#### Response {#reportinggradecommentsget-response}
+
+The **data** attribute contains an array with one object per subject **per pupil** in the cohort.
+
+```json
+{
+  "data": [
+    {
+      "pupil_id": 1754,
+      "pupil_admin": "55012",
+      "subject_id": 5,
+      "subject_name": "Mathematics",
+      "subject_short": "Maths",
+      "subject_category_id": 2,
+      "class_id": 812,
+      "class_friendly": "10A Maths",
+      "teacher_name": "Mr Smith",
+      "comment": "A pleasing term's work.",
+      "comment_generic": null,
+      "result_term": 78,
+      "result_ytd": 74.5,
+      "symbol_term": "B",
+      "symbol_ytd": "B",
+      "level": null
+    }
+  ],
+  "message": "",
+  "response": {
+    "error": "OK",
+    "code": 200
+  }
+}
+```
+
+- `pupil_id` is the internal identifier of the pupil the row belongs to.
+- `pupil_admin` is that pupil's user-provided identifier.
+- All remaining fields are as described under [Reporting/comments](#reportingcommentsget-response).
+
+### Reporting/grade/outcomes:get
+
+Returns the same detail as [Reporting/outcomes](#reportingoutcomesget-response), for every pupil registered
+for a given subject in a given grade during a published reporting period. Each row is prefixed with
+`pupil_id` and `pupil_admin`; the remaining fields match the pupil-scoped endpoint.
+
+#### Request {#reportinggradeoutcomesget-request}
+
+```
+GET /api/reporting/grade/outcomes/<grade>/<subject>/<period>
+```
+
+#### Parameters {#reportinggradeoutcomesget-parameters}
+
+- `<grade>`: The grade identifier (required). Values are integers between -3 (Grade 0000) and 13 (Post Matric); negative values denote pre-primary grades.
+- `<subject>`: The internal subject identifier (required).
+- `<period>`: Reporting period identifier (required). The period must be published (see the note above).
+
+#### Response {#reportinggradeoutcomesget-response}
+
+As [Reporting/outcomes](#reportingoutcomesget-response), with each row prefixed by `pupil_id` and
+`pupil_admin`.
+
+### Reporting/grade/standards:get
+
+Returns the same detail as [Reporting/standards](#reportingstandardsget-response), for every pupil
+registered for a given subject in a given grade during a published reporting period. Each row is prefixed
+with `pupil_id` and `pupil_admin`; the remaining fields match the pupil-scoped endpoint.
+
+#### Request {#reportinggradestandardsget-request}
+
+```
+GET /api/reporting/grade/standards/<grade>/<subject>/<period>
+```
+
+#### Parameters {#reportinggradestandardsget-parameters}
+
+- `<grade>`: The grade identifier (required). Values are integers between -3 (Grade 0000) and 13 (Post Matric); negative values denote pre-primary grades.
+- `<subject>`: The internal subject identifier (required).
+- `<period>`: Reporting period identifier (required). The period must be published (see the note above).
+
+#### Response {#reportinggradestandardsget-response}
+
+As [Reporting/standards](#reportingstandardsget-response), with each row prefixed by `pupil_id` and
+`pupil_admin`.
+
+### Reporting/grade/indicators:get
+
+Returns the same detail as [Reporting/indicators](#reportingindicatorsget-response), for every pupil
+registered for a given subject in a given grade during a published reporting period. Each row is prefixed
+with `pupil_id` and `pupil_admin`; the remaining fields match the pupil-scoped endpoint.
+
+#### Request {#reportinggradeindicatorsget-request}
+
+```
+GET /api/reporting/grade/indicators/<grade>/<subject>/<period>
+```
+
+#### Parameters {#reportinggradeindicatorsget-parameters}
+
+- `<grade>`: The grade identifier (required). Values are integers between -3 (Grade 0000) and 13 (Post Matric); negative values denote pre-primary grades.
+- `<subject>`: The internal subject identifier (required).
+- `<period>`: Reporting period identifier (required). The period must be published (see the note above).
+
+#### Response {#reportinggradeindicatorsget-response}
+
+As [Reporting/indicators](#reportingindicatorsget-response), with each row prefixed by `pupil_id` and
+`pupil_admin`.
+
 ### Request/test:get
 
 A test method to the API.
