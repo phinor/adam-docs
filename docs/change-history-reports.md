@@ -83,6 +83,6 @@ There are two ways in:
 Both views are described in more detail, including the columns and the history-start-date caveat, under [Viewing Who Changed a Mark](mark-book-administration.md#viewing-who-changed-a-mark).
 
 !!! note
-    Like the other audit trails, the mark history is only recorded from the date the feature was switched on for your school. An empty list means there is no recorded change since then, not that a mark was never changed.
+    Like the other audit trails, the mark history is only recorded from the date the feature was switched on in mid-July 2026. An empty list means there is no recorded change **since mid-July 2026**, and not necessarily that a mark was *never* changed.
 
 Seeing the mark history is **view-only** and does not grant the ability to change marks – it is deliberately separate from the mark-editing permissions, so that staff such as registrars can review changes without being able to make them.
