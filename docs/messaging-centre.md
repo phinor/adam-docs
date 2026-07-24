@@ -147,7 +147,7 @@ To access the details of a specific batch, click on the **view** action.
 
 ![](assets/screenshots/messaging-centre/messaging-centre-12.png)
 
-The medium of the message, the sender of the message, the time that the message was loaded and the number of recipients is shown. ADAM also indicates the batch’s current status being either “waiting”, “processing”, “paused”, or “finished”.
+The medium of the message, the sender of the message, the time that the message was loaded and the number of recipients is shown. ADAM also indicates the batch’s current status, such as “waiting”, “processing”, “paused”, or “finished”. A batch that contains messages ADAM can no longer complete on its own is flagged as **⚠️ needs attention (stuck)** — see [Recovering stuck messages](#recovering-stuck-messages) below.
 
 ### Delaying a Batch
 
@@ -172,6 +172,20 @@ Click on the **Delay batch** button to delay any unsent messages to the time you
 ![](assets/screenshots/messaging-centre/messaging-centre-16.png)
 
 ADAM confirms that it has changed the delivery time.
+
+### Recovering stuck messages
+
+Occasionally an SMS batch can leave one or more messages in a state that no delivery worker will ever complete — for example, if a delivery run was interrupted before ADAM could record the outcome. Such a batch is flagged on the batch list as **⚠️ needs attention (stuck)**, and the affected messages show a status of **⁉️ Stuck (never sent)** when you open the batch.
+
+Open the batch to deal with these messages. Depending on what happened to each one, ADAM offers one or both of the following options at the top of the batch:
+
+-   **Re-queue … that never reached the SMS provider** – these messages were never handed to the SMS provider, so ADAM can safely send them again. Choosing this returns them to the queue for another delivery attempt.
+-   **Abandon … stuck … (they will not be resent)** – these messages may already have been sent, but ADAM was unable to confirm it. Because resending them could deliver a duplicate, ADAM will not send them again. Choosing this simply clears the stuck state; if the messages still need to go out, compose a new message.
+
+These options only appear when there are stuck messages to act on, and only for staff who are permitted to manage the batch (its owner, or a user with the privilege to re-queue error messages or to abort batches).
+
+!!! note
+    Only SMS batches can become stuck in this way. Email messages are claimed and sent in a single step, so they never enter this state.
 
 ## Sending SMSs from the Messaging Centre
 

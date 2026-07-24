@@ -270,6 +270,26 @@ At the bottom of the Admissions Records within the Pupil Information is a regist
 
 The privilege to edit the admissions log should not be given out lightly and can have unintended consequences.
 
+## Enrolment Reports
+
+ADAM provides two reports that show how many pupils are enrolled in each grade over time. Both are found on the **Admissions** tab under the **Reports** heading, and both use the same privilege used to view the pupil register.
+
+### Enrolment by reporting period
+
+Navigate to **Admissions → Reports → View enrolment by reporting period** to see the number of enrolled pupils per grade at the close of each reporting period.
+
+### Enrolment by month
+
+Navigate to **Admissions → Reports → View enrolment by month** to see the number of enrolled pupils per grade at the end of each calendar month.
+
+-   Choose a **From Month** and a **To Month** to set the range of months to report on. The start month must be on or before the end month.
+-   Tick **Include unofficial enrolments** to also count pupils whose registration status has **Formal Enrolment** set to “No” (for example, exchange students). By default only formally enrolled, active, current pupils are counted.
+-   Click **Show Report**.
+
+The report has one row per calendar month and one column per grade, plus a **Total** column. Each figure is the number of pupils registered in that grade on the last day of that month. Where the chosen range covers two or more months of the same calendar year, ADAM adds an **Average <year>** row after that year’s months, showing the average enrolment per grade across those months.
+
+To export the same figures to a spreadsheet, click the **Download XLSX** link shown above the report.
+
 ## Deregistration During A Reporting Period
 
 If a pupil is deregistered while any reporting is open, ADAM will behave slightly differently.
