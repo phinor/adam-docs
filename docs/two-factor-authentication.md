@@ -191,56 +191,6 @@ Most phones will set their time automatically from external sources - often from
 
 If this happens, there will be a mismatch between the codes that your phone generates and the code that the server is expecting.
 
-## Setting up your ADAM server for Two-Factor Authentication
-
-2FA is ready to be used by any individual staff member and no additional setup is required. However, it is possible to force that 2FA is used by all staff and some other settings that control how often the OTP is requested.
-
-### Two-Factor Authentication Settings
-
-Within the Site Settings, navigate to **Security** tab and scroll down to the **Login Settings** heading.
-
-The relevant settings are highlighted below:
-
-![](assets/screenshots/two-factor-authentication/two-factor-authentication-11.png)
-
-### 2FA Authentication Windows
-
-The **Two-Factor Authentication Window** determines how many OTPs should be allowed on either side of the window. Because OTPs are time-based, discrepancies in the user’s cellphone time and server time can play a factor.
-
-In most scenarios, these two clocks should be independently set (phones by GPS, servers by network time servers (NTP)) and should be very close to one another. This might not always be possible. To increase the life-span of an OTP, increase the window.
-
-Each window represents 30 seconds. The default setting is 2 and will cause the server to check OTPs 2 windows ahead and 2 windows behind its current time to allow for time discrepancies. This can be increased to 3 (not advised) which effectively increases the lifespan of any OTP to 3 minutes - 1,5 minutes behind and 1,5 minutes ahead of the server’s current time.
-
-1 is the most secure setting and 3 is the least secure setting. This is because smaller windows mean it is harder to “steal” and later use an OTP because it is valid for a shorter period of time.
-
-### Forced Use of 2FA
-
-Administrators can force all staff members to make use of Two-Factor Authentication by changing a setting the [Site Settings](changing-site-settings.md#changing-site-settings). Within the Site Settings, navigate to **Security** tab and scroll down to the **Login Settings** heading.
-
-Change the setting **Two-Factor Authentication Forced For Staff** to “Yes”.
-
-When implementing 2FA across your entire staff body, we encourage a phased in approach before implementing this setting. Please be sure to conduct training with your staff that use ADAM and get as many of them as possible to use the feature to [voluntarily enrol](#adding-two-factor-authentication-to-your-account) for two-factor authentication before it becomes a mandatory requirement.
-
-### Changing How Frequently is the OTP required
-
-The **Two-Factor Authentication Method** determines when users will be requested for their OTP. The default option is at every login, but this can be frustrating to users who make use of ADAM throughout the day. Other options are to remember it once per computer or once per computer per day.
-
-#### Require OTP at every login
-
-If this is set, your staff members will have to enter their OTP each time they log into ADAM. This is very secure, but can also be frustrating for your staff, especially for those that use it many times per day.
-
-#### Require OTP once per computer per day
-
-ADAM will ask the users once each day on each device that the user logs in with for their OTP. This is the best balance between security and usability without frustrating users too much.
-
-#### Require OTP once per computer
-
-Whenever ADAM detects that a user is using a new computer, it will ask them for an OTP. If they are using a computer that they’ve used in the past, ADAM won’t ask them for an OTP. This is normally fine for users who have dedicated computers that they alone use. Note that ADAM may still ask for an OTP from time-to-time, but it may be as infrequently as once per month.
-
-If the “once per computer” option is chosen, then ADAM will ask for the OTP each time the user logs in on a new computer. Have a look at the **Remember logged-in machines for** setting. This means that ADAM will forget about a computer after a certain number of days and will automatically re-ask for the OTP when it does.
-
-ADAM uses a cookie stored on the devices to remember its identity. If the cookies are cleared, ADAM will effectively see the computer as a new device and ask the user for their OTP. Cookies are also specific to user sessions, browsers and more. Switching to a different web-browser on the same computer will also count as a new device and will require a new OTP.
-
 ## Removing Two Factor Authentication for another staff member
 
 If a user is enrolled for Two Factor Authentication, they can remove 2FA authentication by clicking on the **Administration tab**, and then under the **Security Administration** heading clicking on **Manage Two-Factor Authentication for staff**, and then clicking on the **Remove 2FA** option next to their name in the list.
