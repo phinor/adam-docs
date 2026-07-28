@@ -1120,6 +1120,111 @@ GET /api/classes/bygradeperiodsubject/<grade>/<period>/<subject>
 }
 ```
 
+### Classes/list:get
+
+Returns every current class in the school, with its subject, grade, teacher, teaching assistants, venue, category, and the number of pupils currently enrolled in it. This is the same set of classes shown by the **List of All Classes** report in ADAM.
+
+Classes that have been deleted are not included.
+
+#### Request {#classeslistget-request}
+
+```
+GET /api/classes/list
+```
+
+#### Parameters {#classeslistget-parameters}
+
+This endpoint takes no parameters.
+
+#### Response {#classeslistget-response}
+
+```json
+{
+    "data": [
+        {
+            "id": 42,
+            "subject_id": 7,
+            "subject": "Mathematics",
+            "subject_short": "MAT",
+            "description": "Maths 8A",
+            "fulldescription": "Mathematics 8A (J Smith)",
+            "grade": 8,
+            "gradetext": "Grade 8",
+            "grade_id": 4,
+            "gradelevel": "Senior Phase",
+            "teacher_id": 19,
+            "teacher_name": "Mr J Smith",
+            "teaching_assistants": [
+                {
+                    "id": 23,
+                    "name": "Mrs A Bell"
+                }
+            ],
+            "venue": "Room 12",
+            "category_id": 1,
+            "category": "Academic",
+            "pupils": 27
+        }
+    ],
+    "message": "",
+    "response": {
+        "error": "OK",
+        "code": 200
+    }
+}
+```
+
+The `data` attribute contains one object per class, ordered as the List of All Classes report orders them — by category, then subject, then grade and class description.
+
+`teaching_assistants` contains zero or more staff objects. `pupils` is the number of pupils currently enrolled, and matches the number of records returned by [Classes/pupils:get](#classespupilsget) for the same class.
+
+Note that the `grade` property can be negative to represent pre-school grades (e.g. Grade 0 = Grade R, Grade -1 = Grade RR, and so on). It is `null` for a class that is not tied to a particular grade.
+
+### Classes/pupils:get
+
+Returns the pupils who are currently enrolled in a particular class, together with the date on which each pupil's registration in that class began.
+
+#### Request {#classespupilsget-request}
+
+```
+GET /api/classes/pupils/<class>
+```
+
+#### Parameters {#classespupilsget-parameters}
+
+-   `<class>`: The class identifier (URL path parameter, required). Class identifiers are returned by [Classes/list:get](#classeslistget).
+
+#### Response {#classespupilsget-response}
+
+```json
+{
+    "data": [
+        {
+            "id": 1183,
+            "admin": "A2021-044",
+            "firstname": "Thandi",
+            "lastname": "Mokoena",
+            "grade": 8,
+            "datestart": "2026-01-12"
+        }
+    ],
+    "message": "",
+    "response": {
+        "error": "OK",
+        "code": 200
+    }
+}
+```
+
+The `data` attribute contains one object per pupil, ordered by surname and then first name. `datestart` is the date the pupil's registration in this class began, in `YYYY-MM-DD` format.
+
+The list reflects who is in the class **today**. A pupil appears only if their registration in the class covers today *and* they are still enrolled at the school — pupils who have left are not included, even if their class registration was never formally ended. For this reason the number of records returned always matches the `pupils` count given by [Classes/list:get](#classeslistget).
+
+A class with nobody currently enrolled in it returns an empty `data` list with a 200 response code.
+
+-   Code 200: The class exists; `data` contains the (possibly empty) list of pupils
+-   Code 404: No such class, or the class has been deleted
+
 ### Cron/cronlog:get
 
 Returns cron job execution logs. Restricted to super-admin tokens.
