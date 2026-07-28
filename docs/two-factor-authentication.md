@@ -10,7 +10,10 @@ An account protected with Two-Factor Authentication will not allow a login witho
 
 ADAM’s two-factor authentication system works using an Authenticator App that must be installed onto your phone. The Authenticator App will generate the One Time PIN. It is not sent by SMS and it is not linked to any specific phone number. After it has been set up, the app will not require any airtime or data to use.
 
-***NB: 2FA is automatically enforced for all elevated privilege accounts. Schools can optionally require that all staff make use of 2FA. Any staff member can add 2FA to their account using voluntary enrolment.***
+!!! warning
+    From **1 January 2027**, two-factor authentication is required for every staff member who uses ADAM. You do not need to wait for that date — you can set it up now, and we would encourage you to. Once the requirement takes effect, ADAM will ask you to set it up the next time you sign in, and you will not be able to use ADAM until you have.
+
+Two-factor authentication is already required for accounts with elevated privileges, whatever your school has chosen.
 
 ## Supported Authenticator Apps
 
@@ -36,47 +39,46 @@ If your school makes use of Google Workspace, we recommend using the Google Auth
 
 First, [download and install an authenticator app](#supported-authenticator-apps) from your app store.
 
-Visit your ADAM login screen and login as normal.
+You can reach the setup page in two ways. If ADAM is waiting for you to set two-factor authentication up, it takes you there itself the next time you sign in. Otherwise, sign in as normal, click on the **Staff tab**, and then under the **Security Administration** heading click on **Manage your Two-Factor Authentication**.
 
-**Compulsory Enrolment:** If you are forced to add 2FA to your account, you will immediately be taken to the following screen after you log in to set up 2FA.
+The setup page asks you to do two things, in order.
 
-**Voluntary Enrolment:** If you are enabling 2FA voluntarily, visit **Staff → Security Administration → Manage Two-Factor Authentication**.
+### Step 1: Scan this code
 
-ADAM will display the following screen:
+ADAM shows a QR code alongside a written **Two-Factor Authentication Secret**. Scanning the code is simply a shortcut that saves you typing the secret into your phone by hand — the two carry the same information.
 
 ![](assets/screenshots/two-factor-authentication/two-factor-authentication-04.png)
 
-*Note that in the picture above, we have intentionally corrupted the QR code so that you cannot scan this example! You must scan the QR code that appears on* ***your*** *screen! That QR code contains the “Two-Factor Authentication Secret” which is shown below. Scanning the QR cide is a short-cut to save you from having to type that secret code into your phone.*
+!!! note
+    The QR code in the picture above has been deliberately corrupted so that it cannot be scanned. Scan the code on **your own screen** — every account's code is different.
 
-Now, open the two-factor authenticator app that you installed from your app store. Find and choose the option to “Add a new account”. The app will ask for the necessary permissions to access the camera and scan the code.
-
-For example, in the Google Authenticator App, you would click on the “+” icon that appears at the bottom right of the screen:
+Open the authenticator app you installed, and choose its option to add a new account. The app will ask permission to use your camera so that it can scan the code. In the Google Authenticator app, for example, this is the **+** button at the bottom right of the screen.
 
 ![](assets/screenshots/two-factor-authentication/two-factor-authentication-05.png)
 
 *An example of three accounts that have been set up for Two-Factor Authentication and how they appear in the Google Authenticator App. If you use a different App, it will look different!*
 
-Once the QR code has been scanned, and confirmed, The Authenticator App will then show the account in the list, and a six-digit number will appear below it.
+Once the code has been scanned, the app lists the account and shows a six-digit number beneath it. That number changes every thirty seconds.
 
-The last step is to confirm to ADAM that the secret has been successfully saved in your Authenticator App. Do this by entering in the One-Time PIN that is shown on your app to confirm. Type it in to the **Confirmation Code** block.
+### Step 2: Enter the six digits
+
+The last step tells ADAM that your app really did save the secret. Type the six digits currently shown in your app into the **Confirmation Code** box, and click on **Add Two-Factor Authentication Protection**.
 
 ![](assets/screenshots/two-factor-authentication/two-factor-authentication-06.png)
 
-Finally, click on the button at the bottom of the screen: **Add Two-Factor Authentication Protection** to confirm the PIN and add 2FA to your account.
-
-If you entered the confirmation PIN correctly, you will see this screen:
+If the digits were correct, ADAM confirms that two-factor authentication is now protecting your account, and shows you your recovery codes. **Do not leave that page without saving them** — see [Recovery codes](#recovery-codes) below.
 
 ![](assets/screenshots/two-factor-authentication/two-factor-authentication-07.png)
 
-If you entered the OTP incorrectly, ADAM will display an error message. Simply retry entering the PIN. If it fails again, you may need to re-scan the QR code.
+If ADAM says the code was wrong, the most likely reason is that the six digits changed while you were typing. Try again with the number now showing in your app. If it fails repeatedly, see the [frequently asked questions](#frequently-asked-questions) below.
 
 ## Removing Two-Factor Authentication
 
-Once you have added two-factor authentication, you can remove 2FA by visiting **Staff → Security Administration → Manage Two-Factor Authentication**. If it is enabled on your account, you will see the following:
+Once you have added two-factor authentication, you can remove 2FA by clicking on the **Staff tab**, and then under the **Security Administration** heading clicking on **Manage your Two-Factor Authentication**. If it is enabled on your account, you will see the following:
 
 ![](assets/screenshots/two-factor-authentication/two-factor-authentication-08.png)
 
-Click on the **Remove Two-Factor Authentication** option at the bottom to begin the process.
+Click on the **Remove Two-Factor Authentication** option at the bottom to begin the process. ADAM opens a page headed **Remove two-factor authentication**.
 
 You must then enter your ADAM password to confirm that you’d like to remove Two-Factor Authentication from your account:
 
