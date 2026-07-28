@@ -19,7 +19,7 @@ To sign in:
 3.  The browser will prompt for the device’s biometric (fingerprint or face) or PIN.
 4.  Once the gesture is recognised, ADAM signs the user in and takes them to their dashboard or portal home.
 
-A successful passkey login satisfies the Two-Factor Authentication requirement on its own — the user is not asked for a one-time PIN as well. See [Passkeys and Two-Factor Authentication](#passkeys-and-two-factor-authentication) below.
+Signing in with a passkey does not also ask for a one-time PIN — the passkey is itself a second factor. It does not, however, excuse the user from setting two-factor authentication up; see [Passkeys and Two-Factor Authentication](#passkeys-and-two-factor-authentication) below.
 
 ### Setting Up a Passkey for Staff
 
@@ -66,9 +66,11 @@ The Super-Administrator cannot rename a staff member’s passkey or register a n
 
 ### Passkeys and Two-Factor Authentication
 
-A passkey is itself a strong second factor (the device the passkey is stored on, plus the biometric or PIN that unlocks it), so when a user logs in with a passkey ADAM does not additionally prompt for a one-time PIN. This is true even when the Two Factor Authentication Forced for Staff setting (see [Login Settings](#login-settings)) is enabled.
+A passkey is itself a strong second factor — the device holding it, plus the biometric or PIN that unlocks it — so a user who signs in with a passkey is not asked for a one-time PIN as well. That remains true when **Two Factor Authentication Forced for Staff** is set to “Yes”.
 
-Users who log in with their username and password continue to be prompted for a one-time PIN exactly as before. The Two-Factor Authentication setting therefore continues to govern password-based logins, and is unaffected by passkey enrolment.
+What a passkey does **not** do is excuse a staff member from setting two-factor authentication up. Their password still works, and anyone who obtains it can still try to use it; the one-time PIN is what stops them. A staff member who signs in with a passkey but has not set up two-factor authentication will be asked to do so, exactly like anyone else.
+
+Users signing in with a username and password continue to be asked for a one-time PIN as before.
 
 ### Browser and Device Requirements
 
@@ -125,19 +127,9 @@ In Linux based networks it is possible to have ADAM use a pure LDAP server for a
 
 The **Login time out** is the amount of time in minutes that must elapse between any two page loads on ADAM before the user account is considered logged out. Note that typing a message (especially in the [Messaging Centre](messaging-centre.md#messaging-centre)) is not considered activity because there is no information going between the server and the client computer.
 
-The setting for **Remember logged-in machines** will set a long-term cookie on a computer which ADAM will then use to determine whether a user has logged in from that machine or not. If no user logs in on that machine within that length of time, ADAM will “forget” the machine and the user will consider to be logged in from a new machine. This has implications for Two-Factor Authentication settings (see below!)
+The **Remember logged-in machines** setting stores a long-term cookie on a computer so that ADAM can recognise it on a later visit. It works together with the two-factor authentication settings, and both are described in [Two-Factor Authentication for Administrators](two-factor-authentication-for-administrators.md#the-settings).
 
 Some schools may chose to **Allow “Remember Me” Logins**. This will prevent the login time-out from affecting the user. Schools should be cautioned against allowing this if the computers that staff use are often left unsupervised and unlocked (consider a desktop computer in a classroom which may have pupils in unsupervised, as opposed to a laptop which is more likely to be turned off and locked). The number of days that ADAM can remember a user for can be set with the **Remember Me Duration** setting.
-
-The **Two Factor Authentication Window** allows users a more gracious sliding window with which to use their one-time PINs. Each window is 30s and is defined by the current time of day as determined by the server. OTPs require the time windows to align on the server and client devices. This can cause issues where users are using devices that may not be synchronised accurately to network time, or, indeed, the server is not accurately synchronized.
-
-When the setting is set to 1, for example, ADAM will check both the current window as well as the 1 window before and 1 window after to check if the OTP supplied would be valid in any of them. This allows for approximately 30 seconds leeway in terms of time slippage. A window setting of 3 would allow 90 seconds of time slippage.
-
-Where device and server times are accurate, a setting more than 2 is discouraged.
-
-ADAM can enforce a number of different **Two Facor Authentication Method** policies. Administrators can require OTPs from users at each login, once per computer per day or, the most lenient, once per computer. Where staff make use of shared computers without unique user accounts, the “once per computer” option is strongly discouraged.
-
-Finally, ADAM can ensure that all staff make use of Two Factor Authentication by setting the **Two Factor Authentication Forced for Staff** setting to “Yes”. When staff login for the first time not having previously set up their two factor authentication, ADAM will prompt them to do so and not permit them to proceed with their logins until they have correctly setup their authentication app to generate one time PINs.
 
 ### POP3 Authentication
 
