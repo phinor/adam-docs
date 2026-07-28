@@ -151,3 +151,91 @@ If it captures well, prefer a version showing the confirmation dialog that the l
 defaults?" — since the text tells the reader to expect it.
 
 Goes in *Restoring the Default Settings*, with the bullet about restoring every field at once.
+
+---
+
+## Two-Factor Authentication (`docs/two-factor-authentication.md`,
+`docs/two-factor-authentication-for-administrators.md`)
+
+Both pages were rewritten as part of the staff two-factor authentication mandate: the setup
+walkthrough was restructured, recovery codes and remembered devices got their own sections, the FAQ
+was rewritten, and a new administrator page was added. `two-factor-authentication-04.png`,
+`-06.png` and `-07.png` no longer match the rebuilt setup walkthrough and are to be **deleted once
+their replacements below are in place**, per this file's standing rule.
+
+`two-factor-authentication-05.png` (the phone-side authenticator app screenshot) and `-08.png` /
+`-09.png` (the removal-flow screenshots) have not been re-checked against the rebuilt pages. Check
+them before capturing anything else — if they still match what the rebuilt pages describe, leave
+them as they are and remove this note; list them here with their own entries only if they no longer
+match.
+
+### 10. `two-factor-authentication-12.png` — the rebuilt setup page
+
+Replaces `-04.png`.
+
+Sign in as a demo staff member who has not yet set up two-factor authentication. Click on the
+**Staff tab**, and then under the **Security Administration** heading click on **Manage your
+Two-Factor Authentication**. Capture the whole setup page with both steps visible: **Step 1: Scan
+this code** (the QR code and the written **Two-Factor Authentication Secret**) and **Step 2: Enter
+the six digits** (the **Confirmation Code** box and the **Add Two-Factor Authentication Protection**
+button) in the same frame.
+
+The QR code must be deliberately corrupted or blanked before publishing, the same way the current
+`-04.png` is, so that it cannot be scanned from the manual.
+
+Goes in *Adding Two-Factor Authentication to your account*, under **Step 1: Scan this code**.
+
+### 11. `two-factor-authentication-13.png` — the Confirmation Code box
+
+Replaces `-06.png`.
+
+From the same setup page, capture just **Step 2: Enter the six digits** — the **Confirmation Code**
+box and the **Add Two-Factor Authentication Protection** button. Type a plausible six-digit code
+into the box before capturing, so the field is not shown empty.
+
+Goes in *Adding Two-Factor Authentication to your account*, under **Step 2: Enter the six digits**.
+
+### 12. `two-factor-authentication-14.png` — the recovery codes shown once after enrolling
+
+Replaces `-07.png` as the success screen.
+
+Complete enrolment with a correct confirmation code, and capture the page ADAM shows immediately
+afterwards: the confirmation that two-factor authentication is now protecting the account, and the
+ten recovery codes displayed below it.
+
+**These codes are secrets, not placeholders.** The ten codes visible in this capture are a real,
+working set for the demonstration account — anyone who saw this image before regeneration could use
+them to bypass that account's two-factor authentication. As soon as the capture is taken, go back
+into **Manage your Two-Factor Authentication** and generate a fresh set of recovery codes for the
+demo account, so that the codes published in the manual are no longer valid. Do this immediately,
+before moving on to the next screenshot — do not leave the captured set live.
+
+Goes in *Adding Two-Factor Authentication to your account*, under **Step 2: Enter the six digits**,
+replacing the current success-screen image.
+
+### 13. `two-factor-authentication-15.png` — Recovery codes and Remembered devices cards
+
+From **Manage your Two-Factor Authentication** on an account that already has two-factor
+authentication set up, capture the **Recovery codes** and **Remembered devices** cards side by
+side, as they appear on the management page. Sign in on more than one browser or device beforehand
+so the **Remembered devices** card has something to show rather than reading as empty.
+
+Goes in *Remembered devices*, and is also referenced from *Recovery codes*.
+
+### 14. `two-factor-authentication-for-administrators-01.png` — the coverage screen
+
+New page, new screenshot folder: `docs/assets/screenshots/two-factor-authentication-for-administrators/`.
+
+Click on the **Administration tab**, then under the **Security Administration** heading click on
+**Manage Two-Factor Authentication for staff**. Capture the headline line ("**N of M staff are set
+up**") and all four tables — **Set up**, **Not set up**, **Never signed in** and **Suspended** —
+with at least one demo staff member in each so that none of the four reads as empty.
+
+Goes in *The coverage screen*.
+
+### 15. `two-factor-authentication-for-administrators-02.png` — the dashboard reminder card
+
+Sign in as a demo staff member who has not yet set up two-factor authentication, and capture the
+reminder card on their ADAM dashboard.
+
+Goes in *The reminder on your dashboard*.
