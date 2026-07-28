@@ -105,9 +105,12 @@ let them stop you from contributing.
 - **Names of buttons, tabs and fields go in bold.** In Markdown you make text
   bold by putting two asterisks on each side, like `**this**`, which appears as
   **this**. For example: *"click on the **Save** button."*
-- **Describe menu paths as a sentence** rather than with arrows. For example:
+- **Describe menu paths precisely**. For example:
   *"click on the **Administration tab**, then under the **Absentee
-  Administration heading**, click on **Edit the absentee reasons**."*
+  Administration heading**, click on **Edit the absentee reasons**."* If you
+  choose to use arrows, use the **Tab → Heading → Menu Item** convention and make
+  sure to list any other steps aside from that (e.g. "**Administration tab → Absentee
+  Administration → Edit the absentee reasons** and then click on **edit**")
 - **Use British/South African spelling** (organise, colour, enrolment) to match
   the rest of the manual and ADAM itself.
 - **Headings** start with a `#`. One `#` is the page title, `##` is a section,
