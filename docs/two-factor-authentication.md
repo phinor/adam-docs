@@ -72,6 +72,46 @@ If the digits were correct, ADAM confirms that two-factor authentication is now 
 
 If ADAM says the code was wrong, the most likely reason is that the six digits changed while you were typing. Try again with the number now showing in your app. If it fails repeatedly, see the [frequently asked questions](#frequently-asked-questions) below.
 
+## Recovery codes
+
+When you set up two-factor authentication, ADAM gives you **ten recovery codes**. Each one can be used once, in place of the six digits from your app, to sign in. They are what gets you back into ADAM when your phone is lost, broken, flat, or simply not with you.
+
+A recovery code looks like this:
+
+```
+A3F7-K29P
+```
+
+They contain only the letters A to Z and the digits 2 to 7 — there is no letter O and no digit 0 or 1, so there is nothing to confuse.
+
+!!! warning
+    ADAM shows your recovery codes **once**, at the moment they are created, and never again. It cannot show them to you later, because it does not keep a readable copy — it stores only enough to check a code you type in. If you lose them, you can generate a fresh set, but the old ones stop working.
+
+Print them, or download them, and keep them somewhere you can reach without your phone. A drawer at home is fine. A note on your desk beside the computer you sign in on is not — anyone who has your password and that note has your account.
+
+### Using a recovery code
+
+When ADAM asks for your six-digit code, use the option to sign in with a recovery code instead, and type one in. That code is then used up. Nine remain.
+
+### Generating new codes
+
+You can replace your codes at any time — if you have used most of them, or if you think someone else has seen them. Click on the **Staff tab**, then under the **Security Administration** heading click on **Manage your Two-Factor Authentication**, and choose to generate new recovery codes.
+
+ADAM asks for your password and a code from your app first, to be sure it is you. Generating a new set **cancels every code in the old set**, so make sure you have saved the new ones before you close the page.
+
+## Remembered devices
+
+Depending on how your school has set ADAM up, it may not ask for your six-digit code every single time you sign in. It can instead remember the computer you are using, and skip the prompt for a while. Your school's administrator chooses this — see [how often ADAM asks for a code](two-factor-authentication-for-administrators.md#choosing-how-often-adam-asks-for-a-code).
+
+Where that is in use, your two-factor authentication page shows a **Remembered devices** card telling you how many computers are currently trusted to skip the prompt.
+
+!!! tip
+    If you have signed in on a computer that is not yours — a shared office machine, a hotel, a friend's laptop — or if a laptop has been lost or stolen, use **Sign out all devices**. Every remembered computer is forgotten, and the next person to sign in on any of them has to enter a code.
+
+Signing devices out does not remove two-factor authentication from your account and does not affect your recovery codes. It only means the code prompt comes back.
+
+You may also see this card show nothing to sign out. That simply means no computer is currently being trusted — either because none has been, or because your school asks for a code at every sign-in.
+
 ## Removing Two-Factor Authentication
 
 Once you have added two-factor authentication, you can remove 2FA by clicking on the **Staff tab**, and then under the **Security Administration** heading clicking on **Manage your Two-Factor Authentication**. If it is enabled on your account, you will see the following:
