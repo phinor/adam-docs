@@ -81,11 +81,13 @@ The card disappears as soon as they enrol. There is nothing to configure, and a 
 
 Both actions below appear next to a staff member's name in the **Set up** table on the [coverage screen](#the-coverage-screen).
 
-### Removing someone's two-factor authentication
+### Removing someone's two-factor authentication { #removing-two-factor-for-another-staff-member }
 
-Use this when somebody cannot get in and has no recovery codes left.
+Use this when somebody cannot get in and has no recovery codes left. Click **remove 2FA** next to their name.
 
-ADAM asks you to confirm your own password and your own six-digit code first. This is deliberate: the list in front of you is every staff member at the school, and a stranger sitting at an unattended administrator's desk should not be able to work down it.
+ADAM asks you to confirm your own password and your own six-digit code first, unless you have confirmed recently — a second removal soon after the first is not challenged. This is deliberate: the list in front of you is every staff member at the school, and a stranger sitting at an unattended administrator's desk should not be able to work down it.
+
+Once you confirm, ADAM returns you to the coverage screen. It does not remove the staff member's two-factor authentication for you — click **remove 2FA** again to finish the job.
 
 !!! warning
     Removing two-factor authentication does not remove anything from the staff member's phone. When they set it up again they must scan a new QR code, and they should delete the old entry from their authenticator app first — the old entry's codes will never work again.
@@ -94,7 +96,7 @@ If your school requires two-factor authentication, the staff member is asked to 
 
 ### Signing out their remembered devices
 
-Use this when a staff member's laptop or phone has been lost or stolen and you want every computer ADAM was trusting for them to be forgotten straight away.
+Use this when a staff member's laptop or phone has been lost or stolen and you want every computer ADAM was trusting for them to be forgotten straight away. Click **sign out devices** next to their name.
 
 Every remembered computer is forgotten, and the next sign-in from each asks for a code. Their second factor itself is untouched, and so are their recovery codes.
 
