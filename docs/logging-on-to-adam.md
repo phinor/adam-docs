@@ -66,7 +66,7 @@ The Super-Administrator cannot rename a staff member’s passkey or register a n
 
 ### Passkeys and Two-Factor Authentication
 
-A passkey is itself a strong second factor — the device holding it, plus the biometric or PIN that unlocks it — so a user who signs in with a passkey is not asked for a one-time PIN as well. That remains true when **Two Factor Authentication Forced for Staff** is set to “Yes”.
+A passkey is itself a strong second factor — the device holding it, plus the biometric or PIN that unlocks it — so a user who signs in with a passkey is not asked for a one-time PIN as well. That remains true when **Two Factor Authentication Forced For Staff** is set to “Yes”.
 
 What a passkey does **not** do is excuse a staff member from setting two-factor authentication up. Their password still works, and anyone who obtains it can still try to use it; the one-time PIN is what stops them. A staff member who signs in with a passkey but has not set up two-factor authentication will be asked to do so, exactly like anyone else.
 
@@ -127,7 +127,7 @@ In Linux based networks it is possible to have ADAM use a pure LDAP server for a
 
 The **Login time out** is the amount of time in minutes that must elapse between any two page loads on ADAM before the user account is considered logged out. Note that typing a message (especially in the [Messaging Centre](messaging-centre.md#messaging-centre)) is not considered activity because there is no information going between the server and the client computer.
 
-The **Remember logged-in machines** setting stores a long-term cookie on a computer so that ADAM can recognise it on a later visit. It works together with the two-factor authentication settings, and both are described in [Two-Factor Authentication for Administrators](two-factor-authentication-for-administrators.md#the-settings).
+The **Remember logged-in machines for** setting stores a long-term cookie on a computer so that ADAM can recognise it on a later visit. It works together with the two-factor authentication settings, and both are described in [Two-Factor Authentication for Administrators](two-factor-authentication-for-administrators.md#the-settings).
 
 Some schools may chose to **Allow “Remember Me” Logins**. This will prevent the login time-out from affecting the user. Schools should be cautioned against allowing this if the computers that staff use are often left unsupervised and unlocked (consider a desktop computer in a classroom which may have pupils in unsupervised, as opposed to a laptop which is more likely to be turned off and locked). The number of days that ADAM can remember a user for can be set with the **Remember Me Duration** setting.
 

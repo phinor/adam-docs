@@ -36,6 +36,12 @@ Staff with elevated privileges are always required to use two-factor authenticat
 
 **Once per computer** asks only when ADAM sees a computer it does not recognise. **Remember logged-in machines for** then decides how long that recognition lasts before ADAM asks again.
 
+!!! warning
+    **Once per computer** remembers the computer, not the person. On a shared computer without
+    individual logins — a staffroom desktop, for example — recognising that computer means
+    recognising it for everyone who uses it, so anyone who signs in there afterwards is waved
+    through without a code. This option is best avoided on any shared computer.
+
 ADAM recognises a computer by a cookie stored in the browser. Clearing cookies, or using a different browser on the same computer, makes it a computer ADAM has not seen before.
 
 Staff can see how many of their own computers are currently remembered, and sign them all out — useful if a laptop is lost. You can do the same on their behalf; see [managing another staff member](#managing-another-staff-member).
