@@ -106,7 +106,7 @@ Depending on how your school has set ADAM up, it may not ask for your six-digit 
 Where that is in use, your two-factor authentication page shows a **Remembered devices** card telling you how many computers are currently trusted to skip the prompt.
 
 !!! tip
-    If you have signed in on a computer that is not yours — a shared office machine, a hotel, a friend's laptop — or if a laptop has been lost or stolen, use **Sign out all devices**. Every remembered computer is forgotten, and the next person to sign in on any of them has to enter a code.
+    If you have signed in on a computer that is not yours — a shared office machine, a hotel, a friend's laptop — or if a laptop has been lost or stolen, use **Sign out all devices**. Every computer remembered for your account is forgotten, and the next time you sign in on any of them you are asked for a code.
 
 Signing devices out does not remove two-factor authentication from your account and does not affect your recovery codes. It only means the code prompt comes back.
 
