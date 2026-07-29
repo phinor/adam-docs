@@ -91,9 +91,11 @@ Two-Factor Authentication adds a one-time code on top of your password. A passke
 
 Passkeys are generally considered more secure than a password with 2FA, because there is no shared secret that can be phished or intercepted. The passkey itself can only be unlocked on your device, by you.
 
+The two are not alternatives, though. Staff are required to set up two-factor authentication whether or not they use a passkey, because the account's password still works and still needs a second factor protecting it. Using a passkey means you are not asked for a one-time PIN when you sign in that way.
+
 ### Can I use a passkey on a shared or public computer?
 
-It is usually better not to. Paslogskeys are tied to a device, so adding a passkey on a shared computer means anyone who can unlock that computer can also log in to your ADAM account.
+It is usually better not to. Passkeys are tied to a device, so adding a passkey on a shared computer means anyone who can unlock that computer can also log in to your ADAM account.
 
 Use a passkey on devices that only you use. For shared or public computers, log in with your username and password as normal.
 

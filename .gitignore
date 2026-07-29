@@ -20,3 +20,6 @@ scripts/package-lock.json
 
 # Python bytecode
 __pycache__/
+
+# Superpowers working notes (scratch, not part of the manual)
+.superpowers/

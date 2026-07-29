@@ -6,7 +6,11 @@ laid out.
 
 Layouts are designed centrally. Somebody at the school — usually an administrator — creates the
 layouts that are available, and staff members then choose which of those layouts they would like to
-use. A staff member never builds a page of their own from scratch; they pick one from the list.
+use. A staff member never builds a page of their own from scratch; they pick one from the list. An
+administrator can also put staff members onto a layout directly, rather than waiting for them to
+choose.
+
+![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-11.png)
 
 !!! note
     A layout only ever shows a viewer the information that they are already allowed to see. If a
@@ -15,14 +19,22 @@ use. A staff member never builds a page of their own from scratch; they pick one
 
 ## Which Layout a Staff Member Sees
 
-ADAM works down a short list and uses the first layout it finds:
+Every staff member has, at most, one layout of their own for each screen. ADAM uses the first of
+these that it finds:
 
-1.  The layout the staff member chose for themselves.
-2.  Otherwise, the layout an administrator has recommended to them.
-3.  Otherwise, the school's default layout.
+1.  The layout on their record — whether they chose it themselves or an administrator put them on
+    it.
+2.  Otherwise, the school's default layout.
 
-This is why an administrator can improve the default layout and have the change reach everybody who
-has not made a choice of their own, without disturbing the people who have.
+Most staff have nothing on their record at all, and simply follow the default. This is why an
+administrator can improve the default layout and have the change reach everybody who has not made a
+choice of their own, without disturbing the people who have.
+
+!!! warning
+    There is only one layout per person per screen, so an administrator who puts somebody onto a
+    layout **replaces whatever they had**, including a layout that person had chosen for themselves.
+    Nothing is kept underneath to fall back on. The staff member can of course choose again
+    afterwards, if they have the privilege to.
 
 !!! note "Upgrading from an earlier version of ADAM"
     Earlier versions of ADAM let each staff member customise their own overview page, and had a
@@ -39,8 +51,8 @@ has not made a choice of their own, without disturbing the people who have.
 
 There are six privileges in total, two for each of the three overview screens:
 
--   **Manage Pupil / Family / Staff Overview layouts** — create, edit, duplicate, delete and
-    recommend the layouts that are available for that screen.
+-   **Manage Pupil / Family / Staff Overview layouts** — create, edit, duplicate and delete the
+    layouts that are available for that screen, and decide which staff members are on which layout.
 -   **Choose own Pupil / Family / Staff Overview layout** — choose which of the available layouts to
     use for that screen.
 
@@ -50,6 +62,8 @@ also have to be granted to an administrator.
 To [assign the privileges](security-administration-for-staff.md#security-administration-for-staff),
 open the **privileges** view of the appropriate staff group and, under **Pupil Admin**, **Staff
 Admin** or **Family Admin**, look for the **Overview heading**.
+
+![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-16.png)
 
 It is entirely reasonable to give most teachers the "choose own" privilege, and to keep the "manage"
 privilege for the handful of people who look after the school's layouts.
@@ -66,34 +80,41 @@ As usual, a site administrator automatically has all six privileges.
 Open any pupil, family or staff overview screen and click on **change this layout** at the top of
 the page.
 
+![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-12.png)
+
 ADAM lists every layout available for that screen, with its description, and shows which one you are
-using at the moment and why — whether it is one you chose yourself, the one recommended for you, or
-the school's default. Where you have permission to view the profiles concerned, each layout also
-offers a **preview** link so that you can see what it looks like before committing to it.
+using at the moment and why — whether it is one you chose yourself, one your administrator set for
+you, or the school's default. Where you have permission to view the profiles concerned, each layout
+also offers a **preview** link so that you can see what it looks like before committing to it.
 
 Select the layout you want and click on **Use this layout**.
 
-If you are using a layout you chose yourself, an option appears to **use the recommended layout**
-instead. Clicking it removes your own choice, so that you go back to following whatever the
-administrator has recommended for you — and you will pick up any later improvements they make to it.
+If you are on a layout of your own, or on one an administrator set for you, an option appears to
+**go back to the school default**. Clicking it takes the layout off your record, so that you follow
+the school's default again — and you will pick up any later improvements made to it.
 
 ## Managing the Available Layouts
 
 If you have the privilege to manage layouts, the same **change this layout** screen offers a link to
 **edit the available layouts**. This opens the catalogue of layouts for that screen.
 
+![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-13.png)
+
 The catalogue lists each layout with its description, how many blocks it contains and how many staff
-members are currently using it. The default layout is marked as such. Each row offers the following
-actions:
+members are currently using it. The default layout is marked as such. The **People** count is itself
+a link, and opens the list of the staff members it counts. Each row offers the following actions:
 
 -   **edit** — change the layout's name, description and blocks.
 -   **preview** — see the layout rendered against a real pupil, family or staff member.
--   **recommend** — choose which staff members should be given this layout.
+-   **people** — see the staff members who are using this layout, and move them to another one.
 -   **duplicate** — take a copy of the layout, as a starting point for a new one.
 -   **make default** — promote the layout to be the school's default.
 -   **delete** — remove the layout entirely.
 
 The last two are not offered for the layout that is already the default.
+
+Above the table, **see who is using which layout** opens the same list for every staff member at
+once, rather than for a single layout.
 
 ### Creating a New Layout
 
@@ -166,24 +187,42 @@ Click on **preview this layout** (in the editor) or **preview** (in the catalogu
 chooser). ADAM asks you to choose a pupil, family or staff member, and then renders that person's
 overview screen using the layout.
 
+![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-14.png)
+
 !!! note
     The preview shows what **you** would see. A staff member with fewer privileges will see less.
     Previewing is only available to people who are allowed to view the profiles concerned in the
     first place.
 
-### Recommending a Layout to Staff
+### Seeing and Changing Who Uses What
 
-Click on **recommend** next to a layout and select the staff members who should be given it. They
-will see this layout unless they have already chosen a different one for themselves.
+Click on **see who is using which layout** above the catalogue for the whole staff, or on **people**
+next to a single layout for just the people on that one. (From a single layout, **show everybody**
+widens it out again.)
 
-Recommending is a good way to give, say, every register teacher a layout suited to their work
-without forcing it on anybody who has already made their own arrangement.
+The list names every current staff member, the layout they are on, and how they came to be on it:
+
+-   **own choice** — they chose this layout themselves.
+-   **assigned** — an administrator put them on it.
+-   **following the default** — they have no layout of their own, so they get the school's default.
+
+To move people, tick them in the list, choose where they should go next to **Move selected to:**,
+and click on **Move selected**. The destination can be any layout, or **Follow the school default**,
+which takes the layout off their record so that they follow the default from then on.
+
+This is how you would give, say, every register teacher the layout suited to their work, without
+waiting for each of them to find it for themselves.
+
+!!! warning
+    Moving somebody replaces whatever they had, **including a layout they picked for themselves**.
+    They are not asked, and their old choice is not remembered. If they have the privilege to choose
+    their own layout, they can simply pick another one afterwards.
 
 ### Making a Layout the Default
 
-Click on **make default**. From then on, that layout is used by anybody who has neither chosen a
-layout nor been recommended one. There is exactly one default layout per screen, so the layout that
-was previously the default becomes an ordinary layout again.
+Click on **make default**. From then on, that layout is used by anybody who has no layout of their
+own and has not been put onto one. There is exactly one default layout per screen, so the layout
+that was previously the default becomes an ordinary layout again.
 
 ### Deleting a Layout
 
@@ -191,4 +230,4 @@ Click on **delete** next to the layout. ADAM protects a layout that is still in 
 
 -   The **default layout cannot be deleted**. Make another layout the default first.
 -   A layout that **staff members are still using cannot be deleted**. Move them to another layout
-    first — ADAM tells you how many people are affected.
+    first, using **people** — ADAM tells you how many people are affected.
