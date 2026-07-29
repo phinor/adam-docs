@@ -16,7 +16,7 @@ We would suggest, in order: train your staff, encourage them to set it up volunt
 
 ## The settings
 
-Click on the **Administration tab**, then under the **Site Settings** heading click on **Change the site settings**. Choose the **Security** tab and scroll down to the **Login Settings** heading.
+Click on the **Administration tab**, then under the **Site Administration** heading click on **Edit site settings**. Choose the **Security** tab and find the **Two-Factor Authentication** heading.
 
 ![](assets/screenshots/two-factor-authentication/two-factor-authentication-11.png)
 
@@ -28,31 +28,38 @@ Staff with elevated privileges are always required to use two-factor authenticat
 
 ### Choosing how often ADAM asks for a code
 
-**Two-Factor Authentication Method** decides how often a staff member is asked for their six digits. There are three choices.
+**Two Factor Authentication Method** decides how often a staff member is asked for their six digits. There are three choices, and the setting starts on **Require OTP once per computer**.
 
-**At every login** is the most secure and the most tiring. Someone who signs in several times a day types a code every time.
+**Require OTP at every login** is the most secure and the most tiring. Someone who signs in several times a day types a code every time.
 
-**Once per computer per day** asks once each day on each computer somebody uses. This is the best balance for most schools.
+**Require OTP once per computer per day** asks each person once a day on each computer they use. This is the best balance for most schools.
 
-**Once per computer** asks only when ADAM sees a computer it does not recognise. **Remember logged-in machines for** then decides how long that recognition lasts before ADAM asks again.
+**Require OTP once per computer** asks only when someone signs in from a computer ADAM has not seen them use before. **Remember logged-in machines for**, under the **Login Settings** heading on the same tab, then decides how long that recognition lasts before ADAM asks again.
 
 !!! warning
-    **Once per computer** remembers the computer, not the person. On a shared computer without
-    individual logins — a staffroom desktop, for example — recognising that computer means
-    recognising it for everyone who uses it, so anyone who signs in there afterwards is waved
-    through without a code. This option is best avoided on any shared computer.
+    Recognition is per person, not per computer, so being remembered on a staffroom desktop does
+    not wave anybody else through — each staff member is asked for a code the first time they
+    sign in there. What it does mean is that somebody who learns a staff member's password can
+    sign in as them from that same shared browser without needing a code, for as long as the
+    recognition lasts. On shared computers, prefer **Require OTP once per computer per day**, or
+    keep **Remember logged-in machines for** short.
 
 ADAM recognises a computer by a cookie stored in the browser. Clearing cookies, or using a different browser on the same computer, makes it a computer ADAM has not seen before.
 
 Staff can see how many of their own computers are currently remembered, and sign them all out — useful if a laptop is lost. You can do the same on their behalf; see [managing another staff member](#managing-another-staff-member).
 
-### The authentication window
+### Allowing for clock drift
 
-**Two-Factor Authentication Window** decides how much clock difference ADAM tolerates between its own time and the phone generating the code. Each window is thirty seconds, and the default of 2 accepts codes from two windows either side of the current time.
+A one-time PIN is worked out from the time of day, so ADAM's clock and the clock on the staff
+member's phone have to agree. **Two Factor Authentication Time Drift** decides how far apart they
+are allowed to be, in **seconds**. The choices are 10, 15, 20 and 30, and it starts on 30.
 
-Raising it to 3 makes a code usable for about three minutes, which is less secure — a code seen over someone's shoulder stays valid for longer. Lowering it to 1 is the most secure and the least forgiving of a phone whose clock is drifting.
+A code only lives for thirty seconds, so the drift cannot usefully be set higher than that. A
+smaller number is more secure, because a code someone glimpses over a shoulder stays usable for
+less time; a larger number is more forgiving of a phone whose clock is slightly out.
 
-If a lot of staff suddenly cannot enrol, suspect the server's clock rather than this setting.
+If a lot of staff suddenly cannot enrol or sign in, suspect the server's clock rather than this
+setting. A server whose time has drifted affects everybody at once, which is the usual sign.
 
 ## The coverage screen
 
