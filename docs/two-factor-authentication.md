@@ -45,7 +45,7 @@ The setup page asks you to do two things, in order.
 
 ### Step 1: Scan this code
 
-ADAM shows a QR code alongside a written **Two-Factor Authentication Secret**. Scanning the code is simply a shortcut that saves you typing the secret into your phone by hand — the two carry the same information.
+ADAM shows a QR code for your app's camera to read. If your phone cannot scan it — because you are reading this on the phone itself, for instance — open **I can't scan the code** underneath it and ADAM shows the same information as a short written secret you can type in by hand instead.
 
 ![](assets/screenshots/two-factor-authentication/two-factor-authentication-12.png)
 
@@ -62,7 +62,7 @@ Once the code has been scanned, the app lists the account and shows a six-digit 
 
 ### Step 2: Enter the six digits
 
-The last step tells ADAM that your app really did save the secret. Type the six digits currently shown in your app into the **Confirmation Code** box, and click on **Add Two-Factor Authentication Protection**.
+The last step tells ADAM that your app really did save the secret. Type the six digits currently shown in your app into the **Code from your app** boxes, and click on **Turn on two-factor authentication**.
 
 ![](assets/screenshots/two-factor-authentication/two-factor-authentication-13.png)
 
