@@ -31,6 +31,10 @@ Microsoft Authenticator
 
 Twilio Authy Authenticator
 
+![](assets/screenshots/two-factor-authentication/two-factor-authentication-16.png)
+
+1Password
+
 All of these apps are available for download from your preferred app store.
 
 If your school makes use of Google Workspace, we recommend using the Google Authenticator. If your school makes use of Microsoft 365, we recommend using Microsoft Authenticator.
@@ -68,7 +72,7 @@ The last step tells ADAM that your app really did save the secret. Type the six 
 
 If the digits were correct, ADAM confirms that two-factor authentication is now protecting your account, and shows you your recovery codes. **Do not leave that page without saving them** — see [Recovery codes](#recovery-codes) below.
 
-![](assets/screenshots/two-factor-authentication/two-factor-authentication-07.png)
+![](assets/screenshots/two-factor-authentication/two-factor-authentication-14.png)
 
 If ADAM says the code was wrong, the most likely reason is that the six digits changed while you were typing. Try again with the number now showing in your app. If it fails repeatedly, see the [frequently asked questions](#frequently-asked-questions) below.
 
@@ -95,7 +99,7 @@ When ADAM asks for your six-digit code, use the option to sign in with a recover
 
 ### Generating new codes
 
-You can replace your codes at any time — if you have used most of them, or if you think someone else has seen them. Click on the **Staff tab**, then under the **Security Administration** heading click on **Manage your Two-Factor Authentication**, and choose to generate new recovery codes.
+You can replace your codes at any time — if you have used most of them, or if you think someone else has seen them. Click on the **Staff tab**, then under the **Security Administration** heading click on **Manage your Two-Factor Authentication**, and click on **Generate a new set** in the **Recovery codes** card — the card is shown under [Remembered devices](#remembered-devices) below. The card also tells you how many of your codes are still unused.
 
 ADAM asks for your password and a code from your app first, to be sure it is you. Generating a new set **cancels every code in the old set**, so make sure you have saved the new ones before you close the page.
 
@@ -104,6 +108,8 @@ ADAM asks for your password and a code from your app first, to be sure it is you
 Depending on how your school has set ADAM up, it may not ask for your six-digit code every single time you sign in. It can instead remember the computer you are using, and skip the prompt for a while. Your school's administrator chooses this — see [how often ADAM asks for a code](two-factor-authentication-for-administrators.md#choosing-how-often-adam-asks-for-a-code).
 
 Where that is in use, your two-factor authentication page shows a **Remembered devices** card telling you how many computers are currently trusted to skip the prompt.
+
+![](assets/screenshots/two-factor-authentication/two-factor-authentication-15.png)
 
 !!! tip
     If you have signed in on a computer that is not yours — a shared office machine, a hotel, a friend's laptop — or if a laptop has been lost or stolen, use **Sign out all devices**. Every computer remembered for your account is forgotten, and the next time you sign in on any of them you are asked for a code.
@@ -116,9 +122,9 @@ You may also see this card show nothing to sign out. That simply means no comput
 
 Once you have added two-factor authentication, you can remove 2FA by clicking on the **Staff tab**, and then under the **Security Administration** heading clicking on **Manage your Two-Factor Authentication**. If it is enabled on your account, you will see the following:
 
-![](assets/screenshots/two-factor-authentication/two-factor-authentication-08.png)
+![](assets/screenshots/two-factor-authentication/two-factor-authentication-15.png)
 
-Click on the **Remove Two-Factor Authentication** option at the bottom to begin the process. ADAM opens a page headed **Remove two-factor authentication**.
+Click on the **Remove two-factor authentication** option at the bottom to begin the process. ADAM opens a page headed **Remove two-factor authentication**.
 
 You must then enter your ADAM password to confirm that you’d like to remove Two-Factor Authentication from your account:
 

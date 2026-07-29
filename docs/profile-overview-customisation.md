@@ -8,6 +8,8 @@ Layouts are designed centrally. Somebody at the school — usually an administra
 layouts that are available, and staff members then choose which of those layouts they would like to
 use. A staff member never builds a page of their own from scratch; they pick one from the list.
 
+![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-11.png)
+
 !!! note
     A layout only ever shows a viewer the information that they are already allowed to see. If a
     layout contains a field that a particular staff member may not view, that field is simply left
@@ -51,6 +53,8 @@ To [assign the privileges](security-administration-for-staff.md#security-adminis
 open the **privileges** view of the appropriate staff group and, under **Pupil Admin**, **Staff
 Admin** or **Family Admin**, look for the **Overview heading**.
 
+![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-16.png)
+
 It is entirely reasonable to give most teachers the "choose own" privilege, and to keep the "manage"
 privilege for the handful of people who look after the school's layouts.
 
@@ -65,6 +69,8 @@ As usual, a site administrator automatically has all six privileges.
 
 Open any pupil, family or staff overview screen and click on **change this layout** at the top of
 the page.
+
+![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-12.png)
 
 ADAM lists every layout available for that screen, with its description, and shows which one you are
 using at the moment and why — whether it is one you chose yourself, the one recommended for you, or
@@ -81,6 +87,8 @@ administrator has recommended for you — and you will pick up any later improve
 
 If you have the privilege to manage layouts, the same **change this layout** screen offers a link to
 **edit the available layouts**. This opens the catalogue of layouts for that screen.
+
+![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-13.png)
 
 The catalogue lists each layout with its description, how many blocks it contains and how many staff
 members are currently using it. The default layout is marked as such. Each row offers the following
@@ -165,6 +173,8 @@ When you are happy, click on the **Save** button at the bottom of the screen.
 Click on **preview this layout** (in the editor) or **preview** (in the catalogue or on the layout
 chooser). ADAM asks you to choose a pupil, family or staff member, and then renders that person's
 overview screen using the layout.
+
+![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-14.png)
 
 !!! note
     The preview shows what **you** would see. A staff member with fewer privileges will see less.

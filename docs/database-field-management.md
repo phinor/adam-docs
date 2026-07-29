@@ -129,9 +129,14 @@ That means a customisation can always be undone:
 
 -   To restore a **single field**, click on the **Reset** button at the end of its row. ADAM asks you
     to confirm, and then restores that field’s name, category and options to the shipped defaults.
+
+    ![](assets/screenshots/database-field-management/database-field-management-08.png)
+
 -   To restore **every field of this type at once**, click on **Restore all defaults** at the bottom
     of the screen. This discards every customisation for the fields on this screen, so ADAM asks you
     to confirm before doing it.
+
+    ![](assets/screenshots/database-field-management/database-field-management-09.png)
 
 Neither option deletes any pupil, family or staff information — they only affect how the fields
 themselves are named, grouped and offered.
