@@ -95,7 +95,7 @@ The two are not alternatives, though. Staff are required to set up two-factor au
 
 ### Can I use a passkey on a shared or public computer?
 
-It is usually better not to. Paslogskeys are tied to a device, so adding a passkey on a shared computer means anyone who can unlock that computer can also log in to your ADAM account.
+It is usually better not to. Passkeys are tied to a device, so adding a passkey on a shared computer means anyone who can unlock that computer can also log in to your ADAM account.
 
 Use a passkey on devices that only you use. For shared or public computers, log in with your username and password as normal.
 
