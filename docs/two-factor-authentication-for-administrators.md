@@ -65,7 +65,9 @@ setting. A server whose time has drifted affects everybody at once, which is the
 
 Click on the **Administration tab**, then under the **Security Administration** heading click on **Manage Two-Factor Authentication for staff**.
 
-The screen opens with a single line telling you where the school stands — for example, “**34 of 51 staff are set up**”. Below it, every current staff member appears in one of four tables.
+![](assets/screenshots/two-factor-authentication-for-administrators/two-factor-authentication-for-administrators-01.png)
+
+The screen opens with a single line telling you where the school stands — for example, “**34 of 51 staff are set up**”. Beneath it, a sentence says whether this server requires two-factor authentication yet and names the date it becomes required; once that date has passed on a school that still has not switched the requirement on, it says so. Below that, every current staff member appears in one of four tables, each headed with the number of people in it.
 
 **Not set up** — they have signed in before, they can sign in now, and they have not set two-factor authentication up. This is the list that matters: these are the people who will be stopped at the door when the requirement takes effect.
 
