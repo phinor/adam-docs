@@ -67,20 +67,22 @@ Click on the **Administration tab**, then under the **Security Administration** 
 
 The screen opens with a single line telling you where the school stands — for example, “**34 of 51 staff are set up**”. Below it, every current staff member appears in one of four tables.
 
-**Set up** — they hold a second factor. Nothing is needed from them.
-
 **Not set up** — they have signed in before, they can sign in now, and they have not set two-factor authentication up. This is the list that matters: these are the people who will be stopped at the door when the requirement takes effect.
 
 **Never signed in** — an account exists but has never been used. Setting up two-factor authentication is part of their first sign-in, so there is usually nothing to chase here.
 
 **Suspended** — the account cannot sign in at all. They are shown so that the totals account for everybody, not because anything is expected of them.
 
+**Set up** — they hold a second factor. Nothing is needed from them.
+
 !!! note
     A staff member who is suspended but has already set two-factor authentication up appears under **Set up**, not under **Suspended**. Holding a second factor takes precedence over every other state, so the number in the headline is always exactly the length of the **Set up** table.
 
 ## The reminder on your dashboard
 
-Staff who have not set two-factor authentication up see a card on their ADAM dashboard inviting them to. As 1 January 2027 approaches the card's wording becomes more insistent, and after the date has passed it says so.
+Staff who have not set two-factor authentication up, and for whom it is not yet required, see a card on their ADAM dashboard inviting them to. As 1 January 2027 approaches the card's wording becomes more insistent, and after the date has passed it says so.
+
+Once two-factor authentication is required for a staff member — the school has switched the requirement on, or they hold an elevated-privilege account — they are taken straight to the setup page instead, and never see the card.
 
 The card disappears as soon as they enrol. There is nothing to configure, and a staff member cannot dismiss it permanently — it is a reminder of something that is about to become compulsory, not a suggestion.
 
@@ -92,7 +94,7 @@ Both actions below appear next to a staff member's name in the **Set up** table 
 
 Use this when somebody cannot get in and has no recovery codes left. Click **remove 2FA** next to their name.
 
-ADAM asks you to confirm your own password and your own six-digit code first, unless you have confirmed recently — a second removal soon after the first is not challenged. This is deliberate: the list in front of you is every staff member at the school, and a stranger sitting at an unattended administrator's desk should not be able to work down it.
+ADAM asks you to confirm your identity first — your password, and a code from your own authenticator app if you have two-factor authentication set up yourself — unless you have confirmed recently, in which case a second removal soon after the first is not challenged. This is deliberate: the list in front of you is every staff member at the school, and a stranger sitting at an unattended administrator's desk should not be able to work down it.
 
 Once you confirm, ADAM returns you to the coverage screen. It does not remove the staff member's two-factor authentication for you — click **remove 2FA** again to finish the job.
 
@@ -107,4 +109,4 @@ Use this when a staff member's laptop or phone has been lost or stolen and you w
 
 Every remembered computer is forgotten, and the next sign-in from each asks for a code. Their second factor itself is untouched, and so are their recovery codes.
 
-ADAM emails the staff member to tell them this happened, so that they are not left wondering why they are suddenly being asked for a code again. If there was nothing to sign out, no email is sent.
+ADAM emails the staff member when devices were actually still trusted, so that they are not left wondering why they are suddenly being asked for a code again. It stays quiet when there was nothing being honoured to remove — whether because there was nothing to sign out, or because every remembered device had already expired past the trust window.

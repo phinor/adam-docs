@@ -6,7 +6,7 @@ The data stored in the ADAM database is very sensitive data. To help protect thi
 
 Two-factor authentication is used by many banks to ensure that your transactions are genuine: when you initiate a payment or transaction, you are asked to type in a “one-time-PIN” (OTP) or approve the transaction from your phone. The OTP, or the approval from your phone, is known as the “second factor” in the authentication process.
 
-An account protected with Two-Factor Authentication will not allow a login without the one-time-PIN.
+An account protected with Two-Factor Authentication will not let a password on its own get you in — something more is always needed, whether that is the one-time-PIN from your app, one of your recovery codes, or a passkey.
 
 ADAM’s two-factor authentication system works using an Authenticator App that must be installed onto your phone. The Authenticator App will generate the One Time PIN. It is not sent by SMS and it is not linked to any specific phone number. After it has been set up, the app will not require any airtime or data to use.
 
@@ -17,7 +17,7 @@ Two-factor authentication is already required for accounts with elevated privile
 
 ## Supported Authenticator Apps
 
-There are many different Authenticator Apps that you can use. Popular ones include **Google Authenticator** (by Google LLC), **Microsoft Authenticator** (by Microsoft Corporation), or **Twilio Authy Authenticator** (previously simply “Authy”, by Twilio).
+There are many different Authenticator Apps that you can use. Popular ones include **Google Authenticator** (by Google LLC), **Microsoft Authenticator** (by Microsoft Corporation), **Twilio Authy Authenticator** (previously simply “Authy”, by Twilio), or **1Password** (by 1Password).
 
 ![](assets/screenshots/two-factor-authentication/two-factor-authentication-01.png)
 
@@ -47,7 +47,7 @@ The setup page asks you to do two things, in order.
 
 ADAM shows a QR code alongside a written **Two-Factor Authentication Secret**. Scanning the code is simply a shortcut that saves you typing the secret into your phone by hand — the two carry the same information.
 
-![](assets/screenshots/two-factor-authentication/two-factor-authentication-04.png)
+![](assets/screenshots/two-factor-authentication/two-factor-authentication-12.png)
 
 !!! note
     The QR code in the picture above has been deliberately corrupted so that it cannot be scanned. Scan the code on **your own screen** — every account's code is different.
@@ -64,7 +64,7 @@ Once the code has been scanned, the app lists the account and shows a six-digit 
 
 The last step tells ADAM that your app really did save the secret. Type the six digits currently shown in your app into the **Confirmation Code** box, and click on **Add Two-Factor Authentication Protection**.
 
-![](assets/screenshots/two-factor-authentication/two-factor-authentication-06.png)
+![](assets/screenshots/two-factor-authentication/two-factor-authentication-13.png)
 
 If the digits were correct, ADAM confirms that two-factor authentication is now protecting your account, and shows you your recovery codes. **Do not leave that page without saving them** — see [Recovery codes](#recovery-codes) below.
 
@@ -181,7 +181,9 @@ Sometimes it can be easier to have your ADAM administrator remove your Two-Facto
 
 ### I can’t enrol in 2FA because my confirmation code is wrong.
 
-This is very rare, but it can happen. Please make sure that your phone time is accurate.
+This is very rare, but it can happen. ADAM checks for this specific case, both when you confirm enrolment and every time you sign in — if it recognises the pattern, it tells you outright that the code was correct but your phone's clock is out of step with the server, and to switch on automatic time. If you see that message, that is the fix.
+
+Otherwise, please make sure that your phone time is accurate.
 
 If this issue suddenly affects lots of users, and if your server is hosted on your network at school, it could also be an issue with the server’s time synchronisation and your network administrator may have to investigate further.
 
@@ -202,6 +204,6 @@ Only your ADAM administrator can do this. The procedure is described on the [Two
 
 The most common issues arise from the fact that the OTP is time-based.
 
-If, for example, there is a delay in entering the OTP, the OTP may expire. Although the OTP changes every 30 seconds, ADAM will allow an OTP to be used for a short while after it disappears from the app. This is to help offset the any potential differences in clocks between the phone and the server.
+If, for example, there is a delay in entering the OTP, the OTP may expire. Although the OTP changes every 30 seconds, ADAM will allow an OTP to be used for a while after it disappears from the app — at the default **Two Factor Authentication Time Drift** setting, roughly as long again as the code's own life. Lowering that setting shortens the allowance. This is to help offset the any potential differences in clocks between the phone and the server.
 
 Because the OTPs are time-based, it is important that the server and the phone both have accurate time of day set. Most phones have their time set via their GPS chips and so are normally accurate within a second. Servers should be synchronised to an internet time server and be configured with the correct timezone and are similarly normally accurate within a second.

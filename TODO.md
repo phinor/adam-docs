@@ -222,7 +222,18 @@ so the **Remembered devices** card has something to show rather than reading as 
 
 Goes in *Remembered devices*, and is also referenced from *Recovery codes*.
 
-### 14. `two-factor-authentication-for-administrators-01.png` — the coverage screen
+### 14. `two-factor-authentication-16.png` — the 1Password logo
+
+The *Supported Authenticator Apps* section now recommends **1Password** alongside Google
+Authenticator, Microsoft Authenticator and Twilio Authy, but has no logo screenshot for it —
+`-01.png`, `-02.png` and `-03.png` cover the other three. Capture a 1Password logo image
+consistent with those three: same crop and scale, showing the app icon as it appears in an app
+store or on the phone's home screen. No demo school data is involved, so there is nothing to sign
+in as.
+
+Goes in *Supported Authenticator Apps*, alongside the other three logo images.
+
+### 15. `two-factor-authentication-for-administrators-01.png` — the coverage screen
 
 New page, new screenshot folder: `docs/assets/screenshots/two-factor-authentication-for-administrators/`.
 
@@ -233,7 +244,7 @@ with at least one demo staff member in each so that none of the four reads as em
 
 Goes in *The coverage screen*.
 
-### 15. `two-factor-authentication-for-administrators-02.png` — the dashboard reminder card
+### 16. `two-factor-authentication-for-administrators-02.png` — the dashboard reminder card
 
 Sign in as a demo staff member who has not yet set up two-factor authentication, and capture the
 reminder card on their ADAM dashboard.
