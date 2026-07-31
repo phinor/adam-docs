@@ -120,7 +120,7 @@ You can ask parents to upload supporting documents — such as a birth certifica
 
 These document requests are configured in the same place as all other parent and pupil uploads. Navigate to **Administration → Document Repository → Manage parent and pupil uploads**, and create an upload whose **Audience** is set to **Applicant**. Each file you add to that upload becomes a slot that applicants will see during their application.
 
-When configuring the slots, you can mark each one as **Required** or not using the **Required** column. Required documents are shown to parents with a “Required” badge, and if any are still missing when the parent reaches the final step, they are warned about the outstanding documents — but they are still allowed to submit. Optional documents are never enforced.
+When configuring the slots, the **Requirement** column controls how strongly each document is enforced for applicants: **Optional** (no badge, never enforced), **Requested** (shown with a “Requested” badge; the parent is warned if it is still missing but can still submit), or **Mandatory** (shown with a red “Required” badge; the application cannot be submitted until it is uploaded). See [Creating Upload Spaces](document-repository.md#creating-upload-spaces) for the full explanation of the three levels, including what changed if your school has upgraded from an earlier version of ADAM.
 
 Each slot also has an **Accepted Types** column, where you tick which kinds of file may be uploaded — such as **PDF document** or **JPEG image**. Applicants can only upload a file whose type you have allowed, and the accepted types are shown to them next to each slot. Every slot must have at least one type ticked before the upload can be saved.
 
@@ -419,7 +419,7 @@ From this point on, a progress bar is shown across the top of each screen so tha
 
 If the school has set up [supporting documents to collect during the application](#collecting-supporting-documents-during-the-application), parents are taken to a **Supporting Documents** screen after saving their details. A counter at the top shows how many of the requested documents have been uploaded so far.
 
-Each requested document is shown with its name, a short description, the file types it accepts (shown as *Accepted: …*), and a **Required** badge if it must be supplied. Documents that apply to a particular child are repeated for each child and labelled “Child 1”, “Child 2”, and so on.
+Each document is shown with its name, a short description, and the file types it accepts (shown as *Accepted: …*). Depending on how the school configured the slot, it may also carry a badge: a **Requested** badge means the school would like the document but will still accept the application without it, and a red **Required** badge means the application cannot be submitted until it is uploaded. A document with neither badge is entirely optional. Documents that apply to a particular child are repeated for each child and labelled “Child 1”, “Child 2”, and so on.
 
 ![](assets/screenshots/online-applications/online-applications-16.png)
 
@@ -427,7 +427,7 @@ To upload a document, the parent clicks **Choose file** next to the slot and sel
 
 Uploading documents here is not the same as having them approved — the documents are held against the application and only filed into the document repository once a staff member approves the application.
 
-When all the required documents have been uploaded (or the parent chooses to continue without them), they click **Continue to review** to move to the final step.
+When all the Requested and Mandatory documents have been uploaded, the parent clicks **Continue to review** to move to the final step. If any are still missing, clicking **Continue to review** first shows a pop-up listing what is outstanding and asking them to confirm before moving on — this pop-up appears regardless of whether the missing documents are Requested or Mandatory, and it does not itself stop the parent moving on to the review step.
 
 Once the form is fully complete, they will need to finalise their submission before it will be sent to the school:
 
@@ -437,7 +437,7 @@ They are asked to confirm their contact details and the details of their childre
 
 ![](assets/screenshots/online-applications/online-applications-10.png)
 
-If any documents that were marked as required have not been uploaded, a warning is shown on this screen listing the outstanding documents. This is only a reminder — parents are still able to submit their application without them.
+This is where a **Mandatory** document that is still missing actually takes effect. Instead of the usual confirmation, parents see a message telling them the application cannot be submitted until the listed documents have been uploaded, along with a link to go back and upload them — the **Confirm and Submit Application** button does not appear at all until every mandatory document has been supplied. If only **Requested** documents are missing, a warning lists them instead, but this is just a reminder — parents can still submit without them.
 
 Finally, they click on the **Confirm and Submit Application** button.
 
@@ -463,7 +463,7 @@ Click on **view** next to the application you’d like to see. ADAM brings up th
 
 The admissions officer can make changes to this form, correcting spelling, or making sure that the data conforms to the required standards.
 
-If the school collects [supporting documents during the application](#collecting-supporting-documents-during-the-application), a **Submitted Documents** panel appears on this screen. It lists each document the parent uploaded, who it relates to (the family or a particular child), and the file name. Click on a file name to view or download it. If any required documents were not uploaded, an **Outstanding required documents** warning lists what is missing, so the admissions officer can decide whether to follow these up before approving.
+If the school collects [supporting documents during the application](#collecting-supporting-documents-during-the-application), a **Submitted Documents** panel appears on this screen. It lists each document the parent uploaded, who it relates to (the family or a particular child), and the file name. Click on a file name to view or download it. If any Requested or Mandatory documents were not uploaded — note that a missing Mandatory document should already have stopped the parent from submitting — an **Outstanding required documents** warning lists what is missing, so the admissions officer can decide whether to follow these up before approving.
 
 At the bottom of this form are three options:
 
