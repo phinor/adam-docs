@@ -1,13 +1,16 @@
-# TODO: Screenshots to be Captured
+# TODO: Outstanding Documentation Work
 
-These are screenshots that the manual needs but does not yet have, or has in a form that no longer
-matches ADAM. Each entry says which page the image belongs to, how to get to the screen, what to
-frame, and what the data on screen should look like.
+Most of this file is **screenshots** that the manual needs but does not yet have, or has in a form
+that no longer matches ADAM. Each entry says which page the image belongs to, how to get to the
+screen, what to frame, and what the data on screen should look like.
+
+The last section, [Missing Written Content](#missing-written-content), is for features that the
+manual does not cover at all and that need a page or a section written first.
 
 **Remove an entry from this file as soon as it is done** — a completed task must not be left here.
 The whole file can go once it is empty.
 
-Two standing rules from [`CONTRIBUTING.md`](CONTRIBUTING.md) apply to everything below:
+Two standing rules from [`CONTRIBUTING.md`](CONTRIBUTING.md) apply to every screenshot below:
 
 - Capture against the **demonstration school**, never a live site. No real pupil, family or staff
   information may appear.
@@ -84,3 +87,73 @@ Set the demonstration school up first so the row illustrates the point: give **M
 window that has already closed, and **Markbook Editing** a window that runs on for a further week
 after it. That way the picture shows the two-stage close-off the text describes rather than an
 empty line.
+
+---
+
+# Missing Written Content
+
+## Heads of Subject (`docs/subjects.md`)
+
+**The manual does not mention heads of subject anywhere.** Searching the whole of `docs/` for "head
+of subject", "heads of subject" or "headed subject" returns nothing, yet the feature drives eight
+privileges and is a prerequisite for the [mark book editing
+window](docs/reporting-period-administration.md#markbook-editing) that was documented alongside
+this entry. Support has already seen the consequence of the gap: "the HOD says they still can't edit
+marks", when in fact only one of the two halves had been set up.
+
+This needs a new **Heads of Subject** section on the **Subjects** page, most naturally after
+*Editing a Subject* and before *Changing the Order of Subjects*.
+
+### What the section has to say
+
+**The two halves.** This is the whole point of the section, so lead with it. A head-of-subject
+privilege and a head-of-subject assignment are both required, and **either one on its own does
+nothing at all and gives no error**. The privilege says *what* a subject head may do; the
+assignment says *which* subjects they may do it in. ADAM now shows a warning when heads are saved
+who hold none of these privileges, but it still saves the assignment, because granting the
+privileges afterwards is a perfectly normal order of work.
+
+**How to assign them.** From the **Subjects** tab, under the **Subject Administration** heading,
+click **Edit the subjects**, then click the **heads** action next to the subject concerned. The
+**Manage Heads of Subject** screen lets you pick one or more staff members under **Staff Members**;
+click **Save**. Current heads are listed in the **Head(s)** column back on the subject list. The
+person doing this needs the **Manage Head of Subject assignments** privilege.
+
+**The privileges that the assignment scopes.** All eight are worth listing, with the tab and heading
+each is found under, since they are scattered across the privilege screen:
+
+- **Add classes within headed subjects** and **Edit classes within headed subjects** — Class Admin
+  tab, Classes and Registrations heading.
+- **Add assessments for classes in headed subjects**, **Edit assessment results for headed
+  subjects** and **Edit assessment results for headed subjects during the mark book editing
+  window** — Assessments tab, Class Assessments heading.
+- **Enter report comments for headed subjects** and **Edit report marks for headed subjects** —
+  Reporting Admin tab, Reports heading.
+- **Manage aggregated result calculations from subjects taught** — Reporting Admin tab, Aggregated
+  Result Calculations heading.
+
+### Cross-links to add once the section exists
+
+- `docs/mark-book-administration.md`, in *When the Mark Book Closes* — the note about a head of
+  department needing both the privilege and the assignment should link to the new section rather
+  than restating it.
+- `docs/reporting-period-administration.md`, in *Markbook Editing* — same, for the second of the two
+  privileges listed there.
+
+### One thing to check with development first
+
+The last privilege in the list above, **Manage aggregated result calculations from subjects
+taught**, is scoped by the head-of-subject assignment in the code like the other seven, but its
+on-screen description says "for subjects that they teach" rather than *head*. Either the wording or
+the behaviour is wrong. Do not paper over it in the manual — ask which was intended, and document
+whichever answer comes back.
+
+### Screenshots this section will need
+
+Capture these against the demonstration school at the same time as writing the section, into
+`docs/assets/screenshots/subjects/`:
+
+1. The **Manage Heads of Subject** screen for a subject that already has two heads, showing the
+   **Staff Members** picker with both selected and the **Save** button.
+2. The subject list with the **Head(s)** column populated, and the **heads** action visible on the
+   row, so the reader can see where the action lives.
