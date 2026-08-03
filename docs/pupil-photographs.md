@@ -2,6 +2,8 @@
 
 ADAM stores pupil photographs in the Document Repository and uses one of them as a primary display image for the pupil.
 
+Staff members see this image throughout ADAM. It can also be shown to other families and pupils, in the portal birthday list, but only if the school has switched that on — it is off by default. See [Today’s Birthdays](parent-and-pupil-portal.md#todays-birthdays).
+
 ## Naming of Photographs
 
 The photographs should be named in one of three ways that will allow ADAM to identify which pupil it belongs to:

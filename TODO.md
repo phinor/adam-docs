@@ -92,6 +92,45 @@ empty line.
 
 # Missing Written Content
 
+## Parent and Pupil Portal — Today's Birthdays (`docs/parent-and-pupil-portal.md`)
+
+The new **Today's Birthdays** section is written but has no images. It needs three: the permission,
+the settings, and the result as a parent actually sees it. The feature is off by default on the
+demonstration school, so each capture needs setting up first.
+
+Grant **View birthdays** to the login group that the demonstration families use, and set
+**Birthdays visible in the portal** to **All pupils in the school** before capturing — at the
+default class scope, a demonstration login will usually see nobody and the section will not render
+at all.
+
+### 1. `parent-and-pupil-portal-09.png` — the View birthdays permission
+
+**Pupils → Security → Manage permissions groups**, then **privileges** against the
+group the demonstration families belong to. Scroll to the **Birthdays** heading. Frame the
+**View birthdays** row with both its **Pupils** and **Families** tick boxes visible, and enough of
+the rows above and below to show it sitting in the same list as everything else. Both boxes ticked.
+
+### 2. `parent-and-pupil-portal-10.png` — the three settings together
+
+**Administration → Site Administration → Edit site settings**, the **Pupils & Families** tab,
+scrolled to the **Widgets** heading. All three birthday settings must be in shot: **Birthdays
+visible in the portal**, **Show photographs in the portal birthday widget** and **Names in the
+portal birthday widget**. Leave photographs on **No** and names on **First name and surname
+initial**, so the image shows the defaults a school starts from rather than a configuration that
+happens to suit the screenshot.
+
+### 3. `parent-and-pupil-portal-11.png` — the list as a parent sees it
+
+**Families → Security → Login as a family** for a demonstration family with more than one child, so
+that the birthday card can be seen sitting *below* the children's cards — that placement is the
+point of the image and is easy to lose by cropping too tightly. Frame the foot of the portal front
+page: the last child's card, the **Family** and **Security** menu, and the **Today's Birthdays**
+card. Photographs off and names abbreviated, matching the defaults in image 2.
+
+If no demonstration pupil has a birthday on the day of capture, change one pupil's date of birth on
+the demonstration school to today rather than waiting — but pick a pupil in the same family's scope,
+and set it back afterwards.
+
 ## Heads of Subject (`docs/subjects.md`)
 
 **The manual does not mention heads of subject anywhere.** Searching the whole of `docs/` for "head

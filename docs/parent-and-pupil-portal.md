@@ -139,3 +139,49 @@ Any parent or student who has access to the portal will see a **QR Code** menu o
 *For users with limited data access or who may wish to avoid problems of bad signal, it may be sensible to take a screenshot of the QR code and store that in their phone’s photo gallery for future use.*
 
 Note that this QR Code is meant only for scanning by ADAM when searching for a pupil. It is not intended to work in any other website or QR Code scanner.
+
+## Today’s Birthdays
+
+Parents and pupils can be shown a short list of the pupils whose birthday falls on the current day. It appears under the heading **Today’s Birthdays** at the foot of the portal front page, below the children’s information and the family menu. Each pupil is listed with their name and age and, if the school chooses, their photograph. The names are not links, because parents and pupils have no access to another pupil’s profile.
+
+Nothing is shown until the school grants the permission described below, so no birthdays are shared with anybody by default. If none of the pupils in view has a birthday today, the section is left out of the page altogether rather than appearing empty.
+
+### Allowing parents and pupils to see birthdays
+
+The list is controlled by the **View birthdays** permission, which appears under the **Birthdays** heading when you manage a [pupil login group’s privileges](security-administration-for-families-and-pupils.md#managing-privileges).
+
+As with most permissions, there are separate tick boxes for **Pupils** and **Families**, so the list can be shown to parents only, to pupils only, or to both. Only pupils who are currently registered at the school are considered, both as viewers and as names in the list.
+
+### Choosing whose birthdays are shown
+
+Navigate to **Administration → Site Administration → Edit site settings**, click on the **Pupils & Families** tab and scroll down to the **Widgets** heading.
+
+**Birthdays visible in the portal:** this decides how wide the list is.
+
+| Option | Who appears in the list |
+| --- | --- |
+| **Pupils in the same class** | Only the viewer’s classmates. This is the default. |
+| **Pupils in the same grade** | Every pupil in the viewer’s grade. |
+| **Pupils in the same class or grade** | Either of the above. |
+| **All pupils in the school** | Every currently registered pupil. |
+
+“Class” here means the class in your default class subject — the subject ADAM uses whenever it refers to a pupil’s class without naming one, usually a register or form class. If that subject groups your pupils vertically instead, for example by boarding house, choose **Pupils in the same class or grade** so that pupils still see the others in their year.
+
+A parent with more than one child at the school sees everything that any of their children would see, gathered into a single list.
+
+### Choosing how much is shown about each pupil
+
+Two further settings, in the same place, decide how much the list gives away about each pupil. Both start on the more private option.
+
+**Show photographs in the portal birthday widget:** set this to **Yes** to include each pupil’s photograph. It starts as **No**.
+
+**Names in the portal birthday widget:** choose between **First name and surname initial** — the default, which shows a pupil as *Connor A.* — and **Full name**.
+
+!!! warning
+    Switching photographs on publishes pupils’ photographs to other families. ADAM keeps no record of which parents have agreed to their child’s photograph being shared in this way, so please satisfy yourself that your school’s photograph consent covers it before you do.
+
+### What staff members see
+
+Staff members have their own birthday list on the ADAM front page, under the heading **Today’s Birthday List**. It is older than the portal list, it always shows photographs and full names, and none of the three settings above apply to it.
+
+It is governed instead by three staff privileges, on the **Site Admin** tab under the **Birthdays** heading: **See birthdays of pupils**, which is limited to the pupils that the staff member teaches, **See birthdays of all pupils**, and **See birthdays of all staff**. Staff birthdays appear only on this list — they are never shown to parents or pupils.
