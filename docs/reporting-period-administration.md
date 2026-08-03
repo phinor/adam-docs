@@ -131,7 +131,7 @@ At the bottom, a section on **Other Settings** exists. Here you can toggle the P
 
 ## Reporting Period Time Frames
 
-Each time, after you add or edit a reporting period’s information, or click on the **Edit reporting period time frames** from the main menu (**Reporting → Reporting Period Administration → Edit reporting period time frames**), you can edit the deadlines associated with each reporting period.
+Each time, after you add or edit a reporting period’s information, or click on the **Edit reporting period time frames** from the main menu (**Reporting → Reporting Administration → Edit reporting period time frames**), you can edit the deadlines associated with each reporting period.
 
 ![](assets/screenshots/reporting-period-administration/reporting-period-administration-09.png)
 
@@ -178,11 +178,25 @@ Because the time frame already starts on 17 July, ADAM detects the overlap and m
 
 ### Reporting Period Actions
 
-There are a number of different deadlines that can be set. Note that apart from Markbook Entry and Merkbook Embargo, all other actions have both an “Entry” and an “Editing” option. Broadly speaking, the Entry option is required for normal teachers to perform their reporting functions, while the Editing is rather for teachers who may be required to Edit comments after the teachers have finished capturing their results. Not all schools use editing teams and thus nor all schools will make use of the Editing options in this list.
+There are a number of different deadlines that can be set. Note that apart from Markbook Embargo, all other actions have both an “Entry” and an “Editing” option. Broadly speaking, the Entry option is required for normal teachers to perform their reporting functions, while the Editing is rather for teachers who may be required to Edit comments after the teachers have finished capturing their results. Not all schools use editing teams and thus nor all schools will make use of the Editing options in this list.
 
 #### Markbook Entry
 
 This determines when teachers have access to add marks to the mark book. This is typically closed off before the reports are published in order to allow time for checking of those marks and reports.
+
+#### Markbook Editing
+
+This window re-opens the mark book after **Markbook Entry** has closed, but only for those staff who specifically have the privilege to edit mark book results. It is meant for the two-stage close-off that many schools use: all teaching staff lose mark entry on the entry deadline, and then heads of department keep working for a further few days to settle any final adjustments.
+
+As with Report Mark Editing, this window should only start once the Markbook Entry window has closed. While it is open, term and year-to-date calculations may also be adjusted, so those figures stay in step with any marks that are changed.
+
+Two privileges decide who may use the window. Both appear on the **Assessments** tab, under the **Class Assessments** heading, when [changing the privileges of a group](security-administration-for-staff.md#changing-the-privileges-of-a-group):
+
+-   **Edit assessment results during the mark book editing window** — allows the staff member to edit results for any class.
+-   **Edit assessment results for headed subjects during the mark book editing window** — allows the staff member to edit results only for classes in the subjects that they head. This privilege does nothing on its own: the staff member must also be assigned as a head of the subject concerned.
+
+!!! note
+    If you do not set a Markbook Editing time frame, nothing changes for your school. The mark book simply closes at the Markbook Entry deadline, exactly as before. Neither of the two privileges above is granted by any of the privilege groups that ship with ADAM, so the window has to be opened deliberately.
 
 #### Markbook Embargo
 
