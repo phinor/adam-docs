@@ -35,11 +35,11 @@ This will show a list of all staff, families and pupils who are currently logged
 
 ### Allowing Certain Users Access While in Maintenance Mode
 
-Some schools use Maintenance Mode to prevent access to the server at short notice. However, there might be reasons for specific staff members to have access to ADAM while most other users are not permitted to log in. While logins are blocked for most users while the server is in Maintenance Mode, ADAM does have a privilege that can be assigned to a group of users that will allow that group to log in while the server is in Maintenance Mode.
+Some schools use Maintenance Mode to prevent access to the server at short notice. However, there might be reasons for specific staff members to have access to ADAM while most other users are not permitted to log in. While logins are blocked for most users while the server is in Maintenance Mode, ADAM does have a permission that can be assigned to a group of users that will allow that group to log in while the server is in Maintenance Mode.
 
 This permission should be given sparingly, since if too many people have it, it may negate the entire point of Maintenance Mode which is to restrict access to ADAM.
 
-The privilege is found on the **Site Admin** tab of the staff privileges, is called “**Log in while in Maintenance Mode**”.
+The permission is found on the **Site Admin** tab of the staff permissions, is called “**Log in while in Maintenance Mode**”.
 
 Note that Site Administrators will always be able to log in, even when the server is in Maintenance Mode.
 

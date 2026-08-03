@@ -39,7 +39,7 @@ To apply the pending database updates:
 ### To apply an update file sent by email
 
 1.  Save the attachment from the email to your computer.
-2.  Log into ADAM using an administrator account with the necessary privileges from any computer with Internet access.
+2.  Log into ADAM using an administrator account with the necessary permissions from any computer with Internet access.
 3.  Navigate to "Administration" → "Updates" → "Apply ADAM Update".
 4.  Browse to find the file you saved and upload it.
 5.  ADAM will double-check to ensure that you have not skipped an update or are attempting to apply updates in the wrong order. ADAM will then apply the update.

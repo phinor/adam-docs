@@ -45,11 +45,11 @@ default**.
 
 Goes in *Seeing and Changing Who Uses What*.
 
-### 2. `profile-overview-customisation-16.png` — re-capture the Overview privileges
+### 2. `profile-overview-customisation-16.png` — re-capture the Overview permissions
 
 The capture in the manual is one build out of date: it describes **Manage Pupil Overview layouts**
 as letting a user "create, edit, delete and recommend the layouts", but recommendations are gone and
-the privilege now reads "create, edit, delete and **assign** the layouts". Re-capture the same crop,
+the permission now reads "create, edit, delete and **assign** the layouts". Re-capture the same crop,
 keeping the filename, once the demonstration server is on a build with the corrected wording.
 
 While you are there, tick **Choose own Pupil Overview layout** and leave **Manage Pupil Overview
@@ -135,7 +135,7 @@ and set it back afterwards.
 
 **The manual does not mention heads of subject anywhere.** Searching the whole of `docs/` for "head
 of subject", "heads of subject" or "headed subject" returns nothing, yet the feature drives eight
-privileges and is a prerequisite for the [mark book editing
+permissions and is a prerequisite for the [mark book editing
 window](docs/reporting-period-administration.md#markbook-editing) that was documented alongside
 this entry. Support has already seen the consequence of the gap: "the HOD says they still can't edit
 marks", when in fact only one of the two halves had been set up.
@@ -146,20 +146,20 @@ This needs a new **Heads of Subject** section on the **Subjects** page, most nat
 ### What the section has to say
 
 **The two halves.** This is the whole point of the section, so lead with it. A head-of-subject
-privilege and a head-of-subject assignment are both required, and **either one on its own does
-nothing at all and gives no error**. The privilege says *what* a subject head may do; the
+permission and a head-of-subject assignment are both required, and **either one on its own does
+nothing at all and gives no error**. The permission says *what* a subject head may do; the
 assignment says *which* subjects they may do it in. ADAM now shows a warning when heads are saved
-who hold none of these privileges, but it still saves the assignment, because granting the
-privileges afterwards is a perfectly normal order of work.
+who hold none of these permissions, but it still saves the assignment, because granting the
+permissions afterwards is a perfectly normal order of work.
 
 **How to assign them.** From the **Subjects** tab, under the **Subject Administration** heading,
 click **Edit the subjects**, then click the **heads** action next to the subject concerned. The
 **Manage Heads of Subject** screen lets you pick one or more staff members under **Staff Members**;
 click **Save**. Current heads are listed in the **Head(s)** column back on the subject list. The
-person doing this needs the **Manage Head of Subject assignments** privilege.
+person doing this needs the **Manage Head of Subject assignments** permission.
 
-**The privileges that the assignment scopes.** All eight are worth listing, with the tab and heading
-each is found under, since they are scattered across the privilege screen:
+**The permissions that the assignment scopes.** All eight are worth listing, with the tab and heading
+each is found under, since they are scattered across the permission screen:
 
 - **Add classes within headed subjects** and **Edit classes within headed subjects** — Class Admin
   tab, Classes and Registrations heading.
@@ -174,14 +174,14 @@ each is found under, since they are scattered across the privilege screen:
 ### Cross-links to add once the section exists
 
 - `docs/mark-book-administration.md`, in *When the Mark Book Closes* — the note about a head of
-  department needing both the privilege and the assignment should link to the new section rather
+  department needing both the permission and the assignment should link to the new section rather
   than restating it.
 - `docs/reporting-period-administration.md`, in *Markbook Editing* — same, for the second of the two
-  privileges listed there.
+  permissions listed there.
 
 ### One thing to check with development first
 
-The last privilege in the list above, **Manage aggregated result calculations from subjects
+The last permission in the list above, **Manage aggregated result calculations from subjects
 taught**, is scoped by the head-of-subject assignment in the code like the other seven, but its
 on-screen description says "for subjects that they teach" rather than *head*. Either the wording or
 the behaviour is wrong. Do not paper over it in the manual — ask which was intended, and document

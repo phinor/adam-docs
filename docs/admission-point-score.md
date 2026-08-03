@@ -19,12 +19,12 @@ Once these are in place, you can compute and preview any pupil’s score for a c
 
 ## Who Can See APS
 
-The APS menu entries are only shown to staff whose accounts hold the relevant privilege:
+The APS menu entries are only shown to staff whose accounts hold the relevant permission:
 
 -   **View & Compute APS** lets a user open **Compute an AP Score** and calculate a pupil’s score, view the **AP Score Grade List** for a whole grade, and see the APS card on a pupil’s overview screen.
 -   **Manage APS Definitions & Scales** lets a user create and edit the scales, definitions and subject overrides.
 
-Both privileges are found in the **Reporting** section of the staff privileges, under the **Admission Point Score** heading. A user with neither privilege will not see any APS options.
+Both permissions are found in the **Reporting** section of the staff permissions, under the **Admission Point Score** heading. A user with neither permission will not see any APS options.
 
 ## Computing a Pupil’s Score
 
@@ -68,7 +68,7 @@ APS can also be shown as a small card on a pupil’s **overview** (profile) scre
 The card is added through the same mechanism as any other overview block — see [Profile Overview Layouts](profile-overview-customisation.md#profile-overview-layouts). When editing an overview layout, add a block, set its **Contents** to **Widget**, and select the **Admission Point Score** widget from the list.
 
 !!! note
-    The card only appears for staff who hold the **View & Compute APS** privilege, and only when there is at least one enabled definition and a current reporting period to score. If any of these is missing, the block is simply left off the page.
+    The card only appears for staff who hold the **View & Compute APS** permission, and only when there is at least one enabled definition and a current reporting period to score. If any of these is missing, the block is simply left off the page.
 
 ## Managing Scales
 

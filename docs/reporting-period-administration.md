@@ -136,7 +136,7 @@ Each time, after you add or edit a reporting period’s information, or click on
 ![](assets/screenshots/reporting-period-administration/reporting-period-administration-09.png)
 
 !!! warning
-    *The deadlines that require “editing” require privileges to be assigned to staff. See “**[Security Administration](security-administration-for-staff.md#security-administration-for-staff)**”.*
+    *The deadlines that require “editing” require permissions to be assigned to staff. See “**[Security Administration](security-administration-for-staff.md#security-administration-for-staff)**”.*
 
 Each line represents a reporting action, which are discussed below, and on each line can be multiple windows, each with a start and end time. The start times are listed in green below the dates on which they take effect, and the end times are shown in red.
 
@@ -186,17 +186,17 @@ This determines when teachers have access to add marks to the mark book. This is
 
 #### Markbook Editing
 
-This window re-opens the mark book after **Markbook Entry** has closed, but only for those staff who specifically have the privilege to edit mark book results. It is meant for the two-stage close-off that many schools use: all teaching staff lose mark entry on the entry deadline, and then heads of department keep working for a further few days to settle any final adjustments.
+This window re-opens the mark book after **Markbook Entry** has closed, but only for those staff who specifically have the permission to edit mark book results. It is meant for the two-stage close-off that many schools use: all teaching staff lose mark entry on the entry deadline, and then heads of department keep working for a further few days to settle any final adjustments.
 
 As with Report Mark Editing, this window should only start once the Markbook Entry window has closed. While it is open, term and year-to-date calculations may also be adjusted, so those figures stay in step with any marks that are changed.
 
-Two privileges decide who may use the window. Both appear on the **Assessments** tab, under the **Class Assessments** heading, when [changing the privileges of a group](security-administration-for-staff.md#changing-the-privileges-of-a-group):
+Two permissions decide who may use the window. Both appear on the **Assessments** tab, under the **Class Assessments** heading, when [changing the permissions of a group](security-administration-for-staff.md#changing-the-permissions-of-a-group):
 
 -   **Edit assessment results during the mark book editing window** — allows the staff member to edit results for any class.
--   **Edit assessment results for headed subjects during the mark book editing window** — allows the staff member to edit results only for classes in the subjects that they head. This privilege does nothing on its own: the staff member must also be assigned as a head of the subject concerned.
+-   **Edit assessment results for headed subjects during the mark book editing window** — allows the staff member to edit results only for classes in the subjects that they head. This permission does nothing on its own: the staff member must also be assigned as a head of the subject concerned.
 
 !!! note
-    If you do not set a Markbook Editing time frame, nothing changes for your school. The mark book simply closes at the Markbook Entry deadline, exactly as before. Neither of the two privileges above is granted by any of the privilege groups that ship with ADAM, so the window has to be opened deliberately.
+    If you do not set a Markbook Editing time frame, nothing changes for your school. The mark book simply closes at the Markbook Entry deadline, exactly as before. Neither of the two permissions above is granted by any of the permission groups that ship with ADAM, so the window has to be opened deliberately.
 
 #### Markbook Embargo
 
@@ -219,7 +219,7 @@ Unlike the mark book entry, report mark entry is used when the mark book is not 
 
 #### Report Level Entry
 
-In a similar vein to the Report Mark Entry, this privilege is required when Learning Outcomes and Assessment Standards must be entered directly on the reporting screen.
+In a similar vein to the Report Mark Entry, this permission is required when Learning Outcomes and Assessment Standards must be entered directly on the reporting screen.
 
 #### Behavioural Indicator Entry
 
@@ -231,15 +231,15 @@ This time frame allows those teachers who specifically have the ability to edit 
 
 #### Report Mark Editing
 
-If report mark entry is enabled, this allows those teachers who specifically have the privileges to edit report marks to do so. When schools use the mark book, this is often the best privilege to give to an Academic Head who would have the ability to decide on condonations. It is worth noting that this should only start once the mark book entry has closed since if any marks in the mark book are adjusted after the editing has taken place, those edits could be overwritten.
+If report mark entry is enabled, this allows those teachers who specifically have the permissions to edit report marks to do so. When schools use the mark book, this is often the best permission to give to an Academic Head who would have the ability to decide on condonations. It is worth noting that this should only start once the mark book entry has closed since if any marks in the mark book are adjusted after the editing has taken place, those edits could be overwritten.
 
 #### Report Level Editing
 
-Where schools use Learning Outcome symbols, this allows those teachers who specifically have the privilege to edit learning outcomes to  do so. Again, these teachers can edit once the normal report mark entry time frame has closed.
+Where schools use Learning Outcome symbols, this allows those teachers who specifically have the permission to edit learning outcomes to  do so. Again, these teachers can edit once the normal report mark entry time frame has closed.
 
 #### Behavioural Indicator Editing
 
-Similarly, this privilege allows the editing of Behavioural Indicators by teachers who specifically have the privilege to do so.
+Similarly, this permission allows the editing of Behavioural Indicators by teachers who specifically have the permission to do so.
 
 #### Capture Goals (for pupils)
 

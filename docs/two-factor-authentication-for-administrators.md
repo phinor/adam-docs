@@ -24,7 +24,7 @@ Click on the **Administration tab**, then under the **Site Administration** head
 
 Set **Two Factor Authentication Forced For Staff** to “Yes” to require it of every staff member now, ahead of the deadline.
 
-Staff with elevated privileges are always required to use two-factor authentication, whatever this setting says.
+Staff with elevated permissions are always required to use two-factor authentication, whatever this setting says.
 
 ### Choosing how often ADAM asks for a code
 
@@ -84,7 +84,7 @@ The screen opens with a single line telling you where the school stands — for 
 
 Staff who have not set two-factor authentication up, and for whom it is not yet required, see a card on their ADAM dashboard inviting them to. As 1 January 2027 approaches the card's wording becomes more insistent, and after the date has passed it says so.
 
-Once two-factor authentication is required for a staff member — the school has switched the requirement on, or they hold an elevated-privilege account — they are taken straight to the setup page instead, and never see the card.
+Once two-factor authentication is required for a staff member — the school has switched the requirement on, or they hold an elevated-permission account — they are taken straight to the setup page instead, and never see the card.
 
 The card disappears as soon as they enrol. There is nothing to configure, and a staff member cannot dismiss it permanently — it is a reminder of something that is about to become compulsory, not a suggestion.
 

@@ -212,7 +212,7 @@ We navigated through all the screens above by creating a new event. If you need 
 
 ## Signing Pupils Up for an Event
 
-Staff members can sign up pupils for events, and pupils can sign themselves up for events. Note that both staff and pupils will require privileges to access these sections. Information on [how to set up staff privileges](security-administration-for-staff.md#security-administration-for-staff) is available, as is information on [how to assign pupil privileges](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
+Staff members can sign up pupils for events, and pupils can sign themselves up for events. Note that both staff and pupils will require permissions to access these sections. Information on [how to set up staff permissions](security-administration-for-staff.md#security-administration-for-staff) is available, as is information on [how to assign pupil permissions](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
 ### Individual Pupils
 

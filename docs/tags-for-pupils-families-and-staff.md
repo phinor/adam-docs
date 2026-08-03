@@ -4,7 +4,7 @@ ADAM can add tags to pupils’, families’ and staff name banners so that whene
 
 ![](assets/screenshots/tags-for-pupils-families-and-staff/tags-for-pupils-families-and-staff-01.png)
 
-While there are privileges to control who can see which type of tags (i.e. a staff member can be assigned the privilege to view family tags), there is no control regarding *which* families or *which* tags they can see.
+While there are permissions to control who can see which type of tags (i.e. a staff member can be assigned the permission to view family tags), there is no control regarding *which* families or *which* tags they can see.
 
 Please consider, carefully, using these tags to store personal, private or sensitive information.
 
@@ -51,7 +51,7 @@ You will be asked to confirm your actions. Note that every pupil who is assigned
 
 Navigate to the profile and click on the “**Tags**” option.
 
-If you do not see a “tags” option on their profile, check first that some tags have been created. You may not have the necessary privileges to assign tags. Below the image shows a pupil profile that we are assigning tags to, but the tag screen is identical on all profile types.
+If you do not see a “tags” option on their profile, check first that some tags have been created. You may not have the necessary permissions to assign tags. Below the image shows a pupil profile that we are assigning tags to, but the tag screen is identical on all profile types.
 
 ![](assets/screenshots/tags-for-pupils-families-and-staff/tags-for-pupils-families-and-staff-07.png)
 
@@ -59,30 +59,30 @@ A list of active and available tags are shown. Click on an “Available Tag” t
 
 ![](assets/screenshots/tags-for-pupils-families-and-staff/tags-for-pupils-families-and-staff-08.png)
 
-## Privileges For Tags
+## Permissions For Tags
 
-When the module is initially opened, no privileges will have been assigned to any staff and thus the tag feature won’t be visible to them.
+When the module is initially opened, no permissions will have been assigned to any staff and thus the tag feature won’t be visible to them.
 
-Assigning privileges is [discussed elsewhere](security-administration-for-staff.md#managing-security-groups).
+Assigning permissions is [discussed elsewhere](security-administration-for-staff.md#managing-security-groups).
 
-The following privileges control the Tag module:
+The following permissions control the Tag module:
 
 -   Site Admin → Tags:
 
 -   Manage Tags: This allows the staff member to create tags, delete tags and edit tags.
--   View the Tag Report: This allows the staff member to view a report listing all the people that are assigned to that tag. Note that they must also have appropriate scratch list privileges since ADAM will use that module to generate the lists.
+-   View the Tag Report: This allows the staff member to view a report listing all the people that are assigned to that tag. Note that they must also have appropriate scratch list permissions since ADAM will use that module to generate the lists.
 
 -   Pupil Admin → Tags:
 
--   Add Tags to Pupils: This privilege allows the user to assign and remove tags from a pupil profile.
--   View Pupil Tags: This privilege allows the tags to be shown in the pupil’s profile banner to user. If they don’t have this privilege, they will not see any tags. *This privilege should probably be assigned to most staff members.*
+-   Add Tags to Pupils: This permission allows the user to assign and remove tags from a pupil profile.
+-   View Pupil Tags: This permission allows the tags to be shown in the pupil’s profile banner to user. If they don’t have this permission, they will not see any tags. *This permission should probably be assigned to most staff members.*
 
 -   Staff Admin → Tags:
 
--   Add Tags to Staff: This privilege allows the user to assign and remove tags from a staff profile.
--   View Staff Tags: This privilege allows the tags that are assigned to the staff member to be shown to the user. If they don’t have this privilege they will not see tags in the staff profiles.
+-   Add Tags to Staff: This permission allows the user to assign and remove tags from a staff profile.
+-   View Staff Tags: This permission allows the tags that are assigned to the staff member to be shown to the user. If they don’t have this permission they will not see tags in the staff profiles.
 
 -   Family Admin → Tags:
 
--   Add Tags to Families: This privilege allows the user to assign and remove tags from a family profile.
--   View Family Tags: This privilege allows the tags that are assigned to the family to be shown to the user. If they don’t have this privilege they will not see tags in the family profiles.
+-   Add Tags to Families: This permission allows the user to assign and remove tags from a family profile.
+-   View Family Tags: This permission allows the tags that are assigned to the family to be shown to the user. If they don’t have this permission they will not see tags in the family profiles.

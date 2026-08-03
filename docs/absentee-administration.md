@@ -232,7 +232,7 @@ Lastly, the option to **show recording information** will show which teachers re
 
 ## Absentee SMSs
 
-ADAM allows a user with the appropriate privileges to send SMS notifications to Family members, Pupils and Staff of absent pupils.
+ADAM allows a user with the appropriate permissions to send SMS notifications to Family members, Pupils and Staff of absent pupils.
 
 *Note that sending SMSs is not free and this can be an expensive undertaking! It is partly for this reason, and to ensure no false positives are triggered, that absentee SMS alerts* cannot *be set up to be processed automatically.*
 

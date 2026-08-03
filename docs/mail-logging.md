@@ -48,11 +48,11 @@ Note that 90 mails every 5 minutes, gives ADAM the capacity to process a maximum
 
 If the cron process stops running, then the mails will be stored in the mail box on the server, waiting for ADAM to process them. In these cases, it might be necessary to increase the number of messages that can be processed at once to work through the backlog of unchecked mail. ADAM will, however, keep chipping away at the pile until there are none left. In such instances, older messages are generally processed first, so if there is a backlog, it may take some time for newly sent messages to be reflected in ADAM.
 
-## Privileges to View Logged Mail
+## Permissions to View Logged Mail
 
-Privileges to view logged mail should be given sparingly since mail may contain sensitive information. In the privilege groups, the following privileges, found under the “**Family Admin**” tab, are relevant:
+Permissions to view logged mail should be given sparingly since mail may contain sensitive information. In the permission groups, the following permissions, found under the “**Family Admin**” tab, are relevant:
 
--   **View any correspondence:** This privilege allows a user to see the correspondence of any and all families. This should probably only be given to senior management of the school.
+-   **View any correspondence:** This permission allows a user to see the correspondence of any and all families. This should probably only be given to senior management of the school.
 -   **View correspondence from specified subjects:** Here, the teacher will only be able to read the correspondence of a family, provided that the student is registered in a class that they teach. This should be reserved for housemasters, grade tutors or other such pastoral responsibilities. The subjects concerned are selected on the Mail Logging configuration screen on the Site Settings page.
--   **View correspondence of class pupils:** In this privilege, which is similar to the one above, they will see correspondence from that pupil if they teach any of the pupils in the family, in any class. This privilege is more wide-reaching that the one contemplated above and, as such, is rarely useful. If this were given to teachers, for example, they would be able to see correspondence between other teachers and families of any of the pupils that they taught.
--   **View sent and received correspondence:** This privilege is safe to give to all staff. It allows them to see correspondence that matches with their email address and the family. They cannot see correspondence sent by other teachers.
+-   **View correspondence of class pupils:** In this permission, which is similar to the one above, they will see correspondence from that pupil if they teach any of the pupils in the family, in any class. This permission is more wide-reaching that the one contemplated above and, as such, is rarely useful. If this were given to teachers, for example, they would be able to see correspondence between other teachers and families of any of the pupils that they taught.
+-   **View sent and received correspondence:** This permission is safe to give to all staff. It allows them to see correspondence that matches with their email address and the family. They cannot see correspondence sent by other teachers.

@@ -13,7 +13,7 @@ ADAM’s two-factor authentication system works using an Authenticator App that 
 !!! warning
     From **1 January 2027**, two-factor authentication is required for every staff member who uses ADAM. You do not need to wait for that date — you can set it up now, and we would encourage you to. Once the requirement takes effect, ADAM will ask you to set it up the next time you sign in, and you will not be able to use ADAM until you have.
 
-Two-factor authentication is already required for accounts with elevated privileges, whatever your school has chosen.
+Two-factor authentication is already required for accounts with elevated permissions, whatever your school has chosen.
 
 ## Supported Authenticator Apps
 

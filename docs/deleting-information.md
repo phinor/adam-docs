@@ -58,7 +58,7 @@ The restoration of a deleted family cannot be done from within the ADAM interfac
 
 ### Some additional warnings {#deleting-families-some-additional-warnings}
 
-There are very few staff members who will need the ability to delete families. Administrators should take care to give this privilege only to those who need it and who have been trained in its usage and implications.
+There are very few staff members who will need the ability to delete families. Administrators should take care to give this permission only to those who need it and who have been trained in its usage and implications.
 
 ## Deleting Staff
 

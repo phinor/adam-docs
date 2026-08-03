@@ -44,7 +44,7 @@ At the top of the table of fields is an option to **Add a new custom field…**.
 -   Default Value: What value should ADAM assume for any fields that have not yet been updated with an actual value? If you are working with a “Single Option” or “Multiple Option” field, the default value must be one of the options provided.
 -   Sort order: This determines the order in which the custom fields are sorted. Lower numbers mean earlier in the list. If two fields have the same number, they are sorted by their field names.
 -   Show for Scratch List: Should this field be made available on the scratch list options?
--   Sensitive Information: Should the contents of this field be made available to staff who do not have the privileges to see sensitive information?
+-   Sensitive Information: Should the contents of this field be made available to staff who do not have the permissions to see sensitive information?
 -   Show on the Detail Update Form: Should this field appear on a detail update form?
 
 Note that custom fields are always available on “Add” and “Edit” operations.
@@ -114,7 +114,7 @@ Choose which type of scratch list fields you want to manage and click on the **e
 -   Each field has three options:
 
 -   Enabled: this setting determines whether the field is available or not to all users.
--   Sensitive: this setting determines whether the field is available to users with or without the sensitive information privilege. Note that if a field is not set as sensitive here, but is based on a sensitive field as defined in the core database fields, ADAM will allow the field to be selected, but it will not show any information.
+-   Sensitive: this setting determines whether the field is available to users with or without the sensitive information permission. Note that if a field is not set as sensitive here, but is based on a sensitive field as defined in the core database fields, ADAM will allow the field to be selected, but it will not show any information.
 -   Hidden: In an attempt to simplify the scratch list options, some options can appear hidden at first. If there are any hidden fields, ADAM will show an option to toggle the hidden fields on and off.
 
 Once you’re done editing these options, click on the **Save** button at the bottom of the screen.

@@ -68,13 +68,13 @@ When asked to display a signature on a report, ADAM will look in the staff membe
 
 The signatures must be uploaded to the individual staff members’ Document Repository.
 
-*Importantly, the person uploading the signatures must have the necessary privileges to add documents to the signatures category of the Document Repository. This person does not need to have “read” access, although “delete” access can be useful to replace an old signature with a newer version if it is required.*
+*Importantly, the person uploading the signatures must have the necessary permissions to add documents to the signatures category of the Document Repository. This person does not need to have “read” access, although “delete” access can be useful to replace an old signature with a newer version if it is required.*
 
 ADAM will use the *first* signature that it finds in this document repository category. This can sometimes be unpredictable if there are multiple versions of the signature. Thus, you are advised to delete any old versions of the signature so that the final choice not left to chance.
 
-Navigate to the staff member’s profile (**Staff → Staff Administration → Staff Info**) and click on the **Document Repository** tab (if you can’t see this tab, ask your ADAM administrator for privileges first). Click on the “**Signatures**” section. Click on the “Choose files” button and locate the copy of the signature on your computer. The click on the **Upload files…** button. The signature should appear in the list of uploaded files.
+Navigate to the staff member’s profile (**Staff → Staff Administration → Staff Info**) and click on the **Document Repository** tab (if you can’t see this tab, ask your ADAM administrator for permissions first). Click on the “**Signatures**” section. Click on the “Choose files” button and locate the copy of the signature on your computer. The click on the **Upload files…** button. The signature should appear in the list of uploaded files.
 
-If you can see the Document Respository tab within the staff profile, but don’t see the “Signatures” category, then you will [need privileges to upload documents to that category first](document-repository.md#staff-permissions).
+If you can see the Document Respository tab within the staff profile, but don’t see the “Signatures” category, then you will [need permissions to upload documents to that category first](document-repository.md#staff-permissions).
 
 ![](assets/screenshots/report-publishing/report-publishing-04.png)
 
@@ -211,7 +211,7 @@ Repeat for any other affected grades.
 
 ## Reports on the Parent and Pupil Portal
 
-In order for parents to access their children’s reports on the Parent and Pupil portal, they will need the [correct privileges](security-administration-for-families-and-pupils.md#managing-login-groups) in order to do so. Assuming that the privileges are set up correctly, they will have automatic access to the report as soon as the [publish date and time is reached](reporting-period-administration.md#reporting-period-administration).
+In order for parents to access their children’s reports on the Parent and Pupil portal, they will need the [correct permissions](security-administration-for-families-and-pupils.md#managing-login-groups) in order to do so. Assuming that the permissions are set up correctly, they will have automatic access to the report as soon as the [publish date and time is reached](reporting-period-administration.md#reporting-period-administration).
 
 ## Creating Custom Reports for Individuals
 
@@ -281,9 +281,9 @@ To fix this, you need to tell ADAM to refresh the archived copy of the report. S
 
 There are a few things to check.
 
-#### Privilege Groups
+#### Permission Groups
 
-If in the list of names the pupil is crossed out and the message “this family does not have the required privileges to view the report; the report will not be emailed” is displayed next to the pupil, then the [pupil belongs to a privilege group](security-administration-for-families-and-pupils.md#managing-login-groups) that does not allow the parents to **view the most recent report**.
+If in the list of names the pupil is crossed out and the message “this family does not have the required permissions to view the report; the report will not be emailed” is displayed next to the pupil, then the [pupil belongs to a permission group](security-administration-for-families-and-pupils.md#managing-login-groups) that does not allow the parents to **view the most recent report**.
 
 ![](assets/screenshots/report-publishing/report-publishing-15.png)
 

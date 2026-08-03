@@ -174,7 +174,7 @@ The exact method of adding a calendar to these programs is different and you are
 ![](assets/screenshots/timetable-module/timetable-module-22.png)
 
 !!! warning
-    *Please note that* *[pupils require privileges](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils)* *to view and subscribe to their calendars in the Parent and Pupil Portal.*
+    *Please note that* *[pupils require permissions](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils)* *to view and subscribe to their calendars in the Parent and Pupil Portal.*
 
 ## Resetting a Timetable Link
 

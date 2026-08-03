@@ -42,10 +42,10 @@ A medical examinations report can be printed off for each grade by navigating to
 
 Click on **Generate Report** to be able to see this report.
 
-## Privileges Required for Health Monitoring
+## Permissions Required for Health Monitoring
 
-For users who are recording the results of Health Monitoring, there is only one privilege that needs to be [assigned to staff](security-administration-for-staff.md#changing-the-privileges-of-a-group): **Pupil Admin → Medical Records → Perform Health Monitoring** ***(medical\_healthcheck)***.
+For users who are recording the results of Health Monitoring, there is only one permission that needs to be [assigned to staff](security-administration-for-staff.md#changing-the-permissions-of-a-group): **Pupil Admin → Medical Records → Perform Health Monitoring** ***(medical\_healthcheck)***.
 
-For staff that are viewing the medical examination report, they should be given the privilege **Pupil Admin → Medical Administration → View Medical Examinations Report** ***(medical\_exam\_report)****.*
+For staff that are viewing the medical examination report, they should be given the permission **Pupil Admin → Medical Administration → View Medical Examinations Report** ***(medical\_exam\_report)****.*
 
-*Kindly note that this privilege allows the staff member to see* all *medical exam information, not just that related to Covid-19 or the health monitoring. Thus this privilege should be given to appropriately authorised staff members only.*
+*Kindly note that this permission allows the staff member to see* all *medical exam information, not just that related to Covid-19 or the health monitoring. Thus this permission should be given to appropriately authorised staff members only.*

@@ -8,7 +8,7 @@ The Document Repository is an online file storage utility that can store files a
 
 To begin with, ADAM needs a location in which to save files on the actual server. A folder needs to be created on the server and configured in the site settings (see page ).
 
-*Please ensure that this folder is not a sub-folder of the web-root. If it is, then files can be accessed without necessarily following the correct privileges.*
+*Please ensure that this folder is not a sub-folder of the web-root. If it is, then files can be accessed without necessarily following the correct permissions.*
 
 ## Categories
 
@@ -30,7 +30,7 @@ ADAM allows you to edit any custom categories and not the built in ones. Some of
 
 The “delete” option next to the custom categories allows you to delete a category. However, it will not delete the files. When you delete a category, ADAM will move all the files within that category to a category that you specify when you delete it.
 
-## Pupil and Family Privileges
+## Pupil and Family Permissions
 
 If you allow parent and pupil access to the Document Repository through the Parent and Pupil Portals, then you can control which categories they can see. Note that parents are not able to upload information into the repository or delete anything from it – only access information, and only from the categories that you give access to.
 
@@ -38,23 +38,23 @@ If you allow parent and pupil access to the Document Repository through the Pare
 
 Even if you do give access to categories, parents still won’t get access to the Document Repository until they are given the permission to actually [see the Document Repository in the portal](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
-To edit the permissions, click on the “**Administration**” tab, and under the “**Document Repository**” heading, click on “**Edit pupil and family privileges**”.
+To edit the permissions, click on the “**Administration**” tab, and under the “**Document Repository**” heading, click on “**Edit family and pupil permissions**”.
 
 ![](assets/screenshots/document-repository/document-repository-02.png)
 
 Note, carefully, the warning messages that ADAM shows for certain categories (such as the “Reports” category in the image above). Some categories are used internally by ADAM and can store temporary documents. In the case of reports, for example, each time a report is generated, a copy is stored in the archive. This copy is continually updated until the report is published. If you allow parent access to this category, they will be able to see draft copies of the reports *before* the reports are published.
 
-Click on the “change” option to adjust the privileges for that group:
+Click on the “change” option to adjust the permissions for that group:
 
 ![](assets/screenshots/document-repository/document-repository-03.png)
 
 When done, click on the **Save privileges** button.
 
-Note that if you change the privileges for a restricted group, ADAM will show the following warning:
+Note that if you change the permissions for a restricted group, ADAM will show the following warning:
 
 ![](assets/screenshots/document-repository/document-repository-04.png)
 
-Unlike the [staff privileges](security-administration-for-staff.md#security-administration-for-staff), we now are simply controlling whether the groups can be seen by families or pupils. Parents and pupils can only ever get read-only access from this screen.
+Unlike the [staff permissions](security-administration-for-staff.md#security-administration-for-staff), we now are simply controlling whether the groups can be seen by families or pupils. Parents and pupils can only ever get read-only access from this screen.
 
 ## Parent Uploads into the Document Repository
 
@@ -115,7 +115,7 @@ Look carefully at the example above. Within the one file upload section, we are 
 
 ### Instructions for Parents
 
-Depending on the privileges assigned to the parents and pupils, the options to upload documents will appear as follows in the portal:
+Depending on the permissions assigned to the parents and pupils, the options to upload documents will appear as follows in the portal:
 
 ![](assets/screenshots/document-repository/document-repository-08.png)
 
@@ -164,19 +164,19 @@ If you choose to reject the upload, be aware that it will be deleted with no way
 
 You can customise the access to the Document Repository based on the staff security groups.
 
-To edit the permissions, click on the “**Administration**” tab, and under the “**Document Repository**” heading, click on “**Edit staff privileges**”.
+To edit the permissions, click on the “**Administration**” tab, and under the “**Document Repository**” heading, click on “**Edit staff permissions**”.
 
-The different groups are listed and, next to them, are the current privileges that have been assigned to them. The Staff Groups are shown with one or more of three letters shown:
+The different groups are listed and, next to them, are the current permissions that have been assigned to them. The Staff Groups are shown with one or more of three letters shown:
 
 -   R – the group has permission to read and view the files.
 -   A – the group has permission to add files to that category.
 -   D – the group has permission to delete files from that category.
 
-Next to each category is a “change” option. Click on this option to change the privileges for that group.
+Next to each category is a “change” option. Click on this option to change the permissions for that group.
 
-Next to each option, click on “Read”, “Add” or “Delete” to assign that group the associated privileges.
+Next to each option, click on “Read”, “Add” or “Delete” to assign that group the associated permissions.
 
-Click on the “Save privileges” button at the bottom to save these changes. The privilege category table should now reflect these new privileges.
+Click on the “Save privileges” button at the bottom to save these changes. The permission category table should now reflect these new permissions.
 
 ### File Types Staff May Upload
 

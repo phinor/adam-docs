@@ -34,7 +34,7 @@ choice of their own, without disturbing the people who have.
     There is only one layout per person per screen, so an administrator who puts somebody onto a
     layout **replaces whatever they had**, including a layout that person had chosen for themselves.
     Nothing is kept underneath to fall back on. The staff member can of course choose again
-    afterwards, if they have the privilege to.
+    afterwards, if they have the permission to.
 
 !!! note "Upgrading from an earlier version of ADAM"
     Earlier versions of ADAM let each staff member customise their own overview page, and had a
@@ -47,33 +47,33 @@ choice of their own, without disturbing the people who have.
     day. These are ordinary layouts: once their owner has moved to one of the school's layouts, the
     old one can simply be deleted.
 
-## Assigning the Privileges to Staff
+## Assigning the Permissions to Staff
 
-There are six privileges in total, two for each of the three overview screens:
+There are six permissions in total, two for each of the three overview screens:
 
 -   **Manage Pupil / Family / Staff Overview layouts** — create, edit, duplicate and delete the
     layouts that are available for that screen, and decide which staff members are on which layout.
 -   **Choose own Pupil / Family / Staff Overview layout** — choose which of the available layouts to
     use for that screen.
 
-Being able to manage the layouts implies being able to choose one, so the second privilege does not
+Being able to manage the layouts implies being able to choose one, so the second permission does not
 also have to be granted to an administrator.
 
-To [assign the privileges](security-administration-for-staff.md#security-administration-for-staff),
-open the **privileges** view of the appropriate staff group and, under **Pupil Admin**, **Staff
+To [assign the permissions](security-administration-for-staff.md#security-administration-for-staff),
+open the **permissions** view of the appropriate staff group and, under **Pupil Admin**, **Staff
 Admin** or **Family Admin**, look for the **Overview heading**.
 
 ![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-16.png)
 
-It is entirely reasonable to give most teachers the "choose own" privilege, and to keep the "manage"
-privilege for the handful of people who look after the school's layouts.
+It is entirely reasonable to give most teachers the "choose own" permission, and to keep the "manage"
+permission for the handful of people who look after the school's layouts.
 
 !!! warning
     A staff member can only ever see the information that they have been allowed to view through the
-    [scratch list privileges](scratch-lists.md#controlling-access-to-scratch-list-fields), whichever
+    [scratch list permissions](scratch-lists.md#controlling-access-to-scratch-list-fields), whichever
     layout they are using.
 
-As usual, a site administrator automatically has all six privileges.
+As usual, a site administrator automatically has all six permissions.
 
 ## Choosing Your Own Layout
 
@@ -95,7 +95,7 @@ the school's default again — and you will pick up any later improvements made 
 
 ## Managing the Available Layouts
 
-If you have the privilege to manage layouts, the same **change this layout** screen offers a link to
+If you have the permission to manage layouts, the same **change this layout** screen offers a link to
 **edit the available layouts**. This opens the catalogue of layouts for that screen.
 
 ![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-13.png)
@@ -153,7 +153,7 @@ Within each block are the following options:
 
 -   A **Field list** block shows one or more of the scratch list fields. Staff will only see the
     fields they have been
-    [given privileges to see](scratch-lists.md#controlling-access-to-scratch-list-fields). If only a
+    [given permissions to see](scratch-lists.md#controlling-access-to-scratch-list-fields). If only a
     single field is chosen, the field's name is not shown and its contents appear as a plain
     paragraph — so use the heading to give it context.
 -   A **Widget** block shows one of the ready-made panels that ADAM (and its modules) provide, such
@@ -190,7 +190,7 @@ overview screen using the layout.
 ![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-14.png)
 
 !!! note
-    The preview shows what **you** would see. A staff member with fewer privileges will see less.
+    The preview shows what **you** would see. A staff member with fewer permissions will see less.
     Previewing is only available to people who are allowed to view the profiles concerned in the
     first place.
 
@@ -215,7 +215,7 @@ waiting for each of them to find it for themselves.
 
 !!! warning
     Moving somebody replaces whatever they had, **including a layout they picked for themselves**.
-    They are not asked, and their old choice is not remembered. If they have the privilege to choose
+    They are not asked, and their old choice is not remembered. If they have the permission to choose
     their own layout, they can simply pick another one afterwards.
 
 ### Making a Layout the Default

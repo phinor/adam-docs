@@ -85,7 +85,7 @@ Once ADAM has been configured with at least once trusted server relationship tha
 
 ![](assets/screenshots/cross-site-logins-and-trusted-servers/cross-site-logins-and-trusted-servers-08.png)
 
-Note that users must first have the appropriate privilege to allow them to see this option.
+Note that users must first have the appropriate permission to allow them to see this option.
 
 When  they click on that option, a list of Trusted Servers will appear:
 

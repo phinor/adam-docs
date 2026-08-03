@@ -2270,7 +2270,7 @@ No data returned.
 
 ### FamilyLogin/privileges:get
 
-Returns the portal privileges available for the currently authenticated family or pupil login.
+Returns the portal permissions available for the currently authenticated family or pupil login.
 
 #### Request {#familyloginprivilegesget-request}
 
@@ -2284,7 +2284,7 @@ None — uses the current authentication session context.
 
 #### Response {#familyloginprivilegesget-response}
 
-Data attribute maps pupil IDs to their available privilege strings.
+Data attribute maps pupil IDs to their available permission strings.
 
 ```json
 {
@@ -2609,7 +2609,7 @@ Data attribute contains the message with an attachments array:
 }
 ```
 
-#### Privileges
+#### Permissions
 
 Requires one of: messagelog_staff_view, messagelog_family_view, messagelog_pupil_view (staff tokens); or viewmessagelog_family, viewmessagelog_pupil (family/pupil tokens).
 

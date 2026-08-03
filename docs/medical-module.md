@@ -34,16 +34,16 @@ When adding a new Medical Examination Type or editing an existing one, ADAM will
 
 The **Exam Type Description** will be used as a heading to describe the reason for the Medical Examination.
 
-Medical Examinations can be optionally **completed on the parents’ and pupils’ portal**. Parents and pupils have the option, [based on their privileges](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils), to complete medical examinations. These can be used to record the results screening examinations that are required to be completed by schools during the Covid-19 pandemic. Note that these instructions appear exactly as you capture them [on the portal screen](#parents-and-pupils-completing-medical-examinations).
+Medical Examinations can be optionally **completed on the parents’ and pupils’ portal**. Parents and pupils have the option, [based on their permissions](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils), to complete medical examinations. These can be used to record the results screening examinations that are required to be completed by schools during the Covid-19 pandemic. Note that these instructions appear exactly as you capture them [on the portal screen](#parents-and-pupils-completing-medical-examinations).
 
 *Note that the medical examinations are completed from a pupil’s perspective and are recorded against the pupil’s profile. It is not possible to record a medical examination for a parent.*
 
-*Note that “out of the box”, parents and pupils do* not *have privileges to complete medical examinations. You may wish to differentiate based on primary school (allow only parents to complete) or high school (allow parents and pupils to complete). It is not possible to make this differentiation per medical examinations - one setting applies to all medical examinations.*
+*Note that “out of the box”, parents and pupils do* not *have permissions to complete medical examinations. You may wish to differentiate based on primary school (allow only parents to complete) or high school (allow parents and pupils to complete). It is not possible to make this differentiation per medical examinations - one setting applies to all medical examinations.*
 
 Additionally, **medical examination summaries** can be shown on the Pupil and Parent portal by selecting “Yes” to this question.
 
 !!! warning
-    *The* *privilege group for the pupils must also be assigned the privileges to view medical examination summaries.*
+    *The* *permission group for the pupils must also be assigned the permissions to view medical examination summaries.*
 
 The indicated **Instructions** are shown to the staff who are completing the medical examination or to the parents/pupils in the portal. Thus differentiated instructions can be shown if required.
 
@@ -105,11 +105,11 @@ Once you’ve added a new metric, you may wish to have it [included in a specifi
 
 ### Parents and Pupils Completing Medical Examinations
 
-For the purposes of health screening, it may be desirable to have parents or pupils complete medical examinations in ADAM. For them to be able to do so, they will need to be [assigned the correct privileges](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
+For the purposes of health screening, it may be desirable to have parents or pupils complete medical examinations in ADAM. For them to be able to do so, they will need to be [assigned the correct permissions](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
 *Where schools would like to provide instructions for parents to complete the medical examination, the instructions below should serve as a starting point and not be relied on to provide the specific information required for the medical exam as set up by the school.*
 
-Parents and pupils with the privilege to complete medical examinations will see a **Medical Records** heading in their portal menus:
+Parents and pupils with the permission to complete medical examinations will see a **Medical Records** heading in their portal menus:
 
 ![](assets/screenshots/medical-module/medical-module-09.png)
 

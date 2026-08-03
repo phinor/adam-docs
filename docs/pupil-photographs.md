@@ -55,7 +55,7 @@ Some examples include:
 Visit the pupil’s information page (**Pupils → Pupil Administration → Pupil Info**) and click on the **Document Repository** heading.
 
 !!! warning
-    You will need specific privileges to be able to access the Document Repository.
+    You will need specific permissions to be able to access the Document Repository.
 
 Expand the **Photographs** section and use the **Choose Files** button to select a new photograph. Click on **Upload File…** to upload the file into the Document Repository.
 

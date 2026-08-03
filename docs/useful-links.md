@@ -63,6 +63,6 @@ To remove a link, click the “**delete**” button beside it and confirm when p
 
 ## Controlling Who Can Manage Links
 
-Access to the management screen is governed by a privilege, grouped under **Site Admin → Useful Links** when [editing a staff privilege group](security-administration-for-staff.md#security-administration-for-staff). The option reads “**Edit the ‘Useful Links’ that appear for staff, families and pupils**”. Grant it to the staff members who should be able to add, edit and remove these links.
+Access to the management screen is governed by a permission, grouped under **Site Admin → Useful Links** when [editing a staff permission group](security-administration-for-staff.md#security-administration-for-staff). The option reads “**Edit the ‘Useful Links’ that appear for staff, families and pupils**”. Grant it to the staff members who should be able to add, edit and remove these links.
 
 ![](assets/screenshots/useful-links/useful-links-04.png)

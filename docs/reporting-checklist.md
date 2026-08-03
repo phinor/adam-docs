@@ -27,12 +27,12 @@ At the end of a term or a semester, it’s useful to have a list of things to ch
 -   Check that the classes have the [correct enrolments](class-registration.md#registering-pupils-into-a-class) - particularly if you do not use ADAM’s mark book (if you do, your teachers will notice sooner that people are missing!).
 -   Parent and Pupil Portal
 
--   Review the [privileges](parent-and-pupil-portal.md#pupil-privilege-groups) and ensure that parents [have the privilege](security-administration-for-families-and-pupils.md#assigning-pupils-to-login-groups) to view reports.
--   Ensure that pupils are [assigned to the correct privilege groups](security-administration-for-families-and-pupils.md#assigning-pupils-to-login-groups). Double check those that might have had their privileges changed due to non-payment of fees etc.
+-   Review the [permissions](parent-and-pupil-portal.md#pupil-permission-groups) and ensure that parents [have the permission](security-administration-for-families-and-pupils.md#assigning-pupils-to-login-groups) to view reports.
+-   Ensure that pupils are [assigned to the correct permission groups](security-administration-for-families-and-pupils.md#assigning-pupils-to-login-groups). Double check those that might have had their permissions changed due to non-payment of fees etc.
 
 -   [Emailing reports](report-publishing.md#emailing-reports)
 
--   As before, review the privileges and ensure that parents have the privilege to view reports on the portal. Even if you do not make use of the portal, ensure that they have this privilege otherwise ADAM will not email them their report.
+-   As before, review the permissions and ensure that parents have the permission to view reports on the portal. Even if you do not make use of the portal, ensure that they have this permission otherwise ADAM will not email them their report.
 -   Do a dummy run!
 -   Make sure that you choose the option to refresh the archived copy as you send the reports to prevent possibly old versions of reports.
 

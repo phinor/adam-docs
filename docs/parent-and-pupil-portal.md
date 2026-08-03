@@ -2,9 +2,9 @@
 
 Many schools open the parent and pupil portals to improve the information that is available to parents. There are a number of different steps that need to be taken before parent and pupil access can be successfully given. This particular section in the manual will provide you with links to other parts that will guide you through the tasks in more detail.
 
-## Pupil Privilege Groups
+## Pupil Permission Groups
 
-It may seem counterintuitive, but parent *and* pupil access to ADAM is controlled through Pupil Privilege groups. This is done because it allows parents to see different views for each of their children. For example, a parent with a child in the high school might get to see the mark book for that child but this may not be available for their child in the primary school.
+It may seem counterintuitive, but parent *and* pupil access to ADAM is controlled through Pupil Permission groups. This is done because it allows parents to see different views for each of their children. For example, a parent with a child in the high school might get to see the mark book for that child but this may not be available for their child in the primary school.
 
 Please read more about [Pupil Login Groups](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils) and, once customised, how to [assign them to classes of pupils](security-administration-for-families-and-pupils.md#assigning-pupils-to-groups-by-class) at a time.
 
@@ -96,7 +96,7 @@ This is normal and is part of our commitment to keeping the information that is 
 
 ## Enabling The Portal, The Final Settings
 
-Once the privileges are set up, you must enable the portal for parents and/or pupils. This is done in Site Settings:
+Once the permissions are set up, you must enable the portal for parents and/or pupils. This is done in Site Settings:
 
 Navigate to **Administration → Site Administration → Edit site settings**. Once the settings are loaded, click on the **Security** tab and scroll down to **Pupil and Family Login**.
 
@@ -110,17 +110,17 @@ Once set, this can be changed individually for pupils in the database. This coul
 
 If your pupils use an Active Directory server, choose this here. ADAM can also manage the passwords internally if you require. Set the method to “internal passwords.” Other authentication mechanisms are also provided.
 
-**Default Privilege Group:** It is an excellent idea to set this [privilege group](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils) so that it gives new pupils and their families an appropriate level of access to the portal. Normally, this should be set to the same privilege group that would normally be applied to the bulk of your student intake.
+**Default pupil & family login privileges:** It is an excellent idea to set this [permission group](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils) so that it gives new pupils and their families an appropriate level of access to the portal. Normally, this should be set to the same permission group that would normally be applied to the bulk of your student intake.
 
-Again, be aware that this privilege group is set when the child is *first* captured onto the system.
+Again, be aware that this permission group is set when the child is *first* captured onto the system.
 
-ADAM provides some simple privilege groups “out the box”, but these can be [customised and new ones added as required](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
+ADAM provides some simple permission groups “out the box”, but these can be [customised and new ones added as required](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
 **Allow Family/Pupil Logins:** Change these settings to “Yes” as required.
 
 Finally, save the Site Settings.
 
-## Testing the Logins and Privileges
+## Testing the Logins and Permissions
 
 Many schools have a staff member who has children at the school. Such a staff member makes an excellent test subject when testing parent logins.
 
@@ -148,7 +148,7 @@ Nothing is shown until the school grants the permission described below, so no b
 
 ### Allowing parents and pupils to see birthdays
 
-The list is controlled by the **View birthdays** permission, which appears under the **Birthdays** heading when you manage a [pupil login group’s privileges](security-administration-for-families-and-pupils.md#managing-privileges).
+The list is controlled by the **View birthdays** permission, which appears under the **Birthdays** heading when you manage a [pupil login group’s permissions](security-administration-for-families-and-pupils.md#managing-permissions).
 
 As with most permissions, there are separate tick boxes for **Pupils** and **Families**, so the list can be shown to parents only, to pupils only, or to both. Only pupils who are currently registered at the school are considered, both as viewers and as names in the list.
 
@@ -184,4 +184,4 @@ Two further settings, in the same place, decide how much the list gives away abo
 
 Staff members have their own birthday list on the ADAM front page, under the heading **Today’s Birthday List**. It is older than the portal list, it always shows photographs and full names, and none of the three settings above apply to it.
 
-It is governed instead by three staff privileges, on the **Site Admin** tab under the **Birthdays** heading: **See birthdays of pupils**, which is limited to the pupils that the staff member teaches, **See birthdays of all pupils**, and **See birthdays of all staff**. Staff birthdays appear only on this list — they are never shown to parents or pupils.
+It is governed instead by three staff permissions, on the **Site Admin** tab under the **Birthdays** heading: **See birthdays of pupils**, which is limited to the pupils that the staff member teaches, **See birthdays of all pupils**, and **See birthdays of all staff**. Staff birthdays appear only on this list — they are never shown to parents or pupils.

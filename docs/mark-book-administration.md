@@ -81,7 +81,7 @@ Click on “Next” to confirm the settings.
 
 To edit an assessment’s details, such as it’s name, number of marks etc., navigate to **Assessment → Assessment Administration → Manage assessments and weightings**.
 
-Choose the reporting period (note that without specific privileges one cannot change the details of an assessment in a closed reporting period) and the class for the assessment that you would like to edit.
+Choose the reporting period (note that without specific permissions one cannot change the details of an assessment in a closed reporting period) and the class for the assessment that you would like to edit.
 
 Next to the assessment that you wish to change, click on the **edit** action:
 
@@ -127,10 +127,10 @@ ADAM will then update the pupils’ term marks based on the current weightings o
 
 Results can only be captured while the reporting period’s **Markbook Entry** time frame is open, and only for classes that the teacher takes. Once that deadline passes, the results entry screen shows the message *“This reporting period is no longer open for mark book entry.”* and no further marks can be saved for that period. Deadlines that are approaching are listed on the ADAM home page.
 
-Some schools close the mark book in two stages, so that ordinary mark entry ends on the published deadline while heads of department keep a few extra days to settle final adjustments. Where a [**Markbook Editing** time frame](reporting-period-administration.md#markbook-editing) has been set, those staff who hold one of the mark book editing privileges will still be able to reach the results entry screen for that period, and their own editing deadline is listed for them on the home page. Everybody else sees *“This reporting period’s mark book has closed. Only staff with mark book editing permission can make changes during the editing window.”*
+Some schools close the mark book in two stages, so that ordinary mark entry ends on the published deadline while heads of department keep a few extra days to settle final adjustments. Where a [**Markbook Editing** time frame](reporting-period-administration.md#markbook-editing) has been set, those staff who hold one of the mark book editing permissions will still be able to reach the results entry screen for that period, and their own editing deadline is listed for them on the home page. Everybody else sees *“This reporting period’s mark book has closed. Only staff with mark book editing permission can make changes during the editing window.”*
 
 !!! note
-    A head of department who is expecting to edit during this window needs two things: the **Edit assessment results for headed subjects during the mark book editing window** privilege, and to be assigned as a head of the subject concerned. Either one alone has no effect.
+    A head of department who is expecting to edit during this window needs two things: the **Edit assessment results for headed subjects during the mark book editing window** permission, and to be assigned as a head of the subject concerned. Either one alone has no effect.
 
 ## Viewing Who Changed a Mark
 
@@ -207,13 +207,13 @@ In this case, while the weightings of the assessments within each category is te
 
 To simplify the management of large markbooks with many assessments, it is often useful to make use of “Assessment Groups”.  Assessment groups are automatically copied across into all teachers mark books of the same subject and grade. The weightings are also shared.
 
-### Assigning the Privileges for Teachers
+### Assigning the Permissions for Teachers
 
-Note that this option is not normally enabled by default and so privileges to use “Assessment Groups” will need to be assigned. Normally it is best to assign it to the “General Teacher” role.
+Note that this option is not normally enabled by default and so permissions to use “Assessment Groups” will need to be assigned. Normally it is best to assign it to the “General Teacher” role.
 
 1.  “Administration” tab
 2.  “Manage staff groups”
-3.  “Privileges” for the “General Teacher” group
+3.  “Permissions” for the “General Teacher” group
 4.  Click on the “Assessments” tab
 5.  Choose the option “Make use of Assessment Groups to categorise assessments”
 
@@ -228,7 +228,7 @@ On the “Manage assessments and weightings” page for a class, the option for 
 
 ![](assets/screenshots/mark-book-administration/mark-book-administration-22.png)
 
-Note that if it does not appear, the [appropriate privilege](#assigning-the-privileges-for-teachers) will need to be assigned to the teachers.
+Note that if it does not appear, the [appropriate permission](#assigning-the-permissions-for-teachers) will need to be assigned to the teachers.
 
 Clicking on this option for the first time brings up a blank screen with room for new groups in each assessment category.
 
@@ -392,9 +392,9 @@ If the claculation you want does not show, you will have to [create it first](ag
 
 ADAM has the ability to import assessment results from CSV. In this example, we will work through the process of importing the Independent Examinations Board results - something at the more complex end of the scale.
 
-### Staff Privileges
+### Staff Permissions
 
-Ensure that the necessary staff privileges are in place. A staff member needs to have the privilege to “import assessment results for any subject” and “import assessment results for subjects taught by the user”. These will allow a single user to import a single spreadsheet with all the exam results on it. Without these privileges, a teacher will only be able to import results for pupils in their own classes.
+Ensure that the necessary staff permissions are in place. A staff member needs to have the permission to “import assessment results for any subject” and “import assessment results for subjects taught by the user”. These will allow a single user to import a single spreadsheet with all the exam results on it. Without these permissions, a teacher will only be able to import results for pupils in their own classes.
 
 ### Save the results as a CSV file
 

@@ -160,7 +160,7 @@ To generate a report:
 
 ### Teachers with Limited Access
 
-If you only have the "view own" privilege, you will only see classes you teach. The system automatically filters the available options based on your teaching assignments.
+If you only have the "view own" permission, you will only see classes you teach. The system automatically filters the available options based on your teaching assignments.
 
 ## Pupil Profile Integration
 
@@ -252,7 +252,7 @@ Pre-configured accommodation types include:
 
 ### Managing Document Repository Categories
 
-Before you can upload documents with Learning Support or Accommodations records, specific categories need to be created and specific privileges assigned to those groups. It is necessary that ensure that the groups who are allowed to add accommodations and learner support information have the ability to add documents to the category or categories that you create for this.
+Before you can upload documents with Learning Support or Accommodations records, specific categories need to be created and specific permissions assigned to those groups. It is necessary that ensure that the groups who are allowed to add accommodations and learner support information have the ability to add documents to the category or categories that you create for this.
 
 More information on creating [Document Repository Categories](document-repository.md#categories) and setting [Document Repository Staff Permissions](document-repository.md#staff-permissions) can be found elsewhere in this documentation (follow those links!).
 
@@ -260,7 +260,7 @@ An example of a Learning Support category created in the Pupils section is shown
 
 ![](assets/screenshots/learning-support-and-accommodations-module/learning-support-and-accommodations-module-06.png)
 
-Here, we show privileges being set for an abbreviated set of privilege groups for the **Learning Support** category.
+Here, we show permissions being set for an abbreviated set of permission groups for the **Learning Support** category.
 
 ![](assets/screenshots/learning-support-and-accommodations-module/learning-support-and-accommodations-module-07.png)
 
@@ -292,4 +292,4 @@ Finally, you will need to tell ADAM which categories may be chosen to upload the
 
 -   **Who can see a pupil's learning support information?**
 
--   This depends on permissions. Teachers with "view own" privileges see information for pupils in their classes. Users with full "view" privileges can see information for any pupil. The pupil overview widget only shows information to users with appropriate permissions.
+-   This depends on permissions. Teachers with "view own" permissions see information for pupils in their classes. Users with full "view" permissions can see information for any pupil. The pupil overview widget only shows information to users with appropriate permissions.

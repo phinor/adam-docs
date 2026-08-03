@@ -34,7 +34,7 @@ ADAM will now show you a list of pupils in the classes you selected and any staf
 ![](assets/screenshots/messaging-centre/messaging-centre-05.png)
 
 !!! warning
-    Note that the list of staff might also include other senior teachers and management staff members who have a specific privilege to receive all copies of mail sent via the messaging centre.
+    Note that the list of staff might also include other senior teachers and management staff members who have a specific permission to receive all copies of mail sent via the messaging centre.
 
 There are three tick-boxes in the table header. You can click on these to send to ALL pupils, ALL parents or ALL staff. You’ll see that as you click on these, all the ticks in the column are selected.
 
@@ -47,7 +47,7 @@ At the top of the table is a **Next** button to click on when you are happy with
 
 ADAM now shows you the messaging centre composer. This works in a very similar way to your web-based email systems.
 
-The image below shows all options that are available on the Messaging Centre and you may not see all of them depending on your privileges and will depend on the message type (e.g. SMSs do not have subjects or attachments).
+The image below shows all options that are available on the Messaging Centre and you may not see all of them depending on your permissions and will depend on the message type (e.g. SMSs do not have subjects or attachments).
 
 ![](assets/screenshots/messaging-centre/messaging-centre-08.png)
 
@@ -111,33 +111,33 @@ There are two caveats that you should be aware of:
 1.  The messages must be sent in the same batch. ADAM will not detect duplicate messages that have been sent across multiple batches, regardless of how soon after each other they were sent. Some schools, for example, will send a message to the primary school separately to the high school and parents will children in both phases will receive the same message from each.
 2.  If you personalise a message using merge codes, assuming that parents would give their children different names, using the first name merge code would mean that they would then get a copy for each child - even if these were sent in the same batch - because the content of the message, now including the different children’s names - is no longer identical.
 
-## Privileges Required for using the Messaging Centre
+## Permissions Required for using the Messaging Centre
 
-Before a user can send messages from the messaging centre, they need a few privileges to be set first.
+Before a user can send messages from the messaging centre, they need a few permissions to be set first.
 
 ### Step 1:
 
-The first privilege is a general one that is applied to the whole privilege group. They require, at a minimum, “Can make use of the messaginge centre (*messaging\_centre*)”. This is found on the **Messaging** tab, and under the heading **E-mail**. For more information on changing staff privileges, please see [Security Administration for Staff](security-administration-for-staff.md#security-administration-for-staff) elsewhere in this documentation.
+The first permission is a general one that is applied to the whole permission group. They require, at a minimum, “Can make use of the messaginge centre (*messaging\_centre*)”. This is found on the **Messaging** tab, and under the heading **E-mail**. For more information on changing staff permissions, please see [Security Administration for Staff](security-administration-for-staff.md#security-administration-for-staff) elsewhere in this documentation.
 
 ### Step 2:
 
-Once they can use the Messaging Centre, ADAM will need to know which messaging modules they may use and which people they may send to. Visit **Administration → Messaging Administration → Edit messaging privileges**.
+Once they can use the Messaging Centre, ADAM will need to know which messaging modules they may use and which people they may send to. Visit **Administration → Messaging Administration → Edit messaging permissions**.
 
-Here you will see a list of privilege groups along the side and a list of enabled messaging modules along the top:
+Here you will see a list of permission groups along the side and a list of enabled messaging modules along the top:
 
 ![](assets/screenshots/messaging-centre/messaging-centre-11.png)
 
-If you wish to set privileges for other messaging modules, you will need to enable these modules in the [Site Settings](logging-on-to-adam.md#site-settings). A link to the correct place inthe site settings is provided at the top of the page. Note that while it is possible to set privileges for enabled modules, the module must have the correct configuration details supplied in the Site Settings in order for it to be capable of delivering your messages.
+If you wish to set permissions for other messaging modules, you will need to enable these modules in the [Site Settings](logging-on-to-adam.md#site-settings). A link to the correct place inthe site settings is provided at the top of the page. Note that while it is possible to set permissions for enabled modules, the module must have the correct configuration details supplied in the Site Settings in order for it to be capable of delivering your messages.
 
 Here you can specify which groups can use which modules to send to which audiences.
 
 -   **Staff:** This allows the user to send messages to any staff members.
 -   **Class Pupils:** This allows the user to send messages to any pupils who belong to any of their classes (i.e. they can send messages only if they “teach” the pupil).
--   **All Pupils:** This allows the user to send messages to all pupils in the school. This privilege is also needed to send messages to alumni and the pupil applicants.
+-   **All Pupils:** This allows the user to send messages to all pupils in the school. This permission is also needed to send messages to alumni and the pupil applicants.
 -   **Class Families:** This allows the user to send messages to the parents of any pupils that they teach.
--   **All Families:** This allows the user to send messages to all parents of the school. This privilege is also required to send messages to the parents of applicants.
+-   **All Families:** This allows the user to send messages to all parents of the school. This permission is also required to send messages to the parents of applicants.
 
-Once you’ve set up the privileges, please click on the **Save** button at the bottom of the page.
+Once you’ve set up the permissions, please click on the **Save** button at the bottom of the page.
 
 ## Managing Messaging Centre Batches
 
@@ -182,7 +182,7 @@ Open the batch to deal with these messages. Depending on what happened to each o
 -   **Re-queue … that never reached the SMS provider** – these messages were never handed to the SMS provider, so ADAM can safely send them again. Choosing this returns them to the queue for another delivery attempt.
 -   **Abandon … stuck … (they will not be resent)** – these messages may already have been sent, but ADAM was unable to confirm it. Because resending them could deliver a duplicate, ADAM will not send them again. Choosing this simply clears the stuck state; if the messages still need to go out, compose a new message.
 
-These options only appear when there are stuck messages to act on, and only for staff who are permitted to manage the batch (its owner, or a user with the privilege to re-queue error messages or to abort batches).
+These options only appear when there are stuck messages to act on, and only for staff who are permitted to manage the batch (its owner, or a user with the permission to re-queue error messages or to abort batches).
 
 !!! note
     Only SMS batches can become stuck in this way. Email messages are claimed and sent in a single step, so they never enter this state.
@@ -209,7 +209,7 @@ In the **Additional Staff** at the bottom, you can click and choose other staff 
 
 Click on the **Next** button to begin composing your message.
 
-The screen shown is the standard messaging centre screen, which may have different options to those shown below, depending on your privileges:
+The screen shown is the standard messaging centre screen, which may have different options to those shown below, depending on your permissions:
 
 ![](assets/screenshots/messaging-centre/messaging-centre-19.png)
 

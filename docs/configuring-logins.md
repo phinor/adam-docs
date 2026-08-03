@@ -105,7 +105,7 @@ An internal password can be set when the staff member is created. Alternatively,
 
 ### Allowing staff to change their own passwords
 
-If staff use internal passwords, administrators should ensure that they belong to a privilege group that gives them the ability to change their passwords (this is not needed with other login mechanisms, since ADAM never stores those passwords and thus cannot change them). For more information on changing privileges, see the section “[Security Administration](security-administration-for-staff.md#security-administration-for-staff)”.
+If staff use internal passwords, administrators should ensure that they belong to a permission group that gives them the ability to change their passwords (this is not needed with other login mechanisms, since ADAM never stores those passwords and thus cannot change them). For more information on changing permissions, see the section “[Security Administration](security-administration-for-staff.md#security-administration-for-staff)”.
 
 Staff can change their passwords by clicking on the “**Staff**” tab and then looking under the “**Security Administration**” heading. An option should appear there to “**Change your own password**”
 
@@ -155,10 +155,10 @@ It is possible to enable either or both of Google and Microsoft Sign-in modules.
 
 ## Parent Logins
 
-If your ADAM website does not show “Parent Login” on the Login tab, then you will need to adjust the privileges assigned to the group “Logged Out”. These steps are not needed by most servers.
+If your ADAM website does not show “Parent Login” on the Login tab, then you will need to adjust the permissions assigned to the group “Logged Out”. These steps are not needed by most servers.
 
 1.  On the “Administration” tab, under the “Staff Groups” heading, click on the option to “Manage staff groups”.
-2.  Edit the privileges of the group “Logged Out” by clicking on the “privileges” option.
+2.  Edit the permissions of the group “Logged Out” by clicking on the “permissions” option.
 3.  On the “Login” tab, click on the check-box next to the “Parent Login” option.
 
 Note that simply allowing the menu option to appear will not automatically allow parents to log in.
@@ -178,14 +178,14 @@ Subsequent logins will require their ID number and their recently set password.
 !!! warning
     *We have compiled a separate document with* *[instructions for parents](https://docs.google.com/document/d/1vHiaDoheupdosNEEv32az8MjiVfSFUNmRiAk3TBZuuo/edit)* *that you can modify for your needs.*
 
-Privileges for parents are determined by [pupil login groups](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
+Permissions for parents are determined by [pupil login groups](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
 ## Pupil Logins
 
-If your ADAM website does not show “Pupil Login” on the Login tab, then you will need to adjust the privileges assigned to the group “Logged Out”. These steps are not needed by most servers.
+If your ADAM website does not show “Pupil Login” on the Login tab, then you will need to adjust the permissions assigned to the group “Logged Out”. These steps are not needed by most servers.
 
 1.  On the “**Administration**” tab, under the “**Staff Groups**” heading, click on the option to “**Manage staff groups**”.
-2.  Edit the privileges of the group “Logged Out” by clicking on the “privileges” option.
+2.  Edit the permissions of the group “Logged Out” by clicking on the “permissions” option.
 3.  On the “Login” tab, click on the check-box next to the “Pupil Login” option.
 
 Note that simply allowing the menu option to appear will not automatically allow pupils to log in.
@@ -195,7 +195,7 @@ Pupil logins can be enabled and their authentication method set on the “Site S
 !!! warning
     The authentication method used for pupils is a global setting and cannot be controlled individually. They can either make use of the Active Directory LDAP Authentication or the POP3 Authentication as used and described in the Staff Logins section. (POP3 authentication is being retired on 1 October 2026 — see the warning under [Configuring POP3 Authentication](#configuring-pop3-authentication) above.)
 
-Privileges for pupils are determined by [pupil login groups](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
+Permissions for pupils are determined by [pupil login groups](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
 ## Login Notifications
 

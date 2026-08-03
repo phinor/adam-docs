@@ -354,7 +354,7 @@ roll call is opened (planned absences) do not trigger alerts.
 
 To start using the feature on a new ADAM site:
 
-1. Grant the **Administer roll-call absence alert configuration** privilege to the staff who should manage alerts.
+1. Grant the **Administer roll-call absence alert configuration** permission to the staff who should manage alerts.
 2. In **Administration → Roll Call → Manage Reasons**, set Alert staff when marked to Yes for each reason that should
    trigger an alert (typically the reasons that mean "we don't know where the pupil is").
 3. In any tab containing a Roll Call section (Pupils, Classes, or Administration), open **Roll Call → Absence Alert

@@ -6,30 +6,30 @@ ADAM includes the ability to poll teachers about pupils using standardised quest
 
 In order to use the Questionnaire module, we need to create a questionnaire, add questions to the questionnaire, distributing them to pupils and then respond to the questionnaire.
 
-## System Administrator’s Note: Privileges
+## System Administrator’s Note: Permissions
 
-If you have never used the Questionnaire module before, you will need to set up privileges for the people responsible for creating questionnaires, distributing them to pupils and for responding to the questionnaires.
+If you have never used the Questionnaire module before, you will need to set up permissions for the people responsible for creating questionnaires, distributing them to pupils and for responding to the questionnaires.
 
-### Privilege Overview
+### Permission Overview
 
-The Questionnaire module adds the following privileges to ADAM:
+The Questionnaire module adds the following permissions to ADAM:
 
--   **Create a new questionnaire:** this privilege should be assigned to a member of staff involved at a management level with pupil affairs and pastoral matters within your school. It allows the staff member to add a new questionnaire and assign questions to it.
--   **Edit an existing questionnaire:** In order for a staff member to edit existing questionnaires, they will need this privilege.
--   **Edit questionnaire questions:** In order for a staff member to add or edit questions to a questionnaire, they will need this privilege.
--   **Assign pupils to questionnaires for completion:** This privilege should be given to grade controllers or teachers in charge of pupils in a pastoral capacity. This privilege allows those teachers to choose a particular questionnaire and ask teachers to complete it for a certain pupils.
--   **Respond to questionnaires:** This privilege should be assigned to all teachers who will need to complete questionnaires. We recommend giving this privilege to the “General Teacher” privilege group.
--   **View questionnaire summaries:** This privilege should be given to people who need to see summary reports of the questionnaires that were answered.
+-   **Create a new questionnaire:** this permission should be assigned to a member of staff involved at a management level with pupil affairs and pastoral matters within your school. It allows the staff member to add a new questionnaire and assign questions to it.
+-   **Edit an existing questionnaire:** In order for a staff member to edit existing questionnaires, they will need this permission.
+-   **Edit questionnaire questions:** In order for a staff member to add or edit questions to a questionnaire, they will need this permission.
+-   **Assign pupils to questionnaires for completion:** This permission should be given to grade controllers or teachers in charge of pupils in a pastoral capacity. This permission allows those teachers to choose a particular questionnaire and ask teachers to complete it for a certain pupils.
+-   **Respond to questionnaires:** This permission should be assigned to all teachers who will need to complete questionnaires. We recommend giving this permission to the “General Teacher” permission group.
+-   **View questionnaire summaries:** This permission should be given to people who need to see summary reports of the questionnaires that were answered.
 
-Example: We recommend assigning the first three privileges to a teacher in charge of pupil affairs. The fourth privilege to the grade controllers, the fifth to all teachers and the last to grade controllers.
+Example: We recommend assigning the first three permissions to a teacher in charge of pupil affairs. The fourth permission to the grade controllers, the fifth to all teachers and the last to grade controllers.
 
-### Assigning Privileges
+### Assigning Permissions
 
-Individual privileges are assigned to security groups. Staff may belong to one or more security groups. The privileges are additive and cannot be taken away. Thus if a staff member is given the privilege in one security group, they cannot have it removed by another group that they belong to.
+Individual permissions are assigned to security groups. Staff may belong to one or more security groups. The permissions are additive and cannot be taken away. Thus if a staff member is given the permission in one security group, they cannot have it removed by another group that they belong to.
 
 1.  To edit the security groups, click on the “**Administration**” tab, and under the “**Security Administration**” heading, click on “**Edit a security group**”.
-2.  The Questionnaire privileges are in the “**Pupil Administration**” section.
-3.  Once the necessary privileges have been assigned to the group, click on the “**Save Privilege Group**” button.
+2.  The Questionnaire permissions are in the “**Pupil Administration**” section.
+3.  Once the necessary permissions have been assigned to the group, click on the “**Save Privilege Group**” button.
 
 ## Creating a Questionnaire
 
@@ -77,4 +77,4 @@ They do not have to fill them all in. ADAM will resume from where they left off 
 
 ## Viewing the Results
 
-If teachers have the necessary privileges (see the privileges section above), they will be able to see the results of the questionnaires. To see the results of the questionnaires for a particular pupil, teachers can go to the “Pupil Info” page for a pupil and click on the “Questionnaires” header to get to that section. A list of the completed questionnaires will be shown. If a teacher did not complete a questionnaire for a pupil, their subject will not be listed.
+If teachers have the necessary permissions (see the permissions section above), they will be able to see the results of the questionnaires. To see the results of the questionnaires for a particular pupil, teachers can go to the “Pupil Info” page for a pupil and click on the “Questionnaires” header to get to that section. A list of the completed questionnaires will be shown. If a teacher did not complete a questionnaire for a pupil, their subject will not be listed.

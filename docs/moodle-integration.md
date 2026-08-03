@@ -40,9 +40,9 @@ Note that it is not possible to limit individual classes from being created or n
 
 ### A note on integration
 
-It is important that Moodle and ADAM use the same usernames. If the usernames do not match, then ADAM will not be able to assign the correct people to the correct courses with the correct privileges.
+It is important that Moodle and ADAM use the same usernames. If the usernames do not match, then ADAM will not be able to assign the correct people to the correct courses with the correct permissions.
 
-ADAM will use the usernames of teachers to assign them teacher privileges in Moodle and the usernames of pupils to assign them student access to their courses.
+ADAM will use the usernames of teachers to assign them teacher permissions in Moodle and the usernames of pupils to assign them student access to their courses.
 
 ## Authentication
 

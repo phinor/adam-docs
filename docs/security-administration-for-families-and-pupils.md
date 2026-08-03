@@ -1,14 +1,14 @@
 # Security Administration for Families and Pupils
 
-While the heading of this section refers to “Families and Pupils”, in fact, it is *only pupils* that are assigned login privileges. The privileges are then assigned to them or their parents. Thus an important point to note at the start is that it is not possible to set up different access for different parents of the same pupil. That means that if one parent can see the pupil’s profile, all the pupil’s other parents will see the same information for that pupil. This is also true for pupils linked to multiple families.
+While the heading of this section refers to “Families and Pupils”, in fact, it is *only pupils* that are assigned login permissions. The permissions are then assigned to them or their parents. Thus an important point to note at the start is that it is not possible to set up different access for different parents of the same pupil. That means that if one parent can see the pupil’s profile, all the pupil’s other parents will see the same information for that pupil. This is also true for pupils linked to multiple families.
 
 ## Login Group Principles
 
-Unlike [staff privileges](security-administration-for-staff.md#security-administration-for-staff), pupils can only belong to one security group. This can be changed individually, per pupil, or can be set for a whole class. Note that giving staff privileges to change privileges for a whole class should be cautioned against since they might inadvertently override a privilege group for an individual that they might not be aware of.
+Unlike [staff permissions](security-administration-for-staff.md#security-administration-for-staff), pupils can only belong to one security group. This can be changed individually, per pupil, or can be set for a whole class. Note that giving staff permissions to change permissions for a whole class should be cautioned against since they might inadvertently override a permission group for an individual that they might not be aware of.
 
 ## Managing Login Groups
 
-Navigate to the **Pupils** tab, and under the **Security** heading is an option to **Manage privilege groups**. Clicking on this link, brings up a list of security groups:
+Navigate to the **Pupils** tab, and under the **Security** heading is an option to **Manage permissions groups**. Clicking on this link, brings up a list of security groups:
 
 ![](assets/screenshots/security-administration-for-families-and-pupils/security-administration-for-families-and-pupils-01.png)
 
@@ -28,7 +28,7 @@ Two **“No information”** message boxes are also shown. These messages are sh
 
 ![](assets/screenshots/security-administration-for-families-and-pupils/security-administration-for-families-and-pupils-03.png)
 
-If you are creating a privilege group that is meant to give access to a parent or pupil, then ADAM will ignore these messages entirely as soon as one of the privileges gives permission to a parent. These messages are only displayed to a parent if no privileges are granted to the pupil.
+If you are creating a permission group that is meant to give access to a parent or pupil, then ADAM will ignore these messages entirely as soon as one of the permissions gives permission to a parent. These messages are only displayed to a parent if no permissions are granted to the pupil.
 
 If the group is meant to block access, then this message can provide context. It would therefore be possible to have different groups for different reasons. If a parent hasn’t paid the school fees, one could assign them to a group specifically to address that issue, as opposed to a pupil who has perhaps been suspended due to disciplinary issues.
 
@@ -36,9 +36,9 @@ If the group is meant to block access, then this message can provide context. It
 
 Once done, click on **Save this Pupil Group**.
 
-### Managing Privileges
+### Managing Permissions
 
-If you click on the option to manage a group’s **privileges**, you will see a list of available pupil privileges, including any options that might be already selected for the group. Most options include a description of what they allow, but there are a few issues to note.
+If you click on the option to manage a group’s **permissions**, you will see a list of available pupil permissions, including any options that might be already selected for the group. Most options include a description of what they allow, but there are a few issues to note.
 
 ![](assets/screenshots/security-administration-for-families-and-pupils/security-administration-for-families-and-pupils-04.png)
 
@@ -48,7 +48,7 @@ The **first option is the most important** since it governs whether the pupil’
 
 ## Assigning pupils to login groups
 
-When a pupil is first added to the database, their account is preemptively assigned to the default privilege group as configured in Site Settings. This can be changed but be aware that this setting will only impact pupils who are added to the database *after* the change is made.
+When a pupil is first added to the database, their account is preemptively assigned to the default permission group as configured in Site Settings. This can be changed but be aware that this setting will only impact pupils who are added to the database *after* the change is made.
 
 ### Changing the default group
 
@@ -58,26 +58,26 @@ Navigate to **Administration → Site Administration → Edit the site settings*
 
 Save the settings once you’re done.
 
-If you wish to change privilege groups for pupils who may already be on the system, this can either be done individually or by class. Both are discussed below.
+If you wish to change permission groups for pupils who may already be on the system, this can either be done individually or by class. Both are discussed below.
 
 ### Assigning pupils to groups individually
 
-Navigate to the pupil’s information page and click on the “Login Privileges” section. You will see the current privilege group that has been assigned to the pupil, an option to assign a new group and, below that, a history of the pupil’s privilege changes:
+Navigate to the pupil’s information page and click on the “Login Privileges” section. You will see the current permission group that has been assigned to the pupil, an option to assign a new group and, below that, a history of the pupil’s permission changes:
 
 ![](assets/screenshots/security-administration-for-families-and-pupils/security-administration-for-families-and-pupils-06.png)
 
-To assign a new group to the pupil, simply select it from the dropdown list at the top of the page, enter a note if required, and click on the “Update Privileges” button.
+To assign a new group to the pupil, simply select it from the dropdown list at the top of the page, enter a note if required, and click on the “Update Permissions” button.
 
 ### Assigning pupils to groups by class
 
-From the **Pupil** tab, look under the **Security** heading and click on the option **Change pupil login privileges for a class**.
+From the **Pupil** tab, look under the **Security** heading and click on the option **Change permissions groups for a class**.
 
-Choose the class of pupils whose privileges you would like to change.
+Choose the class of pupils whose permissions you would like to change.
 
 ![](assets/screenshots/security-administration-for-families-and-pupils/security-administration-for-families-and-pupils-07.png)
 
-In the list that is shown, you will see the pupils’ current privilege group as well as a potential new privilege group that will be applied when you click on the **Save changes** button. If the “Current Group” column is blank, it is because the pupils have not yet been assigned a privilege group.
+In the list that is shown, you will see the pupils’ current permission group as well as a potential new permission group that will be applied when you click on the **Save changes** button. If the “Current Group” column is blank, it is because the pupils have not yet been assigned a permission group.
 
-You can either go and change individual pupils or use the option at the top to update all pupils to a new privilege group. You can add a note, if required.
+You can either go and change individual pupils or use the option at the top to update all pupils to a new permission group. You can add a note, if required.
 
 Once completed, click on the **Save changes** button.

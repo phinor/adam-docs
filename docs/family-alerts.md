@@ -6,7 +6,7 @@ Family Alerts can be sent to parents and or pupils at regular intervals to send 
 -   Records and Points
 -   Assessment results
 
-To configure the Family Alerts, one must first choose which [pupil login privilege groups](security-administration-for-families-and-pupils.md#login-group-principles) will get what information. In so doing, it is possible for parents to to receive differentiated information based on the privilege group that their child belongs to.
+To configure the Family Alerts, one must first choose which [pupil login permission groups](security-administration-for-families-and-pupils.md#login-group-principles) will get what information. In so doing, it is possible for parents to to receive differentiated information based on the permission group that their child belongs to.
 
 !!! tip
     Many combined prep and high schools take advantage of this so that high school pupils can get assessment notifications, for example, but pupils in the prep school will not. This requires that high school and prep school pupils belong to [different permission groups](security-administration-for-families-and-pupils.md#login-group-principles).
@@ -14,9 +14,9 @@ To configure the Family Alerts, one must first choose which [pupil login privile
 !!! note
     If no records have been generated for a child in a particular time frame, no email is sent.
 
-## Enabling Family Alerts for Privilege Groups
+## Enabling Family Alerts for Permission Groups
 
-It is possible to choose which privilege groups are sent alerts. For example, you may wish for some groups to have Family Alerts sent only to parents and some groups sent also to pupils. This is done in the [Pupil Login Privileges](security-administration-for-families-and-pupils.md#managing-login-groups) section. You will want to enable to **Family Alerts** privilege for pupils and/or parents.
+It is possible to choose which permission groups are sent alerts. For example, you may wish for some groups to have Family Alerts sent only to parents and some groups sent also to pupils. This is done in the [Pupil Login Permissions](security-administration-for-families-and-pupils.md#managing-login-groups) section. You will want to enable to **Family Alerts** permission for pupils and/or parents.
 
 ## Setting Alerts for Login Groups
 
@@ -24,10 +24,10 @@ Navigate to **Families → Security → Edit family privileges for Family Alerts
 
 ![](assets/screenshots/family-alerts/family-alerts-02.png)
 
-Next to each privilege group, place a checkbox in the appropriate columns of the alerts that you’d like them to receive.
+Next to each permission group, place a checkbox in the appropriate columns of the alerts that you’d like them to receive.
 
 !!! note
-    If there is a “hyphen” in the **Sent to…** column, you will need to [change the privileges for that group](#enabling-family-alerts-for-privilege-groups) before alerts will be sent to that group.
+    If there is a “hyphen” in the **Sent to…** column, you will need to [change the permissions for that group](#enabling-family-alerts-for-permission-groups) before alerts will be sent to that group.
 
 The Family Alerts delivery options can be changed lower down on this page. These settings are the same ones that you might find in the site settings (**Administration → Site Administration → Site Settings**), under the **Communications** tab below the heading **Family Alerts**. However, this allows someone to edit these particular settings without having to give them access to the entire site’s settings.
 

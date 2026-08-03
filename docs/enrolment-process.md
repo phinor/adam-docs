@@ -268,11 +268,11 @@ At the bottom of the Admissions Records within the Pupil Information is a regist
 
 ![](assets/screenshots/enrolment-process/enrolment-process-22.png)
 
-The privilege to edit the admissions log should not be given out lightly and can have unintended consequences.
+The permission to edit the admissions log should not be given out lightly and can have unintended consequences.
 
 ## Enrolment Reports
 
-ADAM provides two reports that show how many pupils are enrolled in each grade over time. Both are found on the **Admissions** tab under the **Reports** heading, and both use the same privilege used to view the pupil register.
+ADAM provides two reports that show how many pupils are enrolled in each grade over time. Both are found on the **Admissions** tab under the **Reports** heading, and both use the same permission used to view the pupil register.
 
 ### Enrolment by reporting period
 
