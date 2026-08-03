@@ -123,6 +123,15 @@ Once you have finished capturing the marks, remember to click on the “Save res
 
 ADAM will then update the pupils’ term marks based on the current weightings of the assessments.
 
+### When the Mark Book Closes
+
+Results can only be captured while the reporting period’s **Markbook Entry** time frame is open, and only for classes that the teacher takes. Once that deadline passes, the results entry screen shows the message *“This reporting period is no longer open for mark book entry.”* and no further marks can be saved for that period. Deadlines that are approaching are listed on the ADAM home page.
+
+Some schools close the mark book in two stages, so that ordinary mark entry ends on the published deadline while heads of department keep a few extra days to settle final adjustments. Where a [**Markbook Editing** time frame](reporting-period-administration.md#markbook-editing) has been set, those staff who hold one of the mark book editing privileges will still be able to reach the results entry screen for that period, and their own editing deadline is listed for them on the home page. Everybody else sees *“This reporting period’s mark book has closed. Only staff with mark book editing permission can make changes during the editing window.”*
+
+!!! note
+    A head of department who is expecting to edit during this window needs two things: the **Edit assessment results for headed subjects during the mark book editing window** privilege, and to be assigned as a head of the subject concerned. Either one alone has no effect.
+
 ## Viewing Who Changed a Mark
 
 ADAM keeps a history of every change made to a pupil’s marks and comments, so you can see who entered or changed a mark, and when. This is useful when a result is queried and you need to establish what happened.
