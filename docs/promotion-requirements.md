@@ -103,6 +103,7 @@ Five Subjects at 30:5:30:134,133,145,82,153,138,139,142,125,136,137,85,135,107
 ```
 
 The text is split into 4 parts, each part separated by a `:` character. The four parts, as they appear above, are:
+
 - `Five Subjects at 30` This is a *description for humans* and is meaningless to ADAM. Its only purpose is to describe the condition for human readability. This is used later by ADAM to give context to the reasons for its decision
 - `5` The *number of subjects* that ADAM must find
 - `30` The *minimum mark* that must be attained in that subject for ADAM to count is as one of the “found” subjects
