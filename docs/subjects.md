@@ -144,9 +144,13 @@ The two halves are set up in two different places, and it does not matter which 
 
 Click on the **Edit the subjects** menu option, found on the **Subjects** tab under the **Subject Administration** heading. Next to the subject concerned, click on the **heads** option.
 
-On the **Manage Heads of Subject** screen, choose one or more staff members under **Staff Members**, and click on **Save**. To remove somebody, deselect them and save again.
+On the **Manage Heads of Subject** screen, choose one or more staff members under **Staff Members**, and click on **Save**. To remove somebody, click on the small **×** next to their name and save again.
+
+![](assets/screenshots/subjects/subjects-08.png)
 
 The staff members you choose are then listed in the **Head(s)** column back on the list of subjects, so you can see at a glance which subjects have heads and which do not.
+
+![](assets/screenshots/subjects/subjects-09.png)
 
 !!! note
     The **heads** option only appears for staff who hold the **Manage Head of Subject assignments** permission, found on the **Academic Admin** tab under the **Subjects** heading.

@@ -104,26 +104,14 @@ Two pupils genuinely have a birthday today, so no date of birth needs moving —
 with birthdays are **Yasmin Butcher** and **Coral Till**, in other families, which is exactly why the
 school-wide scope matters for this image.
 
-## Heads of Subject — screenshots and one question for development
+## Heads of Subject — one question for development
 
 The **Heads of Subject** section is now written, on `docs/subjects.md` between *Editing a Subject* and
 *Changing the Order of Subjects*. The cross-links from `docs/mark-book-administration.md` and
-`docs/reporting-period-administration.md` now point at it instead of restating the two-halves rule.
-Two things are left.
+`docs/reporting-period-administration.md` now point at it instead of restating the two-halves rule,
+and both screenshots are captured and placed. One thing is left.
 
-### 1. Two screenshots, into `docs/assets/screenshots/subjects/`
-
-Capture against the demonstration school. No subject currently has two heads, so this needs setting
-up first — assign two staff members to one subject before shooting.
-
-1. The **Manage Heads of Subject** screen for a subject that has two heads, showing the **Staff
-   Members** picker with both selected and the **Save** button. Goes in *Assigning a Head of Subject*,
-   after the paragraph that describes choosing staff and saving.
-2. The subject list with the **Head(s)** column populated and the **heads** option visible on the row,
-   so the reader can see where the action lives. Goes in the same sub-section, after the paragraph
-   about the **Head(s)** column.
-
-### 2. Ask development about `rep_aggregated_subject`
+### Ask development about `rep_aggregated_subject`
 
 This entry previously assumed **Manage aggregated result calculations from subjects taught** was
 scoped by the head-of-subject assignment like the other seven permissions, and that its description

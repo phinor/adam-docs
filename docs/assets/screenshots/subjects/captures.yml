@@ -1,0 +1,57 @@
+- image: subjects-08.png
+  captured: 2026-08-04
+  as: staff
+  path: >
+    Subjects tab → Subject Administration → Edit the subjects → the "heads"
+    option next to Mathematics
+  frame:
+    mode: span
+    selectors: >
+      The "Manage Heads of Subject" h1 through the bottom of the Staff Members
+      form row — not through the Save button, which sits in a sticky control
+      bar and so measures at the foot of the viewport rather than after the
+      form. Viewport height is span + padding + the 82px sticky bar, which
+      brings the Save button into shot below the picker.
+    padding: 8
+  setup: >
+    No subject on the demonstration school had any heads. Mathematics
+    (subject id 4) was given two: Alcock, Mrs Amy and Allan, Ms Lynda. Both
+    were picked from the top of the staff list so that the selection is visible
+    in the picker without scrolling it.
+  revert: >
+    Not reverted. The assignment is what both images exist to show, and the
+    section they illustrate describes it.
+  note: >
+    The Staff Members control is a Chosen widget, not the plain multi-select it
+    is in the markup: selections appear as removable tags. Setting the
+    underlying select from script does not update the widget, so the two heads
+    were picked by clicking the widget and then each name, as a user would.
+
+    Two viewport traps on this screen. The Save button is inside a sticky
+    "control is-floating" bar 82px tall, so measuring the span as heading →
+    button collapses it and loses the picker entirely. And below roughly 300px
+    of viewport height the Chosen widget collapses, so a capture sized to the
+    naive span comes back with an empty form. Re-measuring after the resize is
+    what catches both.
+
+- image: subjects-09.png
+  captured: 2026-08-04
+  as: staff
+  path: Subjects tab → Subject Administration → Edit the subjects
+  frame:
+    mode: span
+    selectors: >
+      The table header row through the Mathematics row (row 5), which is the
+      shortest span that shows the Head(s) column heading, a populated Head(s)
+      cell and the "heads" action together.
+    padding: 8
+  setup: >
+    Same as subjects-08.png — Mathematics carries the two heads assigned there.
+  revert: none
+  note: >
+    Rows are 164px tall because the thirteen columns wrap at a 900px viewport,
+    so header plus five subjects comes to 909px. The four subjects above
+    Mathematics have an empty Head(s) cell, which is worth keeping: the
+    contrast with the populated cell is what makes the column's meaning
+    obvious. The table itself is 889px wide, so the "heads" action clears the
+    900px viewport without horizontal scrolling.
