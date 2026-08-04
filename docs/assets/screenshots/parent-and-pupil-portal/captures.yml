@@ -1,0 +1,20 @@
+- image: parent-and-pupil-portal-09.png
+  captured: 2026-08-04
+  as: staff
+  path: Pupils tab → Security → Manage permissions groups → privileges (Full Access group, id 1)
+  frame:
+    mode: span
+    selectors: >
+      Birthdays heading li, its permission row li (View birthdays);
+      2 rows above from the Academic Goal Setting section (Capture academic
+      goals, View academic goals); the Family heading li and its first 2
+      permission rows (Request online detail update form, Upload family
+      documents)
+    padding: 8
+  setup: >
+    Group chosen: "Full Access" — the only pupil login group with any pupils
+    assigned (3), against "No Academics", "No Access", "No Markbook" and
+    "No Reports" which all have 0. View birthdays was already ticked for both
+    Pupils and Families on this group (Full Access grants everything by
+    default), so no change was made before capturing.
+  revert: none

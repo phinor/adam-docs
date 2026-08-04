@@ -103,13 +103,6 @@ Grant **View birthdays** to the login group that the demonstration families use,
 default class scope, a demonstration login will usually see nobody and the section will not render
 at all.
 
-### 1. `parent-and-pupil-portal-09.png` — the View birthdays permission
-
-**Pupils → Security → Manage permissions groups**, then **privileges** against the
-group the demonstration families belong to. Scroll to the **Birthdays** heading. Frame the
-**View birthdays** row with both its **Pupils** and **Families** tick boxes visible, and enough of
-the rows above and below to show it sitting in the same list as everything else. Both boxes ticked.
-
 ### 2. `parent-and-pupil-portal-10.png` — the three settings together
 
 **Administration → Site Administration → Edit site settings**, the **Pupils & Families** tab,

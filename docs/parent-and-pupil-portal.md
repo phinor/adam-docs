@@ -152,6 +152,8 @@ The list is controlled by the **View birthdays** permission, which appears under
 
 As with most permissions, there are separate tick boxes for **Pupils** and **Families**, so the list can be shown to parents only, to pupils only, or to both. Only pupils who are currently registered at the school are considered, both as viewers and as names in the list.
 
+![](assets/screenshots/parent-and-pupil-portal/parent-and-pupil-portal-09.png)
+
 ### Choosing whose birthdays are shown
 
 Navigate to **Administration → Site Administration → Edit site settings**, click on the **Pupils & Families** tab and scroll down to the **Widgets** heading.
