@@ -95,16 +95,18 @@ For each decision, enter the following information:
 
 ## Explanation of Syntax of the Criteria
 
-In each of the criteria are a number of lines that are essentially colon “:” delimited lines. If a line cannot be delimited accurately into 4 sections (i.e. contains three “:” characters) it is ignored and has no effect on the criteria.
+In each of the criteria are a number of lines that are essentially colon `:` delimited lines. If a line cannot be delimited accurately into 4 sections (i.e. contains three `:` characters) it is *ignored* and has *no effect* on the criteria. Such lines are useful for providing context or comments for human maintainers.
 
-Example:
-
+#### Example:
+```
 Five Subjects at 30:5:30:134,133,145,82,153,138,139,142,125,136,137,85,135,107
+```
 
--   The green text is a description and is meaningless to ADAM. Its only purpose is to describe the condition for human readability. This is used later by ADAM to give context to the reasons for its decision.
--   The red number represents the number of subjects that ADAM must find.
--   The blue number is the minimum mark that must be attained in that subject for ADAM to count is as one of the “found” subjects.
--   The black numbers are a comma separated list of subject ID codes that ADAM will search through.
+The text is split into 4 parts, each part separated by a `:` character. The four parts, as they appear above, are:
+  - `Five Subjects at 30` This is a *description for humans* and is meaningless to ADAM. Its only purpose is to describe the condition for human readability. This is used later by ADAM to give context to the reasons for its decision
+  - `5` The *number of subjects* that ADAM must find
+  - `30` The *minimum mark* that must be attained in that subject for ADAM to count is as one of the “found” subjects
+  - `134,133,145,82,153,138,139,142,125,136,137,85,135,107`  These numbers are a comma separated *list of subject ID codes* that ADAM will search through
 
 In this example, ADAM must find 5 subjects with a minimum mark of 30 from the list provided in order to satisfy this criterion.
 
