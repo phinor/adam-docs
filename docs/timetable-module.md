@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=cYVtdd6xuyk
 
 The process of creating a timetable is a reasonably simple one. Usefully, one school can have multiple timetables so it is possible for schools with combined prep and high schools to enter and manage their timetables separately or with different numbers of schedules etc.
 
-Start by visiting the **Administration** tab. Look under the **Timetables** heading and click on **Manage Timetables**
+Start by visiting the **Administration** tab. Look under the **Timetables** heading and click on **Manage timetables**
 
 ![](assets/screenshots/timetable-module/timetable-module-02.png)
 
@@ -46,11 +46,11 @@ You can create as many schedules as you need. Make sure to name them clearly so 
 
 Importantly, at a minimum, a schedule applies to one grade on one day. A single grade cannot have multiple schedules on the same day.
 
-To add a new schedule, navigate to **Administration**, then under the **Timetables** heading, click on **Manage Schedules**.
+To add a new schedule, navigate to **Administration**, then under the **Timetables** heading, click on **Manage schedules**.
 
 ![](assets/screenshots/timetable-module/timetable-module-07.png)
 
-To add a new schedule click on the **Add new Timetable Schedule** link. To edit one, please click on the corresponding **edit** option.
+To add a new schedule click on the **Add new Time Table Schedule** link. To edit one, please click on the corresponding **edit** option.
 
 ![](assets/screenshots/timetable-module/timetable-module-08.png)
 
@@ -60,7 +60,7 @@ To edit the times for a schedule, click on the corresponding **schedule** link s
 
 ![](assets/screenshots/timetable-module/timetable-module-09.png)
 
-For each lesson, simply enter the start and end times.
+For each lesson, simply enter the start and end times. Each period also has an optional **Name**, which is useful where a period is known by something other than its number — a registration period or an assembly, for example.
 
 Note that if, for example, a certain schedule requires that you move lesson 7 to the start of the day, that this is easily achieved. It is also possible to drop a lesson. The schedule below illustrates two points:
 
@@ -74,7 +74,7 @@ https://www.youtube.com/watch?v=wkhb8lUUIfc
 
 The steps above setup the framework for the timetable. It is now time to capture the actual lessons.
 
-From the **Manage Timetables** menu option, click on the **lessons** link next to the corresponding timetable.
+From the **Manage timetables** menu option, click on the **lessons** link next to the corresponding timetable.
 
 ![](assets/screenshots/timetable-module/timetable-module-12.png)
 
@@ -82,31 +82,30 @@ Next to each grade, ADAM shows the number of classes that have been assigned to 
 
 ![](assets/screenshots/timetable-module/timetable-module-13.png)
 
-At the top of the screen is a list of all the classes that are assigned to that grade as well as all the classes that have no grade assigned:
+At the top of the screen is a list of all the classes that are assigned to that grade, along with instructions for the screen and a note of the maximum number of lessons that any of your enabled schedules allows:
 
 ![](assets/screenshots/timetable-module/timetable-module-14.png)
 
-The filter box at the top allows you to type in any part of the name as it is displayed in order to limit the classes that are shown. You can filter by typing in part of the subject name, part of the teachers’ names or even part of the class description. If, for example, your timetable has a group of subjects that are always timetabled together, often called “lines” or “choices” in high school timetables, you might include the “line number” in the class description. For example, this school includes the descriptor “L6” for “Line 6”:
+The **Filter** box allows you to type any part of a class as it is displayed, in order to limit the classes that are shown. You can filter by part of the subject name, part of the teacher’s name, or part of the class description. If your timetable has a group of subjects that are always timetabled together — often called “lines” or “choices” in high school timetables — you might include the line number in the class description, and can then filter on that. Below, the list has been narrowed to the Mathematics classes:
 
 ![](assets/screenshots/timetable-module/timetable-module-15.png)
 
-The box of classes allows you to select multiple classes by holding down “Ctrl” on your keyboard while you are clicking on the different classes you want. You can deselect a class by “Ctrl+Click”ing it again.
-
-Once you have selected the correct classes, you need to tick the boxes in the grid below when those classes are taught:
+Lessons are captured by **dragging a class from the list at the top and dropping it onto a lesson slot** in the grid below. The list of classes stays in view as you scroll down the grid, so it is always within reach.
 
 ![](assets/screenshots/timetable-module/timetable-module-16.png)
 
-Please take note that all classes will be **added to existing classes** in the period. If you wish to remove a class, you will need to click on the box at the bottom and all the ticked lessons will be **replaced** with the lessons that you selected at the top.
+Each class sits in its lesson as a small card. To take a class out of a lesson, click the **×** on its card. A class already on the timetable can be moved to a different lesson by dragging it there; hold **Ctrl** as you drop it to leave the original in place and put a copy in the new lesson.
 
-By hovering your mouse over one of the numbers in brackets (an indication of how many classes are taught in that lesson, according to this timetable), you will get a notification of which classes are selected.
+!!! warning
+    There is no **Save** button on this screen. Every change takes effect the moment you make it, so take care when dragging.
 
-You will also notice that all other lessons that share the same combination of classes are also highlighted:
+Where the same change is needed in more than one place, click the cards to select them first — a selected card is outlined — and then drag any one of them to move or copy the whole selection in a single action. Selections in the list at the top and selections in the grid are independent of one another: selecting in one clears the other.
 
 ![](assets/screenshots/timetable-module/timetable-module-17.png)
 
-The diagram above shows all the Mathematics lessons in the timetable (note the message that is shown in the hover-hint).
+Above, two of Mr Mann’s Grade 12 Mathematics lessons have been selected, in lessons 3 and 5 on Monday A.
 
-One can click on the check-boxes individually, but by clicking on the yellow number, it will also tick all the other matching (highlighted) tickboxes. This allows you to change multiple lessons easily if there are mistakes.
+The **detail** link at the end of each row opens that day on its own, listing every lesson with its subject, class, teacher and venue, and a **remove** option for each. This is often the easier place to check a day once it is full.
 
 ## Adding Days to a Calendar
 
@@ -123,7 +122,7 @@ Firstly, it will help to identify the type of timetable that your school uses. T
 
 #### Adding multiple days to the timetable
 
-Click on the option to add multiple dates to the calendar.
+Click on **Add multiple days to the calendar**.
 
 1.  Choose the start and end date for the term.
 2.  **If you use a rolling timetable** please indicate which dates should be excluded from the calendar. This would include public holidays and other schools days that you might not have formal academic teaching on. If you use a **fixed timetable**, please ignore this block. Placing dates in here will cause your fixed timetable to fall out of sync with the working week.
@@ -142,7 +141,7 @@ For example, you may wish to schedule Grade 12s separately so that you can take 
 
 #### Editing or Adding Individual Days
 
-It is possible to edit existing days or add individual days to the timetable. To do this, click on the **edit** link next to a day or click on the option to add a single day.
+It is possible to edit existing days or add individual days to the timetable. To do this, click on the **edit** link next to a day, or on **Add a single date to the calendar**. Both lead to the same form, which is shown below with a date yet to be chosen.
 
 ![](assets/screenshots/timetable-module/timetable-module-19.png)
 
@@ -169,7 +168,7 @@ When looking at a staff or student timetable, also in the pupil portal, a link i
 The exact method of adding a calendar to these programs is different and you are encouraged to search for the instructions for your chosen calendaring software. However, for all of these, you will require two things.
 
 1.  Your ADAM installation must be visible from the greater Internet. Typically, if you can work on ADAM from home, this is in place.
-2.  You will need the URL of your timetable. This is provided as a link at the top of your timetable (whether staff or pupil). Right-click and copy the link address. You can now use this to subscribe to the calendar from within your favourite app.
+2.  You will need the URL of your timetable. ADAM provides this as a **Subscribe to …’s Calendar** link at the top of the calendar, whether staff or pupil. Clicking the link hands the calendar to whichever application your computer uses for calendars; if that does not work, the note alongside it leads to step-by-step instructions for the common ones. You can also right-click the link, copy the link address, and paste it into your calendar app yourself.
 
 ![](assets/screenshots/timetable-module/timetable-module-22.png)
 
@@ -178,9 +177,9 @@ The exact method of adding a calendar to these programs is different and you are
 
 ## Resetting a Timetable Link
 
-When you copy the timetable URL for the first time, ADAM will generate a random 30-letter key that can access your timetable alone. Guessing this key is statistically impossible so if someone doesn’t know your key, they won’t be able to subscribe to your calendar.
+When you copy the timetable URL for the first time, ADAM will generate a random 50-character key that can access your timetable alone. Guessing this key is statistically impossible so if someone doesn’t know your key, they won’t be able to subscribe to your calendar.
 
-However, it may happen that you wish to change this random key to prevent someone who has access to your timetable from continuing to receive updates to it. This can be done using the option at the top of your calendar:
+However, it may happen that you wish to change this random key to prevent someone who has access to your timetable from continuing to receive updates to it. This can be done using the option at the foot of your calendar:
 
 ![](assets/screenshots/timetable-module/timetable-module-24.png)
 
