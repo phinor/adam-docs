@@ -238,7 +238,7 @@ Sometimes ADAM fails to match documents. This can happen for a number of reasons
 -   The document name has a spelling mistake.
 -   The document uses a nickname or other variation of the name. ADAM uses the first name field to match documents against.
 -   There is more than one person with the same name. If ADAM finds two (or more) possible matches for a document, it will not be uploaded to either. In this case you will need to either rename the document using an Admin number or username. Alternatively, you may have to upload these documents manually.
--   The pupil is not a currently registered pupil or the staff member is not an active member of staff. ADAM won’t allow bulk uploading for people who are not currently enrolled or engaed in the school.
+-   The pupil is not a currently registered pupil or the staff member is not an active member of staff. ADAM won’t allow bulk uploading for people who are not currently enrolled or engaged in the school.
 
 ## Removing Documents
 

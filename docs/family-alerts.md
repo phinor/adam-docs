@@ -6,7 +6,7 @@ Family Alerts can be sent to parents and or pupils at regular intervals to send 
 -   Records and Points
 -   Assessment results
 
-To configure the Family Alerts, one must first choose which [pupil login permission groups](security-administration-for-families-and-pupils.md#login-group-principles) will get what information. In so doing, it is possible for parents to to receive differentiated information based on the permission group that their child belongs to.
+To configure the Family Alerts, one must first choose which [pupil login permission groups](security-administration-for-families-and-pupils.md#login-group-principles) will get what information. In so doing, it is possible for parents to receive differentiated information based on the permission group that their child belongs to.
 
 !!! tip
     Many combined prep and high schools take advantage of this so that high school pupils can get assessment notifications, for example, but pupils in the prep school will not. This requires that high school and prep school pupils belong to [different permission groups](security-administration-for-families-and-pupils.md#login-group-principles).

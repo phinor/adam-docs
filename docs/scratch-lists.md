@@ -15,13 +15,13 @@ To generate these lists, navigate to the appropriate sections:
 -   Class lists:
 
 -   The class lists of a single teacher: **Classes → Scratch Lists → A teacher’s class lists**
--   The class lists of the different classes in a subject (e.g. all the English classes): **Classes → Scratch Lists → A subject’s class lists** or **Subjects → Scratch Lists → A subjects’ class lists**. It is also possible to produce *all* the academic (or “Sport”, or “General” -- any subject category) class lists by using the option on **Subjects → Scratch Lists → A subject category’s class lists**
+-   The class lists of the different classes in a subject (e.g. all the English classes): **Classes → Scratch Lists → A subject’s class lists** or **Subjects → Scratch Lists → A subject’s class lists**. It is also possible to produce *all* the academic (or “Sport”, or “General” -- any subject category) class lists by using the option on **Subjects → Scratch Lists → A subject category’s class lists**
 -   The eldest children (in the school) by class: **Classes → Scratch Lists → Eldest children by class**
 -   Historical class lists (only by subject): **Classes → Scratch Lists → Historical class lists**
 
 -   Subject Lists:
 
--   All the class lists of a single subject (e.g. all the English classes): **Classes → Scratch Lists → A subjects’ class lists** or **Subjects → Scratch Lists → A subjects’ class lists**
+-   All the class lists of a single subject (e.g. all the English classes): **Classes → Scratch Lists → A subject’s class lists** or **Subjects → Scratch Lists → A subject’s class lists**
 -   All the pupils registered for a subject in a grade (e.g. All of the Grade 11 Mathematics pupils): **Subjects → Scratch Lists → A subject’s list by grade.**
 
 -   Grade lists:
@@ -75,9 +75,9 @@ Below the button which would otherwise produce and display the scratch lists to 
 
 ADAM allows you 5 different ways to display your data. These are:
 
--   **Web browser:** This is the most common option and is selected by default. The lists will be generated in a new window and can be printed directly from your web browser. If there are multiple lists (e.g. more than one class), then each list will automatically start on a new pag when printed, even though it might look as if they are running into each other on the screen.
+-   **Web browser:** This is the most common option and is selected by default. The lists will be generated in a new window and can be printed directly from your web browser. If there are multiple lists (e.g. more than one class), then each list will automatically start on a new page when printed, even though it might look as if they are running into each other on the screen.
 -   **Excel:** ADAM will create an Excel spreadsheet of your class lists for you to download. You can then manipulate these as you require. If you have selected multiple lists (e.g. more than one class), then each class will appear on its own worksheet or tab in the spreadsheet.
--   **Pivot Tables:** Pivot Tables are excellent mechanisms to summarise your data. If you are more interested in “how many” rather than “who”, consider a pivot table. Note that if you choose a pivor table, only the first list you choose is considered. [We discuss the pivot tables in more detail later on.](#pivot-tables)
+-   **Pivot Tables:** Pivot Tables are excellent mechanisms to summarise your data. If you are more interested in “how many” rather than “who”, consider a pivot table. Note that if you choose a pivot table, only the first list you choose is considered. [We discuss the pivot tables in more detail later on.](#pivot-tables)
 -   **Photo List:** This will include a photograph of each pupil in your list. If you include multiple classes or lists, each will start on a new page when you print them.
 -   **Comma-separated Variable (CSV)**: This is the least commonly used output format as most people prefer dealing with the data in Excel format. Users who require CSV output are likely to know why and what they will do with it. It’s normally a safe assumption that most users will never choose this option.
 
@@ -99,9 +99,9 @@ Additionally, if you select a list of pupils that involves currently registered 
 
 For some schools, this is turned on by default, for others it isn’t. In the image above, the option is not ticked and therefore is not turned on.
 
-Here you can choose whether ADAM should show information about subject registrations for the pupils in the list. For example, you chould choose to show a list of pupils with their Mathematics teachers by:
+Here you can choose whether ADAM should show information about subject registrations for the pupils in the list. For example, you could choose to show a list of pupils with their Mathematics teachers by:
 
--   Tick the box on the left (“show subjct registration details”), if it is not already ticked
+-   Tick the box on the left (“show subject registration details”), if it is not already ticked
 -   Change the “Class Description” to “Teacher”
 -   Remove the default selected class in the list and choose “Mathematics”
 
@@ -154,7 +154,7 @@ It’s the same information, but just arranged slightly differently. See now tha
 
 ## Controlling Access to Scratch List Fields
 
-The Scratch List fields are used widley across ADAM to show information about pupils, staff and families. However, it may be desirable to limit the information that specific teachers can see, specifically in light of the POPI Act. ADAM Allows you to restrict the fields that the groups of teachers can see. These changes will impact both the scratch lists that are generated and other areas in ADAM where the values are shown.
+The Scratch List fields are used widely across ADAM to show information about pupils, staff and families. However, it may be desirable to limit the information that specific teachers can see, specifically in light of the POPI Act. ADAM Allows you to restrict the fields that the groups of teachers can see. These changes will impact both the scratch lists that are generated and other areas in ADAM where the values are shown.
 
 https://www.youtube.com/watch?v=Aup59n6XZhM
 

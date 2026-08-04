@@ -79,7 +79,7 @@ Click on “Next” to confirm the settings.
 
 ## Editing an Assessment
 
-To edit an assessment’s details, such as it’s name, number of marks etc., navigate to **Assessment → Assessment Administration → Manage assessments and weightings**.
+To edit an assessment’s details, such as its name, number of marks etc., navigate to **Assessment → Assessment Administration → Manage assessments and weightings**.
 
 Choose the reporting period (note that without specific permissions one cannot change the details of an assessment in a closed reporting period) and the class for the assessment that you would like to edit.
 
@@ -205,7 +205,7 @@ In this case, while the weightings of the assessments within each category is te
 
 ## Assessment Groups
 
-To simplify the management of large markbooks with many assessments, it is often useful to make use of “Assessment Groups”.  Assessment groups are automatically copied across into all teachers mark books of the same subject and grade. The weightings are also shared.
+To simplify the management of large markbooks with many assessments, it is often useful to make use of “Assessment Groups”.  Assessment groups are automatically copied across into all teachers’ mark books of the same subject and grade. The weightings are also shared.
 
 ### Assigning the Permissions for Teachers
 
@@ -386,7 +386,7 @@ Click on the **Save Calculation** button when you’re done.
 
 ADAM will now recalculate the class’s YTD results with your new calculation.
 
-If the claculation you want does not show, you will have to [create it first](aggregated-results.md#creating-aggregated-result-calculations) - a link is provided at the bottom of the screen to take you to the appropriate screen to create the calculation. Documentation on [creating the calculations is found elsewhere in this manual](aggregated-results.md#creating-aggregated-result-calculations).
+If the calculation you want does not show, you will have to [create it first](aggregated-results.md#creating-aggregated-result-calculations) - a link is provided at the bottom of the screen to take you to the appropriate screen to create the calculation. Documentation on [creating the calculations is found elsewhere in this manual](aggregated-results.md#creating-aggregated-result-calculations).
 
 ## Importing Assessment Results
 

@@ -7,7 +7,7 @@ ADAM has a two-tiered permission system for staff.
 1.  Site Administrative Users
 2.  Normal Users
 
-### Site Administrator sers
+### Site Administrator Users
 
 Within the site administrative users, two types exist: these are effectively hidden and visible users. Hidden users are administrative users who are not (generally speaking) employees of the school. This might include a generic “admin” user, for example. The visible admin users are normally also teachers at the school.
 
@@ -117,7 +117,7 @@ This screen will show all the security groups along the top of the screen, and a
 
 ADAM provides a few techniques for staff to have their permissions audited and checked. Because the permissions are assigned to groups, it is important to understand that staff members get permissions by virtue of the groups that they belong to in ADAM. If a permission is added or removed from a group, it will affect all the members of that group.
 
-Remember that site administrators do not get their permissions via the Staff Group mechanism. A site administrator is allowed to perform any action in ADAM regardless of what their permissions indicate they should be able to do. Please [read more about Site Administrators above](#site-administrator-sers).
+Remember that site administrators do not get their permissions via the Staff Group mechanism. A site administrator is allowed to perform any action in ADAM regardless of what their permissions indicate they should be able to do. Please [read more about Site Administrators above](#site-administrator-users).
 
 ### Individual Permission Audits
 
@@ -147,6 +147,6 @@ It may be easier to deal with this report in a spreadsheet. You can copy and pas
 
 ### A Summary view of membership and permissions
 
-For an easier-to-read report, although perhaps more difficult to cross-check, can be found at **Adminstration → Security Administration → View group permission report**. This report shows all the members of each group and all the permissions assigned to each.
+For an easier-to-read report, although perhaps more difficult to cross-check, can be found at **Administration → Security Administration → View group permission report**. This report shows all the members of each group and all the permissions assigned to each.
 
 ![](assets/screenshots/security-administration-for-staff/security-administration-for-staff-09.png)

@@ -45,16 +45,16 @@ Note that Site Administrators will always be able to log in, even when the serve
 
 ## Setting up an ADAM server
 
-Maintaining your own ADAM server will require some expertise in managing, maintaining and configuring a Linux operating system from yhe command line. The skills required to manage the server include:
+Maintaining your own ADAM server will require some expertise in managing, maintaining and configuring a Linux operating system from the command line. The skills required to manage the server include:
 
 -   Installing the Linux operating system
 -   Familiarity with managing a Linux server from a command line interface
 -   Installation and updating of server applications
--   Configuring the network firewall to allow secure access to the ADAM server from outside the network. This also invludes being capable of modifying the server configuration accordingly
+-   Configuring the network firewall to allow secure access to the ADAM server from outside the network. This also includes being capable of modifying the server configuration accordingly
 
 For proper functioning and access to all its features, ADAM requires the following:
 
--   Access to HTTP 80 and HTTPS 443 ports from outside your netowrk to allow staff and parents to avvess ADAM from home.
+-   Access to HTTP 80 and HTTPS 443 ports from outside your network to allow staff and parents to access ADAM from home.
 -   Access to SSH from outside your network so ADAM can be updated with bug fixes and patches.
 -   These two requirements above necessitate reliable internet access with a fixed external IP address. A firewall capable of managing these requirements is therefore a necessity.
 

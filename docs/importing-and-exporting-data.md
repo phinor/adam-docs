@@ -29,9 +29,9 @@ Importing data from CSV can be a great time saver is there is lots of informatio
 ### Performing the Import
 
 !!! warning
-    *Please take special note of the sections below with regards to* *[structing your import file](#structuring-your-import-file)* *and ensuring that your file* *[contains only the information that is strictly needed](#import-only-what-you-need)**.*
+    *Please take special note of the sections below with regards to* *[structuring your import file](#structuring-your-import-file)* *and ensuring that your file* *[contains only the information that is strictly needed](#import-only-what-you-need)**.*
 
-Navigage to **Administration → Database Administration → Import Data from CSV**.
+Navigate to **Administration → Database Administration → Import Data from CSV**.
 
 Click on the **Choose file** button and select your CSV file from the file selection window. You must tell ADAM what sort of **Data** you are going to import. ADAM will use this information to double check that your CSV file is properly structures, so it is very important that you get this right.
 
@@ -85,7 +85,7 @@ When Excel goes on to save the CSV file, you run the very real possibility that 
 
 Thankfully, you do not need to import a full set of fields. ADAM uses the field names at the top to determine which information is present in the file and will only update those fields. If any fields are missing, then ADAM won’t change the information in those columns.
 
-The only field that ADAM requires is the identifier column which will almost alway be the first column and will almost certainly end in “\_id”.
+The only field that ADAM requires is the identifier column which will almost always be the first column and will almost certainly end in “\_id”.
 
 You may safely remove any fields that do not contain changes you wish ADAM to know about. Save the CSV file and then upload it to ADAM.
 
@@ -99,7 +99,7 @@ Tell Excel that your information is Delimited (this is normally selected by defa
 
 ![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-07.png)
 
-Now specify the delimeters are either semicolons or commas (you can select both options, just in case):
+Now specify the delimiters are either semicolons or commas (you can select both options, just in case):
 
 ![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-08.png)
 
@@ -117,7 +117,7 @@ When you save the file, use the “Save As” option and change the type to “C
 
 ADAM uses this first column to determine whether it should update an existing record (with the matching internal identifier) or create a new one.
 
-These identifiers **must not** be changed. Changing a value inthe first column may result in loss of information. The internal identifier cannot be changed, regardless of whether it is a pupil, parent or staff member.
+These identifiers **must not** be changed. Changing a value in the first column may result in loss of information. The internal identifier cannot be changed, regardless of whether it is a pupil, parent or staff member.
 
 If the identifier column is left blank, ADAM will assume that the record is a new on and will add the new record to the database. For this reason, import files that contain new information should only ever be imported **once**. To make further changes to the data after an import, you will need to do an export first which will contain the new identifiers for the records you’ve just added.
 
@@ -128,7 +128,7 @@ With the exception of the first field which must always be included in every imp
 
 Omitting a column will not remove any data. By omitting the column from your import you are ensuring that ADAM makes no changes to any values in that column.
 
-You can also savely leave out any rows that you don’t want to change. If you only need to update information about the Grade 8s, for example, you can filter and delete all other pupils from the CSV import file.
+You can also safely leave out any rows that you don’t want to change. If you only need to update information about the Grade 8s, for example, you can filter and delete all other pupils from the CSV import file.
 
 It is advisable to remove any columns (except the first “id” column) that you are not making changes to in order to minimise the amount of damage that can be caused by an import. For more information on this, see [Excel and CSV Imports](#excel-and-csv-imports) to learn how Excel can “damage” your data in its quest to be “clever”.
 
@@ -136,7 +136,7 @@ It is advisable to remove any columns (except the first “id” column) that yo
 
 Please be aware that Excel attempts to automatically assign appropriate data formatting to the CSV file if you open it normally. This is problematic!
 
-Specifically, please take special note of any telephone numbers which will be interpreted as being numeric values and thus will have any leading zeros and “+” modifiers stripped from them. ID numbers, because of their length, are represented in floating point notation (“7.911E12”) and various other problems. The dates will also be represented using your system date format. If this is American (MM/DD/YYYY), then you will certainly run into errors on the import as the dates will not be properly undersood by ADAM.
+Specifically, please take special note of any telephone numbers which will be interpreted as being numeric values and thus will have any leading zeros and “+” modifiers stripped from them. ID numbers, because of their length, are represented in floating point notation (“7.911E12”) and various other problems. The dates will also be represented using your system date format. If this is American (MM/DD/YYYY), then you will certainly run into errors on the import as the dates will not be properly understood by ADAM.
 
 Mostly, we advise users to delete these columns from the import file and avoid the problems they might cause that way. However, from time to time, it is necessary to modify these columns. Luckily Excel does have feature that allows us to specify how it should treat the data.
 
@@ -154,7 +154,7 @@ Mostly, we advise users to delete these columns from the import file and avoid t
 ![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-13.png)
 
 -   Click on “Next”.
--   Choose the appropriate delimeter. It will most likely be “Comma”, but could also be “Semicolon”, depending on the settings you chose when you exported the data:
+-   Choose the appropriate delimiter. It will most likely be “Comma”, but could also be “Semicolon”, depending on the settings you chose when you exported the data:
 
 ![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-14.png)
 
@@ -229,7 +229,7 @@ In each case, we indicate which fields are required and which are optional. Thes
 -   pupil\_fees\_family\_id, pupil\_residence\_family\_id: These two fields contain the unique identifiers of the families that pay their school fees and which they live with. These fields are difficult to populate without those identifiers and are often best left out. This field is required, but is better set within the ADAM interface.
 -   pupil\_fees\_account: This is the account number used for this particular pupil. Note that if there are siblings at the school, the pupils should share the same account number. No checks are done on this, however. This feature may change in the near future. This field is optional.
 -   pupil\_general\_notes: This field can store other notes about a pupil that might not be readily stored in the other note fields. This field is optional.
--   pupil\_email: If the pupil has a specific e-mail address that they wish to be contacted on, this should be entered here. This field is optional.
+-   pupil\_email: If the pupil has a specific email address that they wish to be contacted on, this should be entered here. This field is optional.
 -   pupil\_cell: This field stores the pupil’s cellular telephone number. This field is optional.
 -   pupil\_cell\_sms: If there is a cell number entered for the pupil, this field indicates whether or not the pupil should receive SMSs. Acceptable values are “Yes” and “No”. If omitted, it will default to “Yes”. This field is optional.
 -   pupil\_studypermit\_required: This field requires a “Yes” or “No” value. It defaults to “No” if omitted and is an optional field.

@@ -74,7 +74,7 @@ There are a few things that need to be checked first. In the [Site Settings](cha
 
 -   **General / Online Applications:**
 
-    -   **Online application recipients:** Enter an email address or a comma-separated list of email addresses of people who will be notified when a online application has been received by the school.
+    -   **Online application recipients:** Enter an email address or a comma-separated list of email addresses of people who will be notified when an online application has been received by the school.
     -   **Enable online applications:** Ensure that this is set to “Yes” to allow parents access to the application form.
     -   **Expire applications (days):** This setting will automatically expire and eventually remove incomplete applications. These are applications that were started, but never submitted to the school for consideration. The default setting is 7 days, but some schools have it as low as 2 or 3. Ask yourself how long it should take a person to complete this information.
 
@@ -136,7 +136,7 @@ https://demo.adam.co.za**/apply**
 
 ### Communication from the Online Application Module
 
-During the applicaiton process, ADAM sends an email to applicants in order for them to confirm their email addresses. There are three other emails that can be sent out, but each of these must be enabled before they will be sent:
+During the application process, ADAM sends an email to applicants in order for them to confirm their email addresses. There are three other emails that can be sent out, but each of these must be enabled before they will be sent:
 
 1.  **Confirmation of receipt of application form:** This email is sent at the end of the application process once they have clicked on the “Submit Application” button at the end of their application procedure.
 2.  **Application approval:** When the school accepts the application by “approving” it, an email can be sent to parents with further steps. This may include instructions for paying a deposit and for [uploading documents into ADAM](document-repository.md#parent-uploads-into-the-document-repository).
@@ -270,7 +270,7 @@ If a parent saves their application, the incomplete reminder countdown resets. F
 
 ### Email Templates
 
-Two email templates are used for reminder messages. These can be customised in **Administration → Site Admnistration → Edit email templates**, under the **Applications** section.
+Two email templates are used for reminder messages. These can be customised in **Administration → Site Administration → Edit email templates**, under the **Applications** section.
 
 #### Reminder: Application Not Started
 
@@ -471,7 +471,7 @@ At the bottom of this form are three options:
 
 -   **Saving the information** will update the information in the application form, but will not process it. The applicant will remain on the list of submitted application forms. The pupil will not be added to the database.
 -   **Approving the Application** will add the pupil and family (if it is new) to the database. The pupil is added as an applicant in the [default admissions status](enrolment-process.md#managing-the-registration-statuses). This does *not* guarantee them a place or add them as a current pupil. *Remember that no communication is sent by ADAM.* Any documents the parent uploaded during the application are filed automatically into the document repository against the new pupil and family at this point — there is no separate document approval step for them.
--   **Reject Application** will remove the application from the pile. Typically, applicants are rejected here for stechnical reasons (incomplete form, incorrect grades, incorrect gender for monastic schooling, and so on). Rejection here essentially means tossing the application form into the bin. The pupil and the family will *not* be added to the database.
+-   **Reject Application** will remove the application from the pile. Typically, applicants are rejected here for technical reasons (incomplete form, incorrect grades, incorrect gender for monastic schooling, and so on). Rejection here essentially means tossing the application form into the bin. The pupil and the family will *not* be added to the database.
 
 !!! warning
     ***Please note well: “Accepting” and “Rejecting” applications refers specifically to the*** ***application form******. This will add these details into your database as an Applicant profile.*** ***No decisions about enrolment into the school have been made*** ***at this point. Enrolment (or not!) will only happen at the very end of the application process.***

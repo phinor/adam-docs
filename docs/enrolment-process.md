@@ -169,7 +169,7 @@ Navigate to **Admissions → Enrolment Administration → Manage admissions**. O
 
 Select the admissions statuses that need to be rolled over.
 
-*Note carefully that one should specifically avoid chosing a status which has pupils waiting to enter the school in the current year. In the example above, the* ***Confirmed Admissions*** *has been excluded. This is particularly relevant when the selected current year of entry is the same as the current calendar year.*
+*Note carefully that one should specifically avoid choosing a status which has pupils waiting to enter the school in the current year. In the example above, the* ***Confirmed Admissions*** *has been excluded. This is particularly relevant when the selected current year of entry is the same as the current calendar year.*
 
 The **Current year of entry** is the year that the pupils currently have set as their entry year.
 
@@ -304,7 +304,7 @@ Because ADAM has future-dated the deregistration, whenever teachers produce list
 
 All of these issues should resolve once the reporting period’s date passes.
 
-### “A reregistered pupil no longer shows up on my class list!”
+### “A re-registered pupil no longer shows up on my class list!”
 
 Occasionally, it can happen that a pupil is deregistered during the course of a reporting period. From above, remember that this will future-date their removal from their classes. However, it can happen that the decision to deregister the pupil is changed and the pupil re-joins the school.
 

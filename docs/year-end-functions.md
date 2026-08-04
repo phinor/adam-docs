@@ -162,7 +162,7 @@ New admissions to the school need to be registered as current pupils in order th
 
 Until a new reporting period is created, you may find that each pupil, in the search menus, will still have their default class from the year before showing. This can be disconcerting since this often will include the incorrect grade.
 
-In addition, when messaging pupils, ADAM will look to the last class registration that co-incided with a reporting period (which, if you like, “confirms” the registration). Without a reporting period created for the new year, the last reporting period will have last year’s classes and - importantly - include any children that might have left and ignore and new pupils that may have arrived.
+In addition, when messaging pupils, ADAM will look to the last class registration that coincided with a reporting period (which, if you like, “confirms” the registration). Without a reporting period created for the new year, the last reporting period will have last year’s classes and - importantly - include any children that might have left and ignore and new pupils that may have arrived.
 
 As soon as a reporting period is created, ADAM will be able to accurately determine the correct – and new – class information to show in that search list.
 
@@ -180,6 +180,6 @@ This final step is to ensure that the class registrations are accurate for the f
 
 3.  Enrol pupils into the classes as required.
 
-If you need any help with the year-end procedure, e-mail help is available throughout December with a 24-hour turnaround on requests. Telephonic support may be available, but unfortunately cannot be guaranteed during this holiday time.
+If you need any help with the year-end procedure, email help is available throughout December with a 24-hour turnaround on requests. Telephonic support may be available, but unfortunately cannot be guaranteed during this holiday time.
 
 ---

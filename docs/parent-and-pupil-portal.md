@@ -74,7 +74,7 @@ The following is a checklist that you can go through when parents are having a p
 
 The most common problem arises when the same ID number is assigned to multiple families on ADAM. When parents login, they provide their ID number and ADAM uses this ID number to identify the family profile that is logging in. If there is more than one profile, ADAM is unable to determine which should be logging in and denies the login.
 
-When parents attempt to login with an ID number that is duplicated, administrators will receive an email warning them that there is a duplicate ID number on the system. They can then investigate this to find out why. Parents will receive a standard error message saying that their login credentials are invalid.
+When parents attempt to log in with an ID number that is duplicated, administrators will receive an email warning them that there is a duplicate ID number on the system. They can then investigate this to find out why. Parents will receive a standard error message saying that their login credentials are invalid.
 
 Similarly, when parents attempt to change their passwords and provide a duplicated ID number, ADAM will not be able to determine which profile should have its password change. In this instance, no email is sent to the parent and they will not be able to change their password. However, as with the login attempts above, the ADAM Administrator will receive an email notification that the duplicated ID number exists on the system.
 
@@ -86,7 +86,7 @@ For reasons of privacy and security, ADAM does not put password reset emails int
 
 It often happens, by the nature of the email, that password reset emails are often filtered to users’ junk mail or spam folders in their email programs, or, occasionally, are rejected outright by their email server which is often managed by a company with strict email policies.
 
-You will need to check your email service’s delivery logs to ensure that ADAM sent the password reset email and that the receipient server accepted delivery thereof. This is normally sufficient, since most recipient email servers will report it when they reject an email, but it can happen that a recipient server will receive and silently delete such emails. This remains out of ADAM’s control and, if this is happening, additional work will need to be done to improve the deliverability of email from your school’s domain, including things like ensuring SPF records, DKIM signing and DMARC policies are in place to improve the reputation of your email.
+You will need to check your email service’s delivery logs to ensure that ADAM sent the password reset email and that the recipient server accepted delivery thereof. This is normally sufficient, since most recipient email servers will report it when they reject an email, but it can happen that a recipient server will receive and silently delete such emails. This remains out of ADAM’s control and, if this is happening, additional work will need to be done to improve the deliverability of email from your school’s domain, including things like ensuring SPF records, DKIM signing and DMARC policies are in place to improve the reputation of your email.
 
 ### Password Changing
 
@@ -102,7 +102,7 @@ Navigate to **Administration → Site Administration → Edit site settings**. O
 
 ![](assets/screenshots/parent-and-pupil-portal/parent-and-pupil-portal-08.png)
 
-**Faily Detail - “No ID Number Found” Reports:** If a parent attempts a login to ADAM but their ID number cannot be found on the system, ADAM will offer to send a report to the school alerting them of the parent and their attempt to log in. ADAM will request some identifying information from the parent so that the school can manually follow up with the parent concerned and investigate the matter.
+**Family Detail - “No ID Number Found” Reports:** If a parent attempts a login to ADAM but their ID number cannot be found on the system, ADAM will offer to send a report to the school alerting them of the parent and their attempt to log in. ADAM will request some identifying information from the parent so that the school can manually follow up with the parent concerned and investigate the matter.
 
 **Default Pupil Login Method:** Your preferred authentication method for pupils is set here. Note that changing this setting alone does not affect any pupils - this is the setting that is applied to any new pupils. Note that this is applied when they are *first* captured into the database.
 

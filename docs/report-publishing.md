@@ -64,7 +64,7 @@ The following is an example of a scanned and cropped signature. The red border i
 
 ### Uploading the Signatures to ADAM
 
-When asked to display a signature on a report, ADAM will look in the staff member’s Document Repository for a signature - specifically in the “Signaures” category.
+When asked to display a signature on a report, ADAM will look in the staff member’s Document Repository for a signature - specifically in the “Signatures” category.
 
 The signatures must be uploaded to the individual staff members’ Document Repository.
 
@@ -74,7 +74,7 @@ ADAM will use the *first* signature that it finds in this document repository ca
 
 Navigate to the staff member’s profile (**Staff → Staff Administration → Staff Info**) and click on the **Document Repository** tab (if you can’t see this tab, ask your ADAM administrator for permissions first). Click on the “**Signatures**” section. Click on the “Choose files” button and locate the copy of the signature on your computer. The click on the **Upload files…** button. The signature should appear in the list of uploaded files.
 
-If you can see the Document Respository tab within the staff profile, but don’t see the “Signatures” category, then you will [need permissions to upload documents to that category first](document-repository.md#staff-permissions).
+If you can see the Document Repository tab within the staff profile, but don’t see the “Signatures” category, then you will [need permissions to upload documents to that category first](document-repository.md#staff-permissions).
 
 ![](assets/screenshots/report-publishing/report-publishing-04.png)
 
@@ -215,7 +215,7 @@ In order for parents to access their children’s reports on the Parent and Pupi
 
 ## Creating Custom Reports for Individuals
 
-From time to time, a pupil may require a report that needs to be custom made rather than generated on a school template. An example is when a pupil is very new to the school and does not have marks or comments available from all the subjects. In these cases, it might be more useful to create a cusom report for the parents that is unique for this individual pupil.
+From time to time, a pupil may require a report that needs to be custom made rather than generated on a school template. An example is when a pupil is very new to the school and does not have marks or comments available from all the subjects. In these cases, it might be more useful to create a custom report for the parents that is unique for this individual pupil.
 
 Such reports might be drawn up in Microsoft Word or Canva as possible examples. The source is not important!
 

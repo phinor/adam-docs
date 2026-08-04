@@ -49,7 +49,7 @@ Token.
 4. Click on **Save Token**.
 
 !!! warning
-The random 30 character token must be kept secret since will will allow anyone who knows it access to the data stored in
+The random 30 character token must be kept secret since it will allow anyone who knows it access to the data stored in
 the ADAM database. It will need to be shared with the integration provider and great care should be taken with how they
 are provided the API key. We strongly recommend against sending this information via email or other unsecured means.
 
@@ -111,7 +111,7 @@ The difference between the two ways of stopping a token is important:
 The following are provided as best practice guidelines for managing API tokens.
 
 1. Treat API Tokens as **top secret**. Do not send them via email and do not publish them in a place where they could be
-   accessed by unauthorized personnel. API access can expose sensitive data. Allowing an API tokens to fall into the
+   accessed by unauthorised personnel. API access can expose sensitive data. Allowing an API token to fall into the
    wrong hands could expose personal information about the users of your system and this would be considered an offence
    under the “Protection of Personal Information Act” (POPIA). Access to such personal information could become a
    security and safety issue.
@@ -1258,7 +1258,7 @@ To use this API endpoint, an additional data query token must be defined.
 Note that field access definitions can only be linked to a single API Token. If multiple API tokens require access to the same fields, this process must be duplicated for each API token and a unique list created for each.
 
 -   Select the **API Token** that you want to associate with this query. *Note that only API Tokens who have access to the* *DataQuery/get/get* *resource may be selected here.*
--   Make a note of the **Secret** and do not share this with unauthorized personnel.
+-   Make a note of the **Secret** and do not share this with unauthorised personnel.
 -   Choose a **data source** for the query. Once set here, this cannot be changed later.
 -   Add a **comment** to provide insight into the function and reason for this query.
 
@@ -1941,22 +1941,22 @@ This query returns an array of pupils. If no pupils are attached to the family, 
 }
 ```
 
-### Famillies/email:get
+### Families/email:get
 
 Get a list of email addresses associated with a family or family member.
 
-#### Request {#familliesemailget-request}
+#### Request {#familiesemailget-request}
 
 ```
 GET /api/families/email/<family_id>[/(primary|secondary)]
 ```
 
-#### Parameters {#familliesemailget-parameters}
+#### Parameters {#familiesemailget-parameters}
 
 - `<family_id>`: The internal identifier of the family.
 - (primary|secondary): OPTIONAL - whether to return only email addresses of the primary or secondary parent
 
-#### Response {#familliesemailget-response}
+#### Response {#familiesemailget-response}
 
 This query returns an array of zero or more email address records.
 
@@ -2731,7 +2731,7 @@ GET /api/pupils/search-admin/<AdminNumber>
 
 #### Parameters {#pupilssearch-adminget-parameters}
 
-- `<AdminNumber>`: The school-assigned administration number for a pupil.. The parameter should be trimmed of spaces. This performs a simple text match with the database field and thus relies on reasonable data hygiene.
+- `<AdminNumber>`: The school-assigned administration number for a pupil. The parameter should be trimmed of spaces. This performs a simple text match with the database field and thus relies on reasonable data hygiene.
 
 #### Response {#pupilssearch-adminget-response}
 

@@ -69,7 +69,7 @@ The table lists every setting change, newest first:
 !!! note
     The Site Settings History page is visible to **super administrators** only.
 
-Separately from this report, ADAM also e-mails a digest whenever a site setting changes, so that administrators are alerted even if they do not check the history page. See [Changing Site Settings](changing-site-settings.md) for more on the settings themselves, and [Change Log Notifications](change-log-notifications.md) for how to watch individual settings for change alerts.
+Separately from this report, ADAM also emails a digest whenever a site setting changes, so that administrators are alerted even if they do not check the history page. See [Changing Site Settings](changing-site-settings.md) for more on the settings themselves, and [Change Log Notifications](change-log-notifications.md) for how to watch individual settings for change alerts.
 
 ## Assessment Mark Change History
 

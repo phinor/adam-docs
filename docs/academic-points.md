@@ -81,7 +81,7 @@ Click on **Save** to add this criterion to the list.
 
 ![](assets/screenshots/academic-points/academic-points-06.png)
 
-With multiple criteria in the list, note that ADAM will always sort it by the number of points in descerding order.
+With multiple criteria in the list, note that ADAM will always sort it by the number of points in descending order.
 
 *It is not possible to use this in “reverse” where low marks get higher points (perhaps this might be part of a flagging system where the poorer your mark the more “flagging points” you get?).* 
 

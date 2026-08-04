@@ -57,7 +57,7 @@ ADAM will automatically fill in today’s date as the **Start Date** for a teach
 
 The **Prior Teaching Experience** is a field that determines how much teaching experience a teacher has had *before* the started teaching at your school. With this number and the calculation that ADAM works out from the teacher’s start date, ADAM can also determine the total amount of teaching experience that a teacher has.
 
-The **Login name** is an important field. This is the username that the teacher will use to login to ADAM. If you are using an external authentication mechanism such as a POP3 Mail Server (see page ) or an Active Directory Server (see page ), then this username *must* match the username on that service. See also Staff Logins on page .
+The **Login name** is an important field. This is the username that the teacher will use to log in to ADAM. If you are using an external authentication mechanism such as a POP3 Mail Server (see page ) or an Active Directory Server (see page ), then this username *must* match the username on that service. See also Staff Logins on page .
 
 Finally, the **Authentication Method** tells ADAM how this user should log on. It is possible to have different teachers using different methods, if necessary. However, ADAM should choose, by default, the most common setting on your server when you add a new staff member.
 
@@ -75,7 +75,7 @@ ADAM should then display a “Success!” message to you. A link is provided to 
 
 ## Staff who leave the school
 
-If a staff member leaves the school, it is usually desirable that they should not be able to login to ADAM anymore.
+If a staff member leaves the school, it is usually desirable that they should not be able to log in to ADAM anymore.
 
 The way to stop this is simply to terminate their employment contract. Visit the staff member’s information page and click on **Employment History**:
 

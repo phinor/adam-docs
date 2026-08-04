@@ -17,7 +17,7 @@ The Questionnaire module adds the following permissions to ADAM:
 -   **Create a new questionnaire:** this permission should be assigned to a member of staff involved at a management level with pupil affairs and pastoral matters within your school. It allows the staff member to add a new questionnaire and assign questions to it.
 -   **Edit an existing questionnaire:** In order for a staff member to edit existing questionnaires, they will need this permission.
 -   **Edit questionnaire questions:** In order for a staff member to add or edit questions to a questionnaire, they will need this permission.
--   **Assign pupils to questionnaires for completion:** This permission should be given to grade controllers or teachers in charge of pupils in a pastoral capacity. This permission allows those teachers to choose a particular questionnaire and ask teachers to complete it for a certain pupils.
+-   **Assign pupils to questionnaires for completion:** This permission should be given to grade controllers or teachers in charge of pupils in a pastoral capacity. This permission allows those teachers to choose a particular questionnaire and ask teachers to complete it for certain pupils.
 -   **Respond to questionnaires:** This permission should be assigned to all teachers who will need to complete questionnaires. We recommend giving this permission to the “General Teacher” permission group.
 -   **View questionnaire summaries:** This permission should be given to people who need to see summary reports of the questionnaires that were answered.
 

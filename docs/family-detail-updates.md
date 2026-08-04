@@ -1,20 +1,20 @@
 # Family Detail Updates
 
-ADAM offers two ways to keep family contact and personal information current. A **hardcopy** form can be printed, given to the parent and re-entered into ADAM by staff once it is returned. **Online detail updates** ask the parent to do the typing: the parent's next visit to the family portal is interrupted by a form sequence, and the submitted values are staged for a member of staff to approve before they reach the live records. The online flow can also fall back to a magic-link email for families who do not use the portal.
+ADAM offers two ways to keep family contact and personal information current. A **hard copy** form can be printed, given to the parent and re-entered into ADAM by staff once it is returned. **Online detail updates** ask the parent to do the typing: the parent's next visit to the family portal is interrupted by a form sequence, and the submitted values are staged for a member of staff to approve before they reach the live records. The online flow can also fall back to a magic-link email for families who do not use the portal.
 
 ## Customising the detail update forms
 
 Schools usually do not want to expose every field in a parent's view. A pupil's sport house, grade or general-notes field are typical examples of information that staff manage internally and that should not appear on an update form.
 
-ADAM lets each field be flagged as visible or hidden on update forms. The settings are described in the documentation on [core database fields](database-field-management.md) and [custom database fields](database-field-management.md#managing-custom-database-fields). The same visibility rules govern both the [hardcopy](#hardcopy-detail-update-forms) and the [online](#online-detail-updates) forms, so there is no need to re-audit the field configuration when you start using online updates.
+ADAM lets each field be flagged as visible or hidden on update forms. The settings are described in the documentation on [core database fields](database-field-management.md) and [custom database fields](database-field-management.md#managing-custom-database-fields). The same visibility rules govern both the [hardcopy](#hard-copy-detail-update-forms) and the [online](#online-detail-updates) forms, so there is no need to re-audit the field configuration when you start using online updates.
 
-## Hardcopy detail update forms
+## Hard copy detail update forms
 
-A hardcopy form prints the family's current details on the left of each row and leaves an empty box on the right for corrections:
+A hard copy form prints the family's current details on the left of each row and leaves an empty box on the right for corrections:
 
 ![](assets/screenshots/family-detail-updates/family-detail-updates-01.png)
 
-When forms come back, staff must re-key any corrections — an obvious overhead. Most schools therefore reserve the hardcopy form for parents who cannot complete an online update, and use the online flow for everyone else.
+When forms come back, staff must re-key any corrections — an obvious overhead. Most schools therefore reserve the hard copy form for parents who cannot complete an online update, and use the online flow for everyone else.
 
 ### Producing a form for a single family
 
@@ -135,7 +135,7 @@ The gate only sits in front of the update form. The rest of the portal — viewi
 
 #### Banners
 
-The family portal shows a dismissable banner above every page when:
+The family portal shows a dismissible banner above every page when:
 
 - the family has a submission awaiting school review (heading: *Information update awaiting review*), or
 - a previous submission has just been reviewed by staff (heading: *Information update reviewed*).
