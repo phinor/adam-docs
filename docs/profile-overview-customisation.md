@@ -206,6 +206,8 @@ The list names every current staff member, the layout they are on, and how they 
 -   **assigned** — an administrator put them on it.
 -   **following the default** — they have no layout of their own, so they get the school's default.
 
+![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-15.png)
+
 To move people, tick them in the list, choose where they should go next to **Move selected to:**,
 and click on **Move selected**. The destination can be any layout, or **Follow the school default**,
 which takes the layout off their record so that they follow the default from then on.

@@ -1,3 +1,38 @@
+- image: profile-overview-customisation-15.png
+  captured: 2026-08-04
+  as: staff
+  path: /admin/overview/layouts/pupil/people ("see who is using which layout" above the catalogue)
+  frame:
+    mode: span
+    selectors: >
+      The "Pupil Overview: who uses what" heading through the eighth table
+      row (header row plus seven staff), which is the shortest span that
+      shows all three How states.
+    padding: 8
+  setup: >
+    The roster had no "own choice" row at all — 88 following the default and
+    9 assigned — because nobody held the "Choose own Pupil Overview layout"
+    permission. Granted that permission to the "General Teacher" group (saved),
+    then used Staff → Security → Login as another staff member to sign in as
+    Shaun Acutt (staff_id 193, a member of that group) and chose the "Medical"
+    layout for them. Medical was picked over Admin Layout so the three How
+    states also show three different layout names. Acutt sorts first
+    alphabetically, so all three states land in the top rows together.
+  revert: >
+    Not reverted, and deliberately so: the permission grant and Acutt's choice
+    are what make the screen illustrate its own documentation. Both match the
+    advice in the surrounding text that most teachers get the choose-own
+    permission.
+  note: >
+    INCOMPLETE against its brief. The brief also asked for the "Move selected
+    to:" control and its "Move selected" button at the foot of the screen. The
+    demonstration school has 97 staff and the screen has no filter, so that
+    control sits ~3,900px below the heading; a single capture spanning both
+    would be a ~3,900px strip, against a corpus whose images are a few hundred
+    pixels tall. Captured the readable region instead and left the Move control
+    outstanding rather than shipping an unusable image or silently dropping a
+    requirement.
+
 - image: profile-overview-customisation-16.png
   captured: 2026-08-04
   as: staff
