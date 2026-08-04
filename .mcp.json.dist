@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y", "@playwright/mcp@0.0.78",
+        "--headless",
+        "--isolated",
+        "--browser", "chromium",
+        "--executable-path", "/home/philip/.cache/ms-playwright/chromium-1217/chrome-linux64/chrome",
+        "--viewport-size", "900x1200",
+        "--allowed-origins", "https://dev.example.adam.co.za",
+        "--output-dir", "/tmp/adam-docs-capture"
+      ]
+    }
+  }
+}
