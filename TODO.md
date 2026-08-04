@@ -104,68 +104,43 @@ Two pupils genuinely have a birthday today, so no date of birth needs moving —
 with birthdays are **Yasmin Butcher** and **Coral Till**, in other families, which is exactly why the
 school-wide scope matters for this image.
 
-## Heads of Subject (`docs/subjects.md`)
+## Heads of Subject — screenshots and one question for development
 
-**The manual does not mention heads of subject anywhere.** Searching the whole of `docs/` for "head
-of subject", "heads of subject" or "headed subject" returns nothing, yet the feature drives eight
-permissions and is a prerequisite for the [mark book editing
-window](docs/reporting-period-administration.md#markbook-editing) that was documented alongside
-this entry. Support has already seen the consequence of the gap: "the HOD says they still can't edit
-marks", when in fact only one of the two halves had been set up.
+The **Heads of Subject** section is now written, on `docs/subjects.md` between *Editing a Subject* and
+*Changing the Order of Subjects*. The cross-links from `docs/mark-book-administration.md` and
+`docs/reporting-period-administration.md` now point at it instead of restating the two-halves rule.
+Two things are left.
 
-This needs a new **Heads of Subject** section on the **Subjects** page, most naturally after
-*Editing a Subject* and before *Changing the Order of Subjects*.
+### 1. Two screenshots, into `docs/assets/screenshots/subjects/`
 
-### What the section has to say
+Capture against the demonstration school. No subject currently has two heads, so this needs setting
+up first — assign two staff members to one subject before shooting.
 
-**The two halves.** This is the whole point of the section, so lead with it. A head-of-subject
-permission and a head-of-subject assignment are both required, and **either one on its own does
-nothing at all and gives no error**. The permission says *what* a subject head may do; the
-assignment says *which* subjects they may do it in. ADAM now shows a warning when heads are saved
-who hold none of these permissions, but it still saves the assignment, because granting the
-permissions afterwards is a perfectly normal order of work.
+1. The **Manage Heads of Subject** screen for a subject that has two heads, showing the **Staff
+   Members** picker with both selected and the **Save** button. Goes in *Assigning a Head of Subject*,
+   after the paragraph that describes choosing staff and saving.
+2. The subject list with the **Head(s)** column populated and the **heads** option visible on the row,
+   so the reader can see where the action lives. Goes in the same sub-section, after the paragraph
+   about the **Head(s)** column.
 
-**How to assign them.** From the **Subjects** tab, under the **Subject Administration** heading,
-click **Edit the subjects**, then click the **heads** action next to the subject concerned. The
-**Manage Heads of Subject** screen lets you pick one or more staff members under **Staff Members**;
-click **Save**. Current heads are listed in the **Head(s)** column back on the subject list. The
-person doing this needs the **Manage Head of Subject assignments** permission.
+### 2. Ask development about `rep_aggregated_subject`
 
-**The permissions that the assignment scopes.** All eight are worth listing, with the tab and heading
-each is found under, since they are scattered across the permission screen:
+This entry previously assumed **Manage aggregated result calculations from subjects taught** was
+scoped by the head-of-subject assignment like the other seven permissions, and that its description
+was wrong. **Reading the code says the opposite.**
 
-- **Add classes within headed subjects** and **Edit classes within headed subjects** — Class Admin
-  tab, Classes and Registrations heading.
-- **Add assessments for classes in headed subjects**, **Edit assessment results for headed
-  subjects** and **Edit assessment results for headed subjects during the mark book editing
-  window** — Assessments tab, Class Assessments heading.
-- **Enter report comments for headed subjects** and **Edit report marks for headed subjects** —
-  Reporting Admin tab, Reports heading.
-- **Manage aggregated result calculations from subjects taught** — Reporting Admin tab, Aggregated
-  Result Calculations heading.
+`AggregatedCalculationsController` scopes it with `Subjects::isCurrentTeacher` and contains no
+head-of-subject check anywhere, so the behaviour matches the on-screen description: it is about
+subjects **taught**, not subjects **headed**. The section as written says so.
 
-### Cross-links to add once the section exists
+The misalignment is elsewhere: `SubjectHeadController::SUBJECT_SCOPED_PRIVILEGES` lists
+`rep_aggregated_subject` alongside the seven genuinely head-scoped permissions, under a docblock
+saying every entry "is scoped by the `subject_heads` table". That has a visible consequence — the
+warning shown when saving a head who holds none of the head-of-subject permissions counts this one as
+though it qualified, so a staff member holding only this permission is assigned as a head with no
+warning, and still gains nothing from the assignment.
 
-- `docs/mark-book-administration.md`, in *When the Mark Book Closes* — the note about a head of
-  department needing both the permission and the assignment should link to the new section rather
-  than restating it.
-- `docs/reporting-period-administration.md`, in *Markbook Editing* — same, for the second of the two
-  permissions listed there.
-
-### One thing to check with development first
-
-The last permission in the list above, **Manage aggregated result calculations from subjects
-taught**, is scoped by the head-of-subject assignment in the code like the other seven, but its
-on-screen description says "for subjects that they teach" rather than *head*. Either the wording or
-the behaviour is wrong. Do not paper over it in the manual — ask which was intended, and document
-whichever answer comes back.
-
-### Screenshots this section will need
-
-Capture these against the demonstration school at the same time as writing the section, into
-`docs/assets/screenshots/subjects/`:
-
-1. The **Manage Heads of Subject** screen for a subject that already has two heads, showing the
-   **Staff Members** picker with both selected and the **Save** button.
-2. The subject list with the **Head(s)** column populated, and the **heads** action visible on the
-   row, so the reader can see where the action lives.
+**Ask which is intended.** If the permission is meant to be head-scoped, the controller needs the
+check and the manual's note about it should be removed. If it is meant to stay teach-scoped, it should
+come out of `SUBJECT_SCOPED_PRIVILEGES` so the warning stops counting it. Either way the manual needs
+re-checking against the answer.

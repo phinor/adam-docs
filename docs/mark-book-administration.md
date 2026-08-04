@@ -130,7 +130,7 @@ Results can only be captured while the reporting period’s **Markbook Entry** t
 Some schools close the mark book in two stages, so that ordinary mark entry ends on the published deadline while heads of department keep a few extra days to settle final adjustments. Where a [**Markbook Editing** time frame](reporting-period-administration.md#markbook-editing) has been set, those staff who hold one of the mark book editing permissions will still be able to reach the results entry screen for that period, and their own editing deadline is listed for them on the home page. Everybody else sees *“This reporting period’s mark book has closed. Only staff with mark book editing permission can make changes during the editing window.”*
 
 !!! note
-    A head of department who is expecting to edit during this window needs two things: the **Edit assessment results for headed subjects during the mark book editing window** permission, and to be assigned as a head of the subject concerned. Either one alone has no effect.
+    A head of department who is expecting to edit during this window needs both the **Edit assessment results for headed subjects during the mark book editing window** permission *and* a head-of-subject assignment for the subject concerned. Either one alone has no effect. See [Heads of Subject](subjects.md#heads-of-subject).
 
 ## Viewing Who Changed a Mark
 

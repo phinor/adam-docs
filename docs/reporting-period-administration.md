@@ -136,7 +136,7 @@ Each time, after you add or edit a reporting period’s information, or click on
 ![](assets/screenshots/reporting-period-administration/reporting-period-administration-09.png)
 
 !!! warning
-    *The deadlines that require “editing” require permissions to be assigned to staff. See “**[Security Administration](security-administration-for-staff.md#security-administration-for-staff)**”.*
+    *The deadlines listed under **Editing Time Frames** require specific *editing* permissions to be assigned to staff. See “**[Security Administration](security-administration-for-staff.md#security-administration-for-staff)**”.*
 
 Each line represents a reporting action, which are discussed below, and on each line can be multiple windows, each with a start and end time. The start times are listed in green below the dates on which they take effect, and the end times are shown in red.
 
@@ -193,7 +193,7 @@ As with Report Mark Editing, this window should only start once the Markbook Ent
 Two permissions decide who may use the window. Both appear on the **Assessments** tab, under the **Class Assessments** heading, when [changing the permissions of a group](security-administration-for-staff.md#changing-the-permissions-of-a-group):
 
 -   **Edit assessment results during the mark book editing window** — allows the staff member to edit results for any class.
--   **Edit assessment results for headed subjects during the mark book editing window** — allows the staff member to edit results only for classes in the subjects that they head. This permission does nothing on its own: the staff member must also be assigned as a head of the subject concerned.
+-   **Edit assessment results for headed subjects during the mark book editing window** — allows the staff member to edit results only for classes in the subjects that they head. This permission does nothing on its own: the staff member must also be assigned as a [head of the subject](subjects.md#heads-of-subject) concerned.
 
 !!! note
     If you do not set a Markbook Editing time frame, nothing changes for your school. The mark book simply closes at the Markbook Entry deadline, exactly as before. Neither of the two permissions above is granted by any of the permission groups that ship with ADAM, so the window has to be opened deliberately.

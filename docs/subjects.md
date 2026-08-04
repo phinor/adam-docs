@@ -126,6 +126,54 @@ Once you are happy with the information, you can now click on the **Save this Su
 
 Once you have created your subjects, you are now ready to [create classes](class-management.md#class-management).
 
+### Heads of Subject
+
+A head of subject is a staff member who is given responsibility for a subject across the whole school, rather than only for the classes they happen to teach. Depending on which permissions they hold, a head of subject can add and edit classes in that subject, add assessments and edit results for it, and enter or edit report comments and marks for it — for every class in the subject, not just their own.
+
+!!! warning
+    Making somebody a head of subject takes **two** steps, and doing only one of them has no effect at all. The staff member needs:
+
+    -   **a permission**, which decides *what* a head of subject may do, and
+    -   **an assignment** to the subject, which decides *which* subjects they may do it in.
+
+    Either half on its own does nothing, and ADAM gives no error when a staff member holds one but not the other. This is the most common reason for “the head of department says they still cannot edit the marks”.
+
+The two halves are set up in two different places, and it does not matter which you do first.
+
+#### Assigning a Head of Subject
+
+Click on the **Edit the subjects** menu option, found on the **Subjects** tab under the **Subject Administration** heading. Next to the subject concerned, click on the **heads** option.
+
+On the **Manage Heads of Subject** screen, choose one or more staff members under **Staff Members**, and click on **Save**. To remove somebody, deselect them and save again.
+
+The staff members you choose are then listed in the **Head(s)** column back on the list of subjects, so you can see at a glance which subjects have heads and which do not.
+
+!!! note
+    The **heads** option only appears for staff who hold the **Manage Head of Subject assignments** permission, found on the **Academic Admin** tab under the **Subjects** heading.
+
+If you save a head of subject who holds none of the permissions listed below, ADAM warns you that the assignment has no effect on its own, but still saves it. That is deliberate: assigning the heads first and granting the permissions afterwards is a perfectly normal order of work.
+
+#### The Permissions a Head of Subject Can Hold
+
+These are the permissions that the head-of-subject assignment scopes. Each one does nothing until the staff member is also assigned as a head of the subject concerned. They are granted in the usual way, by [changing the permissions of a group](security-administration-for-staff.md#changing-the-permissions-of-a-group), and they are scattered across three tabs:
+
+| Permission | Tab | Heading |
+| ---------- | --- | ------- |
+| **Add classes within headed subjects** | Class Admin | Classes and Registrations |
+| **Edit classes within headed subjects** | Class Admin | Classes and Registrations |
+| **Add assessments for classes in headed subjects** | Assessments | Class Assessments |
+| **Edit assessment results for headed subjects** | Assessments | Class Assessments |
+| **Edit assessment results for headed subjects during the mark book editing window** | Assessments | Class Assessments |
+| **Enter report comments for headed subjects** | Reporting Admin | Reports |
+| **Edit report marks for headed subjects** | Reporting Admin | Reports |
+
+The last of the assessment permissions is the one that matters for the two-stage close-off of the mark book, described under [Markbook Editing](reporting-period-administration.md#markbook-editing).
+
+!!! note
+    **Manage aggregated result calculations from subjects taught**, on the **Reporting Admin** tab under the **Aggregated Result Calculations** heading, reads as though it belongs in this list, but it does not. It is scoped by the subjects a staff member **teaches**, not the subjects they head, so a head-of-subject assignment makes no difference to it.
+
+None of these permissions is granted by any of the permission groups that ship with ADAM, so each has to be given deliberately.
+
 ### Changing the Order of Subjects
 
 The order that the subjects are listed in here is used throughout ADAM and on the reports themselves.
