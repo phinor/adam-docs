@@ -34,7 +34,10 @@ Replace `serve --dev-addr=0.0.0.0:8000` with `build --strict` to produce a stati
 
 ## Screenshots
 
-Screenshots are captured against a demo school tenant, never against production. The capture workflow is documented in [`scripts/README.md`](scripts/README.md) (forthcoming).
+Screenshots are captured against the local ADAM dev instance, never against production. An agent can
+capture them: see the `capturing-screenshots` skill in
+[`.claude/skills/capturing-screenshots/SKILL.md`](.claude/skills/capturing-screenshots/SKILL.md), and
+copy `.mcp.json.dist` to `.mcp.json` with the dev host filled in.
 
 ## Deployment
 
