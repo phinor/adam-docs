@@ -187,9 +187,9 @@ One `captures.yml` per chapter folder, beside the images:
   as: staff            # or: parent / pupil, with the identity used
   path: Pupils tab → Security → Manage permissions groups → privileges
   frame:
-    mode: span
-    from: "#privileges h3:has-text('Birthdays')"
-    to: "tr:has(td:text('View birthdays'))"
+    mode: span              # or: element
+    selectors: "#privileges tr:has(td:text('View birthdays'))"
+    padding: 8
   setup: "Ticked View birthdays for both Pupils and Families on the demo families' group"
   revert: none
 ```
