@@ -130,11 +130,11 @@ In the examples below, comments are CAPITALISED for ease of reading only.
 
 Also, indented lines in the examples below, indicate a long, continued line that should be entered on the previous line as one line.
 
-### Templates for Typical Promotion Requirements
+## Templates for Typical Promotion Requirements
 
 The following requirements are based on [official guidelines](https://www.education.gov.za/Portals/0/Documents/Policies/PolicyProgPromReqNCS.pdf?ver=2015-02-03-154857-397). All these promotion criteria are linked to **DBE Codes** and so all criteria need to be set to use DBE codes.
 
-#### Promoted (Grades 10 – 12) BD
+### Promoted (Grades 10 – 12) BD
 
 ```
 NSC SUBJECT OFFERING
@@ -151,7 +151,7 @@ Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52
 Four 20cr Subjects Above 50% :4:50:1,2,4,5,7,8,10,11,13,14,16,17,19,20,22,23,25,26,28,29,31,32,35,77,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 ```
 
-#### Promoted (Grades 10 – 12) D
+### Promoted (Grades 10 – 12) D
 
 ```
 NSC SUBJECT OFFERING
@@ -168,7 +168,7 @@ Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52
 Three Subjects Above 40% :3:40:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 ```
 
-#### Promoted (Grades 10 – 12) HC
+### Promoted (Grades 10 – 12) HC
 
 ```
 NSC SUBJECT OFFERING
@@ -185,7 +185,7 @@ Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52
 Two Subjects Above 40% :2:40:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 ```
 
-#### Promoted (Grades 10 – 12)
+### Promoted (Grades 10 – 12)
 ```
 NSC SUBJECT OFFERING
 One official language at HL Level:1:0:1,4,7,10,13,16,19,22,25,28,31
@@ -200,7 +200,7 @@ Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52
 Two Subjects Above 40% :2:40:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 ```
 
-#### Promoted - Language Exemption (Grades 10 – 12) BD\*
+### Promoted - Language Exemption (Grades 10 – 12) BD\*
 ```
 NSC SUBJECT OFFERING
 One official language at HL Level:1:0:1,4,7,10,13,16,19,22,25,28,31
@@ -215,7 +215,7 @@ Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52
 Four 20cr Subjects Above 50% :4:50:1,2,4,5,7,8,10,11,13,14,16,17,19,20,22,23,25,26,28,29,31,32,35,77,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 ```
 
-#### Promoted - Language Exemption (Grades 10 – 12) D\*
+### Promoted - Language Exemption (Grades 10 – 12) D\*
 ```
 NSC SUBJECT OFFERING
 One official language at HL Level:1:0:1,4,7,10,13,16,19,22,25,28,31
@@ -230,8 +230,7 @@ Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52
 Three Subjects Above 40% :3:40:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 ```
 
-#### Promoted - Language Exemption (Grades 10 – 12) HC\*
-
+### Promoted - Language Exemption (Grades 10 – 12) HC\*
 ```
 NSC SUBJECT OFFERING
 One official language at HL Level:1:0:1,4,7,10,13,16,19,22,25,28,31
@@ -246,7 +245,7 @@ Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52
 Two Subjects Above 40% :2:40:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 ```
 
-#### Promoted - Language Exemption (Grades 10 – 12)\*
+### Promoted - Language Exemption (Grades 10 – 12)\*
 ```
 NSC SUBJECT OFFERING
 One official language at HL Level:1:0:1,4,7,10,13,16,19,22,25,28,31
@@ -260,8 +259,7 @@ Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52
 Two Subjects Above 40% :2:40:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 ```
 
-#### Promoted (General Education and Training Phase)
-
+### Promoted (General Education and Training Phase)
 ```
 Home Language at 50%:1:50:1,4
 First Additional Language at 40%:1:40:2,5,14
@@ -270,7 +268,7 @@ Three subjects at 40%:3:40:40,41,38,37,39,42
 Two subjects at 30% (+3 @ 40):5:30:40,41,38,37,39,42
 ```
 
-#### Promoted (Intermediate Phase)
+### Promoted (Intermediate Phase)
 ```
 Home Language at 50%:1:50:1,4
 First Additional Language at 40%:1:40:2,5,14
