@@ -187,7 +187,7 @@ Where a Record and Points category has an attendance register included as part o
 
 Traditionally, this feature was designed to print over a pre-printed certificate. However, with more and more awards being issued electronically, even for archival purposes, it is useful to have a purely electronic certificate that can be emailed.
 
-Navigate to **Admnistration → Document Repository → Upload documents to the Site Repository**. Here, you can upload PDF documents into the “Certificates” category.
+Navigate to **Administration → Document Repository → Upload documents to the Site Repository**. Here, you can upload PDF documents into the “Certificates” category.
 
 ![](assets/screenshots/records-and-points-administration/records-and-points-administration-09.png)
 
@@ -206,7 +206,7 @@ If you have [uploaded any templates](#uploading-certificate-templates), then you
 
 Choose your desired report size.
 
-Next, for each of the five elements that ADAM can show on the template, choose the settings that apply. You can change fonts and font-sizes. The “Left” and “Top” measurements are how many milimetres these text elements appear from the left and top of the page. The text is then shown in a box with a specific “width” and “height”. Note that the text is centred vertically and horizontally in the box and may overflow.
+Next, for each of the five elements that ADAM can show on the template, choose the settings that apply. You can change fonts and font-sizes. The “Left” and “Top” measurements are how many millimetres these text elements appear from the left and top of the page. The text is then shown in a box with a specific “width” and “height”. Note that the text is centred vertically and horizontally in the box and may overflow.
 
 When you’ve set these up for the first time, ADAM should remember them for subsequent certificate runs - this makes it simpler to generate them in future. However, for the first time, it is often useful to draw some pencil boxes where you expect the text to be displayed and then measure their top left corners for (“left” and “top” measurements) as well as the boxes’ widths and heights.
 

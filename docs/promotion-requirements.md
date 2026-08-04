@@ -50,7 +50,7 @@ To change the order of the promotion decisions, use the “up” and “down” 
 
 ADAM comes with default National Senior Certificate promotion criteria already added to the system but which are initially disabled. If you want to make use of these settings, you can, but you must enable the criteria first and ensure that they are displayed in the correct order. Make sure also, that they are set to look at the correct grades and qualifications, based on your school’s needs.
 
-While you are able to change the settings of these particular criteria, please be advised that we may well override the settings in future updates. If you want to modify them, we strongly suggest that you copy these and make your own set to ensure that they are not unwittingly overwritten without your knoweledge.
+While you are able to change the settings of these particular criteria, please be advised that we may well override the settings in future updates. If you want to modify them, we strongly suggest that you copy these and make your own set to ensure that they are not unwittingly overwritten without your knowledge.
 
 ## Promotions for Pupils with Immigrant Status
 
@@ -95,16 +95,18 @@ For each decision, enter the following information:
 
 ## Explanation of Syntax of the Criteria
 
-In each of the criteria are a number of lines that are essentially colon “:” delimited lines. If a line cannot be delimited accurately into 4 sections (i.e. contains three “:” characters) it is ignored and has no effect on the criteria.
+In each of the criteria are a number of lines that are essentially colon `:` delimited lines. If a line cannot be delimited accurately into 4 sections (i.e. contains three `:` characters) it is *ignored* and has *no effect* on the criteria. Such lines are useful for providing context or comments for human maintainers.
 
-Example:
-
+#### Example:
+```
 Five Subjects at 30:5:30:134,133,145,82,153,138,139,142,125,136,137,85,135,107
+```
 
--   The green text is a description and is meaningless to ADAM. It’s only purpose is to describe the condition for human readability. This is used later by ADAM to give context to the reasons for its decision.
--   The red number represents the number of subjects that ADAM must find.
--   The blue number is the minimum mark that must be attained in that subject for ADAM to count is as one of the “found” subjects.
--   The black numbers are a comma separated list of subject ID codes that ADAM will search through.
+The text is split into 4 parts, each part separated by a `:` character. The four parts, as they appear above, are:
+- `Five Subjects at 30` This is a *description for humans* and is meaningless to ADAM. Its only purpose is to describe the condition for human readability. This is used later by ADAM to give context to the reasons for its decision
+- `5` The *number of subjects* that ADAM must find
+- `30` The *minimum mark* that must be attained in that subject for ADAM to count is as one of the “found” subjects
+- `134,133,145,82,153,138,139,142,125,136,137,85,135,107`  These numbers are a comma separated *list of subject ID codes* that ADAM will search through
 
 In this example, ADAM must find 5 subjects with a minimum mark of 30 from the list provided in order to satisfy this criterion.
 
@@ -128,211 +130,151 @@ In the examples below, comments are CAPITALISED for ease of reading only.
 
 Also, indented lines in the examples below, indicate a long, continued line that should be entered on the previous line as one line.
 
-### Templates for Typical Promotion Requirements
+## Templates for Typical Promotion Requirements
 
-The following requirements are based on [official guidelines](https://www.education.gov.za/Portals/0/Documents/Policies/PolicyProgPromReqNCS.pdf?ver=2015-02-03-154857-397). All these promotion criteria are linked to DBE codes and so all criteria need to be set to use DBE codes.
+The following requirements are based on [official guidelines](https://www.education.gov.za/Portals/0/Documents/Policies/PolicyProgPromReqNCS.pdf?ver=2015-02-03-154857-397). All these promotion criteria are linked to **DBE Codes** and so all criteria need to be set to use DBE codes.
 
-#### Promoted (Grades 10 – 12) BD
+### Promoted (Grades 10 – 12) BD
 
+```
 NSC SUBJECT OFFERING
-
 One official language at HL Level:1:0:1,4,7,10,13,16,19,22,25,28,31
-
 Two official languages :2:0:1,2,4,5,7,8,10,11,13,14,16,17,19,20,22,23,25,26,28,29,31,32
-
 Mathematics or Maths Lit:1:0:35,77
-
 Life Orientation:1:0:42
-
 Three Elective Subjects :3:0:44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 
 BACHELOR'S DEGREE REQUIREMENTS
-
 English or Afrikaans at 30%:1:30:1:1,2,4,5
-
 Home Language at 40%:1:40:1,4,7,10,13,16,19,22,25,28,31
-
 Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
-
 Four 20cr Subjects Above 50% :4:50:1,2,4,5,7,8,10,11,13,14,16,17,19,20,22,23,25,26,28,29,31,32,35,77,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
+```
 
-#### Promoted (Grades 10 – 12) D
+### Promoted (Grades 10 – 12) D
 
+```
 NSC SUBJECT OFFERING
-
 One official language at HL Level:1:0:1,4,7,10,13,16,19,22,25,28,31
-
 Two official languages :2:0:1,2,4,5,7,8,10,11,13,14,16,17,19,20,22,23,25,26,28,29,31,32
-
 Mathematics or Maths Lit:1:0:35,77
-
 Life Orientation:1:0:42
-
 Three Elective Subjects :3:0:44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 
 DIPLOMA REQUIREMENTS
-
 English or Afrikaans at 30%:1:30:1,2,4,5
-
-Home Langauge at 40%:1:40:1,4,7,10,13,16,19,22,25,28,31
-
+Home Language at 40%:1:40:1,4,7,10,13,16,19,22,25,28,31
 Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
-
 Three Subjects Above 40% :3:40:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
+```
 
-#### Promoted (Grades 10 – 12) HC
+### Promoted (Grades 10 – 12) HC
 
+```
 NSC SUBJECT OFFERING
-
 One official language at HL Level:1:0:1,4,7,10,13,16,19,22,25,28,31
-
 Two official languages :2:0:1,2,4,5,7,8,10,11,13,14,16,17,19,20,22,23,25,26,28,29,31,32
-
 Mathematics or Maths Lit:1:0:35,77
-
 Life Orientation:1:0:42
-
 Three Elective Subjects :3:0:44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 
 HIGHER CERTIFICATE REQUIREMENTS
-
 English or Afrikaans at 30%:1:30:1,2,4,5
-
-Home Langauge at 40%:1:40:1,4,7,10,13,16,19,22,25,28,31
-
+Home Language at 40%:1:40:1,4,7,10,13,16,19,22,25,28,31
 Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
-
 Two Subjects Above 40% :2:40:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
+```
 
-#### Promoted (Grades 10 – 12)
-
+### Promoted (Grades 10 – 12)
+```
 NSC SUBJECT OFFERING
-
 One official language at HL Level:1:0:1,4,7,10,13,16,19,22,25,28,31
-
 Two official languages :2:0:1,2,4,5,7,8,10,11,13,14,16,17,19,20,22,23,25,26,28,29,31,32
-
 Mathematics or Maths Lit:1:0:35,77
-
 Life Orientation:1:0:42
-
 Three Elective Subjects :3:0:44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 
 NSC REQUIREMENTS
-
-Home Langauge at 40%:1:40:1,4,7,10,13,16,19,22,25,28,31
-
+Home Language at 40%:1:40:1,4,7,10,13,16,19,22,25,28,31
 Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
-
 Two Subjects Above 40% :2:40:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
+```
 
-#### Promoted - Language Exemption (Grades 10 – 12) BD\*
-
+### Promoted - Language Exemption (Grades 10 – 12) BD\*
+```
 NSC SUBJECT OFFERING
-
 One official language at HL Level:1:0:1,4,7,10,13,16,19,22,25,28,31
-
 Mathematics or Maths Lit:1:0:35,77
-
 Life Orientation:1:0:42
-
 Four Elective Subjects :4:0:44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 
 BACHELOR'S DEGREE REQUIREMENTS
-
 English or Afrikaans at 30%:1:30:1,2,4,5
-
 Home Language at 40%:1:40:1,4,7,10,13,16,19,22,25,28,31
-
 Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
-
 Four 20cr Subjects Above 50% :4:50:1,2,4,5,7,8,10,11,13,14,16,17,19,20,22,23,25,26,28,29,31,32,35,77,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
+```
 
-#### Promoted - Language Exemption (Grades 10 – 12) D\*
-
+### Promoted - Language Exemption (Grades 10 – 12) D\*
+```
 NSC SUBJECT OFFERING
-
 One official language at HL Level:1:0:1,4,7,10,13,16,19,22,25,28,31
-
 Mathematics or Maths Lit:1:0:35,77
-
 Life Orientation:1:0:42
-
 Four Elective Subjects :4:0:44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 
 DIPLOMA REQUIREMENTS
-
 English or Afrikaans at 30%:1:30:1,2,4,5
-
-Home Langauge at 40%:1:40:1,4,7,10,13,16,19,22,25,28,31
-
+Home Language at 40%:1:40:1,4,7,10,13,16,19,22,25,28,31
 Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
-
 Three Subjects Above 40% :3:40:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
+```
 
-#### Promoted - Langauge Exemption (Grades 10 – 12) HC\*
-
+### Promoted - Language Exemption (Grades 10 – 12) HC\*
+```
 NSC SUBJECT OFFERING
-
 One official language at HL Level:1:0:1,4,7,10,13,16,19,22,25,28,31
-
 Mathematics or Maths Lit:1:0:35,77
-
 Life Orientation:1:0:42
-
 Four Elective Subjects :4:0:44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 
 HIGHER CERTIFICATE REQUIREMENTS
-
 English or Afrikaans at 30%:1:30:1,2,4,5
-
-Home Langauge at 40%:1:40:1,4,7,10,13,16,19,22,25,28,31
-
+Home Language at 40%:1:40:1,4,7,10,13,16,19,22,25,28,31
 Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
-
 Two Subjects Above 40% :2:40:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
+```
 
-#### Promoted - Language Exemtption (Grades 10 – 12)\*
-
+### Promoted - Language Exemption (Grades 10 – 12)\*
+```
 NSC SUBJECT OFFERING
-
 One official language at HL Level:1:0:1,4,7,10,13,16,19,22,25,28,31
-
 Mathematics or Maths Lit:1:0:35,77
-
 Life Orientation:1:0:42
-
 Four Elective Subjects :4:0:44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
 
 NSC REQUIREMENTS
-
-Home Langauge at 40%:1:40:1,4,7,10,13,16,19,22,25,28,31
-
+Home Language at 40%:1:40:1,4,7,10,13,16,19,22,25,28,31
 Five Subjects above 30% :5:30:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
-
 Two Subjects Above 40% :2:40:2,5,8,11,14,17,20,23,26,29,32,35,77,42,44,45,46,52,53,54,80,99,43,48,55,3,6,9,12,15,18,21,24,27,30,33,47,59,61,62,63,64,65,66,67,68,69,73,74,83,84,85,161,162,163,87,89,90,91,92,93,94,96,97,98,49,56,78,57,60,70,86,50,72,75,82,51,71,95,58,100,101,102,76,79,81,88
+```
 
-#### Promoted (General Education and Training Phase)
-
+### Promoted (General Education and Training Phase)
+```
 Home Language at 50%:1:50:1,4
-
 First Additional Language at 40%:1:40:2,5,14
-
 Mathematics at 40%:1:40:35
-
 Three subjects at 40%:3:40:40,41,38,37,39,42
-
 Two subjects at 30% (+3 @ 40):5:30:40,41,38,37,39,42
+```
 
-#### Promoted (Intermediate Phase)
-
+### Promoted (Intermediate Phase)
+```
 Home Language at 50%:1:50:1,4
-
 First Additional Language at 40%:1:40:2,5,14
-
 Mathematics at 40%:1:40:35
-
 Two subjects at 40%:2:40:38,37,42
+```
 
 ### To list all pupils as promoted without performing any checks
 
@@ -348,11 +290,13 @@ Two subjects at 40%:2:40:38,37,42
 
 #### Criteria to copy-and-paste:
 
+```
 Any subject:0:0:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18, 19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200
+```
 
 ## How are the conditions used?
 
-In each promotion criterion, there are a number lines, each with a different criterion. ADAM must be able to apply ALL of the criteria for the promotion decision to be valid.
+In each promotion criterion, there are a number of lines, each with a different criterion. ADAM must be able to apply ALL of the criteria for the promotion decision to be valid.
 
 If ADAM is not able to match a criterion within the list against a pupil’s marks, a note of the *failed* condition is made and this is shown later as part of the detailed explanation of the promotion decision in the pupils “Detailed Academic History” within their profile on ADAM. A screen shot of this is shown below.
 

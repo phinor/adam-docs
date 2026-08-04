@@ -1,6 +1,6 @@
 # Cross-Site Logins and Trusted Servers
 
-ADAM allows administrators to set up a trust relationship between two or more servers to allow users a once-click login to facilitate access to other servers.
+ADAM allows administrators to set up a trust relationship between two or more servers to allow users a one-click login to facilitate access to other servers.
 
 ## Setting up a pair of Trusted Servers
 
@@ -75,7 +75,7 @@ In order for ADAM to allow cross-site logins, the following must be in place for
 
 -   Pupils:
 
--   Pupils **must** have an **Admin Number** set on their profiles. ADAM will not allow pupils with a blank Admin Nuimber to perform a cross-site login.
+-   Pupils **must** have an **Admin Number** set on their profiles. ADAM will not allow pupils with a blank Admin Number to perform a cross-site login.
 -   Their **Admin Number** must be the same on both servers. If they are not, ADAM will not be able to find the corresponding user and log them in.
 -   Note that if the Admin Numbers are not standardised, then ADAM may log a user into another user’s profile.
 

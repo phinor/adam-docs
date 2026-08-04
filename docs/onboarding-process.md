@@ -2,7 +2,7 @@
 
 Welcome to ADAM!
 
-Moving to a new administration system can be a daunting taks and we want to make it as seamless as it possibly can be. This section in our documentation is written with new schools in mind who’ve just made the decision to sign up with ADAM. What follows is the process required by new schools (or most of them!) to ensure a smooth transition to ADAM.
+Moving to a new administration system can be a daunting task and we want to make it as seamless as it possibly can be. This section in our documentation is written with new schools in mind who’ve just made the decision to sign up with ADAM. What follows is the process required by new schools (or most of them!) to ensure a smooth transition to ADAM.
 
 ## Customer Information
 

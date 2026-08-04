@@ -29,7 +29,7 @@ The option to **Email comments to parents** can be set to one of four options, t
 
 Considering that the main aim of this feature is to provide a space for confidential comments, the generally accepted practice is that such categories should either be set to “Never” or, at its most generous, “Discouraged”. This will prevent comments that are mistakenly placed in incorrect categories from being emailed to parents.
 
-Note also that under the pending POPI legislation, parents do have the right to request all information stored about them. These comments would form part of such a POPI request and, as such, should be treated as if they are publically visible.
+Note also that under the pending POPI legislation, parents do have the right to request all information stored about them. These comments would form part of such a POPI request and, as such, should be treated as if they are publicly visible.
 
 In the bottom, add in any **template text** that you would like prepopulated into the comment box on the entry screen. In the image above, an outline for the minutes of a meeting with parents is shown. This could allow you to create quite specific lists and forms to complete.
 
@@ -47,7 +47,7 @@ The following screen is shown:
 
 The **Category** refers to the comment categories that were [described above](#comment-categories).
 
-The next two settings, **Visible to** and **Limit to staff groups** require some explanation because the two settings work in concert with each other to restrict who can see the pupil’s comment. Note that all the staff who can see the comment will be shown in the list below the option **Email staff**. That setting only controls whether they receive an email copy of the comment. Even if they don’t receive an e-mailed copy, *any listed staff member* would see the pupil’s comment appear on their profile.
+The next two settings, **Visible to** and **Limit to staff groups** require some explanation because the two settings work in concert with each other to restrict who can see the pupil’s comment. Note that all the staff who can see the comment will be shown in the list below the option **Email staff**. That setting only controls whether they receive an email copy of the comment. Even if they don’t receive an emailed copy, *any listed staff member* would see the pupil’s comment appear on their profile.
 
 The **Visible to** option provides a general idea of how sensitive the comment is in terms of who can see it. **Any staff member** would mean anyone that can log in to ADAM using the staff login page. **Staff members who teach the pupil** would include only those where the staff member has been assigned to a class with that pupil in it *in addition to* any staff members who have the permission to see sensitive comments. The last option, **Only staff members who have permissions to view sensitive comments** would only include the teachers who have those permissions.
 

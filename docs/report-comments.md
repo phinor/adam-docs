@@ -63,7 +63,7 @@ There are three icons below the comment block. The “speech bubble” will disp
 
 ![](assets/screenshots/report-comments/report-comments-04.png)
 
-The “percent” % sign will show tyyou the assessments that this pupil has achieved in this subject over the course of the reporting period:
+The “percent” % sign will show you the assessments that this pupil has achieved in this subject over the course of the reporting period:
 
 ![](assets/screenshots/report-comments/report-comments-05.png)
 
@@ -141,7 +141,7 @@ If you click on the **Save** button, ADAM will attempt to save all aspects of th
 
 All this “magic” requires that your web browser be a current version of one of the “ever-green” browsers. These browsers automatically update themselves and apply the latest security patches and features without you having to do anything. These browsers include Google Chrome, Mozilla’s Firefox and Microsoft’s Edge browser. Notably, it does not include Microsoft’s range of Internet Explorer browsers.
 
-Unfortunately, if the JavaScript does not load properly on the page, the magic saving and the error messages alike are all affected. Please watch out for the visual clues. **If it looks like nothing is happening, it might be beause nothing is happening**.
+Unfortunately, if the JavaScript does not load properly on the page, the magic saving and the error messages alike are all affected. Please watch out for the visual clues. **If it looks like nothing is happening, it might be because nothing is happening**.
 
 See “[My comments won’t save](#my-comments-wont-save)” in the [Troubleshooting](#troubleshooting-report-comments) section below.
 
@@ -198,7 +198,7 @@ In the following screen, you will type in your comment, choose what you want ADA
 There are three operations that ADAM can perform with your comment:
 
 1.  Add to the end of an existing comment. When this is selected, ADAM will use any comment that is entered for the subject already, and simply add the comment that you’ve provided here to the end of that comment.
-2.  Add to the start of an existing comment. When this is selected, ADAM will use any comment that is entered for the subject alread, but will add the comment that you’ve provided here to the start of the comment.
+2.  Add to the start of an existing comment. When this is selected, ADAM will use any comment that is entered for the subject already, but will add the comment that you’ve provided here to the start of the comment.
 3.  Replace the existing comment. When this is selected, ADAM will ignore the comment that is already entered for the pupils in the selected classes and replace the comment with the one you’ve provided here.
 
 ***Please be careful with this feature***, especially when choosing classes that belong to other teachers. This operation will modify the comments and there is no way to undo these changes without going through each comment and looking at its change history to copy the old comment back.
@@ -207,7 +207,7 @@ There are three operations that ADAM can perform with your comment:
 
 ### My comments won’t save
 
-When entering comments, be observant a and look for the visual clues ADAM provides that your comments are being saved. If you don’t see the visual clues (green blocks, saving messages), then please stop entering your report comments before you enter a whole class which ADAM isn’t saving.
+When entering comments, be observant and look for the visual clues ADAM provides that your comments are being saved. If you don’t see the visual clues (green blocks, saving messages), then please stop entering your report comments before you enter a whole class which ADAM isn’t saving.
 
 This can happen for one of a number of reasons, normally related to the quality of your Internet connection. Such issues may be caused by proximity to your wifi router (far away means weak signal) or an otherwise congested internet connection. The causes of that probably lie with your Internet Service Provider.
 

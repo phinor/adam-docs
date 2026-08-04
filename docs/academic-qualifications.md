@@ -36,7 +36,7 @@ The qualifications are typically set as part of the Reporting Period Settings. E
 
 ### Working with Multiple Qualifications in a Single Grade
 
-ADAM uses a heirarchichal structure when determining which qualification should be used. If a pupil has had a specific qualification assigned to them in their pupil information, then this qualification takes priority and will override any other qualification that has been assigned to them.
+ADAM uses a hierarchical structure when determining which qualification should be used. If a pupil has had a specific qualification assigned to them in their pupil information, then this qualification takes priority and will override any other qualification that has been assigned to them.
 
 If a pupil has not - which is typically the case and which should be considered the ideal case in schools where a dual qualification is not offered - then ADAM will use the qualification that has been set as part of the  [Grade Specific Settings](reporting-period-administration.md#editing-a-reporting-period) within Reporting Period Administration.
 

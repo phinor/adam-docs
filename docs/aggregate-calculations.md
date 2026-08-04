@@ -20,7 +20,7 @@ The final year aggregate is based on the year marks of each subject. Thus, the r
 
 ### Possible discrepancies in calculation methods
 
-Normally, the final year aggregate will match the result if you were to weight the aggregates for each term (in the example above 72.29, 76.14, 76.57 and 78.00). However, because the final year aggregate does not include Phsyical Science when Term 3 and Term 4 results do, and the final year aggregate includes Life Sciences when Term 3’s aggregate does not, and the final year aggregate includes Geography when Term 4’s aggregate does not, the weighted averages are not equivalent.
+Normally, the final year aggregate will match the result if you were to weight the aggregates for each term (in the example above 72.29, 76.14, 76.57 and 78.00). However, because the final year aggregate does not include Physical Science when Term 3 and Term 4 results do, and the final year aggregate includes Life Sciences when Term 3’s aggregate does not, and the final year aggregate includes Geography when Term 4’s aggregate does not, the weighted averages are not equivalent.
 
 The weighted average of the Terms in the above example (10% of 72.29 + 30% of 76.14 + 10% of 76.57 + 50% of 78.00) yield a result of 76.73, which is different to the calculated final year aggregate.
 

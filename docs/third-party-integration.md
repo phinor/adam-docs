@@ -45,11 +45,11 @@ Navigate back to the Site Settings: **Administration → Site Administration →
 
 The settings are discussed below:
 
--   **Enable Automatic Ed-Admin Sync:** This will cause ADAM to syncrhonise data automatically from Ed-Admin at an interval determined by the **Ed-Admin Sync Frequency** interval. To start with, it is strongly recommended that schools leave this to “No” until they have conducted a few manual synchronisations are are happy that the process is working.
+-   **Enable Automatic Ed-Admin Sync:** This will cause ADAM to synchronise data automatically from Ed-Admin at an interval determined by the **Ed-Admin Sync Frequency** interval. To start with, it is strongly recommended that schools leave this to “No” until they have conducted a few manual synchronisations and are happy that the process is working.
 -   **Ed-Admin Server Hostname:** ADAM needs to communicate with your Ed-Admin server and so it needs to know where it is. The host name is its address on the internet. Do not enter any “https://” prefix, or any trailing slashes.
 -   **Ed-Admin Server API Key:** Your Ed-Admin server will have a special password that can be used by APIs to communicate with your Ed-Admin database and get information. ADAM will need to know what that API Key is for it to communicate with Ed-Admin. It is a long string of random letters. Copy and paste it into this box.
 -   **Ed-Admin Sync Frequency:** If you’ve chosen automatic sync in the first setting, ADAM will use this setting to determine how often it should check for updates. This setting is ignored if automatic synchronisation is disabled.
--   **Ed-Admin Sync Threshold:** Large and sudden changes to your database can often mean that something has been misconfigfured. As a security precaution, ADAM will check this threshold to ensure that it is not going to remove data in error. This number is treated as a percentage and ADAM must find at least 80% of its current students returned in the Ed-Admin data set. If there is fewer, it means the change is too large and ADAM ignores the update, thinking it is suspicious. The manual update ignores this setting on the understanding that you know what you’re doing!
+-   **Ed-Admin Sync Threshold:** Large and sudden changes to your database can often mean that something has been misconfigured. As a security precaution, ADAM will check this threshold to ensure that it is not going to remove data in error. This number is treated as a percentage and ADAM must find at least 80% of its current students returned in the Ed-Admin data set. If there are fewer, it means the change is too large and ADAM ignores the update, thinking it is suspicious. The manual update ignores this setting on the understanding that you know what you’re doing!
 -   **Ed-Admin Campuses:** If you are limiting your synchronisation to one or more campuses, you can enter these here, comma separated. For staff, they must have one of these values either as their campus value, or as one of their “Areas of Work”. This allows staff to feature in multiple campuses, if required.
 -   **Ed-Admin Match Method:** Consult ADAM support for the best value that will work for your school. The default, *Internal ID*, is almost never a good idea if you only started synchronising data later, once the two databases ADAM and Ed-Admin were both fully established.
 -   **Ed-Admin Grade Definitions:** While there is a field here that can be manually edited, please rather see the section below on [Setting up Grade Definitions](#setting-up-grade-definitions).
@@ -175,7 +175,7 @@ Navigate to **Administration → Security Administration → Manage API Tokens**
 The API Key will need access to all the following **Resources**. Use the “Ctrl” button on your keyboard while you click on each of them.
 
 -   DataQuery/get/get
--   FamilyRelationships/gamily/get
+-   FamilyRelationships/family/get
 -   Pupils/image/get
 -   Staff/image/get
 -   XDevMan/currentpupils/get
@@ -327,7 +327,7 @@ Notably, if you’ve been using SOCS before, the admin numbers that were in use 
 
 -   Pupils:
 
--   ADAM Idenfitier *(click “show additional fields”)*
+-   ADAM Identifier *(click “show additional fields”)*
 -   Last Name
 -   Preferred Name
 -   Date of Birth

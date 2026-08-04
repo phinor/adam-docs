@@ -1,0 +1,267 @@
+# All images on this page were re-captured on 2026-08-04. Every one of them
+# predated the current interface — the originals were flat-blue tables on white
+# from the pre-rebuild ADAM, and several carried yellow highlight annotations
+# added by hand in the original Google Doc (04, 12, 13, 20, 22, 24). House rules
+# no longer allow annotations, so none of the new images has one. Image 17 also
+# included full browser chrome, with an address bar and tab titles naming two
+# other schools; that is gone too.
+#
+# Standing details for every entry below unless it says otherwise:
+#   as:      staff (the dev bypass login, staff_id 1, Vivek Vilakazi)
+#   frame:   span mode, 8px padding, 900px viewport width
+#   revert:  none
+
+- images: [timetable-module-02.png, timetable-module-04.png, timetable-module-12.png]
+  captured: 2026-08-04
+  path: Administration tab → Timetables → Manage timetables
+  frame:
+    mode: span
+    selectors: >
+      02 runs from main#body's top to the bottom of the first table — the
+      Manage timetables heading, the Add new Timetable button, the Timetables
+      heading and the single enabled timetable. It deliberately stops before
+      the Disabled Timetables heading: the demonstration school now has 15
+      disabled timetables, and including them would have made the image four
+      times as tall for no gain.
+
+      04 and 12 are a tighter frame of the same screen, from the Timetables h2
+      to the bottom of that table, so the row's four action buttons are the
+      subject.
+    padding: 8
+  setup: none
+  note: >
+    04 and 12 are the same frame of the same screen and are effectively the
+    same picture. In the originals they were distinguished only by which link
+    carried a yellow highlight — "days" in 04, "lessons" in 12 — and with
+    annotations no longer permitted there is nothing left to tell them apart.
+    Both are also close to 02. The page would read better with one of the three
+    dropped; that is an editorial decision, so all three have been captured
+    rather than silently removing a reference.
+
+- image: timetable-module-03.png
+  captured: 2026-08-04
+  path: Administration tab → Timetables → Manage timetables → Add new Timetable
+  frame:
+    mode: span
+    selectors: main#body in full — heading, Add Timetable form, Save this Timetable button
+    padding: 8
+  setup: none
+
+- image: timetable-module-05.png
+  captured: 2026-08-04
+  path: Administration tab → Timetables → Manage timetables → days (Term 2 2026)
+  frame:
+    mode: span
+    selectors: main#body in full — Edit Timetable Days through Save this schedule
+    padding: 8
+  setup: none
+  note: >
+    Better than the image it replaces, by luck of the demonstration data: the
+    days are named Monday A … Friday B, so the picture now illustrates the
+    two-week A/B cycle that the surrounding prose spends a paragraph
+    explaining.
+
+- image: timetable-module-07.png
+  captured: 2026-08-04
+  path: Administration tab → Timetables → Manage schedules
+  frame:
+    mode: span
+    selectors: >
+      main#body top to the bottom of the first table — heading, the screen's
+      own explanatory paragraph, Add new Time Table Schedule, and the three
+      enabled schedules. Stops before the 11 disabled schedules.
+    padding: 8
+  setup: >
+    Captured twice. The first version showed only the two schedules the
+    demonstration school already had; it was re-taken after the Guest speaker
+    schedule was created for image 10, so that the list and image 10 agree —
+    otherwise a reader meets a schedule in image 10 that does not exist in the
+    list they were just shown.
+  note: >
+    The Guest speaker schedule was first given a long note, which widened the
+    Notes column enough to wrap the action buttons onto two lines. The note was
+    cleared and the shot retaken.
+
+- image: timetable-module-08.png
+  captured: 2026-08-04
+  path: Administration tab → Timetables → Manage schedules → edit (Mon, Tues, Thur, Fri)
+  frame:
+    mode: span
+    selectors: main#body in full
+    padding: 8
+  setup: none
+  note: >
+    The form has gained per-field help text down the right-hand side since the
+    previous image. The Schedule Name field shows its text selected because the
+    field takes focus on load — the same was true of the original.
+
+- image: timetable-module-09.png
+  captured: 2026-08-04
+  path: Administration tab → Timetables → Manage schedules → schedule (Mon, Tues, Thur, Fri)
+  frame:
+    mode: span
+    selectors: main#body in full
+    padding: 8
+  setup: none
+  note: >
+    The screen has gained a Name column per period, and an explanatory
+    paragraph which itself now mentions that a lesson can be moved to the end
+    of the day. A sentence about the Name column was added to the page.
+
+- image: timetable-module-10.png
+  captured: 2026-08-04
+  path: Administration tab → Timetables → Manage schedules → schedule (Guest speaker)
+  frame:
+    mode: span
+    selectors: main#body in full
+    padding: 8
+  setup: >
+    This image has to show a schedule with lesson 1 empty and lesson 7 brought
+    forward to the start of the day, because the paragraph after it describes
+    exactly that. No such schedule existed any more — the original demonstration
+    "Guest speaker" schedule is gone, and the closest survivor ("Change for
+    Councillor Induction 2025") has lesson 1 empty but lesson 7 last, which is
+    only half the point.
+
+    A new enabled schedule was therefore created through Add new Time Table
+    Schedule: name "Guest speaker", short "guest", no notes. Its periods were
+    set to 1 empty, 2 = 0845-0930, 3 = 0930-1015, 4 = 1045-1130, 5 = 1130-1215,
+    6 = 1215-1300, 7 = 0800-0845 — the same shape as the original image. Created
+    through the interface, not by writing to the database.
+  revert: >
+    Left in place deliberately, so the image can be reproduced and so the
+    schedules list in image 07 matches. It also gives the demonstration school
+    an example of the "guest speaker" case the page's calendar section refers to.
+
+- image: timetable-module-13.png
+  captured: 2026-08-04
+  path: Administration tab → Timetables → Manage timetables → lessons (Term 2 2026)
+  frame:
+    mode: span
+    selectors: main#body in full
+    padding: 8
+  setup: none
+  note: >
+    Five grades now, all with lessons assigned, against the original's Grade R
+    to Grade 12 with zeros against most of them.
+
+- images: [timetable-module-14.png, timetable-module-15.png, timetable-module-16.png, timetable-module-17.png]
+  captured: 2026-08-04
+  path: Administration tab → Timetables → Manage timetables → lessons (Term 2 2026) → edit (Grade 12)
+  frame:
+    mode: span
+    selectors: >
+      14 — the Grade 12 h2 down to the bottom of the card holding the filter
+      and the class list. Anchored on that outer card, not the inner scrolling
+      container, so the card's bottom border closes.
+
+      15 — the same card alone, with "Mat" typed into the filter.
+
+      16 — the card plus the grid header and the Mon A row. 980px wide rather
+      than 900: the grid is 916px at a 900px viewport and the Action column with
+      its detail button was being clipped.
+
+      17 — the same frame as 16, with two class cards selected.
+    padding: 8
+  setup: >
+    For 15, "Mat" was typed into the Filter box, narrowing 116 classes to the
+    four Mathematics classes. For 17, two Mat Grade 12 GM5 (Mr Mann) cards were
+    clicked, in lessons 3 and 5 of Mon A. Selection is client-side only and is
+    not saved, so nothing was written to the demonstration school and no drag
+    was performed.
+  note: >
+    THIS SCREEN HAS BEEN REBUILT and the four images do not show variants of the
+    old one — they show a different interface. The old screen had a multi-select
+    list of classes, a grid of tick boxes with counts in brackets, a hover hint
+    listing the classes in a lesson, automatic yellow highlighting of every
+    lesson sharing the same combination, a "Replace all existing classes on the
+    selected lessons?" checkbox and a Save Lessons button.
+
+    None of that exists. The screen now has 543 draggable class cards, no
+    checkbox anywhere, no select element, and no form or submit button at all —
+    changes are saved as they are made. Ctrl no longer multi-selects; it now
+    means "copy instead of move" when held during a drop. Multi-select is a
+    plain click, and selections in the top list and in the grid clear each
+    other. The filter no longer highlights matches, it hides non-matches.
+
+    The prose of "Adding Lessons to the Timetable" described the old screen
+    step by step and was rewritten to match, because leaving it would have
+    paired new pictures with instructions that contradict them. That rewrite
+    goes beyond a screenshot refresh and is worth a careful read.
+
+- image: timetable-module-19.png
+  captured: 2026-08-04
+  path: Administration tab → Timetables → Manage calendar → Add a single date to the calendar
+  frame:
+    mode: span
+    selectors: main#body in full — Add a Day heading through Save the calendar entries
+    padding: 8
+  setup: none
+  note: >
+    The original showed the Edit a Day form for an existing date. This is the
+    Add a Day form, which is the same grade/day/schedule table and needed no
+    calendar data to exist. It is headed "Add a Day" rather than "Edit a Day",
+    and the page text was adjusted to say both routes reach the same form.
+
+- image: timetable-module-20.png
+  captured: 2026-08-04
+  path: Administration tab → Timetables → Manage calendar
+  frame:
+    mode: span
+    selectors: the upcoming schedule table in full
+    padding: 8
+  setup: >
+    The demonstration school had NO upcoming calendar days at all — the
+    Upcoming schedule read "(no records to display)", and the historical view
+    has no per-row edit or remove action, so there was nothing to photograph.
+
+    Five days were added through Add multiple days to the calendar: 2026-08-10
+    to 2026-08-14, school days Monday to Friday, cycle days Monday A to Friday A,
+    all five grades, first day of the cycle Monday A, Wednesday on the
+    "Wednesday" schedule and the other four on "Mon, Tues, Thur, Fri" — the
+    pattern the school's own historical data already follows.
+  revert: >
+    Left in place. The demonstration school having no upcoming timetable at all
+    is a gap in the demonstration data rather than a state worth restoring, and
+    images 22 and 24 depend on these days existing.
+  note: >
+    The columns wrap and the edit/remove buttons stack at 900px. Widening the
+    viewport to 1040px was tried and did not change the row height, so the
+    900px version was kept.
+
+- images: [timetable-module-22.png, timetable-module-24.png]
+  captured: 2026-08-04
+  path: Staff Information → Grant Mann (staff 139) → calendar
+  frame:
+    mode: span
+    selectors: >
+      22 — the Calendar h1 down to the bottom of the subscribe paragraph,
+      taking in the View Timetable and PDF Timetable links.
+
+      24 — the "Friday, 14 August" day heading down to the bottom of the
+      notification box holding the reset link, so the notice is seen sitting at
+      the foot of the calendar rather than floating alone.
+    padding: 8
+  setup: >
+    Grant Mann was chosen because the block only renders when the staff member
+    has lessons in the next four weeks; the logged-in demonstration user, Vivek
+    Vilakazi, teaches nothing and the page reads "There are no lessons
+    scheduled." The lessons come from the calendar days added for image 20.
+  note: >
+    Two false starts on 24, both fixed on review rather than shipped. It was
+    first framed on the notification alone, which lost any sense of where on the
+    page it sits. It was then re-framed with the last day of the calendar above
+    it, but anchored on the inner div.message, whose box stops 17px short of the
+    div.notification wrapper that actually draws the border — so the rounded
+    border was sliced off at the bottom edge. The final version anchors on the
+    .notification wrapper.
+
+    The wording has changed since the originals. The subscribe line is now
+    "Subscribe to Grant Mann's Calendar — If clicking on that link doesn't work,
+    click here for further instructions", where it used to put the calendar link
+    inline in a sentence. The reset notice now says "this calendar" rather than
+    "this timetable". Both were corrected on the page.
+
+    The originals showed "Philip Norton's Timetable" — a real name, from a real
+    installation, which is exactly what capturing against the demonstration
+    school avoids.

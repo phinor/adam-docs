@@ -18,7 +18,7 @@ Enrolling a passkey does not change anything about your existing password — th
 
 Very simply, we perform the same algorithm on the password you provide when you log in to the system and see if we end up with the same hash. If they match, then you must have provided the correct password. If they don’t, then you gave an incorrect password.
 
-As an analogy: how could you tell if someone used the same ingredients to make two different cakes? Once the cakes are baked (baking is the one-way operation in this scenario), you can’t see the ingredients any more. However, a skillful taster will be able to compare the flavours of the two cakes to see if they taste exactly the same.
+As an analogy: how could you tell if someone used the same ingredients to make two different cakes? Once the cakes are baked (baking is the one-way operation in this scenario), you can’t see the ingredients any more. However, a skilful taster will be able to compare the flavours of the two cakes to see if they taste exactly the same.
 
 ## Is my password ever written down or stored anywhere?
 
@@ -45,6 +45,6 @@ When you visit your landing page, if the password has been used before, ADAM wil
 
 The fact remains that if you’ve chosen a weak password, that password may make it easier for hackers to compromise the security of the ADAM database by simply logging in with your details and getting access to everything that you can see.
 
-Some schools have ADAM login by quering the password with their network server instead of having ADAM manage a separate password for them. In these instances, ADAM will still check the quality of your password but it can’t give you the opportunity to change it.
+Some schools have ADAM login by querying the password with their network server instead of having ADAM manage a separate password for them. In these instances, ADAM will still check the quality of your password but it can’t give you the opportunity to change it.
 
 In these instances, you should update your network password. When you next log in to ADAM, your new password will be checked.

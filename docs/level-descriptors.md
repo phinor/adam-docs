@@ -23,7 +23,7 @@ Each level has four pieces of information:
 1.  **The lower bound percentage.** This is the minimum mark required for ADAM to award this level. Please see [the note below](#a-note-on-percentages-for-non-mark-based-assessment-phases) if you are working on levels for the Foundation Phase or any other non-marks-based assessment setup.
 2.  **Symbol.** This is the symbol that will be awarded.
 3.  **Name.** If the level descriptors have names, these can be captured here.
-4.  **Description.** Where relevalt, you can capture descriptions for your levels here. In so doing, it becomes possible for any level description tables on your reports to be dynamically generated.
+4.  **Description.** Where relevant, you can capture descriptions for your levels here. In so doing, it becomes possible for any level description tables on your reports to be dynamically generated.
 
 The levels will automatically be sorted by percentage and so, given the example of NSC symbols 1-7 above, one could add in that 90%+ was a “7+” by going to the first empty row - in the diagram above, this would be just below “1 - Not achieved” - and entering in the information as follows:
 

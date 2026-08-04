@@ -147,7 +147,7 @@ Once working, individuals tend to not be enrolled for courses if their username 
 
 Note that the enrolment procedure is not linked to the authentication procedure or user creation procedure. Those can be set up with the Active Directory/LDAP authentication mentioned above.
 
-This all means that a pupil might well be able to log into Moodle even if their ADAM user is not correctly configured. They will have their names and e-mail addresses copied from AD/LDAP and so will give the impression that all is well in Moodle. The problem manifests itself by the pupil not having any courses assigned to them.
+This all means that a pupil might well be able to log into Moodle even if their ADAM user is not correctly configured. They will have their names and email addresses copied from AD/LDAP and so will give the impression that all is well in Moodle. The problem manifests itself by the pupil not having any courses assigned to them.
 
 Once the username is entered into ADAM, they will need to log on again to Moodle to have their courses reflected there.
 

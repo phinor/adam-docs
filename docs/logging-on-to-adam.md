@@ -74,7 +74,7 @@ Users signing in with a username and password continue to be asked for a one-tim
 
 ### Browser and Device Requirements
 
-Passkeys require a modern browser (recent versions of Chrome, Edge, Firefox or Safari) and a device with a fingerprint reader, face camera,pass or device PIN. ADAM must be reached over an HTTPS connection — passkeys will not work on plain HTTP. Users on older browsers, or on devices without an authenticator, will not see the Log in with a passkey button and should continue to use their password.
+Passkeys require a modern browser (recent versions of Chrome, Edge, Firefox or Safari) and a device with a fingerprint reader, face camera, passcode or device PIN. ADAM must be reached over an HTTPS connection — passkeys will not work on plain HTTP. Users on older browsers, or on devices without an authenticator, will not see the Log in with a passkey button and should continue to use their password.
 
 ### Audit Trail for Passkeys
 
@@ -102,18 +102,18 @@ The “Allow External Authentication Failover” feature allows users who would 
 
 The failover service works by storing an AD-validated encrypted hash of the user’s password as if it were an internally managed password. On future login attempts if the AD server is not available, ADAM will check the supplied password against the stored hash.
 
-This is no less safe than having ADAM manage user passwords itself. On a successful login, ADAM will verify the users password against the hash stored in the database and, if necessary, update the password with a new hash.
+This is no less safe than having ADAM manage user passwords itself. On a successful login, ADAM will verify the user’s password against the hash stored in the database and, if necessary, update the password with a new hash.
 
 -   This is not password *synchronisation*, rather password *caching*. ADAM can only remember passwords it has seen itself and which the AD server has verified as being correct. ADAM cannot “fetch” passwords from AD.
 
--   Users who have never logged into ADAM before will not be able to login during an AD outage for the first time.
+-   Users who have never logged into ADAM before will not be able to log in during an AD outage for the first time.
 -   Users who logged into ADAM a log time ago and who have subsequently changed their password will still have their old passwords cached on ADAM and thus may need to use an old password to get into ADAM if logging in during an AD outage.
--   Take note here of “remember me” type logins which do not require a user to enter their password. Should a user need to login with a password, they may find that they have to enter their previous password which might have changed some time ago.
+-   Take note here of “remember me” type logins which do not require a user to enter their password. Should a user need to log in with a password, they may find that they have to enter their previous password which might have changed some time ago.
 
 -   If Active Directory blocks a user’s login attempt for any reason (e.g. account disabled, incorrect password used), ADAM erases the password hash stored.
 
 -   This prevents the user from being able to log in later when the AD server is unreachable and is therefore unable to deny the login.
--   Such a user will not be able to login until the connection to AD is restored.
+-   Such a user will not be able to log in until the connection to AD is restored.
 
 -   While ADAM is not able to communication with the AD server, user accounts that may be disabled on AD but which have not attempted a login on ADAM since they were disabled, will still be allowed to log into ADAM during an outage.
 
@@ -185,9 +185,9 @@ There are several possibilities as to why this might happen. If a parent doesn�
 5.  **Ask your IT department to trace the email’s delivery in your email service’s logs.** It will be helpful to report the time when the parent requested the login. The more accurate the time is, the easier it will be to trace. They should see a record of the message being received from ADAM and it then being delivered onward on to the family member’s email service. If the email server had problems with onward delivery, they should be able to report these to you. The resolution of any problems here will, of course, depend on the issue that your IT department discovers. If, however, there is no record of any email being sent, and assuming that ADAM can send other email without issue, the problem is almost definitely going to be linked to one of the first three points above.
 
 !!! warning
-    *Parents tell us that they find the error messages about logging into ADAM* *to be* *unhelpful and vauge. They* *ask* *us to change these messages to show* *more detail about what is wrong**.* *We agree this would help solve problems faster.*
+    *Parents tell us that they find the error messages about logging into ADAM* *to be* *unhelpful and vague. They* *ask* *us to change these messages to show* *more detail about what is wrong.* *We agree this would help solve problems faster.*
 
-*However, if we do this, it would also help hackers and* *criminals* *find real ID numbers in our system.* *Not only is it against the law to share information with people who shouldn't have it, but it's even more serious because it could put children in danger if someone finds out they go to a certain school.*
+*However, if we do this, it would also help hackers and* *criminals* *find real ID numbers in our system.* *Not only is it against the law to share information with people who shouldn’t have it, but it’s even more serious because it could put children in danger if someone finds out they go to a certain school.*
 
 ### The login is very slow
 

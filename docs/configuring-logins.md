@@ -81,10 +81,10 @@ In order for ADAM to process POP3 authentication, it must be given a POP3 server
 1.  Enter in the IP address of your POP3 Server into the first box.
 2.  If your POP3 server requires use of a different port (it almost certainly will if SSL and TLS are implemented).
 3.  Consult your POP3 server requirements to determine whether SSL and TLS should be enabled. If in doubt, try with both set to “No”.
-4.  The POP3 user name suffix is useful if all your users need to authenticate to your POP3 server with their whole e-mail address.
+4.  The POP3 user name suffix is useful if all your users need to authenticate to your POP3 server with their whole email address.
 
 1.  By adding in the domain portion of the email address (e.g. “@example.com”), ADAM will automatically append that to the end of the username that the users supply.
-2.  Example: my POP3 server requires me to login with the full e-mail address bob@example.com. If I set “@example.com” as the domain suffix, then I can just enter the username “bob” on the front login screen, and as the staff login name, and ADAM will automatically send the login name “bob@example.com” when attempting to login to the service.
+2.  Example: my POP3 server requires me to log in with the full email address bob@example.com. If I set “@example.com” as the domain suffix, then I can just enter the username “bob” on the front login screen, and as the staff login name, and ADAM will automatically send the login name “bob@example.com” when attempting to log in to the service.
 
 In order to associate an account on ADAM with a user account on a mail server, the user must have the same username set in ADAM as they would use to authenticate to the POP3 server. The following procedure is followed on login:
 
@@ -121,7 +121,7 @@ Schools that make use of Google’s Workspace for their email, can make use of t
 
 ### Requirements
 
-8.  Your server must be authoried to conduct logins *before* you enable Google Sign-In. Google will reject all sign-in attempts if the server has not been properly authorized to log in your users. Please contact us at [help@adam.co.za](mailto:help@adam.co.za) to request authorization and wait for confirmation before continuing with the final step of enabling Google Sign-In.
+8.  Your server must be authorised to conduct logins *before* you enable Google Sign-In. Google will reject all sign-in attempts if the server has not been properly authorised to log in your users. Please contact us at [help@adam.co.za](mailto:help@adam.co.za) to request authorisation and wait for confirmation before continuing with the final step of enabling Google Sign-In.
 9.  Your staff and pupils must have their Google Workspace addresses included as their **work or school email addresses**. This email address must match their Google Workspace account. Note that users who have email aliases stored in ADAM may not be able to sign on using Google Sign-In.
 10.  Enable Google Sign-in for either Staff, Pupils or both. This is done in the Site Settings, on the **Security** tab, under the heading “**OAuth Authentication**” - don’t forget to save the settings!
 
@@ -139,7 +139,7 @@ Schools that make use of Microsoft 365 for their email, can make use of the “S
 
 ### Requirements {#microsoft-sign-in-for-staff-and-pupils-requirements}
 
-1.  Your server must be authoried to conduct logins *before* you enable Microsoft Sign-In. Microsoft will reject all sign-in attempts if the server has not been properly authorized to log in your users. Please contact us at [help@adam.co.za](mailto:help@adam.co.za) to request authorization and wait for confirmation before continuing with the final step of enabling Microsoft Sign-In.
+1.  Your server must be authorised to conduct logins *before* you enable Microsoft Sign-In. Microsoft will reject all sign-in attempts if the server has not been properly authorised to log in your users. Please contact us at [help@adam.co.za](mailto:help@adam.co.za) to request authorisation and wait for confirmation before continuing with the final step of enabling Microsoft Sign-In.
 2.  Your staff and pupils must have their Microsoft 365 addresses included as their **work or school email addresses**. This email address must match their Microsoft 365 account. Note that users who have email aliases stored in ADAM may not be able to sign on using Microsoft Sign-In.
 3.  Enable Microsoft Sign-in for either Staff, Pupils or both. This is done in the Site Settings, on the **Security** tab, under the heading “**OAuth Authentication**” - don’t forget to save the settings!
 

@@ -87,9 +87,9 @@ Viewing the agreement shows them the text of the agreement and their response:
 
 ![](assets/screenshots/online-agreements/online-agreements-10.png)
 
-### Recission of Online Agreements
+### Rescission of Online Agreements
 
-If a parent choses to rescind an agreement, they are presented with the following screen:
+If a parent chooses to rescind an agreement, they are presented with the following screen:
 
 ![](assets/screenshots/online-agreements/online-agreements-11.png)
 
@@ -105,4 +105,4 @@ If the online agreement requires an affirmative response, they will not be able 
 
 ### Viewing Rescinded Agreements
 
-When viewing the [Online Agreement report](#viewing-agreement-responses), ADAM will list all recisions in that report, including the date the agreement was initially responded to and the date and time that the agreement was rescinded.
+When viewing the [Online Agreement report](#viewing-agreement-responses), ADAM will list all rescissions in that report, including the date the agreement was initially responded to and the date and time that the agreement was rescinded.

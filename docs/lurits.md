@@ -40,7 +40,7 @@ A large pack may take a while. Please let it finish rather than reloading the pa
 
 ## Reading the Results
 
-ADAM shows the results of the feedback on screen and also e-mails a copy of the same report to ADAM EduTech, with a copy going to the system administrator address configured for your site. The confirmation on screen reads “The LURITS feedback has been imported. A copy of this output has also been mailed to ADAM and the system administrator.” A copy of this e-mail should be sufficient proof for the DBE district office that LURITS information has been submitted.
+ADAM shows the results of the feedback on screen and also emails a copy of the same report to ADAM EduTech, with a copy going to the system administrator address configured for your site. The confirmation on screen reads “The LURITS feedback has been imported. A copy of this output has also been mailed to ADAM and the system administrator.” A copy of this email should be sufficient proof for the DBE district office that LURITS information has been submitted.
 
 For every file that it recognises, the report shows:
 
@@ -70,4 +70,4 @@ If ADAM finds nothing that it can use in any of the files, it stops with the mes
 
 Where a file is valid XML but is not a LURITS file, the report names the file and says *No TransactionCategoryID Tag found. Is this a valid LURITS file?*. Where the file is a LURITS file of a type ADAM has no use for, it says *I don’t know how to process this file!*.
 
-Occasionally the import succeeds but the notification e-mail cannot be sent, in which case ADAM reports “The LURITS feedback has been imported, but the notification email to ADAM could not be sent.” The data has still been imported; only the e-mailed copy of the report is missing. If you need that copy as proof for your district office, please check your [mail settings](troubleshooting-email-delivery.md) and re-import the same files.
+Occasionally the import succeeds but the notification email cannot be sent, in which case ADAM reports “The LURITS feedback has been imported, but the notification email to ADAM could not be sent.” The data has still been imported; only the emailed copy of the report is missing. If you need that copy as proof for your district office, please check your [mail settings](troubleshooting-email-delivery.md) and re-import the same files.

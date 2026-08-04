@@ -6,7 +6,7 @@ Each absentee reason will either count as an absence from school or not. Example
 
 -   **Absent**: this would count as a day’s absence from school.
 -   **School Tour**: while the pupil is absent from school, this should not count towards the absentee total for the pupil since they are on a sanctioned school excursion.
--   **Arrived Late**: the pupils was at school for part of the day and thus this reason should not count as absent. However, it is useful to count the number of times that a pupil does arrive late to detect patterns in behaviour.
+-   **Arrived Late**: the pupil was at school for part of the day and thus this reason should not count as absent. However, it is useful to count the number of times that a pupil does arrive late to detect patterns in behaviour.
 
 ## Absentee Reasons
 
@@ -21,7 +21,7 @@ Absentee Reasons allow us to categorise the pupil’s absence from school. While
 
 ### Editing the Absentee Reasons
 
-To manage the list of absentee reasons, click on the **Administration** tab and then, under the **Absentee Administration** heading, click on the ocption **Edit the absentee reasons**.
+To manage the list of absentee reasons, click on the **Administration** tab and then, under the **Absentee Administration** heading, click on the option **Edit the absentee reasons**.
 
 ![](assets/screenshots/absentee-administration/absentee-administration-01.png)
 
@@ -38,7 +38,7 @@ In this screen you can give a name for the absentee reason (or change it, if you
 
 Disabling an absentee reason won’t remove or affect any pupils who have had the reason recorded against their absentee records. However, a disabled absentee reason won’t be shown in the list of absentee reasons when recording pupils as absent.
 
-If a disabled absentee reason is enabled again, it becomes available for chosing once again.
+If a disabled absentee reason is enabled again, it becomes available for choosing once again.
 
 ## Default Absentee Reasons
 
@@ -168,7 +168,7 @@ The **Start** and **End threshold** are used to determine between which two coun
 -   To alert a pastoral care member of staff if the pupil has been absent exactly 5 times, the start and end threshold would both be set to 5. In this case, an alert would be sent on the occasion of their fifth absence, but not their fourth or sixth.
 -   The **Alert period** determines the time frame over which to monitor. This allows for monitoring of absences over a specific time frame. For example, three or more absences in a week could indicate health issues which the school should follow up on. Options are:
 
--   “Total” counts a pupils absentee records over their entire career at the school.
+-   “Total” counts a pupil’s absentee records over their entire career at the school.
 -   “Year” counts all absentee records for the current calendar year.
 -   “Period” which will use the current reporting period to work out which absences are valid. Note that schools that use concurrent reporting periods *may* find unexpected results when using “Period”.
 -   “Month” counts all absentee records in the preceding 30 days.
@@ -256,7 +256,7 @@ Finally, ADAM lets you select which audiences you want to send the alerts to and
 
 ## Absentee Kiosk
 
-ADAM allows for an terminal to be set up, with a web camera, that allows pupils to self-register by scanning their ADAM QR code.
+ADAM allows for a terminal to be set up, with a web camera, that allows pupils to self-register by scanning their ADAM QR code.
 
 ### Configuring the Module
 

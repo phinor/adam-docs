@@ -38,7 +38,7 @@ The system comes pre-configured with these categories (in order of intensity):
 
 ### Adding a Learning Support Record to a Pupil’s Profile
 
-1.  Navigate to **Pupils → Learner Support and Acommodations → Add or edit a pupil's learning support records**
+1.  Navigate to **Pupils → Learner Support and Accommodations → Add or edit a pupil's learning support records**
 2.  Search for and select the **pupil**
 3.  Click on **learning support** to view the pupil's current status and historical records
 4.  Select a **support category** from the dropdown

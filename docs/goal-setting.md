@@ -26,7 +26,7 @@ Note that the ability to set goals alone is not sufficient and more action is re
 
 ### Staff Permissions
 
-Staff members have the ability to see, comment and amend pupils goals. There are a number of permission for each of these and care should be taken to ensure that each staff member gets the correct permissions, particularly when it comes to the setting and changing of a pupil’s goals.
+Staff members have the ability to see, comment and amend pupils’ goals. There are a number of permissions for each of these and care should be taken to ensure that each staff member gets the correct permissions, particularly when it comes to the setting and changing of a pupil’s goals.
 
 We won’t discuss the mechanics of setting up staff permissions ([those are done elsewhere in this guide](security-administration-for-staff.md#managing-security-groups)) but the relevant permissions are found under the **Academic Admin** section of the permissions, under the subheading **Goal Setting**:
 
@@ -43,12 +43,12 @@ These first three permissions in the list allow teachers to comment on pupils’
 The differences between these three options are as follows:
 
 1.  Comment on any pupil’s academic goals: This permission would like to be given to a senior staff member, such as a head of academics. There is no restriction regarding which pupil a teacher can comment on their goals.
-2.  Comment on own pupil’s subject academic goals: This permission allows teachers to comment on pupils’ goals for an pupil in their classes and only for the subject taught. They cannot comment on other goals. E.g. This would allow an English teacher to comment on the English goals of pupils that they teach. They cannot comment on the Mathematics goals of those same pupils.
+2.  Comment on own pupil’s subject academic goals: This permission allows teachers to comment on pupils’ goals for a pupil in their classes and only for the subject taught. They cannot comment on other goals. E.g. This would allow an English teacher to comment on the English goals of pupils that they teach. They cannot comment on the Mathematics goals of those same pupils.
 3.  Comment on pupil’s academic goals in their default class: This permission would allow a teacher to comment on any subject’s academic goals for all the pupils that are registered in their “default subject” class. This would allow a register class teacher to comment on the academic goals of any subject for any of the pupils in their register class. A teacher would not be able to edit the academic goals of a person who is not in their register class. E.g. This permission allows a register class teacher to comment on any of the academic goals of any of the pupils in their register class.
 
 The permissions above can be combined if required. This might allow for subject teachers to begin the goal setting process and for register teachers to complete it. The possibilities of how the process might work would be dictated by the school.
 
-### Modifying a Pupils’ Academic Goals
+### Modifying a Pupil’s Academic Goals
 
 The next three permissions control which teachers are allowed to modify the actual goals set by pupils. Again, the permissions that are necessary here will heavily depend on how the school wishes to approach the goal setting exercise.
 
@@ -64,7 +64,7 @@ From a management perspective, it might be sensible to allow a teacher the abili
 
 The permissions all allow for the editing of the actual goal and the strategies required to achieve that goal.
 
-### Viewing a Pupils’ Academic Goals
+### Viewing a Pupil’s Academic Goals
 
 This permission allows a teacher to view a pupil’s academic goals and strategies, as well as the teacher’s comments and internal notes on those goals.
 
@@ -152,4 +152,4 @@ Finally, the teacher will be reminded of the goals that have been set when repor
 
 ![](assets/screenshots/goal-setting/goal-setting-13.png)
 
-Where a goal has been captured, it is shown next to the reporting results. Clicking on the trophy icon below the comment box will slide out the pupil’s strategies, the teachers comment and internal notes. Again, the goal is to provide the teacher with information to write more meaningful comments and summaries of the pupil’s performance over the term.
+Where a goal has been captured, it is shown next to the reporting results. Clicking on the trophy icon below the comment box will slide out the pupil’s strategies, the teacher’s comment and internal notes. Again, the goal is to provide the teacher with information to write more meaningful comments and summaries of the pupil’s performance over the term.

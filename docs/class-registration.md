@@ -102,7 +102,7 @@ At list of current classes is shown for the pupil:
 
 Next to each subject is an option to **drop** the subject altogether or to **change** classes within the same subject. The distinction is important here. Dropping will remove any marks from open Reporting Periods whereas changing will transfer marks from one class to another.
 
-At the bottom of the page are options to change multiple classes or enroll the pupil in multiple classes. This will show all the academic subjects available and classes in that grade.
+At the bottom of the page are options to change multiple classes or enrol the pupil in multiple classes. This will show all the academic subjects available and classes in that grade.
 
 One can also add a single new class if required.
 

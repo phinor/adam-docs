@@ -117,7 +117,7 @@ Before a user can send messages from the messaging centre, they need a few permi
 
 ### Step 1:
 
-The first permission is a general one that is applied to the whole permission group. They require, at a minimum, “Can make use of the messaginge centre (*messaging\_centre*)”. This is found on the **Messaging** tab, and under the heading **E-mail**. For more information on changing staff permissions, please see [Security Administration for Staff](security-administration-for-staff.md#security-administration-for-staff) elsewhere in this documentation.
+The first permission is a general one that is applied to the whole permission group. They require, at a minimum, “Can make use of the messaging centre (*messaging\_centre*)”. This is found on the **Messaging** tab, and under the heading **E-mail**. For more information on changing staff permissions, please see [Security Administration for Staff](security-administration-for-staff.md#security-administration-for-staff) elsewhere in this documentation.
 
 ### Step 2:
 
@@ -127,7 +127,7 @@ Here you will see a list of permission groups along the side and a list of enabl
 
 ![](assets/screenshots/messaging-centre/messaging-centre-11.png)
 
-If you wish to set permissions for other messaging modules, you will need to enable these modules in the [Site Settings](logging-on-to-adam.md#site-settings). A link to the correct place inthe site settings is provided at the top of the page. Note that while it is possible to set permissions for enabled modules, the module must have the correct configuration details supplied in the Site Settings in order for it to be capable of delivering your messages.
+If you wish to set permissions for other messaging modules, you will need to enable these modules in the [Site Settings](logging-on-to-adam.md#site-settings). A link to the correct place in the site settings is provided at the top of the page. Note that while it is possible to set permissions for enabled modules, the module must have the correct configuration details supplied in the Site Settings in order for it to be capable of delivering your messages.
 
 Here you can specify which groups can use which modules to send to which audiences.
 

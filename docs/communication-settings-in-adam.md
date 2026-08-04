@@ -191,9 +191,7 @@ ADAM does not deliver mail directly to the recipients. It requires an intermedia
 2.  ADAM is designed to “fail easily” when sending messages.
 3.  There are many complexities with sending email that are better left to specialist software.
 
-ADAM processes email in a queu**Enabling The Portal, The Final Settings**
-
-e, and sends messages one at a time. This means that delivery is slow. By using an intermediate server, the messages can be handed off to that server quickly since it has only one computer to talk to (which is normally on the same LAN or even same computer as ADAM). This software can then deliver email more efficiently to recipients by delivering mail in parallel and retrying the delivery of messages that couldn’t be sent on their first attempt.
+ADAM processes email in a queue, and sends messages one at a time. This means that delivery is slow. By using an intermediate server, the messages can be handed off to that server quickly since it has only one computer to talk to (which is normally on the same LAN or even same computer as ADAM). This software can then deliver email more efficiently to recipients by delivering mail in parallel and retrying the delivery of messages that couldn’t be sent on their first attempt.
 
 ### Step 1: Did ADAM send the message?
 
@@ -225,6 +223,6 @@ From this point on, you will want to engage the services of an email server expe
 
 ### Step 3: One mail or an entire batch?
 
-If you recieve a bounce notification for a single email - or perhaps each time a batch is sent, a familiar set of bounce notifications return, then you will need to check that those email addresses are captured correctly. It may be that an email address no longer exists, that the mailbox is full or a host of other reasons. These are all out of our (and your!) control.
+If you receive a bounce notification for a single email - or perhaps each time a batch is sent, a familiar set of bounce notifications return, then you will need to check that those email addresses are captured correctly. It may be that an email address no longer exists, that the mailbox is full or a host of other reasons. These are all out of our (and your!) control.
 
 Very often, a telephone call to the recipient is best to determine whether there is an alternative email address that you can use instead.

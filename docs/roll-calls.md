@@ -5,7 +5,7 @@ scheduler (for other non-academic purposes), or on an ad-hoc basis (e.g. sports 
 
 !!! warning
     Please note that the Roll Call module is intended to replace the 
-    **[Attendance Registers](attendance-registers.md#attendance-registers)** module in ADAM. The Attendance Registers moduile
+    **[Attendance Registers](attendance-registers.md#attendance-registers)** module in ADAM. The Attendance Registers module
     will be removed at the end of 2026.*
 
 ## Choosing A Roll Call
@@ -101,7 +101,7 @@ possible to override this pre-planned absence, however, it will more than likely
 
 Note also, that if registers are taken before a planned absence is added to ADAM, the taken register will override the
 pre-planned absence. This is one of the reasons that taking a register too early can be detrimental to the
-recordkeeping.
+record-keeping.
 
 At the top of the table an option appears to **Mark all as present** which can be ticked to immediately highlight all
 pupils as present.
@@ -265,8 +265,8 @@ To add a Scheduled Roll Call, navigate to **Administration → Roll Call → Man
 
 **Example:**
 
-A school has a morning roll call that is taken at 07h30 on Monday, Tuesday and Thurday, and at 08h00 on Wednesday and
-Friday morningsa, two schedules would need to be added: one for each set times:
+A school has a morning roll call that is taken at 07h30 on Monday, Tuesday and Thursday, and at 08h00 on Wednesday and
+Friday mornings. Two schedules would need to be added: one for each set of times:
 
 - Schedule 1:
     - **Name**: Mon, Tue, Thu Registration
