@@ -23,9 +23,9 @@ representative — it runs from a section heading down to a trailing action butt
 margin, spanning several distinct elements rather than one.
 
 **The application.** ADAM runs locally at `https://dev.theta.adam.co.za/`, served by local Apache2 install, backed by the `adam_dev` database, whose school is "Random College Demo". The certificate
-is a valid Let's Encrypt wildcard, so no TLS workarounds are needed. Every asset on an ADAM page is
-same-origin; the only external host in the markup is a `docs.google.com` feedback link, which is
-never loaded.
+is a valid Let's Encrypt wildcard, so no TLS workarounds are needed. Every asset referenced in the
+page *markup* is same-origin — the only external host there is a `docs.google.com` feedback link,
+which is never loaded. The stylesheet is not same-origin, though; see **Fonts**.
 
 **Login needs no credentials.** `config.dev.ini` sets `env = dev`, and
 `ADAM\Security\DevLogin::attemptLogin` runs whenever the username or password is empty on a
@@ -114,8 +114,8 @@ The two edits to existing files:
 - `--viewport-size 900x1200` — the 900px width the corpus is built on, tall enough that most panels
   fit without scrolling.
 - `--allowed-origins https://dev.theta.adam.co.za` — the safety rail. The browser cannot load a
-  school's production ADAM. Because ADAM's pages are entirely same-origin, this costs nothing in
-  rendering fidelity.
+  school's production ADAM. It does have one fidelity cost, which must be paid for separately — see
+  **Fonts** below.
 - `--isolated` — browser profile held in memory, never written to disk.
 - `--headless` — droppable when someone wants to watch a run.
 - `--output-dir` for the server's own console logs and page snapshots.
@@ -124,6 +124,34 @@ The origin allowlist is the mechanism that enforces `CONTRIBUTING.md`'s standing
 are never captured against a live site. It is a configuration boundary rather than an instruction an
 agent has to remember. Verified: a navigation to `https://example.com/` fails with
 `net::ERR_BLOCKED_BY_CLIENT`.
+
+### Fonts
+
+**The origin allowlist blocks ADAM's webfont, and the machine has no local substitute.** Both halves
+had to be true to cause the failure, and both were:
+
+`public/theme/default/default.css` line 8 carries
+`@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,700'`, and the body
+stack is `font-family: Open Sans, Arial, Helvetica, sans-serif`. The allowlist blocks
+`fonts.googleapis.com`, so the webfont never arrives. This box had 36 fonts installed, neither Open
+Sans nor Arial among them, so the stack fell all the way through to DejaVu Sans — visibly wider and
+quite unlike the manual's existing captures. The first capture taken under this design went out in
+the wrong typeface and had to be redone.
+
+**The fix is to install Open Sans locally, not to widen the allowlist.** With the font resolvable by
+fontconfig, the CSS stack finds it without any network request, and the safety rail stays intact.
+Google's current variable Open Sans (regular and italic) is installed under
+`~/.local/share/fonts/open-sans/`, followed by `fc-cache -f`. No `sudo` is required; the Ubuntu
+`fonts-open-sans` package would need it and ships an older 1.11 cut of the typeface.
+
+Two operational consequences:
+
+- **Chromium reads fontconfig once, at startup.** Installing a font while the browser is running has
+  no effect until the browser is restarted.
+- **The check belongs in the skill's pre-flight**, because the failure is silent: the page renders
+  perfectly, just in the wrong typeface, and nothing errors. Measuring a string in `"Open Sans"`
+  against `"DejaVu Sans"` on a canvas distinguishes them — identical widths mean the fallback is in
+  use.
 
 **Where images land.** `browser_take_screenshot`'s `filename` is *not* resolved against `--output-dir`;
 it becomes `page.screenshot({path: <filename>})`, relative to the server process's working directory.
