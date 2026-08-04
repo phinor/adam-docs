@@ -16,19 +16,32 @@
     (4 Aug 2026), so the closed/open windows read as a live example rather
     than history. Markbook Entry already had a window that closed on Mon 3 Aug
     at 23:59, so no change was needed there. Markbook Editing was empty, so a
-    window was added running Tue 4 Aug 07:00 to Mon 10 Aug 23:59 — a further
-    week past the Entry close — which is the two-stage close-off the page
-    describes.
+    window was added running Tue 4 Aug 07:00 to Fri 7 Aug 15:59 — opening as
+    Entry closes and ending an hour before the 16:00 publish — which is the
+    two-stage close-off the page describes.
   revert: >
     Not reverted. The added Markbook Editing window is what makes the row
     illustrate its own documentation; an empty row would show nothing.
   note: >
-    Re-capture. The previous image pre-dated the Markbook Editing feature, so
-    the grid in the manual was one row short of what an administrator sees.
-    Two differences from the old image beyond the new row: the term is now
-    Term 2, 2026 rather than Semester 2 2018, and the screen has since gained
-    a warning about deadlines that close after the reporting period is
-    published, which sits between the introductory sentence and the grid.
-    Focus was cleared before shooting — an earlier attempt caught a focus ring
-    on the Markbook Entry row's "clear" button, left over from adding the
-    time frame.
+    Re-capture, and shot twice. The image it replaces pre-dated the Markbook
+    Editing feature, so the grid in the manual was one row short of what an
+    administrator sees.
+
+    The first attempt gave Markbook Editing a full further week, to Mon 10 Aug.
+    That runs past the Fri 7 Aug 16:00 publish, so the screen displayed a
+    warning that deadlines close after the reporting period is published — a
+    real complaint about a configuration this capture had itself created, and
+    not something the manual should show. Ending the window at 15:59 on the
+    publish day removes it without touching the Publish date.
+
+    The screen was then rebuilt between the two attempts. The grid is now
+    grouped under "Reporting Period Dates", "Entry Time Frames", "Editing Time
+    Frames" and "Other Time Frames", so Markbook Editing no longer sits
+    directly between Markbook Entry and Markbook Embargo — it heads the Editing
+    group instead. Term Dates and Publish gained "edit period" actions, and the
+    column headers changed from "Mon 04/05" to "Mon 4 May". The grouping is
+    consistent with the page's existing text about Entry and Editing options,
+    so no prose needed changing.
+
+    Focus is cleared before shooting: an early attempt caught a focus ring on
+    the Markbook Entry row's "clear" button, left over from adding the window.
