@@ -61,25 +61,6 @@ nothing is outstanding there.
 
 ---
 
-## Reporting Period Administration (`docs/reporting-period-administration.md`)
-
-The time frame grid now carries a **Markbook Editing** line, sitting between **Markbook Entry** and
-**Markbook Embargo**. The existing captures on the page pre-date it, so the grid in the manual is
-one line short of what an administrator will see.
-
-### 1. Re-capture `reporting-period-administration-09.png` — the time frame grid
-
-**Reporting tab → Reporting Administration → Edit reporting period time frames**, then choose a
-reporting period. Capture the whole grid, keeping the existing filename and crop, so that the new
-**Markbook Editing** row is visible in its place.
-
-Set the demonstration school up first so the row illustrates the point: give **Markbook Entry** a
-window that has already closed, and **Markbook Editing** a window that runs on for a further week
-after it. That way the picture shows the two-stage close-off the text describes rather than an
-empty line.
-
----
-
 # Missing Written Content
 
 ## Parent and Pupil Portal — Today's Birthdays (`docs/parent-and-pupil-portal.md`)

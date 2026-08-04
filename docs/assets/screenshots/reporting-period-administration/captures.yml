@@ -1,0 +1,34 @@
+- image: reporting-period-administration-09.png
+  captured: 2026-08-04
+  as: staff
+  path: >
+    Reporting tab → Reporting Administration → Edit reporting period time
+    frames → Term 2, 2026 (period id 64, /admin/reporting/timeframes/64)
+  frame:
+    mode: span
+    selectors: >
+      The "Manage the reporting time frames" heading through the
+      "Capture Goals (for pupils)" row — the whole grid, matching the crop of
+      the image it replaces.
+    padding: 8
+  setup: >
+    Term 2, 2026 chosen because it is the current term on the day of capture
+    (4 Aug 2026), so the closed/open windows read as a live example rather
+    than history. Markbook Entry already had a window that closed on Mon 3 Aug
+    at 23:59, so no change was needed there. Markbook Editing was empty, so a
+    window was added running Tue 4 Aug 07:00 to Mon 10 Aug 23:59 — a further
+    week past the Entry close — which is the two-stage close-off the page
+    describes.
+  revert: >
+    Not reverted. The added Markbook Editing window is what makes the row
+    illustrate its own documentation; an empty row would show nothing.
+  note: >
+    Re-capture. The previous image pre-dated the Markbook Editing feature, so
+    the grid in the manual was one row short of what an administrator sees.
+    Two differences from the old image beyond the new row: the term is now
+    Term 2, 2026 rather than Semester 2 2018, and the screen has since gained
+    a warning about deadlines that close after the reporting period is
+    published, which sits between the introductory sentence and the grid.
+    Focus was cleared before shooting — an earlier attempt caught a focus ring
+    on the Markbook Entry row's "clear" button, left over from adding the
+    time frame.
