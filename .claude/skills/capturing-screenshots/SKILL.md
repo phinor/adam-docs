@@ -19,6 +19,36 @@ curl -sk -o /dev/null -w "%{http_code}\n" --max-time 10 https://dev.theta.adam.c
 
 Expected `200`. Anything else — stop and report; do not begin a capture run.
 
+Confirm the real typeface is available, not a silent fallback. ADAM's stylesheet pulls Open Sans
+from `fonts.googleapis.com` and falls back to Arial, then to whatever sans-serif the system has —
+but the allowed-origins rail blocks `fonts.googleapis.com` on purpose, so the webfont never loads
+here. If the machine also lacks Open Sans and Arial installed locally, the page renders in
+something like DejaVu Sans instead: it looks fine, nothing errors, and every screenshot taken that
+way has the wrong letterforms and won't match the manual's existing images. This failure is silent,
+so check for it explicitly rather than trusting that the page "looks right":
+
+```js
+() => {
+  const c = document.createElement('canvas').getContext('2d');
+  const s = 'Manage permissions groups — Birthdays 0123';
+  c.font = '16px "Open Sans"';
+  const openSans = c.measureText(s).width;
+  c.font = '16px "DejaVu Sans"';
+  const dejaVu = c.measureText(s).width;
+  return {openSans, dejaVu};
+}
+```
+
+If `openSans` and `dejaVu` come back identical, the browser has no real Open Sans and is silently
+substituting its generic fallback for both font names — stop and fix this before capturing anything.
+The fix is to install the font locally, not to widen the rail: install Open Sans (regular and
+italic) to `~/.local/share/fonts/`, run `fc-cache -f`, then **restart the browser**, since Chromium
+only reads fontconfig at startup and won't pick up a newly installed font in a running session.
+Re-run the measurement afterwards and confirm the two widths now differ. Do not "fix" this by
+adding `fonts.googleapis.com` to `--allowed-origins` instead — that would weaken the safety rail that
+keeps the browser off the open internet, and would make every future capture depend on Google's
+CDN being reachable, which is exactly the kind of external dependency the rail exists to remove.
+
 ## Logging in
 
 No credentials exist or are needed. `env = dev` enables a bypass:

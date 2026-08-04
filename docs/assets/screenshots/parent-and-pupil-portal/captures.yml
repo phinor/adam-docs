@@ -18,3 +18,11 @@
     Pupils and Families on this group (Full Access grants everything by
     default), so no change was made before capturing.
   revert: none
+  note: >
+    Re-captured 2026-08-04 (same day, fix round 1): the original capture used
+    the browser's DejaVu Sans fallback because fonts.googleapis.com is
+    blocked by the allowed-origins rail and no Open Sans/Arial was installed
+    on the machine. Open Sans was installed locally and the browser
+    restarted; this file is the re-capture, same framing and group, only the
+    typeface differs (image height changed slightly, 386px content height
+    became 421px, because Open Sans and DejaVu Sans have different metrics).
