@@ -22,8 +22,7 @@ header or navigation, no arrows or highlight boxes. `two-factor-authentication-1
 representative — it runs from a section heading down to a trailing action button, with roughly 8px of
 margin, spanning several distinct elements rather than one.
 
-**The application.** ADAM runs locally at `https://dev.theta.adam.co.za/`, served by the `web` Docker
-container, backed by the `adam_dev` database, whose school is "Random College Demo". The certificate
+**The application.** ADAM runs locally at `https://dev.theta.adam.co.za/`, served by local Apache2 install, backed by the `adam_dev` database, whose school is "Random College Demo". The certificate
 is a valid Let's Encrypt wildcard, so no TLS workarounds are needed. Every asset on an ADAM page is
 same-origin; the only external host in the markup is a `docs.google.com` feedback link, which is
 never loaded.
@@ -52,6 +51,30 @@ it is a decision rather than a surprise: either the affected `TODO.md` entries g
 pupils updated to names that exist in `adam_dev`, or a page accepts a discontinuity in its worked
 example. It is not resolved by this design.
 
+## A blocker in the environment, not in this design
+
+**The staff dashboard is currently broken on the dev instance**, and the bypass login lands on it.
+`GET /` after login returns 500:
+
+```
+ADAM\Security\UnknownPrivilegeException: Unknown privilege: assessment_results_edit
+  Authorisation.php:198  ← Authorisation::staffPrivilegeIsOk (Authorisation.php:154)
+  ← Reporting::mainPageWidget (Reporting.php:2137)
+  ← DashboardController::showStaffDashboard (DashboardController.php:92)
+```
+
+The code asks for a privilege the `adam_dev` database does not know — consistent with the in-flight
+work on permissions and the mark book editing window. It is pre-existing: `log_error` carries related
+schema complaints daily since 2026-07-29, well before this design.
+
+**It is only the dashboard.** The login itself succeeds and the session is sound —
+`/menu/pupils`, `/menu/administration`, `/menu/reporting` and `/admin/language` all return 200 on the
+same cookie. So the workflow navigates directly to the target screen after logging in rather than
+dwelling on the dashboard, and everything except dashboard captures is unaffected.
+
+Two consequences the plan carries: any brief that wants the dashboard itself is blocked until the
+privilege is registered, and the first end-to-end task must target a non-dashboard screen.
+
 ## Architecture
 
 Four new artefacts, plus two edits to files that already exist.
@@ -77,9 +100,13 @@ The two edits to existing files:
 
 ### The MCP server
 
-`@playwright/mcp`, pinned at `0.0.78`. Chromium is already present in `~/.cache/ms-playwright`
-(`chromium-1217`), so no download is required. Flags:
+`@playwright/mcp`, pinned at `0.0.78`. Flags:
 
+- `--browser chromium` **and** `--executable-path
+  /home/philip/.cache/ms-playwright/chromium-1217/chrome-linux64/chrome`. Both are required. Left to
+  itself the server tries the `chrome` channel at `/opt/google/chrome/chrome`, which is not installed;
+  asking for `chromium` alone makes it demand a separate `chrome-for-testing` download. Pointing it at
+  the already-cached `chromium-1217` binary avoids downloading a browser at all.
 - `--viewport-size 900x1200` — the 900px width the corpus is built on, tall enough that most panels
   fit without scrolling.
 - `--allowed-origins https://dev.theta.adam.co.za` — the safety rail. The browser cannot load a
@@ -87,29 +114,52 @@ The two edits to existing files:
   rendering fidelity.
 - `--isolated` — browser profile held in memory, never written to disk.
 - `--headless` — droppable when someone wants to watch a run.
-- `--output-dir` pointed at a scratch directory, so stray captures never land in `docs/`.
+- `--output-dir` for the server's own console logs and page snapshots.
 
 The origin allowlist is the mechanism that enforces `CONTRIBUTING.md`'s standing rule that screenshots
 are never captured against a live site. It is a configuration boundary rather than an instruction an
-agent has to remember.
+agent has to remember. Verified: a navigation to `https://example.com/` fails with
+`net::ERR_BLOCKED_BY_CLIENT`.
+
+**Where images land.** `browser_take_screenshot`'s `filename` is *not* resolved against `--output-dir`;
+it becomes `page.screenshot({path: <filename>})`, relative to the server process's working directory.
+Since Claude Code launches the server from the repository root, a `filename` of
+`docs/assets/screenshots/<chapter>/<name>.png` writes the image straight to its final home. The skill
+uses that directly rather than capturing to scratch and copying.
 
 ## Capture conventions
 
-**Viewport** fixed at 900×1200 with a device scale factor of 1, so a 900px viewport yields a 900px
-image rather than a 1800px retina one.
+**Viewport** fixed at 900×1200, captured with `scale: "css"` so a 900px viewport yields a 900px image
+rather than a 1800px retina one.
 
-**Three framing modes**, in order of preference:
+**Two framing modes.** `browser_take_screenshot` accepts either an element target or `fullPage`; it has
+**no `clip` parameter**, so an arbitrary rectangle cannot be requested directly. The modes are shaped
+around that limit:
 
-1. **Element** — one CSS selector; screenshot that element. Covers most panels, tables and fieldsets.
-2. **Span** — two selectors, first and last; capture their combined bounding box. This is what the
-   existing captures mostly are, and what briefs like "the **View birthdays** row with enough of the
-   rows above and below" require.
-3. **Clip** — an explicit rectangle. Last resort, when neither of the above maps cleanly.
+1. **Element** — one CSS selector passed as `target`; screenshot that element. Covers most panels,
+   tables and fieldsets. Verified: `#body` on the administration menu yields an 844px-wide image,
+   squarely inside the corpus's 860–900 band.
 
-Each mode takes optional padding, defaulting to 8px to match the margin visible in existing captures.
+2. **Vertical span** — for the "a row plus the rows above and below" briefs the manual is full of.
+   `browser_evaluate` computes the union bounding box of the wanted elements; `browser_resize` sets the
+   viewport to 900 × (span height + 2 × padding); a `window.scrollTo` puts the span's top edge at the
+   viewport top; then a plain viewport screenshot is taken. Verified end to end: a 2254px span produced
+   a 900×2270 image, exactly the requested height.
+
+   This is the same operation as the manual practice it replaces — resize the view, then crop
+   vertically — and it needs no image library, which matters because Pillow is not installed and no PNG
+   tooling exists on this machine.
+
+Padding defaults to 8px, matching the margin visible in existing captures.
 
 **Light mode always.** The theme toggle sits in the page footer and persists across pages, so it is
-verified before capturing rather than assumed.
+verified before capturing rather than assumed. Verified: `document.body` computes to
+`rgb(239, 246, 255)` on a fresh isolated profile, so light is the starting state.
+
+**Keep clear of the development banner.** Every page on the dev instance opens with a blue
+**"Development Environment: Not for General Use"** banner, above the school name and menu. It must
+never appear in a capture. In practice the content crops start well below it, but a careless
+`fullPage` or a span that reaches the top of the document would include it.
 
 **No annotations.** The corpus contains no arrows, callouts or highlight boxes. Adding them now would
 make new images read as foreign.
