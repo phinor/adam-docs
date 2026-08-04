@@ -81,7 +81,7 @@ yields a 900px image. Padding defaults to 8px.
 whenever the region is a single panel, table or fieldset.
 
 **Mode 2 — vertical span.** For "this row plus the rows above and below". There is no `clip`
-parameter, so measure, resize, scroll, then shoot:
+parameter, so measure, resize, re-measure, scroll, then shoot:
 
 1. `browser_evaluate` to measure the union box:
 
@@ -97,8 +97,10 @@ parameter, so measure, resize, scroll, then shoot:
 ```
 
 2. `browser_resize` to `width: 900`, `height: height + 16`
-3. `browser_evaluate` — `() => { window.scrollTo(0, <top - 8>); return Math.round(scrollY); }`
-4. `browser_take_screenshot` with no `target`, capturing the viewport
+3. `browser_evaluate` the same measurement again — changing the viewport height can reflow the page,
+   so the `top` from step 1 may no longer be right. Use this fresh `top`, not the first one.
+4. `browser_evaluate` — `() => { window.scrollTo(0, <top - 8>); return Math.round(scrollY); }`
+5. `browser_take_screenshot` with no `target`, capturing the viewport
 
 Check the returned `scrollY` matches what you asked for. If the page is too short to scroll that far,
 the crop will be wrong — resize taller, or frame from an element instead.
@@ -143,29 +145,55 @@ back if the brief says to.
 
 ## Recording what you did
 
-Append to `docs/assets/screenshots/<chapter-slug>/captures.yml`, creating it if absent:
+Append to `docs/assets/screenshots/<chapter-slug>/captures.yml`, creating it if absent. This is the
+real entry for `parent-and-pupil-portal-09.png`:
 
 ```yaml
 - image: parent-and-pupil-portal-09.png
   captured: 2026-08-04
   as: staff
-  path: Pupils tab → Security → Manage permissions groups → privileges
+  path: Pupils tab → Security → Manage permissions groups → privileges (Full Access group, id 1)
   frame:
     mode: span
-    selectors: "#privileges tr:has(td:text('View birthdays'))"
+    selectors: >
+      Birthdays heading li, its permission row li (View birthdays);
+      2 rows above from the Academic Goal Setting section (Capture academic
+      goals, View academic goals); the Family heading li and its first 2
+      permission rows (Request online detail update form, Upload family
+      documents)
     padding: 8
-  setup: "Ticked View birthdays for both Pupils and Families on the demo families' group"
+  setup: >
+    Group chosen: "Full Access" — the only pupil login group with any pupils
+    assigned (3), against "No Academics", "No Access", "No Markbook" and
+    "No Reports" which all have 0. View birthdays was already ticked for both
+    Pupils and Families on this group (Full Access grants everything by
+    default), so no change was made before capturing.
   revert: none
+  note: >
+    Re-captured 2026-08-04 (same day, fix round 1): the original capture used
+    the browser's DejaVu Sans fallback because fonts.googleapis.com is
+    blocked by the allowed-origins rail and no Open Sans/Arial was installed
+    on the machine. Open Sans was installed locally and the browser
+    restarted; this file is the re-capture, same framing and group, only the
+    typeface differs (image height changed slightly, 386px content height
+    became 421px, because Open Sans and DejaVu Sans have different metrics).
 ```
 
-Existing images are not back-filled; the file grows only as shots are taken.
+`note` is optional — most entries will not need one; this one records why a first attempt was
+discarded. Note the `selectors` field describes the span in prose rather than a CSS selector: mode 2's
+page is built from `li` elements, not a table, and no single selector captures a heading plus rows
+from two different sections above it plus the target row — so record what was measured, well enough
+that someone could reconstruct it, rather than force it into a selector that would not actually work
+if fed to `querySelectorAll`. Existing images are not back-filled; the file grows only as shots are
+taken.
 
 ## The checklist
 
 1. Restate what the image must show, before opening a browser.
 2. Confirm the instance is up.
-3. Confirm the real typeface is loaded, not a silent fallback — see the canvas check above.
-4. Log in as the role the brief needs.
+3. Log in as the role the brief needs.
+4. Confirm the real typeface is loaded, not a silent fallback — `browser_evaluate` with the canvas
+   check above.
 5. Set the school up, if the brief calls for it.
 6. Navigate to the screen.
 7. Confirm light mode.

@@ -21,7 +21,7 @@ scripts/package-lock.json
 # Python bytecode
 __pycache__/
 
-# Local Playwright MCP config (names the internal dev host; see .mcp.json.dist)
+# Local Playwright MCP config (machine-local paths and host; see .mcp.json.dist)
 .mcp.json
 
 # Superpowers working notes (scratch, not part of the manual)

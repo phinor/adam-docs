@@ -4,6 +4,9 @@ site_author: ADAM EduTech
 
 use_directory_urls: false
 
+exclude_docs: |
+  assets/screenshots/**/captures.yml
+
 plugins: []
 
 hooks:

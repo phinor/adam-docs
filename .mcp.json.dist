@@ -7,7 +7,7 @@
         "--headless",
         "--isolated",
         "--browser", "chromium",
-        "--executable-path", "/home/philip/.cache/ms-playwright/chromium-1217/chrome-linux64/chrome",
+        "--executable-path", "/path/to/ms-playwright/chromium-<version>/chrome-linux64/chrome",
         "--viewport-size", "900x1200",
         "--allowed-origins", "https://dev.example.adam.co.za",
         "--output-dir", "/tmp/adam-docs-capture"

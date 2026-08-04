@@ -37,7 +37,13 @@ Replace `serve --dev-addr=0.0.0.0:8000` with `build --strict` to produce a stati
 Screenshots are captured against the local ADAM dev instance, never against production. An agent can
 capture them: see the `capturing-screenshots` skill in
 [`.claude/skills/capturing-screenshots/SKILL.md`](.claude/skills/capturing-screenshots/SKILL.md), and
-copy `.mcp.json.dist` to `.mcp.json` with the dev host filled in.
+copy `.mcp.json.dist` to `.mcp.json` with two values filled in for your machine — both are placeholders
+in the template:
+
+- the dev host, in `--allowed-origins`;
+- the Chromium executable path, in `--executable-path`. This lives wherever Playwright cached the
+  browser it downloaded, typically `~/.cache/ms-playwright/chromium-*/chrome-linux64/chrome` — run
+  `ls ~/.cache/ms-playwright/` to see the exact version installed and fill in the real path.
 
 ## Deployment
 

@@ -94,9 +94,14 @@ empty line.
 
 ## Parent and Pupil Portal — Today's Birthdays (`docs/parent-and-pupil-portal.md`)
 
-The new **Today's Birthdays** section is written but has no images. It needs three: the permission,
+The new **Today's Birthdays** section is written but has no images. It needed three: the permission,
+the settings, and the result as a parent actually sees it. The first is captured; it needs two more —
 the settings, and the result as a parent actually sees it. The feature is off by default on the
 demonstration school, so each capture needs setting up first.
+
+Image 1 was captured against the **Full Access** pupil login group, chosen because it was the only
+login group with any pupils assigned. Use the same group for images 2 and 3 — item 3 needs a parent
+login, so keeping the group consistent across all three matters.
 
 Grant **View birthdays** to the login group that the demonstration families use, and set
 **Birthdays visible in the portal** to **All pupils in the school** before capturing — at the
