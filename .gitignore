@@ -26,3 +26,4 @@ __pycache__/
 
 # Superpowers working notes (scratch, not part of the manual)
 .superpowers/
+/site.old/
