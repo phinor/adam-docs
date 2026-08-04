@@ -164,20 +164,21 @@ Existing images are not back-filled; the file grows only as shots are taken.
 
 1. Restate what the image must show, before opening a browser.
 2. Confirm the instance is up.
-3. Log in as the role the brief needs.
-4. Set the school up, if the brief calls for it.
-5. Navigate to the screen.
-6. Confirm light mode.
-7. Frame and capture.
-8. **Read the saved PNG back and check it against the brief** — every named element in shot, nothing
+3. Confirm the real typeface is loaded, not a silent fallback — see the canvas check above.
+4. Log in as the role the brief needs.
+5. Set the school up, if the brief calls for it.
+6. Navigate to the screen.
+7. Confirm light mode.
+8. Frame and capture.
+9. **Read the saved PNG back and check it against the brief** — every named element in shot, nothing
    cut off, no development banner, no data that should not be there.
-9. Write the Markdown reference where the brief says.
-10. Append to `captures.yml`; revert any setup that should be reverted.
-11. Remove the entry from `TODO.md` — that file's own standing rule.
-12. Run `docker run --rm --user "$(id -u):$(id -g)" -v "$(pwd):/docs" -w /docs squidfunk/mkdocs-material:latest build --strict --site-dir /docs/.build-verify` and confirm it exits 0, then `rm -rf .build-verify`.
-13. Commit.
+10. Write the Markdown reference where the brief says.
+11. Append to `captures.yml`; revert any setup that should be reverted.
+12. Remove the entry from `TODO.md` — that file's own standing rule.
+13. Run `docker run --rm --user "$(id -u):$(id -g)" -v "$(pwd):/docs" -w /docs squidfunk/mkdocs-material:latest build --strict --site-dir /docs/.build-verify` and confirm it exits 0, then `rm -rf .build-verify`.
+14. Commit.
 
-Step 8 is the one that matters. You can see what you captured — a wrong crop caught there costs
+Step 9 is the one that matters. You can see what you captured — a wrong crop caught there costs
 nothing, while a wrong crop that ships is a page that misleads a reader.
 
 ## When it goes wrong
