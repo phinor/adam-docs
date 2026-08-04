@@ -28,10 +28,9 @@ No credentials exist or are needed. `env = dev` enables a bypass:
 
 This signs you in as `staff_id` 1.
 
-**The dashboard is currently broken** — it returns 500 with
-`UnknownPrivilegeException: Unknown privilege: assessment_results_edit`. The login still succeeds and
-the session is sound. Navigate straight to the screen you need instead of dwelling on the dashboard.
-If a brief asks for the dashboard itself, stop and report it as blocked.
+The login lands on the staff dashboard. If it returns a 500 rather than the dashboard, the session is
+still sound — navigate straight to the screen you need, and only stop if the brief wants the dashboard
+itself.
 
 To be somebody else, go to the login page for that role, fill in the **Login Name** field only, leave
 **Password** empty, and click **Login**:
@@ -161,4 +160,4 @@ Every one of these ends in a report, never a substitute image.
 - **The data will not cooperate.** A section reading well without a picture is a legitimate outcome —
   the 2FA dashboard card was left without one for exactly this reason.
 - **The brief carries an open question.** Surface it. Do not paper over a discrepancy in the manual.
-- **The dev instance is unreachable, or the dashboard blocks the shot.** Fail fast and say so.
+- **The dev instance is unreachable.** Fail fast and say so.

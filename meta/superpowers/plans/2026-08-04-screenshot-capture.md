@@ -21,7 +21,7 @@
 - No annotations — no arrows, callouts or highlight boxes.
 - The browser may only reach `https://dev.theta.adam.co.za`. Never a school's production ADAM.
 - Prose follows `CONTRIBUTING.md`: British/South African spelling, UI labels in bold.
-- The staff dashboard currently returns 500 (`UnknownPrivilegeException: assessment_results_edit`). Navigate directly to target screens after login; dashboard captures are blocked until that is fixed.
+- The staff dashboard returned 500 (`UnknownPrivilegeException: assessment_results_edit`) while this plan was being written. It was fixed on 2026-08-04 and now renders normally, so dashboard captures are not blocked.
 
 ---
 

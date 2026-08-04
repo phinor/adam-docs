@@ -51,10 +51,14 @@ it is a decision rather than a surprise: either the affected `TODO.md` entries g
 pupils updated to names that exist in `adam_dev`, or a page accepts a discontinuity in its worked
 example. It is not resolved by this design.
 
-## A blocker in the environment, not in this design
+## A blocker in the environment, since resolved
 
-**The staff dashboard is currently broken on the dev instance**, and the bypass login lands on it.
-`GET /` after login returns 500:
+**Fixed on 2026-08-04.** The staff dashboard now returns 200 and renders normally; the bypass login
+lands on a working page and dashboard captures are not blocked. The account behind `staff_id` 1 on
+the demonstration school is **Vivek Vilakazi**. What follows is kept as the record of what was found
+and how it was diagnosed.
+
+While this design was being written, the bypass login landed on a dashboard that returned 500:
 
 ```
 ADAM\Security\UnknownPrivilegeException: Unknown privilege: assessment_results_edit
@@ -72,8 +76,8 @@ schema complaints daily since 2026-07-29, well before this design.
 same cookie. So the workflow navigates directly to the target screen after logging in rather than
 dwelling on the dashboard, and everything except dashboard captures is unaffected.
 
-Two consequences the plan carries: any brief that wants the dashboard itself is blocked until the
-privilege is registered, and the first end-to-end task must target a non-dashboard screen.
+The consequence the plan carried — that the first end-to-end task should target a non-dashboard
+screen — no longer binds, though it remains a sensible choice for other reasons.
 
 ## Architecture
 
