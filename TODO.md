@@ -87,9 +87,22 @@ point of the image and is easy to lose by cropping too tightly. Frame the foot o
 page: the last child's card, the **Family** and **Security** menu, and the **Today's Birthdays**
 card. Photographs off and names abbreviated, matching the defaults in image 2.
 
-If no demonstration pupil has a birthday on the day of capture, change one pupil's date of birth on
-the demonstration school to today rather than waiting — but pick a pupil in the same family's scope,
-and set it back afterwards.
+**Blocked on demonstration data, and this is the setup it needs first.** No family on the
+demonstration school currently satisfies the brief. `pupil_login_privileges` puts only three pupils in
+the **Full Access** group, and just one of them, **Riley Anderson** (pupil 4753, family 1902), is a
+current pupil — an only child. Every other family, including the two-child families, gets *"your
+profile has not been granted access to any pupil information"* on logging in, so there are no
+children's cards for the birthday card to sit below.
+
+Pick a family with two current children — **de Villiers** (family 3090: Owen and Sheryl) is one — and
+put **both** children into the **Full Access** pupil login group, so the portal renders two cards.
+Keep to Full Access, so all three birthday images stay on one group.
+
+The settings side is already done and needs no repeating: **Birthdays visible in the portal** is
+**All pupils in the school**, photographs are **No**, names are **First name and surname initial**.
+Two pupils genuinely have a birthday today, so no date of birth needs moving — but note that the two
+with birthdays are **Yasmin Butcher** and **Coral Till**, in other families, which is exactly why the
+school-wide scope matters for this image.
 
 ## Heads of Subject (`docs/subjects.md`)
 

@@ -54,3 +54,13 @@
     of the viewport. A capture sized to the span alone hides the last setting
     behind it, so the viewport height is span + padding + 82. The bar is in
     shot at the bottom as a result, which is honest — it is on the screen.
+
+# parent-and-pupil-portal-11.png — NOT CAPTURED (2026-08-04)
+# Blocked on demonstration data, not on tooling. Only three pupils are in the
+# Full Access login group and only one, Riley Anderson (4753, family 1902), is a
+# current pupil — an only child. Logging in as a two-child family (tried
+# de Villiers, family 3090) gives "your profile has not been granted access to any
+# pupil information", so no children's cards render and the birthday card has
+# nothing to sit below. See TODO.md for the setup needed.
+# Side effect worth knowing: logging in as family 3090 required accepting the
+# demonstration online agreement, which is now recorded as accepted for them.
