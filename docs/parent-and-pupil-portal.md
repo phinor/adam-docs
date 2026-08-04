@@ -158,6 +158,8 @@ As with most permissions, there are separate tick boxes for **Pupils** and **Fam
 
 Navigate to **Administration → Site Administration → Edit site settings**, click on the **Pupils & Families** tab and scroll down to the **Widgets** heading.
 
+![](assets/screenshots/parent-and-pupil-portal/parent-and-pupil-portal-10.png)
+
 **Birthdays visible in the portal:** this decides how wide the list is.
 
 | Option | Who appears in the list |

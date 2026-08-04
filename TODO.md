@@ -79,16 +79,7 @@ Grant **View birthdays** to the login group that the demonstration families use,
 default class scope, a demonstration login will usually see nobody and the section will not render
 at all.
 
-### 2. `parent-and-pupil-portal-10.png` — the three settings together
-
-**Administration → Site Administration → Edit site settings**, the **Pupils & Families** tab,
-scrolled to the **Widgets** heading. All three birthday settings must be in shot: **Birthdays
-visible in the portal**, **Show photographs in the portal birthday widget** and **Names in the
-portal birthday widget**. Leave photographs on **No** and names on **First name and surname
-initial**, so the image shows the defaults a school starts from rather than a configuration that
-happens to suit the screenshot.
-
-### 3. `parent-and-pupil-portal-11.png` — the list as a parent sees it
+### 2. `parent-and-pupil-portal-11.png` — the list as a parent sees it
 
 **Families → Security → Login as a family** for a demonstration family with more than one child, so
 that the birthday card can be seen sitting *below* the children's cards — that placement is the

@@ -26,3 +26,31 @@
     restarted; this file is the re-capture, same framing and group, only the
     typeface differs (image height changed slightly, 386px content height
     became 421px, because Open Sans and DejaVu Sans have different metrics).
+
+- image: parent-and-pupil-portal-10.png
+  captured: 2026-08-04
+  as: staff
+  path: >
+    Administration tab → Site Administration → Edit site settings
+    (/admin/settings/site) → Pupils & Families tab → Widgets heading
+  frame:
+    mode: span
+    selectors: >
+      The "Widgets" h3 through the whole table row of the third birthday
+      setting ("Names in the portal birthday widget"), taking the tr rather
+      than its div.formelement — the formelement stops before the help-text
+      column, so measuring it clips the help text.
+    padding: 8
+  setup: >
+    "Birthdays visible in the portal" was already "All pupils in the school"
+    and names were already "First name and surname initial". Photographs were
+    on "Yes"; set to "No" and saved, so the image shows the defaults a school
+    starts from, as the brief asks.
+  revert: >
+    Not reverted. Photographs off and names abbreviated are the documented
+    defaults, and image 11 has to match this configuration.
+  note: >
+    The page has a sticky "Save settings" bar 82px tall that overlays the foot
+    of the viewport. A capture sized to the span alone hides the last setting
+    behind it, so the viewport height is span + padding + 82. The bar is in
+    shot at the bottom as a result, which is honest — it is on the screen.
