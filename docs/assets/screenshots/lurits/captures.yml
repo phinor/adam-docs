@@ -1,0 +1,33 @@
+- image: lurits-01.png
+  captured: 2026-08-04
+  as: staff
+  path: Administration tab → DBE Administration → Import LURITS feedback information
+  frame:
+    mode: span
+    selectors: >
+      main#body in full — the Import LURITS Feedback heading, the "Please
+      upload the feedback file received from LURITS." paragraph, the LURITS
+      Feedback File row and the Next button. Captured as a span rather than an
+      element shot because the h1's box starts flush with main's top
+      (headingGapAbove measured 0), so an element capture left no breathing
+      room above the heading against 22px below the button.
+    padding: 8
+  setup: >
+    None. The form holds no data until a file is chosen, so no demonstration
+    school configuration was needed. The default dev login (staff_id 1, Vivek
+    Vilakazi) already holds the lurits_upload permission, so the page was
+    reachable directly.
+  revert: none
+  note: >
+    The file control reads "Choose Files", plural, because the field is
+    declared with multiple selection enabled — this is what the page's
+    statement that more than one file may be selected at once looks like on
+    screen, so the wording in the image and the prose should stay in step if
+    either changes.
+
+    No companion image was taken of the results report. What it contains
+    depends entirely on what LURITS returned in a given pack, so any capture
+    would need a feedback file to be manufactured for the purpose; that would
+    also write LURITS numbers onto demonstration pupils and send the
+    notification e-mail to lurits@adam.co.za. The section lists what the
+    report contains instead.
