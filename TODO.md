@@ -45,16 +45,6 @@ default**.
 
 Goes in *Seeing and Changing Who Uses What*.
 
-### 2. `profile-overview-customisation-16.png` — re-capture the Overview permissions
-
-The capture in the manual is one build out of date: it describes **Manage Pupil Overview layouts**
-as letting a user "create, edit, delete and recommend the layouts", but recommendations are gone and
-the permission now reads "create, edit, delete and **assign** the layouts". Re-capture the same crop,
-keeping the filename, once the demonstration server is on a build with the corrected wording.
-
-While you are there, tick **Choose own Pupil Overview layout** and leave **Manage Pupil Overview
-layouts** unticked, matching the advice in the text that most teachers get only the first.
-
 ---
 
 ## Two-Factor Authentication (`docs/two-factor-authentication.md`,

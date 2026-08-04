@@ -1,0 +1,32 @@
+- image: profile-overview-customisation-16.png
+  captured: 2026-08-04
+  as: staff
+  path: >
+    Staff tab → Security → Manage staff groups → permissions against
+    "General Teacher" (group id 3) → Pupil Admin tab → Overview heading
+  frame:
+    mode: span
+    selectors: >
+      The "Overview" heading li and the ul.subcat immediately after it,
+      holding both permission rows (Choose own Pupil Overview layout,
+      Manage Pupil Overview layouts).
+    padding: 8
+  setup: >
+    Group chosen: "General Teacher" — a restricted group that carries
+    permissions and represents the "most teachers" the surrounding text
+    describes. "Academic Staff" looks like the obvious choice but is an
+    unrestricted group with no permissions assigned, so its permission
+    screen is empty. Ticked "Choose own Pupil Overview layout" and left
+    "Manage Pupil Overview layouts" unticked, per the brief.
+  revert: >
+    The tick was set in the form for the capture and deliberately NOT saved,
+    so no permission on the demonstration school was actually changed.
+  note: >
+    Re-capture of a stale image. The old one described the manage permission
+    as letting a user "create, edit, delete and recommend the layouts";
+    recommendations are gone and this build reads "create, edit, delete and
+    assign the layouts" (verified in includes/data/privileges.php:242).
+    The old crop was 816px wide and sat inside the tab panel's borders. This
+    one is 900px per house convention, so the panel's left and right borders
+    are in shot. Framing mode 2 cannot clip horizontally, so matching the old
+    width exactly was not possible without faking it.
