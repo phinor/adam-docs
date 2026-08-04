@@ -6,11 +6,13 @@
     mode: span
     selectors: >
       main#body in full — the Import LURITS Feedback heading, the "Please
-      upload the feedback file received from LURITS." paragraph, the LURITS
-      Feedback File row and the Next button. Captured as a span rather than an
-      element shot because the h1's box starts flush with main's top
-      (headingGapAbove measured 0), so an element capture left no breathing
-      room above the heading against 22px below the button.
+      upload the feedback file received from LURITS." paragraph, the "You may
+      upload the individual XML files, or the ZIP archive they arrived in"
+      paragraph, the LURITS Feedback File (XML or ZIP) row and the Next
+      button. Captured as a span rather than an element shot because the h1's
+      box starts flush with main's top (headingGapAbove measured 0), so an
+      element capture left no breathing room above the heading against 22px
+      below the button.
     padding: 8
   setup: >
     None. The form holds no data until a file is chosen, so no demonstration
@@ -19,6 +21,12 @@
     reachable directly.
   revert: none
   note: >
+    Re-captured 2026-08-04 (same day) after ADAM learnt to unpack the LURITS
+    ZIP archive itself: the page gained a second instruction paragraph about
+    uploading the archive, and the control's label became "LURITS Feedback
+    File (XML or ZIP)". Same framing and same login as the first capture; the
+    image is 32px taller for the extra paragraph (228px became 260px).
+
     The file control reads "Choose Files", plural, because the field is
     declared with multiple selection enabled — this is what the page's
     statement that more than one file may be selected at once looks like on
