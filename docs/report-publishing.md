@@ -167,7 +167,7 @@ The next option allows you to **email the reports to the pupils** also. Normally
 
 The **refreshing of archived copies** causes ADAM to overwrite the archived copy of the report in the document repository. This setting is irrelevant if the publishing date is in the future: ADAM will always update the archived copy. However, if it is *past* the publishing date, ADAM will send out the copy that is in the document repository. This is discussed more in [the section below](#the-report-doesnt-show-new-information) that deals with report troubleshooting.
 
-You have the option of choosing which pupils’ reports to email. By default all pupils are ticked.
+You have the option of choosing which pupils’ reports to email. By default all pupils are ticked. If families do not have permission to view reports on the portal, then the pupils cannot be selected in this list. See [the section below on publishing reports on the portal](#reports-on-the-parent-and-pupil-portal).
 
 Finally, click on the **Email reports** button at the bottom of the screen. A new screen will load and ADAM will update it with progress. Note that emailing of reports where the reports are being refreshed in the document repository can take a while. Please be patient and let the screen load fully.
 
