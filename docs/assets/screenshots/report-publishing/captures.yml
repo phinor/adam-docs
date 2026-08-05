@@ -1,0 +1,47 @@
+- image: report-publishing-18.png
+  captured: 2026-08-05
+  as: staff
+  path: Pupils tab → Security → Manage permissions groups → privileges (Full Access group, id 1)
+  frame:
+    mode: span
+    selectors: >
+      The two report permission rows of the Academic section — the li for
+      "View most recent report (reports)" and the li for "View archived
+      terms' reports (closedreports)", each with its Pupils and Families
+      tick boxes and its description line.
+    padding: 8
+  setup: >
+    Group chosen: "Full Access", the only group in the demonstration school
+    with pupils assigned (3), and the only one where both report permissions
+    are ticked for Pupils and Families — which is what the section needs to
+    illustrate. Both were already ticked, so nothing was changed before
+    capturing.
+  revert: none
+
+- image: report-publishing-19.png
+  captured: 2026-08-05
+  as: staff
+  path: Families tab → family profile for Mr & Ms Veer and Jacqui Anderson (family 1902) → Login Privileges
+  frame:
+    mode: span
+    selectors: >
+      From the "Login Permissions for Riley Anderson" h2 down to and
+      including the "Matthew is currently assigned to the permission group
+      Full Access." paragraph that follows the second h2 — so that the
+      one-block-per-child layout is visible, along with the New Permissions
+      Group dropdown, the Notes box, the Update Permissions button and the
+      change-history table.
+    padding: 8
+  setup: >
+    Family chosen because both of its children (Riley Anderson, grade 10, and
+    Matthew Anderson, an active alumnus) are already assigned to the "Full
+    Access" group and Riley has a change-history row, so the history table is
+    not empty. No permission was changed before capturing. Riley Anderson is
+    the demonstration pupil already used on the Profile Overview Layouts
+    page.
+  revert: none
+  note: >
+    TODO.md asks for demo pupil Brandon Dayne Jarred Clark (admin 48619) on
+    pages other than Profile Overview Layouts, but no pupil of that name
+    exists in the current demonstration data — the pupil autocomplete returns
+    no Brandon Clark. The Anderson family was used instead.

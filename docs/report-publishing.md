@@ -211,7 +211,42 @@ Repeat for any other affected grades.
 
 ## Reports on the Parent and Pupil Portal
 
-In order for parents to access their children’s reports on the Parent and Pupil portal, they will need the [correct permissions](security-administration-for-families-and-pupils.md#managing-login-groups) in order to do so. Assuming that the permissions are set up correctly, they will have automatic access to the report as soon as the [publish date and time is reached](reporting-period-administration.md#reporting-period-administration).
+Assuming that permissions are set up correctly, parents and pupils have automatic access to the report as soon as the [publish date and time is reached](reporting-period-administration.md#reporting-period-administration). Nothing further needs to be published or released.
+
+Permissions are always attached to the **pupil** and never to an individual parent. Whatever the pupil’s permission group allows is therefore what *every* parent linked to that pupil will see. Each pupil belongs to exactly one permission group.
+
+### The Permissions that Control Reports
+
+Two permissions in a group govern reports:
+
+-   **View most recent report** — the pupil’s current report. This appears as **Most recent report** under the **Academic** heading of the portal.
+-   **View archived terms’ reports** — reports from terms that have already been archived. These appear as **Past reports** under the same heading.
+
+Each permission has its own tick box for **Pupils** and for **Families**, so it is possible to let parents see a report while their children cannot (or the other way around):
+
+![](assets/screenshots/report-publishing/report-publishing-18.png)
+
+!!! warning
+    Neither of these permissions has any effect unless the **Pupil appears in portal** privilege — the very first one in the list — is also ticked. Without it, the pupil does not appear on the portal at all, no matter what else is ticked.
+
+The **Families** tick box of **View most recent report** does double duty: it is also the permission ADAM checks before it will email a report to a family. If it is not ticked, the pupil cannot be selected when [emailing reports](#emailing-reports), even if your school does not use the portal at all. See [The report isn’t being emailed!](#the-report-isnt-being-emailed) below.
+
+### Checking and Changing a Pupil’s Permission Group
+
+**To see what a group allows**, navigate to the **Pupils tab**, and under the **Security** heading click on **Manage permissions groups**. Next to the group you are interested in, click on the **privileges** action, and look for the two report permissions under the **Academic** heading.
+
+**To move a pupil into a different group**, there are three ways of doing it:
+
+1.  **From the pupil’s own profile.** Navigate to the pupil’s information page and click on the **Login Privileges** section.
+2.  **From the parents’ profile.** Navigate to the family’s information page and click on the **Login Privileges** section. This is often the quicker option when a parent phones to say they cannot see a report, because the profile shows a **Login Permissions for …** block for each of the children in the family, one below the other:
+
+    ![](assets/screenshots/report-publishing/report-publishing-19.png)
+
+    Choose the group you want from the **New Permissions Group** dropdown list, add a note if you wish, and click on the **Update Permissions** button. The table below the button records every permission change that has been made for that child, and by whom.
+
+3.  **For a whole class at a time.** From the **Pupils tab**, under the **Security** heading, click on **Change permissions groups for a class**.
+
+Adding new groups, deciding what each group should allow, and assigning pupils to groups in bulk are all covered in full in [Security Administration for Families and Pupils](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
 ## Creating Custom Reports for Individuals
 
@@ -283,7 +318,7 @@ There are a few things to check.
 
 #### Permission Groups
 
-If in the list of names the pupil is crossed out and the message “this family does not have the required permissions to view the report; the report will not be emailed” is displayed next to the pupil, then the [pupil belongs to a permission group](security-administration-for-families-and-pupils.md#managing-login-groups) that does not allow the parents to **view the most recent report**.
+If in the list of names the pupil is crossed out and the message “this family does not have the required privileges to view the report; the report will not be emailed” is displayed next to the pupil, then the pupil belongs to a permission group that does not tick **Families** for the **View most recent report** permission. The words “required privileges” in that message are a link that takes you straight to the pupil’s **Login Privileges** section, where the group can be changed. See [Checking and Changing a Pupil’s Permission Group](#checking-and-changing-a-pupils-permission-group) above.
 
 ![](assets/screenshots/report-publishing/report-publishing-15.png)
 
