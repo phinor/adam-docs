@@ -11,10 +11,16 @@ In the page that follows, choose from the tables that are available to you:
 -   Pupils
 -   Staff
 -   Families
+-   Classes
 
 ![](assets/screenshots/importing-and-exporting-data/importing-and-exporting-data-01.png)
 
 You can also tick the box which includes old (deleted) records for editing. In the case of pupils or staff, for example, ticking this box would include alumni or past staff members in the export. Otherwise, ADAM exports only current pupils and staff members.
+
+Some exports include extra columns whose heading starts with a `#`, such as
+`#subject_name` or `#class_teacher`. These are there to make the file readable — they
+spell out the subject, teacher or grade that a column of ID numbers refers to. They are
+ignored if you import the file back into ADAM, so you can leave them in place.
 
 !!! warning
     It is important to realise that using the export and import features has the potential to corrupt your data very easily. Please ensure that you have a backup first to restore your data if something goes wrong.
@@ -55,7 +61,7 @@ The first row of the import file must contain field names so that ADAM knows whi
 
 The first column of the import file must contain an “id” field so that ADAM knows which record you are updating. For example, if you are updating a pupil record, the first column will be pupil\_id.
 
-More information [about the fields can be found below](#field-information). It is often a good idea to start with an [export of the records](#csv-export) that you want to update. The export will allow you to start with the correct structure and the correct field names.
+More information [about the fields can be found below](#field-information). It is often a good idea to start with an [export of the records](#csv-export) that you want to update. The export will allow you to start with the correct structure and the correct field names. If the export includes columns whose heading starts with a `#`, you don't need to remove them — ADAM ignores those columns automatically when you import the file.
 
 ### Import only what you need
 
