@@ -1,0 +1,102 @@
+- image: staff-information-16.png
+  captured: 2026-08-13
+  as: staff
+  path: Staff tab → Staff Administration → Staff Info → Mann, Mr Ross (staff 265) → Employment History
+  frame:
+    mode: span
+    selectors: >
+      main#body > h3 (Employment Contract History), all main#body > p siblings
+      (the currency line, the Add new employment contract link, the emphasis
+      note and Total Length of Service) and table#emphist
+    padding: 8
+  setup: >
+    None. Ross Mann was already a past staff member in the demonstration
+    database, with two concluded contracts (2022-04-01 to 2023-12-31 and
+    2024-01-01 to 2026-04-10) and no current record — exactly the state a
+    reader is in before re-engaging somebody.
+  revert: none
+
+- image: staff-information-17.png
+  captured: 2026-08-13
+  as: staff
+  path: >
+    Staff tab → Staff Administration → Staff Info → Mann, Mr Ross (staff 265) →
+    Employment History → Add new employment contract
+  frame:
+    mode: span
+    selectors: main#body > h1 (Add Employment Record) and form#form
+    padding: 8
+  setup: >
+    None. The form was captured unsubmitted, at its defaults: today's date in
+    both date fields and Indefinite Appointment set to Yes.
+  revert: none
+  note: >
+    The first attempt caught the autofocus sitting in the Commencement Date
+    field, where Chromium highlights the month segment in blue. The field is
+    blurred before the shot so the form is shown at rest.
+
+- image: staff-information-18.png
+  captured: 2026-08-13
+  as: staff
+  path: Staff tab → Staff Administration → Staff Info → Joubert, Mrs Josephine (staff 124) → Employment History
+  frame:
+    mode: span
+    selectors: >
+      main#body > h3 (Employment Contract History), all main#body > p siblings
+      and table#emphist — the same framing as staff-information-16.png so the
+      two read as a before and after pair
+    padding: 8
+  setup: >
+    None. Josephine Joubert already had the shape the section needs: a
+    concluded contract (2012-06-27 to 2024-12-31) followed by a current
+    open-ended one from 2025-01-01, and a Total Length of Service covering
+    both spells. No record was created for this capture, so nothing in the
+    demonstration database was changed.
+  revert: none
+
+- image: staff-information-19.png
+  captured: 2026-08-13
+  as: staff
+  path: Staff tab → Staff Administration → Staff Info (the staff selection form)
+  frame:
+    mode: clip
+    selectors: >
+      Union of #staff_chosen and #staff_chosen .chosen-drop, with the results
+      list scrolled so the Previous Staff Members group header sits five rows
+      down. Clipped rather than captured as a viewport span: the drop-down
+      overlays the page footer, and a full-width band caught the footer text
+      either side of the list.
+    padding: 8
+  setup: none
+  revert: none
+
+- image: staff-information-20.png
+  captured: 2026-08-13
+  as: staff
+  path: Staff tab → Lists and Labels → Staff scratch list by contract
+  frame:
+    mode: span
+    selectors: >
+      main#body > p (Please select which contract groups to include in the
+      list:) and form#staff-contracts
+    padding: 8
+  setup: >
+    None. All three checkboxes were left unticked so the shot shows the
+    options themselves rather than a particular choice.
+  revert: none
+
+- image: staff-information-21.png
+  captured: 2026-08-13
+  as: staff
+  path: >
+    Staff tab → Staff Administration → Staff Info → Mann, Mr Ross (staff 265) →
+    Employment History → edit (second contract, record 303)
+  frame:
+    mode: span
+    selectors: main#body > h1 (Edit Staff Employment Record) and form#emprecedit
+    padding: 8
+  setup: >
+    None. The form was captured unsubmitted, showing the stored values for
+    that contract (2024-01-01 to 2026-04-10, Indefinite Employment set to No).
+    Nothing was saved.
+  revert: none

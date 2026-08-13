@@ -55,7 +55,14 @@ To generate these lists, navigate to the appropriate sections:
 
 ### Staff Scratch Lists
 
-Staff scratch lists can only be produced in one way (compared to the many available ways mentioned above for pupils). The lists are found at **Staff → Lists and Labels → View staff scratch list**.
+Staff scratch lists are all found on the “**Staff**” tab, under the “**Lists and Labels**” heading. There are four of them:
+
+-   List the members of a security group: **Staff → Lists and Labels → Staff scratch list**
+-   List the staff who were employed on a particular date: **Staff → Lists and Labels → Historical staff scratch list**
+-   List staff matching a set of filters: **Staff → Lists and Labels → Staff scratch list using filters**
+-   List staff by whether their employment contracts are past, current or still to start: **Staff → Lists and Labels → Staff scratch list by contract**
+
+The last of these is described in more detail under [Finding current, past and future staff](staff-information.md#finding-current-past-and-future-staff).
 
 ### Family Scratch Lists
 
