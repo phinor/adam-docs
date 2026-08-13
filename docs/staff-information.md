@@ -2,7 +2,7 @@
 
 ## Adding new staff to the database
 
-To add a new staff member to ADAM, click on the “**Staff**” tab and, under the “**Staff Administration**” heading, click on “**Add a new teacher**”.
+To add a new staff member to ADAM, click on the “**Staff**” tab and, under the “**Staff Administration**” heading, click on “**Add a new staff member**”.
 
 There are several sections that will appear in the next screen, and we’ll discuss them individually:
 
@@ -69,9 +69,9 @@ If you have created any custom fields, please note that they will appear below t
 
 ### Finishing the process
 
-Once you have entered all the information necessary for a staff member, simply click on the button at the bottom: “Add staff member”.
+Once you have entered all the information necessary for a staff member, simply click on the button at the bottom: “**Save information**”.
 
-ADAM should then display a “Success!” message to you. A link is provided to quickly add another staff member. This will take you to the start of the process.
+ADAM then confirms that the staff member was added, and offers you a set of links to carry on with: **Add another staff member**, **Edit another staff member**, a link to the new staff member’s profile, and a link to change their permission groups.
 
 ## Employment contracts
 
