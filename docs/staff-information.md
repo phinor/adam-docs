@@ -115,7 +115,7 @@ If there are multiple employment records, as appear in the screenshot above, one
 
 ![](assets/screenshots/staff-information/staff-information-06.png)
 
-Ensure that the termination date is accurate, and click on the button **Terminate employment** at the bottom of the screen.
+Ensure that the termination date is accurate, and click on the button **Terminate employment** at the bottom of the screen. The date must be a real date on or after the contract’s commencement date; anything else is refused and you are returned to this screen.
 
 If the termination date you enter is today or in the future, the contract stays current until that date has passed. ADAM re-checks employment records every hour, so access ends on the correct day without anybody having to remember to come back and do it. See [Cron Service](cron-service.md#cron-service) for more about these background checks.
 
@@ -152,8 +152,8 @@ Open their **Employment History** page and click on **Add new employment contrac
 
 Click on **Save Employment Record** to finish.
 
-!!! warning
-    If you set **Indefinite Appointment** to **No**, make sure the **Termination Date** is not earlier than the **Commencement Date**. ADAM will not store a contract that ends before it begins, and the new record simply will not appear in the history. Always check the employment history afterwards.
+!!! note
+    A contract cannot end before it begins. If you set **Indefinite Appointment** to **No** and give a **Termination Date** earlier than the **Commencement Date**, ADAM refuses to save the record and returns you to this screen with a message explaining why.
 
 #### Step 3: Check the result
 
@@ -175,6 +175,8 @@ Two things are worth checking on a return:
 Two contracts for the same staff member cannot cover the same dates, and ADAM will quietly adjust the records to prevent it. Most often this happens when somebody on an open-ended contract is given a new one: because the old contract has no termination date, ADAM closes it on the day before the new contract begins.
 
 This is usually exactly what you want, but it does mean the dates you see afterwards may not be quite the dates you typed. Look over the employment history once you have finished making changes.
+
+ADAM also removes a contract that ends before it begins, because such a period cannot be counted. New ones can no longer be created, but older databases may still hold some. To find them, click on the “**Staff**” tab and, under the “**Staff Administration**” heading, click on “**Staff data verification**”. Any staff member with such a contract is listed there, with a link to their employment history so that the dates can be corrected before the record is removed.
 
 ### Fixed-term contracts and renewals
 
