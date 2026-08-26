@@ -123,6 +123,6 @@ nav:
   - Updating ADAM: updating-adam.md
   - Useful Links: useful-links.md
   - Year-end Functions: year-end-functions.md
-  - API Access to ADAM: api-access-to-adam.md
   - "Appendix A: Import and Export Codes": appendix-a-import-and-export-codes.md
   - "Appendix B: Common Errors and their Meanings": appendix-b-common-errors-and-their-meanings.md
+  - "Appendix C: API Access to ADAM": api-access-to-adam.md
