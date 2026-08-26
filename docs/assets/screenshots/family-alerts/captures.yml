@@ -1,0 +1,92 @@
+- image: family-alerts-02.png
+  captured: 2026-08-13
+  as: staff
+  path: Families tab → Security → Manage Family Alerts
+  frame:
+    mode: element
+    selectors: "#table_1"
+    padding: 0
+  setup: >
+    The demonstration school had no pupils assigned to any pupil login
+    permission group, so the new "Current Pupils" column read 0 on every row and
+    the picture said nothing. Through ADAM's own screens: three classes were
+    assigned to groups on Pupils tab → Security → Change permissions groups for
+    a class (class 7160 → Full Access, 7161 → No Markbook,
+    7173 → No Reports, giving 24/23/18 current pupils); the "Receive Family
+    Alerts" permission was granted to pupils on the Full Access group so the
+    "Sent to Pupil" column shows a Yes as well as a No; and a spread of alert
+    boxes was ticked on the configuration table itself so that no column is
+    uniformly empty.
+  revert: none
+  note: >
+    Re-capture. The previous image predated the "Current Pupils" and "Roll Call"
+    columns, and showed an em dash in the "Sent to…" columns which ADAM no
+    longer renders — it prints Yes or No.
+
+- image: family-alerts-03.png
+  captured: 2026-08-13
+  as: staff
+  path: Families tab → Security → Manage Family Alerts, the Parent Alerts settings block below the table
+  frame:
+    mode: element
+    selectors: "second table on the page (the settings form table, which carries no id)"
+    padding: 0
+  setup: none
+  revert: none
+  note: >
+    Re-capture. The previous image showed the settings as dropdowns; they are
+    now radio buttons and a time picker, and the section sits under the
+    "Notifications & Scheduling" tab rather than "Communications".
+
+- image: family-alerts-04.png
+  captured: 2026-08-13
+  as: staff
+  path: Administration tab → Absentee Administration → Edit the absentee reasons
+  frame:
+    mode: element
+    selectors: "#table_1 (the enabled Absentee Reasons list)"
+    padding: 0
+  setup: none
+  revert: none
+
+- image: family-alerts-05.png
+  captured: 2026-08-13
+  as: staff
+  path: Administration tab → Roll Call → Manage reasons
+  frame:
+    mode: element
+    selectors: "#table_1 (the enabled Roll Call Reasons list)"
+    padding: 0
+  setup: none
+  revert: none
+  note: >
+    Deliberately shows the same reasons as family-alerts-04.png — roll call and
+    daily absentees share one list — and the separate "Alert" and "Staff alert"
+    columns, which the page text distinguishes.
+
+- image: family-alerts-06.png
+  captured: 2026-08-13
+  as: staff
+  path: Administration tab → Pastoral Administration → Edit the Records and Points categories → edit (Break Detention, id 16)
+  frame:
+    mode: element
+    selectors: "the table row containing 'Publish to Parent/Pupil Portal'"
+    padding: 0
+  setup: >
+    Break Detention was chosen because it has an attendance register, so the
+    "after attendance" option the page describes is available in the dropdown.
+    Nothing was changed or saved.
+  revert: none
+
+- image: family-alerts-07.png
+  captured: 2026-08-13
+  as: staff
+  path: Administration tab → Site Administration → Manage email messages
+  frame:
+    mode: span
+    selectors: >
+      The "Family Alerts" section heading row and the two template rows beneath
+      it (Parent Alert, Pupil Alert).
+    padding: 8
+  setup: none
+  revert: none

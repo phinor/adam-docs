@@ -39,7 +39,7 @@ On this screen, you can edit existing groups, add new ones and change the order 
 
 ADAM also allows you to maintain a running total for each group if you would like an indication of a pupil’s records with a very high-level summary.
 
-Schools can optionally restrict categories within a group to be used solely by people who have permission to view sensitive information of pupils within the school.
+Schools can optionally restrict categories within a group to be used solely by people who have permission to view sensitive information of pupils within the school. Marking a group **Sensitive** also stops records in its categories being reported to pupils or parents: pupil notifications are not sent, and the records are left out of the periodic [Family Alerts](family-alerts.md#records-and-points) email whatever their publishing setting.
 
 ## Managing Records and Points Categories
 
@@ -66,7 +66,7 @@ The screen, shown above, has a number of options, explained below:
 -   Expire before the start of this week/month/year: This setting is identical to the calendar periods above, but have a fixed time period of 1 week, month or year.
 -   Expire on a specific date: Here, you can specify a date before which all points will expire.
 
--   **Publish to Parent/Pupil Portal:** The options here change depending on whether there is an attendance register associated with this category or not. If there is an attendance register, an additional option appears: the category can either be shown to parents as soon as it is recorded or alternatively only once the pupil has been marked as present on the attendance register.
+-   **Publish to Parent/Pupil Portal:** The options here change depending on whether there is an attendance register associated with this category or not. If there is an attendance register, an additional option appears: the category can either be shown to parents as soon as it is recorded or alternatively only once the pupil has been marked as present on the attendance register. This setting also decides whether records in the category are reported in the periodic [Family Alerts](family-alerts.md#records-and-points) email.
 -   **Show Teacher Name on Parent/Pupil Portal:** Sometimes, particularly when records related to [consequences](#records-and-points-consequences) are shown to parents, it can be confusing to see the teacher who triggered the consequence shown there. When consequences are awarded, they are automatically assigned to the teacher that awarded them. This can make it seem that a relatively minor infraction caused an over-reaction from the teacher, without the context that this consequence is as a result of a number of other issues. Hiding the teacher’s name prevents this confusion.
 -   **Published on Supported Reporting Templates:** This setting will be used by specific reporting templates to draw further information onto the reports. If this is one of the categories that should be displayed on a report, you can change this setting to “Yes”. Note that only supported templates will search for any categories that are set to display.
 -   **Send email notification to pupils:** This will alert pupils of the fact that they have received a an entry in the Records and Points module. The email notification is automatically delayed by 5 minutes in case there was an error while adding.

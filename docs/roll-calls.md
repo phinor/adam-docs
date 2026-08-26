@@ -377,8 +377,8 @@ To configure reasons:
 3. Set Alert staff when marked to Yes to make this reason trigger the roll-call absence alert.
 4. Save.
 
-*Note: This is a separate field from Include in alert, which controls the cumulative family digest sent by the existing
-Absentees module. The two flags are independent — you can use any combination.*
+*Note: This is a separate field from Include in alert, which controls the cumulative digest sent to parents — see
+[Family Alerts](family-alerts.md#roll-call). The two flags are independent — you can use any combination.*
 
 #### Recommended Reason Flags
 
