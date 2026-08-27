@@ -100,3 +100,117 @@
     that contract (2024-01-01 to 2026-04-10, Indefinite Employment set to No).
     Nothing was saved.
   revert: none
+
+- image: staff-information-22.png
+  captured: 2026-08-26
+  as: staff
+  path: Staff tab → Staff Administration → Request staff detail updates
+  frame:
+    mode: span
+    selectors: >
+      Viewport capture, 900x460, scrolled to main#body > h1 (Request Staff
+      Detail Updates) less 8px. Framed as a viewport rather than an element
+      because the submit button sits in the form's sticky control bar
+      (div.control.is-floating), which pins itself to the foot of the viewport
+      — so a short viewport catches the heading, the intro sentence, the
+      Select All box and the first eleven staff rows in one shot with
+      "Request updates from selected staff" still visible. Framing the form
+      element instead would have produced a 2229px strip of 99 checkboxes.
+    padding: 8
+  setup: >
+    None. The page was captured as it loads, with every staff member ticked,
+    which is its default state. The demonstration school has exactly one active
+    staff update profile ("Default Staff Update"), so no Update Profile
+    drop-down is shown — the manual says that drop-down only appears when there
+    is more than one profile, and this image is consistent with that.
+  revert: none
+  note: >
+    Re-captured the same day, after the request screen was changed to leave out
+    staff who cannot answer a request. The first version showed all 99 current
+    staff and no warning; this one shows the 64 who hold "Edit personal
+    information" and the note accounting for the other 35. Isabelle Alexander,
+    second in the original list, is the visible difference — she is the staff
+    member the fix was found through. The viewport is 10px taller than the first
+    attempt (530 rather than 460) to make room for the notification panel while
+    keeping the same number of rows above the sticky bar.
+
+- image: staff-information-23.png
+  captured: 2026-08-26
+  as: staff (Jordan Atkinson, staff 114, username J114, via the dev login bypass)
+  path: >
+    Staff tab → Staff Administration → Request staff detail updates (as Thabo
+    Paterson, ticking Atkinson alone) → then signed in as J114, whose ADAM home
+    page redirects to the forced-update prompt at /admin/staff/forced-update
+  frame:
+    mode: span
+    selectors: >
+      Viewport capture, 900x520, scrolled to main#body > h1 (Update Staff
+      Details) less 8px. Same reason as staff-information-22.png: "Skip for
+      now" and "Save information" share the sticky control bar, and the point
+      of the image is that the prompt offers both. The form itself is 3883px
+      tall, so only the General Information heading and the first three rows
+      are in shot, which is enough to show it is the staff member's own record
+      pre-filled.
+    padding: 8
+  setup: >
+    Jordan Atkinson was flagged for an update through the interface — Request
+    staff detail updates, with only his row ticked — which is what puts the
+    prompt in front of him at his next sign-in. He was chosen because he is a
+    member of the "Academic Staff" group, the group on the demonstration school
+    that grants "Edit personal information" (staff_edit_own); the forced-update
+    route refuses anybody without it.
+  revert: >
+    The trigger raised for this capture was cleared at the end of the run by
+    signing in again as J114 and saving the form inside the freshness window —
+    a staff member submitting the form is the only thing that closes a staff
+    trigger. Saving required filling in his empty ID Number, which the form
+    marks required, so the submission was reviewed straight afterwards as Thabo
+    Paterson with all three Approve Change toggles turned off. His record was
+    re-read afterwards and is unchanged: ID Number is empty again.
+  note: >
+    The menu tabs are absent from this shot because the page hides them
+    deliberately, not because of any cropping — the controller draws it with
+    PAGE_PART_MENUTABS switched off.
+
+- image: staff-information-24.png
+  captured: 2026-08-26
+  as: staff (Jordan Atkinson, staff 114, username J114, via the dev login bypass)
+  path: >
+    /admin/staff/forced-update — the prompt from staff-information-23.png, left
+    open until the session went stale, then submitted with Save information
+  frame:
+    mode: element
+    selectors: main#body
+    padding: 0
+  setup: >
+    This is the one shot that cannot be staged, only waited for. The page
+    appears when the ten-minute freshness window (Security::FRESHNESS_WINDOW_SECONDS,
+    600) lapses while the update form is on screen, so the sequence was: sign in
+    as J114, let the prompt draw the form, leave it untouched for ten minutes,
+    then press Save information. The window is measured from login_fresh, which
+    moves only at sign-in and at re-authentication, so nothing needed ageing by
+    hand — just the wait.
+
+    Framed as an element rather than a viewport span, unlike the other two shots
+    in this set. Once the confirmation replaces the form the document is only
+    520px tall, so the browser cannot scroll the development banner and page
+    header out of a viewport big enough to hold the panel, and a viewport short
+    enough to scroll leaves the sticky footer sitting over the button. main#body
+    is exactly the three elements wanted and none of the furniture.
+  revert: >
+    None needed for this shot itself — the confirmation was never completed. The
+    dev login bypass signs in without a password, so there is no password to
+    give back to this page, and the submission it was holding was discarded when
+    the browser moved on. See staff-information-23.png for how the trigger was
+    then cleared.
+  note: >
+    No One Time PIN field is in shot because Jordan Atkinson is not enrolled in
+    two-factor authentication. The field appears above the button for staff who
+    are, and the manual says so beneath the image.
+
+    Also worth knowing for anyone re-shooting this: on the demonstration school
+    this staff member's stored Home Language (100) and Disabilities (22) are ids
+    that no longer exist in either list, so the update form proposes changing
+    them to the first available option and they turn up as changes at review
+    alongside anything actually edited. That is demonstration data drift, not
+    behaviour worth documenting.

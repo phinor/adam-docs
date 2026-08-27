@@ -51,7 +51,9 @@ Submitted values are staged — never written straight to live records — and a
 
 An update profile decides which forms a flagged family is asked to complete. Profiles are managed at **Families → Detail Update Forms → Manage Detail Update profiles** (also reachable from **Administration → Database Administration → Manage Detail Update profiles**).
 
-Three settings control how a profile takes part in the forced-update flow:
+The screen serves both families and staff, and **Entity** is what separates them: a profile created for *Families* is offered to families, and one created for *Staff* is offered to staff. The staff side is described under [Online Staff Update Forms](staff-information.md#online-staff-update-forms).
+
+Three further settings control how a profile takes part in the forced-update flow:
 
 - **Audience** — pick which group the profile applies to. The audience used by every flow described on this page is *External — Update*; existing profiles have been migrated to this audience.
 - **Default for Audience** — exactly one profile per audience can be marked as the default. The default is what self-service updates and unattended cron runs use when no specific profile is named.
@@ -167,7 +169,7 @@ Click **review changes** to open a side-by-side comparison of the old and new va
 The *Field* column names each changed field, prefixed with the section it belongs to — for example *First Parent: First Name* or *Second Parent: Cell Number*. Because the two parents (and the various groupings on a child's own details) often share identical field names, this prefix makes clear at a glance which parent or section a change applies to. Where a field belongs to no named section, the field name is shown on its own.
 
 !!! note
-    The same section prefix appears on the equivalent staff detail-review screen, reached from **Staff → Staff Administration → Review submitted changes**.
+    The same section prefix appears on the equivalent staff detail-review screen, reached from **Staff → Staff Administration → Review submitted changes**. Staff have an update flow of their own, described under [Online Staff Update Forms](staff-information.md#online-staff-update-forms).
 
 Click **Save Changes** at the bottom to commit the approvals. The family's portal banner updates to *Information update reviewed* the next time they sign in.
 

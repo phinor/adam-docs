@@ -224,20 +224,27 @@ Please see [Security Administration](security-administration-for-staff.md#securi
 
 In order to keep staff information up to date, many schools resort to giving staff the permissions to edit staff information. This is not advised since all staff then have the permissions to edit, and see, any other staff member’s personal details.
 
-ADAM offers an online update form for staff, very similar in function to the parent detail update forms.
+ADAM offers an online update form for staff, very similar in function to the [parent detail update forms](family-detail-updates.md#online-detail-updates). The staff member does the typing, and nothing they type reaches the database until somebody has approved it.
 
 !!! warning
     Staff must have the necessary permission to update their information. In the staff permissions, the permission can be found in the “Staff Admin” section, called “Edit personal information (staff\_edit\_own)”.
 
-There are three steps in the process:
+    ADAM checks this for you. Staff without the permission are left off the request list, and a note above the list says how many were left out. If you need to include somebody, give them the permission first and they will appear.
 
-1.  Send out emails to staff, asking them to update their information.
-2.  Staff click on the links in those emails, log into ADAM, and update any information that has changed.
-3.  An email is then sent to an administrative contact who is in a position to approve and update the new information.
+    Staff who are already carrying a request when the permission is taken away are simply not prompted until it is given back. Nothing is lost, and their request is still waiting.
+
+A request to update is called a **trigger**. Once a staff member has been asked, ADAM interrupts them the next time they open the ADAM home page and puts the update form in front of them, and it keeps doing so until they submit it. They also receive a reminder email, so a member of staff who rarely logs in is not left out.
+
+There are four steps in the process:
+
+1.  Ask the selected staff members to update their information.
+2.  ADAM prompts each of them at their next sign-in, and emails them a reminder.
+3.  They check their details, change what has changed, and save the form.
+4.  An email goes to an administrative contact, who approves the changes before they reach the database.
 
 ### Setting up ADAM:
 
-Before you begin, please make sure that ADAM has been configured with the email address of the person who will be responsible for verifying and approving this information. This is configured in “Site Settings”, under the “General” tab.
+Before you begin, please make sure that ADAM has been configured with the email address of the person who will be responsible for verifying and approving this information. This is configured in “[Site Settings](changing-site-settings.md#changing-site-settings)” under “**Data Management**”, in the “**Detail Updates**” section.
 
 Add in one or more email addresses (separate them with commas if you have more than one) into the block for “Staff Detail Update Mail Recipients”:
 
@@ -245,24 +252,80 @@ Add in one or more email addresses (separate them with commas if you have more t
 
 Save the site settings!
 
-### Distribute the detail update requests:
+The site administrator’s address is always included as well, so this setting adds to that list rather than replacing it. Notifications to reviewers are only sent if **Enable internal email** — in “Site Settings” under “**Communications**” — is set to **Yes**.
 
-1.  Navigate to the “**Staff**” tab and under the heading “**Staff Administration**”, click on the option “**Send online detail update form emails**”.
-2.  A list of current staff is shown. Select those who should receive a link to update their information:
+### Choosing which form staff are asked to complete
 
-![](assets/screenshots/staff-information/staff-information-09.png)
+If you do nothing here, ADAM uses its standard staff update form and everything below works as described. Read this section only if you want staff to be asked for a particular set of fields, or if you want ADAM to re-ask them at regular intervals without anybody remembering to.
 
-3.  Click on the “Email online update links” button. The selected staff will now receive a personalised copy of the following email:
+Which fields appear on the form is decided by an **update profile**. Profiles are managed at **Administration → Database Administration → Manage Detail Update profiles**, and the screen is described in full under [Configuring an update profile](family-detail-updates.md#configuring-an-update-profile). Three of its settings matter for staff:
+
+-   **Entity** must be set to **Staff**. A profile created for **Families** is never offered to staff. The entity is chosen when the profile is created and cannot be changed afterwards.
+-   **Primary Form** is the form staff will see.
+-   **Update cadence** decides whether ADAM re-asks on its own. Choose anything from *Every 2 months* to *Every 24 months* and an overnight job re-flags every current staff member who has never completed that profile, or whose last completed update for it is older than the cadence. Choose *No forced updates* and staff are only ever asked when somebody asks them.
+
+!!! note
+    The **Audience** and **Default for Audience** settings on that screen belong to the family flows. Nothing on the staff side reads them, so leave them as you find them.
+
+The overnight job skips anybody who already has an open request, and anybody whose last submission is still sitting in the review queue, so a staff member is never asked twice for the same thing. It sends no reminder email — the assumption is that a member of staff logs in often enough to be prompted.
+
+### Asking staff to update their details
+
+Click on the “**Staff**” tab and, under the “**Staff Administration**” heading, click on “**Request staff detail updates**”. A list of current staff is shown, with everybody ticked. Untick anybody who should not be asked.
+
+Only staff who are able to update their own details are listed — see the permission note above. If any have been left out, ADAM says so above the list.
+
+![](assets/screenshots/staff-information/staff-information-22.png)
+
+If your school has more than one active staff update profile, an **Update Profile** drop-down appears above the button so that you can choose which form the selected staff will be given. With one profile, or none, there is nothing to choose and no drop-down is shown.
+
+Click on **Request updates from selected staff**. ADAM confirms the request — naming the profile, where one was used — and each selected staff member receives a personalised copy of the following email:
 
 ![](assets/screenshots/staff-information/staff-information-10.png)
 
+!!! warning
+    Two permissions are needed to use this screen. “Produce Staff Information Forms (staff\_infosheet)” in the “Staff Admin” section opens the page, and “Email details update forms (detailupdate\_email)” in the “Family Admin” section puts the button on it. A user with only the first sees the list of staff and no way to submit it.
+
 ### Updating the Information:
 
-Staff can either update their information by clicking on the provided link in their email, or, at any time can click on the option “Update your personal information” located on the “Staff” tab under the heading “Staff Administration”.
+The next time the staff member opens the ADAM home page, ADAM does not show it. It shows the update form instead, headed **Update Staff Details**, with their name card above it and their current information already filled in. The menu tabs are deliberately hidden: the page has two ways out and no others, and both sit together at the foot of the form.
 
-When staff update their information, they will see a screen similar to the edit staff screen, but with only their personal information. When they click on the “Save information” button at the bottom of the screen, their details are not updated immediately. Instead they are sent to the specified email addresses who will come and approve the information.
+![](assets/screenshots/staff-information/staff-information-23.png)
+
+-   **Save information**, at the foot of the form, submits the changes. They are not written to the database — they are held for approval, and an email goes to the addresses configured above. A message thanks the staff member and returns them to the ADAM home page.
+-   **Skip for now**, beside the Save button, puts the prompt off. Nothing is recorded and the request stays open: ADAM stops asking until the staff member closes their browser, and prompts them again in their next browser session.
+
+A staff member who has been asked more than once — two profiles, say — works through the requests one at a time, oldest first. Each save clears one request and the next sign-in raises the next.
+
+!!! note
+    A staff member has only one submission waiting for approval at a time. If they submit the form again before anybody has reviewed the first one, the newer submission replaces the older one.
+
+#### Updating without being asked
+
+Staff do not have to wait to be asked. At any time they can click on the “**Staff**” tab and, under the “**Staff Administration**” heading, click on “**Update your personal information**”. The form is the same, and the changes are held for approval in exactly the same way:
 
 ![](assets/screenshots/staff-information/staff-information-11.png)
+
+!!! note
+    Updating this way does **not** clear an outstanding request. A staff member who has been flagged, and who then updates from the menu, will still be prompted at their next sign-in. Only the prompted form clears the request.
+
+#### Confirming your identity before editing
+
+The update form shows a staff member their own personal details — contact numbers, addresses, and banking information where the school’s form includes it — and then lets them be changed. A browser left open at a desk is enough to reach it, so ADAM will not open the form on a session that has been signed in for a while. It asks for the password again first.
+
+ADAM counts a session as recent for **ten minutes** after signing in, or after any other point at which the password was confirmed. This matters more than it sounds, because requests are usually raised overnight and so reach most staff in the middle of the working day rather than at sign-in.
+
+-   **Reaching the form.** A staff member whose session is older than that sees a short page in place of the form, headed **Update Staff Details**, offering **Confirm your identity** and **Skip for now**. Skipping stays free: putting the prompt off records nothing, so it never needs a password. Choosing to confirm asks for the password, and the one-time PIN as well for anybody enrolled in [two-factor authentication](two-factor-authentication.md#two-factor-authentication), and then opens the form.
+-   **Saving the form.** The ten minutes can also run out while the form is on screen, which is easily done on a long form. ADAM then shows a page headed **Confirm your identity**. Fill in the **Password** — and the **One Time PIN**, where enrolled — and click on **Confirm and save**. Everything typed into the form is carried across and saved with it.
+
+![](assets/screenshots/staff-information/staff-information-24.png)
+
+The **One Time PIN** field is only shown to staff enrolled in two-factor authentication; the picture above is of a staff member who is not.
+
+A wrong password returns the same page, with the changes still intact, and the message *“That password was not correct.”* Too many wrong passwords in a row are refused for a few minutes. Passwords entered here are counted separately from the ones entered at the login screen, so fumbling a password at this prompt can never lock a staff member out of ADAM itself. A wrong **One Time PIN** is treated differently — it counts against the same allowance as the one-time PIN at sign-in, because it is a guess at the same secret.
+
+!!! warning
+    Staff who sign in only with a [passkey](passkey-authentication.md#passkey-authentication), or through Google or Microsoft, may never have needed a password and may not know one. They can still use **Skip for now** to put the prompt off, but they will not be able to save the form. If this affects somebody at your school, make sure they have a working password for the authentication method their record uses — see [Staff Passwords](staff-passwords.md#staff-passwords) — before asking them to update their details.
 
 ### Approving the Information:
 
