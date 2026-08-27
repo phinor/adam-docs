@@ -114,20 +114,6 @@ application, and this page is written against the fixed behaviour:
 - the ADAM home page no longer redirects a staff member to a prompt that would refuse them, so a
   request made before the permission existed simply waits instead of breaking the page.
 
-**What is left is the third piece, and it is a development matter rather than a documentation one:**
-a staff detail-update request still cannot be withdrawn. `clearOpenTrigger ()` exists and nothing
-calls it, and staff have no equivalent of **View online detail update report** to see outstanding
-requests in the first place. It is recorded in the application's own `TODO.md` under *Feature Gaps*.
-
-**What this page will need when that ships**: a subsection under *Asking staff to update their
-details* covering the staff-side report and its **clear** action. The page says nothing about
-withdrawing a request at the moment, because there is nothing a reader could do — which is the gap,
-not an omission to correct now.
-
-**Left behind on the dev instance:** an open trigger for Isabelle Alexander (staff 305), raised
-before the fix. It is now harmless — she reaches the ADAM home page normally and is simply not
-prompted — but it is still there, and there is still no way to remove it through the interface.
-
 ---
 
 ## Heads of Subject — one question for development
