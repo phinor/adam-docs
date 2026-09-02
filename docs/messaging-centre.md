@@ -19,6 +19,31 @@ The first step in any of these will be to select the module that you wish to use
 
 ![](assets/screenshots/messaging-centre/messaging-centre-02.png)
 
+### Choosing an audience
+
+Having chosen a module, ADAM asks you to select an audience — *“Please select an audience to send your email to:”*, or *“...your SMS to:”* if you picked an SMS module — and offers a list of the groups of people you are allowed to write to. You will only see the audiences that your permissions allow, so your list may be shorter than the one below.
+
+-   **Pupils by class** — choose a subject, then the classes within it. This is the option described in the rest of this section, and is the one most people use.
+-   **Pupils by grade** — choose one or more grades.
+-   **Pupils by filter** — build a filter, in the same way you would for a [scratch list](scratch-lists.md#scratch-lists), and message everybody it matches.
+-   **Staff** — choose from the staff of the school.
+-   **Admissions** — applicants and their parents, chosen by the year and the grades they are entering and by their registration statuses.
+-   **Admissions by filter** — applicants and their parents, chosen with a filter. See [Messaging applicants and their parents](#messaging-applicants-and-their-parents) below.
+-   **Alumni** — pupils who have graduated.
+-   **Leavers** — pupils who have left the school.
+
+Each audience also has a menu option of its own, which takes you straight to that audience without going past this list. The three **Messaging Centre** options listed at the start of this section all lead to **Pupils by class**; the rest are:
+
+-   **Pupils by grade:** **Grades → Messaging and Communications → Messaging Centre (by grade)**
+-   **Pupils by filter:** **Pupils → Messaging and Communications → Messaging Centre (by filter)**
+-   **Staff:** **Staff → Messaging and Communications → Messaging Centre**
+-   **Admissions:** **Admissions → Messaging and Communications → Messaging Centre for Admissions**
+-   **Admissions by filter:** **Admissions → Messaging and Communications → Messaging Centre for Admissions (by filter)**
+-   **Alumni:** **Alumni → Messaging and Communications → Messaging Centre for Alumni**
+-   **Leavers:** **Alumni → Messaging and Communications → Messaging Centre for Leavers**
+
+If your school has only one messaging module enabled, these menu options take you directly to the audience’s own screen. If more than one is enabled, ADAM asks you to choose the module first.
+
 You will then need to select a subject. By selecting a subject, ADAM will show you a list of classes in that subject and allow you to select which of those classes you would like to send your message to. Many schools will set up some classes specifically for communication so that it is easy to select a whole grade, or other specific groups of pupils/parents that you may need to communicate with on a regular basis.
 
 ![](assets/screenshots/messaging-centre/messaging-centre-03.png)
@@ -63,6 +88,35 @@ Once you have composed your message, click on the **Send** button to have ADAM q
 
 !!! warning
     Note that regardless of your selected delivery time, all messages are queued with a minimum of 5 minutes lead time before they are processed.
+
+### Messaging applicants and their parents
+
+Applicants — pupils who have applied to the school but have not yet enrolled — are not part of the ordinary pupil audiences, and they have two audiences of their own. Both require the **SMS and Email Admissions** permission, described under [Permissions Required for using the Messaging Centre](#permissions-required-for-using-the-messaging-centre) below.
+
+#### By entering year and grade
+
+Choose the **Admissions** audience, or navigate to **Admissions → Messaging and Communications → Messaging Centre for Admissions**. ADAM asks for three things:
+
+-   **Entering in Year:** the year the applicants are due to start.
+-   **Entering in Grades:** the grades they are entering. To message every applicant for that year, either select all the grades or deselect all of them.
+-   **Registration Statuses:** which registration statuses to include. Your school’s default status for applicants is ticked for you.
+
+Click on the **Next** button to see the list of recipients.
+
+This is the quickest way to reach a whole intake, but it can only ask those three questions.
+
+#### By filter
+
+Choose the **Admissions by filter** audience, or navigate to **Admissions → Messaging and Communications → Messaging Centre for Admissions (by filter)**.
+
+Instead of the three fields above, you build a filter — exactly the same filter builder you would use for a [scratch list](scratch-lists.md#scratch-lists), and with the same fields available. That means you can select applicants on anything ADAM records about them, including **Date of Application**, **Months Since Application**, **Previous School**, **Siblings At School**, and any custom fields your school has added.
+
+Add your criteria and click on **Update the filter** to see how many applicants match. As long as the filter matches 200 applicants or fewer, ADAM lists their names underneath so that you can check you have caught the right people. Adjust the criteria and update the filter as many times as you need.
+
+When you are satisfied, click on the button at the bottom of the page — it reads **Next – with 12 pupils selected**, or however many your filter has matched — and ADAM shows you the list of recipients in the usual way, from which you continue to the composer.
+
+!!! note
+    This audience only ever sees applicants. Pupils already enrolled at the school are reached with the **Pupils by filter** audience instead, which offers the same filter builder over current pupils. Neither audience can see the other’s pupils, and the two are controlled by different permissions.
 
 ## Composing Your Message
 
@@ -118,6 +172,13 @@ Before a user can send messages from the messaging centre, they need a few permi
 ### Step 1:
 
 The first permission is a general one that is applied to the whole permission group. They require, at a minimum, “Can make use of the messaging centre (*messaging\_centre*)”. This is found on the **Messaging** tab, and under the heading **E-mail**. For more information on changing staff permissions, please see [Security Administration for Staff](security-administration-for-staff.md#security-administration-for-staff) elsewhere in this documentation.
+
+That permission covers the pupil and staff audiences. The remaining audiences are held separately, on the same **Messaging** tab but under the heading **Admissions and Alumni**:
+
+-   “SMS and Email Admissions (*messaging\_centre\_admissions*)” allows both the **Admissions** and the **Admissions by filter** audiences.
+-   “SMS and Email Alumni (*messaging\_centre\_alumni*)” allows the **Alumni** and **Leavers** audiences.
+
+These are deliberately separate from the general permission. A user who can message the school’s current pupils does not thereby gain the ability to message applicants, and a user given only one of these permissions will see only that audience in the list.
 
 ### Step 2:
 

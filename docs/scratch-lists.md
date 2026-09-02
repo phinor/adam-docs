@@ -47,6 +47,10 @@ To generate these lists, navigate to the appropriate sections:
 
 -   View a list of pupils by registration status: **Pupils → Scratch Lists → View Registration Status scratch List**
 -   View Admissions pupils for a particular year, and grade:  **Admissions → Lists and Labels → Admissions scratch lists**
+-   List applicants matching a set of filters: **Admissions → Lists and Labels → Admissions scratch list using filters**
+
+!!! note
+    The same filters are available in the Messaging Centre, where they select who receives a message rather than who appears on a list. See [Messaging applicants and their parents](messaging-centre.md#messaging-applicants-and-their-parents) for applicants, and the **Pupils by filter** audience under [Choosing an audience](messaging-centre.md#choosing-an-audience) for current pupils.
 
 -   Alumni:
 
