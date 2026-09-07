@@ -1,6 +1,9 @@
 site_name: ADAM Instruction Manual
 site_description: End-user documentation for ADAM (Academic Data Manager)
 site_author: ADAM EduTech
+# Required for sitemap.xml: MkDocs' sitemap template skips any page without an
+# absolute URL, so without this the build writes an empty <urlset>.
+site_url: https://help.adam.co.za/
 
 use_directory_urls: false
 
@@ -11,6 +14,7 @@ plugins: []
 
 hooks:
   - hooks/youtube_embed.py
+  - hooks/sitemap_lastmod.py
 
 theme:
   name: null

@@ -1,0 +1,26 @@
+# Robots directives for help.adam.co.za
+#
+# MkDocs generates no robots.txt of its own, so this file is copied verbatim
+# from docs/ to the site root on every build. (A sitemap.xml placed here would
+# NOT survive: MkDocs writes its own over the top. The sitemap is generated
+# from site_url in mkdocs.yml, dated by hooks/sitemap_lastmod.py.)
+
+User-agent: *
+Allow: /
+
+Sitemap: https://help.adam.co.za/sitemap.xml
+
+# This is a public manual and we want it found, so nothing is disallowed above.
+#
+# To stop AI training crawlers from using the manual, uncomment the block below.
+# It has no effect on search indexing: Googlebot, Bingbot and the rest are
+# separate crawlers from the ones named here. Note that this is a request, not
+# an enforcement — only well-behaved crawlers honour it.
+#
+# User-agent: GPTBot
+# User-agent: ClaudeBot
+# User-agent: CCBot
+# User-agent: Google-Extended
+# User-agent: PerplexityBot
+# User-agent: Bytespider
+# Disallow: /
