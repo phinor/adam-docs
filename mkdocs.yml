@@ -19,6 +19,11 @@ hooks:
 theme:
   name: null
   custom_dir: theme
+  # Must be declared here, not in theme/mkdocs_theme.yml: MkDocs only reads that
+  # file for a packaged theme, and this one is name: null. Without this line
+  # theme/404.html is never rendered, silently.
+  static_templates:
+    - 404.html
 
 markdown_extensions:
   - admonition

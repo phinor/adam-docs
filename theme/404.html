@@ -1,19 +1,73 @@
 <!DOCTYPE html>
 <html lang="en-za">
+{#
+    Served by Apache as `ErrorDocument 404 /404.html`, which keeps the 404
+    status while showing this page, so search engines drop the dead URL and a
+    reader still lands somewhere useful.
+
+    Two things make that work, and both are easy to undo by accident:
+
+    - `static_templates: [404.html]` under `theme:` in mkdocs.yml. The same
+      declaration in theme/mkdocs_theme.yml is ignored, because MkDocs only
+      reads that file for a packaged theme and this one is `name: null`.
+    - `site_url` in mkdocs.yml. MkDocs gives error templates a base URL taken
+      from it, so the links below come out root-absolute (/css/styles.css) and
+      resolve from any depth. Without it they would be relative and break on
+      any missing URL below the site root.
+
+    `page` does not exist in a static template, so nothing here may reference
+    it. `nav` and `config` do.
+#}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ADAM Help - Page not found</title>
+    <meta name="description" content="{{ config.site_description|default('') }}">
+    <meta name="robots" content="noindex">
     <link rel="icon" type="image/x-icon" href="{{ 'img/favicon.ico'|url }}">
     <link rel="stylesheet" href="{{ 'css/styles.css'|url }}">
+    {% for path in config.extra_css %}
+    <link rel="stylesheet" href="{{ path|url }}">
+    {% endfor %}
 </head>
 <body>
     <header><img src="{{ 'img/logo.png'|url }}" alt="ADAM"></header>
+
+    <button id="navtoggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+
+    <nav>
+        <ul class="menu1">
+            {% for nav_item in nav %}
+            <li><a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+
     <article>
         <div id="bodycontainer">
-            <h1>Page not found</h1>
-            <p>The page you're looking for doesn't exist. Try the navigation on the left, or <a href="{{ ''|url }}">start at the home page</a>.</p>
+            <div class="searchbar">
+                <script async src="https://cse.google.com/cse.js?cx=017047591166674552263:0idgv_vajd0">
+                </script>
+                <div class="gcse-search" data-linkTarget="_self"></div>
+            </div>
+            <div class="content">
+                <h1>Page not found</h1>
+                <p>There is no page at this address. It may have been renamed, or
+                    the link that brought you here may be out of date.</p>
+                <p>Every page of the manual is listed in the navigation, and the
+                    search box above will look through all of them. If you would
+                    rather start from the beginning, go to the
+                    <a href="{{ 'index.html'|url }}">home page</a>.</p>
+                <p>If a link on our own site brought you here, please tell us at
+                    <a href="mailto:help@adam.co.za">help@adam.co.za</a> so we can
+                    mend it.</p>
+            </div>
         </div>
     </article>
+
+    <script src="{{ 'js/script.js'|url }}"></script>
+    {% for path in config.extra_javascript %}
+    <script src="{{ path|url }}"></script>
+    {% endfor %}
 </body>
 </html>
