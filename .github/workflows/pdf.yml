@@ -60,7 +60,20 @@ jobs:
         # --with-deps installs the system libraries the browser needs
         # (libnspr4, libnss3, libasound2); without them Chromium fails to
         # start and the build reports only a Playwright timeout.
-        run: python -m playwright install --with-deps chromium
+        #
+        # It runs `apt-get update` to do that, which reads every source
+        # configured on the runner image — including Google's Chrome
+        # repository, whose index has been seen to fail checksum validation
+        # ("Hash Sum mismatch"). apt then exits 100 and takes the build with
+        # it. Nothing here needs that repository: Playwright downloads its own
+        # browser build, and the dependencies come from Ubuntu's own archive.
+        # Dropping the source and the cached indexes leaves apt reading only
+        # what this step actually uses.
+        run: |
+          sudo rm -f /etc/apt/sources.list.d/google-chrome*
+          sudo rm -rf /var/lib/apt/lists/*
+          sudo apt-get update
+          python -m playwright install --with-deps chromium
 
       - name: Build the PDF
         run: mkdocs build -f mkdocs.pdf.yml --site-dir site-pdf
@@ -111,11 +124,3 @@ jobs:
             --title 'ADAM Instruction Manual (PDF)' \
             --notes 'Latest build of the manual. Replaced automatically on every change to the documentation.'
           gh release upload "$RELEASE_TAG" site-pdf/adam-manual.pdf --clobber
-
-      - uses: actions/upload-artifact@v4
-        # Keeps a copy against the specific commit, which the moving release
-        # tag cannot offer.
-        with:
-          name: adam-manual-pdf
-          path: site-pdf/adam-manual.pdf
-          retention-days: 14
