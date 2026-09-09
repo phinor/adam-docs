@@ -111,11 +111,3 @@ jobs:
             --title 'ADAM Instruction Manual (PDF)' \
             --notes 'Latest build of the manual. Replaced automatically on every change to the documentation.'
           gh release upload "$RELEASE_TAG" site-pdf/adam-manual.pdf --clobber
-
-      - uses: actions/upload-artifact@v4
-        # Keeps a copy against the specific commit, which the moving release
-        # tag cannot offer.
-        with:
-          name: adam-manual-pdf
-          path: site-pdf/adam-manual.pdf
-          retention-days: 14
