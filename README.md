@@ -45,6 +45,35 @@ in the template:
   browser it downloaded, typically `~/.cache/ms-playwright/chromium-*/chrome-linux64/chrome` — run
   `ls ~/.cache/ms-playwright/` to see the exact version installed and fill in the real path.
 
+## The PDF manual
+
+The whole manual is also published as a single PDF, linked from the home page and served at
+`/adam-manual.pdf`. It is **not** built by `bin/build.sh`: rendering it needs a headless Chromium that
+the mkdocs image does not carry, and the deploy script runs every five minutes.
+
+Instead [`.github/workflows/pdf.yml`](.github/workflows/pdf.yml) builds it on every push to `main`
+that touches the documentation, and uploads it to the `manual-pdf` release. `bin/build.sh` then
+collects that asset into each deploy, with a conditional request so an unchanged manual costs one
+round trip rather than 40 MB. A missing or unreachable PDF is never fatal to a deploy; it just leaves
+the download link 404ing until the next successful workflow run.
+
+To build it yourself:
+
+```bash
+pip install -r requirements.txt -r requirements-pdf.txt
+python -m playwright install --with-deps chromium
+mkdocs build -f mkdocs.pdf.yml --site-dir site-pdf
+```
+
+That takes a couple of minutes and writes `site-pdf/adam-manual.pdf` (~750 pages, ~40 MB) alongside a
+PDF of each individual chapter.
+
+[`mkdocs.pdf.yml`](mkdocs.pdf.yml) inherits the whole site config, so the two builds cannot drift
+apart, and adds three hooks that exist only for the PDF: `hooks/pdf_theme.py` (makes this theme
+printable), `hooks/pdf_links.py` (stops `mailto:` addresses being rewritten into web URLs) and
+`hooks/pdf_bookmarks.py` (adds the chapter bookmarks). Each explains in its docstring what breaks
+without it — all three failures are silent, producing a PDF that builds successfully and is wrong.
+
 ## Deployment
 
 The site is self-hosted at `https://help.adam.co.za/`, served as static files by the same web server that hosts ADAM. The deployment server runs `bin/build.sh` from a cron, which:
