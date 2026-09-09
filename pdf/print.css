@@ -1,0 +1,63 @@
+/* Print rules for the PDF build, injected by mkdocs-exporter.
+ *
+ * Used only by `mkdocs.pdf.yml`; the website never loads this file.
+ *
+ * `hooks/pdf_theme.py` has already removed the site chrome from the DOM and
+ * stripped every `@media screen` block out of the theme's stylesheet, so what
+ * remains here is only what the printed page needs and the screen never had:
+ * a sheet size, and rules for breaking content across pages.
+ */
+
+@page {
+    size: A4;
+    margin: 18mm 16mm 20mm 16mm;
+}
+
+body {
+    margin: 0;
+    /* Slightly tighter than the theme's 12pt: A4 is narrower than the browser
+       column this manual was written against. */
+    font-size: 10.5pt;
+}
+
+/* Belt and braces. The chrome is removed from the DOM before paged.js runs; if
+   that ever stops matching the template, hiding it here keeps the manual
+   readable instead of interleaving a nav menu with every chapter. */
+header,
+nav,
+#navtoggle,
+.toc-sidebar,
+.searchbar {
+    display: none !important;
+}
+
+/* Screenshots are captured at browser width and must not overflow the text
+   block. The theme scopes the same rule to `article img`. */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Pagination. A heading stranded at the foot of a page, or a split table row,
+   is the usual way a generated PDF looks generated. */
+h1, h2, h3, h4 {
+    break-after: avoid-page;
+}
+
+figure, tr, pre, blockquote {
+    break-inside: avoid;
+}
+
+/* Wide tables are the one thing with no screen fallback: without a fixed
+   layout a long cell pushes the table past the page edge and the overflow is
+   simply lost. */
+table {
+    width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
