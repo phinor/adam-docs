@@ -1,0 +1,49 @@
+# Builds the manual as a single PDF. Not used by the website.
+#
+#   mkdocs build -f mkdocs.pdf.yml --site-dir site-pdf
+#
+# Kept separate from `mkdocs.yml` because `bin/build.sh` deploys the site
+# through the `squidfunk/mkdocs-material` image, which has neither
+# mkdocs-exporter nor a browser to render with: adding these plugins to the
+# main config would break every deploy. See `.github/workflows/pdf.yml`, which
+# is where this config is actually run, and `requirements-pdf.txt` for what it
+# needs installed.
+#
+# Everything else — nav, markdown extensions, theme, site_url — is inherited,
+# so the manual cannot drift from the website.
+
+INHERIT: ./mkdocs.yml
+
+# `INHERIT` replaces lists rather than merging them, so the site's own hooks
+# have to be repeated here. A hook added to mkdocs.yml must be added here too,
+# or it will silently not apply to the PDF.
+hooks:
+  - hooks/youtube_embed.py
+  - hooks/sitemap_lastmod.py
+  - hooks/pdf_theme.py
+  - hooks/pdf_links.py
+  - hooks/pdf_bookmarks.py
+
+plugins:
+  - exporter:
+      formats:
+        pdf:
+          enabled: true
+          # Each page is rendered in its own browser tab; four at a time keeps
+          # a CI runner busy without exhausting its memory.
+          concurrency: 4
+          stylesheets:
+            - pdf/print.css
+          browser:
+            # The longest chapters are image-heavy and slow to paginate. Well
+            # above what any page currently needs, but a timeout here loses
+            # the whole build, so it is not the place to economise.
+            timeout: 90000
+          aggregator:
+            enabled: true
+            output: adam-manual.pdf
+            # No cover templates exist yet; `all` would emit a blank leaf per
+            # chapter.
+            covers: none
+            metadata:
+              title: ADAM Instruction Manual

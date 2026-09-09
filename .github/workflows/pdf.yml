@@ -1,0 +1,121 @@
+name: Manual PDF
+
+# Builds the whole manual as a single PDF and publishes it to a fixed release
+# tag, from where `bin/build.sh` collects it on the next deploy.
+#
+# The PDF is deliberately not built on the deployment server. `bin/build.sh`
+# runs from cron every five minutes and renders through the
+# `squidfunk/mkdocs-material` image; the PDF needs a headless Chromium (~650 MB
+# unpacked) and around two minutes of CPU, neither of which belongs in that
+# loop. This repository is public, so the Actions minutes are free.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'theme/**'
+      - 'hooks/**'
+      - 'pdf/**'
+      - 'mkdocs.yml'
+      - 'mkdocs.pdf.yml'
+      - 'requirements.txt'
+      - 'requirements-pdf.txt'
+      - '.github/workflows/pdf.yml'
+  workflow_dispatch:
+
+# One build at a time; a newer commit makes an in-flight PDF obsolete.
+concurrency:
+  group: manual-pdf
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+env:
+  RELEASE_TAG: manual-pdf
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # hooks/sitemap_lastmod.py dates each page from the last commit that
+          # touched it, so the full history has to be present. A shallow clone
+          # degrades every page to the build date rather than failing.
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt -r requirements-pdf.txt
+
+      - name: Install Chromium
+        # --with-deps installs the system libraries the browser needs
+        # (libnspr4, libnss3, libasound2); without them Chromium fails to
+        # start and the build reports only a Playwright timeout.
+        run: python -m playwright install --with-deps chromium
+
+      - name: Build the PDF
+        run: mkdocs build -f mkdocs.pdf.yml --site-dir site-pdf
+
+      - name: Check the PDF is whole
+        # A rendering failure does not always fail the build: a page that will
+        # not paginate can yield a PDF that is present, small and blank. Assert
+        # the shape of the thing instead of trusting the exit code.
+        run: |
+          python - <<'PY'
+          import pathlib
+          import sys
+
+          from pypdf import PdfReader
+
+          path = pathlib.Path('site-pdf/adam-manual.pdf')
+          chapters = len(list(pathlib.Path('docs').glob('*.md')))
+          reader = PdfReader(path)
+          pages = len(reader.pages)
+          outline = len(reader.outline)
+          text = sum(bool((page.extract_text() or '').strip()) for page in reader.pages)
+
+          print(f'{path}: {path.stat().st_size / 1024 / 1024:.1f} MB, '
+                f'{pages} pages, {outline} bookmarks, {text} pages with text')
+
+          problems = []
+
+          # Not every .md is necessarily in the nav, so these are lower bounds
+          # rather than equalities: they catch a collapsed build, not drift.
+          if pages < chapters:
+              problems.append(f'{pages} pages for {chapters} chapters')
+          if outline < chapters * 0.9:
+              problems.append(f'{outline} bookmarks for {chapters} chapters')
+          if text < pages * 0.5:
+              problems.append(f'only {text} of {pages} pages carry text')
+
+          if problems:
+              sys.exit('PDF looks wrong: ' + '; '.join(problems))
+          PY
+
+      - name: Publish the PDF
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # A single moving tag, so the download URL never changes and the site
+        # can link to it statically. `--clobber` replaces the previous asset.
+        run: |
+          gh release view "$RELEASE_TAG" >/dev/null 2>&1 || gh release create "$RELEASE_TAG" \
+            --title 'ADAM Instruction Manual (PDF)' \
+            --notes 'Latest build of the manual. Replaced automatically on every change to the documentation.'
+          gh release upload "$RELEASE_TAG" site-pdf/adam-manual.pdf --clobber
+
+      - uses: actions/upload-artifact@v4
+        # Keeps a copy against the specific commit, which the moving release
+        # tag cannot offer.
+        with:
+          name: adam-manual-pdf
+          path: site-pdf/adam-manual.pdf
+          retention-days: 14

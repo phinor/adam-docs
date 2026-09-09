@@ -1,0 +1,14 @@
+# Extra dependencies for the PDF build (`mkdocs.pdf.yml`), on top of
+# requirements.txt. The website build does not need any of these.
+#
+# mkdocs-material is not a typo: mkdocs-exporter's theme factory imports its
+# Material adapter eagerly, so the PDF build dies with ModuleNotFoundError
+# without it — even though this site uses a custom theme and never renders
+# with Material. It is already pinned in requirements.txt; repeated here so
+# this file states the whole truth about what the PDF build needs.
+mkdocs-exporter==6.2.0
+
+# Pinned explicitly although mkdocs-exporter pulls it in: `playwright install`
+# fetches a browser build matched to this version, so an unpinned bump would
+# change what CI renders with.
+playwright==1.62.0
