@@ -127,8 +127,8 @@ records match, the names listed beneath it, and the **Next** button at the foot 
 That single image carries the whole section: the builder, the running count, the name check and the
 way out. Place it in *By filter*, after the paragraph that ends "...as many times as you need."
 
-!!! note for whoever captures this
-    The demonstration school must have applicants with enough variety to make a meaningful filter —
+> [!NOTE]
+> The demonstration school must have applicants with enough variety to make a meaningful filter —
     check that **Admissions → Lists and Labels → Admissions scratch list using filters** returns rows
     before setting up the shot. If it does not, the demonstration data needs seeding first and that
     is the blocker, not the screenshot.
