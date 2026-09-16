@@ -11,7 +11,12 @@
         "--viewport-size", "900x1200",
         "--allowed-origins", "https://dev.example.adam.co.za",
         "--output-dir", "/tmp/adam-docs-capture"
-      ]
+      ],
+      "env": {
+        "LANG": "en_ZA.UTF-8",
+        "LANGUAGE": "en_ZA",
+        "LC_ALL": "en_ZA.UTF-8"
+      }
     }
   }
 }

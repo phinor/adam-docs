@@ -49,6 +49,25 @@ adding `fonts.googleapis.com` to `--allowed-origins` instead — that would weak
 keeps the browser off the open internet, and would make every future capture depend on Google's
 CDN being reachable, which is exactly the kind of external dependency the rail exists to remove.
 
+Confirm the browser draws dates the South African way. Chromium renders date and time fields — and
+their empty placeholders — in its interface language, which it takes from the `LANG`, `LANGUAGE`
+and `LC_ALL` environment of the process that launched it. Playwright's own `locale` option does not
+reach them. Left to the default, a filled field reads `09/16/2026, 08:00 AM`, which no South
+African reader's browser would show them. `.mcp.json` sets all three variables to `en_ZA` so that
+fields read `16/09/2026, 08:00` instead. Check it on any page:
+
+```js
+() => navigator.languages
+```
+
+It must be `['en-GB']`. Chromium has no South African English language pack and falls back to
+British English, which formats dates identically; `en-ZA` never appears. `['en-US']` means the
+setting has not taken: `.mcp.json` is missing the `env` block from
+`.mcp.json.dist`, or the MCP server was not restarted after it was added. Do not substitute a
+locale that gives year-first dates: only Japanese and Chinese do so with slashes, and they turn every
+other browser-drawn string — empty date placeholders, file inputs — into characters the machine
+has no font for.
+
 ## Logging in
 
 No credentials exist or are needed. `env = dev` enables a bypass:
