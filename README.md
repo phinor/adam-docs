@@ -69,10 +69,18 @@ That takes a couple of minutes and writes `site-pdf/adam-manual.pdf` (~750 pages
 PDF of each individual chapter.
 
 [`mkdocs.pdf.yml`](mkdocs.pdf.yml) inherits the whole site config, so the two builds cannot drift
-apart, and adds three hooks that exist only for the PDF: `hooks/pdf_theme.py` (makes this theme
-printable), `hooks/pdf_links.py` (stops `mailto:` addresses being rewritten into web URLs) and
-`hooks/pdf_bookmarks.py` (adds the chapter bookmarks). Each explains in its docstring what breaks
-without it — all three failures are silent, producing a PDF that builds successfully and is wrong.
+apart, and adds four hooks that exist only for the PDF: `hooks/pdf_theme.py` (makes this theme
+printable), `hooks/pdf_links.py` (stops `mailto:` addresses being rewritten into web URLs),
+`hooks/pdf_bookmarks.py` (adds the chapter bookmarks) and `hooks/pdf_cover.py` (dates the front
+cover). Each explains in its docstring what breaks without it — all four failures are silent,
+producing a PDF that builds successfully and is wrong.
+
+The manual opens on a cover page: the site header's blue, the ADAM logo, and the date of the last
+commit that touched `docs/`. Its markup is [`pdf/cover.html`](pdf/cover.html) and its styling is the
+`Front cover` section of [`pdf/print.css`](pdf/print.css); `hooks/pdf_cover.py` fills in the date,
+because mkdocs-exporter reads cover templates as plain text rather than as Jinja. The cover is
+attached to every page and then removed from all but the first by `aggregator.covers: limits`, so
+each per-chapter PDF carries a copy of it too. Nothing publishes those, so it does not matter.
 
 ## Deployment
 

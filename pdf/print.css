@@ -70,3 +70,75 @@ pre {
     white-space: pre-wrap;
     word-wrap: break-word;
 }
+
+/* Front cover ----------------------------------------------------------- */
+
+/* A named page, so the cover can bleed to the paper edge while every other
+   page keeps the margins set at the top of this file. paged.js implements
+   `page:` and gives this one sheet its own margin box; without it the cover
+   would inherit the 18/16/20/16mm margins and the blue would stop short of
+   every edge, reading as a panel rather than as a cover. */
+@page cover {
+    margin: 0;
+}
+
+.mkdocs-exporter-front-cover {
+    page: cover;
+    break-after: page;
+}
+
+.manual-cover {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 210mm;
+    height: 297mm;
+    background-color: rgb(86, 163, 217);
+    color: #fff;
+    /* Chromium omits background colours from print output unless told
+       otherwise, and there are two independent ways to tell it: the browser
+       call and the document. mkdocs-exporter already passes
+       `print_background=True` to Playwright's `page.pdf()`, and that alone is
+       enough today — the colour was checked with these two lines removed and
+       it still printed. They stay because the other half of the pair is in a
+       dependency's source rather than in this repository, and the failure it
+       would guard against is a cover printed on white paper. */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+/* The logo is white on transparent, which is why it needs the blue behind it
+   and why no colour is set on it here.
+
+   The border is the theme's, not a default: `article img` gives every image a
+   1pt grey rule and rounded corners, which is right for a screenshot and draws
+   a visible box around the logo on the cover. */
+.manual-cover-logo {
+    width: 55%;
+    height: auto;
+    border: none;
+    border-radius: 0;
+}
+
+/* Letter-spaced to echo the gaps between the letters of the logo above it. */
+.manual-cover-title {
+    margin: 6mm 0 0;
+    font-size: 36pt;
+    font-weight: 700;
+    letter-spacing: 0.45em;
+    /* Tracking is added to the right of every letter, the last one included,
+       so the trailing gap is inside the centred line box and the word sits
+       half the tracking left of true centre. Indenting by the full amount
+       moves a centred line right by half of it, which is the correction. */
+    text-indent: 0.45em;
+}
+
+.manual-cover-date {
+    position: absolute;
+    right: 16mm;
+    bottom: 16mm;
+    margin: 0;
+    font-size: 10pt;
+}

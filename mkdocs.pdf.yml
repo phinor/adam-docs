@@ -23,6 +23,7 @@ hooks:
   - hooks/pdf_theme.py
   - hooks/pdf_links.py
   - hooks/pdf_bookmarks.py
+  - hooks/pdf_cover.py
 
 plugins:
   - exporter:
@@ -34,6 +35,11 @@ plugins:
           concurrency: 4
           stylesheets:
             - pdf/print.css
+          covers:
+            # Prepended to every page, then thrown away again for all but the
+            # first by `aggregator.covers` below. `hooks/pdf_cover.py` fills in
+            # the date; the template is read as plain text, not as Jinja.
+            front: pdf/cover.html
           browser:
             # The longest chapters are image-heavy and slow to paginate. Well
             # above what any page currently needs, but a timeout here loses
@@ -42,8 +48,15 @@ plugins:
           aggregator:
             enabled: true
             output: adam-manual.pdf
-            # No cover templates exist yet; `all` would emit a blank leaf per
-            # chapter.
-            covers: none
+            # `limits` keeps the front cover on the first document in the
+            # aggregate and the back cover on the last. There is no back
+            # cover, so the effect is one cover at the front of the manual;
+            # `all` would repeat it before every chapter.
+            #
+            # The per-chapter PDFs written alongside the manual keep their own
+            # copy of the cover, which this setting does not reach. Nothing
+            # publishes them — `.github/workflows/pdf.yml` uploads only
+            # `adam-manual.pdf` — so they are left as they are.
+            covers: limits
             metadata:
               title: ADAM Instruction Manual
