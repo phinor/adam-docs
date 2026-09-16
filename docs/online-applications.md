@@ -25,13 +25,13 @@ The school sets up the online application process. This includes:
 
 #### Step 1:
 
-Parents visit the online application form and submit their ID number, cell number and email address to begin the process. ADAM checks to see whether the ID number entered belongs to an existing parent. If it does, ADAM requires a login for the parents to ensure that a genuine application is being made and to ensure that no data is leaked about that family to unknown third parties.
+Parents visit the online application form and submit their ID or passport number, email address, contact telephone number and the number of children they are applying for. Everybody sees the same form and the same reply, so the screen never reveals whether an ID number already belongs to a parent at the school. ADAM emails a link that starts the application. If the ID number belongs to an existing parent, that link goes to the email address the school already holds for them, rather than to the address just typed in — so no third party can use somebody else’s ID number to reach their family’s details.
 
 #### Step 2:
 
-After submitting their details, ADAM sends an email to confirm the parents email address. The email will contain a link to the application form which they will need to click on to proceed. If the school has set up [online agreements](online-agreements.md#online-agreements) for the **Admissions Parents** audience, applicants are first asked to read and respond to each outstanding agreement before the application form is shown. The parent will be asked to complete the application form with both their and the applicant child’s information.
+After submitting their details, the parent receives an email containing a link that is valid for 24 hours. Clicking it shows them their details to check, and nothing is created until they click **Start Application**. ADAM then creates the application, emails them a second link to the application form itself, and takes them straight to it. If the school has set up [online agreements](online-agreements.md#online-agreements) for the **Admissions Parents** audience, applicants are first asked to read and respond to each outstanding agreement before the application form is shown. The parent will be asked to complete the application form with both their and the applicant child’s information.
 
-If ADAM determines that the family already exists in its database, they will be prompted to log in first. Only the child’s information will be requested.
+If the family already exists in ADAM, only the child’s information is requested. No password is asked for at any point during an application. Parents who already use the portal can log in first instead and start the application from there, without waiting for an email.
 
 The parents can save the contents of the form and revisit it as necessary to complete it.
 
@@ -83,6 +83,8 @@ There are a few things that need to be checked first. In the [Site Settings](cha
     -   **URL for external access:** Ensure that this matches the address that you normally type in to get to ADAM. Note that this setting might not be configurable on some servers and a message will appear saying “Set in the configuration file.” If this is the case, you can carry on!
 
 Don’t forget to save the settings when you’ve updated them!
+
+The wording parents see at each stage is also yours to change. In the same settings screen, under the **Admissions** category and the **Online Applications** heading, **Collect ID Number** and **Collect Email Address** are the two messages shown above the opening form, **Confirmation of Email** is the message shown once the form has been submitted, and **Receipt of Application** is shown after the application has been submitted to the school. The default wording of **Collect ID Number** no longer promises existing parents a login step, because there is no longer one; if your school has customised that message, ADAM has left your version alone, so it is worth re-reading it for any promise it still makes about logging in.
 
 ### Customising the Application Form
 
@@ -136,7 +138,7 @@ https://demo.adam.co.za**/apply**
 
 ### Communication from the Online Application Module
 
-During the application process, ADAM sends an email to applicants in order for them to confirm their email addresses. There are three other emails that can be sent out, but each of these must be enabled before they will be sent:
+During the application process, ADAM always sends two emails: the link that starts the application, and, once the parent has confirmed their details, the link to the application form itself. There are three other emails that can be sent out, but each of these must be enabled before they will be sent:
 
 1.  **Confirmation of receipt of application form:** This email is sent at the end of the application process once they have clicked on the “Submit Application” button at the end of their application procedure.
 2.  **Application approval:** When the school accepts the application by “approving” it, an email can be sent to parents with further steps. This may include instructions for paying a deposit and for [uploading documents into ADAM](document-repository.md#parent-uploads-into-the-document-repository).
@@ -146,12 +148,15 @@ The contents of the emails that ADAM sends [can be customised](email-message-tem
 
 ![](assets/screenshots/online-applications/online-applications-01.png)
 
-In the “**Applications**” section, you will find the emails that are relevant here. The first, **New Application**, is the email confirmation message that is sent is to confirm a parent’s email address. Note that it is crucial that this email contain the “{link}” code for parents to be able to continue the application process.
+In the “**Applications**” section, you will find the emails that are relevant here. Three of them carry a link, and it is crucial that each one keeps its “{link}” or “{button:…}” code, or parents will have no way to continue.
 
--   The template listed second, **Notify Parent of Application Approval**, is used when the application is approved. Edit this template to give the parent information for appropriate next steps.
--   The template listed third, **Notify Parent of Application Rejection**, is used when the application is rejected. We strongly discourage the use of this email template and suggest that schools make direct contact with parents.
--   The fourth template, **Notify Parent of Application Submission**, is sent to parents when they click on the final button to submit their application.
--   The fifth template, **Notify School of Completed Application**, is used to notify a member of staff at the school that a new application form is waiting for acceptance of rejection.
+-   **Start an Application** is sent to the address a parent types on the application form when that ID or passport number is not one ADAM recognises. It carries the link that starts the application.
+-   **Start an Application (Existing Parent)** is sent instead when the ID or passport number belongs to a parent ADAM already knows, and it goes only to the email addresses the school holds for that parent. It tells them that somebody asked to start an application using their ID number and that they can ignore the email if it was not them. Keep that reassurance in the wording if you customise it, because the person receiving it may not be the person who filled the form in.
+-   **New Application** is sent once the parent has confirmed their details, and it carries the link to the application form. Parents use this email to return to a part-completed form, so it is the one they need to keep.
+-   **Notify Parent of Application Approval** is used when the application is approved. Edit this template to give the parent information for appropriate next steps.
+-   **Notify Parent of Application Rejection** is used when the application is rejected. We strongly discourage the use of this email template and suggest that schools make direct contact with parents.
+-   **Notify Parent of Application Submission** is sent to parents when they click on the final button to submit their application.
+-   **Notify School of Completed Application** is used to notify a member of staff at the school that a new application form is waiting for acceptance of rejection.
 
 Because you are customising the template for your school, you do not have to make use of the other codes that are provided.
 
@@ -373,25 +378,50 @@ Generally, schools will link through to the application form in ADAM from their 
 
 E.g. https://demo.adam.co.za**/apply**
 
-Parents will first be asked to enter an ID number. This is used to determine whether they are existing parents in the database or are new parents:
+Everybody starts on the same short form, whether or not the school already knows them. Parents fill in **Your ID or Passport Number**, their **Email Address**, **Confirm Email Address**, a **Contact Telephone Number** and the **Number of Children Applying**, then click **Next**:
 
 ![](assets/screenshots/online-applications/online-applications-04.png)
 
-Parents will click on the “Next” button to check the status of their ID number. If their ID number does not match anyone in the database, they will see this message:
+Parents who already use the parent portal can click **Already use the parent portal? Log in first.** beneath the form and begin from there instead — see [Starting from the parent portal](#starting-from-the-parent-portal) below.
+
+ADAM then thanks them and tells them that a link is on its way, that the application must be completed within the number of days set in **Expire applications (days)**, and that the link is valid for 24 hours. This screen is the same for everyone.
 
 ![](assets/screenshots/online-applications/online-applications-05.png)
 
-On this screen, they will enter their email address and confirm the number of children that they wish to apply for. They will only be able to proceed if they have entered the same email address twice correctly.
+Where that email goes, however, depends on the ID or passport number:
 
-If the ID number does match an existing family in ADAM, the screen will only offer them the ability to choose the number of children. ADAM already has all of their information on file.
+-   If it does not belong to a parent the school already knows, the link goes to the address just typed in, using the **Start an Application** template.
+-   If it does belong to an existing parent, the link goes only to the email addresses ADAM already holds for that parent, using the **Start an Application (Existing Parent)** template. The address typed into the form is not used and is not kept. This means an existing parent should look for the email in the account the school has on file for them.
 
-![](assets/screenshots/online-applications/online-applications-06.png)
-
-ADAM follows this with an email to confirm the email address. The email contains a link which they click on to continue with their application:
+ADAM sends at most three of these start emails to the same parent in any 24 hours.
 
 ![](assets/screenshots/online-applications/online-applications-07.png)
 
-The contents of this email [are customisable](email-message-templates.md#email-message-templates).
+The contents of both emails [are customisable](email-message-templates.md#email-message-templates).
+
+### Confirming the Details
+
+Clicking the link in the email opens a screen showing what will be used to create the application. Nothing is created until the parent clicks **Start Application**, so a link opened by accident changes nothing.
+
+Parents the school does not yet know simply check the details they typed. If something is wrong, **These details are wrong: start again** takes them back to the beginning.
+
+Parents the school does know are asked where to send the rest of the correspondence. **Email Address** offers each address ADAM holds for them, plus **(use an alternate address)**, which reveals an **Alternate Email Address** box. They also give a **Contact Telephone Number** and the **Number of Children Applying**.
+
+![](assets/screenshots/online-applications/online-applications-17.png)
+
+If anything is typed incorrectly here, ADAM says so and shows the screen again without using up the link.
+
+The link works once. Following it again, or after 24 hours have passed, gives the message *This link has expired or has already been used.* with a **Start a new application** button. This is the same message whatever the reason, so the page never confirms whether an ID number is known to the school.
+
+### Starting from the Parent Portal
+
+A parent who is already logged into the [Parent and Pupil Portal](parent-and-pupil-portal.md#parent-and-pupil-portal) does not need the emailed link at all. Under the **New Pupil Application** heading, they click **Submit an online application for a new pupil**, which takes them straight to the same confirmation screen described above, with the email addresses ADAM holds for them already offered. Clicking **Start Application** creates the application at once.
+
+![](assets/screenshots/online-applications/online-applications-18.png)
+
+### Continuing to the Application Form
+
+Once **Start Application** has been clicked, ADAM creates the application, emails the parent the link to the application form itself — the **New Application** template — and takes them straight on to it. That second email is the one they need in order to come back to a part-completed form later.
 
 ### Responding to Online Agreements
 

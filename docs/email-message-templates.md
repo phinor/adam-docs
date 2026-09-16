@@ -21,7 +21,9 @@ The table below lists the email templates that ADAM provides, grouped by the hea
 
 | Section | Template | When it is sent |
 |---------|----------|-----------------|
-| Applications | New Application | Sent to a parent to invite them to begin an [online application](online-applications.md#online-applications), containing the link to the application form. |
+| Applications | Start an Application | Sent to the address typed on the [online application](online-applications.md#online-applications) form when the ID or passport number given is not one ADAM recognises. It carries the link that starts the application. |
+| Applications | Start an Application (Existing Parent) | Sent instead when the ID or passport number belongs to a parent ADAM already knows. It goes only to the email addresses the school holds for that parent, never to the address typed on the form. |
+| Applications | New Application | Sent to a parent once they have confirmed their details, containing the link to the application form itself. |
 | Applications | Notify Parent of Application Submission | Confirms to the parent that their application has been received. |
 | Applications | Notify Parent of Application Approval | Tells the parent their application was successful and explains the next steps. |
 | Applications | Notify Parent of Application Rejection | Tells the parent that their application was unsuccessful. |
