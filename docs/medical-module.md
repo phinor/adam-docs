@@ -11,15 +11,17 @@ Navigate to **Pupils → Medical Records → Pupil Medical Records** and search 
 The top of the page shows a summary, drawn from the pupil’s own record:
 
 -   the **Medical Notes** and, in bold red, the **Allergies** captured on the pupil’s profile;
--   the pupil’s **Doctor** and telephone number;
--   the **Medical Aid Scheme**, its number, and the principal member with their ID number;
--   any **disabilities** recorded against the pupil;
+-   the pupil’s **Preferred Doctor** and telephone number;
+-   the **Medical Aid Scheme** and its number, and the **Medical Aid Principal Member** with their ID number;
+-   the **Primary Barrier to Learning**, and any further barriers recorded against the pupil;
 -   any additional fields the school has chosen to show here — see [Settings](#settings-that-affect-the-medical-module);
 -   **Allergies and Chronics** and **Chronic Medication**, gathered from the tabs below so that the whole picture is visible at a glance;
 -   a link to the pupil’s [Medical Report](#the-medical-report).
 
+![](assets/screenshots/medical-module/medical-module-14.png)
+
 > [!NOTE]
-> The labels on the summary come from your school’s own [field definitions](database-field-management.md#database-field-management), so a school that has renamed **Doctor** to **General Practitioner** will see its own wording here.
+> The labels on the summary come from your school’s own [field definitions](database-field-management.md#database-field-management), so a school that has renamed **Preferred Doctor** to **General Practitioner** will see its own wording here.
 
 Beneath the summary is a set of tabs, each holding one kind of record:
 
@@ -51,13 +53,15 @@ The form records:
 
 -   **Date/Time:** defaults to the current date and time. Change it if you are capturing a visit after the fact.
 -   **Medical Attendant:** who saw the pupil, chosen from the [list of attendants](#medical-attendants).
--   **Type:** by default **Normal**, **IOD-Insurance Claim**, **IOD Follow-Up** or **IOD-Not Reported**. The IOD (injury on duty) types exist so that a school can separate injuries that will be claimed for. The list is a [field definition](database-field-management.md#database-field-management) and a school can change it.
+-   **Consultation Type:** by default **Normal**, **IOD Insurance Claim**, **IOD Follow Up** or **IOD Not Reported**. The IOD (injury on duty) types exist so that a school can separate injuries that will be claimed for. The list is a [field definition](database-field-management.md#database-field-management) and a school can change it.
 -   **Diagnosis:** chosen from the school’s [list of ailments](#managing-the-list-of-ailments).
 -   **Cause:** chosen from the school’s [list of causes](#medical-causes) — how the injury or illness came about, as distinct from what it is.
 -   **Notes:** free text.
 -   **Medication:** the items dispensed. See below.
 
 Click **Save information** to record the consultation.
+
+![](assets/screenshots/medical-module/medical-module-15.png)
 
 ### Dispensing Medication During a Consultation
 
@@ -147,7 +151,12 @@ On the **Operations and Vaccinations** tab of the pupil’s medical records, cli
 
 Navigate to **Administration → Medical Administration → Manage Medical Operations and Vaccinations**.
 
-Each entry has a **Category**, a **Description** and a **Step**. The category can be chosen from those already in use or typed into the **or new:** box to start a new one. The **Step** is for a procedure given in stages — enter the number or name of the stage, so that a three-dose vaccination appears as three entries that can be recorded and tracked separately.
+Each entry has a **Category**, a **Description** and a **Step**. The category is chosen from those already in use.
+
+> [!WARNING]
+> The **or new:** box beside the categories does not currently work. A category typed there is discarded and the entry is saved under **Unknown** instead. A school starting with an empty list therefore has no way to create a category here, and every entry will read **Unknown** until this is fixed.
+
+The **Step** is for a procedure given in stages — enter the number or name of the stage, so that a three-dose vaccination appears as three entries that can be recorded and tracked separately.
 
 ## Medical Attendants
 

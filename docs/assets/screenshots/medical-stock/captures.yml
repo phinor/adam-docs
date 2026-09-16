@@ -34,3 +34,52 @@
     plasters 1000, antiseptic cream 24. Cetirizine and the lozenges were left at 0, so the list
     and the consultation autocomplete show an out-of-stock item.
   revert: none — the data stays for the remaining medical captures
+- image: medical-stock-03.png
+  captured: 2026-09-16
+  as: staff (staff_id 1, Antonio Watson, development login bypass)
+  path: Administration tab → Medical Administration → Manage Medical Stock → adjust (Paracetamol 500mg tablets)
+  frame:
+    mode: span
+    selectors: The item-name h2 (Paracetamol 500mg tablets) down to the foot of #adjust_form. 417px.
+    padding: 8
+  setup: >
+    Brief said to leave Adjustment Type on its default; instead Direct Issue and Charge To Pupil
+    were clicked, so the charging fields the prose describes are visible (all three adjustment
+    types show either way). Pupil Edward Clark chosen through the pupil search, Date 16/09/2026,
+    Quantity 2, a note. Never submitted.
+  revert: none — nothing was saved
+  note: >
+    Needed the chargeable entities to exist first. With none, the entity select is replaced by
+    plain "(No options)" text which the form's show/hide script cannot hide, so a stray
+    Chargeable Entity row appears whatever type is chosen.
+- image: medical-stock-04.png
+  captured: 2026-09-16
+  as: staff (staff_id 1, Antonio Watson, development login bypass)
+  path: Administration tab → Medical Administration → View Grouped Medical Stock Transaction Report → View Report
+  frame:
+    mode: span
+    selectors: The "Pupil Stock Transaction Report" h1 down to the foot of #transaction_Pupil_table. 339px.
+    padding: 8
+  setup: >
+    Start 2026-09-01 00:00, End 2026-09-16 23:59, all transaction types, consultation types,
+    charge types and stock groups left selected, Output Format Web Browser. The rows come from
+    consultations created through Add a Medical Consultation for a Pupil: Edward Clark (ibuprofen
+    2, ice pack 1, 2026-09-15), Calvin Naidoo (paracetamol 2, 2026-09-10, concussion at hockey,
+    Dr van Wyk) and Jenna Dlamini (paracetamol 2, 2026-09-11, headache).
+  revert: none
+  note: >
+    The Grade column is empty for all three pupils in the demonstration data. The Staff and Other
+    sections below are empty and were left out of the frame.
+- image: medical-stock-05.png
+  captured: 2026-09-16
+  as: staff (staff_id 1, Antonio Watson, development login bypass)
+  path: Administration tab → Medical Administration → Manage Chargeable Entities
+  frame:
+    mode: element
+    selector: "#table_1"
+    padding: 8
+  setup: >
+    Created through Add new Chargeable Medical Entity: Visiting teams (SPORT-4100), Boarding
+    house first aid boxes (BOARD-2250), Holiday sports camp (CAMP-6300), with descriptions.
+    Focus cleared before capture (a first attempt showed a focus ring on a disable button).
+  revert: none

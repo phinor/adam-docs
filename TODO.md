@@ -141,43 +141,28 @@ way out. Place it in *By filter*, after the paragraph that ends "...as many time
 
 ## Medical Module (`docs/medical-module.md`)
 
-The page was rewritten from a stub to cover the whole module. Everything on it is written and checked
-against the code, but only the *Medical Examinations* part of it has pictures — those are the original
-`medical-module-01.png` to `-13.png`, which still match. Number anything new from `-14.png` upward.
-`-16.png` and `-18.png` are captured and in place.
+The page was rewritten from a stub to cover the whole module. The *Medical Examinations* images are
+the original `medical-module-01.png` to `-13.png`, which still match. `-14.png`, `-15.png`,
+`-16.png` and `-18.png` are captured and in place, all against **Edward Clark** (pupil 5083). The two
+briefs below reserve `-17.png` and `-19.png`; number anything else from `-20.png` upward.
 
-Use **Edward Clark** (pupil 5083) throughout. `-18.png` already shows him.
+The demonstration data behind them was created through ADAM's screens on 2026-09-16 and is listed in
+`docs/assets/screenshots/medical-module/captures.yml` and `…/medical-stock/captures.yml`.
 
-> [!WARNING] blocked on demonstration data
-> Checked on 2026-09-16: the school has the reference lists (ailments, chronic medications, causes,
-> off sport types and locations) but no attendants, operations and vaccinations, stock, chargeable
-> entities, off sport entries, off sport alerts or consultations. Every entry below needs some of that
-> data, and none of it has been created. Creating records on the dev instance was declined by the
-> capturing session's permission check, so whoever picks this up needs permission to seed first.
+> [!WARNING] still blocked on demonstration data
+> There are no off sport entries and no off sport alerts. Creating them was refused by the capturing
+> session's permission check, part-way through seeding, so whoever picks this up needs permission to
+> create those records first. Plan used so far: Edward Clark, Calvin Naidoo (4832), Ivy Naidoo (5476),
+> Jenna Dlamini (5186), Hamish Pillay (5202), Harrison Pillay (5428), Hamza Khumalo (5339), Stacy
+> Jacobs (3857) — current Grade 8 and 9 pupils with classes. Calvin Naidoo's consultation is a
+> concussion at hockey, so his off sport entry should carry **Concussion: Yes**.
 
-### 1. A pupil's medical records — `medical-module-14.png`
+### `medical-module-14.png` — re-capture once the profile text is realistic
 
-**Pupils → Medical Records → Pupil Medical Records**, then search for Edward Clark.
-
-Frame the summary panel and the row of tabs together: the photograph, the medical notes, the allergies
-line in red, the doctor and medical aid, the **Allergies and Chronics** and **Chronic Medication**
-rows, the **Medical Report** link, and the whole tab strip beneath. The point of the image is that
-everything about a pupil sits on one screen, so do not crop the tabs off.
-
-Place it in *A Pupil's Medical Records*, after the list of what the summary shows.
-
-### 2. The consultation form — `medical-module-15.png`
-
-**Pupils → Medical Records → Add a Medical Consultation for a Pupil**, then Edward Clark.
-
-This is the most important missing image on the page. Frame the whole three-column layout: the
-photograph, the form with **Date/Time**, **Medical Attendant**, **Type**, **Diagnosis**, **Cause** and
-**Notes** filled in plausibly, and the **Allergies and Chronics** panel on the right. Add one
-medication row so the **Medication** table is visible with a real stock item and quantity in it.
-
-Do not save the consultation after capturing it, or reverse it afterwards — saving it moves stock.
-
-Place it in *Recording a Consultation for a Pupil*, after the list of fields.
+It is in place and framed correctly, but Edward Clark's own **Medical Notes** and **Allergies**
+profile fields hold placeholder Latin from the regenerated school, and the Allergies text shows in
+bold red. Give those two fields believable values (for example, notes about his asthma plan and
+"Peanuts — anaphylactic") and re-capture with the same framing; see its `captures.yml` entry.
 
 ### 4. The off sport list — `medical-module-17.png`
 
@@ -197,65 +182,6 @@ visible, and the **Disabled Alerts** heading beneath. A second image of the add 
 it has three fields and they are listed in the text.
 
 Place it in *Off Sport Alerts*, after the paragraph naming the two tables.
-
----
-
-## Medical Stock (`docs/medical-stock.md`)
-
-A new page, written and checked against the code. Screenshots go in
-`docs/assets/screenshots/medical-stock/`. `medical-stock-02.png`, the stock item form, is captured
-and in place, and so is `medical-stock-01.png`, the stock list. Nine dummy stock items were
-created on 2026-09-16 and given opening stock (see `captures.yml` in that directory); cetirizine
-and the lozenges were left at 0 on purpose.
-
-What remains is blocked on two further kinds of data:
-
-- **Chargeable entities.** There are none. With none, the adjust form replaces its entity list with
-  the plain text "(No options)", which its script cannot hide, so a stray **Chargeable Entity** row
-  shows on every adjustment. `medical-stock-03.png` would picture that, and `-05.png` needs entities
-  to exist at all.
-- **Issues.** No stock has been issued, by consultation or by direct issue, so the grouped report in
-  `-04.png` returns nothing. It needs consultations with medication (which in turn need medical
-  attendants) or direct issues charged to pupils.
-
-> [!WARNING] this page changes data
-> Receiving, adjusting and writing off stock all move real quantities the moment they are saved, and
-> there is no undo. Capture the *forms*, not the result of submitting them, unless you are willing to
-> put the demonstration school's stock back afterwards.
-
-### 3. The adjust form — `medical-stock-03.png`
-
-Click **adjust** on a stock item. Frame **Adjustment Type**, **Charge To**, the pupil/staff/entity
-fields, **Date**, **Quantity** and **Notes**. Leave **Adjustment Type** on its default so all three
-options are visible unselected alongside it.
-
-Do not submit it.
-
-Place it in *Adjusting, Issuing and Writing Off Stock*, after the list of adjustment types.
-
-### 4. The grouped transaction report — `medical-stock-04.png`
-
-**Administration → Medical Administration → View Grouped Medical Stock Transaction Report**.
-
-Two images in one section would be better than one here, but if only one can be had, capture the
-**output** rather than the criteria form: the charge type heading, the date range, and a table of
-several pupils with their totals. That is the report a school bills from and it is the one worth
-showing.
-
-Set a date range wide enough that the demonstration data actually returns rows — if it returns
-nothing, the consultations that generate the transactions need seeding first, and that is the blocker.
-
-Place it in *Grouped Stock Transaction Report*, after the first paragraph.
-
-### 5. Chargeable entities — `medical-stock-05.png`
-
-**Administration → Medical Administration → Manage Chargeable Entities**.
-
-Frame the table with a handful of believable entities — a visiting school, a hostel, the school's own
-first aid boxes — showing the **Entity Name**, **Entity Account Code** and **Entity Description**
-columns, and the **disable** option on the rows.
-
-Place it in *Chargeable Entities*, after the paragraph describing the fields.
 
 ---
 
@@ -321,27 +247,18 @@ The **Heads of Subject** section is now written, on `docs/subjects.md` between *
 `docs/reporting-period-administration.md` now point at it instead of restating the two-halves rule,
 and both screenshots are captured and placed. One thing is left.
 
-### Ask development about `rep_aggregated_subject`
+### Answered: `rep_aggregated_subject` follows teaching
 
-This entry previously assumed **Manage aggregated result calculations from subjects taught** was
-scoped by the head-of-subject assignment like the other seven permissions, and that its description
-was wrong. **Reading the code says the opposite.**
+Development confirmed that **Manage aggregated result calculations from subjects taught** is meant to
+follow the subjects a staff member **teaches**. The section as written is correct, and its note
+stays.
 
-`AggregatedCalculationsController` scopes it with `Subjects::isCurrentTeacher` and contains no
-head-of-subject check anywhere, so the behaviour matches the on-screen description: it is about
-subjects **taught**, not subjects **headed**. The section as written says so.
-
-The misalignment is elsewhere: `SubjectHeadController::SUBJECT_SCOPED_PRIVILEGES` lists
-`rep_aggregated_subject` alongside the seven genuinely head-scoped permissions, under a docblock
-saying every entry "is scoped by the `subject_heads` table". That has a visible consequence — the
-warning shown when saving a head who holds none of the head-of-subject permissions counts this one as
-though it qualified, so a staff member holding only this permission is assigned as a head with no
-warning, and still gains nothing from the assignment.
-
-**Ask which is intended.** If the permission is meant to be head-scoped, the controller needs the
-check and the manual's note about it should be removed. If it is meant to stay teach-scoped, it should
-come out of `SUBJECT_SCOPED_PRIVILEGES` so the warning stops counting it. Either way the manual needs
-re-checking against the answer.
+The permission has been taken out of `SubjectHeadController::SUBJECT_SCOPED_PRIVILEGES` on the ADAM
+branch `fix/aggregated-subject-not-head-scoped`, which is not merged yet. Once it ships, saving a
+head who holds only this permission shows the "no head-of-subject privileges" warning. If
+*Heads of Subject* lists the permissions that stop that warning, make sure this one is not among
+them. The original intention was a separate head-of-subject version of this permission. That has
+not been built, so do not document it. Remove this entry once the page has been checked.
 
 ---
 
@@ -442,6 +359,23 @@ default, which can still be overridden.
 
 (Every type on the demonstration school defaults to **No**, so a picture could not show the fault or
 the fix without changing a type first.)
+
+---
+
+## Operations and Vaccinations — the "or new:" category is discarded
+
+Found while creating demonstration data on 2026-09-16; not on `fix/medical-module-permissions`.
+
+On **Manage Medical Operations and Vaccinations**, a category typed into the **or new:** box is lost:
+the entry saves under **Unknown**. `MedicalAdminController::interventions` reads
+`$data [0] ['intervention_category_new']` in its `setProcessData` callback, but
+`DataEditor::saveNew` first runs the posted fields through `filterInputFields`, which keeps only the
+editor's own entry fields. `intervention_category_new` is not one — it is a sub-control inside the
+**Category** `CombinedFields` — so it is gone before the callback sees it, and the callback's fallback
+sets **Unknown**. A school starting with an empty list has no way to create a category.
+
+`docs/medical-module.md` now carries a warning to this effect. Remove it once fixed, and restore the
+sentence saying a category can be typed into **or new:** to start a new one.
 
 ---
 

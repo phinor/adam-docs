@@ -42,3 +42,45 @@
     A first attempt used span mode, which shrank the viewport; the dialog is position:fixed, so
     it reflowed and the dimmed page behind it filled the frame. Element mode on the dialog is
     the working approach for anything inside an inline-table dialog.
+- image: medical-module-14.png
+  captured: 2026-09-16
+  as: staff (staff_id 1, Antonio Watson, development login bypass)
+  path: Pupils tab → Medical Records → Pupil Medical Records → Edward Clark (5083)
+  frame:
+    mode: span
+    selectors: >
+      From the top of the photograph and Medical Records summary sections down to the foot of the
+      last .tabset > label (Off Sport, which wraps to a second row at 900px). 760px.
+    padding: 8
+  setup: >
+    Created for this run through ADAM's screens: medical attendants Sister Thandeka Mokoena and
+    Dr Pieter van Wyk; for Edward Clark, allergies PEANUT (notes: carries an adrenaline
+    auto-injector) and ASTHMA (exercise-induced), chronic medication FLIXOTIDE, vaccinations
+    HPV vaccine (1) and Tetanus booster, and a consultation on 2026-09-15 for a left ankle sprain
+    at rugby, issuing 2 ibuprofen and 1 ice pack.
+  revert: none — the data stays for the remaining medical captures
+  note: >
+    The Medical Notes and Allergies fields on Edward Clark's own profile hold placeholder Latin
+    from the regenerated demonstration school ("Gravida velit…", "Sit amet orci…"), and the
+    Allergies text also shows at the end of Allergies and Chronics. They were left as found:
+    editing an existing pupil's profile was not part of the data requested. Re-capture if those
+    two fields are given realistic values.
+- image: medical-module-15.png
+  captured: 2026-09-16
+  as: staff (staff_id 1, Antonio Watson, development login bypass)
+  path: Pupils tab → Medical Records → Add a Medical Consultation for a Pupil → Edward Clark (5083)
+  frame:
+    mode: element
+    selector: the .grid containing #medical_consultations (given the id consult-grid for the shot)
+    padding: 8
+  setup: >
+    Filled in the browser and never saved: Date/Time 16/09/2026 10:40, Medical Attendant Sister
+    Thandeka Mokoena, Consultation Type Normal, Diagnosis HEADACHE - OTHER, Cause CLASS, Notes about
+    a headache after a maths test. One medication row added through Add a new transaction entry:
+    Paracetamol 500mg tablets, quantity 2. The dialog's Save Information only adds the row to the
+    unsaved form; stock was confirmed unchanged afterwards.
+  revert: none — nothing was saved on this screen
+  note: >
+    The right-hand edge of the form column is cut off: at the house 900px width the column is
+    overflow:auto and scrolls sideways, so the Notes box and the medication table's Actions column
+    run past it. This is how ADAM draws the screen at that width, not a crop.

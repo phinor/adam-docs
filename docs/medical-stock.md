@@ -57,6 +57,8 @@ Click the **adjust** action next to an item. The **Adjustment Type** decides wha
 
 For a **Direct Issue**, **Charge To** determines who carries the cost — a **Pupil**, a **Staff** member, or **Other**, which bills a [chargeable entity](#chargeable-entities). Complete the matching field below, then the **Date**, the **Quantity** and any **Notes**, and click **Save**.
 
+![](assets/screenshots/medical-stock/medical-stock-03.png)
+
 > [!WARNING]
 > Stock levels change the moment you save. There is no confirmation step and no undo — a write-off entered against the wrong item has to be put back with an **Adjustment**, which leaves both transactions on the report.
 
@@ -68,7 +70,9 @@ A chargeable entity is anybody who can be billed for medication who is neither a
 
 Navigate to **Administration → Medical Administration → Manage Chargeable Entities**. Each entity records an **Entity Name**, an **Entity Account Code** and an **Entity Description**. The account code is what appears in the **Account No** column of the transaction reports, so it should match whatever the school’s accounting system expects.
 
-Entities can be disabled, which keeps their history but takes them out of the lists on the consultation and adjustment screens. A **delete** option appears only for an entity that nothing has ever been charged to; once it has been used, **disable** is the only way to retire it.
+![](assets/screenshots/medical-stock/medical-stock-05.png)
+
+Entities can be disabled, which keeps their history but takes them out of the lists on the consultation and adjustment screens. To remove an entity altogether, disable it first: a **delete** option then appears next to it in the list of disabled entities, but only if nothing has ever been charged to it. An entity that has been used can only be disabled.
 
 Consultations can be recorded against a chargeable entity in the same way as for a pupil or a staff member — see [Consultations for Chargeable Entities](medical-module.md#consultations-for-chargeable-entities).
 
@@ -101,6 +105,8 @@ It defaults to the previous calendar month, which is the period most schools bil
 ### Grouped Stock Transaction Report
 
 **View Grouped Medical Stock Transaction Report** totals the quantities by pupil and by stock item, so a pupil who was given six headache tablets across a term appears once with a quantity of six rather than on six separate rows. The columns are the pupil’s details, the **Stock Code**, **Stock Description**, **Stock Group** and the total **Quantity**.
+
+![](assets/screenshots/medical-stock/medical-stock-04.png)
 
 Only **Issue** and **Direct Issue** are selected by default here, since receipts and write-offs are not chargeable to anybody. This is the report to use for billing.
 
