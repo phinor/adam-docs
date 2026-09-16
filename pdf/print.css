@@ -5,12 +5,39 @@
  * `hooks/pdf_theme.py` has already removed the site chrome from the DOM and
  * stripped every `@media screen` block out of the theme's stylesheet, so what
  * remains here is only what the printed page needs and the screen never had:
- * a sheet size, and rules for breaking content across pages.
+ * a sheet size, a page number, rules for breaking content across pages, and
+ * the front cover.
  */
 
 @page {
     size: A4;
     margin: 18mm 16mm 20mm 16mm;
+
+    /* The page number, in the bottom margin declared above.
+     *
+     * `counter(page)` runs continuously across the whole manual, which is not
+     * something this rule achieves on its own: each chapter is rendered as its
+     * own document and the 99 of them are concatenated afterwards, so every
+     * one would otherwise start again at 1. mkdocs-exporter's `pdf.js` sets
+     * `counter-set: page N` on the first page of each document from the
+     * running total the aggregator works out, and this rule reads the result.
+     *
+     * The number is the sheet's own position in the file, front cover
+     * included, so it agrees with the number a PDF reader shows in its page
+     * box and with the page a bookmark jumps to. The cover is counted and left
+     * unnumbered — `@page cover` switches the box off again — so the first
+     * printed number in the manual is the 2 on `Welcome to ADAM!`.
+     *
+     * No total, and not for want of trying. The aggregator does know it, but
+     * it reaches the page only as `--pagedjs-page-count`, and
+     * `content: counter(page) " of " var(--pagedjs-page-count)` computes to
+     * `none`: a bare number is not a valid content value, so the declaration
+     * is dropped whole and the footer disappears rather than degrading. */
+    @bottom-center {
+        content: counter(page);
+        font-size: 9pt;
+        color: #666;
+    }
 }
 
 body {
@@ -80,6 +107,15 @@ pre {
    every edge, reading as a panel rather than as a cover. */
 @page cover {
     margin: 0;
+
+    /* `margin: 0` is not enough on its own to keep the page number off the
+       cover. paged.js builds the margin boxes whatever the margin is, so the
+       number was still emitted, at the very foot of the sheet in grey on
+       blue: invisible in the rendered page and plainly there in the text
+       layer, which is the worse of the two places to leave it. */
+    @bottom-center {
+        content: none;
+    }
 }
 
 .mkdocs-exporter-front-cover {
