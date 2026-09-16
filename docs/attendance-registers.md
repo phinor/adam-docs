@@ -2,8 +2,8 @@
 
 ## Deprecation Notice
 
-!!! warning
-    The **Attendance Register** functionality has been deprecated and replaced with the **[Roll Call module](roll-calls.md#roll-calls)**. The ability to add attendance registers will be removed at the end of 2026.
+> [!WARNING]
+> The **Attendance Register** functionality has been deprecated and replaced with the **[Roll Call module](roll-calls.md#roll-calls)**. The ability to add attendance registers will be removed at the end of 2026.
 
 ## Introduction
 
@@ -23,8 +23,8 @@ The **Options** that are present can be customised. Three default options are pr
 
 Write each option on a new line.
 
-!!! tip 
-    The default options (shown above as “Attended, Excused, Absent”) can be changed in [the Site Settings](changing-site-settings.md#changing-site-settings) under the **Attendance** tab. If you change this, it will apply only to new registers that are created after the change is made and will have no effect on any registers that already exist.
+> [!TIP]
+> The default options (shown above as “Attended, Excused, Absent”) can be changed in [the Site Settings](changing-site-settings.md#changing-site-settings) under the **Attendance** tab. If you change this, it will apply only to new registers that are created after the change is made and will have no effect on any registers that already exist.
 
 Once done, click on the **Next** button to create the register:
 
@@ -82,8 +82,8 @@ Once completed, click on the **Save…** button at the bottom of the screen.
 
 Once saved, an “edit” option will appear above the column. If you need to change any of the values, click on the edit link and you can make any changes you need to.
 
-!!! tip
-    To keep the register manageable, ADAM shows only the ten most recent columns by default. A line of text above the register reads “Showing the most recent 10 records”, followed by a **Click here** link to show all records. When every column is displayed, the same line reads “Showing all records” with a **Click here** link to return to the ten most recent.
+> [!TIP]
+> To keep the register manageable, ADAM shows only the ten most recent columns by default. A line of text above the register reads “Showing the most recent 10 records”, followed by a **Click here** link to show all records. When every column is displayed, the same line reads “Showing all records” with a **Click here** link to return to the ten most recent.
 
 ## Archiving a register
 

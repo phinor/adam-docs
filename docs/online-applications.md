@@ -57,8 +57,8 @@ At the point that the application is accepted or rejected, ADAM can send out an 
 
 We strongly recommend enabling and customising the acceptance email, but we strongly recommend not using the rejection email at all.
 
-!!! warning
-    An application can be rejected for hundreds of reasons, and it seems improper to send a generic rejection mail out when there are either material or minor issues with the application. One example is a duplicated application where the parents applied twice: one might accept one and reject another. They would receive confusing messaging and perhaps be unaware that they had a valid application that was being considered. In these cases, we strongly suggest that schools respond directly to the applying parents directly to address any issues that might have arisen.
+> [!WARNING]
+> An application can be rejected for hundreds of reasons, and it seems improper to send a generic rejection mail out when there are either material or minor issues with the application. One example is a duplicated application where the parents applied twice: one might accept one and reject another. They would receive confusing messaging and perhaps be unaware that they had a valid application that was being considered. In these cases, we strongly suggest that schools respond directly to the applying parents directly to address any issues that might have arisen.
 
 #### Step 6:
 
@@ -503,8 +503,8 @@ At the bottom of this form are three options:
 -   **Approving the Application** will add the pupil and family (if it is new) to the database. The pupil is added as an applicant in the [default admissions status](enrolment-process.md#managing-the-registration-statuses). This does *not* guarantee them a place or add them as a current pupil. *Remember that no communication is sent by ADAM.* Any documents the parent uploaded during the application are filed automatically into the document repository against the new pupil and family at this point — there is no separate document approval step for them.
 -   **Reject Application** will remove the application from the pile. Typically, applicants are rejected here for technical reasons (incomplete form, incorrect grades, incorrect gender for monastic schooling, and so on). Rejection here essentially means tossing the application form into the bin. The pupil and the family will *not* be added to the database.
 
-!!! warning
-    “Accepting” and “Rejecting” applications refers specifically to the **application form**. This will add these details into your database as an Applicant profile. **No decisions about enrolment into the school have been made** at this point. Enrolment (or not!) will only happen at the very end of the application process.
+> [!WARNING]
+> “Accepting” and “Rejecting” applications refers specifically to the **application form**. This will add these details into your database as an Applicant profile. **No decisions about enrolment into the school have been made** at this point. Enrolment (or not!) will only happen at the very end of the application process.
 
 ## Uploading of Supporting Documents
 

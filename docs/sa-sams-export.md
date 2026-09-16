@@ -72,8 +72,8 @@ Choose an effective date for the Export.
 
 ![](assets/screenshots/sa-sams-export/sa-sams-export-04.png)
 
-!!! note
-    Note that by choosing a date in December, ADAM will automatically include progression information for your pupils.
+> [!NOTE]
+> Note that by choosing a date in December, ADAM will automatically include progression information for your pupils.
 
 ADAM will then show a verification report. Kindly note that this is not as thorough as the SASAMS checks that will be done with your deployed database, but does provide a good starting point for issues. Try to correct as many errors as you can.
 
@@ -126,8 +126,8 @@ There are **three** components to the installation and you must run the setup in
 2.  Install the “EdusolSAMS Spread” package
 3.  Install the latest “SA-SAMS version”
 
-!!! warning
-    Note that, when you open SA-SAMS, you should see a version number in the title bar. Below, it shows “17.0.0.The first two digits correlate to the current calendar year: 17 corresponds with 2017. **If you *do not see* a version number in the title bar**, it indicates that the installation of the three components, discussed above, is incomplete.
+> [!WARNING]
+> Note that, when you open SA-SAMS, you should see a version number in the title bar. Below, it shows “17.0.0.The first two digits correlate to the current calendar year: 17 corresponds with 2017. **If you *do not see* a version number in the title bar**, it indicates that the installation of the three components, discussed above, is incomplete.
 
 Once installed, look for the “**EdusolSAMS**” icon in your Start menu. When opening the database, choose the “**On the Network**” option and then click on the  “**Browse…**” button to find the database you saved:
 
@@ -141,7 +141,7 @@ The details to log into this database are as follows:
 |-|-|
 | administrator| admin        |
 
-!!! note
-    Please note that once you’ve opened the database, SA-SAMS will require you change this password to something more complicated. Please don’t lose the password: we cannot help recover it and a new export will need to be performed.
+> [!NOTE]
+> Please note that once you’ve opened the database, SA-SAMS will require you change this password to something more complicated. Please don’t lose the password: we cannot help recover it and a new export will need to be performed.
 
 From this point, you will need to follow the specific instructions from your district office.

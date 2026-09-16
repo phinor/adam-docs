@@ -20,8 +20,8 @@ Importing the feedback requires the **Import LURITS feedback files** permission,
 
 -   **If it is a RAR archive**, ADAM cannot read it, so it still has to be extracted first. Right-click on the file and “Extract” the archive, then upload the “.xml” files it produces. Specific instructions will vary depending on your computer and operating system. Please ask your Desktop Support personnel for assistance.
 
-!!! warning
-    Whichever route you take, leave the “.xml” files themselves alone. They are compressed exactly as LURITS produced them, and ADAM expects them in that state. If those individual files are opened and re-saved, or otherwise “tidied up” by another program, ADAM may no longer recognise them and will skip them without explaining why.
+> [!WARNING]
+> Whichever route you take, leave the “.xml” files themselves alone. They are compressed exactly as LURITS produced them, and ADAM expects them in that state. If those individual files are opened and re-saved, or otherwise “tidied up” by another program, ADAM may no longer recognise them and will skip them without explaining why.
 
 ## Importing the Feedback File
 

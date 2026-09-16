@@ -38,8 +38,8 @@ Whichever perspective you choose, ADAM guides you through a short sequence of se
 
 The chosen reporting period is shown as a heading at the top of each screen so that you always know which period you are working in. On the reporting screen, you can click on the pupil’s or staff member’s name card to step back and pick a different pupil or teacher without starting the whole sequence again.
 
-!!! note
-    In previous versions of ADAM these selections were all made on a single, growing page. They are now split across separate screens, each with its own **Next** button, but the choices you make and the reporting screen you end up on are exactly the same.
+> [!NOTE]
+> In previous versions of ADAM these selections were all made on a single, growing page. They are now split across separate screens, each with its own **Next** button, but the choices you make and the reporting screen you end up on are exactly the same.
 
 ## Basic Principles of the Reporting Screen
 
@@ -83,8 +83,8 @@ The panel lists every pupil in the class. Click on a pupil’s name to jump dire
 
 On narrow screens, such as a phone or a small tablet, the index collapses to save space. Tap the **☰ Pupil Index** heading at the top of the panel to open or close it.
 
-!!! note
-    As you scroll down through a pupil’s Learning Outcomes and other blocks, the pupil’s name and photograph stay pinned near the top of the screen. This means you always know whose report you are editing, even for subjects with a long list of outcomes.
+> [!NOTE]
+> As you scroll down through a pupil’s Learning Outcomes and other blocks, the pupil’s name and photograph stay pinned near the top of the screen. This means you always know whose report you are editing, even for subjects with a long list of outcomes.
 
 ### Completion Status Dots
 
@@ -116,8 +116,8 @@ For a large class, loading every pupil at once would make the screen slow to ope
 
 If you would rather concentrate on one pupil at a time, click **Switch to one-at-a-time**. ADAM then shows a single pupil, with links carrying the name of the previous and next pupil so you can step through the class one report at a time. Click **Switch to paginated view** to return to seeing several pupils per page.
 
-!!! note
-    When you enter comments **by subject** (across several classes at once), the index panel groups the pupils under a heading for each class, and the navigation controls let you move from one class to the next. Everything else - the status dots, the sticky pupil name and jumping to a pupil by clicking their name - works in exactly the same way.
+> [!NOTE]
+> When you enter comments **by subject** (across several classes at once), the index panel groups the pupils under a heading for each class, and the navigation controls let you move from one class to the next. Everything else - the status dots, the sticky pupil name and jumping to a pupil by clicking their name - works in exactly the same way.
 
 If the index panel shows “Failed to load the pupil index” or a page shows “Failed to load”, this usually points to a brief interruption in your internet connection. Use the **Retry** link provided, or reload the page. See the [Troubleshooting section](#troubleshooting-report-comments) for more help.
 

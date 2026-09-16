@@ -2,8 +2,8 @@
 
 ADAM comes complete with a powerful mark book that allows for complete control over the marks in a teacher’s mark book. The mark book is controlled nearly entirely by each teacher and so they are able to manipulate it to suit their classes’ assessment needs.
 
-!!! warning
-    Your ADAM Administrator will need to ensure that there is a [reporting period](reporting-period-administration.md) configured to accept marks. In an open reporting period, add a [**Markbook Entry** time frame](reporting-period-administration.md#reporting-period-time-frames) to cover the time when you would like your teachers to capture their marks.
+> [!WARNING]
+> Your ADAM Administrator will need to ensure that there is a [reporting period](reporting-period-administration.md) configured to accept marks. In an open reporting period, add a [**Markbook Entry** time frame](reporting-period-administration.md#reporting-period-time-frames) to cover the time when you would like your teachers to capture their marks.
 
 ## Managing Assessments
 
@@ -38,8 +38,8 @@ On this screen, the **New Assessment** tab should already be selected, as shown 
 -   Number of Questions: While the word “questions” is used here, this is actually asking for the number of subtotals that you wish to enter. This allows you to record marks against different learning outcomes, sections or topics for either reporting or later analysis.
 -   Copy This Assessment To Other Classes: You also have the option of copying this assessment to any other classes in the same subject and same grade. Only users who have permission to create assessments in other teachers’ markbooks will see this option.
 
-!!! warning
-    Note that these assessments will be linked and if a teacher in another class changes the settings of this assessment, it will affect all the classes that use it.
+> [!WARNING]
+> Note that these assessments will be linked and if a teacher in another class changes the settings of this assessment, it will affect all the classes that use it.
 
 Once you are satisfied with the settings, click on the “Next” button.
 
@@ -129,8 +129,8 @@ Results can only be captured while the reporting period’s **Markbook Entry** t
 
 Some schools close the mark book in two stages, so that ordinary mark entry ends on the published deadline while heads of department keep a few extra days to settle final adjustments. Where a [**Markbook Editing** time frame](reporting-period-administration.md#markbook-editing) has been set, those staff who hold one of the mark book editing permissions will still be able to reach the results entry screen for that period, and their own editing deadline is listed for them on the home page. Everybody else sees *“This reporting period’s mark book has closed. Only staff with mark book editing permission can make changes during the editing window.”*
 
-!!! note
-    A head of department who is expecting to edit during this window needs both the **Edit assessment results for headed subjects during the mark book editing window** permission *and* a head-of-subject assignment for the subject concerned. Either one alone has no effect. See [Heads of Subject](subjects.md#heads-of-subject).
+> [!NOTE]
+> A head of department who is expecting to edit during this window needs both the **Edit assessment results for headed subjects during the mark book editing window** permission *and* a head-of-subject assignment for the subject concerned. Either one alone has no effect. See [Heads of Subject](subjects.md#heads-of-subject).
 
 ## Viewing Who Changed a Mark
 
@@ -144,8 +144,8 @@ When you open an **individual pupil’s** marks for an assessment, a **View mark
 | **Who** | The staff member who made the change. A change that ADAM could not attribute to a person — for example one made directly in the database — is shown as **Unknown (not attributed)** rather than left blank. |
 | **Change** | A plain-language description of what happened, such as “Set the mark to 33”, “Changed the mark from 33 to 45”, “Cleared the mark (was 33)”, or a change to the comment. |
 
-!!! note
-    The history is only recorded from the date this feature was switched on for your school. The page always shows that date, and changes made before it are not listed. An empty list therefore means “there is no recorded change since we started keeping history”, **not** that a mark was never changed.
+> [!NOTE]
+> The history is only recorded from the date this feature was switched on for your school. The page always shows that date, and changes made before it are not listed. An empty list therefore means “there is no recorded change since we started keeping history”, **not** that a mark was never changed.
 
 This is a **view-only** report — being able to see the history does not grant the ability to change marks. It is available to management (who can view the history for any class) and to a subject head (who can view it for their own subject only). To see the changes made by a particular member of staff across all subjects, see [Mark change history by staff](#mark-change-history-by-staff) below.
 
@@ -221,8 +221,8 @@ Note that this option is not normally enabled by default and so permissions to u
 
 Assessment groups should ideally be created before any other assessments are created.
 
-!!! warning
-    If you already have assessments, please note that each assessment will be added to the first assessment group. You are, of course, welcome to edit the assessments and move them to the appropriate group later.
+> [!WARNING]
+> If you already have assessments, please note that each assessment will be added to the first assessment group. You are, of course, welcome to edit the assessments and move them to the appropriate group later.
 
 On the “Manage assessments and weightings” page for a class, the option for managing assessment groups appears at the top:
 
@@ -310,13 +310,13 @@ If you choose the **Random Code** option, ADAM gives you a printable list of cod
 
 Click on the **Print Labels** button to generate the labels. ADAM will generate a label for each pupil that is in a class that has this - or a linked - assessment. The labels are printed in alphabetical order by pupil surname.
 
-!!! note
-    We are aware that the generation of labels is currently very slow and are looking at ways to improve this.
+> [!NOTE]
+> We are aware that the generation of labels is currently very slow and are looking at ways to improve this.
 
 ![](assets/screenshots/mark-book-administration/mark-book-administration-33.png)
 
-!!! warning
-    Please take special care, when printing labels, to ensure that all “scale to page” or “scale to fit” options are turned off. ADAM measures the labels quite precisely and scaling options introduced by your computer will distort the printing, resulting in the printed content of the label spilling into the next label.
+> [!WARNING]
+> Please take special care, when printing labels, to ensure that all “scale to page” or “scale to fit” options are turned off. ADAM measures the labels quite precisely and scaling options introduced by your computer will distort the printing, resulting in the printed content of the label spilling into the next label.
 
 ### Scanning QR Code Labels
 

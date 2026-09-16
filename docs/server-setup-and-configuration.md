@@ -22,8 +22,8 @@ When Maintenance Mode is enabled, a banner will appear across the top of the scr
 
 ![](assets/screenshots/server-setup-and-configuration/server-setup-and-configuration-02.png)
 
-!!! warning
-    Note that Maintenance Mode will only prevent new users logging in, but will not automatically log out old users.
+> [!WARNING]
+> Note that Maintenance Mode will only prevent new users logging in, but will not automatically log out old users.
 
 Before any significant work is undertaken, you are advised to consult the list of logged in users to determine whether any specific users may be busy with critical work.
 
@@ -82,12 +82,12 @@ It must be set for every way PHP is run on the server (the web server, and the c
 ADAM checks the clock very early in each request, before it has applied the school’s own time zone
 setting.
 
-!!! warning
-    If PHP has no time zone of its own it falls back to UTC, and the times ADAM records for staff
-    logins are then two hours behind. Because those times are read back on the very next request and
-    look like a long period of inactivity, **staff are logged out immediately after logging in**.
-    There is nothing in the logs to explain it. This is most likely to happen after a PHP upgrade
-    that quietly discards an existing configuration file.
+> [!WARNING]
+> If PHP has no time zone of its own it falls back to UTC, and the times ADAM records for staff
+> logins are then two hours behind. Because those times are read back on the very next request and
+> look like a long period of inactivity, **staff are logged out immediately after logging in**.
+> There is nothing in the logs to explain it. This is most likely to happen after a PHP upgrade
+> that quietly discards an existing configuration file.
 
 To check that the two agree, run the following from the ADAM folder on the server:
 
@@ -100,8 +100,8 @@ under daylight saving is still caught.
 
 ## Editing the configuration file
 
-!!! warning
-    Please don’t edit the configuration file unless you are confident in what you are doing.
+> [!WARNING]
+> Please don’t edit the configuration file unless you are confident in what you are doing.
 
 The configuration file is found in the ADAM source folder.
 

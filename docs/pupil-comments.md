@@ -55,15 +55,15 @@ The next option will restrict the visibility of the comment to specific permissi
 
 At the option to **Email staff**, the different subject categories are shown. This allows you to quickly select all academic staff, for example.
 
-!!! warning
-    Again, remember that this list shows all staff who can see the comment. Any staff who are ticked on this list will receive an additional email alert. If a staff member is listed here at all, they will be able to see your comment.
+> [!WARNING]
+> Again, remember that this list shows all staff who can see the comment. Any staff who are ticked on this list will receive an additional email alert. If a staff member is listed here at all, they will be able to see your comment.
 
 The **Email Parents** option may or may not be enabled depending on how the [comment category was set up](#comment-categories).
 
 Below this, there is the space to enter a **comment**. If the comment category has a template assigned with it, the template text should already appear in this box.
 
-!!! note
-    As a safety precaution, once the text in the box is modified in any way, changing the category will no longer update the template. This is to prevent ADAM deleting any of your work by replacing it with a blank template.
+> [!NOTE]
+> As a safety precaution, once the text in the box is modified in any way, changing the category will no longer update the template. This is to prevent ADAM deleting any of your work by replacing it with a blank template.
 
 Finally, if the user has [permissions to add documents](document-repository.md#staff-permissions) to any [document repository category](document-repository.md#categories), they will see a **Supporting Documentation** option at the bottom. Note that this only appears if it can be used.
 

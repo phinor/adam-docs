@@ -10,8 +10,8 @@ An account protected with Two-Factor Authentication will not let a password on i
 
 ADAM’s two-factor authentication system works using an Authenticator App that must be installed onto your phone. The Authenticator App will generate the One Time PIN. It is not sent by SMS and it is not linked to any specific phone number. After it has been set up, the app will not require any airtime or data to use.
 
-!!! warning
-    From **1 January 2027**, two-factor authentication is required for every staff member who uses ADAM. You do not need to wait for that date — you can set it up now, and we would encourage you to. Once the requirement takes effect, ADAM will ask you to set it up the next time you sign in, and you will not be able to use ADAM until you have.
+> [!WARNING]
+> From **1 January 2027**, two-factor authentication is required for every staff member who uses ADAM. You do not need to wait for that date — you can set it up now, and we would encourage you to. Once the requirement takes effect, ADAM will ask you to set it up the next time you sign in, and you will not be able to use ADAM until you have.
 
 Two-factor authentication is already required for accounts with elevated permissions, whatever your school has chosen.
 
@@ -53,8 +53,8 @@ ADAM shows a QR code for your app's camera to read. If your phone cannot scan it
 
 ![](assets/screenshots/two-factor-authentication/two-factor-authentication-12.png)
 
-!!! note
-    The QR code in the picture above has been deliberately corrupted so that it cannot be scanned. Scan the code on **your own screen** — every account's code is different.
+> [!NOTE]
+> The QR code in the picture above has been deliberately corrupted so that it cannot be scanned. Scan the code on **your own screen** — every account's code is different.
 
 Open the authenticator app you installed, and choose its option to add a new account. The app will ask permission to use your camera so that it can scan the code. In the Google Authenticator app, for example, this is the **+** button at the bottom right of the screen.
 
@@ -88,8 +88,8 @@ A3F7-K29P
 
 They contain no digit 0, 1, 8 or 9 — so if you see a rounded character, it is always the letter O, never a zero. Neither capitalisation nor the hyphen matters: ADAM upper-cases the code and strips punctuation before checking it, so `a3f7k29p` works just as well as `A3F7-K29P`.
 
-!!! warning
-    ADAM shows your recovery codes **once**, at the moment they are created, and never again. It cannot show them to you later, because it does not keep a readable copy — it stores only enough to check a code you type in. If you lose them, you can generate a fresh set, but the old ones stop working.
+> [!WARNING]
+> ADAM shows your recovery codes **once**, at the moment they are created, and never again. It cannot show them to you later, because it does not keep a readable copy — it stores only enough to check a code you type in. If you lose them, you can generate a fresh set, but the old ones stop working.
 
 Print them, or download them, and keep them somewhere you can reach without your phone. A drawer at home is fine. A note on your desk beside the computer you sign in on is not — anyone who has your password and that note has your account.
 
@@ -111,8 +111,8 @@ Where that is in use, your two-factor authentication page shows a **Remembered d
 
 ![](assets/screenshots/two-factor-authentication/two-factor-authentication-15.png)
 
-!!! tip
-    If you have signed in on a computer that is not yours — a shared office machine, a hotel, a friend's laptop — or if a laptop has been lost or stolen, use **Sign out all devices**. Every computer remembered for your account is forgotten, and the next time you sign in on any of them you are asked for a code.
+> [!TIP]
+> If you have signed in on a computer that is not yours — a shared office machine, a hotel, a friend's laptop — or if a laptop has been lost or stolen, use **Sign out all devices**. Every computer remembered for your account is forgotten, and the next time you sign in on any of them you are asked for a code.
 
 Signing devices out does not remove two-factor authentication from your account and does not affect your recovery codes. It only means the code prompt comes back.
 
@@ -158,8 +158,8 @@ Sign in with a [recovery code](#recovery-codes), then remove two-factor authenti
 
 Please be aware that the only time that ADAM and your Authenticator App will communicate is when the QR code is first scanned. After that, there is no synchronisation or communication of any kind between ADAM and the Two-Factor Authentication app that is installed on your phone.
 
-!!! warning
-    If you remove the app from your phone, or remove the ADAM OTP from within the app, it does not remove Two-Factor Authentication protection from your account. If you remove the code from your app before you remove two-factor authentication from your account, you will no longer be able to log in.
+> [!WARNING]
+> If you remove the app from your phone, or remove the ADAM OTP from within the app, it does not remove Two-Factor Authentication protection from your account. If you remove the code from your app before you remove two-factor authentication from your account, you will no longer be able to log in.
 
 Similarly, if you remove the protection from your account, it does not automatically remove the code from your app.
 
@@ -203,8 +203,8 @@ If this happens, there will be a mismatch between the codes that your phone gene
 
 Only your ADAM administrator can do this. The procedure is described on the [Two-Factor Authentication for Administrators](two-factor-authentication-for-administrators.md#removing-two-factor-for-another-staff-member) page.
 
-!!! warning
-    Note that if 2FA is reinstated by a user after being removed, their app will have to be updated with a new QR Code. ADAM does not allow a previous code to be used. The code should be removed from the 2FA app when 2FA is disabled from the account.
+> [!WARNING]
+> Note that if 2FA is reinstated by a user after being removed, their app will have to be updated with a new QR Code. ADAM does not allow a previous code to be used. The code should be removed from the 2FA app when 2FA is disabled from the account.
 
 ## Troubleshooting 2FA and OTPs
 

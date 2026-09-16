@@ -47,8 +47,8 @@ From the list of Leave Types, click on the **edit** option next to the leave typ
 
 Some leaves can be configured to be taken only a limited number of times. These limits must be set per leave type, per pupil.
 
-!!! warning
-    Note that if leave limits are not set for each pupil and for each leave type this will result in parents, staff and pupils being unable to apply for leaves of types where no limit has been set. In the same way pupils who have a balance of zero leaves for a particular type will not be allowed to request leaves of that type.
+> [!WARNING]
+> Note that if leave limits are not set for each pupil and for each leave type this will result in parents, staff and pupils being unable to apply for leaves of types where no limit has been set. In the same way pupils who have a balance of zero leaves for a particular type will not be allowed to request leaves of that type.
 
 Leave limits can be changed in one of two ways:
 
@@ -61,8 +61,8 @@ Navigate to **Pupils → Leave Management → Reset Leave Limits by Class**.
 
 Choose the class and the leave type.
 
-!!! note
-    The classes shown are those from the subject specified in the Site Settings as the **General / Default Class subject for Leaves**. This might need to be set correctly the first time if you do not see any classes listed here. This setting should be set to align to your boarding houses.
+> [!NOTE]
+> The classes shown are those from the subject specified in the Site Settings as the **General / Default Class subject for Leaves**. This might need to be set correctly the first time if you do not see any classes listed here. This setting should be set to align to your boarding houses.
 
 ![](assets/screenshots/leave-module/leave-module-03.png)
 
@@ -70,8 +70,8 @@ This screen shows the pupils’ current leave counts for the selected Leave Type
 
 To change a pupil’s limit, make sure the **Select** box is checked, and enter a new amount in the **New Balance** column on the right and, optionally, enter a **Note**.
 
-!!! warning
-    Note carefully that only rows that have the **Select** box checked will be saved. This allows you to update only a single pupil in a whole class if required. The **Select** column will check automatically when the **New Balance** column or **Notes** column is typed in.
+> [!WARNING]
+> Note carefully that only rows that have the **Select** box checked will be saved. This allows you to update only a single pupil in a whole class if required. The **Select** column will check automatically when the **New Balance** column or **Notes** column is typed in.
 
 Once done, click on the **Save Limits** button at the bottom of the screen.
 

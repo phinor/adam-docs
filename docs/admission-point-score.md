@@ -4,8 +4,8 @@ The Admission Point Score (APS) module works out university-style admission scor
 
 ADAM ships with a set of built-in scales and definitions so that you can start computing scores immediately, and it lets you build your own definitions for any institution or internal award that you need to model.
 
-!!! note
-    This is a different feature to [Admissions Points](admissions-points.md#admissions-points), which awards entry-preference points to *applicants* based on their profile (for example, favouring staff children or alumni). If you are looking to rank applicants for admission, that is the page you want. The Admission Point Score described here works out academic point scores from *existing pupils’* subject results.
+> [!NOTE]
+> This is a different feature to [Admissions Points](admissions-points.md#admissions-points), which awards entry-preference points to *applicants* based on their profile (for example, favouring staff children or alumni). If you are looking to rank applicants for admission, that is the page you want. The Admission Point Score described here works out academic point scores from *existing pupils’* subject results.
 
 ## How APS is Made Up
 
@@ -40,8 +40,8 @@ ADAM then shows the **AP Score Result**, starting with the definition name and t
 
 Below the total is a breakdown with one row per subject, showing the **Subject**, the **Mark**, the **Raw pts** earned from the scale, the multiplier (**x**), the final **Points** (a subject whose points were limited by a cap is marked *capped*), and whether the subject was **Counted**. Where a subject was not counted, the reason is shown in place of “No” — for example, a subject that was excluded or dropped because only the best few subjects were kept.
 
-!!! note
-    The preview is a calculation tool: it displays a score but does not store it against the pupil. Run it as often as you like to check results before you rely on them.
+> [!NOTE]
+> The preview is a calculation tool: it displays a score but does not store it against the pupil. Run it as often as you like to check results before you rely on them.
 
 ## Viewing a Whole Grade’s Scores
 
@@ -67,8 +67,8 @@ APS can also be shown as a small card on a pupil’s **overview** (profile) scre
 
 The card is added through the same mechanism as any other overview block — see [Profile Overview Layouts](profile-overview-customisation.md#profile-overview-layouts). When editing an overview layout, add a block, set its **Contents** to **Widget**, and select the **Admission Point Score** widget from the list.
 
-!!! note
-    The card only appears for staff who hold the **View & Compute APS** permission, and only when there is at least one enabled definition and a current reporting period to score. If any of these is missing, the block is simply left off the page.
+> [!NOTE]
+> The card only appears for staff who hold the **View & Compute APS** permission, and only when there is at least one enabled definition and a current reporting period to score. If any of these is missing, the block is simply left off the page.
 
 ## Managing Scales
 
@@ -95,8 +95,8 @@ For a band scale, a **Levels** table is shown beneath the form. Each level lists
 
 ![](assets/screenshots/admission-point-score/admission-point-score-04.png)
 
-!!! warning
-    Built-in scales are read-only. There is no edit option beside them, and ADAM will turn you away if you try to reach one directly. To base your work on a built-in scale, create a new scale of your own instead.
+> [!WARNING]
+> Built-in scales are read-only. There is no edit option beside them, and ADAM will turn you away if you try to reach one directly. To base your work on a built-in scale, create a new scale of your own instead.
 
 ## Managing Definitions
 
@@ -146,8 +146,8 @@ ADAM ships with a set of built-in definitions (see [What Ships with APS](#what-s
 
 Your own custom definitions instead offer **edit**, **clone** and **delete**. Deleting is permanent, and ADAM asks you to confirm first.
 
-!!! warning
-    Built-in definitions and scales cannot be edited or deleted, and their subject overrides cannot be changed. If you try to reach a built-in item’s edit page directly, ADAM returns you to the list with a message. Use **clone** to create an editable copy when you need to change a built-in definition.
+> [!WARNING]
+> Built-in definitions and scales cannot be edited or deleted, and their subject overrides cannot be changed. If you try to reach a built-in item’s edit page directly, ADAM returns you to the list with a message. Use **clone** to create an editable copy when you need to change a built-in definition.
 
 ## Showing APS on Printed Reports
 
@@ -163,8 +163,8 @@ For example, if a definition has the code `nsc`, then `{aps_name(nsc)}: {aps_sco
 
 A template can also list **every** enabled definition automatically, without naming each one, by repeating a block for each definition. Within that repeating block the codes `{aps_name}`, `{aps_code}`, `{aps_notes}`, `{aps_score:0}` and `{aps_incomplete}` refer to whichever definition the current row is for. This is the easiest way to print a small table of all the pupil’s scores.
 
-!!! note
-    Only enabled definitions are printed. A definition with a blank **Code** cannot be referred to individually by `{aps_score(code)}`, but it still appears in the repeating all-definitions block. If your school has no enabled definitions at all, a template can be set up to leave the whole APS section off the report automatically.
+> [!NOTE]
+> Only enabled definitions are printed. A definition with a blank **Code** cannot be referred to individually by `{aps_score(code)}`, but it still appears in the repeating all-definitions block. If your school has no enabled definitions at all, a template can be set up to leave the whole APS section off the report automatically.
 
 If you would like APS added to one of your report templates, or you are unsure which code to use, contact ADAM EduTech at [help@adam.co.za](mailto:help@adam.co.za).
 
@@ -185,5 +185,5 @@ ADAM installs the following built-in items so you can compute scores straight aw
 
 The codes shown in brackets are the built-in **merge codes** used to print each definition on a report (see [Showing APS on Printed Reports](#showing-aps-on-printed-reports)).
 
-!!! note
-    The university definitions are deliberately supplied as structure only, because admission rules change from year to year and vary by faculty. Treat them as templates: clone one, verify its subjects and weights against the current prospectus, and record the source in the definition’s **Notes**.
+> [!NOTE]
+> The university definitions are deliberately supplied as structure only, because admission rules change from year to year and vary by faculty. Treat them as templates: clone one, verify its subjects and weights against the current prospectus, and record the source in the definition’s **Notes**.

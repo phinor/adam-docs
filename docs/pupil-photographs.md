@@ -32,8 +32,8 @@ ADAM will now upload the photographs and match them to pupils in your database.
 
 Note that one pupil above, Brandon Clark was not matched. In this case, his name has been spelled incorrectly in the photograph. Correct any errors and try again.
 
-!!! warning
-    You do not have to upload all the files again, just the ones that needed corrections.
+> [!WARNING]
+> You do not have to upload all the files again, just the ones that needed corrections.
 
 Now, when searching for a pupil or viewing their profile, their picture will be displayed:
 
@@ -54,13 +54,13 @@ Some examples include:
 
 Visit the pupil’s information page (**Pupils → Pupil Administration → Pupil Info**) and click on the **Document Repository** heading.
 
-!!! warning
-    You will need specific permissions to be able to access the Document Repository.
+> [!WARNING]
+> You will need specific permissions to be able to access the Document Repository.
 
 Expand the **Photographs** section and use the **Choose Files** button to select a new photograph. Click on **Upload File…** to upload the file into the Document Repository.
 
-!!! warning
-    One might also take this opportunity of removing any incorrect photographs.
+> [!WARNING]
+> One might also take this opportunity of removing any incorrect photographs.
 
 Simply uploading a photograph to the document repository will *not* automatically change the photograph that ADAM displays. This must be done in a second step.
 
@@ -68,8 +68,8 @@ Simply uploading a photograph to the document repository will *not* automaticall
 
 Navigate to **Pupils → Photographs → Change pupil photograph**. Type in the name of the pupil whose photograph you’d like to change.
 
-!!! warning
-    To use this function you must be able to **read** documents from the **Photographs** category in the pupils’ Document Repository. If you lack this permission, ADAM explains what is required and, if you hold the necessary administrative rights, offers a link to adjust the category permissions. Otherwise, please ask your ADAM Administrator for assistance.
+> [!WARNING]
+> To use this function you must be able to **read** documents from the **Photographs** category in the pupils’ Document Repository. If you lack this permission, ADAM explains what is required and, if you hold the necessary administrative rights, offers a link to adjust the category permissions. Otherwise, please ask your ADAM Administrator for assistance.
 
 ![](assets/screenshots/pupil-photographs/pupil-photographs-09.png)
 

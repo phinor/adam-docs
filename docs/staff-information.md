@@ -100,8 +100,8 @@ Reading this screen:
 -   **Total Length of Service** adds together every period the staff member has worked, so a person who has left and returned keeps credit for their earlier service. Contracts that have not started yet are not counted.
 -   The **Actions** column offers **edit**, **delete** and **terminate** for each contract. These are discussed below.
 
-!!! note
-    You need the permission “View staff sensitive information (staff\_info\_sensitive)” to see this page at all, and “Edit staff member (staff\_edit)” for the **Add new employment contract** link and the actions in the last column. Without the second permission the page is read-only.
+> [!NOTE]
+> You need the permission “View staff sensitive information (staff\_info\_sensitive)” to see this page at all, and “Edit staff member (staff\_edit)” for the **Add new employment contract** link and the actions in the last column. Without the second permission the page is read-only.
 
 ### Staff who leave the school
 
@@ -152,8 +152,8 @@ Open their **Employment History** page and click on **Add new employment contrac
 
 Click on **Save Employment Record** to finish.
 
-!!! note
-    A contract cannot end before it begins. If you set **Indefinite Appointment** to **No** and give a **Termination Date** earlier than the **Commencement Date**, ADAM refuses to save the record and returns you to this screen with a message explaining why.
+> [!NOTE]
+> A contract cannot end before it begins. If you set **Indefinite Appointment** to **No** and give a **Termination Date** earlier than the **Commencement Date**, ADAM refuses to save the record and returns you to this screen with a message explaining why.
 
 #### Step 3: Check the result
 
@@ -226,12 +226,12 @@ In order to keep staff information up to date, many schools resort to giving sta
 
 ADAM offers an online update form for staff, very similar in function to the [parent detail update forms](family-detail-updates.md#online-detail-updates). The staff member does the typing, and nothing they type reaches the database until somebody has approved it.
 
-!!! warning
-    Staff must have the necessary permission to update their information. In the staff permissions, the permission can be found in the “Staff Admin” section, called “Edit personal information (staff\_edit\_own)”.
-
-    ADAM checks this for you. Staff without the permission are left off the request list, and a note above the list says how many were left out. If you need to include somebody, give them the permission first and they will appear.
-
-    Staff who are already carrying a request when the permission is taken away are simply not prompted until it is given back. Nothing is lost, and their request is still waiting.
+> [!WARNING]
+> Staff must have the necessary permission to update their information. In the staff permissions, the permission can be found in the “Staff Admin” section, called “Edit personal information (staff\_edit\_own)”.
+>
+> ADAM checks this for you. Staff without the permission are left off the request list, and a note above the list says how many were left out. If you need to include somebody, give them the permission first and they will appear.
+>
+> Staff who are already carrying a request when the permission is taken away are simply not prompted until it is given back. Nothing is lost, and their request is still waiting.
 
 A request to update is called a **trigger**. Once a staff member has been asked, ADAM interrupts them the next time they open the ADAM home page and puts the update form in front of them, and it keeps doing so until they submit it. They also receive a reminder email, so a member of staff who rarely logs in is not left out.
 
@@ -264,8 +264,8 @@ Which fields appear on the form is decided by an **update profile**. Profiles ar
 -   **Primary Form** is the form staff will see.
 -   **Update cadence** decides whether ADAM re-asks on its own. Choose anything from *Every 2 months* to *Every 24 months* and an overnight job re-flags every current staff member who has never completed that profile, or whose last completed update for it is older than the cadence. Choose *No forced updates* and staff are only ever asked when somebody asks them.
 
-!!! note
-    The **Audience** and **Default for Audience** settings on that screen belong to the family flows. Nothing on the staff side reads them, so leave them as you find them.
+> [!NOTE]
+> The **Audience** and **Default for Audience** settings on that screen belong to the family flows. Nothing on the staff side reads them, so leave them as you find them.
 
 The overnight job skips anybody who already has an open request, and anybody whose last submission is still sitting in the review queue, so a staff member is never asked twice for the same thing. It sends no reminder email — the assumption is that a member of staff logs in often enough to be prompted.
 
@@ -283,8 +283,8 @@ Click on **Request updates from selected staff**. ADAM confirms the request — 
 
 ![](assets/screenshots/staff-information/staff-information-10.png)
 
-!!! warning
-    Two permissions are needed to use this screen. “Produce Staff Information Forms (staff\_infosheet)” in the “Staff Admin” section opens the page, and “Email details update forms (detailupdate\_email)” in the “Family Admin” section puts the button on it. A user with only the first sees the list of staff and no way to submit it.
+> [!WARNING]
+> Two permissions are needed to use this screen. “Produce Staff Information Forms (staff\_infosheet)” in the “Staff Admin” section opens the page, and “Email details update forms (detailupdate\_email)” in the “Family Admin” section puts the button on it. A user with only the first sees the list of staff and no way to submit it.
 
 ### Updating the Information:
 
@@ -297,8 +297,8 @@ The next time the staff member opens the ADAM home page, ADAM does not show it. 
 
 A staff member who has been asked more than once — two profiles, say — works through the requests one at a time, oldest first. Each save clears one request and the next sign-in raises the next.
 
-!!! note
-    A staff member has only one submission waiting for approval at a time. If they submit the form again before anybody has reviewed the first one, the newer submission replaces the older one.
+> [!NOTE]
+> A staff member has only one submission waiting for approval at a time. If they submit the form again before anybody has reviewed the first one, the newer submission replaces the older one.
 
 #### Updating without being asked
 
@@ -306,8 +306,8 @@ Staff do not have to wait to be asked. At any time they can click on the “**St
 
 ![](assets/screenshots/staff-information/staff-information-11.png)
 
-!!! note
-    Updating this way does **not** clear an outstanding request. A staff member who has been flagged, and who then updates from the menu, will still be prompted at their next sign-in. Only the prompted form clears the request.
+> [!NOTE]
+> Updating this way does **not** clear an outstanding request. A staff member who has been flagged, and who then updates from the menu, will still be prompted at their next sign-in. Only the prompted form clears the request.
 
 #### Confirming your identity before editing
 
@@ -324,8 +324,8 @@ The **One Time PIN** field is only shown to staff enrolled in two-factor authent
 
 A wrong password returns the same page, with the changes still intact, and the message *“That password was not correct.”* Too many wrong passwords in a row are refused for a few minutes. Passwords entered here are counted separately from the ones entered at the login screen, so fumbling a password at this prompt can never lock a staff member out of ADAM itself. A wrong **One Time PIN** is treated differently — it counts against the same allowance as the one-time PIN at sign-in, because it is a guess at the same secret.
 
-!!! warning
-    Staff who sign in only with a [passkey](passkey-authentication.md#passkey-authentication), or through Google or Microsoft, may never have needed a password and may not know one. They can still use **Skip for now** to put the prompt off, but they will not be able to save the form. If this affects somebody at your school, make sure they have a working password for the authentication method their record uses — see [Staff Passwords](staff-passwords.md#staff-passwords) — before asking them to update their details.
+> [!WARNING]
+> Staff who sign in only with a [passkey](passkey-authentication.md#passkey-authentication), or through Google or Microsoft, may never have needed a password and may not know one. They can still use **Skip for now** to put the prompt off, but they will not be able to save the form. If this affects somebody at your school, make sure they have a working password for the authentication method their record uses — see [Staff Passwords](staff-passwords.md#staff-passwords) — before asking them to update their details.
 
 ### Approving the Information:
 
@@ -363,7 +363,7 @@ If multiple files are uploaded, only the most recent file is played when the but
 
 If the button is greyed out, it may be because an invalid audio file has been uploaded or the specific browser does not support the playback of that type of file. You are encouraged to upload files in MP3 format for the widest possible support.
 
-!!! note
-    Note that different web browsers may display the media control buttons differently. This is a function of the web browser rather than of ADAM.
+> [!NOTE]
+> Note that different web browsers may display the media control buttons differently. This is a function of the web browser rather than of ADAM.
 
 Have a look at the Document Repository documentation for more information on uploading many files at once using the [Bulk Upload feature](document-repository.md#uploading-documents-in-bulk).

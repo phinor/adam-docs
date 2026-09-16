@@ -26,8 +26,8 @@ At this point, ADAM will search through the entire database to find references t
 
 ![](assets/screenshots/deleting-information/deleting-information-01.png)
 
-!!! danger
-    **Do you see the dire warning at the top? ADAM isn’t joking!**
+> [!CAUTION]
+> **Do you see the dire warning at the top? ADAM isn’t joking!**
 
 If you look below the pupil’s name, you will see that ADAM will display the unique identifier for the pupil. This will enable you to determine exactly which pupil you are about to delete.
 
@@ -45,8 +45,8 @@ ADAM does make a *backup* of the deleted data. However, this backup cannot be ap
 
 ## Deleting Families
 
-!!! danger
-    Please see the warnings associated with [deleting other information](#deleting-information) in ADAM. Chances are you DO NOT want to delete a family since you will lose all record of the family.
+> [!CAUTION]
+> Please see the warnings associated with [deleting other information](#deleting-information) in ADAM. Chances are you DO NOT want to delete a family since you will lose all record of the family.
 
 When a family has been duplicated or added in error, you will need to delete the family. Deleting a family can be done by navigating to **Families → Family Administration → Delete a family**.
 
@@ -54,8 +54,8 @@ When a family has been duplicated or added in error, you will need to delete the
 
 The restoration of a deleted family cannot be done from within the ADAM interface since it requires restoring backups and extracting the family’s information from the backup.
 
-!!! warning
-    Most SLAs do not cover data rescue as an included service meaning that if we are required to rescue such deleted data, additional charges will be incurred.
+> [!WARNING]
+> Most SLAs do not cover data rescue as an included service meaning that if we are required to rescue such deleted data, additional charges will be incurred.
 
 ### Some additional warnings {#deleting-families-some-additional-warnings}
 
@@ -63,8 +63,8 @@ There are very few staff members who will need the ability to delete families. A
 
 ## Deleting Staff
 
-!!! danger
-    It’s  a safe bet that you will almost never need to delete a staff member from the database. If you are hoping to delete a staff member that has left the school, STOP HERE. Deleting a staff member who has left is incorrect!
+> [!CAUTION]
+> It’s  a safe bet that you will almost never need to delete a staff member from the database. If you are hoping to delete a staff member that has left the school, STOP HERE. Deleting a staff member who has left is incorrect!
 
 If a staff member leaves your school, you must [terminate their employment](staff-information.md#staff-who-leave-the-school).
 
@@ -74,8 +74,8 @@ You may want  to delete a staff member only if they have been added to your data
 
 ### To Delete a Staff Member
 
-!!! warning
-    Before you continue, please note that recovering a staff member deleted in error is not possible by the users and ADAM technical support must be involved. Please also note that this particular service, data recovery, will be invoiced over and above your SLA costs.
+> [!WARNING]
+> Before you continue, please note that recovering a staff member deleted in error is not possible by the users and ADAM technical support must be involved. Please also note that this particular service, data recovery, will be invoiced over and above your SLA costs.
 
 From the **Staff** tab, under the **Staff Administration** heading, click on **Delete a staff member**.
 

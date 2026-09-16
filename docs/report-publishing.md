@@ -68,8 +68,8 @@ When asked to display a signature on a report, ADAM will look in the staff membe
 
 The signatures must be uploaded to the individual staff members’ Document Repository.
 
-!!! note
-    Importantly, the person uploading the signatures must have the necessary permissions to add documents to the signatures category of the Document Repository. This person does not need to have “read” access, although “delete” access can be useful to replace an old signature with a newer version if it is required.
+> [!NOTE]
+> Importantly, the person uploading the signatures must have the necessary permissions to add documents to the signatures category of the Document Repository. This person does not need to have “read” access, although “delete” access can be useful to replace an old signature with a newer version if it is required.
 
 ADAM will use the *first* signature that it finds in this document repository category. This can sometimes be unpredictable if there are multiple versions of the signature. Thus, you are advised to delete any old versions of the signature so that the final choice not left to chance.
 
@@ -113,8 +113,8 @@ If you still cannot get the signature to display, please contact the ADAM Helpde
 
 ADAM can print reports by any class or grade group in the school.
 
-!!! note
-    If you choose a class, you **must** choose a **single grade** class. This is especially important if the different grades use different templates. ADAM will use the template that for the first pupil on **all** the other pupils.
+> [!NOTE]
+> If you choose a class, you **must** choose a **single grade** class. This is especially important if the different grades use different templates. ADAM will use the template that for the first pupil on **all** the other pupils.
 
 On the **Reporting** tab, under the **Report Publishing** heading, please have a look for the option **Print a class’s reports** or **Print a grade’s reports**.
 
@@ -143,8 +143,8 @@ Click on the **View Reports** button when you are done. ADAM will now compile a 
 
 ADAM can send emailed reports to each parent of a pupil where the family is set to receive reports and the individual email address of that parent is set to receive reports.  
 
-!!! warning
-    Thus there are two settings to check if the emailing process indicates that the parents were not sent reports, or if the parents didn’t receive a report.
+> [!WARNING]
+> Thus there are two settings to check if the emailing process indicates that the parents were not sent reports, or if the parents didn’t receive a report.
 
 To begin, visit the **Reporting** tab and under the **Report Publishing** heading click on **Email a class’s reports**. (There is no option to email a grade’s reports, so you may want to create some grade-wide classes if you don’t have any).
 
@@ -227,8 +227,8 @@ Each permission has its own tick box for **Pupils** and for **Families**, so it 
 
 ![](assets/screenshots/report-publishing/report-publishing-18.png)
 
-!!! warning
-    Neither of these permissions has any effect unless the **Pupil appears in portal** privilege — the very first one in the list — is also ticked. Without it, the pupil does not appear on the portal at all, no matter what else is ticked.
+> [!WARNING]
+> Neither of these permissions has any effect unless the **Pupil appears in portal** privilege — the very first one in the list — is also ticked. Without it, the pupil does not appear on the portal at all, no matter what else is ticked.
 
 The **Families** tick box of **View most recent report** does double duty: it is also the permission ADAM checks before it will email a report to a family. If it is not ticked, the pupil cannot be selected when [emailing reports](#emailing-reports), even if your school does not use the portal at all. See [The report isn’t being emailed!](#the-report-isnt-being-emailed) below.
 

@@ -83,8 +83,8 @@ In the reporting period settings, **Reporting → Reporting Period Administratio
 
 ![](assets/screenshots/goal-setting/goal-setting-03.png)
 
-!!! warning
-    This setting should be set properly before the time frames, discussed below, are opened. Note that if this setting is changed **after** a pupil sets their goals, ADAM will continue to show those goals as it normally would. Most of the logic surrounding whether to display goal information in ADAM depends on whether the goals exist or not. Once added, they cannot be removed for that reporting period.
+> [!WARNING]
+> This setting should be set properly before the time frames, discussed below, are opened. Note that if this setting is changed **after** a pupil sets their goals, ADAM will continue to show those goals as it normally would. Most of the logic surrounding whether to display goal information in ADAM depends on whether the goals exist or not. Once added, they cannot be removed for that reporting period.
 
 ### Creating a Time Frame
 

@@ -136,8 +136,8 @@ If you want to verify the information that can be seen by a specific family, sys
 
 Any parent or student who has access to the portal will see a **QR Code** menu option listed under the **General** heading. Tap on the link to see the QR Code.
 
-!!! tip
-    For users with limited data access or who may wish to avoid problems of bad signal, it may be sensible to take a screenshot of the QR code and store that in their phone’s photo gallery for future use.
+> [!TIP]
+> For users with limited data access or who may wish to avoid problems of bad signal, it may be sensible to take a screenshot of the QR code and store that in their phone’s photo gallery for future use.
 
 Note that this QR Code is meant only for scanning by ADAM when searching for a pupil. It is not intended to work in any other website or QR Code scanner.
 
@@ -182,8 +182,8 @@ Two further settings, in the same place, decide how much the list gives away abo
 
 **Names in the portal birthday widget:** choose between **First name and surname initial** — the default, which shows a pupil as *Connor A.* — and **Full name**.
 
-!!! warning
-    Switching photographs on publishes pupils’ photographs to other families. ADAM keeps no record of which parents have agreed to their child’s photograph being shared in this way, so please satisfy yourself that your school’s photograph consent covers it before you do.
+> [!WARNING]
+> Switching photographs on publishes pupils’ photographs to other families. ADAM keeps no record of which parents have agreed to their child’s photograph being shared in this way, so please satisfy yourself that your school’s photograph consent covers it before you do.
 
 ### What staff members see
 

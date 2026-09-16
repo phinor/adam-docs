@@ -32,8 +32,8 @@ The authentication method for each staff member is set in his or her staff infor
 
 Each staff member can use one of the three authentication methods. They are set individually.
 
-!!! warning
-    To change a staff member’s authentication method, you will need to edit the staff member’s information (Staff > Staff Administration > Edit a teacher’s personal information). At the bottom of the page is an option to choose the authentication method:
+> [!WARNING]
+> To change a staff member’s authentication method, you will need to edit the staff member’s information (Staff > Staff Administration > Edit a teacher’s personal information). At the bottom of the page is an option to choose the authentication method:
 
 ![](assets/screenshots/configuring-logins/configuring-logins-03.png)
 
@@ -48,8 +48,8 @@ In **[Site Settings](changing-site-settings.md)**, under the **Security** tab, s
 -   **AD Account Name Suffix**: This is set to the domain suffix. This is normally a string starting with “@” followed by the domain name. E.g. @myschool.local
 -   **AD Domain Controller**: This is the IP addresses of domain servers which should be consulted. Multiple values can be separated with commas.
 
-!!! warning
-    Providing multiple IP addresses does not provide a _failover_, but rather a _load balancer_. An IP address is chosen at random from this list. For example, if one of your two servers is down, 50% of logins will fail.
+> [!WARNING]
+> Providing multiple IP addresses does not provide a _failover_, but rather a _load balancer_. An IP address is chosen at random from this list. For example, if one of your two servers is down, 50% of logins will fail.
 
 -   **Use Secure LDAP Connection**: Strongly advised to select this, especially if your server is hosted on the wider internet. Otherwise, passwords will be sent over the wire in plain text.
 -   **AD Server Has Self-signed Certificate**: Tell ADAM whether it should check for a valid signature or not - if self-signed, ADAM won't check.
@@ -62,17 +62,17 @@ To associate an account on ADAM with a user account in Active Directory, the use
 
 Access is only granted if all three steps can be followed.
 
-!!! note
-    ADAM cannot tell, in this instance, why a user's credentials might have been denied. Common reasons include a) an incorrect password, b) a locked user account or c) a forced password change is pending (because this cannot be done over LDAP, the login is denied).
+> [!NOTE]
+> ADAM cannot tell, in this instance, why a user's credentials might have been denied. Common reasons include a) an incorrect password, b) a locked user account or c) a forced password change is pending (because this cannot be done over LDAP, the login is denied).
 
 ### Configuring POP3 Authentication
 
-!!! warning
-    POP3 authentication is not secure. As such, we are removing this as an authentication option from ADAM with effect from 1 October 2026. We recommend using OAuth authentication instead, such as **Sign in with Google** or **Sign in with Microsoft**.
-
-    Schools that are using POP3 Authentication will see a warning banner appear which will notify the administrators how many staff and pupils are affected. To get actual names of staff and pupils, you can create a **scratchlist by filter** and use the **Authenticate** field in your filter, being equal to "POP3".
-
-    If no action is taken, these users will be unable to log in, starting from 1 October 2026. On this date, their authentication method will be changed to "suspended" which will prevent logins until they are updated to another method.
+> [!WARNING]
+> POP3 authentication is not secure. As such, we are removing this as an authentication option from ADAM with effect from 1 October 2026. We recommend using OAuth authentication instead, such as **Sign in with Google** or **Sign in with Microsoft**.
+>
+> Schools that are using POP3 Authentication will see a warning banner appear which will notify the administrators how many staff and pupils are affected. To get actual names of staff and pupils, you can create a **scratchlist by filter** and use the **Authenticate** field in your filter, being equal to "POP3".
+>
+> If no action is taken, these users will be unable to log in, starting from 1 October 2026. On this date, their authentication method will be changed to "suspended" which will prevent logins until they are updated to another method.
 
 In order for ADAM to process POP3 authentication, it must be given a POP3 server to use. This is done in the “**Site Settings**” page (**Administration** / **Site** **Administration** / **Edit Site Settings**) and clicking on the “**Security**” tab.
 
@@ -100,8 +100,8 @@ Sometimes, especially for temporary staff members, it is easier to create an int
 
 An internal password can be set when the staff member is created. Alternatively, a password can be set and changed using the “**Change a teacher’s password**” option on the “**Staff**” tab, under the “**Security Administration**” heading.
 
-!!! warning
-    Note that ADAM irreversibly encrypts the passwords that it stores according to currently recommended guidelines. To this end, we encrypt the passwords and store them as “salted hashes”. This dramatically increases the difficulty of brute-force cracking the passwords. This does mean that it is essentially impossible to tell what the password is. More information here: [Security Administration](security-administration-for-staff.md#security-administration-for-staff) and here [https://en.wikipedia.org/wiki/Salt\_(cryptography)](https://en.wikipedia.org/wiki/Salt_\(cryptography\))
+> [!WARNING]
+> Note that ADAM irreversibly encrypts the passwords that it stores according to currently recommended guidelines. To this end, we encrypt the passwords and store them as “salted hashes”. This dramatically increases the difficulty of brute-force cracking the passwords. This does mean that it is essentially impossible to tell what the password is. More information here: [Security Administration](security-administration-for-staff.md#security-administration-for-staff) and here [https://en.wikipedia.org/wiki/Salt\_(cryptography)](https://en.wikipedia.org/wiki/Salt_\(cryptography\))
 
 ### Allowing staff to change their own passwords
 
@@ -175,8 +175,8 @@ The first time that a parent logs into ADAM, they will be required to enter the 
 
 Subsequent logins will require their ID number and their recently set password.
 
-!!! warning
-    We have compiled a separate document with [instructions for parents](https://docs.google.com/document/d/1vHiaDoheupdosNEEv32az8MjiVfSFUNmRiAk3TBZuuo/edit) that you can modify for your needs.
+> [!WARNING]
+> We have compiled a separate document with [instructions for parents](https://docs.google.com/document/d/1vHiaDoheupdosNEEv32az8MjiVfSFUNmRiAk3TBZuuo/edit) that you can modify for your needs.
 
 Permissions for parents are determined by [pupil login groups](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
@@ -192,8 +192,8 @@ Note that simply allowing the menu option to appear will not automatically allow
 
 Pupil logins can be enabled and their authentication method set on the “Site Settings” page (Administration / Site Administration / Edit Site Settings) and clicking on the “Pupil & Family Login” section. Once there, the “Allow pupil logins?” option should be set to “Yes”.
 
-!!! warning
-    The authentication method used for pupils is a global setting and cannot be controlled individually. They can either make use of the Active Directory LDAP Authentication or the POP3 Authentication as used and described in the Staff Logins section. (POP3 authentication is being retired on 1 October 2026 — see the warning under [Configuring POP3 Authentication](#configuring-pop3-authentication) above.)
+> [!WARNING]
+> The authentication method used for pupils is a global setting and cannot be controlled individually. They can either make use of the Active Directory LDAP Authentication or the POP3 Authentication as used and described in the Staff Logins section. (POP3 authentication is being retired on 1 October 2026 — see the warning under [Configuring POP3 Authentication](#configuring-pop3-authentication) above.)
 
 Permissions for pupils are determined by [pupil login groups](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
@@ -212,8 +212,8 @@ ADAM sends a notification under the following circumstances:
 1.  The user logs onto a computer that they have not logged into before; or
 2.  It has been a set number of days (configured in **Site Settings**) since the user first logged into that computer.
 
-!!! warning
-    Note that if a user clears all their browser cookies, ADAM will interpret this as the user logging on to a new computer. The only affect that this will have is that a notification will be sent warning them.
+> [!WARNING]
+> Note that if a user clears all their browser cookies, ADAM will interpret this as the user logging on to a new computer. The only affect that this will have is that a notification will be sent warning them.
 
 ### Changing Login Notification Settings
 
@@ -227,6 +227,6 @@ The login notification email appears as follows:
 
 In the email, a link is presented that will allow the user to block their ADAM user. This will have the effect of logging out all currently logged in instances of their user account (throwing a possible intruder out of the system) as well as preventing any future logins.
 
-!!! warning
-    An ADAM Administrator will be required to allow access for the user again. When a user account is blocked in this fashion, their **Authentication Method** in their profile is set to **Disabled**. It would thus need to be changed to reflect their actual authentication method (normally either Internal Password or Active Directory).
+> [!WARNING]
+> An ADAM Administrator will be required to allow access for the user again. When a user account is blocked in this fashion, their **Authentication Method** in their profile is set to **Disabled**. It would thus need to be changed to reflect their actual authentication method (normally either Internal Password or Active Directory).
 

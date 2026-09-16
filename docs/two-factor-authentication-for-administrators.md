@@ -36,13 +36,13 @@ Staff with elevated permissions are always required to use two-factor authentica
 
 **Require OTP once per computer** asks only when someone signs in from a computer ADAM has not seen them use before. **Remember logged-in machines for**, under the **Login Settings** heading on the same tab, then decides how long that recognition lasts before ADAM asks again.
 
-!!! warning
-    Recognition is per person, not per computer, so being remembered on a staffroom desktop does
-    not wave anybody else through — each staff member is asked for a code the first time they
-    sign in there. What it does mean is that somebody who learns a staff member's password can
-    sign in as them from that same shared browser without needing a code, for as long as the
-    recognition lasts. On shared computers, prefer **Require OTP once per computer per day**, or
-    keep **Remember logged-in machines for** short.
+> [!WARNING]
+> Recognition is per person, not per computer, so being remembered on a staffroom desktop does
+> not wave anybody else through — each staff member is asked for a code the first time they
+> sign in there. What it does mean is that somebody who learns a staff member's password can
+> sign in as them from that same shared browser without needing a code, for as long as the
+> recognition lasts. On shared computers, prefer **Require OTP once per computer per day**, or
+> keep **Remember logged-in machines for** short.
 
 ADAM recognises a computer by a cookie stored in the browser. Clearing cookies, or using a different browser on the same computer, makes it a computer ADAM has not seen before.
 
@@ -77,8 +77,8 @@ The screen opens with a single line telling you where the school stands — for 
 
 **Set up** — they hold a second factor. Nothing is needed from them.
 
-!!! note
-    A staff member who is suspended but has already set two-factor authentication up appears under **Set up**, not under **Suspended**. Holding a second factor takes precedence over every other state, so the number in the headline is always exactly the length of the **Set up** table.
+> [!NOTE]
+> A staff member who is suspended but has already set two-factor authentication up appears under **Set up**, not under **Suspended**. Holding a second factor takes precedence over every other state, so the number in the headline is always exactly the length of the **Set up** table.
 
 ## The reminder on your dashboard
 
@@ -100,8 +100,8 @@ ADAM asks you to confirm your identity first — your password, and a code from 
 
 Once you confirm, ADAM returns you to the coverage screen. It does not remove the staff member's two-factor authentication for you — click **remove 2FA** again to finish the job.
 
-!!! warning
-    Removing two-factor authentication does not remove anything from the staff member's phone. When they set it up again they must scan a new QR code, and they should delete the old entry from their authenticator app first — the old entry's codes will never work again.
+> [!WARNING]
+> Removing two-factor authentication does not remove anything from the staff member's phone. When they set it up again they must scan a new QR code, and they should delete the old entry from their authenticator app first — the old entry's codes will never work again.
 
 If your school requires two-factor authentication, the staff member is asked to set it up again the moment they next sign in.
 

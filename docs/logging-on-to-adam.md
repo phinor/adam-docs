@@ -133,12 +133,12 @@ Some schools may chose to **Allow “Remember Me” Logins**. This will prevent 
 
 ### POP3 Authentication
 
-!!! warning
-    POP3 authentication is not secure. As such, we are removing this as an authentication option from ADAM with effect from 1 October 2026. We recommend using OAuth authentication instead, such as **Sign in with Google** or **Sign in with Microsoft**.
-
-    Schools that are using POP3 Authentication will see a warning banner appear which will notify the administrators how many staff and pupils are affected. To get actual names of staff and pupils, you can create a **scratchlist by filter** and use the **Authenticate** field in your filter, being equal to "POP3".
-
-    If no action is taken, these users will be unable to log in, starting from 1 October 2026. On this date, their authentication method will be changed to "suspended" which will prevent logins until they are updated to another method.
+> [!WARNING]
+> POP3 authentication is not secure. As such, we are removing this as an authentication option from ADAM with effect from 1 October 2026. We recommend using OAuth authentication instead, such as **Sign in with Google** or **Sign in with Microsoft**.
+>
+> Schools that are using POP3 Authentication will see a warning banner appear which will notify the administrators how many staff and pupils are affected. To get actual names of staff and pupils, you can create a **scratchlist by filter** and use the **Authenticate** field in your filter, being equal to "POP3".
+>
+> If no action is taken, these users will be unable to log in, starting from 1 October 2026. On this date, their authentication method will be changed to "suspended" which will prevent logins until they are updated to another method.
 
 ADAM can use a POP3 server as an external authentication source. Provide the necessary settings here to communicate with your POP3 server. This method is not commonly used because generally schools will have another more commonly used authentication source available to them.
 
@@ -184,10 +184,10 @@ There are several possibilities as to why this might happen. If a parent doesn�
 4.  **Ask the parent to check that the email hasn’t been delivered to a spam or junk mail folder.** In many instances, emails requesting password changes are treated suspiciously by many email providers and have a higher chance of being flagged as spam.
 5.  **Ask your IT department to trace the email’s delivery in your email service’s logs.** It will be helpful to report the time when the parent requested the login. The more accurate the time is, the easier it will be to trace. They should see a record of the message being received from ADAM and it then being delivered onward on to the family member’s email service. If the email server had problems with onward delivery, they should be able to report these to you. The resolution of any problems here will, of course, depend on the issue that your IT department discovers. If, however, there is no record of any email being sent, and assuming that ADAM can send other email without issue, the problem is almost definitely going to be linked to one of the first three points above.
 
-!!! warning
-    Parents tell us that they find the error messages about logging into ADAM to be unhelpful and vague. They ask us to change these messages to show more detail about what is wrong. We agree this would help solve problems faster.
-
-    However, if we do this, it would also help hackers and criminals find real ID numbers in our system. Not only is it against the law to share information with people who shouldn’t have it, but it’s even more serious because it could put children in danger if someone finds out they go to a certain school.
+> [!WARNING]
+> Parents tell us that they find the error messages about logging into ADAM to be unhelpful and vague. They ask us to change these messages to show more detail about what is wrong. We agree this would help solve problems faster.
+>
+> However, if we do this, it would also help hackers and criminals find real ID numbers in our system. Not only is it against the law to share information with people who shouldn’t have it, but it’s even more serious because it could put children in danger if someone finds out they go to a certain school.
 
 ### The login is very slow
 

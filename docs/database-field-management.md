@@ -141,8 +141,8 @@ That means a customisation can always be undone:
 Neither option deletes any pupil, family or staff information — they only affect how the fields
 themselves are named, grouped and offered.
 
-!!! note
-    Because only genuine customisations are stored, improvements that ADAM makes to a field’s default
-    name now reach your school automatically, instead of being masked by a stored copy of the old
-    name. If a field is showing a name your school has never chosen — an old or plainly wrong one —
-    resetting that field is the quickest way to pick up the corrected default.
+> [!NOTE]
+> Because only genuine customisations are stored, improvements that ADAM makes to a field’s default
+> name now reach your school automatically, instead of being masked by a stored copy of the old
+> name. If a field is showing a name your school has never chosen — an old or plainly wrong one —
+> resetting that field is the quickest way to pick up the corrected default.

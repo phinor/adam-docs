@@ -73,15 +73,15 @@ The table below lists the email templates that ADAM provides, grouped by the hea
 | Staff Alerts | Birthday Alerts | The scheduled digest of upcoming pupil and staff birthdays. |
 | Staff Alerts | Off-sport Alert | The scheduled digest of pupils currently excused from sport. |
 
-!!! tip
-    The wording of most of these emails can be tailored to your school in exactly the way described above — click **edit** next to the template, change the **Email Subject** and message sections, then click **Save Message**. The **Valid Merge Codes** shown on each template tell you which `{codes}` that particular email understands.
+> [!TIP]
+> The wording of most of these emails can be tailored to your school in exactly the way described above — click **edit** next to the template, change the **Email Subject** and message sections, then click **Save Message**. The **Valid Merge Codes** shown on each template tell you which `{codes}` that particular email understands.
 
 ## Editing the Default Template
 
 Where schools have demanding CI requirements, ADAM allows for the customisation and modification of the default email template.
 
-!!! warning
-    Kindly note that we do not provide any support for the modification or formatting of email messages. This feature is provided for your use entirely at your risk. In the event that your email template is changed in any way, our only offer of support is to replace this with the default message template.
+> [!WARNING]
+> Kindly note that we do not provide any support for the modification or formatting of email messages. This feature is provided for your use entirely at your risk. In the event that your email template is changed in any way, our only offer of support is to replace this with the default message template.
 
 Navigate to **Administration → Site Administration → Manage Email Messages**. Click on **edit** next to the **All Email** template, listed under the **General** heading.
 
@@ -93,8 +93,8 @@ Unlike other message templates, this one does not provide a “rich” text edit
 
 Note carefully the four merge codes. Importantly, the `{body}` and `{footer}` merge codes MUST be included in the template.
 
-!!! warning 
-    Please be aware that while this allows you to enter and CSS and HTML code you wish, not all CSS styling and HTML is honoured by the email client that will show the email to the final recipient. Additionally, there is no standard as to which email clients honour which CSS directives, meaning that to get an email to display consistently across all email viewers is, in short, impossible. A simple Google search on “email css styling” will reveal as much. You are thus advised to keep your styling general and also to test it across as many email clients as possible to ensure that emails are displayed correctly and are legible in their final destinations. **ADAM will not attempt to make any suggestions or corrections and will assume that you know what you’re doing!**
+> [!WARNING]
+> Please be aware that while this allows you to enter and CSS and HTML code you wish, not all CSS styling and HTML is honoured by the email client that will show the email to the final recipient. Additionally, there is no standard as to which email clients honour which CSS directives, meaning that to get an email to display consistently across all email viewers is, in short, impossible. A simple Google search on “email css styling” will reveal as much. You are thus advised to keep your styling general and also to test it across as many email clients as possible to ensure that emails are displayed correctly and are legible in their final destinations. **ADAM will not attempt to make any suggestions or corrections and will assume that you know what you’re doing!**
 
 Alternatively, there are a number of HTML template generators available who will ensure that your emails look as consistent as they can across different email clients. However, these are normally not free and should be used at your own risk.
 
@@ -104,8 +104,8 @@ Finally, if your school employs a graphic designer, they might be able to assist
 
 There are two merge codes for banner images: `{bannertop}` and `{bannerbottom}`. These banners should be uploaded in the same place as the [school logos](school-logos.md#school-logos).
 
-!!! warning
-    Be aware that these banners are not automatically resized by ADAM. While the banner images can be resized in the CSS of the email (perhaps with a surrounding div tag with fixed dimensions), again be aware that no all email clients will support such modifications and you are advised to upload appropriately sized images that will display correctly for a large number of users without and styling intervention. **Again, we emphasise the need to test your emails on a wide variety of email clients and platforms!**
+> [!WARNING]
+> Be aware that these banners are not automatically resized by ADAM. While the banner images can be resized in the CSS of the email (perhaps with a surrounding div tag with fixed dimensions), again be aware that no all email clients will support such modifications and you are advised to upload appropriately sized images that will display correctly for a large number of users without and styling intervention. **Again, we emphasise the need to test your emails on a wide variety of email clients and platforms!**
 
 ### Staff Sender Details and Signatures
 
@@ -134,8 +134,8 @@ These are the same codes that are listed under **Valid Merge Codes** when you ed
 {staff_email}</p>
 ```
 
-!!! warning
-    These codes are only filled in when an email has an identifiable staff sender, such as a message sent from the Messaging Centre. Many of ADAM’s automated emails — system notifications, report deliveries and the like — are sent on behalf of the school as a whole and have no individual sender. In those cases the sender detail codes are replaced with nothing, so be sure to design your template so that it still reads correctly when these details are absent.
+> [!WARNING]
+> These codes are only filled in when an email has an identifiable staff sender, such as a message sent from the Messaging Centre. Many of ADAM’s automated emails — system notifications, report deliveries and the like — are sent on behalf of the school as a whole and have no individual sender. In those cases the sender detail codes are replaced with nothing, so be sure to design your template so that it still reads correctly when these details are absent.
 
 #### Signature images
 

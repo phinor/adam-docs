@@ -16,15 +16,15 @@ Enter the **name** of the notification at the top. This is used to generate the 
 
 Secondly, choose the **notification interval**. ADAM can monitor for changes at intervals from 5 minutes to 1 week. Notifications will be sent only if changes have been made in that time span.
 
-!!! warning
-    If you are testing the notifications, set the interval to 5 minutes. Once happy that the correct fields are included, you can set the interval up to one of your choosing. ADAM will only send notifications for any changes made while the alert is active. If you set an alert for every week, it will be at least a week before you get your first notification.
+> [!WARNING]
+> If you are testing the notifications, set the interval to 5 minutes. Once happy that the correct fields are included, you can set the interval up to one of your choosing. ADAM will only send notifications for any changes made while the alert is active. If you set an alert for every week, it will be at least a week before you get your first notification.
 
 Choose which **staff members** should be notified in this alert.
 
 Next, choose the fields that ADAM should **monitor for changes**.
 
-!!! warning
-    Please don’t mix field types here. Either choose all family, all pupil or all staff. Set up multiple notifications if you need to.
+> [!WARNING]
+> Please don’t mix field types here. Either choose all family, all pupil or all staff. Set up multiple notifications if you need to.
 
 Finally, if you require **additional information** to be included - perhaps an account number, choose this field from the selection at the bottom. Once again, please don’t mix the fields in this alert.
 
@@ -38,10 +38,10 @@ As well as profile fields, you can watch your **site settings** for changes. In 
 
 Choose the settings you want to watch in the same way as any other field, and a notification will be sent whenever one of them changes.
 
-!!! note
-    Secret settings – such as passwords – are deliberately left out of this list, so their values are never included in an alert.
+> [!NOTE]
+> Secret settings – such as passwords – are deliberately left out of this list, so their values are never included in an alert.
 
-!!! warning
-    Treat Site Settings as a field type of their own. Just as you shouldn’t mix family, pupil and staff fields, set up a separate notification for the site settings you want to watch rather than combining them with profile fields.
+> [!WARNING]
+> Treat Site Settings as a field type of their own. Just as you shouldn’t mix family, pupil and staff fields, set up a separate notification for the site settings you want to watch rather than combining them with profile fields.
 
 If you would rather review setting changes after the fact than be alerted to them, super administrators can see the complete audit trail on the **Site settings history** page. See [Change History Reports](change-history-reports.md) for details.

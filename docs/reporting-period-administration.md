@@ -19,8 +19,8 @@ These settings are shared across all the grades. They are discussed as follows:
 -   The **Period Dates** are the start and finish of the term. **The end date is particularly important** since when looking at historical data, ADAM considers the end date of the reporting period to see if a pupil was enrolled in a class for a particular reporting period. The pupil is considered to be enrolled if they were enrolled on the end date.
 -   The **Publish Date** and time are used by ADAM to determine at what time parents and pupils are allowed to see these reports on the parent and pupil portal. This date can be set before the end of the reporting period if required. Take note, however, that any changes to classes prior to the end of period date will have an impact on the report.
 
-!!! note
-    The end date must fall on or after the start date. If you enter an end date that is earlier than the start date, ADAM will not create the reporting period and will show the message “The reporting period start date cannot be after the end date. The reporting period was not created.” Correct the dates and try again.
+> [!NOTE]
+> The end date must fall on or after the start date. If you enter an end date that is earlier than the start date, ADAM will not create the reporting period and will show the message “The reporting period start date cannot be after the end date. The reporting period was not created.” Correct the dates and try again.
 
 Once you’re happy with these settings, click on the **Add a new Reporting Period**  button at the bottom. ADAM will now show you some additional settings as well as the grade specific settings for this reporting period. Have a look at the next section, “Editing a reporting period” for more information.
 
@@ -30,16 +30,16 @@ Whether you’ve just added a new reporting period or are editing an existing re
 
 ![](assets/screenshots/reporting-period-administration/reporting-period-administration-02.png)
 
-!!! warning
-    If the correct grades are not shown, you can change the starting and ending grades in the [Site Settings](changing-site-settings.md#changing-site-settings).
+> [!WARNING]
+> If the correct grades are not shown, you can change the starting and ending grades in the [Site Settings](changing-site-settings.md#changing-site-settings).
 
 At the top of the screen are the same settings for the reporting period which were set when the [period was added](#adding-a-new-reporting-period). These can be changed here if required.
 
-!!! warning
-    Please be circumspect about changing the period’s end date. It can have unintended consequences. ADAM uses this date to see who should be in each class. If you change this date after the fact, you may find pupils “disappear” from their classes because they were not enrolled in those classes on that date.
+> [!WARNING]
+> Please be circumspect about changing the period’s end date. It can have unintended consequences. ADAM uses this date to see who should be in each class. If you change this date after the fact, you may find pupils “disappear” from their classes because they were not enrolled in those classes on that date.
 
-!!! note
-    The end date must fall on or after the start date. If you save the page with an end date that is earlier than the start date, ADAM rejects the change and shows the message “The reporting period start date cannot be after the end date. No changes were saved.” None of the other changes you made on the page are saved either, so correct the dates and save again.
+> [!NOTE]
+> The end date must fall on or after the start date. If you save the page with an end date that is earlier than the start date, ADAM rejects the change and shows the message “The reporting period start date cannot be after the end date. No changes were saved.” None of the other changes you made on the page are saved either, so correct the dates and save again.
 
 Additional settings control whether this reporting period is considered a **formal report** (in other words, whether it will collect marks for the pupil, as opposed to, say, comments or other behavioural indicators), and whether the reporting period should be shown at all to parents and pupils on their respective **portals**.
 
@@ -135,8 +135,8 @@ Each time, after you add or edit a reporting period’s information, or click on
 
 ![](assets/screenshots/reporting-period-administration/reporting-period-administration-09.png)
 
-!!! warning
-    The deadlines listed under **Editing Time Frames** require specific *editing* permissions to be assigned to staff. See “**[Security Administration](security-administration-for-staff.md#security-administration-for-staff)**”.
+> [!WARNING]
+> The deadlines listed under **Editing Time Frames** require specific *editing* permissions to be assigned to staff. See “**[Security Administration](security-administration-for-staff.md#security-administration-for-staff)**”.
 
 Each line represents a reporting action, which are discussed below, and on each line can be multiple windows, each with a start and end time. The start times are listed in green below the dates on which they take effect, and the end times are shown in red.
 
@@ -195,15 +195,15 @@ Two permissions decide who may use the window. Both appear on the **Assessments*
 -   **Edit assessment results during the mark book editing window** — allows the staff member to edit results for any class.
 -   **Edit assessment results for headed subjects during the mark book editing window** — allows the staff member to edit results only for classes in the subjects that they head. This permission does nothing on its own: the staff member must also be assigned as a [head of the subject](subjects.md#heads-of-subject) concerned.
 
-!!! note
-    If you do not set a Markbook Editing time frame, nothing changes for your school. The mark book simply closes at the Markbook Entry deadline, exactly as before. Neither of the two permissions above is granted by any of the permission groups that ship with ADAM, so the window has to be opened deliberately.
+> [!NOTE]
+> If you do not set a Markbook Editing time frame, nothing changes for your school. The mark book simply closes at the Markbook Entry deadline, exactly as before. Neither of the two permissions above is granted by any of the permission groups that ship with ADAM, so the window has to be opened deliberately.
 
 #### Markbook Embargo
 
 This deadline is a feature that allows the administrator to block access to any marks that are entered while the embargo was enforced. Typically this is used in examination periods in order to prevent pupil stress.
 
-!!! warning
-    Note that the embargo only affects assessments that are dated between the start and end of the embargo. Setting an embargo from “today” will not hide the results from an assessment dated “yesterday”. Either the embargo’s window must be widened, or the assessment edited to move into the embargo window.
+> [!WARNING]
+> Note that the embargo only affects assessments that are dated between the start and end of the embargo. Setting an embargo from “today” will not hide the results from an assessment dated “yesterday”. Either the embargo’s window must be widened, or the assessment edited to move into the embargo window.
 
 If a new assessment is added while an embargo is in force, ADAM will automatically set the results release time of the assessment to match that of the embargo. While this can be changed, the effect of the embargo cannot be overridden.
 

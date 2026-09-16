@@ -9,11 +9,11 @@ Family Alerts can be sent to parents and or pupils at regular intervals to send 
 
 To configure the Family Alerts, one must first choose which [pupil login permission groups](security-administration-for-families-and-pupils.md#login-group-principles) will get what information. In so doing, it is possible for parents to receive differentiated information based on the permission group that their child belongs to.
 
-!!! tip
-    Many combined prep and high schools take advantage of this so that high school pupils can get assessment notifications, for example, but pupils in the prep school will not. This requires that high school and prep school pupils belong to [different permission groups](security-administration-for-families-and-pupils.md#login-group-principles).
+> [!TIP]
+> Many combined prep and high schools take advantage of this so that high school pupils can get assessment notifications, for example, but pupils in the prep school will not. This requires that high school and prep school pupils belong to [different permission groups](security-administration-for-families-and-pupils.md#login-group-principles).
 
-!!! note
-    If no records have been generated for a child in a particular time frame, no email is sent.
+> [!NOTE]
+> If no records have been generated for a child in a particular time frame, no email is sent.
 
 ## What Goes Into an Alert
 
@@ -49,8 +49,8 @@ The first four columns are there to tell you what will happen; they are not edit
 -   **Sent to Family:** whether parents in this group hold the **Receive Family Alerts** permission.
 -   **Sent to Pupil:** whether pupils in this group hold it.
 
-!!! note
-    If both the **Sent to…** columns say “No”, nothing will be sent to that group. You will need to [change the permissions for that group](#enabling-family-alerts-for-permission-groups) first.
+> [!NOTE]
+> If both the **Sent to…** columns say “No”, nothing will be sent to that group. You will need to [change the permissions for that group](#enabling-family-alerts-for-permission-groups) first.
 
 The Family Alerts delivery options can be changed lower down on this page. These settings are the same ones that you might find in the site settings (**Administration → Site Administration → Edit site settings**), under the **Notifications & Scheduling** tab below the heading **Parent Alerts**. However, this allows someone to edit these particular settings without having to give them access to the entire site’s settings.
 
@@ -62,8 +62,8 @@ One can choose **which days to send** the alerts, as well as the **time of the d
 
 If alerts have not been sent before, or have been turned off for a long time, ADAM will only look back a **maximum number of days** as defined here. This prevents the first Family Alert from containing information from years back.
 
-!!! warning
-    Note that if the “maximum number of days” is less that the interval between alerts (e.g. you set a maximum number of days to 1, but alerts are sent out on Fridays - every 7 days), then information generated from Saturday to Wednesday will be missing from your alerts.
+> [!WARNING]
+> Note that if the “maximum number of days” is less that the interval between alerts (e.g. you set a maximum number of days to 1, but alerts are sent out on Fridays - every 7 days), then information generated from Saturday to Wednesday will be missing from your alerts.
 
 If a **reply address is provided**, then any parent replies to their alert will be directed to that person. If left blank, the default “from” address will be used. For a number of schools, this is a generic “noreply” address which may be problematic.
 
@@ -89,8 +89,8 @@ Roll call marks are filtered by the same setting, because roll call and daily ab
 
 ![The list of roll call reasons, showing separate Alert and Staff alert columns against each reason.](assets/screenshots/family-alerts/family-alerts-05.png)
 
-!!! warning
-    Changing a reason here changes it for daily absentees too, and the other way around — they are the same reasons. The screen warns you of this when you open it.
+> [!WARNING]
+> Changing a reason here changes it for daily absentees too, and the other way around — they are the same reasons. The screen warns you of this when you open it.
 
 Two things about roll call are worth knowing:
 
@@ -125,8 +125,8 @@ Assessment results are not filtered by a setting of their own — an assessment 
 -   Pupils marked absent for an assessment produce no entry.
 -   Marks are shown out of the assessment total with a percentage. Where an assessment is recorded by level rather than by mark, the levels are listed instead. The teacher’s comment, if there is one, is included.
 
-!!! tip
-    If parents are seeing marks earlier than you would like, the **Results Release Time** on the assessment is almost always the setting to change — not the Family Alerts configuration.
+> [!TIP]
+> If parents are seeing marks earlier than you would like, the **Results Release Time** on the assessment is almost always the setting to change — not the Family Alerts configuration.
 
 ### What Cannot Be Changed
 
@@ -153,8 +153,8 @@ Both understand the same merge codes:
 
 The list of records is inserted between the **Top of Message** and the **Bottom of Message** sections, so write the top as an introduction and the bottom as a sign-off. Full instructions on editing a template are on the [email templates](email-message-templates.md#email-message-templates) page.
 
-!!! note
-    Family Alerts are treated as a required school communication, so a parent cannot switch them off from their own communication preferences. Control them from the configuration table instead.
+> [!NOTE]
+> Family Alerts are treated as a required school communication, so a parent cannot switch them off from their own communication preferences. Control them from the configuration table instead.
 
 ## When an Alert is Not Sent
 

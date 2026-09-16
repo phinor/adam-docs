@@ -31,11 +31,11 @@ To add a new absentee reason, click on the link at the top of the page **Add new
 
 In this screen you can give a name for the absentee reason (or change it, if you are editing an existing reason). The second option, **Counts as Absent**, will tell ADAM whether this reason should count as absent. The third, **Include in Family Alerts**, decides whether absences recorded against this reason are reported to parents in the periodic [Family Alerts](family-alerts.md#absentee-records) email. Set it to “No” for reasons parents do not need to be told about — a pupil marked “Present”, for example.
 
-!!! note
-    Absentee reasons and [roll call](roll-calls.md#roll-calls) reasons are the same list. Changing a reason here changes it for roll calls too.
+> [!NOTE]
+> Absentee reasons and [roll call](roll-calls.md#roll-calls) reasons are the same list. Changing a reason here changes it for roll calls too.
 
-!!! warning
-    Be aware that changing the name of the absentee reason - specifically where such a change has a difference in meaning - that past records that have been recorded with this reason will still be shown against this reason, even with its new meaning.
+> [!WARNING]
+> Be aware that changing the name of the absentee reason - specifically where such a change has a difference in meaning - that past records that have been recorded with this reason will still be shown against this reason, even with its new meaning.
 
 ### Disabling an absentee reason
 
@@ -237,8 +237,8 @@ Lastly, the option to **show recording information** will show which teachers re
 
 ADAM allows a user with the appropriate permissions to send SMS notifications to Family members, Pupils and Staff of absent pupils.
 
-!!! warning
-    Note that sending SMSs is not free and this can be an expensive undertaking! It is partly for this reason, and to ensure no false positives are triggered, that absentee SMS alerts *cannot* be set up to be processed automatically.
+> [!WARNING]
+> Note that sending SMSs is not free and this can be an expensive undertaking! It is partly for this reason, and to ensure no false positives are triggered, that absentee SMS alerts *cannot* be set up to be processed automatically.
 
 Navigate to **Pupils → Absentee Administration → Send absentee SMSs**.
 

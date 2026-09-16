@@ -49,8 +49,8 @@ To generate these lists, navigate to the appropriate sections:
 -   View Admissions pupils for a particular year, and grade:  **Admissions → Lists and Labels → Admissions scratch lists**
 -   List applicants matching a set of filters: **Admissions → Lists and Labels → Admissions scratch list using filters**
 
-!!! note
-    The same filters are available in the Messaging Centre, where they select who receives a message rather than who appears on a list. See [Messaging applicants and their parents](messaging-centre.md#messaging-applicants-and-their-parents) for applicants, and the **Pupils by filter** audience under [Choosing an audience](messaging-centre.md#choosing-an-audience) for current pupils.
+> [!NOTE]
+> The same filters are available in the Messaging Centre, where they select who receives a message rather than who appears on a list. See [Messaging applicants and their parents](messaging-centre.md#messaging-applicants-and-their-parents) for applicants, and the **Pupils by filter** audience under [Choosing an audience](messaging-centre.md#choosing-an-audience) for current pupils.
 
 -   Alumni:
 
@@ -169,8 +169,8 @@ The Scratch List fields are used widely across ADAM to show information about pu
 
 https://www.youtube.com/watch?v=Aup59n6XZhM
 
-!!! warning
-    Note carefully that people who have the permissions to add and edit pupils, families or staff will always be able to see all the information on the respective editing screens. However, they may still be restricted from creating scratch lists with that information.
+> [!WARNING]
+> Note carefully that people who have the permissions to add and edit pupils, families or staff will always be able to see all the information on the respective editing screens. However, they may still be restricted from creating scratch lists with that information.
 
 Navigate to **Administration → Database Administration → Manage scratch list field permissions**.
 

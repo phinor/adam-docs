@@ -19,10 +19,10 @@ which are shared only with the other program that wishes to access the API. Beca
 to be used by a computer, it is not important that they are memorable or easy to type. In fact, ADAM will generate a
 random set of characters to be used as the API key and you are strongly encouraged to make use of the suggested token.
 
-!!! warning
-    It is vitally important that the token is kept confidential between the person issuing it and the person using it.
-    Anyone who knows the token will be able to access the API. Please read
-    the [Best Practices](#best-practice-security-principals) section below for further information.
+> [!WARNING]
+> It is vitally important that the token is kept confidential between the person issuing it and the person using it.
+> Anyone who knows the token will be able to access the API. Please read
+> the [Best Practices](#best-practice-security-principals) section below for further information.
 
 Each API token can be given access to one or more [API resources](#api-resources). Anyone who knows the API token can
 access all the resources that have been allocated to that token.
@@ -48,10 +48,10 @@ Token.
 3. Add **notes** if required. It is a good idea to make note of what service is making use of the API token.
 4. Click on **Save Token**.
 
-!!! warning
-The random 30 character token must be kept secret since it will allow anyone who knows it access to the data stored in
-the ADAM database. It will need to be shared with the integration provider and great care should be taken with how they
-are provided the API key. We strongly recommend against sending this information via email or other unsecured means.
+> [!WARNING]
+> The random 30 character token must be kept secret since it will allow anyone who knows it access to the data stored in
+> the ADAM database. It will need to be shared with the integration provider and great care should be taken with how they
+> are provided the API key. We strongly recommend against sending this information via email or other unsecured means.
 
 ### Managing Existing Tokens
 
@@ -90,14 +90,14 @@ A suspended token is clearly marked in the list, and its **Actions** column offe
 To bring a suspended token back into use, click **reactivate** in the **Actions** column of that token’s row. Its
 **Status** returns to **Active** and ADAM shows the message “The API token has been reactivated.”
 
-!!! note
-    Suspending and reactivating a token both take effect immediately. Because the token value itself is unchanged, you
-    do not need to update your external systems when you reactivate a token — it simply starts working again.
+> [!NOTE]
+> Suspending and reactivating a token both take effect immediately. Because the token value itself is unchanged, you
+> do not need to update your external systems when you reactivate a token — it simply starts working again.
 
-!!! warning
-    While a token is suspended, any request that uses it is refused as though the token had no access to the resource,
-    and the calling system receives a “403 Forbidden” response. Make sure the service that relies on the token is
-    prepared to handle being blocked before you suspend it.
+> [!WARNING]
+> While a token is suspended, any request that uses it is refused as though the token had no access to the resource,
+> and the calling system receives a “403 Forbidden” response. Make sure the service that relies on the token is
+> prepared to handle being blocked before you suspend it.
 
 The difference between the two ways of stopping a token is important:
 
@@ -1318,9 +1318,9 @@ GET /api/dataquery/get/GXiE4V5qYB
 
 The `data` attribute is a JSON object with zero or more attributes, each being the ID of the relevant data object as specified in the Data Query setup. Each of these objects will have a number of attributes depending on the fields chosen. 
 
-!!! warning
-    Note that the names of these attributes **can** be overridden by the school. However, there is a unique numeric identifier that is appended to each which will remain constant. Logic should be based around that identifier. 
-    
+> [!WARNING]
+> Note that the names of these attributes **can** be overridden by the school. However, there is a unique numeric identifier that is appended to each which will remain constant. Logic should be based around that identifier. 
+
 Note that custom fields will contain the word “custom” before the unique identifier and so that should also be checked for.
 
 ```
@@ -1754,8 +1754,8 @@ The last parameter (all or current) may be omitted - the default setting is to r
 
 An optional parameter, updated_since, will only return changes that have been made on or after the time specified. Any valid timestamp, that is URL encoded, can be used.
 
-!!! note
-    Note well that changes to email addresses are **not** reflected in the modified time.
+> [!NOTE]
+> Note well that changes to email addresses are **not** reflected in the modified time.
 
 #### Response {#exportfamiliesget-response}
 
@@ -1818,8 +1818,8 @@ Valid responses will contain an array of family objects in the data property. Th
 
 Allows ADAM to be used as an external authentication source.
 
-!!! warning
-    Note well: this API endpoint will divulge user information for a valid login name. As with any API key, it is imperative that it is kept secret and changed if a breach is suspected.
+> [!WARNING]
+> Note well: this API endpoint will divulge user information for a valid login name. As with any API key, it is imperative that it is kept secret and changed if a breach is suspected.
 
 #### Request {#externalauthauthpost-request}
 
@@ -3386,22 +3386,24 @@ GET /api/reporting/previousreports/<pupil>
 
 Data attribute contains previous report table data.
 
-!!! note "Report detail endpoints and publication"
-    The four `reporting/…` endpoints that follow (and their `reporting/grade/…` counterparts) expose the
-    detail that appears on a pupil's printed report — subject comments, learning outcomes, assessment
-    standards and behavioural indicators — as JSON. Every value is read through the same report engine
-    that renders the PDF, so the figures match the printed report exactly.
-
-    **Only published reporting periods are exposed.** A period is published once its publish date and time
-    has passed (see `period_publish` under [Reporting/periods](#reportingperiodsget-response)). Behaviour
-    for the period identifier supplied in the request:
-
-    - Period not yet published → `403 (Forbidden)`, with no data.
-    - Period identifier not recognised → `400 (Bad Request)`.
-    - Published period with no captured detail → `200 (OK)` with an empty `data` array.
-
-    Wherever a value has not been captured it is returned as `null`. This covers absent marks and any text
-    field left blank on the report.
+> [!NOTE]
+> **Report detail endpoints and publication**
+>
+> The four `reporting/…` endpoints that follow (and their `reporting/grade/…` counterparts) expose the
+> detail that appears on a pupil's printed report — subject comments, learning outcomes, assessment
+> standards and behavioural indicators — as JSON. Every value is read through the same report engine
+> that renders the PDF, so the figures match the printed report exactly.
+>
+> **Only published reporting periods are exposed.** A period is published once its publish date and time
+> has passed (see `period_publish` under [Reporting/periods](#reportingperiodsget-response)). Behaviour
+> for the period identifier supplied in the request:
+>
+> - Period not yet published → `403 (Forbidden)`, with no data.
+> - Period identifier not recognised → `400 (Bad Request)`.
+> - Published period with no captured detail → `200 (OK)` with an empty `data` array.
+>
+> Wherever a value has not been captured it is returned as `null`. This covers absent marks and any text
+> field left blank on the report.
 
 ### Reporting/comments:get
 

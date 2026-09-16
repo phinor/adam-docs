@@ -14,8 +14,8 @@ Click on the **Choose Files** button, find the file you want to upload and then 
 
 We recommend PNG format for onscreen and print logos. PNG format also allows for transparent backgrounds.
 
-!!! warning
-    Please also be aware of the size of the image you upload. The image should not be taller than 250 pixels. If you upload a very large image, it may cause performance issues since it will take a long time to download. This may be especially noticeable on mobile devices which may not have a quick internet connection.
+> [!WARNING]
+> Please also be aware of the size of the image you upload. The image should not be taller than 250 pixels. If you upload a very large image, it may cause performance issues since it will take a long time to download. This may be especially noticeable on mobile devices which may not have a quick internet connection.
 
 ## Choose the Correct Logo to be Displayed
 

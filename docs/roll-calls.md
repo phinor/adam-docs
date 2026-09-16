@@ -3,10 +3,10 @@
 ADAM allows for roll calls to be taken at school events. Roll calls can be scheduled either from the timetable, from a
 scheduler (for other non-academic purposes), or on an ad-hoc basis (e.g. sports practices).
 
-!!! warning
-    Please note that the Roll Call module is intended to replace the 
-    **[Attendance Registers](attendance-registers.md#attendance-registers)** module in ADAM. The Attendance Registers module
-    will be removed at the end of 2026.
+> [!WARNING]
+> Please note that the Roll Call module is intended to replace the 
+> **[Attendance Registers](attendance-registers.md#attendance-registers)** module in ADAM. The Attendance Registers module
+> will be removed at the end of 2026.
 
 ## Choosing A Roll Call
 
@@ -80,10 +80,10 @@ Unlike other roll calls, pupils added to a free-attendance roll call are automat
 It is possible to mark a pupil as absent for a free-attendance roll call. This might be used to indicate a pupil who was
 expected to attend, but didn’t.
 
-!!! warning
-    While ADAM will add pupils to the roll call, if you wish to change any reasons or add any notes, you must click on 
-    the **Save** button that appears at the bottom. If you make changes to this list, and then add another pupil before
-    you save the changes, those changes will be lost.
+> [!WARNING]
+> While ADAM will add pupils to the roll call, if you wish to change any reasons or add any notes, you must click on 
+> the **Save** button that appears at the bottom. If you make changes to this list, and then add another pupil before
+> you save the changes, those changes will be lost.
 
 ## Taking a Roll Call
 
@@ -117,8 +117,8 @@ To add a planned absence, navigate to **Pupils → Roll Call → Record planned 
 current planned absences. This list includes and absences that will end at some point today, any current and ongoing
 absences, and any future dated absences.
 
-!!! warning
-    Functionality to view a complete list of absences will be added in a future iteration.
+> [!WARNING]
+> Functionality to view a complete list of absences will be added in a future iteration.
 
 Click on **Add new planned absence** at the top of the screen to add a new planned absence, and search for the pupil’s
 name in order to continue.
@@ -213,9 +213,9 @@ Each morning at 5am, ADAM will look to see what roll calls need to be taken for 
 changes that need to be made (such as schedules or special arrangements) will be done the day prior so that roll calls
 are created accurately.
 
-!!! warning
-    Note that because this scheduling is done at 5am each day, if you make any changes to ADAM, the first time you’ll see
-    those changes is tomorrow, after the scheduler has run!
+> [!WARNING]
+> Note that because this scheduling is done at 5am each day, if you make any changes to ADAM, the first time you’ll see
+> those changes is tomorrow, after the scheduler has run!
 
 Roll Calls can be created from three sources:
 
@@ -465,10 +465,10 @@ To create or edit a series override:
 Once a series has an override, all roll calls in that series use the override and ignore the type default. To go back to
 the type default, open the override and click Remove override.
 
-!!! warning
-    Disabling an override silences the series. If you tick the series override but set Enabled = No, alerts are silenced
-    for the series — it does not fall back to the type default. This is deliberate: a disabled override is a positive "do
-    not alert for this series" signal. Use Remove override if you want the series to inherit the type setting again.
+> [!WARNING]
+> Disabling an override silences the series. If you tick the series override but set Enabled = No, alerts are silenced
+> for the series — it does not fall back to the type default. This is deliberate: a disabled override is a positive "do
+> not alert for this series" signal. Use Remove override if you want the series to inherit the type setting again.
 
 ### How Alerts Are Delivered
 

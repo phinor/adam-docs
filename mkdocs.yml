@@ -18,6 +18,9 @@ plugins: []
 hooks:
   - hooks/youtube_embed.py
   - hooks/sitemap_lastmod.py
+  # Registers the `> [!WARNING]` alert syntax as a markdown extension. Must be
+  # a hook, not a `markdown_extensions` entry: see the file's own docstring.
+  - hooks/github_callouts.py
 
 theme:
   name: null
@@ -29,7 +32,6 @@ theme:
     - 404.html
 
 markdown_extensions:
-  - admonition
   - attr_list
   - md_in_html
   - tables

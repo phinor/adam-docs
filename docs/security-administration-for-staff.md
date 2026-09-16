@@ -21,8 +21,8 @@ Normal users, on the other hand, have no automatic access to the system and perm
 
 Permissions are never assigned directly to a user. Instead, permissions are assigned to a security group and then users are either added or removed from groups. A group can have many permissions assigned to it, and a staff member can be assigned to many groups.
 
-!!! warning
-    Parents and Pupils use a separate authentication system and so there is no chance that parents will be able to get access to information that has not specifically been approved for parent access.
+> [!WARNING]
+> Parents and Pupils use a separate authentication system and so there is no chance that parents will be able to get access to information that has not specifically been approved for parent access.
 
 ## Security Group Principles
 
@@ -54,11 +54,11 @@ The following screen should appear:
 
 The group name can be anything you like. Enter something that will tell you about what permissions the group assigns. This will help you later when you determine which groups you need to add a staff member to.
 
-!!! warning
-    We recommend using a description of the “role” that permission groups will provide users. For example, instead of creating a permission group that describes a “person” (e.g. not “Jane’s Permissions”, nor “secretary permissions”) rather create a group that link to specific function such as “SMS Sender” or “Report Editing”.
+> [!WARNING]
+> We recommend using a description of the “role” that permission groups will provide users. For example, instead of creating a permission group that describes a “person” (e.g. not “Jane’s Permissions”, nor “secretary permissions”) rather create a group that link to specific function such as “SMS Sender” or “Report Editing”.
 
-!!! note
-    Remember that people can belong to as many groups as you like.
+> [!NOTE]
+> Remember that people can belong to as many groups as you like.
 
 The option for **“default”** is to say whether you want all new users to automatically become a member of this group. Note that setting a group to “Default” will *only* affect new users and any existing users will *not* be a member of this group until they are manually added.
 
@@ -76,8 +76,8 @@ Editing a group allows you to change the name and settings of the group (see abo
 
 If you wish to disable a security group so that it cannot be chosen as a new group and to ensure that the permissions that it assigns are ignored, simply click on the “**disable**” link next to the group. The group will move out of the top list into a list below with the heading “Disabled Staff Groups”. You can re-enable the group by clicking on the “enable” link.
 
-!!! warning
-    Note that disabling a group does not affect the membership of the group. If you re-enable a disabled group, the original members will regain the permissions that are associated with that group.
+> [!WARNING]
+> Note that disabling a group does not affect the membership of the group. If you re-enable a disabled group, the original members will regain the permissions that are associated with that group.
 
 ### Changing the Permissions of a Group
 
@@ -101,8 +101,8 @@ To add members to the group, select their names from the list on the right and c
 
 To remove, members, select their names from the list on the left and choose the “**remove >>**” option. Their names should move from the left to the right.
 
-!!! warning
-    Remember that you can highlight multiple names by holding down “Ctrl” on your keyboard while you click on the names.
+> [!WARNING]
+> Remember that you can highlight multiple names by holding down “Ctrl” on your keyboard while you click on the names.
 
 ### Editing Group Memberships in bulk
 

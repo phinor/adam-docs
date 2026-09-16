@@ -31,8 +31,8 @@ The table has three columns:
 | **Change** | A plain-language description – for example, a member being added or removed, a permission being granted or revoked, the group being renamed, disabled, or locked. |
 | **By** | The staff member who made the change. Automatic changes made by ADAM itself are shown as **System**. |
 
-!!! tip
-    You can also reach a group's history directly from the group list. Navigate to **Administration → Staff Groups → Manage staff groups** and click the **history** (clock) icon next to a group. When you open the history this way, the **Back** button returns you to the group list rather than to the audit report.
+> [!TIP]
+> You can also reach a group's history directly from the group list. Navigate to **Administration → Staff Groups → Manage staff groups** and click the **history** (clock) icon next to a group. When you open the history this way, the **Back** button returns you to the group list rather than to the audit report.
 
 ### Viewing changes by a staff member
 
@@ -42,8 +42,8 @@ Choosing a name from the **By staff member who made changes** list shows every g
 
 This view adds a **Group** column so you can see which group each change affected. Because a single person may have made a great many changes, this view also offers a date filter. Enter a **From** and **To** date and time and click **Filter** to narrow the list to a particular period.
 
-!!! note
-    The Group Change Audit is available to staff who hold the **Manage Staff Group Permissions** permission – the same permission that allows a user to change a group's permissions in the first place. If you cannot change group permissions, you will not see this report.
+> [!NOTE]
+> The Group Change Audit is available to staff who hold the **Manage Staff Group Permissions** permission – the same permission that allows a user to change a group's permissions in the first place. If you cannot change group permissions, you will not see this report.
 
 ## Site Settings History
 
@@ -63,11 +63,11 @@ The table lists every setting change, newest first:
 | **New Value** | The value after the change. |
 | **Changed By** | The staff member who made the change. |
 
-!!! warning
-    Secret settings – such as passwords – are never written to the history, so their values are not exposed here.
+> [!WARNING]
+> Secret settings – such as passwords – are never written to the history, so their values are not exposed here.
 
-!!! note
-    The Site Settings History page is visible to **super administrators** only.
+> [!NOTE]
+> The Site Settings History page is visible to **super administrators** only.
 
 Separately from this report, ADAM also emails a digest whenever a site setting changes, so that administrators are alerted even if they do not check the history page. See [Changing Site Settings](changing-site-settings.md) for more on the settings themselves, and [Change Log Notifications](change-log-notifications.md) for how to watch individual settings for change alerts.
 
@@ -82,7 +82,7 @@ There are two ways in:
 
 Both views are described in more detail, including the columns and the history-start-date caveat, under [Viewing Who Changed a Mark](mark-book-administration.md#viewing-who-changed-a-mark).
 
-!!! note
-    Like the other audit trails, the mark history is only recorded from the date the feature was switched on in mid-July 2026. An empty list means there is no recorded change **since mid-July 2026**, and not necessarily that a mark was *never* changed.
+> [!NOTE]
+> Like the other audit trails, the mark history is only recorded from the date the feature was switched on in mid-July 2026. An empty list means there is no recorded change **since mid-July 2026**, and not necessarily that a mark was *never* changed.
 
 Seeing the mark history is **view-only** and does not grant the ability to change marks – it is deliberately separate from the mark-editing permissions, so that staff such as registrars can review changes without being able to make them.

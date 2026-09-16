@@ -12,8 +12,8 @@ Most updates are applied automatically without any intervention required from yo
 
 Some updates include changes to the structure of the database. These database updates are applied on the ADAM server using ADAM’s command-line tools. They are **not** applied through the web interface, and they are no longer applied automatically when you log in or by the overnight cron service.
 
-!!! warning
-    While database updates are pending, ADAM is unavailable to everyone using it through a web browser. Anyone who visits the site sees an “ADAM is being upgraded” page reading *“The database is being updated to a new version. Please try again shortly.”* (an HTTP 503 response). The site becomes available again automatically as soon as the pending updates have been applied.
+> [!WARNING]
+> While database updates are pending, ADAM is unavailable to everyone using it through a web browser. Anyone who visits the site sees an “ADAM is being upgraded” page reading *“The database is being updated to a new version. Please try again shortly.”* (an HTTP 503 response). The site becomes available again automatically as soon as the pending updates have been applied.
 
 To apply the pending database updates:
 
@@ -33,8 +33,8 @@ To apply the pending database updates:
 
 5.  ADAM lists each update as it is applied and confirms when the database is up to date. Once the command has finished, the web interface becomes available again automatically.
 
-!!! note
-    On servers with an automated deployment process, `php adam schema:migrate` runs as part of each deployment, so pending database updates are normally applied for you. You only need to run it by hand if a deployment did not complete, or when the ADAM support team asks you to.
+> [!NOTE]
+> On servers with an automated deployment process, `php adam schema:migrate` runs as part of each deployment, so pending database updates are normally applied for you. You only need to run it by hand if a deployment did not complete, or when the ADAM support team asks you to.
 
 ### To apply an update file sent by email
 
@@ -46,5 +46,5 @@ To apply the pending database updates:
 6.  Please wait for the summary report to be shown. ADAM will show you any inconsistencies that might exist between your server and the manifest that was included in the update.
 7.  Please log out of ADAM and log back in again with your administrator account.
 
-!!! note
-    If the update includes database changes, apply them from the server afterwards by running `php adam schema:migrate`, as described under [Applying database updates](#applying-database-updates) above.
+> [!NOTE]
+> If the update includes database changes, apply them from the server afterwards by running `php adam schema:migrate`, as described under [Applying database updates](#applying-database-updates) above.

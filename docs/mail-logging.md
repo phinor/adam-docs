@@ -1,7 +1,7 @@
 # Mail Logging
 
-!!! warning
-    This feature is no longer actively supported and no further development is being done in this regard. It negatively impacts the ADAM database’s performance considerably and has significant concerns in terms of privacy.
+> [!WARNING]
+> This feature is no longer actively supported and no further development is being done in this regard. It negatively impacts the ADAM database’s performance considerably and has significant concerns in terms of privacy.
 
 The mail logging feature allows ADAM to monitor a “catch-all” mailbox on your Exchange server and, if it matches any of the addresses to families in ADAM, it will record those emails on their profile.
 
@@ -9,8 +9,8 @@ While this is useful for monitoring communication sent externally to ADAM, it ca
 
 ADAM scans the mail every five minutes and processes a batch of mail. Thus most mails should be archived by ADAM within 5 to 10 minutes of being sent.
 
-!!! note
-    Note that ADAM will not store attachments.
+> [!NOTE]
+> Note that ADAM will not store attachments.
 
 ## Enabling and Disabling Mail Logging for Families
 

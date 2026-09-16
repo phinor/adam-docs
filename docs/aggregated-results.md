@@ -35,8 +35,8 @@ For example:
 
 ### Individual Assessments
 
-!!! warning
-    This option is only available if you wish to create an Aggregated Result Calculation for a specific grade and subject.
+> [!WARNING]
+> This option is only available if you wish to create an Aggregated Result Calculation for a specific grade and subject.
 
 In this calculation, ADAM will allow you to select individual assessments and weight them to reach a final result. This technique can be used to generate portfolio marksheets, for example, which may only use specific assessments and at specific weightings which might not reflect the weighting that was used for the term results.
 
@@ -84,11 +84,11 @@ A list of reporting periods from the chosen academic year is displayed. The init
 
 ![](assets/screenshots/aggregated-results/aggregated-results-05.png)
 
-!!! warning
-    While these numbers look suspiciously like percentages in the screenshot above, they are not: ADAM will treat them as proportions of a total.
+> [!WARNING]
+> While these numbers look suspiciously like percentages in the screenshot above, they are not: ADAM will treat them as proportions of a total.
 
-!!! note
-    For example, if we entered the weightings for the three terms as 1, 2 and 4, ADAM would see that the total for the terms is 7 and weight Term 1 as 1 out of 7 (14,29%), Term 2 will be 2 out of 7 (28,57%) and Term 3 will be weighted as 4 out of 7 (57,14%).
+> [!NOTE]
+> For example, if we entered the weightings for the three terms as 1, 2 and 4, ADAM would see that the total for the terms is 7 and weight Term 1 as 1 out of 7 (14,29%), Term 2 will be 2 out of 7 (28,57%) and Term 3 will be weighted as 4 out of 7 (57,14%).
 
 Once happy with the weightings you’ve captured, click on **Save changes**.
 
@@ -100,8 +100,8 @@ ADAM will show a list of assessment categories for the chosen academic year. The
 
 In the diagram above, one might set the “Examinations” section of “Term 1” to 0 since there are no exams to take into account. Other weightings could be set accordingly.
 
-!!! warning
-    Take note that the numbers you see are not strictly percentages (they can be if you want them to be). ADAM will work them out as fractions of the total. Above, the total of all the 17s adds to 102. ADAM will actually use 17 / 102 as the fraction to work out the percentage weighting (16.67%)
+> [!WARNING]
+> Take note that the numbers you see are not strictly percentages (they can be if you want them to be). ADAM will work them out as fractions of the total. Above, the total of all the 17s adds to 102. ADAM will actually use 17 / 102 as the fraction to work out the percentage weighting (16.67%)
 
 Click on the **Save changes** button when you’re happy with your weightings.
 
@@ -146,8 +146,8 @@ Note that only “whole grade” calculations can be selected to apply to a whol
 
 The second is to set the calculation in the [mark book](mark-book-administration.md#mark-book-administration). This is done either when each class requires an individual calculation, or the calculation for a specific class must differ, for some reason, from the rest of the grade.
 
-!!! warning
-    Setting a calculation in the mark book will **override** any calculation that might be set for the grade in the reporting period settings.
+> [!WARNING]
+> Setting a calculation in the mark book will **override** any calculation that might be set for the grade in the reporting period settings.
 
 At the bottom right of the mark book screen is a block that shows the currently applicable **Year-to-Date Mark Calculation**. If none has been set in the reporting period settings, then ADAM will simply be duplicating the Term result as a year-to-date result. If one has been set in the reporting period settings, then ADAM will use that one to calculate the results.
 
@@ -179,10 +179,10 @@ The **three** calculations would be set out as follows:
 |Term 3|T1: 10, T2: 30, T3: 10, T4: 0|Term 3 is now included, with Term 4 still set at zero for the same reasons as set out above.|
 |Term 4|T1: 10, T2: 30, T3: 10, T4: 50|Term 4 is now included for the final year mark.|
 
-!!! warning
-    This *does* require three calculations. If you are tempted to set up a single calculation for the whole year, be aware that while it will give the appearance that it is working, this is only because the results in the following terms are all still absent and so ADAM ignores them faithfully. The  danger comes in for the reprints of old reports - particularly if updates need to be done and the archived copies are refreshed. Now, a Term 2 report - which uses a calculation that involves Term 3 and Term 4 marks - will show the same YTD result as the Term 4 report because it is using a calculation that *includes* the Term 4 marks.
-
-    These calculations are done outside of the context of the report and so no assumption can be made about which marks should be included and excluded from the report. It is therefore necessary to have a calculation that is entirely unambiguous for the calculation to be done correctly.
+> [!WARNING]
+> This *does* require three calculations. If you are tempted to set up a single calculation for the whole year, be aware that while it will give the appearance that it is working, this is only because the results in the following terms are all still absent and so ADAM ignores them faithfully. The  danger comes in for the reprints of old reports - particularly if updates need to be done and the archived copies are refreshed. Now, a Term 2 report - which uses a calculation that involves Term 3 and Term 4 marks - will show the same YTD result as the Term 4 report because it is using a calculation that *includes* the Term 4 marks.
+>
+> These calculations are done outside of the context of the report and so no assumption can be made about which marks should be included and excluded from the report. It is therefore necessary to have a calculation that is entirely unambiguous for the calculation to be done correctly.
 
 ## Using an Aggregated Result Calculation to calculate Term Results
 
@@ -190,8 +190,8 @@ While an aggregated result can be used to calculate a Year-to-Date result, as sh
 
 Use the instructions above to create an Aggregated Result based on subject and grade and then individual assessments.
 
-!!! warning
-    It is not possible to have a term mark based on overall marks from other terms. It is, however, possible, to use assessments from previous terms.
+> [!WARNING]
+> It is not possible to have a term mark based on overall marks from other terms. It is, however, possible, to use assessments from previous terms.
 
 In the assessment summary and weighting page, one would set the Year-to-Date calculation at the bottom of the page. However, to change the term mark to use an Aggregated Result, look for the following option at the top of the page:
 

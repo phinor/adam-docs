@@ -12,10 +12,10 @@ choose.
 
 ![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-11.png)
 
-!!! note
-    A layout only ever shows a viewer the information that they are already allowed to see. If a
-    layout contains a field that a particular staff member may not view, that field is simply left
-    out for them. This means that **any layout is safe to offer to any staff member**.
+> [!NOTE]
+> A layout only ever shows a viewer the information that they are already allowed to see. If a
+> layout contains a field that a particular staff member may not view, that field is simply left
+> out for them. This means that **any layout is safe to offer to any staff member**.
 
 ## Which Layout a Staff Member Sees
 
@@ -30,22 +30,24 @@ Most staff have nothing on their record at all, and simply follow the default. T
 administrator can improve the default layout and have the change reach everybody who has not made a
 choice of their own, without disturbing the people who have.
 
-!!! warning
-    There is only one layout per person per screen, so an administrator who puts somebody onto a
-    layout **replaces whatever they had**, including a layout that person had chosen for themselves.
-    Nothing is kept underneath to fall back on. The staff member can of course choose again
-    afterwards, if they have the permission to.
+> [!WARNING]
+> There is only one layout per person per screen, so an administrator who puts somebody onto a
+> layout **replaces whatever they had**, including a layout that person had chosen for themselves.
+> Nothing is kept underneath to fall back on. The staff member can of course choose again
+> afterwards, if they have the permission to.
 
-!!! note "Upgrading from an earlier version of ADAM"
-    Earlier versions of ADAM let each staff member customise their own overview page, and had a
-    single "default" page for everyone else. Those personal customisations have been converted into
-    ordinary named layouts — each named after the person who made it, for example *"Jane Smith's
-    Pupil Overview"* — and each person has been set to use their own one. **Nobody's overview screen
-    changes as a result of the upgrade.**
-
-    A school where customising was popular will therefore see a long list of layouts on the first
-    day. These are ordinary layouts: once their owner has moved to one of the school's layouts, the
-    old one can simply be deleted.
+> [!NOTE]
+> **Upgrading from an earlier version of ADAM**
+>
+> Earlier versions of ADAM let each staff member customise their own overview page, and had a
+> single "default" page for everyone else. Those personal customisations have been converted into
+> ordinary named layouts — each named after the person who made it, for example *"Jane Smith's
+> Pupil Overview"* — and each person has been set to use their own one. **Nobody's overview screen
+> changes as a result of the upgrade.**
+>
+> A school where customising was popular will therefore see a long list of layouts on the first
+> day. These are ordinary layouts: once their owner has moved to one of the school's layouts, the
+> old one can simply be deleted.
 
 ## Assigning the Permissions to Staff
 
@@ -68,10 +70,10 @@ Admin** or **Family Admin**, look for the **Overview heading**.
 It is entirely reasonable to give most teachers the "choose own" permission, and to keep the "manage"
 permission for the handful of people who look after the school's layouts.
 
-!!! warning
-    A staff member can only ever see the information that they have been allowed to view through the
-    [scratch list permissions](scratch-lists.md#controlling-access-to-scratch-list-fields), whichever
-    layout they are using.
+> [!WARNING]
+> A staff member can only ever see the information that they have been allowed to view through the
+> [scratch list permissions](scratch-lists.md#controlling-access-to-scratch-list-fields), whichever
+> layout they are using.
 
 As usual, a site administrator automatically has all six permissions.
 
@@ -171,15 +173,15 @@ Which appears on the overview screen like this:
 
 When you are happy, click on the **Save** button at the bottom of the screen.
 
-!!! warning
-    How the blocks actually arrange themselves on the finished page depends on what is in them.
-    ADAM arranges them as best it can, so the editor is not a perfect representation of the result.
-    Use the preview to check, and come back and reorder the blocks if you need to.
+> [!WARNING]
+> How the blocks actually arrange themselves on the finished page depends on what is in them.
+> ADAM arranges them as best it can, so the editor is not a perfect representation of the result.
+> Use the preview to check, and come back and reorder the blocks if you need to.
 
-!!! note
-    A layout with a very large number of blocks and fields can produce a form too big for the server
-    to accept. If that happens, ADAM refuses the save and tells you so, rather than quietly losing
-    the blocks that fell off the end. Use fewer blocks, or fewer fields per block, and try again.
+> [!NOTE]
+> A layout with a very large number of blocks and fields can produce a form too big for the server
+> to accept. If that happens, ADAM refuses the save and tells you so, rather than quietly losing
+> the blocks that fell off the end. Use fewer blocks, or fewer fields per block, and try again.
 
 ### Previewing a Layout
 
@@ -189,10 +191,10 @@ overview screen using the layout.
 
 ![](assets/screenshots/profile-overview-customisation/profile-overview-customisation-14.png)
 
-!!! note
-    The preview shows what **you** would see. A staff member with fewer permissions will see less.
-    Previewing is only available to people who are allowed to view the profiles concerned in the
-    first place.
+> [!NOTE]
+> The preview shows what **you** would see. A staff member with fewer permissions will see less.
+> Previewing is only available to people who are allowed to view the profiles concerned in the
+> first place.
 
 ### Seeing and Changing Who Uses What
 
@@ -215,10 +217,10 @@ which takes the layout off their record so that they follow the default from the
 This is how you would give, say, every register teacher the layout suited to their work, without
 waiting for each of them to find it for themselves.
 
-!!! warning
-    Moving somebody replaces whatever they had, **including a layout they picked for themselves**.
-    They are not asked, and their old choice is not remembered. If they have the permission to choose
-    their own layout, they can simply pick another one afterwards.
+> [!WARNING]
+> Moving somebody replaces whatever they had, **including a layout they picked for themselves**.
+> They are not asked, and their old choice is not remembered. If they have the permission to choose
+> their own layout, they can simply pick another one afterwards.
 
 ### Making a Layout the Default
 

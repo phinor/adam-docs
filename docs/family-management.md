@@ -28,10 +28,10 @@ Once you’ve clicked on the **Confirm changes** button, ADAM will show a summar
 
 ## Deleting a Family
 
-!!! warning
-    **Deleting a family is destructive and you will lose information regarding that family which cannot be easily restored.**
-
-    Deleting families is only occasionally necessary when facing issues of duplication or erroneous correction. However, you should **not** be deleting families as a normal course of business. It is done on the exception, rather than as a rule.
+> [!WARNING]
+> **Deleting a family is destructive and you will lose information regarding that family which cannot be easily restored.**
+>
+> Deleting families is only occasionally necessary when facing issues of duplication or erroneous correction. However, you should **not** be deleting families as a normal course of business. It is done on the exception, rather than as a rule.
 
 ## Merging Two Families into One
 
@@ -47,10 +47,10 @@ The primary parent of the family that you search for first will become the prima
 
 If a family you choose to merge has a secondary parent, that parent is separated from the primary parent before the merge takes place. For the **first** family, its secondary parent is [split off into a new family](#splitting-a-family-in-two). For the **second** family, its secondary parent stays behind in the original family and keeps that household’s existing history (its communication records and uploaded documents), while its primary parent joins the merged family. Please check the important notes about splitting a family in that section.
 
-!!! warning
-    When you merge two families, the communication records and uploaded documents belonging to the second family follow into the merged family rather than being lost. The parent who joins the merged family also keeps their own login and password.
-
-    If you want a particular parent’s history to stay with a particular family, [swap](#swapping-parents-in-a-family) and/or [split](#splitting-a-family-in-two) the families first, so that the history sits where you want it before you merge.
+> [!WARNING]
+> When you merge two families, the communication records and uploaded documents belonging to the second family follow into the merged family rather than being lost. The parent who joins the merged family also keeps their own login and password.
+>
+> If you want a particular parent’s history to stay with a particular family, [swap](#swapping-parents-in-a-family) and/or [split](#splitting-a-family-in-two) the families first, so that the history sits where you want it before you merge.
 
 ![](assets/screenshots/family-management/family-management-02.png)
 
@@ -68,13 +68,13 @@ Type in the name of the family that needs to be split.
 
 To confirm the operation, click on the **Split** button at the bottom of the screen.
 
-!!! warning
-    Note that when first split, each family will have a copy of the same household information. It will be necessary to update this manually.
+> [!WARNING]
+> Note that when first split, each family will have a copy of the same household information. It will be necessary to update this manually.
 
 The children that were linked to the family will automatically be linked to both families.
 
-!!! warning
-    Note that the secondary parent’s new family will contain no communication history or uploaded documents, because ADAM creates a brand new family in this process. However, that parent keeps their own login and password, so they can still sign in with their existing credentials.
+> [!WARNING]
+> Note that the secondary parent’s new family will contain no communication history or uploaded documents, because ADAM creates a brand new family in this process. However, that parent keeps their own login and password, so they can still sign in with their existing credentials.
 
 ## Swapping Parents in a Family
 

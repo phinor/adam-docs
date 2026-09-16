@@ -36,16 +36,16 @@ The **Exam Type Description** will be used as a heading to describe the reason f
 
 Medical Examinations can be optionally **completed on the parents’ and pupils’ portal**. Parents and pupils have the option, [based on their permissions](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils), to complete medical examinations. These can be used to record the results screening examinations that are required to be completed by schools during the Covid-19 pandemic. Note that these instructions appear exactly as you capture them [on the portal screen](#parents-and-pupils-completing-medical-examinations).
 
-!!! note
-    Note that the medical examinations are completed from a pupil’s perspective and are recorded against the pupil’s profile. It is not possible to record a medical examination for a parent.
+> [!NOTE]
+> Note that the medical examinations are completed from a pupil’s perspective and are recorded against the pupil’s profile. It is not possible to record a medical examination for a parent.
 
-!!! note
-    Note that “out of the box”, parents and pupils do *not* have permissions to complete medical examinations. You may wish to differentiate based on primary school (allow only parents to complete) or high school (allow parents and pupils to complete). It is not possible to make this differentiation per medical examinations - one setting applies to all medical examinations.
+> [!NOTE]
+> Note that “out of the box”, parents and pupils do *not* have permissions to complete medical examinations. You may wish to differentiate based on primary school (allow only parents to complete) or high school (allow parents and pupils to complete). It is not possible to make this differentiation per medical examinations - one setting applies to all medical examinations.
 
 Additionally, **medical examination summaries** can be shown on the Pupil and Parent portal by selecting “Yes” to this question.
 
-!!! warning
-    The permission group for the pupils must also be assigned the permissions to view medical examination summaries.
+> [!WARNING]
+> The permission group for the pupils must also be assigned the permissions to view medical examination summaries.
 
 The indicated **Instructions** are shown to the staff who are completing the medical examination or to the parents/pupils in the portal. Thus differentiated instructions can be shown if required.
 
@@ -69,8 +69,8 @@ Navigate to **Administration → Medical Administration → Manage Medical Exami
 
 Here you can add (using the button at the top) new matrics and edit existing ones.
 
-!!! warning
-    Note that editing a metric will have an impact on information already recorded. For example, if you change the height to rather be measured in metres instead of centimetres, then all previously taken measurements will appear to be in metres: 162cm will then show as 162m.
+> [!WARNING]
+> Note that editing a metric will have an impact on information already recorded. For example, if you change the height to rather be measured in metres instead of centimetres, then all previously taken measurements will appear to be in metres: 162cm will then show as 162m.
 
 ### Adding a new Metric
 
@@ -84,8 +84,8 @@ The **Unit** field will be displayed next to the input box. Examples of this are
 
 For numerical data, you can choose to have ADAM show a **graph** of the information on the pupil’s medical information page. This should be saved for the most important information. It can be changed later. You might want to have temperature displayed while you are conducting daily health monitoring checks but then not displayed after that. In this case, you would need to edit this metric again and change the “Graph Type” to “None”.
 
-!!! note
-    While this list currently promises a “bar chart”, kindly note that all charts will currently be displayed as a line. We’ll get there!
+> [!NOTE]
+> While this list currently promises a “bar chart”, kindly note that all charts will currently be displayed as a line. We’ll get there!
 
 If you are displaying a graph, ADAM can also limit the number of data points that it shows. A reading of “0” means that ADAM will show all the data points. If you want to limit the chart to show only the last 10 readings, then enter a 10 for **Maximum Data Points**.
 
@@ -111,8 +111,8 @@ Once you’ve added a new metric, you may wish to have it [included in a specifi
 
 For the purposes of health screening, it may be desirable to have parents or pupils complete medical examinations in ADAM. For them to be able to do so, they will need to be [assigned the correct permissions](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
-!!! note
-    Where schools would like to provide instructions for parents to complete the medical examination, the instructions below should serve as a starting point and not be relied on to provide the specific information required for the medical exam as set up by the school.
+> [!NOTE]
+> Where schools would like to provide instructions for parents to complete the medical examination, the instructions below should serve as a starting point and not be relied on to provide the specific information required for the medical exam as set up by the school.
 
 Parents and pupils with the permission to complete medical examinations will see a **Medical Records** heading in their portal menus:
 

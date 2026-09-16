@@ -47,8 +47,8 @@ You will need to choose a **[Records and Points category](records-and-points-adm
 
 If you have chosen one of the **Subject** types above, then you must specify which subjects ADAM must look at in order to determine the final results. If you have chosen an “Aggregate” type, then this setting is ignored.
 
-!!! warning
-    Please remember, if you add new subjects in future, they will not automatically be included in this calculation.
+> [!WARNING]
+> Please remember, if you add new subjects in future, they will not automatically be included in this calculation.
 
 Click on the **Save** button to save the rule set.
 
@@ -98,8 +98,8 @@ To generate an Academic Points Report, navigate to **Reporting → Academic Poin
 
 Choose the **reporting period** that you wish to see points from and choose one or more rule sets to determine the points to generate.
 
-!!! note
-    Note that one limitation with this report is that it can only display one grade of pupils at a time and so you must choose rule sets that apply to the same grade. If you choose rule sets from different grades, ADAM will show a warning and ask you to adjust your choices.
+> [!NOTE]
+> Note that one limitation with this report is that it can only display one grade of pupils at a time and so you must choose rule sets that apply to the same grade. If you choose rule sets from different grades, ADAM will show a warning and ask you to adjust your choices.
 
 The report will then be displayed, indicating the number of points per subject.
 
@@ -137,8 +137,8 @@ Navigate to **Reporting → Academic Points → Save Academic Points to Records 
 
 ADAM now asks you which reporting period you’d like to consider and which rule-sets you’d like ADAM to check.
 
-!!! note
-    Note that, unlike the [Academic Points Report](#academic-points-report), you can mix-and-match Grades here - ADAM will work through each rule-set and apply those points to the applicable grade.
+> [!NOTE]
+> Note that, unlike the [Academic Points Report](#academic-points-report), you can mix-and-match Grades here - ADAM will work through each rule-set and apply those points to the applicable grade.
 
 ![](assets/screenshots/academic-points/academic-points-12.png)
 

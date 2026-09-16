@@ -36,8 +36,8 @@ From the list of tags, click on the **edit** option to the right of the tag you�
 
 You can then adjust the name and colours associated with the tag. Note that any pupils who are assigned to this tag will automatically show the changed tag immediately.
 
-!!! warning
-    If you edit a tag and change its type - for example, from being a “Pupil” tag to being a “Family” tag, ADAM will remove the tag from all pupils when you save your changes. There is no way to undo this.
+> [!WARNING]
+> If you edit a tag and change its type - for example, from being a “Pupil” tag to being a “Family” tag, ADAM will remove the tag from all pupils when you save your changes. There is no way to undo this.
 
 ### Deleting a tag
 

@@ -17,8 +17,8 @@ Before you begin:
 1.  You must know your **South African ID number** or your **passport** number, as captured on the ADAM database.
 2.  You must also have access to an **email address** that is entered against your name in the database. Part of the process will involve ADAM sending a confirmation link to your email address for verification. The process of verifying the email link must be done within 24 hours of starting.
 
-!!! note
-    Note that some parents, who share a single email address, may have difficulty in accessing ADAM. This is because the email address is likely associated with only one parent. If you receive the error that there is no email address associated with you, please make contact with the school who can copy the address for both parents.
+> [!NOTE]
+> Note that some parents, who share a single email address, may have difficulty in accessing ADAM. This is because the email address is likely associated with only one parent. If you receive the error that there is no email address associated with you, please make contact with the school who can copy the address for both parents.
 
 Proceed to “Parent Login” on the ADAM home page:
 
@@ -46,8 +46,8 @@ Please check your email for a mail that looks similar to the one below. Be sure 
 
 Please note that if you do not follow this step within 24 hours of requesting the new password, the link will expire and you will need to start again. The link can also only be used once: as soon as you have set your password the link stops working, so if you ever need to reset your password again you must request a fresh link. Please also note that the password reset link is specific to an individual parent and the same link cannot be used to reset another parent’s password.
 
-!!! note
-    If you click a reset link that has expired or that you have already used, ADAM will tell you that the link may have expired. Simply return to the “Parent Login” page, click “**New account? Forgotten password?**” again, and ADAM will email you a new link.
+> [!NOTE]
+> If you click a reset link that has expired or that you have already used, ADAM will tell you that the link may have expired. Simply return to the “Parent Login” page, click “**New account? Forgotten password?**” again, and ADAM will email you a new link.
 
 When you click on the link, you will be prompted to enter a password, twice:
 

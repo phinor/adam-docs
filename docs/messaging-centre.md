@@ -14,8 +14,8 @@ All of the following menu options can be used: they are all the same.
 
 The first step in any of these will be to select the module that you wish to use to send the message with. The “Email” module is available on most servers, and many schools have also enabled SMS sending. If SMS sending is available, you will see one of the SMS modules also available for you to use.
 
-!!! warning
-    Note that sending SMSs does incur costs!
+> [!WARNING]
+> Note that sending SMSs does incur costs!
 
 ![](assets/screenshots/messaging-centre/messaging-centre-02.png)
 
@@ -58,13 +58,13 @@ ADAM will now show you a list of pupils in the classes you selected and any staf
 
 ![](assets/screenshots/messaging-centre/messaging-centre-05.png)
 
-!!! warning
-    Note that the list of staff might also include other senior teachers and management staff members who have a specific permission to receive all copies of mail sent via the messaging centre.
+> [!WARNING]
+> Note that the list of staff might also include other senior teachers and management staff members who have a specific permission to receive all copies of mail sent via the messaging centre.
 
 There are three tick-boxes in the table header. You can click on these to send to ALL pupils, ALL parents or ALL staff. You’ll see that as you click on these, all the ticks in the column are selected.
 
-!!! warning
-    While sometimes necessary, if you plan on extensive personalisation of the emails with mail merge fields, you are strongly encouraged to limit your email to either only parents or only pupils. Mixing the audience types will be confusing for mail-merge scenarios.
+> [!WARNING]
+> While sometimes necessary, if you plan on extensive personalisation of the emails with mail merge fields, you are strongly encouraged to limit your email to either only parents or only pupils. Mixing the audience types will be confusing for mail-merge scenarios.
 
 Individual pupils, parents or staff members can either be added or removed from the recipient list by ticking or unticking the boxes next to their names.
 
@@ -86,8 +86,8 @@ The image below shows all options that are available on the Messaging Centre and
 
 Once you have composed your message, click on the **Send** button to have ADAM queue the message for you.
 
-!!! warning
-    Note that regardless of your selected delivery time, all messages are queued with a minimum of 5 minutes lead time before they are processed.
+> [!WARNING]
+> Note that regardless of your selected delivery time, all messages are queued with a minimum of 5 minutes lead time before they are processed.
 
 ### Messaging applicants and their parents
 
@@ -115,8 +115,8 @@ Add your criteria and click on **Update the filter** to see how many applicants 
 
 When you are satisfied, click on the button at the bottom of the page — it reads **Next – with 12 pupils selected**, or however many your filter has matched — and ADAM shows you the list of recipients in the usual way, from which you continue to the composer.
 
-!!! note
-    This audience only ever sees applicants. Pupils already enrolled at the school are reached with the **Pupils by filter** audience instead, which offers the same filter builder over current pupils. Neither audience can see the other’s pupils, and the two are controlled by different permissions.
+> [!NOTE]
+> This audience only ever sees applicants. Pupils already enrolled at the school are reached with the **Pupils by filter** audience instead, which offers the same filter builder over current pupils. Neither audience can see the other’s pupils, and the two are controlled by different permissions.
 
 ## Composing Your Message
 
@@ -245,8 +245,8 @@ Open the batch to deal with these messages. Depending on what happened to each o
 
 These options only appear when there are stuck messages to act on, and only for staff who are permitted to manage the batch (its owner, or a user with the permission to re-queue error messages or to abort batches).
 
-!!! note
-    Only SMS batches can become stuck in this way. Email messages are claimed and sent in a single step, so they never enter this state.
+> [!NOTE]
+> Only SMS batches can become stuck in this way. Email messages are claimed and sent in a single step, so they never enter this state.
 
 ## Sending SMSs from the Messaging Centre
 

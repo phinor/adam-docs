@@ -8,8 +8,8 @@ The Document Repository is an online file storage utility that can store files a
 
 To begin with, ADAM needs a location in which to save files on the actual server. A folder needs to be created on the server and configured in the site settings (see page ).
 
-!!! warning
-    Please ensure that this folder is not a sub-folder of the web-root. If it is, then files can be accessed without necessarily following the correct permissions.
+> [!WARNING]
+> Please ensure that this folder is not a sub-folder of the web-root. If it is, then files can be accessed without necessarily following the correct permissions.
 
 ## Categories
 
@@ -85,8 +85,8 @@ Note also, that the audience choice (pupils vs families) will dictate which of t
 
 The people listed under the **Notify** option will be notified when new documents have been uploaded to ADAM for approval. Documents will *not* appear in the document repository until they have been approved by a staff member with the permission to approve them.
 
-!!! warning
-    If no staff members are listed under the **Notify** option, then all staff who have permissions to approve documents will be notified. Depending on your permission setup, this could be many staff members.
+> [!WARNING]
+> If no staff members are listed under the **Notify** option, then all staff who have permissions to approve documents will be notified. Depending on your permission setup, this could be many staff members.
 
 You can add more upload slots by clicking on the “**add a new file**” at the bottom. You can remove existing slots by clicking on the “**bin**” next to the row.
 
@@ -100,11 +100,11 @@ The **Requirement** column lets you choose how strongly each document is enforce
 
 None of this affects an upload anywhere outside the online application — uploads made through the [Parent and Pupil Portal](parent-and-pupil-portal.md#parent-and-pupil-portal) are never blocked by the Requirement setting.
 
-!!! warning
-    If your school upgraded from an earlier version of ADAM, every slot that was previously marked "Required" has been carried forward as **Requested**, not **Mandatory**. Nothing about how applications are enforced has changed on its own — if you want ADAM to actually stop an application being submitted without a document, you need to open the upload and change the relevant slot to **Mandatory** yourself.
+> [!WARNING]
+> If your school upgraded from an earlier version of ADAM, every slot that was previously marked "Required" has been carried forward as **Requested**, not **Mandatory**. Nothing about how applications are enforced has changed on its own — if you want ADAM to actually stop an application being submitted without a document, you need to open the upload and change the relevant slot to **Mandatory** yourself.
 
-!!! note
-    Setting a slot to **Mandatory** means an application that is missing that document simply cannot be submitted — it stays incomplete rather than arriving at your school in an incomplete state. Incomplete applications are covered by the [reminder emails](online-applications.md#online-application-reminder-emails) already sent to parents, but if they are never completed, they will eventually expire and be removed. If you mark a lot of slots as Mandatory, expect more applications to expire unsubmitted and fewer to reach you. That may well be the outcome you want — just make the choice deliberately, rather than by marking everything Mandatory without thinking through the trade-off.
+> [!NOTE]
+> Setting a slot to **Mandatory** means an application that is missing that document simply cannot be submitted — it stays incomplete rather than arriving at your school in an incomplete state. Incomplete applications are covered by the [reminder emails](online-applications.md#online-application-reminder-emails) already sent to parents, but if they are never completed, they will eventually expire and be removed. If you mark a lot of slots as Mandatory, expect more applications to expire unsubmitted and fewer to reach you. That may well be the outcome you want — just make the choice deliberately, rather than by marking everything Mandatory without thinking through the trade-off.
 
 The **Accepted Types** column controls which kinds of file a parent or applicant may upload into that slot. Tick one or more of the file types on offer — **PDF document**, **JPEG image**, **PNG image**, **GIF image**, **Word document**, **Excel spreadsheet**, **CSV file** and **Plain text**. A parent is only able to upload a file whose type you have ticked here, and the accepted types are shown to them alongside the slot (see [Instructions for Parents](#instructions-for-parents) below). Each slot must have at least one type ticked. If you leave a slot with nothing ticked, ADAM will refuse to save the whole upload and ask you to choose at least one accepted file type for that slot.
 
@@ -158,8 +158,8 @@ Once you have made a decision, you can then click on the **reject** or **accept*
 
 If you choose to reject the upload, be aware that it will be deleted with no way of recovering it.
 
-!!! warning
-    Note that ADAM makes no attempt to scan any uploaded files for viruses and provides no warranty that the uploaded files will be safe to open. Please ensure that staff who are responsible for approving document uploads are well-versed in the appropriate computer security protocols to follow, and that their computers are equipped with up-to-date antivirus scanners.
+> [!WARNING]
+> Note that ADAM makes no attempt to scan any uploaded files for viruses and provides no warranty that the uploaded files will be safe to open. Please ensure that staff who are responsible for approving document uploads are well-versed in the appropriate computer security protocols to follow, and that their computers are equipped with up-to-date antivirus scanners.
 
 ## Staff Permissions
 
@@ -228,8 +228,8 @@ ADAM then shows a **Bulk Upload Results** page summarising what happened. A shor
 
 An **Upload more documents** link appears above and below the table so that you can start another upload straight away.
 
-!!! note
-    This results page can only be viewed once, immediately after the upload. If you navigate away and try to return to it, ADAM shows the message *These results are no longer available. Please upload your documents again.* — you would need to upload the documents again to see a fresh report.
+> [!NOTE]
+> This results page can only be viewed once, immediately after the upload. If you navigate away and try to return to it, ADAM shows the message *These results are no longer available. Please upload your documents again.* — you would need to upload the documents again to see a fresh report.
 
 ### Troubleshooting Failed Matches
 
@@ -261,13 +261,13 @@ Click on the **Next** button to continue.
 
 ADAM will now create a ZIP backup of these files which you can download for backup purposes.
 
-!!! warning
-    Note that if you do not download this ZIP file and continue with the deletion, you will not be able to access these files since ADAM will delete them permanently from its storage.
+> [!WARNING]
+> Note that if you do not download this ZIP file and continue with the deletion, you will not be able to access these files since ADAM will delete them permanently from its storage.
 
 ADAM will also show a list of the files that will be deleted. Scroll to the bottom of the page and click on **Delete these files permanently…**
 
-!!! warning
-    If ADAM is unable to generate the ZIP backup - perhaps because there are too many files or the files are too big - then you will need to select a smaller date range to delete.
+> [!WARNING]
+> If ADAM is unable to generate the ZIP backup - perhaps because there are too many files or the files are too big - then you will need to select a smaller date range to delete.
 
 Once the files are deleted, ADAM will confirm the number of files that were removed.
 

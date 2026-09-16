@@ -68,8 +68,8 @@ There are five elements that you can use in the formulae:
 -   `F(<number>, <weighting>, <Mark>, <Mark>, …)`: find the first `<number>` of `<Mark>`s from the list provided and weight them. Note that if fewer marks are available, the weighting is reduced by the same ratio. For example, if “first 3 marks with a weighting of 3” is selected, but only 2 marks are available, the weighting will be adjusted to two thirds of the original weighting: 2.
 - `P(<subject>, <minimum>, <alternative subject>, <weighting>)`: This fetches a subject’s mark provided it meets the `<minimum>` mark provided, otherwise it will fetch the mark from the given alternative, if it exists. The alternative could be higher or lower than the preferred mark. If the alternative is not present but the preferred subject is (and is below the minimum result) the preferred subject result is used.
 
-!!! tip
-    This is used specifically in the scenario where schools offer the Mathematics/Mathematical Literacy combination and want to count Mathematics in the aggregate if it is over 50%, otherwise count Mathematical Literacy. Note also, that the subject results and the minimum requirement are both rounded to their nearest percentages before the comparison is done.
+> [!TIP]
+> This is used specifically in the scenario where schools offer the Mathematics/Mathematical Literacy combination and want to count Mathematics in the aggregate if it is over 50%, otherwise count Mathematical Literacy. Note also, that the subject results and the minimum requirement are both rounded to their nearest percentages before the comparison is done.
 
 Each of the “`<parts>`” indicated above is now explained:
 

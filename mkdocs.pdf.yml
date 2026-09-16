@@ -20,6 +20,7 @@ INHERIT: ./mkdocs.yml
 hooks:
   - hooks/youtube_embed.py
   - hooks/sitemap_lastmod.py
+  - hooks/github_callouts.py
   - hooks/pdf_theme.py
   - hooks/pdf_links.py
   - hooks/pdf_bookmarks.py

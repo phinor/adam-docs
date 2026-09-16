@@ -96,8 +96,8 @@ Lessons are captured by **dragging a class from the list at the top and dropping
 
 Each class sits in its lesson as a small card. To take a class out of a lesson, click the **×** on its card. A class already on the timetable can be moved to a different lesson by dragging it there; hold **Ctrl** as you drop it to leave the original in place and put a copy in the new lesson.
 
-!!! warning
-    There is no **Save** button on this screen. Every change takes effect the moment you make it, so take care when dragging.
+> [!WARNING]
+> There is no **Save** button on this screen. Every change takes effect the moment you make it, so take care when dragging.
 
 Where the same change is needed in more than one place, click the cards to select them first — a selected card is outlined — and then drag any one of them to move or copy the whole selection in a single action. Selections in the list at the top and selections in the grid are independent of one another: selecting in one clears the other.
 
@@ -172,8 +172,8 @@ The exact method of adding a calendar to these programs is different and you are
 
 ![](assets/screenshots/timetable-module/timetable-module-22.png)
 
-!!! note
-    Please note that [pupils require permissions](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils) to view and subscribe to their calendars in the Parent and Pupil Portal.
+> [!NOTE]
+> Please note that [pupils require permissions](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils) to view and subscribe to their calendars in the Parent and Pupil Portal.
 
 ## Resetting a Timetable Link
 
@@ -183,5 +183,5 @@ However, it may happen that you wish to change this random key to prevent someon
 
 ![](assets/screenshots/timetable-module/timetable-module-24.png)
 
-!!! warning
-    Changing this calendar link will cause *all* existing calendar subscriptions to break. You will need to resubscribe any calendars that you use to the new link.
+> [!WARNING]
+> Changing this calendar link will cause *all* existing calendar subscriptions to break. You will need to resubscribe any calendars that you use to the new link.

@@ -34,8 +34,8 @@ In order, these commands will:
 
 ### Windows Servers
 
-!!! warning
-    ADAM is not supported on a Windows server.
+> [!WARNING]
+> ADAM is not supported on a Windows server.
 
 ## Ping Process
 

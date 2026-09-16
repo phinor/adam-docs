@@ -119,8 +119,8 @@ To change a pupil’s grade, all one needs to do is edit the pupil’s informati
 
 Note that this will not change any classes and so you may find, after editing a pupil in this manner, that they still belong to the classes in the wrong grades. You will need to manually remove and assign the pupil to appropriate classes according to their new grade.
 
-!!! warning
-    **Note well for changes made mid-year**: this is exceptionally uncommon and ADAM does not have specific programming to deal with this eventuality. All existing reports issued will have copies stored in the archive. These should remain fixed with the original grade captured. However, should the reports be refreshed or regenerated, it is quite possible that ADAM will pick up the pupil’s new grade and display it on these old reports, giving the impression that the pupil was in the new grade for the whole year.
+> [!WARNING]
+> **Note well for changes made mid-year**: this is exceptionally uncommon and ADAM does not have specific programming to deal with this eventuality. All existing reports issued will have copies stored in the archive. These should remain fixed with the original grade captured. However, should the reports be refreshed or regenerated, it is quite possible that ADAM will pick up the pupil’s new grade and display it on these old reports, giving the impression that the pupil was in the new grade for the whole year.
 
 ## Pupil Name Pronunciation
 
@@ -136,7 +136,7 @@ If multiple files are uploaded, only the most recent file is played when the but
 
 If the button is greyed out, it may be because an invalid audio file has been uploaded or the specific browser does not support the playback of that type of file. You are encouraged to upload files in MP3 format for the widest possible support.
 
-!!! note
-    Note that different web browsers may display the media control buttons differently. This is a function of the web browser rather than of ADAM.
+> [!NOTE]
+> Note that different web browsers may display the media control buttons differently. This is a function of the web browser rather than of ADAM.
 
 Have a look at the Document Repository documentation for more information on uploading many files at once using the [Bulk Upload feature](document-repository.md#uploading-documents-in-bulk).
