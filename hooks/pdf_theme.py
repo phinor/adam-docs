@@ -32,6 +32,10 @@ wait expires and the page is lost from the manual. Both are worthless on paper.
 The chrome is removed from the DOM rather than hidden with CSS: `header` and
 `nav` are `position: fixed` too, and paged.js mis-places the content when they
 are present, `display: none` or not.
+
+The adapter also prepares the DOM for `hooks/pdf_internal_links.py`, which
+cannot do the work itself: the destinations a PDF can be sent to are decided
+while the page is rendered, long before the manual it belongs to exists.
 """
 
 import logging
@@ -122,8 +126,29 @@ class Theme(BaseTheme):
         """Prepares the document for pagination."""
 
         preprocessor.remove(CHROME)
+        self.link_destinations(preprocessor)
         self.flatten_embeds(preprocessor)
         self.inline_stylesheets(preprocessor)
+
+    def link_destinations(self, preprocessor):
+        """Gives every heading somewhere for a link to point at.
+
+        Chrome writes a named destination for each `<a href="#id">` a document
+        contains, and only for those: an id nothing links to is not a place the
+        PDF can be sent to. With `permalink: false` the pages carry no heading
+        anchors, so `hooks/pdf_internal_links.py` would have nothing to resolve
+        a cross-reference against.
+
+        A `display: none` link is enough — the destination is written, no mark
+        appears, and no clickable box is added to the page.
+        """
+
+        for heading in preprocessor.html.select('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]'):
+            anchor = preprocessor.html.new_tag('a', href='#' + heading['id'])
+
+            anchor['style'] = 'display: none'
+
+            heading.insert_after(anchor)
 
     def flatten_embeds(self, preprocessor):
         """Turns video embeds into links.

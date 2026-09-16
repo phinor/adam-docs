@@ -69,11 +69,21 @@ That takes a couple of minutes and writes `site-pdf/adam-manual.pdf` (~750 pages
 PDF of each individual chapter.
 
 [`mkdocs.pdf.yml`](mkdocs.pdf.yml) inherits the whole site config, so the two builds cannot drift
-apart, and adds four hooks that exist only for the PDF: `hooks/pdf_theme.py` (makes this theme
+apart, and adds five hooks that exist only for the PDF: `hooks/pdf_theme.py` (makes this theme
 printable), `hooks/pdf_links.py` (stops `mailto:` addresses being rewritten into web URLs),
-`hooks/pdf_bookmarks.py` (adds the chapter bookmarks) and `hooks/pdf_cover.py` (dates the front
-cover). Each explains in its docstring what breaks without it — all four failures are silent,
-producing a PDF that builds successfully and is wrong.
+`hooks/pdf_bookmarks.py` (adds the chapter bookmarks), `hooks/pdf_cover.py` (dates the front cover)
+and `hooks/pdf_internal_links.py` (keeps cross-references inside the document). Each explains in its
+docstring what breaks without it — all five failures are silent, producing a PDF that builds
+successfully and is wrong. `hooks/test_pdf_internal_links.py` covers the link rewriting; run it with
+`python -m unittest discover -s hooks`.
+
+A cross-reference between chapters is a link within the PDF, and lands on the heading it names rather
+than at the top of the chapter. That takes two steps, because a page is rendered long before anything
+knows where it sits in the manual: `hooks/pdf_theme.py` puts a hidden anchor after every heading,
+which is what makes Chrome record a destination for it, and `hooks/pdf_internal_links.py` resolves
+each link against those destinations once the chapters have been assembled. Links it cannot place —
+other websites, `mailto:` addresses, and the reference to the site's own home page — stay as they
+are.
 
 The manual opens on a cover page: the site header's blue, the ADAM logo, and the date of the last
 commit that touched `docs/`. Its markup is [`pdf/cover.html`](pdf/cover.html) and its styling is the

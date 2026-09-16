@@ -24,6 +24,7 @@ hooks:
   - hooks/pdf_links.py
   - hooks/pdf_bookmarks.py
   - hooks/pdf_cover.py
+  - hooks/pdf_internal_links.py
 
 plugins:
   - exporter:
