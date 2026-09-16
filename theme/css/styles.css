@@ -148,7 +148,6 @@ article {
     background: #f5f5f5;
 }
 
-.admonition > p:first-child,
 .admonition > .admonition-title {
     margin: 0 0 6px;
     font-weight: bold;
@@ -166,8 +165,7 @@ article {
     background: #fff7e0;
 }
 
-.admonition.warning > .admonition-title,
-.admonition.warning > p:first-child {
+.admonition.warning > .admonition-title {
     color: #8a6500;
 }
 
@@ -176,8 +174,7 @@ article {
     background: #fdecea;
 }
 
-.admonition.danger > .admonition-title,
-.admonition.danger > p:first-child {
+.admonition.danger > .admonition-title {
     color: #8a1f15;
 }
 

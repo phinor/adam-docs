@@ -49,6 +49,14 @@ figure, tr, pre, blockquote {
     break-inside: avoid;
 }
 
+/* Admonitions must survive whole: a note or warning split across a page turn
+   leaves an empty titled box at the foot of one page and an untitled block of
+   text at the head of the next. (A box taller than the text block still has to
+   break somewhere; none in this manual is.) */
+.admonition {
+    break-inside: avoid;
+}
+
 /* Wide tables are the one thing with no screen fallback: without a fixed
    layout a long cell pushes the table past the page edge and the overflow is
    simply lost. */
