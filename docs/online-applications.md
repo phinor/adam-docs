@@ -33,7 +33,7 @@ After submitting their details, the parent receives an email containing a link t
 
 If the family already exists in ADAM, only the child’s information is requested. No password is asked for at any point during an application. Parents who already use the portal can log in first instead and start the application from there, without waiting for an email.
 
-The parents can save the contents of the form and revisit it as necessary to complete it.
+Parents complete the form one page at a time — their own details first, then a page for each child — and can save any page and come back to it later, even if some of it is still empty. Required information is only insisted on when they submit the application.
 
 #### Step 3:
 
@@ -362,7 +362,7 @@ Yes. In the online applications list, you can see the reminder count for each ap
 
 #### What if a parent saves their application - does that reset the reminders?
 
-Yes. For "incomplete" applications, the reminder countdown is based on the last save date. If a parent saves their application, the days are counted from that new date.
+Yes. For "incomplete" applications, the reminder countdown is based on the last save date. If a parent saves their application, the days are counted from that new date. Saving any single page of the application counts as a save.
 
 #### Can I manually send a reminder to a specific applicant?
 
@@ -431,23 +431,21 @@ If the school has not set up any agreements for applicants, this step is skipped
 
 ### Completing the Application Form
 
-ADAM now presents an application form for the parents to complete. The parent information is completed first with the pupil (or pupils, if more than one was chosen) appearing below.
+ADAM now presents the application form one page at a time. Parents complete their own details on the **Parents** page first, then a page for each child. Families the school already knows skip the **Parents** page. Each page ends with a **Save and continue** button, which saves the page and opens the next one. A page can be saved at any time, even with required fields still empty; ADAM lists anything still missing below the form.
 
 ![](assets/screenshots/online-applications/online-applications-08.png)
 
 The contents of this application form can be customised by controlling which fields appear in the application form within the [core database field management screen](database-field-management.md).
 
-There is a button at the bottom of the form to save it.
-
 Where an application was started for the parent by another system — an application-fee payment provider, for example, using the [API](api-access-to-adam.md#applicationscreatepost) — some of the form may already be filled in. Fields that the other system has supplied are pre-filled, and those it has marked as fixed are shown but cannot be changed by the parent. Values supplied that way are also the ones written to the family and pupil records when a member of staff approves the application, even where the parent was allowed to edit them.
 
 Parents can return at any time within the 7 day window they are given to continue completing the form. To return to the screen, they simply need to use the email link that was sent to them.
 
-From this point on, a progress bar is shown across the top of each screen so that parents can see where they are in the process. The steps are **Your Details**, **Documents** and **Review & Submit**. The **Documents** step only appears if the school has [asked for supporting documents](#collecting-supporting-documents-during-the-application); if not, parents move straight from their details to the review screen.
+From this point on, a progress bar is shown across the top of each screen so that parents can see where they are in the process. It shows **Parents**, one step per child, **Documents** and **Review & Submit**. A child’s step shows **Child 1**, **Child 2** and so on until the child’s first name has been saved, and then shows the name. A tick next to a step means that page is complete; a warning sign means something on it is still needed. Parents can click any step to move to it, and the page they are leaving is saved first. On a phone the progress bar wraps onto a second line. The **Documents** step only appears if the school has [asked for supporting documents](#collecting-supporting-documents-during-the-application).
 
 ### Uploading Supporting Documents
 
-If the school has set up [supporting documents to collect during the application](#collecting-supporting-documents-during-the-application), parents are taken to a **Supporting Documents** screen after saving their details. A counter at the top shows how many of the requested documents have been uploaded so far.
+If the school has set up [supporting documents to collect during the application](#collecting-supporting-documents-during-the-application), parents are taken to a **Supporting Documents** screen after saving the last child’s page. A counter at the top shows how many of the requested documents have been uploaded so far. The **Documents** step in the progress bar shows a tick once every mandatory document is uploaded, and a warning sign until then.
 
 Each document is shown with its name, a short description, and the file types it accepts (shown as *Accepted: …*). Depending on how the school configured the slot, it may also carry a badge: a **Requested** badge means the school would like the document but will still accept the application without it, and a red **Required** badge means the application cannot be submitted until it is uploaded. A document with neither badge is entirely optional. Documents that apply to a particular child are repeated for each child and labelled “Child 1”, “Child 2”, and so on.
 
@@ -467,7 +465,7 @@ They are asked to confirm their contact details and the details of their childre
 
 ![](assets/screenshots/online-applications/online-applications-10.png)
 
-This is where a **Mandatory** document that is still missing actually takes effect. Instead of the usual confirmation, parents see a message telling them the application cannot be submitted until the listed documents have been uploaded, along with a link to go back and upload them — the **Confirm and Submit Application** button does not appear at all until every mandatory document has been supplied. If only **Requested** documents are missing, a warning lists them instead, but this is just a reminder — parents can still submit without them.
+If anything required is still missing, the review screen shows a **Still needed** list instead of the **Confirm and Submit Application** button. The list is grouped by page — **Parents**, each child, and **Documents** — and each group heading links straight back to that page. It includes required fields, the proposed date and grade of entry, the ID number used to start the application if it no longer belongs to either parent, and any **Mandatory** documents. Once the list is empty the button appears. **Requested** documents that are missing are shown as a reminder only, and do not stop the application being submitted.
 
 Finally, they click on the **Confirm and Submit Application** button.
 
@@ -487,7 +485,7 @@ The staff member can now visit **Admissions → Online Applications → Manage O
 
 Note that applications can be revived from any status here by clicking on the “view” button. However, if an expired application is not viewed and approved within 3 weeks of it being requested by the parents, it will be deleted. Note that this expiry and deletion only happens if the application was never submitted to the school in the final step. However, it is possible for you to pick up an application that has expired (before it is deleted) and perform the enrolment from there.
 
-Click on **view** next to the application you’d like to see. ADAM brings up the same application form that the parents saw.
+Click on **view** next to the application you’d like to see. ADAM brings up the parents’ answers as a single form, with the family and every child on one page. Required fields must be filled in before the application can be approved.
 
 ![](assets/screenshots/online-applications/online-applications-14.png)
 
