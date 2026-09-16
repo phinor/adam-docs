@@ -504,7 +504,7 @@ At the bottom of this form are three options:
 -   **Reject Application** will remove the application from the pile. Typically, applicants are rejected here for technical reasons (incomplete form, incorrect grades, incorrect gender for monastic schooling, and so on). Rejection here essentially means tossing the application form into the bin. The pupil and the family will *not* be added to the database.
 
 !!! warning
-    ***Please note well: “Accepting” and “Rejecting” applications refers specifically to the*** ***application form******. This will add these details into your database as an Applicant profile.*** ***No decisions about enrolment into the school have been made*** ***at this point. Enrolment (or not!) will only happen at the very end of the application process.***
+    “Accepting” and “Rejecting” applications refers specifically to the **application form**. This will add these details into your database as an Applicant profile. **No decisions about enrolment into the school have been made** at this point. Enrolment (or not!) will only happen at the very end of the application process.
 
 ## Uploading of Supporting Documents
 

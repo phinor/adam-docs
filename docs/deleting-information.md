@@ -27,7 +27,7 @@ At this point, ADAM will search through the entire database to find references t
 ![](assets/screenshots/deleting-information/deleting-information-01.png)
 
 !!! danger
-    ***Do you see the dire warning at the top? ADAM isn’t joking!***
+    **Do you see the dire warning at the top? ADAM isn’t joking!**
 
 If you look below the pupil’s name, you will see that ADAM will display the unique identifier for the pupil. This will enable you to determine exactly which pupil you are about to delete.
 
@@ -46,7 +46,7 @@ ADAM does make a *backup* of the deleted data. However, this backup cannot be ap
 ## Deleting Families
 
 !!! danger
-    ***Please see the warnings associated with*** ***[deleting other information](#deleting-information)*** ***in ADAM. Chances are you DO NOT want to delete a family since you will lose all record of the family.***
+    Please see the warnings associated with [deleting other information](#deleting-information) in ADAM. Chances are you DO NOT want to delete a family since you will lose all record of the family.
 
 When a family has been duplicated or added in error, you will need to delete the family. Deleting a family can be done by navigating to **Families → Family Administration → Delete a family**.
 
@@ -63,7 +63,7 @@ There are very few staff members who will need the ability to delete families. A
 ## Deleting Staff
 
 !!! danger
-    ***It’s  a safe bet that you will almost never need to delete a staff member from the database. If you are hoping to delete a staff member that has left the school, STOP HERE. Deleting a staff member who has left is incorrect!***
+    It’s  a safe bet that you will almost never need to delete a staff member from the database. If you are hoping to delete a staff member that has left the school, STOP HERE. Deleting a staff member who has left is incorrect!
 
 If a staff member leaves your school, you must [terminate their employment](staff-information.md#staff-who-leave-the-school).
 
