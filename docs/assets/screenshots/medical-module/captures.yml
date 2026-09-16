@@ -1,0 +1,24 @@
+- image: medical-module-18.png
+  captured: 2026-09-16
+  as: staff (staff_id 1, Antonio Watson, development login bypass)
+  path: Pupils tab → Medical Records → Add a Pupil to the Off Sport List (opened with the pupil preset, ?action=add&offsport_pupil_id=5083)
+  frame:
+    mode: element
+    selector: "#newdatum"
+    padding: 8
+  setup: >
+    Pupil: Edward Clark (id 5083, Grade 9 IM5). Brandon Dayne Jarred Clark, the pupil TODO.md
+    names, no longer exists: the demonstration school has been regenerated. Fields filled in
+    the browser only and never submitted: Start 2026-09-16 08:00, End 2026-09-23 17:00,
+    Location In Class/At School, Type Injury, Counts as Absent No, Concussion No, Antibiotics
+    No, Comments "Sprained left ankle at rugby practice. Rest and ice; review by the nurse on
+    Monday." Focus blurred before capture.
+  revert: none — nothing was saved
+  note: >
+    Re-captured the same day with the browser launched under LANG=en_ZA (navigator.languages
+    en-GB), so the date fields read 16/09/2026, 08:00 rather than the en-US 09/16/2026, 08:00 AM
+    of the first attempt. Framing and data unchanged.
+    The brief asked for a Type to be chosen so the absent default would visibly carry across.
+    It cannot: the form's script listens for input[name='offsport_type_id'] but DataEditor
+    names the radios edit[offsport_type_id], so the handler binds to nothing. Every type on
+    this school also defaults to No. The manual was corrected to say so.

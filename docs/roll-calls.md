@@ -171,6 +171,14 @@ leave in their roll calls. Note that in the [Site Settings](changing-site-settin
 Call → Reason to show for Leaves**) you must select the absentee reason that ADAM will use for a pupil on Leave. You
 might need to create your own [absentee reason](absentee-administration.md#absentee-reasons)for this reason, first.
 
+#### Medical Module
+
+A pupil on the [off sport list](medical-module.md#off-sport) whose entry is marked **Counts as Absent for Roll Call**
+will show as absent for the roll calls falling within that period. This is set per off sport entry, so a school can
+treat a pupil excused from a match differently from one who has been sent home. As with leave, you must choose the reason ADAM should show: in the
+[Site Settings](changing-site-settings.md#changing-site-settings), on the **Attendance** tab under the **Roll Call**
+heading, set **Reason to show for Off Sport**.
+
 ## Configuring Roll Calls
 
 In the [Site Settings](changing-site-settings.md#changing-site-settings), The **Cron Settings** tab has a section with **Roll Call**

@@ -349,6 +349,12 @@ Click on “Save changes” when done. The changes are now recorded in the syste
 
 Note that in the change log, the reviewer will be recorded as the person making those changes.
 
+## Staff Medical Records
+
+Staff have medical records in the same way that pupils do, although only consultations are kept for them. A staff member with the right permission sees a **Medical Records** section on a colleague’s profile, holding a **Consultations** tab where sick bay visits are recorded and viewed. See [Medical Records for Staff](medical-module.md#medical-records-for-staff) for how this works and which permissions it needs.
+
+This is separate from sick leave, which is recorded in the [Leave Module](leave-module.md#leave-module).
+
 ## Staff Signatures for Reports
 
 Many report templates allow for the automatic placement of electronic signatures. Each teacher will need a signature scanned and uploaded onto the ADAM. Please see the section in [Report Publishing](report-publishing.md#staff-signatures) for more information.

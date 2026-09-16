@@ -22,6 +22,10 @@ Most pupil screenshots in the manual use the demo pupil **Brandon Dayne Jarred C
 number 99726). Reuse Riley Anderson on that page and Brandon Clark elsewhere, so that each page at
 least reads as one continuous example.
 
+Neither pupil exists on the demonstration server any more: the school was regenerated before
+2026-09-16. Existing images keep them, but new captures need a pupil who is there. The medical
+captures use **Edward Clark** (pupil 5083, Grade 9 IM5).
+
 ---
 
 ## Online Applications (`docs/online-applications.md`)
@@ -135,6 +139,137 @@ way out. Place it in *By filter*, after the paragraph that ends "...as many time
 
 ---
 
+## Medical Module (`docs/medical-module.md`)
+
+The page was rewritten from a stub to cover the whole module. Everything on it is written and checked
+against the code, but only the *Medical Examinations* part of it has pictures — those are the original
+`medical-module-01.png` to `-13.png`, which still match. Number anything new from `-14.png` upward.
+`-18.png` is captured and in place.
+
+Use **Edward Clark** (pupil 5083) throughout. `-18.png` already shows him.
+
+> [!WARNING] blocked on demonstration data
+> Checked on 2026-09-16: the school has the reference lists (ailments, chronic medications, causes,
+> off sport types and locations) but no attendants, operations and vaccinations, stock, chargeable
+> entities, off sport entries, off sport alerts or consultations. Every entry below needs some of that
+> data, and none of it has been created. Creating records on the dev instance was declined by the
+> capturing session's permission check, so whoever picks this up needs permission to seed first.
+
+### 1. A pupil's medical records — `medical-module-14.png`
+
+**Pupils → Medical Records → Pupil Medical Records**, then search for Edward Clark.
+
+Frame the summary panel and the row of tabs together: the photograph, the medical notes, the allergies
+line in red, the doctor and medical aid, the **Allergies and Chronics** and **Chronic Medication**
+rows, the **Medical Report** link, and the whole tab strip beneath. The point of the image is that
+everything about a pupil sits on one screen, so do not crop the tabs off.
+
+Place it in *A Pupil's Medical Records*, after the list of what the summary shows.
+
+### 2. The consultation form — `medical-module-15.png`
+
+**Pupils → Medical Records → Add a Medical Consultation for a Pupil**, then Edward Clark.
+
+This is the most important missing image on the page. Frame the whole three-column layout: the
+photograph, the form with **Date/Time**, **Medical Attendant**, **Type**, **Diagnosis**, **Cause** and
+**Notes** filled in plausibly, and the **Allergies and Chronics** panel on the right. Add one
+medication row so the **Medication** table is visible with a real stock item and quantity in it.
+
+Do not save the consultation after capturing it, or reverse it afterwards — saving it moves stock.
+
+Place it in *Recording a Consultation for a Pupil*, after the list of fields.
+
+### 3. The medication autocomplete — `medical-module-16.png`
+
+On the same form, click into the **Medication** table and type enough of a stock item's name to bring
+up the suggestion list. Frame just the field and the dropdown, close in.
+
+The image needs to show both states side by side if possible: an item with stock, annotated
+"*n* tablet(s) in stock", and one that has run out, showing **\*\*\* No stock \*\*\***. That contrast is
+what the prose describes and it is hard to picture from words alone. If no demonstration item is out
+of stock, write one down to zero with a **Write Off** first.
+
+Place it in *Dispensing Medication During a Consultation*, after the first paragraph.
+
+### 4. The off sport list — `medical-module-17.png`
+
+**Pupils → Medical Records → View the Off Sport List**.
+
+Frame the filter row and the first several rows of the table, showing the **Absent**, **Concussion**
+and **Antibiotics** columns. Six to ten pupils is enough; the table should look used rather than empty.
+
+Place it in *Viewing the Off Sport List*, after the paragraph describing the columns.
+
+### 6. The off sport alerts screen — `medical-module-19.png`
+
+**Administration → Medical Administration → Manage Off Sport Alerts**.
+
+Frame the **Current Alerts** table with at least two alerts in it, so the per-reason arrangement is
+visible, and the **Disabled Alerts** heading beneath. A second image of the add form is not needed —
+it has three fields and they are listed in the text.
+
+Place it in *Off Sport Alerts*, after the paragraph naming the two tables.
+
+---
+
+## Medical Stock (`docs/medical-stock.md`)
+
+A new page, written and checked against the code. Screenshots go in
+`docs/assets/screenshots/medical-stock/`. `medical-stock-02.png`, the stock item form, is captured
+and in place; the rest are blocked on the same missing data as the Medical Module entries above,
+since the school has no stock items at all.
+
+> [!WARNING] this page changes data
+> Receiving, adjusting and writing off stock all move real quantities the moment they are saved, and
+> there is no undo. Capture the *forms*, not the result of submitting them, unless you are willing to
+> put the demonstration school's stock back afterwards.
+
+### 1. The stock list — `medical-stock-01.png`
+
+**Administration → Medical Administration → Manage Medical Stock**.
+
+Frame the **Export all stock to excel** link and enough of the table to show the grouping — at least
+two groups with a few items under each — with the **Quantity** and **Enable stock control** columns
+visible, and the **receive** and **adjust** actions on the rows.
+
+Place it in *Managing Stock Items*, after the paragraph describing the table.
+
+### 3. The adjust form — `medical-stock-03.png`
+
+Click **adjust** on a stock item. Frame **Adjustment Type**, **Charge To**, the pupil/staff/entity
+fields, **Date**, **Quantity** and **Notes**. Leave **Adjustment Type** on its default so all three
+options are visible unselected alongside it.
+
+Do not submit it.
+
+Place it in *Adjusting, Issuing and Writing Off Stock*, after the list of adjustment types.
+
+### 4. The grouped transaction report — `medical-stock-04.png`
+
+**Administration → Medical Administration → View Grouped Medical Stock Transaction Report**.
+
+Two images in one section would be better than one here, but if only one can be had, capture the
+**output** rather than the criteria form: the charge type heading, the date range, and a table of
+several pupils with their totals. That is the report a school bills from and it is the one worth
+showing.
+
+Set a date range wide enough that the demonstration data actually returns rows — if it returns
+nothing, the consultations that generate the transactions need seeding first, and that is the blocker.
+
+Place it in *Grouped Stock Transaction Report*, after the first paragraph.
+
+### 5. Chargeable entities — `medical-stock-05.png`
+
+**Administration → Medical Administration → Manage Chargeable Entities**.
+
+Frame the table with a handful of believable entities — a visiting school, a hostel, the school's own
+first aid boxes — showing the **Entity Name**, **Entity Account Code** and **Entity Description**
+columns, and the **disable** option on the rows.
+
+Place it in *Chargeable Entities*, after the paragraph describing the fields.
+
+---
+
 # Missing Written Content
 
 ## Parent and Pupil Portal — Today's Birthdays (`docs/parent-and-pupil-portal.md`)
@@ -218,3 +353,117 @@ warning, and still gains nothing from the assignment.
 check and the manual's note about it should be removed. If it is meant to stay teach-scoped, it should
 come out of `SUBJECT_SCOPED_PRIVILEGES` so the warning stops counting it. Either way the manual needs
 re-checking against the answer.
+
+---
+
+## Medical Module — answers from development
+
+Development has answered all eleven questions. The fixes are on the ADAM branch
+`fix/medical-module-permissions`, which is **not merged or deployed yet**. Until it reaches the
+demonstration server, the screens still behave the old way, so change the pages when the branch
+ships and not before. Each answer says what the page needs once it has shipped. Remove this section
+once the pages match.
+
+### Permission checks on the wrong permission — none of the four was intended
+
+In every case the page itself checked the right permission and the menu or link did not. The menus
+and links now match their pages.
+
+1. **Consultation Report** now appears to anyone with `medical_view`
+   (**View medical information**). That is what the report page has always required.
+   `medical_exams_add` has nothing to do with it.
+2. **Add a new off-sport entry** on the pupil's **Off Sport** tab now needs
+   `medical_offsport_manage`, like every other off sport control.
+3. The three **stock transaction report** menu options now need `medical_transaction_view`
+   (**View Medical Transactions Report**). The fault also ran the other way: staff with
+   **Manage Medications** saw the three options and were refused on clicking them. *Change needed:*
+   remove the caveat from `docs/medical-stock.md`. The reports need **View Medical Transactions
+   Report** alone, and **Manage Medications** no longer shows them.
+4. A staff member's **Medical Records** section now needs `medical_view_staff` throughout, for the
+   photograph as well as the **Consultations** tab. `medical_view` is the pupil permission and no
+   longer affects staff records. *Change needed:* remove the caveat and the advice to grant both.
+
+A fifth menu option had the same fault: **View All Consultations for Chargeable Entities** checked
+`medical_consultations_add` while its page checks `medical_view`. It now checks `medical_view`. If
+the manual says who can see that option, check the wording.
+
+### The portal refuses report viewers — fixed
+
+Each portal action now checks its own permission. **View Medical Examination Reports** needs
+**View medical reports** only, and completing an examination needs **Complete medical exams** only.
+Before the fix, **Complete medical exams** on its own also let a login read the reports by typing the
+address. *Change needed:* remove the warning under *Parents and Pupils Viewing Their Results*.
+
+### Two fields labelled "Transaction Type" — fixed
+
+The second field now reads **Stock Group** on both reports. *Change needed:* remove the note and use
+**Stock Group** as the field name.
+
+The by-item report leaving out the stock group filter is deliberate. You choose one stock item, and
+an item belongs to exactly one group, so the filter would add nothing.
+
+### The Group radio on the stock item form — works, no caveat needed
+
+Editing a stock item's group saves correctly. The form code renames every field to its own column
+before the page is drawn, so the wrong name in the constructor never reached the browser. The only
+effect was a duplicated HTML id, which is now fixed. Nothing on `docs/medical-stock.md` changes.
+
+### `consultation_follow_up` — unused, stays out of the manual
+
+The field has not been on the consultation form since 2017, and nothing in ADAM reads it. The
+stray default has been removed. The field stays off the form unless a school asks for it. Do not
+document it.
+
+### The portal report's five-exam limit — fixed
+
+The limit now applies to each examination type separately: up to five of each. *Change needed:*
+remove the note under *Parents and Pupils Viewing Their Results*. If the page mentions how many
+examinations are shown, make it five per type.
+
+### `medical_exam_report`'s description — fixed
+
+It now reads "This allows a staff member to view a report of medical examinations." If the manual
+quotes permission descriptions, update this one.
+
+### The off sport alert form's thresholds — fixed
+
+The help text now reads "Staff members selected here will always receive a full list of the pupils
+on the off sport list for this reason." and "If a subject is selected, then a teacher of that
+subject will be notified if anyone in their class is on the off sport list for this reason." Nothing
+needs to change, unless the manual quotes either sentence.
+
+---
+
+## Off Sport — a new question for development
+
+Found while capturing `medical-module-18.png`, after the answers above came back, so it is not on
+`fix/medical-module-permissions`.
+
+`OffSportController::index` adds a script that copies an off sport type's `offsport_type_absent`
+default into **Counts as Absent for Roll Call** when a **Type** is chosen. The script selects
+`input[name='offsport_type_id']` and `input[name='offsport_absent']`, but the DataEditor form names
+those controls `edit[offsport_type_id]` and `edit[offsport_absent]`. The selectors match nothing, so
+choosing a type never changes the absent setting. Confirmed in the browser on the dev instance: the
+page has no `offsport_type_id` inputs, only `edit[offsport_type_id]` ones.
+
+`docs/medical-module.md` now says the default is not copied across and tells staff to set the field
+by hand. `docs/roll-calls.md` no longer mentions the default at all. Once the selectors are fixed,
+put the sentence back: choosing a **Type** sets **Counts as Absent for Roll Call** to that type's
+default, which can still be overridden.
+
+(Every type on the demonstration school defaults to **No**, so a picture could not show the fault or
+the fix without changing a type first.)
+
+---
+
+## Roll Calls — a stale settings path
+
+Not medical, but found from the medical side. In `docs/roll-calls.md`, the *Leave Module* subsection
+sends the reader to "**Cron Settings → Roll Call → Reason to show for Leaves**". That category no
+longer exists: `rollcall-leave-reason` sits on the **Attendance** tab under the **Roll Call** heading,
+next to `rollcall-offsport-reason`. The neighbouring *Medical Module* subsection, added at the same
+time, uses the correct path, so the two now disagree on the same screen.
+
+Worth a sweep of the whole manual for "Cron Settings" and for "**Cron** tab" while somebody is in
+there — the settings screen was reorganised into the categories in
+`ADAM\Support\Settings\SettingCategory` and other pages are likely to be stale in the same way.

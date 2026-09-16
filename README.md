@@ -92,7 +92,7 @@ because mkdocs-exporter reads cover templates as plain text rather than as Jinja
 attached to every page and then removed from all but the first by `aggregator.covers: limits`, so
 each per-chapter PDF carries a copy of it too. Nothing publishes those, so it does not matter.
 
-Every page after the cover carries its number at the foot. The numbers run continuously across all 99
+Every page after the cover carries its number at the foot. The numbers run continuously across all 100
 chapters, which they would not do by themselves — each chapter is rendered as its own document and
 the aggregator concatenates them — and they match the page numbers a PDF reader shows, because the
 cover is counted even though it is left unnumbered.

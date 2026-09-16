@@ -1,0 +1,15 @@
+- image: medical-stock-02.png
+  captured: 2026-09-16
+  as: staff (staff_id 1, Antonio Watson, development login bypass)
+  path: Administration tab → Medical Administration → Manage Medical Stock → Add new Medical Stock Item
+  frame:
+    mode: element
+    selector: "#newdatum"
+    padding: 8
+  setup: >
+    The brief asked for the edit form of an existing item, but the demonstration school has no
+    stock items, and creating data on the dev instance was declined by the session's permission
+    check. The add form has identical fields, so it was used instead, filled in the browser only
+    and never submitted: Description "Ibuprofen 200mg tablets", Group Pharmacy, Schedule S1,
+    San Code 712004 (invented), Unit tablet, Enable stock control Yes.
+  revert: none — nothing was saved
