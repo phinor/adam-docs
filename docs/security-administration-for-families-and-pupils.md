@@ -32,7 +32,8 @@ If you are creating a permission group that is meant to give access to a parent 
 
 If the group is meant to block access, then this message can provide context. It would therefore be possible to have different groups for different reasons. If a parent hasn’t paid the school fees, one could assign them to a group specifically to address that issue, as opposed to a pupil who has perhaps been suspended due to disciplinary issues.
 
-*Please note that if a family has multiple pupils and each has no access but from groups that have different messages, each message will be concatenated together (although no duplicate messages will be shown). Additionally, these messages will only be shown if NO pupil or family information is permitted to be shown in the profile. Where a family has multiple children and one has access but others don’t, these messages will* not *be displayed.*
+!!! note
+    Please note that if a family has multiple pupils and each has no access but from groups that have different messages, each message will be concatenated together (although no duplicate messages will be shown). Additionally, these messages will only be shown if NO pupil or family information is permitted to be shown in the profile. Where a family has multiple children and one has access but others don’t, these messages will *not* be displayed.
 
 Once done, click on **Save this Pupil Group**.
 

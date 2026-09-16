@@ -68,7 +68,8 @@ When asked to display a signature on a report, ADAM will look in the staff membe
 
 The signatures must be uploaded to the individual staff members’ Document Repository.
 
-*Importantly, the person uploading the signatures must have the necessary permissions to add documents to the signatures category of the Document Repository. This person does not need to have “read” access, although “delete” access can be useful to replace an old signature with a newer version if it is required.*
+!!! note
+    Importantly, the person uploading the signatures must have the necessary permissions to add documents to the signatures category of the Document Repository. This person does not need to have “read” access, although “delete” access can be useful to replace an old signature with a newer version if it is required.
 
 ADAM will use the *first* signature that it finds in this document repository category. This can sometimes be unpredictable if there are multiple versions of the signature. Thus, you are advised to delete any old versions of the signature so that the final choice not left to chance.
 

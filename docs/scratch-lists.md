@@ -169,7 +169,8 @@ The Scratch List fields are used widely across ADAM to show information about pu
 
 https://www.youtube.com/watch?v=Aup59n6XZhM
 
-*Note carefully that people who have the permissions to add and edit pupils, families or staff will always be able to see all the information on the respective editing screens. However, they may still be restricted from creating scratch lists with that information.*
+!!! warning
+    Note carefully that people who have the permissions to add and edit pupils, families or staff will always be able to see all the information on the respective editing screens. However, they may still be restricted from creating scratch lists with that information.
 
 Navigate to **Administration → Database Administration → Manage scratch list field permissions**.
 

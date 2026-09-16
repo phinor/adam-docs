@@ -136,6 +136,7 @@ If multiple files are uploaded, only the most recent file is played when the but
 
 If the button is greyed out, it may be because an invalid audio file has been uploaded or the specific browser does not support the playback of that type of file. You are encouraged to upload files in MP3 format for the widest possible support.
 
-*Note that different web browsers may display the media control buttons differently. This is a function of the web browser rather than of ADAM.*
+!!! note
+    Note that different web browsers may display the media control buttons differently. This is a function of the web browser rather than of ADAM.
 
 Have a look at the Document Repository documentation for more information on uploading many files at once using the [Bulk Upload feature](document-repository.md#uploading-documents-in-bulk).

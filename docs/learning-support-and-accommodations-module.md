@@ -270,7 +270,8 @@ Once saved, this should appear as follows:
 
 *Note the “t--” is the code that represents “read if teacher”, and “RAD” represents “Read, Add and Delete”.*
 
-*It is often useful to give General Teachers (or your equivalent group) permission to read these documents “Only if they teach the pupil”. Again, see the section on* *[Staff Permissions](document-repository.md#staff-permissions)* *for more.*
+!!! tip
+    It is often useful to give General Teachers (or your equivalent group) permission to read these documents “Only if they teach the pupil”. Again, see the section on [Staff Permissions](document-repository.md#staff-permissions) for more.
 
 Finally, you will need to tell ADAM which categories may be chosen to upload these support documents to. The settings are found in the [Site Settings](changing-site-settings.md#changing-site-settings) in the **Document Repository** section.
 

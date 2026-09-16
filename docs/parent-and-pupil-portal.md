@@ -136,7 +136,8 @@ If you want to verify the information that can be seen by a specific family, sys
 
 Any parent or student who has access to the portal will see a **QR Code** menu option listed under the **General** heading. Tap on the link to see the QR Code.
 
-*For users with limited data access or who may wish to avoid problems of bad signal, it may be sensible to take a screenshot of the QR code and store that in their phone’s photo gallery for future use.*
+!!! tip
+    For users with limited data access or who may wish to avoid problems of bad signal, it may be sensible to take a screenshot of the QR code and store that in their phone’s photo gallery for future use.
 
 Note that this QR Code is meant only for scanning by ADAM when searching for a pupil. It is not intended to work in any other website or QR Code scanner.
 

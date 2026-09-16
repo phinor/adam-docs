@@ -92,7 +92,7 @@ If ADAM will communicate via the public internet with your AD server, you must u
 
 ### OAuth Authentication Settings
 
-This can allow your users to authenticate to ADAM if they are signed in with their school-issued Google or Microsoft account. ***Please contact*** ***[help@adam.co.za](mailto:help@adam.co.za)*** ***before you enable any of these settings.***
+This can allow your users to authenticate to ADAM if they are signed in with their school-issued Google or Microsoft account. **Please contact [help@adam.co.za](mailto:help@adam.co.za) before you enable any of these settings.**
 
 ### Internal Password Administration
 

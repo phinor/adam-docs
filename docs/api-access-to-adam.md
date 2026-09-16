@@ -1460,9 +1460,9 @@ GET /api/documents/categories
 
 -   `category_id` is ADAM's internal identifier for the category.
 -   `category_name` is the display name of the category.
--   `description**` is the category's description text.
+-   `description` is the category's description text.
 -   `parent_id` is the identifier of the parent category (top-level categories have a parent of 0).
--   `permissions**` indicates which operations the token is allowed to perform on this category.
+-   `permissions` indicates which operations the token is allowed to perform on this category.
 
 ### Documents/list:get
 
@@ -1754,7 +1754,8 @@ The last parameter (all or current) may be omitted - the default setting is to r
 
 An optional parameter, updated_since, will only return changes that have been made on or after the time specified. Any valid timestamp, that is URL encoded, can be used.
 
-*Note well that changes to email addresses are* ***not*** *reflected in the modified time.*
+!!! note
+    Note well that changes to email addresses are **not** reflected in the modified time.
 
 #### Response {#exportfamiliesget-response}
 
@@ -1817,7 +1818,8 @@ Valid responses will contain an array of family objects in the data property. Th
 
 Allows ADAM to be used as an external authentication source.
 
-***Note well:*** *This API endpoint will divulge user information for a valid login name. As with any API key, it is imperative that it is kept secret and changed if a breach is suspected.*
+!!! warning
+    Note well: this API endpoint will divulge user information for a valid login name. As with any API key, it is imperative that it is kept secret and changed if a breach is suspected.
 
 #### Request {#externalauthauthpost-request}
 

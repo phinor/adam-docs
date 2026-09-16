@@ -9,7 +9,8 @@ While this is useful for monitoring communication sent externally to ADAM, it ca
 
 ADAM scans the mail every five minutes and processes a batch of mail. Thus most mails should be archived by ADAM within 5 to 10 minutes of being sent.
 
-*Note that ADAM will not store attachments.*
+!!! note
+    Note that ADAM will not store attachments.
 
 ## Enabling and Disabling Mail Logging for Families
 

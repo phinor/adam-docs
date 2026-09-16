@@ -6,7 +6,7 @@ scheduler (for other non-academic purposes), or on an ad-hoc basis (e.g. sports 
 !!! warning
     Please note that the Roll Call module is intended to replace the 
     **[Attendance Registers](attendance-registers.md#attendance-registers)** module in ADAM. The Attendance Registers module
-    will be removed at the end of 2026.*
+    will be removed at the end of 2026.
 
 ## Choosing A Roll Call
 

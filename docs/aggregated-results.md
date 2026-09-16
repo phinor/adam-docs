@@ -87,7 +87,8 @@ A list of reporting periods from the chosen academic year is displayed. The init
 !!! warning
     While these numbers look suspiciously like percentages in the screenshot above, they are not: ADAM will treat them as proportions of a total.
 
-*For example, if we entered the weightings for the three terms as 1, 2 and 4, ADAM would see that the total for the terms is 7 and weight Term 1 as 1 out of 7 (14,29%), Term 2 will be 2 out of 7 (28,57%) and Term 3 will be weighted as 4 out of 7 (57,14%).*
+!!! note
+    For example, if we entered the weightings for the three terms as 1, 2 and 4, ADAM would see that the total for the terms is 7 and weight Term 1 as 1 out of 7 (14,29%), Term 2 will be 2 out of 7 (28,57%) and Term 3 will be weighted as 4 out of 7 (57,14%).
 
 Once happy with the weightings you’ve captured, click on **Save changes**.
 
@@ -146,7 +147,7 @@ Note that only “whole grade” calculations can be selected to apply to a whol
 The second is to set the calculation in the [mark book](mark-book-administration.md#mark-book-administration). This is done either when each class requires an individual calculation, or the calculation for a specific class must differ, for some reason, from the rest of the grade.
 
 !!! warning
-    Setting a calculation in the mark book will* ***override*** *any calculation that might be set for the grade in the reporting period settings.
+    Setting a calculation in the mark book will **override** any calculation that might be set for the grade in the reporting period settings.
 
 At the bottom right of the mark book screen is a block that shows the currently applicable **Year-to-Date Mark Calculation**. If none has been set in the reporting period settings, then ADAM will simply be duplicating the Term result as a year-to-date result. If one has been set in the reporting period settings, then ADAM will use that one to calculate the results.
 

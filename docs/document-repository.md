@@ -8,7 +8,8 @@ The Document Repository is an online file storage utility that can store files a
 
 To begin with, ADAM needs a location in which to save files on the actual server. A folder needs to be created on the server and configured in the site settings (see page ).
 
-*Please ensure that this folder is not a sub-folder of the web-root. If it is, then files can be accessed without necessarily following the correct permissions.*
+!!! warning
+    Please ensure that this folder is not a sub-folder of the web-root. If it is, then files can be accessed without necessarily following the correct permissions.
 
 ## Categories
 

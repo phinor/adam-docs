@@ -68,7 +68,8 @@ Click on the option to “Perform synchronisation check for Grades”.
 
 ADAM will query the Ed-Admin database to find a list of all grades that are in use. It will then show these grades with corresponding drop-down options next to each. Please choose the grade that ADAM should apply to those descriptors.
 
-*Note: The order that the grades appear in will vary from server to server. Please be careful in case the order is not sequential.*
+!!! warning
+    Note: The order that the grades appear in will vary from server to server. Please be careful in case the order is not sequential.
 
 ![](assets/screenshots/third-party-integration/third-party-integration-04.png)
 

@@ -72,7 +72,8 @@ Choose an effective date for the Export.
 
 ![](assets/screenshots/sa-sams-export/sa-sams-export-04.png)
 
-*Note that by choosing a date in December, ADAM will automatically include progression information for your pupils.*
+!!! note
+    Note that by choosing a date in December, ADAM will automatically include progression information for your pupils.
 
 ADAM will then show a verification report. Kindly note that this is not as thorough as the SASAMS checks that will be done with your deployed database, but does provide a good starting point for issues. Try to correct as many errors as you can.
 

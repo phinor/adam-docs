@@ -131,7 +131,8 @@ When you first add a pupil to the ADAM database, they are assigned to the defaul
 !!! warning
     You will only be able to choose the same type of registration status. For example, if the pupil is currently an active admission, you will only be able to choose other “active admission” statuses. To change the pupil to an inactive status, you must “Deregister” the pupil. See later in this section for deregistering pupils.
 
-*Once a pupil has been deregistered they can only choose from other inactive statuses using this method. To change this to an active status, the pupil must be “Re-registered”. See later in this section for re-registering pupils.*
+!!! note
+    Once a pupil has been deregistered they can only choose from other inactive statuses using this method. To change this to an active status, the pupil must be “Re-registered”. See later in this section for re-registering pupils.
 
 ### Changing pupils’ admissions statuses – many pupils at a time
 
@@ -169,7 +170,8 @@ Navigate to **Admissions → Enrolment Administration → Manage admissions**. O
 
 Select the admissions statuses that need to be rolled over.
 
-*Note carefully that one should specifically avoid choosing a status which has pupils waiting to enter the school in the current year. In the example above, the* ***Confirmed Admissions*** *has been excluded. This is particularly relevant when the selected current year of entry is the same as the current calendar year.*
+!!! warning
+    Note carefully that one should specifically avoid choosing a status which has pupils waiting to enter the school in the current year. In the example above, the **Confirmed Admissions** has been excluded. This is particularly relevant when the selected current year of entry is the same as the current calendar year.
 
 The **Current year of entry** is the year that the pupils currently have set as their entry year.
 
@@ -181,7 +183,8 @@ When you’re ready to proceed, click on the button.
 
 ADAM will then show a list of pupils who will be affected by this change and ask you to confirm the change.
 
-*Please check this list carefully before proceeding. It is not possible to undo this change automatically.*
+!!! warning
+    Please check this list carefully before proceeding. It is not possible to undo this change automatically.
 
 ## Processing Enrolments of Pupils
 

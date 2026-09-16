@@ -24,7 +24,7 @@ The **Options** that are present can be customised. Three default options are pr
 Write each option on a new line.
 
 !!! tip 
-    The default options (shown above as “Attended, Excused, Absent”) can be changed in* *[the Site Settings](changing-site-settings.md#changing-site-settings)* *under the* ***Attendance*** *tab. If you change this, it will apply only to new registers that are created after the change is made and will have no effect on any registers that already exist.*
+    The default options (shown above as “Attended, Excused, Absent”) can be changed in [the Site Settings](changing-site-settings.md#changing-site-settings) under the **Attendance** tab. If you change this, it will apply only to new registers that are created after the change is made and will have no effect on any registers that already exist.
 
 Once done, click on the **Next** button to create the register:
 

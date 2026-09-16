@@ -17,7 +17,8 @@ Before you begin:
 1.  You must know your **South African ID number** or your **passport** number, as captured on the ADAM database.
 2.  You must also have access to an **email address** that is entered against your name in the database. Part of the process will involve ADAM sending a confirmation link to your email address for verification. The process of verifying the email link must be done within 24 hours of starting.
 
-*Note that some parents, who share a single email address, may have difficulty in accessing ADAM. This is because the email address is likely associated with only one parent. If you receive the error that there is no email address associated with you, please make contact with the school who can copy the address for both parents.*
+!!! note
+    Note that some parents, who share a single email address, may have difficulty in accessing ADAM. This is because the email address is likely associated with only one parent. If you receive the error that there is no email address associated with you, please make contact with the school who can copy the address for both parents.
 
 Proceed to “Parent Login” on the ADAM home page:
 

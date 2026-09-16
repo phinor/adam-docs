@@ -57,7 +57,8 @@ The group name can be anything you like. Enter something that will tell you abou
 !!! warning
     We recommend using a description of the “role” that permission groups will provide users. For example, instead of creating a permission group that describes a “person” (e.g. not “Jane’s Permissions”, nor “secretary permissions”) rather create a group that link to specific function such as “SMS Sender” or “Report Editing”.
 
-*Remember that people can belong to as many groups as you like.*
+!!! note
+    Remember that people can belong to as many groups as you like.
 
 The option for **“default”** is to say whether you want all new users to automatically become a member of this group. Note that setting a group to “Default” will *only* affect new users and any existing users will *not* be a member of this group until they are manually added.
 

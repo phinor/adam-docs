@@ -54,7 +54,8 @@ When a family has been duplicated or added in error, you will need to delete the
 
 The restoration of a deleted family cannot be done from within the ADAM interface since it requires restoring backups and extracting the family’s information from the backup.
 
-*Most SLAs do not cover data rescue as an included service meaning that if we are required to rescue such deleted data, additional charges will be incurred.*
+!!! warning
+    Most SLAs do not cover data rescue as an included service meaning that if we are required to rescue such deleted data, additional charges will be incurred.
 
 ### Some additional warnings {#deleting-families-some-additional-warnings}
 
@@ -73,7 +74,8 @@ You may want  to delete a staff member only if they have been added to your data
 
 ### To Delete a Staff Member
 
-*Before you continue, please note that recovering a staff member deleted in error is not possible by the users and ADAM technical support must be involved. Please also note that this particular service, data recovery, will be invoiced over and above your SLA costs.*
+!!! warning
+    Before you continue, please note that recovering a staff member deleted in error is not possible by the users and ADAM technical support must be involved. Please also note that this particular service, data recovery, will be invoiced over and above your SLA costs.
 
 From the **Staff** tab, under the **Staff Administration** heading, click on **Delete a staff member**.
 

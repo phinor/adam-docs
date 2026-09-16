@@ -10,7 +10,8 @@ Navigate to **Administration → Site Administration → Edit Site Settings**. O
 
 The **Email Return Name** and **Email “From” Address** fields are used only when ADAM sends an automated notification email - in other words, an email that wasn’t sent by a person.
 
-*Where a user sends a message from the Messaging Centre, ADAM will use their name as the “Return Name” and their email address and the “From Address”. This ensures that any replies to that person’s email are directed to them and not to another person who may not understand the reason for the reply.*
+!!! note
+    Where a user sends a message from the Messaging Centre, ADAM will use their name as the “Return Name” and their email address and the “From Address”. This ensures that any replies to that person’s email are directed to them and not to another person who may not understand the reason for the reply.
 
 The **SMTP Server for Outgoing Mail** and the **SMTP Server Port for Outgoing Mail** need to be specified and your network support personnel are best positioned to tell you what details go here. This includes whether the connection is **SSL** protected, and the **SMTP Username**  and **SMTP Password**.
 
@@ -123,7 +124,8 @@ On the **Communications** tab, scroll down to **Email Settings**. Update the fol
 -   **SMTP Password:** The password as set for that user. *Leave blank if using IP authentication.*
 -   **SMTP Session Limit:** 50
 
-*If you see that any of these settings are “Set in the configuration file” and your ADAM server is hosted on our cloud platform, please contact* *[ADAM Support](mailto:help@adam.co.za)* *so that we can assist you in changing these settings! If you host your own ADAM server, please see elsewhere in this documentation for assistance* *[editing the configuration file](server-setup-and-configuration.md#editing-the-configuration-file)**.*
+!!! note
+    If you see that any of these settings are “Set in the configuration file” and your ADAM server is hosted on our cloud platform, please contact [ADAM Support](mailto:help@adam.co.za) so that we can assist you in changing these settings! If you host your own ADAM server, please see elsewhere in this documentation for assistance [editing the configuration file](server-setup-and-configuration.md#editing-the-configuration-file).
 
 Once finished, save the settings. Navigate to **Administration → Messaging Administration → Send test emails**. From here, send yourself an email and check that:
 
@@ -134,7 +136,8 @@ If you can tick off both of those, then your mail is set up correctly.
 
 ## Sending email from ADAM if you use Microsoft’s O365
 
-*Firstly, a disclaimer: we have noticed that mail delivery via O365 is not perfect and Microsoft itself can block your server from delivering messages to it if it considers those messages to be spam-like. ADAM has no control over the email that you send (i.e. its content, frequency and user-friendliness) and has no control over how Microsoft chooses to interpret that email. Your experience may vary!*
+!!! warning
+    Firstly, a disclaimer: we have noticed that mail delivery via O365 is not perfect and Microsoft itself can block your server from delivering messages to it if it considers those messages to be spam-like. ADAM has no control over the email that you send (i.e. its content, frequency and user-friendliness) and has no control over how Microsoft chooses to interpret that email. Your experience may vary!
 
 ### Configuring O365
 
@@ -157,7 +160,8 @@ On the **Communications** tab, scroll down to **Email Settings**. Update the fol
 
 ## Alternative Configuration for Microsoft’s O365
 
-*Kindly note that these are theoretical settings that have not been tested. They may be more reliable than the method discussed above, but have much more stringent controls with regards to the volume of messages that can be sent.* ***Try this at your own risk and make sure to*** ***[monitor the messaging centre batches](#troubleshooting-email-delivery-issues-in-adam)*** ***for failure notifications.***
+!!! warning
+    Kindly note that these are theoretical settings that have not been tested. They may be more reliable than the method discussed above, but have much more stringent controls with regards to the volume of messages that can be sent. **Try this at your own risk and make sure to [monitor the messaging centre batches](#troubleshooting-email-delivery-issues-in-adam) for failure notifications.**
 
 This method makes use of a single address to send email from ADAM. We recommend creating a single user in your O365 control panel for this purpose. The user should be sufficiently generic (e.g. “Example School’s ADAM”. The user should have a strong password associated with it.
 

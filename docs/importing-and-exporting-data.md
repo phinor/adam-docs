@@ -146,7 +146,8 @@ Specifically, please take special note of any telephone numbers which will be in
 
 Mostly, we advise users to delete these columns from the import file and avoid the problems they might cause that way. However, from time to time, it is necessary to modify these columns. Luckily Excel does have feature that allows us to specify how it should treat the data.
 
-*The following instructions and screenshots use Excel 2013, but the general principals still hold for newer versions of Excel. In fact, the internal workings haven’t changed visibly in the last 15 years.*
+!!! note
+    The following instructions and screenshots use Excel 2013, but the general principals still hold for newer versions of Excel. In fact, the internal workings haven’t changed visibly in the last 15 years.
 
 -   Open Excel from the Start menu. Do not double click on the export file to open it!
 -   Open a new blank workbook if necessary.
@@ -193,9 +194,9 @@ Finally, click on “OK”. The dates should now show the new formatting:
 
 One of the most confusing thing when importing data into the database, particularly when adding new pupils, are three very important dates:
 
--   **p****upil\_entry** - the date that a pupil arrived or plans to arrive at the school. This is normally set to January 1st of the year that they arrived or intend to arrive. For future applicants, using the 1st of January does have many benefits.
--   **p****upil\_exit** - only needs to be set if the pupil has LEFT the school. This is normally set to December 31st of the year that they left.
--   **p****upil\_final** \- this field needs to contain the year that the pupil was in Grade 12 or will be in Grade 12. If your school only offers up to Grade 7, for example, this still needs to be set to their Grade 12 year. It is the *pupil’s* final school year, not simply the last year that they were at your school.
+-   **pupil\_entry** - the date that a pupil arrived or plans to arrive at the school. This is normally set to January 1st of the year that they arrived or intend to arrive. For future applicants, using the 1st of January does have many benefits.
+-   **pupil\_exit** - only needs to be set if the pupil has LEFT the school. This is normally set to December 31st of the year that they left.
+-   **pupil\_final** \- this field needs to contain the year that the pupil was in Grade 12 or will be in Grade 12. If your school only offers up to Grade 7, for example, this still needs to be set to their Grade 12 year. It is the *pupil’s* final school year, not simply the last year that they were at your school.
 
 If any of these fields are omitted or pose problems to the enrolment procedure, ADAM will make the following assumptions, in the following order (since some omissions will have run-on implications!)
 

@@ -58,7 +58,8 @@ Click on the option to **Add a new API Token**.
 
 Leave the provided **token** unchanged. This is a random value. There is no benefit to changing this value and may even weaken your security by doing so. Make a temporary copy of this value - you do not need to save it or write it down: it needs to be added to Moodle later so that Moodle can authenticate itself to ADAM. Once Moodle has the value, you have no further need for it.
 
-*Please treat this token as highly confidential. Knowing this value can allow a malicious actor to access names and usernames of your users. We suggest that it is merely copied and pasted from this screen into Moodle. There is no need to save it anywhere.*
+!!! warning
+    Please treat this token as highly confidential. Knowing this value can allow a malicious actor to access names and usernames of your users. We suggest that it is merely copied and pasted from this screen into Moodle. There is no need to save it anywhere.
 
 In the **Resources** section, select **ExternalAuth/auth/post** as shown in the diagram above.
 

@@ -310,11 +310,13 @@ If you choose the **Random Code** option, ADAM gives you a printable list of cod
 
 Click on the **Print Labels** button to generate the labels. ADAM will generate a label for each pupil that is in a class that has this - or a linked - assessment. The labels are printed in alphabetical order by pupil surname.
 
-*We are aware that the generation of labels is currently very slow and are looking at ways to improve this.*
+!!! note
+    We are aware that the generation of labels is currently very slow and are looking at ways to improve this.
 
 ![](assets/screenshots/mark-book-administration/mark-book-administration-33.png)
 
-*Please take special care, when printing labels, to ensure that all “scale to page” or “scale to fit” options are turned off. ADAM measures the labels quite precisely and scaling options introduced by your computer will distort the printing, resulting in the printed content of the label spilling into the next label.*
+!!! warning
+    Please take special care, when printing labels, to ensure that all “scale to page” or “scale to fit” options are turned off. ADAM measures the labels quite precisely and scaling options introduced by your computer will distort the printing, resulting in the printed content of the label spilling into the next label.
 
 ### Scanning QR Code Labels
 

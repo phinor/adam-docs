@@ -14,11 +14,13 @@ ADAM also gives the option to **show the most recent results** from the various 
 
 You will be given the opportunity to search for a pupil. You can either type in a few characters of their name or click on the option to scan a QR code. [Student cards](student-cards.md#student-cards) with QR codes can be printed and laminated for each student. Alternatively, any pupil with access to ADAM’s pupil portal will be able to get an electronic version of their QR code for their phone.
 
-*It might be worth students taking a screenshot of their QR Code to have it easily available without them having to log in to ADAM each time.*
+!!! tip
+    It might be worth students taking a screenshot of their QR Code to have it easily available without them having to log in to ADAM each time.
 
 The QR Code scanning can be done on any device with a web camera and a modern web browser.
 
-*A specific note on iPhones and iPads: At the time of writing, there is a limitation on iPhones which only allows the Safari web browser to scan barcodes. Other browsers, such as Chrome and Opera, are not given access to the iOS devices’ cameras.*
+!!! note
+    A specific note on iPhones and iPads: At the time of writing, there is a limitation on iPhones which only allows the Safari web browser to scan barcodes. Other browsers, such as Chrome and Opera, are not given access to the iOS devices’ cameras.
 
 Once a pupil has been identified, complete the necessary health information and determine whether the pupil is permitted to stay at school or not.
 
@@ -44,8 +46,9 @@ Click on **Generate Report** to be able to see this report.
 
 ## Permissions Required for Health Monitoring
 
-For users who are recording the results of Health Monitoring, there is only one permission that needs to be [assigned to staff](security-administration-for-staff.md#changing-the-permissions-of-a-group): **Pupil Admin → Medical Records → Perform Health Monitoring** ***(medical\_healthcheck)***.
+For users who are recording the results of Health Monitoring, there is only one permission that needs to be [assigned to staff](security-administration-for-staff.md#changing-the-permissions-of-a-group): **Pupil Admin → Medical Records → Perform Health Monitoring** (medical\_healthcheck).
 
-For staff that are viewing the medical examination report, they should be given the permission **Pupil Admin → Medical Administration → View Medical Examinations Report** ***(medical\_exam\_report)****.*
+For staff that are viewing the medical examination report, they should be given the permission **Pupil Admin → Medical Administration → View Medical Examinations Report** (medical\_exam\_report).
 
-*Kindly note that this permission allows the staff member to see* all *medical exam information, not just that related to Covid-19 or the health monitoring. Thus this permission should be given to appropriately authorised staff members only.*
+!!! warning
+    Kindly note that this permission allows the staff member to see *all* medical exam information, not just that related to Covid-19 or the health monitoring. Thus this permission should be given to appropriately authorised staff members only.

@@ -100,7 +100,8 @@ under daylight saving is still caught.
 
 ## Editing the configuration file
 
-*Please don’t edit the configuration file unless you are confident in what you are doing.*
+!!! warning
+    Please don’t edit the configuration file unless you are confident in what you are doing.
 
 The configuration file is found in the ADAM source folder.
 
