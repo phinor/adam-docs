@@ -60,11 +60,13 @@
     at rugby, issuing 2 ibuprofen and 1 ice pack.
   revert: none — the data stays for the remaining medical captures
   note: >
-    The Medical Notes and Allergies fields on Edward Clark's own profile hold placeholder Latin
-    from the regenerated demonstration school ("Gravida velit…", "Sit amet orci…"), and the
-    Allergies text also shows at the end of Allergies and Chronics. They were left as found:
-    editing an existing pupil's profile was not part of the data requested. Re-capture if those
-    two fields are given realistic values.
+    Re-captured the same day, same framing (now 741px). The first capture showed placeholder Latin
+    from the regenerated school in Edward Clark's own Medical Notes and Allergies profile fields.
+    Both were changed through edit pupil information, at the user's request, to: Medical Notes
+    "Exercise-induced asthma: uses his reliever inhaler before sport and carries it at all times.
+    Peanut anaphylaxis: adrenaline auto-injector in his blazer pocket and a spare in the sick bay.
+    Call parents after any use of the auto-injector." and Allergies "Peanuts (anaphylaxis)". No
+    other field on the profile was changed.
 - image: medical-module-15.png
   captured: 2026-09-16
   as: staff (staff_id 1, Antonio Watson, development login bypass)
@@ -84,3 +86,43 @@
     The right-hand edge of the form column is cut off: at the house 900px width the column is
     overflow:auto and scrolls sideways, so the Notes box and the medication table's Actions column
     run past it. This is how ADAM draws the screen at that width, not a crop.
+- image: medical-module-17.png
+  captured: 2026-09-16
+  as: staff (staff_id 1, Antonio Watson, development login bypass)
+  path: Pupils tab → Medical Records → View the Off Sport List
+  frame:
+    mode: span
+    selectors: >
+      From #filterDiv down to the foot of the DataTables wrapper around #table_1, taking in the
+      "Add new Off Sport Entry" link and "Off Sport Entries" heading between them. 1167px.
+    padding: 8
+    viewport: 1340 wide — an exception to the house 900px
+  setup: >
+    Eight entries created through Add a Pupil to the Off Sport List: Edward Clark (ankle sprain,
+    rugby), Calvin Naidoo (concussion at hockey, Concussion Yes), Jenna Dlamini (headache, lying
+    down), Stacy Jacobs (tonsillitis, Absent Yes, Antibiotics Yes), Harrison Pillay (ankle sprain,
+    soccer), Hamza Khumalo (orthodontist, Absent Yes), Ivy Naidoo (chest infection, boarding house,
+    Antibiotics Yes), Hamish Pillay (geography field trip, Absent Yes). All end on or after
+    2026-09-16 so they stay on the list.
+  revert: none
+  note: >
+    Taken at 1340px wide because the table itself is 1286px: at 900px the Absent, Concussion and
+    Antibiotics columns the page describes are off screen. The capture also showed that the
+    dropdown filters are Class, Grade, Location, Type, Absent and Concussion — the page had listed
+    them one column out, because the DataTables column indices count the leading row number.
+- image: medical-module-19.png
+  captured: 2026-09-16
+  as: staff (staff_id 1, Antonio Watson, development login bypass)
+  path: Administration tab → Medical Administration → Manage Off Sport Alerts
+  frame:
+    mode: span
+    selectors: >
+      The "Current Alerts" h2 down to the end of the "No alerts found." text under "Disabled
+      Alerts" (a bare text node, measured with a Range). 247px.
+    padding: 8
+  setup: >
+    Two alerts created through Add a new Off Sport alert: Injury, emailing Mrs Una Bailey and the
+    teachers of Rugby (A), Hockey (A) and Soccer; Illness, emailing the teachers of Register Class
+    and Grade Tutor. The Illness alert was then edited to add Mrs Nicky Barnes, because with no
+    staff chosen its row read "Unknown, Grade Tutor, Register Class" — see TODO.md.
+  revert: none

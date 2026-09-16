@@ -336,7 +336,9 @@ Navigate to **Pupils → Medical Records → View the Off Sport List**.
 
 The list shows current and forthcoming entries — anything that has already ended drops off it — with the pupil’s **Surname**, **Firstname**, **Class** and **Grade**, the **Start** and **End** dates, the **Location**, **Type**, and the **Absent**, **Concussion** and **Antibiotics** flags, together with any **Comments**.
 
-Above the table are dropdown filters for grade, start date, type, absent, concussion and antibiotics, and a search box. This is the screen a sports department works from at the start of an afternoon.
+Above the table are dropdown filters for **Class**, **Grade**, **Location**, **Type**, **Absent** and **Concussion**, and there is a **Search** box above the table itself for anything else, such as a pupil’s name or a word in the comments. This is the screen a sports department works from at the start of an afternoon.
+
+![](assets/screenshots/medical-module/medical-module-17.png)
 
 ### Adding a Pupil to the Off Sport List
 
@@ -359,7 +361,7 @@ Record:
 > Each off sport type carries its own absent setting, and the form is meant to copy that setting across when you choose a **Type**. At present it does not, so check **Counts as Absent for Roll Call** by hand every time.
 
 > [!NOTE]
-> **Concussion** and **Antibiotics** have their own columns and their own filters on the off sport list. A school with a concussion protocol can therefore produce the list of pupils currently under it without needing a separate record anywhere.
+> **Concussion** and **Antibiotics** have their own columns on the off sport list, and **Concussion** has its own filter. A school with a concussion protocol can therefore produce the list of pupils currently under it without needing a separate record anywhere.
 
 ### Off Sport and Roll Call
 
@@ -375,9 +377,11 @@ Navigate to **Administration → Medical Administration → Manage Off Sport Typ
 
 An off sport alert emails staff a list of the pupils who are off sport today. Each alert watches one off sport type, so a school can treat concussion differently from a sprained ankle.
 
-Navigate to **Administration → Medical Administration → Manage Off Sport Alerts**. Existing alerts are shown under **Current Alerts**, with anything switched off under **Disabled Alerts**.
+Navigate to **Administration → Medical Administration → Manage Off Sport Alerts**. Existing alerts are shown under **Current Alerts**, with anything switched off under **Disabled Alerts**. Each row names the off sport reason it watches and everybody it emails: the staff chosen by name, followed by the subjects whose teachers are told.
 
-Click to add a new alert, or **edit** an existing one, and set:
+![](assets/screenshots/medical-module/medical-module-19.png)
+
+Click **Add a new Off Sport alert**, or **edit** an existing one, and set:
 
 -   **Off Sport reason:** which off sport type this alert watches. One alert watches one reason; set up several alerts to cover several reasons.
 -   **Email staff:** staff who should always receive the full list, whoever they teach. This is for the director of sport or the head of the sanatorium, and should be the exception rather than the rule.

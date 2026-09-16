@@ -139,49 +139,25 @@ way out. Place it in *By filter*, after the paragraph that ends "...as many time
 
 ---
 
-## Medical Module (`docs/medical-module.md`)
+## Medical Module — consultation form width (`docs/medical-module.md`)
 
-The page was rewritten from a stub to cover the whole module. The *Medical Examinations* images are
-the original `medical-module-01.png` to `-13.png`, which still match. `-14.png`, `-15.png`,
-`-16.png` and `-18.png` are captured and in place, all against **Edward Clark** (pupil 5083). The two
-briefs below reserve `-17.png` and `-19.png`; number anything else from `-20.png` upward.
+All the medical screenshots are captured and in place. One thing is left to come back to, and it
+needs development before it needs a picture.
 
-The demonstration data behind them was created through ADAM's screens on 2026-09-16 and is listed in
-`docs/assets/screenshots/medical-module/captures.yml` and `…/medical-stock/captures.yml`.
+At the manual's 900px capture width, the consultation form's middle column is `overflow: auto` and
+scrolls sideways. The right-hand edge of the **Notes** box and the **Actions** column of the
+**Medication** table run past it, so `medical-module-15.png` shows the form cut off on the right.
+That is how ADAM draws the screen at that width, not a bad crop: the three-column layout (photograph,
+form, allergies panel) does not leave the form enough room.
 
-> [!WARNING] still blocked on demonstration data
-> There are no off sport entries and no off sport alerts. Creating them was refused by the capturing
-> session's permission check, part-way through seeding, so whoever picks this up needs permission to
-> create those records first. Plan used so far: Edward Clark, Calvin Naidoo (4832), Ivy Naidoo (5476),
-> Jenna Dlamini (5186), Hamish Pillay (5202), Harrison Pillay (5428), Hamza Khumalo (5339), Stacy
-> Jacobs (3857) — current Grade 8 and 9 pupils with classes. Calvin Naidoo's consultation is a
-> concussion at hockey, so his off sport entry should carry **Concussion: Yes**.
+**Take to development:** the layout of **Add a Medical Consultation** at narrower widths — for
+example, dropping the allergies panel below the form, or letting the form use the full width.
+Once that changes, re-capture `medical-module-15.png` with the setup recorded in
+`docs/assets/screenshots/medical-module/captures.yml`.
 
-### `medical-module-14.png` — re-capture once the profile text is realistic
-
-It is in place and framed correctly, but Edward Clark's own **Medical Notes** and **Allergies**
-profile fields hold placeholder Latin from the regenerated school, and the Allergies text shows in
-bold red. Give those two fields believable values (for example, notes about his asthma plan and
-"Peanuts — anaphylactic") and re-capture with the same framing; see its `captures.yml` entry.
-
-### 4. The off sport list — `medical-module-17.png`
-
-**Pupils → Medical Records → View the Off Sport List**.
-
-Frame the filter row and the first several rows of the table, showing the **Absent**, **Concussion**
-and **Antibiotics** columns. Six to ten pupils is enough; the table should look used rather than empty.
-
-Place it in *Viewing the Off Sport List*, after the paragraph describing the columns.
-
-### 6. The off sport alerts screen — `medical-module-19.png`
-
-**Administration → Medical Administration → Manage Off Sport Alerts**.
-
-Frame the **Current Alerts** table with at least two alerts in it, so the per-reason arrangement is
-visible, and the **Disabled Alerts** heading beneath. A second image of the add form is not needed —
-it has three fields and they are listed in the text.
-
-Place it in *Off Sport Alerts*, after the paragraph naming the two tables.
+The off sport list (`-17.png`) has a related but separate problem: its table is 1286px wide, so it
+was captured at 1340px, an exception to the house width. If development makes the consultation form
+narrower-friendly, it is worth asking about that table at the same time.
 
 ---
 
@@ -359,6 +335,22 @@ default, which can still be overridden.
 
 (Every type on the demonstration school defaults to **No**, so a picture could not show the fault or
 the fix without changing a type first.)
+
+---
+
+## Off Sport Alerts — an alert with no staff shows "Unknown"
+
+Found while creating demonstration data on 2026-09-16; not on `fix/medical-module-permissions`.
+
+On **Manage Off Sport Alerts**, an alert that emails subject teachers but no named staff lists its
+recipients as "Unknown, Grade Tutor, Register Class", with **Unknown** linked to an empty
+`mailto:`. `Alerts::displayAlerts` runs `Validation::safeInt (explode (":", $alert ['alert_email']))`:
+an empty string becomes `[0]`, and the following `if ($staff != '')` is true for `0` under PHP 8's
+comparison rules, so it prints `StaffMember::getName (0)`. The same pattern guards the subjects loop.
+
+Worth checking whether `AlertData` has the same fault when it builds the emails, since an alert with
+no named staff is an ordinary way to set one up. The manual does not mention it; the screenshot was
+taken after giving the alert a named staff member.
 
 ---
 
