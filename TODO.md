@@ -24,6 +24,35 @@ least reads as one continuous example.
 
 ---
 
+## Online Applications (`docs/online-applications.md`)
+
+The way an application begins has changed, and the written page now describes the new screens. Four
+images have been captured against the demonstration school and are in place: the opening form
+(`online-applications-04.png`), the page shown after it is submitted (`online-applications-05.png`),
+the confirmation screen an existing parent sees (`online-applications-17.png`) and the portal card
+that starts an application without an emailed link (`online-applications-18.png`).
+
+`online-applications-06.png` showed the old "choose the number of children" screen, which no longer
+exists in ADAM, and the file has been deleted.
+
+One image is still outstanding.
+
+### 1. The start email — `online-applications-07.png` needs recapturing
+
+The email that carries the first link is now one of two templates, and the existing image shows
+neither. Capture the **Start an Application (Existing Parent)** message as received, since that is
+the one whose wording matters most — it reaches somebody who may not have asked for anything, and it
+says so. Frame the greeting, the **Start Application** button and the sentence about ignoring the
+email.
+
+This one cannot be captured from ADAM itself: the message only exists once it has been delivered.
+The demonstration families' addresses are all `testing+…@adam.co.za`, so whoever can read that
+mailbox can capture it. Trigger it by entering the ID number of a demonstration parent on
+**/apply** — the link is then emailed to the address on file for that parent, not to the address
+typed on the form. Note that ADAM sends at most three such emails per parent in 24 hours.
+
+---
+
 ## Profile Overview Layouts (`docs/profile-overview-customisation.md`)
 
 The demonstration school now has three pupil layouts — **Default** (the default), **Admin Layout**
