@@ -467,6 +467,8 @@ They are asked to confirm their contact details and the details of their childre
 
 If anything required is still missing, the review screen shows a **Still needed** list instead of the **Confirm and Submit Application** button. The list is grouped by page — **Parents**, each child, and **Documents** — and each group heading links straight back to that page. It includes required fields, the proposed date and grade of entry, the ID number used to start the application if it no longer belongs to either parent, and any **Mandatory** documents. Once the list is empty the button appears. **Requested** documents that are missing are shown as a reminder only, and do not stop the application being submitted.
 
+![](assets/screenshots/online-applications/online-applications-19.png)
+
 Finally, they click on the **Confirm and Submit Application** button.
 
 ![](assets/screenshots/online-applications/online-applications-11.png)

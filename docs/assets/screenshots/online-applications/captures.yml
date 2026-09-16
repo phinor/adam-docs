@@ -1,0 +1,101 @@
+- image: online-applications-08.png
+  captured: 2026-09-16
+  as: applicant (new family, not logged in as a parent)
+  path: /apply → emailed confirmation link → Start Application → application form, Child 2 page (section=child-2)
+  frame:
+    mode: span
+    selectors: >
+      From the "Online Application" h1 down through the Gender row of Personal
+      Information on the Child 2 page; the floating "Save and continue" bar sits
+      over the bottom rows, as the page draws it.
+    padding: 8
+  setup: >
+    Application 85, started at /apply with a made-up ID number unknown to the
+    school (8001015007081, email testing+docs-apply@adam.co.za, 2 children).
+    The confirmation link's click_key was read from click_redirect because dev
+    mail goes to the Mailtrap sandbox. The Parents page was filled in (Sipho and
+    Nomsa Dlamini, all made up) and saved, then Child 1 (Lwazi Dlamini) was
+    filled in and saved, leaving Child 2 untouched, so the progress bar shows
+    two ticks, the child's name, "Child 2" and a warning sign.
+  revert: none
+
+- image: online-applications-16.png
+  captured: 2026-09-16
+  as: applicant (same application as -08)
+  path: application form → Save and continue on the empty Child 2 page → Supporting Documents
+  frame:
+    mode: span
+    selectors: >
+      From the "Online Application" h1 down through Child 2's Latest School
+      Report slot, ending on the rule below it.
+    padding: 8
+  setup: >
+    Administration → Document Repository → Manage parent and pupil uploads →
+    Admissions Documents (upload 1): Birth Certificate changed from Optional to
+    Mandatory and Proof of Address from Optional to Requested, so that both
+    badges appear. A one-page made-up PDF was uploaded to Lwazi's Birth
+    Certificate slot. Child 2 had no first name saved, so its group reads
+    "Child 2".
+  revert: >
+    None. The two requirement changes were left in place on the demonstration
+    school; set both back to Optional if that matters.
+
+- image: online-applications-19.png
+  captured: 2026-09-16
+  as: applicant (same application as -08)
+  path: Child 2 page → progress bar Review & Submit (saves the page first) → review screen
+  frame:
+    mode: span
+    selectors: >
+      From the "Online Application" h1 down to the end of the last Still
+      needed list (Documents).
+    padding: 8
+  setup: >
+    Child 2 filled in as Amahle Dlamini except Medical Aid Scheme, Medical Aid
+    Number and Grade of Entry, so the Still needed list is short: three fields
+    under Amahle and her mandatory Birth Certificate under Documents.
+  revert: none
+
+- image: online-applications-10.png
+  captured: 2026-09-16
+  as: applicant (same application as -08)
+  path: Documents → Continue to review → Continue anyway → review screen
+  frame:
+    mode: span
+    selectors: >
+      From the "Online Application" h1 down to the Confirm and Submit
+      Application button.
+    padding: 8
+  setup: >
+    Amahle's missing fields completed and a made-up PDF uploaded to her Birth
+    Certificate slot. Proof of Address (Requested) left out for both children,
+    so the reminder warning appears above the button.
+  revert: none
+
+- image: online-applications-11.png
+  captured: 2026-09-16
+  as: applicant (same application as -08)
+  path: review screen → Confirm and Submit Application
+  frame:
+    mode: span
+    selectors: From the "Online Application" h1 to the end of the thank-you paragraph.
+    padding: 8
+  setup: Application 85 submitted.
+  revert: none
+
+- image: online-applications-14.png
+  captured: 2026-09-16
+  as: staff
+  path: Admissions → Online Applications → Manage Online Applications → view (application 85)
+  frame:
+    mode: span
+    selectors: >
+      From the "View Application Form" h1 down through the first parent's Title
+      row; the floating Approve Application bar sits over the bottom rows.
+    padding: 8
+  setup: >
+    None beyond the application above. The ID number field is selected when the
+    page loads; the selection was cleared before capturing.
+  revert: >
+    None. Application 85 is left on the list with status NEW; reject it if it
+    gets in the way.
