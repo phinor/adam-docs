@@ -99,3 +99,20 @@
   revert: >
     None. Application 85 is left on the list with status NEW; reject it if it
     gets in the way.
+
+- image: online-applications-15.png
+  captured: 2026-09-16
+  as: staff
+  path: Admissions → Online Applications → Manage Online Applications → view (application 85), foot of the page
+  frame:
+    mode: clip
+    selectors: >
+      Scrolled to the bottom of the page at a 900×806 viewport, so that both
+      floating button bars sit in their natural positions, then clipped to
+      viewport y 588–753: the Approve Application and Reject Application
+      buttons. A viewport sized to the buttons alone makes the Reject bar
+      stick to the bottom edge with its shadowed panel, which is why the
+      clip was used instead of mode 2.
+    padding: 8
+  setup: None beyond application 85 (see online-applications-08.png).
+  revert: none

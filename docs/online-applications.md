@@ -84,7 +84,7 @@ There are a few things that need to be checked first. In the [Site Settings](cha
 
 Don’t forget to save the settings when you’ve updated them!
 
-The wording parents see at each stage is also yours to change. In the same settings screen, under the **Admissions** category and the **Online Applications** heading, **Collect ID Number** and **Collect Email Address** are the two messages shown above the opening form, **Confirmation of Email** is the message shown once the form has been submitted, and **Receipt of Application** is shown after the application has been submitted to the school. The default wording of **Collect ID Number** no longer promises existing parents a login step, because there is no longer one; if your school has customised that message, ADAM has left your version alone, so it is worth re-reading it for any promise it still makes about logging in.
+The wording parents see at each stage is also yours to change. In the same settings screen, under the **Admissions** category and the **Online Applications** heading, **Collect ID Number** and **Collect Email Address** are the two messages shown above the opening form, **Confirmation of Email** is the message shown once the form has been submitted, **Confirm Submitting** is shown above the submit button on the review screen, and **Receipt of Application** is shown after the application has been submitted to the school. The default wording of **Collect ID Number** no longer promises existing parents a login step, because there is no longer one; if your school has customised that message, ADAM has left your version alone, so it is worth re-reading it for any promise it still makes about logging in.
 
 ### Customising the Application Form
 
@@ -445,7 +445,7 @@ From this point on, a progress bar is shown across the top of each screen so tha
 
 ### Uploading Supporting Documents
 
-If the school has set up [supporting documents to collect during the application](#collecting-supporting-documents-during-the-application), parents are taken to a **Supporting Documents** screen after saving the last child’s page. A counter at the top shows how many of the requested documents have been uploaded so far. The **Documents** step in the progress bar shows a tick once every mandatory document is uploaded, and a warning sign until then.
+If the school has set up [supporting documents to collect during the application](#collecting-supporting-documents-during-the-application), parents are taken to a **Supporting Documents** screen after saving the last child’s page. A counter at the top shows how many documents have been uploaded so far, out of every document on the screen. The total includes optional documents as well as Requested and Mandatory ones. The **Documents** step in the progress bar shows a tick once every mandatory document is uploaded, and a warning sign until then.
 
 Each document is shown with its name, a short description, and the file types it accepts (shown as *Accepted: …*). Depending on how the school configured the slot, it may also carry a badge: a **Requested** badge means the school would like the document but will still accept the application without it, and a red **Required** badge means the application cannot be submitted until it is uploaded. A document with neither badge is entirely optional. Documents that apply to a particular child are repeated for each child and labelled with the child’s first name, or “Child 1”, “Child 2” and so on if the child’s first name has not been saved yet.
 
@@ -455,13 +455,13 @@ To upload a document, the parent clicks **Choose file** next to the slot and sel
 
 Uploading documents here is not the same as having them approved — the documents are held against the application and only filed into the document repository once a staff member approves the application.
 
-When all the Requested and Mandatory documents have been uploaded, the parent clicks **Continue to review** to move to the final step. If any are still missing, clicking **Continue to review** first shows a pop-up listing what is outstanding and asking them to confirm before moving on — this pop-up appears regardless of whether the missing documents are Requested or Mandatory, and it does not itself stop the parent moving on to the review step.
+When all the Requested and Mandatory documents have been uploaded, the parent clicks **Continue to review** to move to the final step. If any are still missing, clicking **Continue to review** first shows a pop-up listing them. If a Mandatory document is missing, the pop-up is titled *Some required documents are missing* and warns that the application cannot be submitted without it. If only Requested documents are missing, it is titled *Some requested documents are missing*. Either way, **Continue anyway** moves on to the review step and **Go back** stays on the documents screen.
 
-Once the form is fully complete, they will need to finalise their submission before it will be sent to the school:
+### Reviewing and Submitting the Application
 
-![](assets/screenshots/online-applications/online-applications-09.png)
+The **Review & Submit** step shows the proposed date and grade of entry for each child. For a new family, it also lists each parent’s cell number and email address under **Parent Contact Information** and asks the parent to check them. Families the school already knows do not see the contact details.
 
-They are asked to confirm their contact details and the details of their children:
+Below the details is the message set in **Confirm Submitting**, followed by the **Confirm and Submit Application** button. If any Requested documents have not been uploaded, a warning above the message lists them. This is a reminder only.
 
 ![](assets/screenshots/online-applications/online-applications-10.png)
 
@@ -469,7 +469,7 @@ If anything required is still missing, the review screen shows a **Still needed*
 
 ![](assets/screenshots/online-applications/online-applications-19.png)
 
-Finally, they click on the **Confirm and Submit Application** button.
+Finally, they click on the **Confirm and Submit Application** button. ADAM shows the **Receipt of Application** message, with a tick against every step in the progress bar. The application is now with the school, and the parent can no longer change it. Following the email link again gives the message *Sorry - this application has already been submitted. No more changes are possible.*
 
 ![](assets/screenshots/online-applications/online-applications-11.png)
 
@@ -491,17 +491,18 @@ Click on **view** next to the application you’d like to see. ADAM brings up th
 
 ![](assets/screenshots/online-applications/online-applications-14.png)
 
-The admissions officer can make changes to this form, correcting spelling, or making sure that the data conforms to the required standards.
+The admissions officer can make changes to this form, correcting spelling, or making sure that the data conforms to the required standards. There is no separate save: changes made here are kept only when the application is approved, and are lost if the application is rejected or the page is left.
 
-If the school collects [supporting documents during the application](#collecting-supporting-documents-during-the-application), a **Submitted Documents** panel appears on this screen. It lists each document the parent uploaded, who it relates to (the family or a particular child), and the file name. Click on a file name to view or download it. If any Requested or Mandatory documents were not uploaded — note that a missing Mandatory document should already have stopped the parent from submitting — an **Outstanding required documents** warning lists what is missing, so the admissions officer can decide whether to follow these up before approving.
+If the school collects [supporting documents during the application](#collecting-supporting-documents-during-the-application), a **Submitted Documents** panel appears on this screen. It lists each document the parent uploaded, who it relates to (the family, or a child shown as **Child 1**, **Child 2** and so on in the order the children appear on the form), and the file name. Click on a file name to view or download it. If any Requested or Mandatory documents were not uploaded — note that a missing Mandatory document should already have stopped the parent from submitting — an **Outstanding required documents** warning lists what is missing, so the admissions officer can decide whether to follow these up before approving.
 
-At the bottom of this form are three options:
+At the bottom of this form are two options:
 
 ![](assets/screenshots/online-applications/online-applications-15.png)
 
--   **Saving the information** will update the information in the application form, but will not process it. The applicant will remain on the list of submitted application forms. The pupil will not be added to the database.
 -   **Approving the Application** will add the pupil and family (if it is new) to the database. The pupil is added as an applicant in the [default admissions status](enrolment-process.md#managing-the-registration-statuses). This does *not* guarantee them a place or add them as a current pupil. *Remember that no communication is sent by ADAM.* Any documents the parent uploaded during the application are filed automatically into the document repository against the new pupil and family at this point — there is no separate document approval step for them.
 -   **Reject Application** will remove the application from the pile. Typically, applicants are rejected here for technical reasons (incomplete form, incorrect grades, incorrect gender for monastic schooling, and so on). Rejection here essentially means tossing the application form into the bin. The pupil and the family will *not* be added to the database.
+
+To leave an application on the list without approving or rejecting it, simply leave the page. Applications in the **Incomplete Applications** list also have an **edit** option. It opens **Edit Application Request**, where the ID number, contact number, email address and number of applicants given when the application was started can be corrected and saved. It does not change the parents’ answers on the form.
 
 > [!WARNING]
 > “Accepting” and “Rejecting” applications refers specifically to the **application form**. This will add these details into your database as an Applicant profile. **No decisions about enrolment into the school have been made** at this point. Enrolment (or not!) will only happen at the very end of the application process.

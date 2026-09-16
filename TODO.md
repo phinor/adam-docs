@@ -39,23 +39,9 @@ that starts an application without an emailed link (`online-applications-18.png`
 `online-applications-06.png` showed the old "choose the number of children" screen, which no longer
 exists in ADAM, and the file has been deleted.
 
-One image is still outstanding, and two images no longer match ADAM.
+One image is still outstanding.
 
-### 1. `online-applications-09.png` and `online-applications-15.png` are out of date
-
-Found while re-capturing the application form screens on 2026-09-16.
-
-- `-09.png` shows an "Are you ready to submit your application?" screen with a **Finalise and Submit
-  Application...** button. That screen no longer exists: the parent goes from **Documents** straight
-  to the review screen, which carries the submit message and the **Confirm and Submit Application**
-  button (`-10.png`). The image and the sentence before it ("they will need to finalise their
-  submission...") should both go.
-- `-15.png` shows **Save information**, **Approve Application** and **Reject Application**, and the
-  list beneath it describes all three. The staff view has had only **Approve Application** and
-  **Reject Application** since May 2026; editing without approving is done from the **edit** link on
-  the applications list. The image and the list need rewriting.
-
-### 2. The start email — `online-applications-07.png` needs recapturing
+### 1. The start email — `online-applications-07.png` needs recapturing
 
 The email that carries the first link is now one of two templates, and the existing image shows
 neither. Capture the **Start an Application (Existing Parent)** message as received, since that is
