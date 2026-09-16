@@ -49,8 +49,15 @@ log = logging.getLogger('mkdocs.hooks.pdf_theme')
 # adapter is handed a DOM and nothing else.
 site_dir = None
 
-# Elements belonging to the website rather than to the printed manual.
-CHROME = ['header', 'nav', '#navtoggle', '.toc-sidebar', '.searchbar']
+# Elements belonging to the website rather than to the printed manual. The
+# licence footer is one of them: it is per-page markup, so leaving it in would
+# repeat the whole notice at the foot of every chapter. The PDF states its
+# terms once instead, in the `Copyright and Reuse` section of `docs/index.md`,
+# which the aggregator places on its first page. Document metadata is not an
+# option: mkdocs-exporter 6.2.0 accepts `aggregator.metadata` in the config
+# and then calls `Aggregator.save()` with no arguments, so the dict is parsed
+# and discarded.
+CHROME = ['header', 'nav', '#navtoggle', '.toc-sidebar', '.searchbar', '.site-footer']
 
 # `@media screen` and everything it contains, matched to its closing brace by
 # `strip_screen_rules` rather than by a regex, which cannot count braces.

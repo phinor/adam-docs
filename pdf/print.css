@@ -27,7 +27,8 @@ header,
 nav,
 #navtoggle,
 .toc-sidebar,
-.searchbar {
+.searchbar,
+.site-footer {
     display: none !important;
 }
 

@@ -429,6 +429,25 @@ nav ul.menu1 > li.selected {
     margin-top: 32px;
 }
 
+/* Footer ---------------------------------------------------------------- */
+
+.site-footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1pt solid #d9d9d9;
+    font-size: 10pt;
+    line-height: 1.45;
+    color: #595959;
+}
+
+.site-footer p {
+    margin: 0 0 8px;
+}
+
+.site-footer p:last-child {
+    margin-bottom: 0;
+}
+
 /* Print ----------------------------------------------------------------- */
 
 @media print {

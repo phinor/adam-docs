@@ -1,0 +1,23 @@
+{#
+    Site-wide licence notice, included by main.html and 404.html.
+
+    It belongs inside `#bodycontainer`, after the content, and not as a sibling
+    of `<article>`: from 640px up the article is a fixed-position scroll
+    container, so a footer placed outside it would be pinned to the viewport
+    rather than sitting at the end of the page.
+
+    `hooks/pdf_theme.py` strips `.site-footer` from the PDF build, where it
+    would otherwise repeat at the foot of all hundred-odd chapters.
+#}
+<footer class="site-footer">
+    <p>{{ config.copyright }}</p>
+    <p>This manual is published under the
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative
+            Commons Attribution-NonCommercial-ShareAlike 4.0 International licence</a>.
+        You may share and adapt it, with credit, for non-commercial purposes. For
+        anything commercial, please write to
+        <a href="mailto:help@adam.co.za">help@adam.co.za</a>.</p>
+    <p><a href="https://github.com/phinor/adam-docs">Source on GitHub</a> &middot;
+        <a href="https://github.com/phinor/adam-docs/blob/main/CONTRIBUTING.md">Suggest
+            a change</a></p>
+</footer>

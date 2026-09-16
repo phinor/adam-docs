@@ -123,3 +123,11 @@ The legacy repo can stay checked out as a fallback until the new site is validat
 ## History
 
 This site replaces a fragile pipeline that consumed a Google Doc published as HTML. The initial Markdown corpus was converted from that source by `scripts/convert.mjs`.
+
+## Licence
+
+Two licences, split by what the file is. The documentation under `docs/` is CC
+BY-NC-SA 4.0; the build and theme machinery is MIT. See [LICENSE](LICENSE) for
+the split, the trade mark position and the text-and-data-mining reservation,
+and [CONTRIBUTING.md](CONTRIBUTING.md) for the terms a contribution arrives
+under.

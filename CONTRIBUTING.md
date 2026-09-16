@@ -134,6 +134,35 @@ Screenshots help enormously, but they need a little care:
   simply **email the image** to [help@adam.co.za](mailto:help@adam.co.za) and
   tell us where it should go. We will place it for you.
 
+## Your contribution, and the licence
+
+The manual is published under the
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+licence](https://creativecommons.org/licenses/by-nc-sa/4.0/). Anyone may share
+and adapt it for non-commercial purposes, as long as they credit us and pass on
+the same freedom. The full terms are in [LICENSE](LICENSE).
+
+For the manual to stay under one clear set of terms, we need two things from
+you. By opening a pull request, or by emailing us a suggestion, you are
+confirming that:
+
+- **The words are yours to give.** What you send is your own work, or you have
+  permission to contribute it. Please do not paste in text or pictures from
+  another manual, book or website, even with a credit — we cannot relicense
+  someone else’s writing.
+- **We may publish it, here and elsewhere.** You license your contribution
+  under the same Creative Commons licence as the rest of the manual, and you
+  also give ADAM EduTech a permanent, worldwide, royalty-free right to use it
+  on other terms. That second part sounds heavier than it is: it is what lets
+  us produce a printed edition, commission a translation, or change the licence
+  later without having to track down every person who has ever fixed a typo.
+
+You keep the copyright in what you write. Nothing above takes that away, and
+you remain free to use your own words anywhere else you please.
+
+One thing to check: if you are writing at work, your employer may own what you
+produce there. If that might apply to you, please ask them before contributing.
+
 ## Questions?
 
 If anything here is unclear, or you get stuck at any step, please email

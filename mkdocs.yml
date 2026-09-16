@@ -1,6 +1,9 @@
 site_name: ADAM Instruction Manual
 site_description: End-user documentation for ADAM (Academic Data Manager)
 site_author: ADAM EduTech
+# Rendered by theme/footer.html. Plain text only: it is interpolated into the
+# template, not parsed as HTML.
+copyright: © 2026 ADAM EduTech. Licensed CC BY-NC-SA 4.0.
 # Required for sitemap.xml: MkDocs' sitemap template skips any page without an
 # absolute URL, so without this the build writes an empty <urlset>.
 site_url: https://help.adam.co.za/

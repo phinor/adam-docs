@@ -1,0 +1,81 @@
+ADAM Instruction Manual — licence
+=================================
+
+This repository holds two different kinds of work, and each carries its own
+licence.
+
+
+The documentation
+-----------------
+
+Everything under `docs/` — the prose, the screenshots and the other images —
+is:
+
+    Copyright (c) 2026 ADAM EduTech
+
+and is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike
+4.0 International licence (CC BY-NC-SA 4.0).
+
+You are free to copy, redistribute and adapt the manual, provided that:
+
+  * Attribution — you credit ADAM EduTech, link back to
+    https://help.adam.co.za/, and state whether you changed anything.
+
+  * NonCommercial — you do not use it for a commercial purpose, meaning one
+    primarily intended for commercial advantage or monetary compensation.
+    Selling printed copies, charging for access, and folding it into a paid
+    product or service all fall under this.
+
+  * ShareAlike — if you adapt it, you release what you make under this same
+    licence.
+
+The three paragraphs above are a summary, not the licence. The licence is the
+full legal text in `LICENSES/CC-BY-NC-SA-4.0.txt`, and that text governs if the
+two ever appear to differ. Creative Commons publishes its own plain-language
+summary at https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+
+The site machinery
+------------------
+
+The files that build, style and publish the site — `theme/`, `hooks/`,
+`scripts/`, `bin/`, `pdf/`, `mkdocs.yml` and `mkdocs.pdf.yml`, but not the
+third-party packages under any `node_modules/` directory, which carry their own
+licences — are:
+
+    Copyright (c) 2026 ADAM EduTech
+
+and are licensed under the MIT licence, whose text is in `LICENSES/MIT.txt`.
+Reuse them for anything at all, commercial or not. They are licensed separately
+so that nobody has to reason about the manual's terms in order to borrow a
+build hook.
+
+
+Trade marks
+-----------
+
+Neither licence grants any right in the name ADAM, the name ADAM EduTech, or
+the ADAM logo (`theme/img/logo.png`). A copy or adaptation of this manual may
+not be presented in a way that suggests it is the official ADAM documentation,
+or that ADAM EduTech endorses it.
+
+
+Text and data mining
+--------------------
+
+ADAM EduTech expressly reserves all rights to carry out text and data mining of
+this manual, including any use of it to train, fine-tune or ground a
+machine-learning model, and including retrieval from a stored index or
+embedding of its contents.
+
+This is a machine-readable reservation of rights for the purposes of Article
+4(3) of Directive (EU) 2019/790 and of equivalent provisions elsewhere. The
+licences above grant no permission for such use.
+
+
+Something commercial in mind?
+-----------------------------
+
+Ask us. ADAM EduTech holds the copyright and can licence this manual on other
+terms, including for the uses that the NonCommercial condition would otherwise
+rule out. Write to help@adam.co.za and say what you would like to do.
