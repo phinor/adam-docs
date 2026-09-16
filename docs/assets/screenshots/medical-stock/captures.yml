@@ -13,3 +13,24 @@
     and never submitted: Description "Ibuprofen 200mg tablets", Group Pharmacy, Schedule S1,
     San Code 712004 (invented), Unit tablet, Enable stock control Yes.
   revert: none — nothing was saved
+- image: medical-stock-01.png
+  captured: 2026-09-16
+  as: staff (staff_id 1, Antonio Watson, development login bypass)
+  path: Administration tab → Medical Administration → Manage Medical Stock
+  frame:
+    mode: span
+    selectors: >
+      From the "Export all stock to excel" link down to the foot of #table_1, taking in the
+      "Add new Medical Stock Item" link and the "Medical Stock Items" heading between them.
+      1210px, because the edit / receive / adjust actions wrap to two lines at 900px.
+    padding: 8
+  setup: >
+    The school had no stock. Nine items were created through Add new Medical Stock Item at the
+    user's request (Chargeable: Crepe bandage 75mm, Instant ice pack; Consolidated: Antiseptic
+    cream 25g, Fabric plasters assorted; Pharmacy: Cetirizine 10mg, Ibuprofen 200mg, Paracetamol
+    500mg, Salbutamol 100mcg inhaler; Old: Throat lozenges), with invented SAN codes. Opening
+    stock was booked through Receive Medical Stock, dated 2026-09-01 with invented batch
+    numbers: paracetamol 500, ibuprofen 300, salbutamol 6, crepe bandage 40, ice pack 25,
+    plasters 1000, antiseptic cream 24. Cetirizine and the lozenges were left at 0, so the list
+    and the consultation autocomplete show an out-of-stock item.
+  revert: none — the data stays for the remaining medical captures

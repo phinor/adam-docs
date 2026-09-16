@@ -144,7 +144,7 @@ way out. Place it in *By filter*, after the paragraph that ends "...as many time
 The page was rewritten from a stub to cover the whole module. Everything on it is written and checked
 against the code, but only the *Medical Examinations* part of it has pictures — those are the original
 `medical-module-01.png` to `-13.png`, which still match. Number anything new from `-14.png` upward.
-`-18.png` is captured and in place.
+`-16.png` and `-18.png` are captured and in place.
 
 Use **Edward Clark** (pupil 5083) throughout. `-18.png` already shows him.
 
@@ -179,18 +179,6 @@ Do not save the consultation after capturing it, or reverse it afterwards — sa
 
 Place it in *Recording a Consultation for a Pupil*, after the list of fields.
 
-### 3. The medication autocomplete — `medical-module-16.png`
-
-On the same form, click into the **Medication** table and type enough of a stock item's name to bring
-up the suggestion list. Frame just the field and the dropdown, close in.
-
-The image needs to show both states side by side if possible: an item with stock, annotated
-"*n* tablet(s) in stock", and one that has run out, showing **\*\*\* No stock \*\*\***. That contrast is
-what the prose describes and it is hard to picture from words alone. If no demonstration item is out
-of stock, write one down to zero with a **Write Off** first.
-
-Place it in *Dispensing Medication During a Consultation*, after the first paragraph.
-
 ### 4. The off sport list — `medical-module-17.png`
 
 **Pupils → Medical Records → View the Off Sport List**.
@@ -216,23 +204,24 @@ Place it in *Off Sport Alerts*, after the paragraph naming the two tables.
 
 A new page, written and checked against the code. Screenshots go in
 `docs/assets/screenshots/medical-stock/`. `medical-stock-02.png`, the stock item form, is captured
-and in place; the rest are blocked on the same missing data as the Medical Module entries above,
-since the school has no stock items at all.
+and in place, and so is `medical-stock-01.png`, the stock list. Nine dummy stock items were
+created on 2026-09-16 and given opening stock (see `captures.yml` in that directory); cetirizine
+and the lozenges were left at 0 on purpose.
+
+What remains is blocked on two further kinds of data:
+
+- **Chargeable entities.** There are none. With none, the adjust form replaces its entity list with
+  the plain text "(No options)", which its script cannot hide, so a stray **Chargeable Entity** row
+  shows on every adjustment. `medical-stock-03.png` would picture that, and `-05.png` needs entities
+  to exist at all.
+- **Issues.** No stock has been issued, by consultation or by direct issue, so the grouped report in
+  `-04.png` returns nothing. It needs consultations with medication (which in turn need medical
+  attendants) or direct issues charged to pupils.
 
 > [!WARNING] this page changes data
 > Receiving, adjusting and writing off stock all move real quantities the moment they are saved, and
 > there is no undo. Capture the *forms*, not the result of submitting them, unless you are willing to
 > put the demonstration school's stock back afterwards.
-
-### 1. The stock list — `medical-stock-01.png`
-
-**Administration → Medical Administration → Manage Medical Stock**.
-
-Frame the **Export all stock to excel** link and enough of the table to show the grouping — at least
-two groups with a few items under each — with the **Quantity** and **Enable stock control** columns
-visible, and the **receive** and **adjust** actions on the rows.
-
-Place it in *Managing Stock Items*, after the paragraph describing the table.
 
 ### 3. The adjust form — `medical-stock-03.png`
 

@@ -61,7 +61,9 @@ Click **Save information** to record the consultation.
 
 ### Dispensing Medication During a Consultation
 
-The **Medication** field is a table you add rows to. Start typing the name of a stock item and ADAM offers matching items, annotated with the stock group and, for items under stock control, the quantity remaining. Choose the item and enter the **Quantity**.
+The **Medication** field is a table of the items given out. Click **Add a new transaction entry** to add a row, and start typing in **Medication Description**: ADAM offers the matching stock items, each annotated with its stock group and, for items under stock control, the quantity remaining. Choose the item and enter the **Quantity**.
+
+![](assets/screenshots/medical-module/medical-module-16.png)
 
 Each row is saved as an **Issue** transaction against the [stock ledger](medical-stock.md#medical-stock), and the stock on hand is reduced as soon as the consultation is saved. Because the transaction is tied to the consultation, the stock reports can show not just what went out but what it was given for, and who should be billed.
 

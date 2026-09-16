@@ -10,6 +10,8 @@ Navigate to **Administration → Medical Administration → Manage Medical Stock
 
 The table lists every stock item with its **Description**, **Schedule**, **San Code**, **Unit of Measurement**, **Quantity** and whether stock control is enabled. Items are grouped by their **Group**, so all the pharmacy items appear together, all the chargeable items together, and so on.
 
+![](assets/screenshots/medical-stock/medical-stock-01.png)
+
 ### Adding and Editing a Stock Item
 
 Click on **Add new Medical Stock Item** at the top of the table to add a new stock item, or on the **edit** option next to an existing one. The following fields are recorded:

@@ -22,3 +22,23 @@
     It cannot: the form's script listens for input[name='offsport_type_id'] but DataEditor
     names the radios edit[offsport_type_id], so the handler binds to nothing. Every type on
     this school also defaults to No. The manual was corrected to say so.
+- image: medical-module-16.png
+  captured: 2026-09-16
+  as: staff (staff_id 1, Antonio Watson, development login bypass)
+  path: Pupils tab → Medical Records → Add a Medical Consultation for a Pupil (Edward Clark, 5083) → Medication → Add a new transaction entry
+  frame:
+    mode: element
+    selector: "#dialog_transaction"
+    padding: 8
+  setup: >
+    Typed "tablets" into Medication Description so the suggestion list showed three Pharmacy
+    items: Paracetamol 500mg (500 in stock), Ibuprofen 200mg (300 in stock) and Cetirizine 10mg
+    (No stock). Those items and their stock were created for this run through Manage Medical
+    Stock and Receive Medical Stock; see medical-stock/captures.yml. The consultation was never
+    saved. The page was scrolled to its foot (62px) before capture, because the dialog is fixed
+    and page text behind its lower edge showed through at scroll 0.
+  revert: none — nothing was saved on this screen
+  note: >
+    A first attempt used span mode, which shrank the viewport; the dialog is position:fixed, so
+    it reflowed and the dimmed page behind it filled the frame. Element mode on the dialog is
+    the working approach for anything inside an inline-table dialog.
