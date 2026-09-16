@@ -19,7 +19,7 @@ Please let us know if you are setting up an SMSweb account and we will gladly as
 On signing up with SMSweb, they will provide you with a username and password. These details should be entered into the site settings (see [Changing Site Settings](changing-site-settings.md#changing-site-settings)).
 
 !!! warning
-    *Check to see which teachers have the* *[permissions to send SMS messages](security-administration-for-staff.md)* *and that they are aware of the school’s policy for communicating with parents.*
+    Check to see which teachers have the [permissions to send SMS messages](security-administration-for-staff.md) and that they are aware of the school’s policy for communicating with parents.
 
 ## ZoomConnect Setup
 

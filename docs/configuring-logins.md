@@ -101,7 +101,7 @@ Sometimes, especially for temporary staff members, it is easier to create an int
 An internal password can be set when the staff member is created. Alternatively, a password can be set and changed using the “**Change a teacher’s password**” option on the “**Staff**” tab, under the “**Security Administration**” heading.
 
 !!! warning
-    *Note that ADAM irreversibly encrypts the passwords that it stores according to currently recommended guidelines. To this end, we encrypt the passwords and store them as “salted hashes”. This dramatically increases the difficulty of brute-force cracking the passwords. This does mean that it is essentially impossible to tell what the password is. More information here:* *[Security Administration](security-administration-for-staff.md#security-administration-for-staff)* *and here* *[https://en.wikipedia.org/wiki/Salt\_(cryptography)](https://en.wikipedia.org/wiki/Salt_\(cryptography\))*
+    Note that ADAM irreversibly encrypts the passwords that it stores according to currently recommended guidelines. To this end, we encrypt the passwords and store them as “salted hashes”. This dramatically increases the difficulty of brute-force cracking the passwords. This does mean that it is essentially impossible to tell what the password is. More information here: [Security Administration](security-administration-for-staff.md#security-administration-for-staff) and here [https://en.wikipedia.org/wiki/Salt\_(cryptography)](https://en.wikipedia.org/wiki/Salt_\(cryptography\))
 
 ### Allowing staff to change their own passwords
 
@@ -176,7 +176,7 @@ The first time that a parent logs into ADAM, they will be required to enter the 
 Subsequent logins will require their ID number and their recently set password.
 
 !!! warning
-    *We have compiled a separate document with* *[instructions for parents](https://docs.google.com/document/d/1vHiaDoheupdosNEEv32az8MjiVfSFUNmRiAk3TBZuuo/edit)* *that you can modify for your needs.*
+    We have compiled a separate document with [instructions for parents](https://docs.google.com/document/d/1vHiaDoheupdosNEEv32az8MjiVfSFUNmRiAk3TBZuuo/edit) that you can modify for your needs.
 
 Permissions for parents are determined by [pupil login groups](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils).
 
@@ -228,5 +228,5 @@ The login notification email appears as follows:
 In the email, a link is presented that will allow the user to block their ADAM user. This will have the effect of logging out all currently logged in instances of their user account (throwing a possible intruder out of the system) as well as preventing any future logins.
 
 !!! warning
-    *An ADAM Administrator will be required to allow access for the user again. When a user account is blocked in this fashion, their* ***Authentication Method*** *in their profile is set to* ***Disabled****. It would thus need to be changed to reflect their actual authentication method (normally either Internal Password or Active Directory).*
+    An ADAM Administrator will be required to allow access for the user again. When a user account is blocked in this fashion, their **Authentication Method** in their profile is set to **Disabled**. It would thus need to be changed to reflect their actual authentication method (normally either Internal Password or Active Directory).
 

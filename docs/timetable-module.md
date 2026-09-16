@@ -172,8 +172,8 @@ The exact method of adding a calendar to these programs is different and you are
 
 ![](assets/screenshots/timetable-module/timetable-module-22.png)
 
-!!! warning
-    *Please note that* *[pupils require permissions](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils)* *to view and subscribe to their calendars in the Parent and Pupil Portal.*
+!!! note
+    Please note that [pupils require permissions](security-administration-for-families-and-pupils.md#security-administration-for-families-and-pupils) to view and subscribe to their calendars in the Parent and Pupil Portal.
 
 ## Resetting a Timetable Link
 
@@ -183,4 +183,5 @@ However, it may happen that you wish to change this random key to prevent someon
 
 ![](assets/screenshots/timetable-module/timetable-module-24.png)
 
-Changing this calendar link will cause *all* existing calendar subscriptions to break. You will need to resubscribe any calendars that you use to the new link.
+!!! warning
+    Changing this calendar link will cause *all* existing calendar subscriptions to break. You will need to resubscribe any calendars that you use to the new link.

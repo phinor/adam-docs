@@ -30,12 +30,12 @@ ignored if you import the file back into ADAM, so you can leave them in place.
 Importing data from CSV can be a great time saver is there is lots of information that needs to be changed. ADAM can import into any of the tables that are mentioned above. To import data, navigate to **Administration → Database Administration → Import Data from CSV**.
 
 !!! warning
-    *Please pay careful attention to the formatting of numbers and dates in Excel before saving and importing the CSV file. Excel will do things such as reformat ID numbers, drop the leading 0s from phone numbers and so on.* ***It is strongly suggested that, once you have downloaded your export, that you make a copy of this file before starting to edit the contents.*** *In this way, you can always revert changes by importing the file you exported.*
+    Please pay careful attention to the formatting of numbers and dates in Excel before saving and importing the CSV file. Excel will do things such as reformat ID numbers, drop the leading 0s from phone numbers and so on. **It is strongly suggested that, once you have downloaded your export, that you make a copy of this file before starting to edit the contents.** In this way, you can always revert changes by importing the file you exported.
 
 ### Performing the Import
 
 !!! warning
-    *Please take special note of the sections below with regards to* *[structuring your import file](#structuring-your-import-file)* *and ensuring that your file* *[contains only the information that is strictly needed](#import-only-what-you-need)**.*
+    Please take special note of the sections below with regards to [structuring your import file](#structuring-your-import-file) and ensuring that your file [contains only the information that is strictly needed](#import-only-what-you-need).
 
 Navigate to **Administration → Database Administration → Import Data from CSV**.
 

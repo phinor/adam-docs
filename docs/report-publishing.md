@@ -112,8 +112,8 @@ If you still cannot get the signature to display, please contact the ADAM Helpde
 
 ADAM can print reports by any class or grade group in the school.
 
-!!! warning
-    *Note that if you choose a class, you* ***must*** *choose a* ***single grade*** *class. This is especially important if the different grades use different templates. ADAM will use the template that for the first pupil on* ***all*** *the other pupils.*
+!!! note
+    If you choose a class, you **must** choose a **single grade** class. This is especially important if the different grades use different templates. ADAM will use the template that for the first pupil on **all** the other pupils.
 
 On the **Reporting** tab, under the **Report Publishing** heading, please have a look for the option **Print a class’s reports** or **Print a grade’s reports**.
 

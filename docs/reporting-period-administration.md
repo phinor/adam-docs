@@ -31,7 +31,7 @@ Whether you’ve just added a new reporting period or are editing an existing re
 ![](assets/screenshots/reporting-period-administration/reporting-period-administration-02.png)
 
 !!! warning
-    *If the correct grades are not shown, you can change the starting and ending grades in the* *[Site Settings](changing-site-settings.md#changing-site-settings)**.*
+    If the correct grades are not shown, you can change the starting and ending grades in the [Site Settings](changing-site-settings.md#changing-site-settings).
 
 At the top of the screen are the same settings for the reporting period which were set when the [period was added](#adding-a-new-reporting-period). These can be changed here if required.
 
@@ -136,7 +136,7 @@ Each time, after you add or edit a reporting period’s information, or click on
 ![](assets/screenshots/reporting-period-administration/reporting-period-administration-09.png)
 
 !!! warning
-    *The deadlines listed under **Editing Time Frames** require specific *editing* permissions to be assigned to staff. See “**[Security Administration](security-administration-for-staff.md#security-administration-for-staff)**”.*
+    The deadlines listed under **Editing Time Frames** require specific *editing* permissions to be assigned to staff. See “**[Security Administration](security-administration-for-staff.md#security-administration-for-staff)**”.
 
 Each line represents a reporting action, which are discussed below, and on each line can be multiple windows, each with a start and end time. The start times are listed in green below the dates on which they take effect, and the end times are shown in red.
 

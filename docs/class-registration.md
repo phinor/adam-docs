@@ -14,7 +14,7 @@ The second is used more commonly when a pupil arrives at the school late and nee
 On the **Classes** tab, under the **Registration Administration** heading, click on **Subject registrations for a class**.
 
 !!! warning
-    *If the class does not exist, you will need to create the class first (see “**[Creating a new class](class-management.md#creating-a-new-class)**”).*
+    If the class does not exist, you will need to create the class first (see “**[Creating a new class](class-management.md#creating-a-new-class)**”).
 
 https://www.youtube.com/watch?v=CN8B3F93-_M
 

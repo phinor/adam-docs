@@ -126,7 +126,7 @@ There are **three** components to the installation and you must run the setup in
 3.  Install the latest “SA-SAMS version”
 
 !!! warning
-    *Note that, when you open SA-SAMS, you should see a version number in the title bar. Below, it shows “17.0.0.The first two digits correlate to the current calendar year: 17 corresponds with 2017.* ***If you do not see a version number in the title bar****, it indicates that the installation of the three components, discussed above, is not complete.*
+    Note that, when you open SA-SAMS, you should see a version number in the title bar. Below, it shows “17.0.0.The first two digits correlate to the current calendar year: 17 corresponds with 2017. **If you *do not see* a version number in the title bar**, it indicates that the installation of the three components, discussed above, is incomplete.
 
 Once installed, look for the “**EdusolSAMS**” icon in your Start menu. When opening the database, choose the “**On the Network**” option and then click on the  “**Browse…**” button to find the database you saved:
 
@@ -136,14 +136,11 @@ Click on “**Continue**” to open the database.
 
 The details to log into this database are as follows:
 
-**Username**
+|Username|Password|
+|-|-|
+| administrator| admin        |
 
-administrator
-
-**Password**
-
-admin
-
-*Please note that once you’ve opened the database, SA-SAMS will require you change this password to something more complicated. Please don’t lose the password: we cannot help recover it and a new export will need to be performed.*
+!!! note
+    Please note that once you’ve opened the database, SA-SAMS will require you change this password to something more complicated. Please don’t lose the password: we cannot help recover it and a new export will need to be performed.
 
 From this point, you will need to follow the specific instructions from your district office.

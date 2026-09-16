@@ -56,7 +56,7 @@ If you edit the text of an agreement in any way, ADAM will automatically archive
 **Users who agreed to the old version will be required to agree to the new version.** For this reason, cosmetic changes to the agreement should be kept to a minimum because any changes to the agreement, even cosmetic, will be interpreted by ADAM as a new agreement.
 
 !!! warning
-    *Above, we mentioned that changing the email setting on old agreements would cause the agreements to be emailed out. This only holds if the text of the agreement is not changed when the setting is turned on. If the text is changed, then the instruction to email the agreements is saved with the* ***new*** *agreement and not the old one.*
+    Above, we mentioned that changing the email setting on old agreements would cause the agreements to be emailed out. This only holds if the text of the agreement is not changed when the setting is turned on. If the text is changed, then the instruction to email the agreements is saved with the **new** agreement and not the old one.
 
 ### Disabling and Enabling Agreements
 
