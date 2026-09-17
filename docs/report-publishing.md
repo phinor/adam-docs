@@ -277,6 +277,38 @@ Once a manual report is selected, ADAM will not override this report with a norm
 
 If you wish to remove the selected report and revert back to a normal templated report, follow these same steps, but change the report selected to “Please select a report” to indicate to ADAM that no report has been selected.
 
+## Deleting a Pupil’s Report
+
+Occasionally a pupil ends up with a report in a reporting period where they should not have one. For example, a pupil may have been added to a class in error, or may have left the school before the term’s reports were written. ADAM lets you remove that report.
+
+> [!WARNING]
+> Deleting a report is permanent. There is no option in ADAM to undo it. If you delete a report by mistake, please contact the ADAM Helpdesk.
+
+Deleting a report removes all of the reporting information for that pupil in that reporting period:
+
+-   the report comments;
+-   the assessment standard and learning outcome results recorded on the report;
+-   the calculated aggregate and the promotion decision; and
+-   ADAM’s link to the archived copy of the report, or to a [custom report](#creating-custom-reports-for-individuals) that was selected for the pupil.
+
+It does **not** delete the pupil’s assessments or mark book results for the term. If the pupil still has assessment results and those results are saved again, ADAM will create the report again.
+
+It also does **not** delete the archived PDF of the report from the [Document Repository](document-repository.md#document-repository). If you want that copy removed as well, delete it from the pupil’s **Reports** category in the Document Repository. It is named “Report for” followed by the name of the reporting period.
+
+To delete the report:
+
+1.  Click on the **Reporting** tab.
+2.  Under the **Report Publishing** heading, click on **Delete a pupil’s report**.
+3.  Choose the **Reporting period** that the report belongs to.
+4.  Search for the pupil in the **Pupil** field.
+5.  Click on the **Delete Report** button, and confirm when ADAM asks whether you are sure.
+
+ADAM will confirm that the report has been deleted. If the pupil has no report in that reporting period, ADAM will tell you that there was no report to delete and nothing will be changed.
+
+You will only see this option if you have the **Delete a pupil’s report** privilege.
+
+If you need to remove the reports for every pupil in a class, use **Reporting → Report Publishing → Delete a class’s reports** instead. You will choose the subject, the class and the reporting period, and ADAM will list the reports that will be deleted before you confirm. This option requires the **Delete a class’s reports** privilege.
+
 ## Troubleshooting Report Publishing
 
 ### The report doesn’t show new information!
