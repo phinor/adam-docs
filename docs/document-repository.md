@@ -15,6 +15,9 @@ To begin with, ADAM needs a location in which to save files on the actual server
 
 ADAM allows you to create multiple categories in which to save your documents.
 
+> [!NOTE]
+> Two categories behave differently from the rest. Photographs placed in the **Photographs** category become a pupil’s or staff member’s display picture, and audio placed in the **Name Pronunciation** category is played from their name card. The **Name Pronunciation** categories are also the one place in the repository where a permission granted elsewhere carries weight: a staff member holding **Manage Name Pronunciations** may delete from them even without category access, because rejecting a recording has to destroy it. See [Name Pronunciations](name-pronunciations.md#name-pronunciations).
+
 To edit the categories, click on the “**Administration**” tab, and under the “**Document Repository**” heading, click on “**Edit Document Repository Categories**”.
 
 ### Adding a New Category

@@ -124,11 +124,13 @@ Note that this will not change any classes and so you may find, after editing a 
 
 ## Pupil Name Pronunciation
 
-ADAM contains a specific category in the [Document Repository](document-repository.md#document-repository) which can have digital recordings of the pronunciation of a pupil’s name uploaded. Once uploaded, a media control will appear on the name card in their profile and users can use this to listen to the recording of the name.
+ADAM can hold a short recording of how a pupil’s name is said. Once one exists, a media control appears on the name card in their profile and users can click it to listen to the name.
 
 ![](assets/screenshots/pupil-information/pupil-information-06.png)
 
-Within the pupil’s Document Repository, upload an audio file into the “Name Pronunciation” category:
+There are two ways to provide one. A teacher can **record the name in the browser**, with the class in front of them, and parents and pupils can record from the portal — see [Name Pronunciations](name-pronunciations.md#name-pronunciations) for the whole feature, including the permissions it needs and how recordings from parents are approved.
+
+Alternatively, within the pupil’s Document Repository, upload an audio file into the “Name Pronunciation” category:
 
 ![](assets/screenshots/pupil-information/pupil-information-07.png)
 

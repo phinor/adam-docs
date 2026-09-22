@@ -361,9 +361,13 @@ Many report templates allow for the automatic placement of electronic signatures
 
 ## Staff Name Pronunciation
 
-ADAM contains a specific category in the [Document Repository](document-repository.md#document-repository) which can have digital recordings of the pronunciation of a staff member’s name uploaded. Once uploaded, a media control will appear on the name card in their profile and users can use this to listen to the recording of the name.
+ADAM can hold a short recording of how a staff member’s name is said. Once one exists, a media control appears on the name card in their profile and users can click it to listen to the name.
 
 ![](assets/screenshots/staff-information/staff-information-15.png)
+
+The simplest way to provide one is to **record it in the browser**. Every staff member has a **Name Pronunciations** tab on their own profile, which plays the current recording and offers a recorder; a name recorded there is audible straight away. See [Name Pronunciations](name-pronunciations.md#name-pronunciations) for the whole feature.
+
+Alternatively, upload an audio file into the “Name Pronunciation” category of the staff member’s Document Repository.
 
 If multiple files are uploaded, only the most recent file is played when the button is clicked.
 

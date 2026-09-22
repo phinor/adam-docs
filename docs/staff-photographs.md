@@ -12,7 +12,7 @@ The photographs should be named in one of three ways that will allow ADAM to ide
 
 ## Uploading Staff Photographs
 
-Photographs can be uploaded for staff members by visiting **Staff → Photographs → Upload new staff photographs**.
+Photographs can be uploaded for staff members by visiting **Staff → Names and Faces → Upload new staff photographs**.
 
 ![](assets/screenshots/staff-photographs/staff-photographs-01.png)
 
@@ -61,7 +61,7 @@ Simply uploading a photograph to the document repository will *not* automaticall
 
 ### Changing Which Photograph ADAM Displays
 
-Navigate to **Staff → Photographs → Change staff photograph**. Type in the name of the pupil whose photograph you’d like to change.
+Navigate to **Staff → Names and Faces → Switch staff photograph**. Type in the name of the pupil whose photograph you’d like to change.
 
 ![](assets/screenshots/staff-photographs/staff-photographs-09.png)
 

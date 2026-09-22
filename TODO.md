@@ -161,6 +161,78 @@ narrower-friendly, it is worth asking about that table at the same time.
 
 ---
 
+## Name Pronunciations (`docs/name-pronunciations.md`)
+
+The page is written and has **no images at all**. The feature is new, and is off by default
+everywhere, so every capture below needs the permissions granted on the demonstration school first:
+**Manage Name Pronunciations** (Pupil Admin tab, Pronunciation heading) on the staff group you log
+in as, and **Record name pronunciation** (Pronunciation heading) on the pupil login group the
+demonstration families use.
+
+Recording needs a working microphone on the capturing machine and a secure connection. The
+demonstration site serves over `https`, so the recorder will run; a machine with no microphone gets
+the "Recording is not available here" state instead, which is worth one image in its own right but
+is not a substitute for the others.
+
+### 1. `name-pronunciations-01.png` — the class list
+
+**Pupils → Names and Faces → Record Name Pronunciations by Class**, then choose a class with a
+mixture of states. Frame the three **Work through** links above the table and the first half-dozen
+rows, so the **Clip**, **Status** and **Actions** columns are all legible. At least one pupil should
+be *Approved*, one *Pending approval* and one *Nothing recorded.* — record two names and submit one
+from a parent login beforehand to produce that mixture.
+
+### 2. `name-pronunciations-02.png` — the recorder mid-recording
+
+From the focus pass (**Work through everyone**), capture the recorder while it is actually
+recording, showing the **Recording — say … now** state. The countdown state (**Get ready… 3**) is
+the alternative if the timing proves awkward; say which one the image shows in the caption.
+
+### 3. `name-pronunciations-03.png` — listening back before saving
+
+The same recorder in its review state: the playback control, the duration, and the **Try again** and
+**Save** buttons together. This is the step people most need to see, because nothing is sent until
+**Save** is clicked.
+
+### 4. `name-pronunciations-04.png` — the approval queue
+
+**Pupils → Names and Faces → Approve Name Recordings**, with at least two recordings waiting.
+Frame the table: **Pupil**, **Class**, **Clip**, **Recorded by**, **Length** and the **Approve** and
+**Reject** actions. Submit the recordings from a parent login first so that **Recorded by** reads
+*From parent* rather than *Recorded by staff*.
+
+### 5. `name-pronunciations-05.png` — the front-page panel
+
+The ADAM front page with the *"n name recordings are waiting for approval"* panel visible. It only
+renders while something is pending, so capture it in the same sitting as image 4 and before
+approving anything.
+
+### 6. `name-pronunciations-06.png` — the portal page
+
+**Families → Security → Login as a family** for a demonstration family with two current children,
+then the **How we say your child's name** menu entry. Frame both children's blocks so the differing
+status lines show — one *Approved.* or *Waiting for the school to approve your recording.*, one
+*Nothing recorded yet.*
+
+The same family-login constraint as the birthday captures applies: most demonstration families get
+*"your profile has not been granted access to any pupil information"*. Reuse whichever family is set
+up for the Today's Birthdays images — **de Villiers** (family 3090) if that work has been done.
+
+### 7. `name-pronunciations-07.png` — the portal prompt
+
+With **Nag parents and pupils to record a name pronunciation** set to **Yes** (Administration →
+Site Administration → Edit site settings, **Pupils & Families** tab, **Widgets** heading), and a
+child with no recording at all, capture the *"We don't have a recording of how to say … name yet."*
+prompt and its **Record now** link on the portal front page.
+
+### 8. `name-pronunciations-08.png` — the staff profile tab
+
+A staff member's profile with the **Name Pronunciations** tab selected, showing the microphone tab
+icon, the existing recording's media control and the recorder beneath it. Use the staff member you
+are logged in as, so the image does not depend on holding the manage permission.
+
+---
+
 # Missing Written Content
 
 ## Parent and Pupil Portal — Today's Birthdays (`docs/parent-and-pupil-portal.md`)

@@ -190,3 +190,13 @@ Two further settings, in the same place, decide how much the list gives away abo
 Staff members have their own birthday list on the ADAM front page, under the heading **Today’s Birthday List**. It is older than the portal list, it always shows photographs and full names, and none of the three settings above apply to it.
 
 It is governed instead by three staff permissions, on the **Site Admin** tab under the **Birthdays** heading: **See birthdays of pupils**, which is limited to the pupils that the staff member teaches, **See birthdays of all pupils**, and **See birthdays of all staff**. Staff birthdays appear only on this list — they are never shown to parents or pupils.
+
+## Recording How a Name is Said
+
+Parents and pupils can record a short clip of how a pupil’s name is pronounced, straight from the portal, without installing anything. The recording is not audible to anybody at the school until a staff member has listened to it and approved it.
+
+The page appears as **How we say your child’s name** (or **How we say your name** for a pupil login) under the **General** heading of the portal menu. It is governed by the **Record name pronunciation** permission, under the **Pronunciation** heading when you manage a [pupil login group’s permissions](security-administration-for-families-and-pupils.md#managing-permissions), and applies to currently registered pupils only.
+
+A separate site setting adds a prompt to the portal front page for any child with no recording yet. Both the permission and the setting start switched off.
+
+The full feature — recording with a class, approving what parents submit, and what happens to a rejected recording — is described in [Name Pronunciations](name-pronunciations.md#name-pronunciations).

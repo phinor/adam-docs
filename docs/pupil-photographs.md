@@ -14,7 +14,7 @@ The photographs should be named in one of three ways that will allow ADAM to ide
 
 ## Uploading Pupil Photographs
 
-Photographs can be uploaded for Pupils by visiting **Pupils → Photographs → Upload new pupil photographs**.
+Photographs can be uploaded for Pupils by visiting **Pupils → Names and Faces → Upload new pupil photographs**.
 
 ![](assets/screenshots/pupil-photographs/pupil-photographs-01.png)
 
@@ -66,7 +66,7 @@ Simply uploading a photograph to the document repository will *not* automaticall
 
 ### Changing Which Photograph ADAM Displays
 
-Navigate to **Pupils → Photographs → Change pupil photograph**. Type in the name of the pupil whose photograph you’d like to change.
+Navigate to **Pupils → Names and Faces → Switch pupil photograph**. Type in the name of the pupil whose photograph you’d like to change.
 
 > [!WARNING]
 > To use this function you must be able to **read** documents from the **Photographs** category in the pupils’ Document Repository. If you lack this permission, ADAM explains what is required and, if you hold the necessary administrative rights, offers a link to adjust the category permissions. Otherwise, please ask your ADAM Administrator for assistance.
