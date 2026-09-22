@@ -1,0 +1,118 @@
+- image: pupil-photographs-01.png
+  captured: 2026-09-22
+  as: staff
+  path: Pupils tab → Names and Faces → Upload new pupil photographs
+  frame:
+    mode: element
+    selectors: main#body
+    padding: 8
+  setup: none
+  revert: none
+  note: >
+    Re-capture. The previous image predated the "last initial" naming
+    convention and the current theme.
+
+- image: pupil-photographs-03.png
+  captured: 2026-09-22
+  as: staff
+  path: >
+    Pupils tab → Names and Faces → Upload new pupil photographs, four files
+    chosen, Upload pictures clicked
+  frame:
+    mode: element
+    selectors: main#body
+    padding: 8
+  setup: >
+    Four JPEGs were uploaded against the "Current Pupils" dataset, each name
+    chosen to exercise a different convention: "Alcock Kate.jpg" (last first,
+    → Kate Alcock, pupil 5235), "Ewan Allen.jpg" (first last, → Ewan Allen),
+    "30851.jpg" (admin number, → Jacqui Adams) and "Anabel Atkinson.jpg"
+    (Annabel Atkinson misspelt, so it stays unmatched and shows the NOT FOUND
+    card). The pictures themselves are the cartoon figures cropped out of the
+    manual's own earlier pupil-photographs images, so the demonstration school
+    keeps the look it already had.
+  revert: none — the demonstration database is disposable
+  note: >
+    The cards stack one per row because .photo-upload is display:grid with no
+    grid-template-columns (see resources/scss/theme/default/_photo-upload.scss).
+    The pre-January 2026 legacy page flowed them side by side, which is why the
+    old image showed four across. Re-capture this shot if that rule is fixed.
+
+- image: pupil-photographs-05.png
+  captured: 2026-09-22
+  as: staff
+  path: Pupils tab → Pupil Administration → Pupil Info, "alcock" typed into the Pupil box
+  frame:
+    mode: span
+    selectors: >
+      main#body (heading and search row) down to the bottom of the third
+      suggestion in .token-input-dropdown
+    padding: 8
+  setup: >
+    Relies on the uploads recorded against pupil-photographs-03.png: Kate
+    Alcock has a photograph while Andreas and Seth Alcock do not, so the
+    suggestion list shows a real thumbnail beside two generic ones.
+  revert: none
+
+- image: pupil-photographs-06.png
+  captured: 2026-09-22
+  as: staff
+  path: Pupils tab → Pupil Administration → Pupil Info → Kate Alcock → Overview
+  frame:
+    mode: span
+    selectors: >
+      the overview photograph block and the "pupil information" panel beside
+      it, cut off at the last whole row above the allergies block
+    padding: 8
+  setup: >
+    Same uploads as pupil-photographs-03.png. Framed to stop above the ID
+    number row.
+  revert: none
+
+- image: pupil-photographs-09.png
+  captured: 2026-09-22
+  as: staff
+  path: Pupils tab → Names and Faces → Switch pupil photograph → Kate Alcock
+  frame:
+    mode: element
+    selectors: main#body
+    padding: 8
+  setup: >
+    Two further photographs were uploaded for Kate Alcock through the same
+    bulk upload page, giving her three in the Photographs category. The first
+    of the three was then selected through this screen, so the shot shows a
+    current photograph with the generic image and two alternatives beneath it.
+  revert: none
+  note: >
+    Re-capture. The old image was headed "Change Pupil Picture"; the screen is
+    now "Switch Pupil Picture" and carries an "Upload a new Photograph" link.
+
+- image: pupil-photographs-10.png
+  captured: 2026-09-22
+  as: staff
+  path: Pupils tab → Names and Faces → Export pupil photographs
+  frame:
+    mode: element
+    selectors: main#body
+    padding: 8
+  setup: >
+    Grade 8 and Grade 9 selected and File names set to "Last Name, First
+    Name", so the picture shows that the Grades box takes more than one
+    choice. The form was not submitted.
+  revert: none
+
+- image: pupil-photographs-11.png
+  captured: 2026-09-22
+  as: staff
+  path: >
+    Pupils tab → Pupil Administration → Pupil Info → Kate Alcock → document
+    repository → Photographs section expanded
+  frame:
+    mode: element
+    selectors: "#accset_docrep_7"
+    padding: 8
+  setup: >
+    The three photographs are those uploaded for pupil-photographs-03.png and
+    pupil-photographs-09.png. Uploader reads "Antonio Watson" because the dev
+    login bypass signs in as staff_id 1.
+  revert: none
