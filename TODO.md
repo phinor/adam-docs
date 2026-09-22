@@ -163,73 +163,43 @@ narrower-friendly, it is worth asking about that table at the same time.
 
 ## Name Pronunciations (`docs/name-pronunciations.md`)
 
-The page is written and has **no images at all**. The feature is new, and is off by default
-everywhere, so every capture below needs the permissions granted on the demonstration school first:
-**Manage Name Pronunciations** (Pupil Admin tab, Pronunciation heading) on the staff group you log
-in as, and **Record name pronunciation** (Pronunciation heading) on the pupil login group the
-demonstration families use.
+Six of the eight images this page needed are captured and placed; their setup is recorded in
+`docs/assets/screenshots/name-pronunciations/captures.yml`. **Two remain, and both need a machine
+this one is not.**
 
-Recording needs a working microphone on the capturing machine and a secure connection. The
-demonstration site serves over `https`, so the recorder will run; a machine with no microphone gets
-the "Recording is not available here" state instead, which is worth one image in its own right but
-is not a substitute for the others.
+The recorder is built on an AudioWorklet. On the WSL2 machine the captures were run from,
+`audioWorklet.addModule()` never settles — it neither resolves nor rejects, headless and headed
+alike, on both bundled Chromium builds, with no CSP violation and no network request for the module.
+`getUserMedia()` itself succeeds and the fake-device flags work, so this is not a permissions
+problem: there is no audio device for Chromium's audio rendering thread to start on, and the worklet
+global scope is never created. It is an environment limitation, not a fault in ADAM — the feature
+works in an ordinary browser.
 
-### 1. `name-pronunciations-01.png` — the class list
+**Both images below therefore need capturing from a machine with a real microphone and working
+audio**, driving the browser by hand if need be. Everything else is already set up: the
+demonstration school has recordings in place, and the **Record name pronunciation** permission is
+already granted to the **Full Access** pupil login group for both Pupils and Families.
 
-**Pupils → Names and Faces → Record Name Pronunciations by Class**, then choose a class with a
-mixture of states. Frame the three **Work through** links above the table and the first half-dozen
-rows, so the **Clip**, **Status** and **Actions** columns are all legible. At least one pupil should
-be *Approved*, one *Pending approval* and one *Nothing recorded.* — record two names and submit one
-from a parent login beforehand to produce that mixture.
+Reach the recorder at **Pupils → Names and Faces → Record Name Pronunciations by Class**, choose
+**English Home Language: Grade 8 CC6** (class 7412 — the class the other images use), then
+**Record the missing**. Frame the recorder card only, 8px padding, 900px viewport, and check the
+page is in light mode first.
 
 ### 2. `name-pronunciations-02.png` — the recorder mid-recording
 
-From the focus pass (**Work through everyone**), capture the recorder while it is actually
-recording, showing the **Recording — say … now** state. The countdown state (**Get ready… 3**) is
-the alternative if the timing proves awkward; say which one the image shows in the caption.
+Capture the **Recording — say … now** state: the card with the pupil's name, that status line, and
+the progress bar beneath it. The countdown state (**Get ready… 3**) is an acceptable alternative if
+the five-second window proves too tight to catch — say which one the image shows when placing it.
+
+It goes in the **How the recorder works** section, after the numbered steps.
 
 ### 3. `name-pronunciations-03.png` — listening back before saving
 
-The same recorder in its review state: the playback control, the duration, and the **Try again** and
-**Save** buttons together. This is the step people most need to see, because nothing is sent until
-**Save** is clicked.
+The same recorder in its review state: the playback control, the duration line, and the **Try again**
+and **Save** buttons together. This is the step readers most need to see, because nothing is sent to
+ADAM until **Save** is clicked, and the page says so.
 
-### 4. `name-pronunciations-04.png` — the approval queue
-
-**Pupils → Names and Faces → Approve Name Recordings**, with at least two recordings waiting.
-Frame the table: **Pupil**, **Class**, **Clip**, **Recorded by**, **Length** and the **Approve** and
-**Reject** actions. Submit the recordings from a parent login first so that **Recorded by** reads
-*From parent* rather than *Recorded by staff*.
-
-### 5. `name-pronunciations-05.png` — the front-page panel
-
-The ADAM front page with the *"n name recordings are waiting for approval"* panel visible. It only
-renders while something is pending, so capture it in the same sitting as image 4 and before
-approving anything.
-
-### 6. `name-pronunciations-06.png` — the portal page
-
-**Families → Security → Login as a family** for a demonstration family with two current children,
-then the **How we say your child's name** menu entry. Frame both children's blocks so the differing
-status lines show — one *Approved.* or *Waiting for the school to approve your recording.*, one
-*Nothing recorded yet.*
-
-The same family-login constraint as the birthday captures applies: most demonstration families get
-*"your profile has not been granted access to any pupil information"*. Reuse whichever family is set
-up for the Today's Birthdays images — **de Villiers** (family 3090) if that work has been done.
-
-### 7. `name-pronunciations-07.png` — the portal prompt
-
-With **Nag parents and pupils to record a name pronunciation** set to **Yes** (Administration →
-Site Administration → Edit site settings, **Pupils & Families** tab, **Widgets** heading), and a
-child with no recording at all, capture the *"We don't have a recording of how to say … name yet."*
-prompt and its **Record now** link on the portal front page.
-
-### 8. `name-pronunciations-08.png` — the staff profile tab
-
-A staff member's profile with the **Name Pronunciations** tab selected, showing the microphone tab
-icon, the existing recording's media control and the recorder beneath it. Use the staff member you
-are logged in as, so the image does not depend on holding the manage permission.
+It goes immediately after image 2, before the sentence about the five-second limit.
 
 ---
 

@@ -1,0 +1,159 @@
+# Captures for docs/name-pronunciations.md.
+#
+# All six were taken on the same afternoon, against the demonstration school on
+# the dev instance, driving Playwright directly (the Playwright MCP server is
+# not loaded in a session rooted in ~/dev/adam). Viewport 900x1200,
+# deviceScaleFactor 1, scale: css, LANG/LANGUAGE/LC_ALL=en_ZA so that
+# navigator.languages reads ['en-GB']. Open Sans was confirmed present against
+# DejaVu Sans before each run, and light mode confirmed by
+# getComputedStyle(document.body).backgroundColor === 'rgb(239, 246, 255)'.
+#
+# STANDING NOTE ON THE RECORDINGS THEMSELVES: this machine's Chromium cannot
+# run the AudioWorklet the recorder is built on — audioWorklet.addModule()
+# never settles, under headless and headed alike, on both bundled Chromium
+# builds, because WSL2 has no audio device for the audio rendering thread to
+# start on. getUserMedia() itself is fine. The clips behind these images were
+# therefore posted to ADAM's own ingest endpoint (/pronunciation/record/...)
+# from the recorder's own page, with the same CSRF header, content type and
+# 16 kHz mono 16-bit WAV the browser encoder emits — the same request the
+# recorder makes, minus the microphone. Source and approval state are still
+# derived by ADAM from the session, so "From parent" and "Recorded by staff"
+# are genuine. Images 2 and 3 of the TODO brief, which need the recorder
+# mid-recording and in review, could not be taken at all and remain owed.
+
+- image: name-pronunciations-01.png
+  captured: 2026-09-22
+  as: staff
+  path: Pupils tab → Names and Faces → Record Name Pronunciations by Class → English Home Language: Grade 8 CC6 (class 7412)
+  frame:
+    mode: span
+    selectors: >
+      h2 (the class name); div.pronunciation-class-toolbar (the three
+      work-through links); #table_1 thead; the first 6 tbody rows
+      (Donna Bell through Shay Dyer)
+    padding: 8 top, 0 bottom
+  setup: >
+    Class 7412 was chosen because its first six pupils give all three states
+    at once. Sean Bell's approved clip was already there from the developer's
+    own testing. Donna Bell (5356) was recorded as her parent, family 3766,
+    to give the pending row and the Approve/Reject actions; Fynn Duncan
+    (5461's classmate, pupil for "Record the missing") was recorded as staff
+    to give "Approved (Recorded by staff)". Xavier Gordon and Shelley Hancock
+    were also recorded as their parents for image 4 — they sit below the
+    framed rows, but they move the toolbar counts, so this image was retaken
+    after them and reads 21/3/16.
+  revert: none
+
+- image: name-pronunciations-04.png
+  captured: 2026-09-22
+  as: staff
+  path: Pupils tab → Names and Faces → Approve Name Recordings
+  frame:
+    mode: span
+    selectors: h1; div.pronunciation-class-toolbar; table thead; all 3 tbody rows
+    padding: 8 top, 0 bottom
+    width: 1100
+  setup: >
+    Captured at 1100px rather than the house 900px, an exception on the same
+    grounds as medical-module-17.png: the table's own width is 1044px, and at
+    900 the Clip column is too narrow for the browser to draw a full audio
+    control — it collapses to a bare play button and an overflow menu, which
+    would misrepresent the screen.
+
+    Three pending recordings were made as the pupils' own parents: Donna Bell
+    (family 3766), Xavier Gordon (3674) and Shelley Hancock (3690), each a
+    different length so the Length column shows a spread. Two earlier ones,
+    Moira Morgan and Daniel Erasmus, were REJECTED through this screen's own
+    Reject control before capturing: both pupils have no class in the default
+    class subject, so two of the three rows read "No class" and the Class
+    column looked broken rather than empty.
+  revert: >
+    Nothing to revert, but note that rejecting deleted those two clips and
+    their documents, which is what rejection does.
+
+- image: name-pronunciations-05.png
+  captured: 2026-09-22
+  as: staff
+  path: ADAM front page (staff dashboard)
+  frame:
+    mode: element
+    selectors: the div.section.col_half whose h3 is "Name pronunciations"
+    padding: 8
+  setup: >
+    The panel renders only while something is pending, so it was captured in
+    the same sitting as image 4 and before anything was approved. It reads
+    "3 name recordings are waiting for approval", and the page's prose was
+    changed to quote 3 rather than 4 so the two agree.
+  revert: none
+
+- image: name-pronunciations-06.png
+  captured: 2026-09-22
+  as: family 1270 (Morgan), reached through Families → Security → Login as a family
+  path: portal menu → General → How we say your child's name
+  frame:
+    mode: span
+    selectors: h1; both div.pronunciation-portal-row blocks
+    padding: 8 top, 0 bottom
+  setup: >
+    Family 1270 has two current children, Alan and Moira Morgan, both in the
+    Full Access pupil login group — which already carried the
+    "Record name pronunciation" permission for both Pupils and Families, so
+    no permission change was needed anywhere for any of these images.
+    Moira was recorded as her parent to give the "Waiting for the school to
+    approve your recording." line; Alan was left alone for "Nothing recorded
+    yet.". Moira's clip was rejected afterwards, for image 4 — the image was
+    already taken.
+
+    This family cannot reach the portal FRONT page: it has an unanswered
+    online agreement, and so does every other demonstration family bar 3101.
+    The pronunciation page itself is reachable regardless, which is why this
+    image works and image 7 had to be taken elsewhere.
+  revert: none
+
+- image: name-pronunciations-07.png
+  captured: 2026-09-22
+  as: pupil 1624 (Sienna Mthembu), reached through Pupils → Security → Login as a pupil
+  path: portal front page
+  frame:
+    mode: element
+    selectors: the div.section.col_third whose h3 is "How we say a name"
+    padding: 8
+  setup: >
+    portal_pronunciation_prompt was switched to Yes through
+    Administration → Site Administration → Edit site settings → Pupils &
+    Families → Widgets, and switched back to No immediately afterwards.
+
+    A pupil login was used rather than a parent's because the prompt only
+    appears for somebody with NO recording at all, and family 3101 — the one
+    demonstration family that has answered its online agreement and can
+    therefore reach the portal front page — already has approved clips for
+    both its children.
+
+    ONE CHANGE WAS MADE THAT CANNOT BE UNDONE THROUGH ADAM: this pupil's
+    outstanding online agreement was accepted, by clicking "I agree to the
+    conditions stated above.", because the front page is unreachable until it
+    is answered. That writes a row to onlineagreement_responses for pupil
+    1624. It is demonstration data and a lorem-ipsum agreement, but it is a
+    real acceptance and is recorded here rather than left to be discovered.
+  revert: >
+    portal_pronunciation_prompt returned to No (verified by re-reading the
+    form). The agreement acceptance stands.
+
+- image: name-pronunciations-08.png
+  captured: 2026-09-22
+  as: staff (staff_id 1, Antonio Watson — his own profile)
+  path: Staff Information → Antonio Watson → name pronunciations tab
+  frame:
+    mode: span
+    selectors: >
+      the ul holding the profile tabs; the "Name pronunciation" h2; the
+      audio element; the recorder container [data-worklet-url]
+    padding: 8
+  setup: >
+    His own name was recorded first, so the tab has a clip to play — a staff
+    member's own recording needs no approval and is audible at once, which is
+    what the image shows. The frame deliberately includes the name card above
+    the tabs, because it carries the second media control and shows where a
+    recording is actually heard, and the tab strip, because the microphone
+    tab icon is part of what this section describes.
+  revert: none

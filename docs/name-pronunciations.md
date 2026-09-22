@@ -34,6 +34,8 @@ Navigate to **Pupils → Names and Faces → Record Name Pronunciations by Class
 
 The class list shows every pupil in the class with four columns — **Pupil**, **Clip**, **Status** and **Actions**. The **Clip** column holds a media control for any recording that pupil already has, so you can listen before deciding what to do. **Status** is one of *Nothing recorded.*, *Pending approval* or *Approved*.
 
+![](assets/screenshots/name-pronunciations/name-pronunciations-01.png)
+
 Above the list are three links, each with a count:
 
 | Link | Takes you through |
@@ -72,9 +74,17 @@ If the browser has been refused permission, ADAM says so and offers **Try the mi
 
 A recording made by a member of staff is audible immediately: somebody who can be trusted with the pupil was present when it was made. A recording made in the portal waits, because nobody at the school has heard it yet.
 
-When anything is waiting, a panel appears on the ADAM front page for everybody holding **Manage Name Pronunciations**, reading *“4 name recordings are waiting for approval”*. It disappears when the queue is empty. You can also reach the queue at any time from **Pupils → Names and Faces → Approve Name Recordings**.
+When anything is waiting, a panel appears on the ADAM front page for everybody holding **Manage Name Pronunciations**, reading *“3 name recordings are waiting for approval”*. It disappears when the queue is empty.
 
-The queue is school-wide, oldest first, and lists the **Pupil**, their **Class**, a media control under **Clip**, who made the recording under **Recorded by**, and its **Length**. Listen to it and choose:
+![](assets/screenshots/name-pronunciations/name-pronunciations-05.png)
+
+You can also reach the queue at any time from **Pupils → Names and Faces → Approve Name Recordings**.
+
+The queue is school-wide, oldest first, and lists the **Pupil**, their **Class**, a media control under **Clip**, who made the recording under **Recorded by**, and its **Length**.
+
+![](assets/screenshots/name-pronunciations/name-pronunciations-04.png)
+
+Listen to it and choose:
 
 -   **Approve** — the recording becomes the audible one for that pupil straight away. Any recording that was audible before is deleted.
 -   **Reject** — the recording is deleted.
@@ -96,6 +106,8 @@ The page lists each child the login covers, with one of three status lines:
 
 Underneath each child is the same recorder described above. Children with no recording are listed first.
 
+![](assets/screenshots/name-pronunciations/name-pronunciations-06.png)
+
 Recording again simply replaces whatever was there. A parent who is unhappy with the recording they submitted yesterday can record a new one today without asking anybody; the new one waits for approval in place of the old one.
 
 ### Prompting parents and pupils to record
@@ -104,6 +116,8 @@ Navigate to **Administration → Site Administration → Edit site settings**, c
 
 **Nag parents and pupils to record a name pronunciation:** set this to **Yes** to show a short prompt on the portal front page — *“We don’t have a recording of how to say Connor’s name yet.”* — with a **Record now** link straight to the recording page. It starts as **No**.
 
+![](assets/screenshots/name-pronunciations/name-pronunciations-07.png)
+
 The prompt only appears for a child with no recording at all. A recording that is waiting for approval silences it, so a parent who has done what was asked is not nagged again while they wait.
 
 ## Staff recording their own name
@@ -111,6 +125,8 @@ The prompt only appears for a child with no recording at all. A recording that i
 A staff member’s profile has a **Name Pronunciations** tab. Every staff member sees it on their own profile; anybody holding **Manage Name Pronunciations** sees it on everybody’s.
 
 The tab plays the current recording, if there is one, and offers the recorder. A staff member recording their own name needs no approval — there is nobody else to approve it for them — so it becomes audible as soon as it is saved.
+
+![](assets/screenshots/name-pronunciations/name-pronunciations-08.png)
 
 ## Uploading a file instead of recording
 
