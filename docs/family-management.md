@@ -90,7 +90,11 @@ Click on the **Swap parents** button to make the changes in the database.
 
 ## Non-Conventional Family Setups
 
-Some “common” non-conventional family setups include situations, for example, where two children have different mothers, but the same father. The same could be said for two children that have the same mother, but different fathers.
+### Separated parents
+In the instance where the biological parents of a pupil have separated, it is advisable to keep these parents in separate families. This allows each to be addressed separately and, importantly, for new partners to be recorded in the database. Use the [Split Family](#splitting-a-family-in-two) function to separate the individuals.
+
+### Half-siblings and merged families
+Some “common” non-conventional family setups include situations, for example, where two children each have different mothers, but the same father. The same could be said for two children that have the same mother, but each has a different father. There are a thousand ways that these scenarios arise, but one thing remains true: the biological parents should have access to their children. It will vary whether other (non-biological) parents and guardians should have access to the other children.
 
 In situations such as these, communication about the children is best directed to their biological parents, however, ADAM only allows two parents in a household and the family as a whole is linked to a pupil.
 
