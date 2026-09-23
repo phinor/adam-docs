@@ -177,6 +177,12 @@ Yes. Signing in with a passkey means ADAM does not ask you for a six-digit code 
 
 The reason is that your password still works. A passkey is something you choose to use; it does not switch your password off. Anyone who obtains your password can still try to sign in with it, and the six-digit code is what stops them. See [Passkey Authentication](passkey-authentication.md#passkey-authentication) for more about passkeys.
 
+### I sign in with Google or Microsoft. Do I still need two-factor authentication?
+
+Yes. Your school may have set ADAM not to ask for your six-digit code when you sign in with Google or Microsoft, because Google or Microsoft already asks you for a second factor. But if your school requires two-factor authentication, you still have to set it up.
+
+The reason is the same as for passkeys: your ADAM password still works. When you sign in with your password instead, ADAM asks for your code.
+
 ### The Authenticator App shows me two OTPs. Which one do I use?
 
 If you remove and re-add Two-Factor Authentication, you will have to scan a new QR Code. Sometimes this means that your Authenticator App will have two entries. Each time ADAM generates a new QR code, it comes with a different secret code which means that every QR code will provide different OTPs.

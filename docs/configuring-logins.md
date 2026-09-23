@@ -123,7 +123,7 @@ Schools that make use of Google’s Workspace for their email, can make use of t
 
 8.  Your server must be authorised to conduct logins *before* you enable Google Sign-In. Google will reject all sign-in attempts if the server has not been properly authorised to log in your users. Please contact us at [help@adam.co.za](mailto:help@adam.co.za) to request authorisation and wait for confirmation before continuing with the final step of enabling Google Sign-In.
 9.  Your staff and pupils must have their Google Workspace addresses included as their **work or school email addresses**. This email address must match their Google Workspace account. Note that users who have email aliases stored in ADAM may not be able to sign on using Google Sign-In.
-10.  Enable Google Sign-in for either Staff, Pupils or both. This is done in the Site Settings, on the **Security** tab, under the heading “**OAuth Authentication**” - don’t forget to save the settings!
+10.  Enable Google Sign-in for either Staff, Pupils or both. This is done in the Site Settings, on the **Security** tab, under the heading “**Authentication Provider: OAuth**” - don’t forget to save the settings!
 
 ![](assets/screenshots/configuring-logins/configuring-logins-08.png)
 
@@ -141,7 +141,7 @@ Schools that make use of Microsoft 365 for their email, can make use of the “S
 
 1.  Your server must be authorised to conduct logins *before* you enable Microsoft Sign-In. Microsoft will reject all sign-in attempts if the server has not been properly authorised to log in your users. Please contact us at [help@adam.co.za](mailto:help@adam.co.za) to request authorisation and wait for confirmation before continuing with the final step of enabling Microsoft Sign-In.
 2.  Your staff and pupils must have their Microsoft 365 addresses included as their **work or school email addresses**. This email address must match their Microsoft 365 account. Note that users who have email aliases stored in ADAM may not be able to sign on using Microsoft Sign-In.
-3.  Enable Microsoft Sign-in for either Staff, Pupils or both. This is done in the Site Settings, on the **Security** tab, under the heading “**OAuth Authentication**” - don’t forget to save the settings!
+3.  Enable Microsoft Sign-in for either Staff, Pupils or both. This is done in the Site Settings, on the **Security** tab, under the heading “**Authentication Provider: OAuth**” - don’t forget to save the settings!
 
 ![](assets/screenshots/configuring-logins/configuring-logins-10.png)
 
@@ -152,6 +152,29 @@ Once saved, a “Sign-in with Microsoft” link will appear on the login screen:
 Click on the logo to begin the login process. If required, Microsoft will ask you for username and passwords to get access to ADAM.
 
 It is possible to enable either or both of Google and Microsoft Sign-in modules.
+
+## Two-factor authentication with Google or Microsoft Sign-In { #two-factor-authentication-with-google-or-microsoft-sign-in }
+
+By default, a staff member who has set up [two-factor authentication](two-factor-authentication.md#two-factor-authentication) is asked for their six-digit code after signing in with Google or Microsoft, just as they are after signing in with a password.
+
+If your school already requires multi-factor authentication on its Google Workspace or Microsoft 365 accounts, this means staff prove who they are twice: once to Google or Microsoft, and again to ADAM. You can tell ADAM to skip its own code for sign-ins through either service. Each service has its own setting, so you can skip the code for one and keep it for the other:
+
+- **Skip ADAM Two-Factor Authentication for Google Sign-In**
+- **Skip ADAM Two-Factor Authentication for Microsoft Sign-In**
+
+Both are found in the Site Settings, on the **Security** tab, under the heading “**Authentication Provider: OAuth**”. Both start on “No”. Set one to “Yes” and save the settings to turn it on.
+
+> [!WARNING]
+> Only turn one of these on if your Google Workspace or Microsoft 365 requires multi-factor
+> authentication for **every** staff account. ADAM cannot check this for you. If a staff
+> member’s Google or Microsoft account is protected by a password alone, turning this on means
+> that anyone who learns that password can sign in to ADAM as them.
+
+Skipping the code changes less than it might seem:
+
+- Staff must still set up two-factor authentication when your school requires it. The code is skipped for Google or Microsoft sign-ins only, and a staff member’s ADAM password still works. When someone signs in with a password, ADAM still asks for the code.
+- Staff with elevated permissions are always asked for their code, whatever these settings say.
+- Pupils are not affected, because ADAM does not ask pupils for a two-factor code.
 
 ## Parent Logins
 

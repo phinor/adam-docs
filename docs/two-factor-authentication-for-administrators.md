@@ -61,6 +61,10 @@ less time; a larger number is more forgiving of a phone whose clock is slightly 
 If a lot of staff suddenly cannot enrol or sign in, suspect the server's clock rather than this
 setting. A server whose time has drifted affects everybody at once, which is the usual sign.
 
+### Skipping the code for Google or Microsoft Sign-In
+
+If your staff sign in with Google or Microsoft, and your Google Workspace or Microsoft 365 already requires multi-factor authentication, you can tell ADAM not to ask for its own code after those sign-ins. The two settings are on the same **Security** tab, under the **Authentication Provider: OAuth** heading. Read [Two-factor authentication with Google or Microsoft Sign-In](configuring-logins.md#two-factor-authentication-with-google-or-microsoft-sign-in) before turning either of them on.
+
 ## The coverage screen
 
 Click on the **Administration tab**, then under the **Security Administration** heading click on **Manage Two-Factor Authentication for staff**.

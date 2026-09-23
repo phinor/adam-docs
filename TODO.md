@@ -28,6 +28,28 @@ captures use **Edward Clark** (pupil 5083, Grade 9 IM5).
 
 ---
 
+## Configuring Logins — the OAuth settings (`docs/configuring-logins.md`)
+
+Two settings were added under the **Authentication Provider: OAuth** heading: **Skip ADAM
+Two-Factor Authentication for Google Sign-In** and **Skip ADAM Two-Factor Authentication for
+Microsoft Sign-In**. The heading itself was once called "OAuth Authentication". Both existing
+images of this heading predate the new settings and may predate the rename.
+
+### `configuring-logins/configuring-logins-08.png` and `configuring-logins-10.png`
+
+Administration tab, **Edit site settings**, **Security** tab, scrolled to the **Authentication
+Provider: OAuth** heading. Frame the heading and all six settings beneath it, with both "Skip"
+settings on "No". The two images can become one if they would now be identical; if so, delete
+`configuring-logins-10.png` and its reference.
+
+### `configuring-logins/configuring-logins-12.png` (new)
+
+The same screen, framed on the two "Skip" settings only, with the help text visible. Place it in
+the "Two-factor authentication with Google or Microsoft Sign-In" section, after the list of the two
+settings.
+
+---
+
 ## Online Applications (`docs/online-applications.md`)
 
 The way an application begins has changed, and the written page now describes the new screens. Four
