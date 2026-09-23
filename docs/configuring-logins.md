@@ -162,6 +162,8 @@ If your school already requires multi-factor authentication on its Google Worksp
 - **Skip ADAM Two-Factor Authentication for Google Sign-In**
 - **Skip ADAM Two-Factor Authentication for Microsoft Sign-In**
 
+![The two Skip ADAM Two-Factor Authentication settings, both set to No, with their help text](assets/screenshots/configuring-logins/configuring-logins-12.png)
+
 Both are found in the Site Settings, on the **Security** tab, under the heading “**Authentication Provider: OAuth**”. Both start on “No”. Set one to “Yes” and save the settings to turn it on.
 
 > [!WARNING]

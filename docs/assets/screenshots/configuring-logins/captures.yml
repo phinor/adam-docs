@@ -1,0 +1,47 @@
+- image: configuring-logins-08.png
+  captured: 2026-09-23
+  as: staff
+  path: Administration tab → Edit site settings → Security tab → Authentication Provider: OAuth
+  frame:
+    mode: span
+    selectors: >
+      The "Authentication Provider: OAuth" heading row and the six setting rows
+      beneath it, from Enable Google Sign-In for Staff to Skip ADAM Two-Factor
+      Authentication for Microsoft Sign-In, clipped to the settings table's width
+    padding: 8
+  setup: >
+    Radio buttons set on screen and never saved: both Google Sign-In settings
+    Yes, both Microsoft Sign-In settings No, both Skip settings No.
+  revert: none
+  note: >
+    Re-capture. The previous image showed the heading under its old name,
+    "OAuth Authentication", only four settings, and hand-drawn arrows. The
+    floating save bar was set to position static before capture, because it
+    otherwise covers the last row.
+
+- image: configuring-logins-10.png
+  captured: 2026-09-23
+  as: staff
+  path: Administration tab → Edit site settings → Security tab → Authentication Provider: OAuth
+  frame:
+    mode: span
+    selectors: same as configuring-logins-08.png
+    padding: 8
+  setup: >
+    Radio buttons set on screen and never saved: both Google Sign-In settings
+    No, both Microsoft Sign-In settings Yes, both Skip settings No.
+  revert: none
+  note: Re-capture, for the same reasons as configuring-logins-08.png.
+
+- image: configuring-logins-12.png
+  captured: 2026-09-23
+  as: staff
+  path: Administration tab → Edit site settings → Security tab → Authentication Provider: OAuth
+  frame:
+    mode: span
+    selectors: >
+      The Skip ADAM Two-Factor Authentication for Google Sign-In and Skip ADAM
+      Two-Factor Authentication for Microsoft Sign-In rows
+    padding: 8
+  setup: Both Skip settings on No, their default. Nothing saved.
+  revert: none
