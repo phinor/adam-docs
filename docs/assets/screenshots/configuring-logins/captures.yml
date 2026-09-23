@@ -45,3 +45,6 @@
     padding: 8
   setup: Both Skip settings on No, their default. Nothing saved.
   revert: none
+  note: >
+    All three images were re-captured the same day, after the help text of
+    the two Skip settings was cut from five sentences to two.
