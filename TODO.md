@@ -201,6 +201,42 @@ ADAM until **Save** is clicked, and the page says so.
 
 It goes immediately after image 2, before the sentence about the five-second limit.
 
+## Sign-up Module — family sign-ups (`docs/sign-up-module.md`)
+
+The **Family Sign-ups** section is written but has no pictures. **Capture these only once ADAM PR
+#496 has been deployed to the demonstration server**: before that, no family sign-up screens exist
+there. Set up one family event first: on **Pupils**, under **Sign Ups**, choose **Manage events**,
+pick a category, and add an event named "Parent-Teacher Evening: Mrs Smith" with **Sign up by** set
+to **Family (a family signs up, no pupil recorded)**, **Appointment Approval** set to **Approval by
+organising teacher required**, and a few ten-minute appointments with bookings open. Give the
+**View and allow sign-ups** permission to the family login group the demonstration families use.
+Book two families, one of them from the family portal and one with **Book a family**, and leave
+one booking unapproved.
+
+### 1. `sign-up-module-17.png` — the event form
+
+The **Create New Event** form, framed from **Event information** to **Limit to classes**, so that
+**Sign up by** and **Limit per family** are both in view with **Family** chosen. It goes after the
+**Limit per family** bullet in **Creating Events**.
+
+### 2. `sign-up-module-18.png` — the family portal
+
+The **Family Sign-ups** page as a parent of one of the booked families sees it, showing **Your
+family's sign-ups** with the booking and **Sign Up for Other Events** with the event open. It goes
+at the end of **Booking on the Family Portal**.
+
+### 3. `sign-up-module-19.png` — the attendee list
+
+The attendee list of the booked appointment, showing the **Book a family** link and the **Family**,
+**Pupils**, **Details** and **Actions** columns, with **approve** and **reject** on the unapproved
+row. It goes after the list of columns in **Seeing Who Has Booked**.
+
+### 4. `sign-up-module-20.png` — approving a family booking
+
+The **Approve signups** page with the unapproved family booking, so that the **Attendee** column
+shows the family name and its children. It goes at the end of the first paragraph of **Approving
+Family Bookings**.
+
 ---
 
 # Missing Written Content

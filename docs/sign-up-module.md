@@ -1,6 +1,6 @@
 # Sign-up Module
 
-The Sign-up module is designed to allow staff, pupils and parents the ability to sign up for lists, events and appointments. The sign-up module has the following data structure:
+The Sign-up module is designed to allow staff, pupils and parents the ability to sign up for lists, events and appointments. Most events are booked by or for a pupil. An event can instead be set up so that a family books it as itself — see [Family Sign-ups](#family-sign-ups). The sign-up module has the following data structure:
 
 -   Event Category
 
@@ -62,7 +62,7 @@ Every event must have an element of all three. It might seem odd that an “Even
 
 Here are some examples to illustrate the differences to you.
 
--   In the scenario where we are creating a signup sheet for parents to book meetings with teachers at a parent-teacher evening, the “Event Category” would be “Parent-Teacher Meetings”, each teacher would then have an “Event” within this category. The “Event” is then broken down into the 5-minute “Appointments” that are available. I.e. Parent-Teacher Meetings → Mrs Smith → 18h45 to 18h50
+-   In the scenario where we are creating a signup sheet for parents to book meetings with teachers at a parent-teacher evening, the “Event Category” would be “Parent-Teacher Meetings”, each teacher would then have an “Event” within this category. The “Event” is then broken down into the 5-minute “Appointments” that are available. I.e. Parent-Teacher Meetings → Mrs Smith → 18h45 to 18h50. Because the parents book these meetings, each event would be a [family sign-up](#family-sign-ups).
 -   When signing up pupils for sports teams, the “Event Category” would be “Sports Teams Signups”. Each sport would be an “Event” and each “Appointment” could be a term or season. I.e. Sports Teams → Cricket → 1st Term
 -   When signing up pupils who wish to attend a voluntary presentation by a visiting speaker, the “Event Category” might be “Visiting Speakers”, the “Event” might be the name of the speaker and the appointment would be the date of the presentation (this also allows there to be multiple presentations, for example). I.e. Visiting Speakers → Nelson Mandela Foundation → Tuesday 5th, 7pm.
 -   In boarding schools, pupils often need to request permission to visit venues such as the library. Here, the “Event Category” might be “Evening Prep”, the “Event” might be “Library” or “Computer Lab” and the appointment would be the date of the visit. I.e. Evening Prep → Library → Thursday 14th.
@@ -101,17 +101,20 @@ This will display any events that have been created for this category. Because o
 
 The fields on this page are explained as follows:
 
--   **Event Name:** Type in the name of the event. See the list on page  for examples of event names.
+-   **Event name:** Type in the name of the event. See the [examples above](#terminology-event-categories-vs-events-vs-appointments) for ideas.
 -   **Category:** This should already reflect the category of the event, but you can change it if you need to.
--   **Organising Teacher:** Please select the organising teacher from the list. This teacher will receive attendance lists and more from the appointments that will be scheduled later.
--   **Event Information:** The information for this event will be shown to pupils and should explain what the event is about.
--   **Limit Pupil Signups:** This will prevent pupils from signing up for too many appointments. If these are schedules for one-on-one appointments, for example, you may wish that a pupil only signs up for only one of them.
+-   **Organising Teacher:** Please select the organising teacher from the list. This teacher will receive attendance lists and more from the appointments that will be scheduled later. If you may only manage your own events, this is always you.
+-   **Event information:** The information for this event will be shown to pupils (or, for a family sign-up, to families) and should explain what the event is about.
+-   **Limit pupil signups:** This will prevent pupils from signing up for too many appointments. If these are schedules for one-on-one appointments, for example, you may wish that a pupil only signs up for only one of them. This setting is ignored for family sign-ups.
 
 Please note that only future appointments count towards a pupil’s limit. If an appointment passes, it will no longer count towards the pupil’s limit and they may be able to sign up for further appointments. If you wish to avoid this, then all bookings should be set to close before the first appointment takes place.
 
--   **Limit to classes:** The event and its appointments will only be shown to pupils who are members of the selected classes. If no classes are selected, it will be available to all pupils. It may be useful, for example, when setting up appointments for pupils to see teachers to limit those appointments to appear for pupils taught by the organising teacher.
--   **Confirmation Reminders:** This can be used to send out reminders to people who signed up for appointments. *PLEASE NOTE: THIS IS NOT YET FUNCTIONAL.*
--   **Appointment Approval:** It may be possible that your appointment or sign-up requires teacher approval. If this is the case, it is possible to set either the organising teacher or another teacher that teaches the pupil, to approve the appointment.
+-   **Sign up by:** Choose **Pupil (each pupil signs up)** for an ordinary event. Choose **Family (a family signs up, no pupil recorded)** when parents book as a family, such as parent-teacher meetings. See [Family Sign-ups](#family-sign-ups) for how these differ.
+-   **Limit per family:** For a family sign-up, this is how many appointments one family may book for this event. It is ignored for pupil sign-ups.
+-   **Limit to classes:** The event and its appointments will only be shown to pupils who are members of the selected classes. If no classes are selected, it will be available to all pupils. It may be useful, for example, when setting up appointments for pupils to see teachers to limit those appointments to appear for pupils taught by the organising teacher. For a family sign-up, the event is shown to families who have a child in one of the selected classes.
+-   **Confirmation reminders:** Choose when ADAM should send a reminder to the people who signed up, or **No reminders**.
+-   **Send confirmation reminders to:** Choose whether reminders go to the **Pupils**, their **Families**, or both. For a family sign-up, this setting is ignored: the reminder always goes to the family that made the booking, and to no one else.
+-   **Appointment Approval:** It may be possible that your appointment or sign-up requires teacher approval. If this is the case, it is possible to set either the organising teacher or another teacher that teaches the pupil, to approve the appointment. A family sign-up can only use **No approval required** or **Approval by organising teacher required**. ADAM will not save a family event that asks for another subject teacher’s approval.
 
 For example, it may be necessary for the pupil’s Home Room Teacher to approve sign up to an extension activity. In this case, one would choose “Approval by another subject teacher required” and in the “**Approving Subject Teacher**” dropdown, choose the “Home Room” subject. When a pupil signed up for this event, an email would be sent to their Home Room teacher requesting their approval. The subject that is in this list is otherwise ignored.
 
@@ -207,8 +210,8 @@ To cancel the appointment, click on the “**cancel**” link. Any pupils who mi
 
 We navigated through all the screens above by creating a new event. If you need to get back to any of them, use the menu items on the **“Pupils”** tab under the “**Sign Ups**” heading.
 
--   To see a list of events, click on “**View category events**”. From there, you will be able to view and edit events. You can also see the event appointments from that screen.
--   Alternatively, the third option “**Manage appointment slots for an event**” will also allow you to view the appointments, attendance lists and to cancel specific appointments.
+-   To see a list of events, click on “**Manage events**”. From there, you will be able to view and edit events. You can also see the event appointments from that screen. The **Signs up** column shows whether each event is booked by a **Pupil** or a **Family**.
+-   Alternatively, the option “**View appointment slots for an event**” will also allow you to view the appointments, attendance lists and to cancel specific appointments.
 
 ## Signing Pupils Up for an Event
 
@@ -242,6 +245,80 @@ If there is a limit to the number of pupils that can sign up to the appointment,
 
 Also be aware that in spite of a page reporting that an event has a number of spaces available, this does not take into account other staff members who might be signing up pupils concurrently.
 
+Family sign-up events cannot be used here, because nobody signs up a pupil for them.
+
 ### On the Pupil Portal
 
 When pupils log in to the pupil portal, if they have been given permissions to access the sign-up module, they will click through to see all the available appointments that they can sign up for. They simply need to click on the **sign up** link next to the appointments that they wish to sign up for.
+
+## Family Sign-ups
+
+Some bookings are made by parents rather than by pupils. The clearest example is a parent-teacher evening: the family books a meeting with a teacher, and the meeting is about their children rather than something a pupil attends. For these, set **Sign up by** to **Family (a family signs up, no pupil recorded)** when you [create the event](#creating-events).
+
+A family sign-up differs from a pupil sign-up in these ways:
+
+-   **The family books as itself.** No pupil is recorded against the booking. Wherever ADAM shows a family booking to staff, it lists the family’s children that the booking concerns, with their grades. If the event is limited to classes, these are the family’s children who are currently in those classes. Otherwise, they are all the family’s children.
+-   **Only families with a child in the selected classes can book.** If **Limit to classes** is left empty, every family can book.
+-   **The limit is per family.** **Limit per family** sets how many appointments one family may book for the event. **Limit pupil signups** does not apply.
+-   **Only the organiser can approve.** A family event can require **Approval by organising teacher required**, but not the approval of another subject teacher.
+-   **Only the booking family is told.** Reminders, approvals and cancellation notices go to the family that made the booking and to no other family. Where a pupil’s parents are separated and each has their own family login, one parent cannot see, cancel or be reminded of the other parent’s booking.
+-   **Pupils never see family bookings.** Family bookings do not appear on the pupil portal.
+-   **Family events cannot be used to sign up a class** or to add attendees to a class.
+
+Once an event has bookings, you cannot change **Sign up by**. The edit form shows the current setting and the message “Cancel the existing bookings before changing who signs up.”
+
+### Giving families access
+
+Families book on the family portal. Their login group needs the **View and allow sign-ups** permission, the same one that lets pupils sign up. See [Managing Permissions](security-administration-for-families-and-pupils.md#managing-permissions).
+
+### Booking on the Family Portal
+
+When a parent logs in to the family portal, they click on **Family sign-ups** under the **Family** heading. The **Family Sign-ups** page has two parts:
+
+-   **Your family’s sign-ups** lists the appointments the family has booked. Next to each one, the parent can click **cancel** to cancel the booking. If the booking is still waiting for the organiser’s approval, it reads “Your family has requested this appointment. Approval is still outstanding.” and the link reads **withdraw** instead.
+-   **Sign Up for Other Events** lists the family events open to the family. The parent clicks on the **sign up** link next to the appointment they want.
+
+There is no **sign up** link when the appointment is full, when bookings are not open, or when the family has reached the event’s limit. Once bookings close, a family can no longer cancel online and must contact the school.
+
+### Seeing Who Has Booked
+
+On the list of appointments for a family event, click on the **number of attendees** as usual. This needs the **View Appointment Attendance** permission. For a family event the list has these columns:
+
+-   **Family:** the family that booked.
+-   **Pupils:** the family’s children that the booking concerns, with their grades.
+-   **Details:** when the family booked and, if the event needs approval, who approved it and when.
+-   **Actions:** **remove** cancels the booking and tells the family it was removed. If the booking is waiting for approval and you may approve it, **approve** and **reject** also appear.
+
+The link **Scratch list of the pupils** opens a scratch list of every child the bookings concern.
+
+### Booking for a Family
+
+Staff can book an appointment on a family’s behalf, for example when a parent phones the school. On the attendee list of a family event, click on **Book a family**, search for the family by either parent’s first or last name, and choose the family from the results.
+
+This link is shown to staff with the **Manage Events** permission, and to the event’s organiser if they have the **Manage Own Events** permission. When staff book for a family, ADAM ignores the booking dates and the family’s limit. Only staff with **Manage Events** can book a family into an appointment that is already full.
+
+### Approving Family Bookings
+
+If a family event needs the organiser’s approval, the organiser receives an email when a family books, with a link to the approvals page. On the **Pupils** tab, under the **Sign Ups** heading, click on **Approve signups**. Family requests appear next to pupil requests. The **Attendee** column shows the family name followed by the children the booking concerns. Click **approve** or **reject**. The family receives an email either way.
+
+The organiser needs the **Approve designated signups** permission. Staff with **Approve any signups** can approve any family booking.
+
+### Family Bookings on a Pupil’s Profile
+
+On a pupil’s **Sign-Up** page, the heading **Family bookings about this pupil** lists the family events booked by any of the pupil’s families that concern this pupil. It shows the event, the appointment, and which family booked it. The heading appears only when there is at least one such booking.
+
+### Family Bookings in Reports
+
+The sign-up reports list family bookings against each child they concern, followed by the family’s name in brackets, for example “(Smith family)”. A family with two children in the report therefore appears on two rows. Do not add up the rows to count family bookings.
+
+### Emails for Family Sign-ups
+
+Family sign-ups use their own [email message templates](email-message-templates.md#email-message-templates), in the **Signup Module** section:
+
+-   **Family Signup Approval Request (to Staff)** — sent to the organiser when a family books an event that needs approval.
+-   **Family Signup Notification (to Staff)** — sent to the organiser each time a family books or cancels, if **Notify teacher on each sign-up** is set to “Yes”.
+-   **Family Signup Approved (to Families)** and **Family Signup Not Approved (to Families)** — sent to the family when the organiser approves or rejects its booking.
+-   **Family Signup Removed (to Families)** — sent to the family when staff remove its booking.
+-   **Family Signup Appointment Cancelled (to Families)** — sent to each booked family when an appointment or the whole event is cancelled.
+
+The reminder before the appointment uses the existing **Signup Notification (to Families)** template.

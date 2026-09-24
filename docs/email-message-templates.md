@@ -61,6 +61,12 @@ The table below lists the email templates that ADAM provides, grouped by the hea
 | Signup Module | Approval Notification (to Staff) | Notifies staff that an appointment signup requires approval. |
 | Signup Module | Signup Notification of Cancellation (to Staff) | Notifies staff that an appointment signup has been cancelled. |
 | Signup Module | Signup Notification of Staff Cancellation (to Pupils) | Notifies a pupil that a staff member has cancelled their appointment. |
+| Signup Module | Family Signup Approval Request (to Staff) | Asks the organiser to approve a [family sign-up](sign-up-module.md#family-sign-ups) booking. |
+| Signup Module | Family Signup Notification (to Staff) | Tells the organiser that a family has booked or cancelled an appointment. |
+| Signup Module | Family Signup Approved (to Families) | Tells a family that its booking has been approved. |
+| Signup Module | Family Signup Not Approved (to Families) | Tells a family that its booking was not approved, with the reason. |
+| Signup Module | Family Signup Removed (to Families) | Tells a family that staff removed its booking. |
+| Signup Module | Family Signup Appointment Cancelled (to Families) | Tells each booked family that an appointment it booked has been cancelled. |
 | SMS Zoom | SMS Reply Message | Forwards a parent's reply to an SMS batch to the school by email. See [SMS Services](sms-services.md#sms-services). |
 | Staff | Detail Update - Staff Request | Invites a staff member to review and update their own details online. |
 | Staff | Detail Update - Reviewer Notification | Notifies the nominated reviewer when a staff member submits detail changes. |
