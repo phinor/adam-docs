@@ -8,11 +8,11 @@ Staff members see this image throughout ADAM. It can also be shown to other fami
 
 The photographs should be named in one of the following ways, each of which allows ADAM to work out which pupil the picture belongs to:
 
-1.  AdminNumber.jpg
-2.  FirstName LastName.jpg
-3.  LastName FirstName.jpg
-4.  LastName FirstInitial.jpg — the space is optional, so both “Alcock K.jpg” and “AlcockK.jpg” work
-5.  Username.jpg
+1.  `AdminNumber.jpg`
+2.  `FirstName LastName.jpg`
+3.  `LastName FirstName.jpg`
+4.  `LastName FirstInitial.jpg` — the space is optional, so both `Alcock K.jpg` and `AlcockK.jpg` work
+5.  `Username.jpg`
 
 Capital letters make no difference. A picture is only accepted when exactly one pupil matches its name, so a misspelling, or a name that two pupils in the same dataset share, will leave the picture unmatched.
 
