@@ -1,0 +1,57 @@
+- image: email-personal-documents-01.png
+  captured: 2026-11-25
+  host: screenshot.theta.adam.co.za (adam_agent_screenshot)
+  build: ADAM feature/document-emailer at d39417332a (PR #643), checked out detached in ~/dev/adam
+  as: staff (staff_id 1, login bypass)
+  path: Pupils → Messaging and Communications → Email personal documents → Upload documents
+  frame:
+    mode: span
+    selectors: main (the Upload Documents to Email heading down to the Upload Documents button)
+    padding: 8
+  setup: >
+    Who the documents are for left on its default, Current pupils. Focus removed from the select
+    before capturing.
+  revert: none
+
+- image: email-personal-documents-02.png
+  captured: 2026-11-25
+  host: screenshot.theta.adam.co.za (adam_agent_screenshot)
+  build: ADAM feature/document-emailer at d39417332a (PR #643)
+  as: staff (staff_id 1, login bypass)
+  path: Email Personal Documents → the set → Email these documents (set 2, before its first send)
+  frame:
+    mode: span
+    selectors: >
+      main table rows from To: down to Message Subject:, so that the description following the
+      subject shows
+    padding: 8
+    note: >
+      Captured at a 1200px viewport and cropped to 900x449 with ImageMagick, because the form's
+      sticky Send emails bar covers the bottom of a viewport sized to the frame.
+  setup: >
+    Set 2: five generated PDFs named "Merit certificate <Surname> <Firstname>.pdf" for Nqobile
+    Alcock, Tiago Alcock, Kupakwashe Alexander, Owethu Alexander and Theo Alexander, uploaded for
+    Current pupils, all five certain matches, confirmed. Category Pupils (Top Level) > Reports,
+    Message Subject "Your merit certificate" (Description followed it).
+  revert: none
+
+- image: email-personal-documents-03.png
+  captured: 2026-11-25
+  host: screenshot.theta.adam.co.za (adam_agent_screenshot)
+  build: ADAM feature/document-emailer at d39417332a (PR #643)
+  as: staff (staff_id 1, login bypass)
+  path: Email Personal Documents → set 2, after one send to Families
+  frame:
+    mode: span
+    selectors: main, from the Email Personal Documents heading to the bottom of the table
+    padding: 8
+    note: Captured at a 1200px viewport and cropped to 900x488; the page is too short to scroll.
+  setup: >
+    No ordinary-grade pupil on the screenshot site lacks a bulk-mail address, so before the send
+    General Communication was unticked on both email addresses of family 8606 (Tiago Alcock) on the
+    staff family edit page. The set was then emailed to Families (message body set to two plain
+    sentences), queuing four emails to testing+ addresses through the Mailtrap sandbox. A first set
+    (set 1, with Sean Hooper, who shows as Grade 17 in this data) was deleted unsent.
+  revert: >
+    General Communication ticked again on both of family 8606's addresses through the same page
+    after capturing. Set 2 and its Messaging Centre batch were left in place.

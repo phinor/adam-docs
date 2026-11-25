@@ -50,6 +50,8 @@ On the **Email Personal Documents** page, click **Upload documents**. The page *
 2.  In **Choose documents**, select the files, or a ZIP file of them. Name each file so that ADAM can find its person, as described in [Naming of Documents](document-repository.md#naming-of-documents). The page lists the same rules, and the limits on the number and size of files your server accepts.
 3.  Click **Upload Documents**.
 
+![](assets/screenshots/email-personal-documents/email-personal-documents-01.png)
+
 ADAM leaves out any file it does not accept, cannot read, or that is larger than the email size limit. A warning names those files. If none of the files can be used, ADAM returns you to the form.
 
 ## Checking the Matches
@@ -83,6 +85,8 @@ When the audience is **Families and pupils**, the reason names the half that was
 
 A pupil or staff member who is no longer on ADAM is listed as “A pupil no longer on ADAM” or “A staff member no longer on ADAM”.
 
+![](assets/screenshots/email-personal-documents/email-personal-documents-03.png)
+
 ## Emailing a Set
 
 On the set’s page, click **Email these documents**. The form is the Messaging Centre’s email form, described in [Composing Your Message](messaging-centre.md#composing-your-message), with these differences:
@@ -93,6 +97,8 @@ On the set’s page, click **Email these documents**. The form is the Messaging 
 -   **Document Repository Category** and **Description** appear on the first email of a set, and both are required. ADAM files each document in this category, linked to its pupil or staff member, when the set is first emailed. The description starts as a copy of the **Message Subject** and follows it until you type your own. On later emails the form shows the category the documents are filed in instead.
 -   **Attachments** says that each person’s own document from the set is attached. You may add common attachments as well. They go to everybody.
 -   The merge codes are the pupil codes for a set of pupils’ documents, and the staff codes for a set of staff documents.
+
+![](assets/screenshots/email-personal-documents/email-personal-documents-02.png)
 
 If the set was emailed before, a warning above the form says so, for example “This set was already emailed to families on 12 March 2027.”
 
